@@ -5,8 +5,8 @@ import { technologiesData } from "@/constants";
 
 const Technologies = () => {
   return (
-    <section className="pt-8 pb-8" id="technologies">
-      <div className="bg-primaryColor container flex flex-col items-center justify-center rounded-xl bg-opacity-5 pt-20">
+    <section className="pb-8 pt-8" id="technologies">
+      <div className="container flex flex-col items-center justify-center rounded-xl bg-primaryColor bg-opacity-5 pt-20">
         <SectionTitle
           title="Technologies Stack"
           paragraph="We continuously strive to stay at the forefront of technology, always adopting the latest advancements to deliver the best solutions."
@@ -19,7 +19,7 @@ const Technologies = () => {
               data-wow-delay=".1s"
             >
               {technologiesData.map((brand) => (
-                <SingleTechnology key={brand.id} brand={brand} />
+                <SingleTechnology key={brand.name} brand={brand} />
               ))}
             </div>
           </div>

@@ -28,7 +28,8 @@ const servicesData: Service[] = [
       </svg>
     ),
     title: "Search Engine Optimization (SEO)",
-    paragraph: "We make SEO strategies to boost website visibility and achieve top rankings on Google and Bing. Our services include sitemap development, site schema optimization, metadata refinement, keyword optimization, and increasing organic traffic."
+    paragraph:
+      "We make SEO strategies to boost website visibility and achieve top rankings on Google and Bing. Our services include sitemap development, site schema optimization, metadata refinement, keyword optimization, and increasing organic traffic.",
   },
   {
     id: 3,
@@ -42,7 +43,8 @@ const servicesData: Service[] = [
       </svg>
     ),
     title: "Digital Marketing",
-    paragraph: "We offer comprehensive digital marketing services that include social media management, email campaigns, and targeted advertising. Our strategies are designed to increase your online presence, drive traffic, and boost engagement with your audience.",
+    paragraph:
+      "We offer comprehensive digital marketing services that include social media management, email campaigns, and targeted advertising. Our strategies are designed to increase your online presence, drive traffic, and boost engagement with your audience.",
   },
   {
     id: 4,
@@ -56,7 +58,8 @@ const servicesData: Service[] = [
       </svg>
     ),
     title: "Business Consulting",
-    paragraph: "Our business consulting services provide expert advice to help you optimize your operations, improve efficiency, and drive growth. We work with you to develop strategies that align with your business goals and ensure long-term success.",
+    paragraph:
+      "Our business consulting services provide expert advice to help you optimize your operations, improve efficiency, and drive growth. We work with you to develop strategies that align with your business goals and ensure long-term success.",
   },
   {
     id: 5,
@@ -69,9 +72,9 @@ const servicesData: Service[] = [
         <path d="M19.408 28.931C19.7603 29.1896 20.2396 29.1894 20.5918 28.9306L36.3556 17.3466L38.8979 15.4883C39.4437 15.0894 39.4446 14.275 38.8996 13.8749L20.5918 0.43445C20.2396 0.175911 19.7604 0.175913 19.4082 0.434452L1.09706 13.8774C0.553051 14.2767 0.552712 15.0892 1.09638 15.4891L3.62222 17.3466L19.408 28.931Z" />
       </svg>
     ),
-    title: "Data Migration",
+    title: "Data Analytics",
     paragraph:
-      "Our team excels in creating efficient scripts and managing data migrations, ensuring a smooth transition with minimal downtime. We handle complex data sets and intricate migration processes to provide seamless integration and optimal performance.",
+      "We provide end-to-end data analytics solutions, from building complete dataflows in Microsoft Fabric to creating insightful Power BI dashboards. Our services help you transform raw data into clear, actionable insights that support confident decision-making.",
   },
   {
     id: 6,

@@ -1,58 +1,57 @@
 export type ContactData = {
-    message:string;
-    email: string;
-    name:string;
-    subject: string;
-  }
+  message: string;
+  email: string;
+  name: string;
+  subject: string;
+};
 export type Client = {
-    name: string;
-    href: string;
-    image: string;
-  };
+  name: string;
+  href: string;
+  image: string;
+};
 export type FetchOptions = {
-    method: "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
-    cache?: "force-cache" | "no-cache" | "no-store";
-    body?: BodyInit;
-    revalidate?: number
-  };
+  method: "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
+  cache?: "force-cache" | "no-cache" | "no-store";
+  body?: BodyInit;
+  revalidate?: number;
+};
 export type Menu = {
-    id: number;
-    title: string;
-    path?: string;
-    newTab: boolean;
-    submenu?: Menu[];
-  };
+  id: number;
+  title: string;
+  path?: string;
+  newTab: boolean;
+  submenu?: Menu[];
+};
 export type Technology = {
-    id: number;
-    name: string;
-    image: string;
-  };
+  name: string;
+  image: string;
+};
 export type Testimonial = {
-    id: number;
-    fullname: string;
-    rate: number;
-    content: string;
-    profession: string;
-  };
+  id: number;
+  fullname: string;
+  rate: number;
+  content: string;
+  profession: string;
+};
 export type Service = {
-    id: number;
-    icon: JSX.Element;
-    title: string;
-    paragraph: string;
-  };
-  
+  id: number;
+  icon: JSX.Element;
+  title: string;
+  paragraph: string;
+};
+
 type Author = {
-    name: string;
-    image: string;
-    designation: string;
-  };
-  
+  name: string;
+  image: string;
+  designation: string;
+};
+
 export type Blog = {
-    id: number;
-    title: string;
-    paragraph: string;
-    image: string;
-    author: Author;
-    tags: string[];
-    publishDate: string;
-  };
+  id: number;
+  title: string;
+  paragraph: string;
+  image: string;
+  author: Author;
+  tags: string[];
+  publishDate: string;
+};

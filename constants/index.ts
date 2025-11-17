@@ -6,64 +6,52 @@ export const resend = new Resend(process.env.RESEND_API_KEY!);
 
 export const technologiesData: Technology[] = [
   {
-    id: 1,
     name: "React.js",
     image: "/images/technologies/react.png",
   },
   {
-    id: 2,
     name: "Node.js",
     image: "/images/technologies/node.png",
   },
   {
-    id: 3,
     name: "Next.js",
     image: "/images/technologies/next.png",
   },
   {
-    id: 4,
+    name: "Nest.js",
+    image: "/images/technologies/nestjs.svg",
+  },
+  {
     name: "SQL",
     image: "/images/technologies/sql.png",
   },
   {
-    id: 5,
-    name: "Mongo",
-    image: "/images/technologies/wordpress.png",
-  },
-  {
-    id: 6,
-    name: "Python",
-    image: "/images/technologies/python.png",
-  },
-  {
-    id: 7,
-    name: "Firebase",
-    image: "/images/technologies/firebase.png",
-  },
-  {
-    id: 8,
     name: "Tailwind",
     image: "/images/technologies/tailwind.png",
   },
   {
-    id: 9,
-    name: "Cloudinary",
-    image: "/images/technologies/cloudinary.png",
+    name: "Python",
+    image: "/images/technologies/python.png",
   },
   {
-    id: 10,
-    name: "Shopify",
-    image: "/images/technologies/shopify.png",
+    name: "Cldouflare",
+    image: "/images/technologies/cloudflare.png",
   },
   {
-    id: 11,
     name: "Wix",
     image: "/images/technologies/wix.png",
   },
   {
-    id: 12,
-    name: "Clerk",
-    image: "/images/technologies/clerk.png",
+    name: "Shopify",
+    image: "/images/technologies/shopify.png",
+  },
+  {
+    name: "Microsoft Fabric",
+    image: "/images/technologies/fabric.png",
+  },
+  {
+    name: "Microsoft Power BI",
+    image: "/images/technologies/powerbi.png",
   },
 ];
 
@@ -102,5 +90,5 @@ export const clientsData: Client[] = [
     name: "Arioso Investment AG",
     href: "https://arioso-investment-ag.netlify.app/",
     image: "/images/clients/Arioso_Investment-removebg-preview.png",
-  }
+  },
 ];
