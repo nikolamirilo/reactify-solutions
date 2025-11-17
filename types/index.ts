@@ -8,6 +8,7 @@ export type Client = {
   name: string;
   href: string;
   image: string;
+  description?: string;
 };
 export type FetchOptions = {
   method: "GET" | "POST" | "PUT" | "DELETE" | "PATCH";

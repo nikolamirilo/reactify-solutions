@@ -12,7 +12,7 @@ const Testimonials: any = async () => {
   if (testimonials)
     return (
       <section
-        className="bg-primaryColor/[.03] relative z-10 mt-16 border-t border-textColor/[.15] py-12 dark:border-white/[.15]"
+        className="relative z-10 mt-16 border-t border-textColor/[.15] bg-primaryColor/[.03] py-12 dark:border-white/[.15]"
         id="testimonials"
       >
         <div className="container relative">
@@ -41,11 +41,12 @@ const Testimonials: any = async () => {
             <CustomLink
               href="/add-testimonial"
               title="Add testimonial"
+              //@ts-ignore
               icon={<GoPlusCircle size={30} />}
             />
           </div>
         </div>
-        <div className="absolute top-5 right-0 z-[-1]">
+        <div className="absolute right-0 top-5 z-[-1]">
           <svg
             width="238"
             height="531"
@@ -99,7 +100,7 @@ const Testimonials: any = async () => {
             </defs>
           </svg>
         </div>
-        <div className="absolute left-0 bottom-5 z-[-1]">
+        <div className="absolute bottom-5 left-0 z-[-1]">
           <svg
             width="279"
             height="106"

@@ -1,13 +1,19 @@
-import { MetadataRoute } from "next"
+import { MetadataRoute } from "next";
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
     name: "Reactify Solutions",
     short_name: "Reactify Solutions",
-    description: "We provide cutting-edge digital solutions by utilizing the latest technologies to develop innovative and intuitive software that enhances your online presence and drives substantial growth. Integrating AI insights, we optimize your site for search engines and craft impactful marketing campaigns to maximize visibility and engagement.",
+    description:
+      "We provide cutting-edge digital solutions by utilizing the latest technologies to develop innovative and intuitive software that enhances your online presence and drives substantial growth. Integrating AI insights, we optimize your site for search engines and craft impactful marketing campaigns to maximize visibility and engagement.",
     theme_color: "#000000",
     categories: [
-      "web_development", "react", "mobile_development", "service_provider", "node", "solutions",
+      "web_development",
+      "react",
+      "mobile_development",
+      "service_provider",
+      "node",
+      "solutions",
     ],
     background_color: "#1D2144",
     start_url: "/",
@@ -40,5 +46,5 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
       },
     ],
-  }
+  };
 }
