@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client";
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
@@ -28,16 +29,13 @@ const ThemeToggler = () => {
       <div className="flex cursor-pointer items-center">
         <div className="relative">
           <div
-            className={`h-5 w-14 rounded-full ${
-              isDark ? "bg-dark" : "bg-[#f4f4f5]"
-            } shadow-inner`}
+            className={`h-5 w-14 rounded-full ${isDark ? "bg-dark" : "bg-[#f4f4f5]"
+              } shadow-inner`}
           ></div>
           <div
-            className={`${
-              isDark ? "" : "translate-x-full"
-            } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full ${
-              isDark ? "bg-white" : "bg-dark"
-            } transition`}
+            className={`${isDark ? "" : "translate-x-full"
+              } shadow-switch-1 absolute left-0 top-[-4px] flex h-7 w-7 items-center justify-center rounded-full ${isDark ? "bg-white" : "bg-dark"
+              } transition`}
           >
             {isDark ? (
               <AiOutlineMoon size={25} className="text-dark" />

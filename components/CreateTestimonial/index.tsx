@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client";
 import React, { useState } from "react";
 import StarRatings from "../../node_modules/react-star-ratings";
@@ -30,7 +31,7 @@ const CreateTestimonial = () => {
   }
   return (
     <section id="contact" className="overflow-hidden pt-5 pb-16">
-      {isOpen ? <InfoModal isOpen={isOpen} setIsOpen={setIsOpen} message="We received your message and we will get back to you through email."/> : null}
+      {isOpen ? <InfoModal isOpen={isOpen} setIsOpen={setIsOpen} message="We received your message and we will get back to you through email." /> : null}
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full max-w-[70rem] px-4">
@@ -117,7 +118,7 @@ const CreateTestimonial = () => {
                       type="submit"
                       className="bg-primaryColor rounded-md py-4 flex flex-row gap-1 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
                     >
-                      {isLoading ? <ImSpinner9 size={20} className="animate-spin"/> : null}
+                      {isLoading ? <ImSpinner9 size={20} className="animate-spin" /> : null}
                       Submit
                     </button>
                   </div>

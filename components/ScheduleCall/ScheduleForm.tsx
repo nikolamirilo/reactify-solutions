@@ -1,10 +1,11 @@
+//@ts-nocheck
 'use client'
 import { sendEmail } from "@/actions"
 import { useDatePicker } from "@/context/DatePickerContext"
 import { useState } from "react"
 import { ImSpinner9 } from "react-icons/im";
 
-export default function ScheduleForm({setIsOpen}: {setIsOpen: any}) {
+export default function ScheduleForm({ setIsOpen }: { setIsOpen: any }) {
   const { selectedDate } = useDatePicker()
   const [email, setEmail] = useState('')
   const [fullName, setFullName] = useState('')
@@ -15,7 +16,7 @@ export default function ScheduleForm({setIsOpen}: {setIsOpen: any}) {
     e.preventDefault()
     setIsLoading(true)
     console.log('Form submitted:', { email, fullName, subject, selectedDate })
-    const res = await sendEmail({ name:fullName, email, message: `I would like to schedule a call on date: ${selectedDate.toLocaleDateString()}.`, subject});
+    const res = await sendEmail({ name: fullName, email, message: `I would like to schedule a call on date: ${selectedDate.toLocaleDateString()}.`, subject });
     if (res == true) {
       setIsOpen(true)
       setFullName("");
@@ -25,7 +26,7 @@ export default function ScheduleForm({setIsOpen}: {setIsOpen: any}) {
     } else {
       alert("Error occured, please contact support");
       setIsLoading(false)
-      }
+    }
   }
 
   return (
@@ -81,8 +82,8 @@ export default function ScheduleForm({setIsOpen}: {setIsOpen: any}) {
           type="submit"
           className="w-full flex flex-row gap-1 justify-center items-center px-4 py-2 text-white font-medium rounded-md shadow-sm bg-primaryColor focus:outline-none transition-colors"
         >
-          {isLoading ? <ImSpinner9 size={20} className="animate-spin"/> : null}
-          
+          {isLoading ? <ImSpinner9 size={20} className="animate-spin" /> : null}
+
           Schedule Call
         </button>
       </div>

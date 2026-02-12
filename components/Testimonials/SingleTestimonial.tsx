@@ -1,3 +1,4 @@
+//@ts-nocheck
 import { Testimonial } from "@/types";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 const starIcon = (

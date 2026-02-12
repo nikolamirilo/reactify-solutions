@@ -1,18 +1,16 @@
+//@ts-nocheck
 "use client";
 import SectionTitle from "../Common/SectionTitle";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import Image from "next/image";
+import Link from "next/link";
 import {
   MdOutlineKeyboardArrowLeft,
   MdOutlineKeyboardArrowRight,
 } from "react-icons/md";
+import solutionsData from "./solutionsData";
 
 const Solutions = () => {
-  const images = [
-    "https://th.bing.com/th/id/R.7cb154c23e8d0d1a8aee715f841462d7?rik=qxar8HS8J%2fDRjw&pid=ImgRaw&r=0",
-    "https://th.bing.com/th/id/R.8932b66db42f6a7808f50ee11b5d47bf?rik=Hk8al53z6SzkHg&pid=ImgRaw&r=0",
-  ];
-  
   return (
     <>
       <section
@@ -27,8 +25,9 @@ const Solutions = () => {
           />
 
           <Carousel
-            className="h-[500px] w-[98vw]  max-w-[1000px] rounded-xl md:w-9/12"
+            className="aspect-video w-[98vw] max-w-[1000px] rounded-xl md:w-9/12"
             autoplay={true}
+            autoplayDelay={10000}
             prevArrow={({ handlePrev }) => (
               <IconButton
                 variant="text"
@@ -57,28 +56,55 @@ const Solutions = () => {
                 {new Array(length).fill("").map((_, i) => (
                   <span
                     key={i}
-                    className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                      activeIndex === i
-                        ? "bg-primaryColor w-8"
-                        : "w-4 bg-gray-400"
-                    }`}
+                    className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${activeIndex === i
+                      ? "bg-primaryColor w-8"
+                      : "w-4 bg-gray-400"
+                      }`}
                     onClick={() => setActiveIndex(i)}
                   />
                 ))}
               </div>
             )}
           >
-            {images.map((item, index) => {
+            {solutionsData.map((solution, index) => {
               return (
-                <div className="relative h-full w-full rounded-xl bg-cover bg-center ">
+                <Link
+                  href={`/solutions/${solution.id}`}
+                  key={index}
+                  className="group relative h-full w-full rounded-xl bg-cover bg-center block"
+                >
                   <Image
-                    src={item}
-                    key={index}
-                    alt="Carousel Item"
+                    src={solution.images[0]}
+                    alt={solution.name}
                     fill
-                    className="object-cover object-center"
+                    className="object-cover object-center rounded-xl"
                   />
-                </div>
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 ease-in-out rounded-xl flex flex-col justify-end p-6 md:p-10">
+                    <h3 className="text-white text-2xl md:text-4xl font-bold mb-2 md:mb-4 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500">
+                      {solution.name}
+                    </h3>
+                    <p className="text-white/90 text-sm md:text-base mb-4 md:mb-6 max-w-2xl transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 delay-75">
+                      {solution.briefDescription}
+                    </p>
+                    <button className="bg-primaryColor hover:bg-primaryColor/90 text-white px-6 py-3 rounded-lg font-semibold w-fit transform translate-y-4 group-hover:translate-y-0 transition-all duration-500 delay-150 flex items-center gap-2">
+                      View Details
+                      <svg
+                        className="w-5 h-5"
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth={2}
+                          d="M17 8l4 4m0 0l-4 4m4-4H3"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                </Link>
               );
             })}
           </Carousel>

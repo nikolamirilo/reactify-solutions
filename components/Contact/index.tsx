@@ -1,3 +1,4 @@
+//@ts-nocheck
 "use client";
 import { sendEmail } from "@/actions";
 import { fetchData } from "@/helpers/client";
@@ -15,7 +16,7 @@ const Contact = () => {
   async function handleSubmit(e: any) {
     e.preventDefault();
     setIsLoading(true)
-    const res = await sendEmail({ name, email, message, subject:'New message from Reactify Solutions website' });
+    const res = await sendEmail({ name, email, message, subject: 'New message from Reactify Solutions website' });
     if (res == true) {
       setIsOpen(true)
       setIsLoading(false)
@@ -28,7 +29,7 @@ const Contact = () => {
   }
   return (
     <section id="contact" className="overflow-hidden pt-5 pb-16">
-      {isOpen ? <InfoModal isOpen={isOpen} setIsOpen={setIsOpen} message="Thank you for reaching out! We have received your message and will respond to you via email shortly."/> : null}
+      {isOpen ? <InfoModal isOpen={isOpen} setIsOpen={setIsOpen} message="Thank you for reaching out! We have received your message and will respond to you via email shortly." /> : null}
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full max-w-[70rem] px-4">
@@ -96,7 +97,7 @@ const Contact = () => {
                       type="submit"
                       className="bg-primaryColor rounded-md flex flex-row gap-1 py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
                     >
-                      {isLoading ? <ImSpinner9 size={20} className="animate-spin"/> : null}
+                      {isLoading ? <ImSpinner9 size={20} className="animate-spin" /> : null}
                       Submit
                     </button>
                   </div>

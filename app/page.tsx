@@ -1,5 +1,4 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import Clients from "@/components/Clients";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Services from "@/components/Services";
 import Hero from "@/components/Hero";
@@ -30,7 +29,7 @@ export default async function page() {
       <AboutSectionOne />
       <Services />
       <Technologies />
-      {/* <Solutions /> */}
+      <Solutions />
       {/* <Video /> */}
       {/* <Clients /> */}
       <Testimonials />
