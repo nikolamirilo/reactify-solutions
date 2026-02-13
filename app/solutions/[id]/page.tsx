@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import solutionsData from "@/components/Solutions/solutionsData";
+import ImageCarousel from "@/components/Solutions/ImageCarousel";
 import { Metadata } from "next";
 import {
     FaFacebook,
@@ -106,14 +107,7 @@ export default function SolutionDetailsPage({
                     {/* Left Column - Image & Description */}
                     <div className="lg:col-span-2 space-y-8">
                         <div className="rounded-xl overflow-hidden border border-textColor/10 dark:border-white/10">
-                            <div className="relative aspect-video w-full">
-                                <Image
-                                    src={solution.image}
-                                    alt={solution.name}
-                                    fill
-                                    className="object-cover"
-                                />
-                            </div>
+                            <ImageCarousel images={solution.images} solutionName={solution.name} />
                         </div>
 
                         <div>

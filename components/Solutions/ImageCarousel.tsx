@@ -17,8 +17,7 @@ export default function ImageCarousel({ images, solutionName }: ImageCarouselPro
                     alt={solutionName}
                     fill
                     className="object-cover"
-                    quality={100}
-                    priority
+
                 />
             </div>
         );
