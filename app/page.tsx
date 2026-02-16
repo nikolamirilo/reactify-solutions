@@ -28,8 +28,8 @@ export default async function page() {
       <Hero />
       <AboutSectionOne />
       <Services />
-      <Technologies />
       <Solutions />
+      <Technologies />
       {/* <Video /> */}
       {/* <Clients /> */}
       <Testimonials />

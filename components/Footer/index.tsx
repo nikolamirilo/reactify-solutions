@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-base-300 text-base-content wow fadeInUp bg-primaryColor relative z-10 flex items-center justify-center border-b border-t border-textColor/[.15] bg-opacity-5 p-4 py-5 dark:border-white/[.15]">
+    <footer className="bg-base-300 bg-opacity-5 text-base-content wow fadeInUp relative z-10 flex items-center justify-center  p-4 py-5">
       <aside>
         <p className="text-center">
           Copyright ©{new Date().getFullYear()} - All rights reserved by

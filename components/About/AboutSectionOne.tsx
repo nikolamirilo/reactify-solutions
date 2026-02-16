@@ -20,7 +20,7 @@ const AboutSectionOne = () => {
   return (
     <section
       id="about"
-      className="border-b border-textColor/[.15] pt-16 dark:border-white/[.15] md:pt-20 lg:pt-28"
+      className="pt-16 md:pt-20 lg:pt-28"
     >
       <div className="container">
         <div className="pb-16 md:pb-20 lg:pb-28">

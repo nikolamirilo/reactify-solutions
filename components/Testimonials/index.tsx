@@ -12,7 +12,7 @@ const Testimonials: any = async () => {
   if (testimonials)
     return (
       <section
-        className="relative z-10 mt-16 border-t border-textColor/[.15] bg-primaryColor/[.03] py-12 dark:border-white/[.15]"
+        className="relative z-10 mt-16 bg-primaryColor/[.03] py-12"
         id="testimonials"
       >
         <div className="container relative">
@@ -25,11 +25,11 @@ const Testimonials: any = async () => {
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
             {testimonials.length > 0
               ? testimonials?.map((testimonial: Testimonial) => (
-                  <SingleTestimonial
-                    key={testimonial.id}
-                    testimonial={testimonial}
-                  />
-                ))
+                <SingleTestimonial
+                  key={testimonial.id}
+                  testimonial={testimonial}
+                />
+              ))
               : null}
           </div>
           {testimonials.length < 1 && (

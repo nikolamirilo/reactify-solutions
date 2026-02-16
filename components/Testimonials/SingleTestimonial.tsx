@@ -20,7 +20,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
     <div className="w-full">
       <div
-        className="wow fadeInUp bg-primaryColor relative min-h-[400px] rounded-md bg-opacity-5 p-8 shadow-one lg:px-5 xl:px-8"
+        className="wow fadeInUp bg-primaryColor relative min-h-[350px] md:min-h-[400px] rounded-md bg-opacity-5 p-8 shadow-one lg:px-5 xl:px-8"
         data-wow-delay=".1s"
       >
         <BiSolidQuoteAltLeft

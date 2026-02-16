@@ -15,7 +15,7 @@ const Solutions = () => {
     <>
       <section
         id="services"
-        className="bg-primaryColor/[.03] border-b border-textColor/[.15] py-16 dark:border-white/[.15] md:py-20 lg:py-28"
+        className="bg-primaryColor/[.03] py-16 md:py-20 lg:py-28"
       >
         <div className="container flex flex-col items-center justify-center">
           <SectionTitle
@@ -25,7 +25,7 @@ const Solutions = () => {
           />
 
           <Carousel
-            className="aspect-video w-[98vw] max-w-[1000px] rounded-xl md:w-9/12"
+            className="aspect-video w-full max-w-[1000px] rounded-xl md:w-9/12"
             autoplay={true}
             autoplayDelay={10000}
             prevArrow={({ handlePrev }) => (
@@ -34,7 +34,7 @@ const Solutions = () => {
                 color="white"
                 size="lg"
                 onClick={handlePrev}
-                className="bg-primaryColor hover:bg-primaryColor !absolute top-2/4 left-4 -translate-y-2/4 rounded-full"
+                className={`bg-primaryColor hover:bg-primaryColor !absolute top-2/4 left-4 -translate-y-2/4 rounded-full ${solutionsData.length > 1 ? "" : "hidden"}`}
               >
                 <MdOutlineKeyboardArrowLeft size={45} />
               </IconButton>
@@ -45,7 +45,7 @@ const Solutions = () => {
                 color="white"
                 size="lg"
                 onClick={handleNext}
-                className="bg-primaryColor hover:bg-primaryColor !absolute top-2/4 !right-4 -translate-y-2/4 rounded-full"
+                className={`bg-primaryColor hover:bg-primaryColor !absolute top-2/4 !right-4 -translate-y-2/4 rounded-full ${solutionsData.length > 1 ? "" : "hidden"}`}
               >
                 <MdOutlineKeyboardArrowRight size={45} />
               </IconButton>
