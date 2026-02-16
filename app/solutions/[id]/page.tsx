@@ -13,6 +13,7 @@ import {
     FaExternalLinkAlt,
     FaShoppingCart,
 } from "react-icons/fa";
+import { MdOutlineMailOutline } from "react-icons/md";
 
 export async function generateMetadata({
     params,
@@ -28,12 +29,19 @@ export async function generateMetadata({
     }
 
     return {
-        title: `${solution.name} - Reactify Solutions`,
+        title: solution.name,
         description: solution.briefDescription,
         openGraph: {
             title: `${solution.name} - Reactify Solutions`,
             description: solution.briefDescription,
-            images: [solution.image],
+            images: [solution.images[0]],
+            url: `/solutions/${params.id}`,
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: `${solution.name} - Reactify Solutions`,
+            description: solution.briefDescription,
+            images: [solution.images[0]],
         },
     };
 }
@@ -279,8 +287,8 @@ export default function SolutionDetailsPage({
                         href="/contact"
                         className="inline-flex items-center gap-2 bg-primaryColor hover:bg-primaryColor/80 rounded-lg px-8 py-3 font-semibold text-white transition-colors"
                     >
-                        Reach out
-
+                        Contact us
+                        <MdOutlineMailOutline className="w-5 h-5" />
                     </Link>
                 </div>
             </div>

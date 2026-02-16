@@ -7,12 +7,12 @@ export const metadata: Metadata = {
   title: "About Us",
 };
 
-export default function page () {
+export default function page() {
   return (
     <>
       <Breadcrumb
         pageName="About Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Learn more about Reactify Solutions — our mission, values, and the team behind cutting-edge web development and digital transformation services."
       />
       <AboutSectionOne />
       <AboutSectionTwo />

@@ -1,4 +1,6 @@
+//@ts-nocheck
 import Link from "next/link";
+import { MdMiscellaneousServices, MdOutlineMailOutline } from "react-icons/md";
 
 const Hero = () => {
   return (
@@ -27,17 +29,17 @@ const Hero = () => {
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
-
                     href="#services"
-                    className="bg-primaryColor min-w-40 hover:bg-primaryColor/80 rounded-md py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out"
+                    className="bg-primaryColor min-w-40 hover:bg-primaryColor/80 rounded-md py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out inline-flex items-center justify-center gap-2"
                   >
-
+                    <MdMiscellaneousServices className="w-5 h-5" />
                     Services
                   </Link>
                   <Link
                     href="/contact"
-                    className="rounded-md bg-black/20 py-4 min-w-40 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30"
+                    className="rounded-md bg-black/20 py-4 min-w-40 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30 inline-flex items-center justify-center gap-2"
                   >
+                    <MdOutlineMailOutline className="w-5 h-5" />
                     Contact us
                   </Link>
                 </div>

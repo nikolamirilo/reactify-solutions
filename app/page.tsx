@@ -9,15 +9,21 @@ import Solutions from "@/components/Solutions";
 import CTA from "@/components/CTA/CTA";
 
 export const metadata: Metadata = {
-  title: "Reactify Solutions",
+  title: { absolute: "Reactify Solutions — Web Development & Digital Transformation" },
   description:
     "Reactify Solutions - Your Partner in Cutting-Edge Web Development and Digital Transformation. We specialize in crafting innovative web solutions using the latest technologies to drive your business forward.",
   openGraph: {
-    title: "Reactify Solutions",
+    title: "Reactify Solutions — Web Development & Digital Transformation",
     description:
       "Reactify Solutions - Your Partner in Cutting-Edge Web Development and Digital Transformation. We specialize in crafting innovative web solutions using the latest technologies to drive your business forward.",
-    url: "https://www.reactify-solutions.com",
+    url: "/",
     images: ["/opengraph-image.png"],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Reactify Solutions — Web Development & Digital Transformation",
+    description:
+      "Your Partner in Cutting-Edge Web Development and Digital Transformation.",
   },
 };
 
