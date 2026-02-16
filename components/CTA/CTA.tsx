@@ -17,7 +17,7 @@ const CTA = () => {
     }, []);
 
     return (
-        <section className="mb-16 bg-base-300 bg-opacity-5">
+        <section className="mb-16 overflow-hidden bg-base-300 bg-opacity-5">
             <div className="gap-8 items-center py-8 px-4 mx-auto xl:gap-16 lg:grid lg:grid-cols-[32%,68%] sm:py-8 lg:px-6 max-w-[90vw] xl:max-w-screen-xl">
                 <div className="max-w-[280px] mx-auto lg:mx-0 lg:max-w-[600px]">
                     <DotLottieReact
