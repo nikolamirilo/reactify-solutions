@@ -1,6 +1,7 @@
 "use server";
 import InformationEmail from "@/components/Emails/InformationEmail";
-import { resend } from "@/constants";
+import { resend } from "@/lib/resend";
+import { technologiesData } from "@/constants";
 import { ContactData } from "@/types";
 import { sql } from "@vercel/postgres";
 
@@ -49,24 +50,24 @@ export async function getAllTestimonials() {
     return false;
   }
 }
-export async function sendEmail(contactData:ContactData) {
-  const {message, email, name, subject} = contactData
-  try{
-     const res = await resend.emails.send({
-          from: 'office@reactify-solutions.com',
-          to: 'reactify.developer@gmail.com',
-          subject: subject,
-          reply_to: email,
-          react: InformationEmail({
-            email, name, message, subject
-          }) as React.ReactElement,
-        });
-        console.log(res)
-        if(res.error == null){
-        return true
-        }
-  }catch(error:any){
-      console.log(error)
-      return false
+export async function sendEmail(contactData: ContactData) {
+  const { message, email, name, subject } = contactData
+  try {
+    const res = await resend.emails.send({
+      from: 'office@reactify-solutions.com',
+      to: 'reactify.developer@gmail.com',
+      subject: subject,
+      reply_to: email,
+      react: InformationEmail({
+        email, name, message, subject
+      }) as React.ReactElement,
+    });
+    console.log(res)
+    if (res.error == null) {
+      return true
+    }
+  } catch (error: any) {
+    console.log(error)
+    return false
   }
 }

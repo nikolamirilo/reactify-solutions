@@ -1,8 +1,8 @@
 import { Client, Technology } from "@/types";
-import { Resend } from "resend";
+// import { Resend } from "resend";
 
 export const APP_URL = process.env.APP_URL!;
-export const resend = new Resend(process.env.RESEND_API_KEY!);
+// export const resend = new Resend(process.env.RESEND_API_KEY!);
 
 export const technologiesData: Technology[] = [
   {
