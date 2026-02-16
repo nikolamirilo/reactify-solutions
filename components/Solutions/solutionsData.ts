@@ -4,7 +4,6 @@ export interface Solution {
     tagline: string;
     briefDescription: string;
     fullDescription: string;
-    image: string;
     images: string[];
     productUrl?: string;
     socialMedia: {
@@ -35,9 +34,8 @@ const solutionsData: Solution[] = [
             "AI-powered digital catalog platform that helps businesses create, share, and track mobile-friendly product catalogs instantly.",
         fullDescription:
             "Quicktalog is a comprehensive digital catalog platform designed for small and medium-sized businesses. It combines AI-powered content generation, OCR technology, and customizable templates to transform how businesses showcase their products. With real-time engagement tracking and seamless sharing capabilities, Quicktalog empowers businesses to improve sales efficiency and enhance customer experience.",
-        image: "/quicktalog.png",
-        images: ["/quicktalog.png", "/quicktalog-builder.png", "/quicktalog-dashboard.png", "/quicktalog-analytics.png"],
-        productUrl: "https://quicktalog.app",
+        images: ["/images/solutions/quicktalog/quicktalog.png", "/images/solutions/quicktalog/quicktalog-builder.png", "/images/solutions/quicktalog/quicktalog-dashboard.png", "/images/solutions/quicktalog/quicktalog-analytics.png"],
+        productUrl: "https://www.quicktalog.app",
         socialMedia: {
         },
         stats: [
