@@ -3,6 +3,7 @@
 html {
   scroll-behavior: smooth !important;
 }
+
 :root {
   -webkit-tap-highlight-color: transparent !important;
 }
@@ -37,7 +38,7 @@ html {
 }
 
 @layer components {
-  input[type="checkbox"]:checked ~ label span svg {
+  input[type="checkbox"]:checked~label span svg {
     @apply inline-flex;
   }
 
@@ -49,11 +50,23 @@ html {
     @apply opacity-70;
   }
 
-  input#togglePlan:checked ~ .dot {
+  input#togglePlan:checked~.dot {
     @apply translate-x-full;
   }
 
-  input#checkboxLabel:checked ~ .box span {
+  input#checkboxLabel:checked~.box span {
     @apply opacity-100;
+  }
+}
+
+@keyframes iconPulse {
+
+  0%,
+  100% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.05);
   }
 }

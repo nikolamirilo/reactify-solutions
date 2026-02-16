@@ -1,5 +1,6 @@
-import Image from "next/image";
+"use client";
 import SectionTitle from "../Common/SectionTitle";
+import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
 const checkIcon = (
   <svg width="16" height="13" viewBox="0 0 16 13" className="fill-current">
@@ -53,14 +54,13 @@ const AboutSectionOne = () => {
 
             <div className="w-full px-4 lg:w-1/2">
               <div
-                className="wow fadeInUp relative mx-auto aspect-[25/24] max-w-[500px] lg:mr-0"
+                className="wow fadeInUp relative mx-auto max-w-[500px] lg:mr-0"
                 data-wow-delay=".2s"
               >
-                <Image
-                  src="/images/about/about-image.svg"
-                  alt="about-image"
-                  fill
-                  className="mx-auto max-w-full lg:mr-0"
+                <DotLottieReact
+                  src="https://lottie.host/a4ddbe4f-088f-45cc-b280-5ea643602553/wUNBZAJlCy.lottie"
+                  loop
+                  autoplay
                 />
               </div>
             </div>
