@@ -162,11 +162,6 @@ export const technologiesData: Technology[] = [
     url: "https://metamask.io/",
   },
   {
-    name: "Solidity",
-    image: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/solidity-colored.svg",
-    url: "https://docs.soliditylang.org/",
-  },
-  {
     name: "Figma",
     image: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/figma-colored.svg",
     url: "https://www.figma.com/",

@@ -94,7 +94,7 @@ const solutionsData: Solution[] = [
         solution:
             "We developed Quicktalog as an all-in-one digital catalog platform that eliminates printing costs and enables instant updates. By integrating AI-powered content generation, businesses can create professional product descriptions in seconds. The OCR feature allows them to digitize existing materials effortlessly. Customizable templates ensure brand consistency, while real-time analytics provide valuable insights into customer behavior and product popularity.",
         results: [
-            "Reduced catalog creation time from weeks to hours",
+            "Reduced catalog creation time from hours to minutes",
             "Eliminated printing costs, saving businesses up to 90% on catalog expenses",
             "Increased customer engagement by 85% through mobile-friendly catalogs",
             "Enabled real-time product updates, improving sales efficiency",
