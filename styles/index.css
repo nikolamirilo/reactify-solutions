@@ -70,3 +70,30 @@ html {
     transform: scale(1.05);
   }
 }
+
+@keyframes atom-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes electron-orbit {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.atom-spinner {
+  animation: atom-spin 8s linear infinite;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+}

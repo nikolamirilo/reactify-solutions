@@ -27,17 +27,18 @@ export const metadata: Metadata = {
   },
 };
 
+import PreLoader from "@/components/Common/PreLoader";
+
 export default async function page() {
   return (
     <>
+      <PreLoader />
       <ScrollUp />
       <Hero />
       <AboutSectionOne />
       <Services />
       <Solutions />
       <Technologies />
-      {/* <Video /> */}
-      {/* <Clients /> */}
       <Testimonials />
       <CTA />
     </>

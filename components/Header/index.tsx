@@ -43,6 +43,9 @@ const Header = () => {
         className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${sticky
           ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-black dark:!bg-opacity-80"
           : "absolute"
+          } ${navbarOpen
+            ? "!bg-white !bg-opacity-80 backdrop-blur-md dark:!bg-black dark:!bg-opacity-80"
+            : ""
           }`}
       >
         <div className="container">
@@ -56,8 +59,8 @@ const Header = () => {
                 <Image
                   src="/images/logo/logo.png"
                   alt="logo"
-                  width={160}
-                  height={40}
+                  width={150}
+                  height={100}
                 />
               </Link>
             </div>
@@ -83,37 +86,36 @@ const Header = () => {
               </button>
               <nav
                 id="navbarCollapse"
-                className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-textColor/50 bg-white py-4 px-6 duration-300 dark:border-textColor/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
+                className={`navbar absolute right-0 z-30 w-full py-2 px-6 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
                   ? "visibility top-full opacity-100"
-                  : "invisible top-[120%] opacity-0"
-                  }`}
+                  : "invisible top-[90%] opacity-0"
+                  } backdrop-blur-md shadow-lg bg-black`}
               >
-                <ul className="block lg:flex lg:space-x-12">
-                  {menuData
-                    .filter((menuItem) => !menuItem.path.includes("#"))
-                    .map((menuItem, index) => (
+                <ul className="flex flex-col items-end lg:flex-row lg:space-x-12">
+                  {menuData.map((menuItem, index) => {
+                    // Hide "Home" link if we are already on the home page
+                    if (path === "/" && menuItem.path === "/") {
+                      return null;
+                    }
+
+                    // Handle hash links from other pages
+                    let href = menuItem.path;
+                    if (menuItem.path.startsWith("#") && path !== "/") {
+                      href = "/" + menuItem.path;
+                    }
+
+                    return (
                       <li key={menuItem.id} className="group relative">
                         <Link
-                          href={menuItem.path}
-                          className={`hover:!text-primaryColor flex py-2 text-base text-dark transition-all ease-in dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:hover:scale-110`}
+                          href={href}
+                          onClick={() => setNavbarOpen(false)} // Close navbar on click
+                          className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:group-hover:text-white lg:group-hover:opacity-70 rounded-md hover:bg-gray-100 dark:hover:bg-white/5 px-4 lg:hover:bg-transparent lg:px-0 justify-end`}
                         >
                           {menuItem.title}
                         </Link>
                       </li>
-                    ))}
-                  {path == "/" &&
-                    menuData
-                      .filter((menuItem) => menuItem.path.includes("#"))
-                      .map((menuItem, index) => (
-                        <li key={menuItem.id} className="group relative">
-                          <Link
-                            href={menuItem.path}
-                            className={`hover:!text-primaryColor flex py-2 text-base text-dark transition-all ease-in dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:hover:scale-110`}
-                          >
-                            {menuItem.title}
-                          </Link>
-                        </li>
-                      ))}
+                    );
+                  })}
                 </ul>
               </nav>
             </div>

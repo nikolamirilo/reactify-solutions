@@ -20,6 +20,12 @@ export default function manifest(): MetadataRoute.Manifest {
       },
       {
         src: "/icon.png",
+        sizes: "512x512",
+        type: "image/png",
+        purpose: "any",
+      },
+      {
+        src: "/icon-192x192.png",
         sizes: "192x192",
         type: "image/png",
         purpose: "any",
@@ -32,7 +38,12 @@ export default function manifest(): MetadataRoute.Manifest {
       },
       {
         src: "/apple-icon.png",
-        sizes: "180x180",
+        sizes: "192x192",
+        type: "image/png",
+      },
+      {
+        src: "/twitter-image.png",
+        sizes: "512x512",
         type: "image/png",
       },
     ],
