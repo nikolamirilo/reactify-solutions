@@ -54,10 +54,10 @@ module.exports = withMT({
       keyframes: {
         "marquee-left": {
           "0%": { transform: "translateX(0%)" },
-          "100%": { transform: "translateX(-100%)" },
+          "100%": { transform: "translateX(-25%)" },
         },
         "marquee-right": {
-          "0%": { transform: "translateX(-100%)" },
+          "0%": { transform: "translateX(-25%)" },
           "100%": { transform: "translateX(0%)" },
         },
       },

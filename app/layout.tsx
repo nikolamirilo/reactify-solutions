@@ -1,5 +1,5 @@
 import ClientLayout from "@/components/ClientLayout";
-import { inter } from "@/fonts";
+import { inter, josefinSans, roboto } from "@/fonts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`dark:bg-black overflow-x-hidden ${inter.className}`}>
+      <body className={`dark:bg-black overflow-x-hidden ${roboto.className}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

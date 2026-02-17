@@ -26,8 +26,8 @@ const Technologies = () => {
         <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-white dark:from-[#1D2144] to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-white dark:from-[#1D2144] to-transparent z-10 pointer-events-none" />
 
-        <div className="flex animate-marquee-left hover:[animation-play-state:paused]">
-          {[...row1, ...row1, ...row1].map((brand, i) => (
+        <div className="flex w-max animate-marquee-left hover:[animation-play-state:paused]">
+          {[...row1, ...row1, ...row1, ...row1].map((brand, i) => (
             <TechCard key={`row1-${i}`} brand={brand} />
           ))}
         </div>
@@ -39,8 +39,8 @@ const Technologies = () => {
         <div className="absolute left-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-r from-white dark:from-[#1D2144] to-transparent z-10 pointer-events-none" />
         <div className="absolute right-0 top-0 bottom-0 w-24 md:w-40 bg-gradient-to-l from-white dark:from-[#1D2144] to-transparent z-10 pointer-events-none" />
 
-        <div className="flex animate-marquee-right hover:[animation-play-state:paused]">
-          {[...row2, ...row2, ...row2].map((brand, i) => (
+        <div className="flex w-max animate-marquee-right hover:[animation-play-state:paused]">
+          {[...row2, ...row2, ...row2, ...row2].map((brand, i) => (
             <TechCard key={`row2-${i}`} brand={brand} />
           ))}
         </div>
@@ -52,12 +52,15 @@ const Technologies = () => {
 export default Technologies;
 
 const TechCard = ({ brand }: { brand: Technology }) => {
-  const { image, name } = brand;
+  const { image, name, url } = brand;
 
   return (
     <div className="flex-shrink-0 mx-3 md:mx-4">
-      <div
-        className={`group relative flex flex-col items-center justify-center gap-3 rounded-xl px-6 py-5 md:px-8 md:py-6 cursor-pointer transition-all duration-300
+      <a
+        href={url}
+        target="_blank"
+        rel="noreferrer"
+        className={`group relative flex flex-col items-center justify-center gap-3 rounded-xl px-6 py-5 md:px-8 md:py-6 transition-all duration-300
         bg-white/60 dark:bg-white/5 backdrop-blur-sm border border-dark/5 dark:border-white/10
         hover:bg-white dark:hover:bg-white/10 hover:shadow-[0_0_30px_rgba(27,153,139,0.15)] hover:border-primaryColor/30 hover:scale-105
         ${image.includes("next") ? "" : ""}`}
@@ -77,7 +80,7 @@ const TechCard = ({ brand }: { brand: Technology }) => {
 
         {/* Glow effect on hover */}
         <div className="absolute inset-0 rounded-xl bg-primaryColor/0 group-hover:bg-primaryColor/[0.03] transition-colors duration-300" />
-      </div>
+      </a>
     </div>
   );
 };
