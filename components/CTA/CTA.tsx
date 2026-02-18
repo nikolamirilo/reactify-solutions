@@ -39,10 +39,10 @@ const CTA = () => {
                     <div className="flex justify-center lg:justify-start">
                         <button
                             onClick={() => setIsOpen(true)}
-                            className="inline-flex items-center text-white bg-primaryColor font-medium rounded-lg text-lg px-5 py-2.5 text-center hover:bg-opacity-90 transition-all"
+                            className="inline-flex items-center text-white bg-gradient-to-r from-primaryColor to-[#158C7E] font-medium rounded-full text-lg px-8 py-4 text-center hover:bg-opacity-90 transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_0px_rgba(27,153,139,0.5)] hover:scale-105 active:scale-95 shadow-[0_4px_20px_0px_rgba(27,153,139,0.3)]"
                         >
+                            <FaRegCalendarAlt className="mr-2" />
                             Schedule a Call
-                            <FaRegCalendarAlt className="ml-2" />
                         </button>
                     </div>
                 </div>

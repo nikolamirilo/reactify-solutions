@@ -1,3 +1,4 @@
+"use server";
 import { APP_URL } from "@/constants";
 import { FetchOptions } from "@/types";
 

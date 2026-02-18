@@ -27,19 +27,19 @@ const Hero = () => {
                   site for search engines and craft impactful marketing
                   campaigns to maximize visibility and engagement.
                 </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-6 sm:space-y-0">
                   <Link
                     href="#services"
-                    className="bg-primaryColor min-w-40 hover:bg-primaryColor/80 rounded-md py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out inline-flex items-center justify-center gap-2"
+                    className="group min-w-[160px] rounded-full py-4 px-8 text-base font-semibold text-white duration-300 ease-in-out bg-gradient-to-r from-primaryColor to-[#158C7E] shadow-[0_4px_20px_0px_rgba(27,153,139,0.3)] hover:shadow-[0_10px_30px_0px_rgba(27,153,139,0.5)] hover:-translate-y-1 hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2 transition-all"
                   >
-                    <MdMiscellaneousServices className="w-5 h-5" />
+                    <MdMiscellaneousServices className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                     Services
                   </Link>
                   <Link
                     href="/contact"
-                    className="rounded-md bg-black/20 py-4 min-w-40 px-8 text-base font-semibold text-black duration-300 ease-in-out hover:bg-black/30 dark:bg-white/20 dark:text-white dark:hover:bg-white/30 inline-flex items-center justify-center gap-2"
+                    className="group rounded-full py-4 min-w-[160px] px-8 text-base font-semibold text-black dark:text-white duration-300 ease-in-out bg-white/5 backdrop-blur-sm border border-black/10 dark:border-white/10 hover:bg-black/5 dark:hover:bg-white/10 hover:shadow-lg hover:shadow-black/5 dark:hover:shadow-white/5 hover:-translate-y-1 hover:scale-105 active:scale-95 inline-flex items-center justify-center gap-2 transition-all"
                   >
-                    <MdOutlineMailOutline className="w-5 h-5" />
+                    <MdOutlineMailOutline className="w-5 h-5 transition-transform group-hover:translate-x-1" />
                     Contact us
                   </Link>
                 </div>

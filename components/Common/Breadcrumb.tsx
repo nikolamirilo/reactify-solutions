@@ -9,7 +9,7 @@ const Breadcrumb = ({
 }) => {
   return (
     <>
-      <section className="relative z-10 overflow-hidden pt-28 lg:pt-[150px] pb-8 lg:pb-0">
+      <section className="relative z-10 overflow-hidden px-8 pt-28 lg:pt-[150px] pb-8 lg:pb-0">
         <div className="container">
           <div className="-mx-4 flex flex-wrap items-center">
             <div className="w-full px-4 md:w-8/12 lg:w-7/12">
@@ -20,24 +20,6 @@ const Breadcrumb = ({
                 <p className="text-base font-medium leading-relaxed text-textColor">
                   {description}
                 </p>
-              </div>
-            </div>
-            <div className="w-full px-4 md:w-4/12 lg:w-5/12">
-              <div className="text-end">
-                <ul className="flex items-center md:justify-end">
-                  <li className="flex items-center">
-                    <Link
-                      href="/"
-                      className="hover:text-primaryColor pr-1 text-base font-medium text-textColor"
-                    >
-                      Home
-                    </Link>
-                    <span className="mr-3 block h-2 w-2 rotate-45 border-t-2 border-r-2 border-textColor"></span>
-                  </li>
-                  <li className="text-primaryColor text-base font-medium">
-                    {pageName}
-                  </li>
-                </ul>
               </div>
             </div>
           </div>

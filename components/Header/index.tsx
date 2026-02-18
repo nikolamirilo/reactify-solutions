@@ -109,7 +109,7 @@ const Header = () => {
                         <Link
                           href={href}
                           onClick={() => setNavbarOpen(false)} // Close navbar on click
-                          className={`flex py-2 text-base text-dark group-hover:opacity-70 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:group-hover:text-white lg:group-hover:opacity-70 rounded-md hover:bg-gray-100 dark:hover:bg-white/5 px-4 lg:hover:bg-transparent lg:px-0 justify-end`}
+                          className={`flex py-2 text-base text-dark group-hover:opacity-80 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:group-hover:text-white lg:group-hover:opacity-70 rounded-md px-4 lg:px-0 justify-end`}
                         >
                           {menuItem.title}
                         </Link>

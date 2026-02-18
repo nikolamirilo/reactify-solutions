@@ -116,7 +116,7 @@ const CreateTestimonial = () => {
                   <div className="w-full px-4">
                     <button
                       type="submit"
-                      className="bg-primaryColor rounded-md py-4 flex flex-row gap-1 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+                      className="rounded-full bg-gradient-to-r from-primaryColor to-[#158C7E] mb-6 md:mb-0 py-4 px-9 text-base font-medium text-white transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_0px_rgba(27,153,139,0.5)] hover:bg-opacity-80 hover:scale-105 active:scale-95 shadow-[0_4px_20px_0px_rgba(27,153,139,0.3)]"
                     >
                       {isLoading ? <ImSpinner9 size={20} className="animate-spin" /> : null}
                       Submit

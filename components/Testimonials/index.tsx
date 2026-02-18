@@ -3,12 +3,22 @@ import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 import CustomLink from "../Common/CustomLink";
 import { GoPlusCircle } from "react-icons/go";
-import { fetchData } from "@/helpers/client";
+import { APP_URL } from "@/constants";
 
 const Testimonials: any = async () => {
-  const testimonials = await fetchData("/api/testimonials", {
-    method: "GET",
-  });
+  let testimonials = [];
+  try {
+    const res = await fetch(`${APP_URL}/api/testimonials`, {
+      method: "GET",
+    });
+    if (res.ok) {
+      testimonials = await res.json();
+    } else {
+      console.error("Testimonials API error:", res.status, await res.text());
+    }
+  } catch (err) {
+    console.error("Failed to fetch testimonials:", err);
+  }
   if (testimonials)
     return (
       <section
