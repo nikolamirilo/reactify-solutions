@@ -27,6 +27,7 @@ export const metadata: Metadata = {
 };
 
 import PreLoader from "@/components/Common/PreLoader";
+import Testimonials from "@/components/Testimonials";
 
 export default async function page() {
   return (
@@ -38,6 +39,7 @@ export default async function page() {
       <Services />
       <Solutions />
       <Technologies />
+      <Testimonials />
       <CTA />
     </>
   );
