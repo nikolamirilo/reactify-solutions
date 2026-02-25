@@ -126,6 +126,11 @@ export const technologiesData: Technology[] = [
     image: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/firebase-colored.svg",
     url: "https://firebase.google.com/",
   },
+  {
+    name: "Convex",
+    image: "https://cdn.jsdelivr.net/gh/homarr-labs/dashboard-icons/webp/convex.webp",
+    url: "https://www.convex.dev/",
+  },
   // ── Cloud & Hosting ──
   {
     name: "AWS",
@@ -187,6 +192,16 @@ export const technologiesData: Technology[] = [
     name: "Vertex AI",
     image: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Vertex_AI_Logo.svg/3840px-Vertex_AI_Logo.svg.png",
     url: "https://cloud.google.com/vertex-ai",
+  },
+  {
+    name: "PyTorch",
+    image: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/pytorch-colored.svg",
+    url: "https://pytorch.org/",
+  },
+  {
+    name: "TensorFlow",
+    image: "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/tensorflow-colored.svg",
+    url: "https://www.tensorflow.org/",
   },
   // ── Data & Analytics ──
   {

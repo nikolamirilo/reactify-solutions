@@ -29,7 +29,7 @@ export default function RootLayout({
 }) {
   return (
     <html suppressHydrationWarning lang="en">
-      <body className={`dark:bg-black overflow-x-hidden ${roboto.className}`}>
+      <body className={`bg-black/[0.9] overflow-x-hidden ${roboto.className}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

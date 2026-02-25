@@ -22,7 +22,7 @@ const Testimonials: any = async () => {
   if (testimonials)
     return (
       <section
-        className="relative z-10 mt-16 overflow-hidden bg-primaryColor/[.03] py-12"
+        className="relative z-10 mt-16 overflow-hidden py-12"
         id="testimonials"
       >
         <div className="container relative">

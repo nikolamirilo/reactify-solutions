@@ -7,7 +7,7 @@ const Services = () => {
     <>
       <section
         id="services"
-        className="bg-primaryColor/[.03] py-16 md:py-20 lg:py-28"
+        className=" py-16 md:py-20 lg:py-28"
       >
         <div className="container">
           <SectionTitle
