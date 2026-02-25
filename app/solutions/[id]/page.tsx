@@ -20,7 +20,8 @@ export async function generateMetadata({
 }: {
     params: { id: string };
 }): Promise<Metadata> {
-    const solution = solutionsData.find((s) => s.id === params.id);
+    const {id} = await params
+    const solution = solutionsData.find((s) => s.id === id);
 
     if (!solution) {
         return {
@@ -46,13 +47,13 @@ export async function generateMetadata({
     };
 }
 
-export default function SolutionDetailsPage({
+export default async function SolutionDetailsPage({
     params,
 }: {
     params: { id: string };
 }) {
-    const solution = solutionsData.find((s) => s.id === params.id);
-
+    const {id} = await params;
+    const solution = solutionsData.find((s) => s.id === id);
     if (!solution) {
         notFound();
     }
