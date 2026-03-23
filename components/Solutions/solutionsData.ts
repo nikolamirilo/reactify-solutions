@@ -35,7 +35,7 @@ const solutionsData: Solution[] = [
     fullDescription:
       "Quicktalog is a comprehensive digital catalog platform designed for small and medium-sized businesses. It combines AI-powered content generation, OCR technology, and customizable templates to transform how businesses showcase their products. With real-time engagement tracking and seamless sharing capabilities, Quicktalog empowers businesses to improve sales efficiency and enhance customer experience.",
     images: [
-      "/images/solutions/quicktalog/quicktalog-banner.jpeg",
+      "/images/solutions/quicktalog/quicktalog-banner.png",
       "/images/solutions/quicktalog/quicktalog.png",
       "/images/solutions/quicktalog/quicktalog-builder.png",
       "/images/solutions/quicktalog/quicktalog-dashboard.png",
