@@ -32,7 +32,7 @@ export default function ImageCarousel({
     // ① aspect-video lives HERE so the carousel inherits a defined height
     <div className="relative aspect-video w-full overflow-hidden rounded-xl">
       <Carousel
-        // ② fill the outer wrapper completely — no internal padding/margin
+        // ② fill the outer wrapper completely - no internal padding/margin
         className="h-full w-full"
         autoplay={true}
         autoplayDelay={5000}
@@ -94,7 +94,7 @@ export default function ImageCarousel({
         )}
       >
         {images.map((img, index) => (
-          // ③ slides are h-full/w-full — they fill the carousel, not re-define it
+          // ③ slides are h-full/w-full - they fill the carousel, not re-define it
           <div key={index} className="relative h-full w-full">
             <Image
               src={img}

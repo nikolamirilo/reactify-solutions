@@ -46,7 +46,7 @@ const CreateTestimonial = () => {
     "mb-2 block text-sm font-semibold text-dark/80 dark:text-white/90 tracking-wide";
 
   return (
-    <section id="testimonial" className="overflow-hidden pt-5 pb-16">
+    <section id="testimonial" className="overflow-hidden pb-16 pt-5">
       {isOpen ? (
         <InfoModal
           isOpen={isOpen}
@@ -57,13 +57,13 @@ const CreateTestimonial = () => {
       <div className="container">
         <div className="w-full max-w-[70rem]">
           <div
-            className="wow fadeInUp rounded-2xl bg-white/60 dark:bg-white/[0.03] backdrop-blur-md border border-gray-200 dark:border-white/10 py-10 px-8 sm:p-[50px] shadow-lg"
+            className="wow fadeInUp rounded-2xl border border-gray-200 bg-white/60 px-8 py-10 shadow-lg backdrop-blur-md dark:border-white/10 dark:bg-white/[0.03] sm:p-[50px]"
             data-wow-delay=".15s"
           >
             <form action="submit" onSubmit={handleSubmit}>
-              <div className="flex flex-col lg:flex-row gap-8">
-                {/* Left column — short fields */}
-                <div className="w-full lg:w-1/2 flex flex-col gap-5">
+              <div className="flex flex-col gap-8 lg:flex-row">
+                {/* Left column - short fields */}
+                <div className="flex w-full flex-col gap-5 lg:w-1/2">
                   {/* Full Name */}
                   <div>
                     <label htmlFor="fullName" className={labelClasses}>
@@ -116,8 +116,8 @@ const CreateTestimonial = () => {
                   </div>
                 </div>
 
-                {/* Right column — testimonial message */}
-                <div className="w-full lg:w-1/2 flex flex-col">
+                {/* Right column - testimonial message */}
+                <div className="flex w-full flex-col lg:w-1/2">
                   <label htmlFor="content" className={labelClasses}>
                     Your Testimonial <span className="text-red-500">*</span>
                   </label>
@@ -128,7 +128,7 @@ const CreateTestimonial = () => {
                     name="content"
                     placeholder="Share your experience..."
                     required
-                    className={`${inputClasses} resize-none flex-1 min-h-[200px]`}
+                    className={`${inputClasses} min-h-[200px] flex-1 resize-none`}
                   ></textarea>
                 </div>
               </div>
@@ -137,9 +137,14 @@ const CreateTestimonial = () => {
               <div className="mt-8">
                 <button
                   type="submit"
-                  className="rounded-full bg-gradient-to-r from-primaryColor to-[#158C7E] py-4 px-9 text-base font-medium text-white transition-all duration-300 ease-in-out hover:shadow-[0_10px_30px_0px_rgba(27,153,139,0.5)] hover:bg-opacity-80 hover:scale-105 active:scale-95 shadow-[0_4px_20px_0px_rgba(27,153,139,0.3)]"
+                  className="rounded-full bg-gradient-to-r from-primaryColor to-[#158C7E] px-9 py-4 text-base font-medium text-white shadow-[0_4px_20px_0px_rgba(27,153,139,0.3)] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-opacity-80 hover:shadow-[0_10px_30px_0px_rgba(27,153,139,0.5)] active:scale-95"
                 >
-                  {isLoading ? <ImSpinner9 size={20} className="animate-spin inline mr-2" /> : null}
+                  {isLoading ? (
+                    <ImSpinner9
+                      size={20}
+                      className="mr-2 inline animate-spin"
+                    />
+                  ) : null}
                   Submit
                 </button>
               </div>

@@ -70,7 +70,7 @@ const Solutions = () => {
             )}
           >
             {solutionsData.map((solution, index) => (
-              // ③ slides use h-full — they fill the carousel, not redefine it
+              // ③ slides use h-full - they fill the carousel, not redefine it
               <Link
                 href={`/solutions/${solution.id}`}
                 key={index}

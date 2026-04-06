@@ -107,6 +107,84 @@ const solutionsData: Solution[] = [
       "Expanded market reach through multi-channel digital sharing",
     ],
   },
+  {
+    id: "unbg",
+    name: "unbg",
+    tagline: "Remove Image Backgrounds Instantly & for Free",
+    briefDescription:
+      "AI-powered background removal tool that runs 100% in the browser. No uploads, no sign-ups, no watermarks - just instant transparent PNGs.",
+    fullDescription:
+      "unbg is a free, privacy-first background removal tool powered by AI that runs entirely in the user's browser. Unlike cloud-based alternatives like remove.bg, unbg never uploads images to any server - all processing happens locally using an ONNX neural network model. It supports batch processing, a before/after comparison slider, manual brush editing (erase & restore), and high-resolution PNG downloads. Built with Next.js 16 and React 19, it delivers a premium, responsive experience on desktop and mobile.",
+    images: [
+      "/images/solutions/unbg/unbg-banner.png",
+      "/images/solutions/unbg/unbg-processing.png",
+      "/images/solutions/unbg/unbg-edit.png",
+    ],
+    productUrl: "https://unbg.tech",
+    socialMedia: {},
+    stats: [
+      {
+        label: "Processing",
+        value: "100%",
+        description: "Runs entirely in the browser - zero server uploads",
+      },
+      {
+        label: "Cost",
+        value: "$0",
+        description: "Completely free with no limits or watermarks",
+      },
+      {
+        label: "Privacy",
+        value: "Total",
+        description: "Images never leave the user's device",
+      },
+    ],
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "@imgly/background-removal",
+      "ONNX Runtime Web",
+      "WebAssembly",
+      "Canvas API",
+      "Vercel",
+    ],
+    functionalities: [
+      "AI-powered background removal running locally in the browser",
+      "Batch processing - upload and process multiple images at once",
+      "Before/after comparison slider with reveal animation",
+      "Manual brush editor with erase and restore modes",
+      "Adjustable brush size for fine-tuning results",
+      "High-resolution transparent PNG downloads",
+      "Batch download all processed images",
+      "Drag-and-drop and gallery upload support",
+      "Mobile-optimized with full touch support",
+      "HEIC/HEIF auto-conversion for mobile gallery photos",
+    ],
+    keyFeatures: [
+      "100% browser-based - no server uploads",
+      "AI-powered precision with ONNX neural network",
+      "Free forever with no watermarks or limits",
+      "Batch processing for multiple images",
+      "Before/after comparison slider",
+      "Manual erase & restore brush editor",
+      "Mobile-first responsive design",
+      "PWA-ready with offline model caching",
+    ],
+    challenge:
+      "Existing background removal tools like remove.bg require uploading images to external servers, raising privacy concerns. Free tiers are heavily limited - low resolution, watermarks, or daily caps. Mobile users face additional friction with unsupported formats (HEIC) and poor touch experiences. Businesses and individuals needed a truly free, private, and unlimited solution.",
+    solution:
+      "We built unbg to run AI background removal entirely in the browser using WebAssembly and the ONNX Runtime. The AI model downloads once (~80MB) and is cached for instant subsequent use. Images never leave the device, guaranteeing complete privacy. We added a full editing suite with a comparison slider and brush tools for manual refinement, batch processing for efficiency, and universal mobile support including automatic HEIC conversion.",
+    results: [
+      "Eliminated all server-side image processing - 100% client-side",
+      "Zero cost to users - no subscriptions, credits, or watermarks",
+      "Full-resolution output with no quality degradation",
+      "Reduced background removal workflow from minutes to seconds",
+      "Universal mobile compatibility across all browsers and devices",
+      "Complete user privacy - images never transmitted over the network",
+    ],
+  },
 ];
 
 export default solutionsData;

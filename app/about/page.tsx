@@ -12,11 +12,10 @@ export default function page() {
     <>
       <Breadcrumb
         pageName="About Page"
-        description="Learn more about Reactify Solutions — our mission, values, and the team behind cutting-edge web development and digital transformation services."
+        description="Learn more about Reactify Solutions - our mission, values, and the team behind cutting-edge web development and digital transformation services."
       />
       <AboutSectionOne />
       <AboutSectionTwo />
     </>
   );
-};
-
+}
