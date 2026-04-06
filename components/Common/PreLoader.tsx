@@ -16,7 +16,7 @@ const PreLoader = () => {
     if (!show) return null;
 
     return (
-        <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-white dark:bg-black">
+        <div className="fixed inset-0 z-[99999] flex items-center justify-center bg-black">
             <AtomLoader />
         </div>
     );
