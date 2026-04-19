@@ -41,7 +41,7 @@ const Header = () => {
     <>
       <header
         className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${sticky
-          ? "!fixed !z-[9999] !bg-dark/80 border-b border-darkBorder backdrop-blur-md !transition"
+          ? "!fixed !z-[9999] !bg-dark/80 backdrop-blur-md !transition shadow-[0_8px_24px_-12px_rgba(0,0,0,0.7)] after:pointer-events-none after:absolute after:inset-x-0 after:bottom-0 after:h-px after:bg-gradient-to-r after:from-transparent after:via-darkBorder after:to-transparent after:content-['']"
           : "absolute"
           } ${navbarOpen
             ? "!bg-dark/90 backdrop-blur-md"
@@ -86,7 +86,7 @@ const Header = () => {
               </button>
               <nav
                 id="navbarCollapse"
-                className={`navbar absolute right-0 z-30 w-full py-2 px-6 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
+                className={`navbar absolute right-0 z-30 w-full py-2 px-6 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:!shadow-none lg:!backdrop-blur-none lg:p-0 lg:opacity-100 ${navbarOpen
                   ? "visibility top-full opacity-100"
                   : "invisible top-[90%] opacity-0"
                   } backdrop-blur-md shadow-lg bg-dark border border-darkBorder lg:border-none rounded-xl lg:rounded-none`}
@@ -98,8 +98,8 @@ const Header = () => {
                       return null;
                     }
 
-                    // Hide About and Testimonials when not on the home page
-                    const homeOnlyPaths = ["#about", "#testimonials"];
+                    // Hide Services, About, Testimonials when not on the home page
+                    const homeOnlyPaths = ["#services", "#about", "#testimonials"];
                     if (path !== "/" && homeOnlyPaths.includes(menuItem.path)) {
                       return null;
                     }
