@@ -41,10 +41,10 @@ const Header = () => {
     <>
       <header
         className={`header top-0 left-0 z-40 flex w-full items-center bg-transparent ${sticky
-          ? "!fixed !z-[9999] !bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm !transition dark:!bg-black dark:!bg-opacity-80"
+          ? "!fixed !z-[9999] !bg-dark/80 border-b border-darkBorder backdrop-blur-md !transition"
           : "absolute"
           } ${navbarOpen
-            ? "!bg-white !bg-opacity-80 backdrop-blur-md dark:!bg-black dark:!bg-opacity-80"
+            ? "!bg-dark/90 backdrop-blur-md"
             : ""
           }`}
       >
@@ -72,15 +72,15 @@ const Header = () => {
                 className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] lg:hidden"
               >
                 <span
-                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${navbarOpen ? " top-[7px] rotate-45" : " "
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${navbarOpen ? " top-[7px] rotate-45" : " "
                     }`}
                 />
                 <span
-                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${navbarOpen ? "opacity-0 " : " "
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${navbarOpen ? "opacity-0 " : " "
                     }`}
                 />
                 <span
-                  className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${navbarOpen ? " top-[-8px] -rotate-45" : " "
+                  className={`relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300 ${navbarOpen ? " top-[-8px] -rotate-45" : " "
                     }`}
                 />
               </button>
@@ -89,12 +89,18 @@ const Header = () => {
                 className={`navbar absolute right-0 z-30 w-full py-2 px-6 duration-300 lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${navbarOpen
                   ? "visibility top-full opacity-100"
                   : "invisible top-[90%] opacity-0"
-                  } backdrop-blur-md shadow-lg bg-black`}
+                  } backdrop-blur-md shadow-lg bg-dark border border-darkBorder lg:border-none rounded-xl lg:rounded-none`}
               >
                 <ul className="flex flex-col items-end lg:flex-row lg:space-x-12">
                   {menuData.map((menuItem, index) => {
                     // Hide "Home" link if we are already on the home page
                     if (path === "/" && menuItem.path === "/") {
+                      return null;
+                    }
+
+                    // Hide About and Testimonials when not on the home page
+                    const homeOnlyPaths = ["#about", "#testimonials"];
+                    if (path !== "/" && homeOnlyPaths.includes(menuItem.path)) {
                       return null;
                     }
 
@@ -109,7 +115,11 @@ const Header = () => {
                         <Link
                           href={href}
                           onClick={() => setNavbarOpen(false)} // Close navbar on click
-                          className={`flex py-2 text-base text-dark group-hover:opacity-80 dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:group-hover:text-white lg:group-hover:opacity-70 rounded-md px-4 lg:px-0 justify-end`}
+                          className={`flex py-2 text-base text-textSecondary transition-colors hover:text-white lg:mr-0 lg:inline-flex lg:py-6 rounded-md px-4 lg:px-0 justify-end ${
+                            path === href
+                              ? "!text-primaryColor"
+                              : ""
+                          }`}
                         >
                           {menuItem.title}
                         </Link>

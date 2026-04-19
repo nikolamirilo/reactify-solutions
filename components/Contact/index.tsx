@@ -176,7 +176,7 @@ const Contact = () => {
               <div className="mt-8">
                 <button
                   type="submit"
-                  className="rounded-full bg-gradient-to-r from-primaryColor to-[#158C7E] px-9 py-4 text-base font-medium text-white shadow-[0_4px_20px_0px_rgba(27,153,139,0.3)] transition-all duration-300 ease-in-out hover:scale-105 hover:bg-opacity-80 hover:shadow-[0_10px_30px_0px_rgba(27,153,139,0.5)] active:scale-95"
+                  className="inline-flex items-center gap-2 rounded-xl bg-primaryColor px-9 py-4 text-base font-semibold text-accentContrast shadow-glowSoft transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow active:translate-y-0"
                 >
                   {isLoading ? (
                     <ImSpinner9 size={20} className="animate-spin" />

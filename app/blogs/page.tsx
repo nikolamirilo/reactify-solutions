@@ -3,7 +3,7 @@ import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog",
+  title: "Blogs",
   description:
     "Technical write-ups, product case studies, and practical lessons from building AI-powered software, digital catalogs, and automation tooling.",
   alternates: { canonical: "/blogs" },

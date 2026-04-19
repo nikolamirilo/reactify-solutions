@@ -5,17 +5,18 @@ import { FaRegCheckCircle } from 'react-icons/fa'
 
 const InfoModal = ({ message = "We received your answer", setIsOpen, isOpen }: { message?: string, setIsOpen: any, isOpen: boolean }) => {
     return (
-        <div className='w-full top-0 left-0 h-screen absolute bg-black/60 flex items-center justify-center z-10 '>
-            <div className="relative dark:bg-dark bg-white rounded-lg shadow min-w-72">
-                <div className="p-4 md:p-5 text-center">
-                    <FaRegCheckCircle size={40} className='text-primaryColor mx-auto my-4' />
-                    <h3 className="mb-5 text-lg font-normal dark:text-white text-dark max-w-[98vw] md:max-w-[500px]">{message}</h3>
-                    <button type="button" className="text-white bg-primaryColor font-medium rounded-lg text-sm inline-flex items-center px-5 py-2.5 text-center" onClick={() => {
+        <div className='w-full top-0 left-0 h-screen fixed bg-black/70 backdrop-blur-sm flex items-center justify-center z-[9999]'>
+            <div className="relative bg-darkSurface border border-darkBorder rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.5)] min-w-72 max-w-md">
+                <div className="p-6 md:p-8 text-center">
+                    <div className="mx-auto my-4 flex h-14 w-14 items-center justify-center rounded-full border border-primaryColor/30 bg-primaryColor/10">
+                      <FaRegCheckCircle size={28} className='text-primaryColor' />
+                    </div>
+                    <h3 className="mb-6 text-base font-medium text-textSecondary max-w-[98vw] md:max-w-[460px]">{message}</h3>
+                    <button type="button" className="w-full rounded-xl bg-primaryColor text-accentContrast font-semibold text-sm inline-flex items-center justify-center px-5 py-3 text-center transition-colors hover:bg-primaryDark" onClick={() => {
                         setIsOpen(!isOpen)
                     }}>
                         Got it!
                     </button>
-
                 </div>
             </div>
         </div>

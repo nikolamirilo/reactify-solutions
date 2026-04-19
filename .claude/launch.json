@@ -1,0 +1,18 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "inspiration",
+      "runtimeExecutable": "python",
+      "runtimeArgs": ["-m", "http.server", "5577", "--directory", ".inspiration"],
+      "port": 5577
+    },
+    {
+      "name": "reactify",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev"],
+      "port": 3000,
+      "autoPort": true
+    }
+  ]
+}

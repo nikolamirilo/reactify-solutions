@@ -33,7 +33,7 @@ const Blog = ({ variant = "default" }: { variant?: "blogs" | "default" }) => {
           <div className="mt-14 flex justify-center">
             <Link
               href="/blogs"
-              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-primaryColor to-[#158C7E] px-8 py-4 text-base font-semibold text-white shadow-[0_4px_20px_0px_rgba(27,153,139,0.3)] transition-all duration-300 hover:scale-105 hover:shadow-[0_10px_30px_0px_rgba(27,153,139,0.5)] active:scale-95"
+              className="inline-flex items-center gap-2 rounded-xl bg-primaryColor px-8 py-4 text-base font-semibold text-accentContrast shadow-glowSoft transition-all duration-300 hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow active:translate-y-0"
             >
               Read all posts
             </Link>

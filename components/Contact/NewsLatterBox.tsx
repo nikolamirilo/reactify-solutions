@@ -27,7 +27,7 @@ const NewsLatterBox = () => {
         <input
           type="submit"
           value="Subscribe"
-          className="duration-80 mb-4 w-full cursor-pointer rounded-full bg-gradient-to-r from-primaryColor to-[#158C7E] border border-transparent py-3 px-6 text-center text-base font-medium text-white outline-none transition-all ease-in-out hover:shadow-[0_10px_30px_0px_rgba(27,153,139,0.5)] hover:bg-opacity-80 hover:scale-105 active:scale-95 shadow-[0_4px_20px_0px_rgba(27,153,139,0.3)] focus-visible:shadow-none"
+          className="duration-80 mb-4 w-full cursor-pointer rounded-xl bg-primaryColor border border-transparent py-3 px-6 text-center text-base font-semibold text-accentContrast outline-none transition-all ease-in-out hover:bg-primaryDark hover:shadow-glow hover:-translate-y-0.5 active:translate-y-0 shadow-glowSoft focus-visible:shadow-none"
         />
         <p className="text-center text-base font-medium leading-relaxed text-textColor">
           No spam guaranteed, So please don’t send any spam mail.

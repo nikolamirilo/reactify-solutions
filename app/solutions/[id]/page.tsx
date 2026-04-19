@@ -122,7 +122,7 @@ export default async function SolutionDetailsPage({
               href={solution.productUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-lg bg-primaryColor px-6 py-3 font-semibold text-white transition-colors hover:bg-primaryColor/90"
+              className="inline-flex items-center gap-2 rounded-xl bg-primaryColor px-6 py-3 font-semibold text-accentContrast shadow-glowSoft transition-all hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow"
             >
               Visit Website
               <FaExternalLinkAlt className="h-4 w-4" />
@@ -344,7 +344,7 @@ export default async function SolutionDetailsPage({
           </p>
           <Link
             href="/contact"
-            className="inline-flex items-center gap-2 rounded-lg bg-primaryColor px-8 py-3 font-semibold text-white transition-colors hover:bg-primaryColor/80"
+            className="inline-flex items-center gap-2 rounded-xl bg-primaryColor px-8 py-3 font-semibold text-accentContrast shadow-glowSoft transition-all hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow"
           >
             Contact us
             <MdOutlineMailOutline className="h-5 w-5" />

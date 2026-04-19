@@ -93,7 +93,7 @@ const Solutions = () => {
                   <p className="mb-4 max-w-2xl translate-y-4 transform text-sm text-white/90 transition-transform delay-75 duration-500 group-hover:translate-y-0 md:mb-6 md:text-base">
                     {solution.briefDescription}
                   </p>
-                  <button className="flex w-fit translate-y-4 transform items-center gap-2 rounded-lg bg-primaryColor px-6 py-3 font-semibold text-white transition-all delay-150 duration-500 hover:bg-primaryColor/90 group-hover:translate-y-0">
+                  <button className="flex w-fit translate-y-4 transform items-center gap-2 rounded-xl bg-primaryColor px-6 py-3 font-semibold text-accentContrast transition-all delay-150 duration-500 hover:bg-primaryDark group-hover:translate-y-0">
                     View Details
                   </button>
                 </div>

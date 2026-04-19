@@ -1,5 +1,5 @@
 import ClientLayout from "@/components/ClientLayout";
-import { inter, josefinSans, roboto } from "@/fonts";
+import { inter, josefinSans, roboto, spaceGrotesk, jetbrainsMono } from "@/fonts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html suppressHydrationWarning lang="en" className="dark">
+    <html suppressHydrationWarning lang="en" className={`dark ${spaceGrotesk.variable} ${jetbrainsMono.variable}`}>
       <head>
         <script
           dangerouslySetInnerHTML={{
@@ -36,7 +36,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`bg-black/[0.9] overflow-x-hidden ${roboto.className}`}>
+      <body className={`bg-dark overflow-x-hidden ${roboto.className}`}>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{

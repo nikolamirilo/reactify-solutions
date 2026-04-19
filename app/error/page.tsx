@@ -142,7 +142,7 @@ export default function page () {
                 </p>
                 <Link
                   href="/"
-                  className="bg-primaryColor hover:text-primaryColor rounded-md py-3 px-8 text-base font-bold text-white shadow-signUp duration-300 hover:bg-white md:px-9 lg:px-8 xl:px-9"
+                  className="inline-flex items-center gap-2 rounded-xl bg-primaryColor px-8 py-3 text-base font-semibold text-accentContrast shadow-glowSoft transition-all duration-300 hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow md:px-9 lg:px-8 xl:px-9"
                 >
                   Back to Homepage
                 </Link>

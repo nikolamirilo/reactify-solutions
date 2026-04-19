@@ -1,12 +1,14 @@
 const Footer = () => {
   return (
-    <footer className="bg-base-300 bg-opacity-5 text-base-content wow fadeInUp relative z-10 flex items-center justify-center  p-4 py-5">
-      <aside>
-        <p className="text-center">
-          Copyright ©{new Date().getFullYear()} - All rights reserved by
-          Reactify Solutions
+    <footer className="relative z-10 border-t border-darkBorder bg-darkSurface/40 py-8 backdrop-blur-sm">
+      <div className="container flex flex-col items-center justify-between gap-3 text-center md:flex-row md:text-left">
+        <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-textColor">
+          © {new Date().getFullYear()} Reactify Solutions · all rights reserved
         </p>
-      </aside>
+        <p className="font-mono text-[11px] uppercase tracking-[0.14em] text-textColor">
+          made in EU · remote-first
+        </p>
+      </div>
     </footer>
   );
 };

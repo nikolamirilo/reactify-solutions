@@ -20,13 +20,12 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
     <div className="w-full">
       <div
-        className="wow fadeInUp bg-primaryColor relative min-h-[350px] md:min-h-[400px] rounded-md bg-opacity-5 p-8 shadow-one lg:px-5 xl:px-8"
+        className="wow fadeInUp relative min-h-[350px] md:min-h-[400px] overflow-hidden rounded-lg bg-white/5 p-8 lg:px-5 xl:px-8"
         data-wow-delay=".1s"
       >
         <BiSolidQuoteAltLeft
           size={40}
-          color="#D3D3D3"
-          className="-z-1 absolute top-1 right-5"
+          className="-z-1 absolute top-1 right-5 text-white/10"
         />
         <p className="relative mb-8 min-h-[8rem] border-b border-textColor border-opacity-10 pt-2 pb-8 text-base leading-relaxed text-textColor dark:border-white dark:border-opacity-10 dark:text-white">
           {testimonial.content}

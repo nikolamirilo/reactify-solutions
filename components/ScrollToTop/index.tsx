@@ -35,9 +35,9 @@ export default function ScrollToTop() {
         <div
           onClick={scrollToTop}
           aria-label="scroll to top"
-          className="bg-primaryColor flex h-10 w-10 cursor-pointer items-center justify-center rounded-xl text-white shadow-md transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+          className="bg-primaryColor flex h-10 w-10 cursor-pointer items-center justify-center rounded-xl text-accentContrast shadow-glowSoft transition duration-300 ease-in-out hover:bg-primaryDark hover:shadow-glow"
         >
-          <IoIosArrowUp color="white" size={30} />
+          <IoIosArrowUp size={28} />
         </div>
       )}
     </div>
