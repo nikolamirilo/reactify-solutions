@@ -16,15 +16,10 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
   const href = `/blogs/${slug}`;
   return (
     <div
-      className="wow fadeInUp relative overflow-hidden rounded-md bg-white shadow-one dark:bg-dark"
+      className="wow fadeInUp relative overflow-hidden rounded-lg bg-white/5"
       data-wow-delay=".1s"
     >
       <Link href={href} className="relative block h-[180px] w-full">
-        {tags[0] && (
-          <span className="absolute right-4 top-4 z-20 inline-flex items-center justify-center rounded-full bg-primaryColor px-3 py-1 text-xs font-semibold capitalize text-white">
-            {tags[0]}
-          </span>
-        )}
         <Image src={image} alt={title} fill className="object-cover" />
       </Link>
       <div className="p-5">

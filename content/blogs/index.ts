@@ -14,6 +14,21 @@ import EndToEndAnalyticsMicrosoftFabricPost, {
 import NextjsSeoChecklist2026Post, {
   meta as nextjsSeoChecklist2026Meta,
 } from "./posts/nextjs-seo-checklist-2026";
+import ProductionAiAgentsToolUsePost, {
+  meta as productionAiAgentsToolUseMeta,
+} from "./posts/production-ai-agents-tool-use";
+import QuickIntroductionReactNativePost, {
+  meta as quickIntroductionReactNativeMeta,
+} from "./posts/quick-introduction-react-native";
+import PostgresqlOnlyBackendNextjsPost, {
+  meta as postgresqlOnlyBackendNextjsMeta,
+} from "./posts/postgresql-only-backend-nextjs";
+import PwaNextjs2026GuidePost, {
+  meta as pwaNextjs2026GuideMeta,
+} from "./posts/pwa-nextjs-2026-guide";
+import CuttingOpenAiCostsProductionPost, {
+  meta as cuttingOpenAiCostsProductionMeta,
+} from "./posts/cutting-openai-costs-production";
 
 type PostRegistryEntry = {
   meta: Blog;
@@ -40,6 +55,26 @@ const posts: PostRegistryEntry[] = [
   {
     meta: nextjsSeoChecklist2026Meta,
     Component: NextjsSeoChecklist2026Post,
+  },
+  {
+    meta: productionAiAgentsToolUseMeta,
+    Component: ProductionAiAgentsToolUsePost,
+  },
+  {
+    meta: quickIntroductionReactNativeMeta,
+    Component: QuickIntroductionReactNativePost,
+  },
+  {
+    meta: postgresqlOnlyBackendNextjsMeta,
+    Component: PostgresqlOnlyBackendNextjsPost,
+  },
+  {
+    meta: pwaNextjs2026GuideMeta,
+    Component: PwaNextjs2026GuidePost,
+  },
+  {
+    meta: cuttingOpenAiCostsProductionMeta,
+    Component: CuttingOpenAiCostsProductionPost,
   },
 ];
 
