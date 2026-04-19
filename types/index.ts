@@ -50,10 +50,13 @@ type Author = {
 
 export type Blog = {
   id: number;
+  slug: string;
   title: string;
-  paragraph: string;
+  excerpt: string;
+  metaDescription: string;
   image: string;
   author: Author;
   tags: string[];
   publishDate: string;
+  readingTime?: string;
 };

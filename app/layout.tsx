@@ -45,16 +45,77 @@ export default function RootLayout({
               "@graph": [
                 {
                   "@type": "Organization",
+                  "@id":
+                    "https://www.reactify-solutions.com/#organization",
                   name: "Reactify Solutions",
                   url: "https://www.reactify-solutions.com",
                   logo: "https://www.reactify-solutions.com/icon.png",
                   description:
                     "Cutting-edge digital solutions using the latest technologies to develop innovative software that enhances your online presence and drives growth.",
+                  contactPoint: {
+                    "@type": "ContactPoint",
+                    contactType: "customer support",
+                    email: "reactify.developer@gmail.com",
+                    availableLanguage: ["English"],
+                  },
+                  makesOffer: [
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Web & Mobile Development",
+                        description:
+                          "High-performance Progressive Web Apps and cross-platform mobile applications.",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "AI Development",
+                        description:
+                          "LLM integration, AI agents, chatbots, and custom AI automation.",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Data Analytics",
+                        description:
+                          "End-to-end analytics with Microsoft Fabric dataflows and Power BI dashboards.",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Automations",
+                        description:
+                          "Workflow automation, system integrations, and data synchronization.",
+                      },
+                    },
+                    {
+                      "@type": "Offer",
+                      itemOffered: {
+                        "@type": "Service",
+                        name: "Business Consulting",
+                        description:
+                          "Process optimization and strategy aligned with long-term growth.",
+                      },
+                    },
+                  ],
                 },
                 {
                   "@type": "WebSite",
+                  "@id": "https://www.reactify-solutions.com/#website",
                   name: "Reactify Solutions",
                   url: "https://www.reactify-solutions.com",
+                  publisher: {
+                    "@id":
+                      "https://www.reactify-solutions.com/#organization",
+                  },
+                  inLanguage: "en-US",
                 },
               ],
             }),

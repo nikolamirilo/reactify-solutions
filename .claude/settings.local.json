@@ -2,7 +2,12 @@
   "permissions": {
     "allow": [
       "Bash(xargs grep:*)",
-      "Bash(npm run:*)"
+      "Bash(npm run:*)",
+      "Bash(grep -E \"\\\\.\\(tsx?|json\\)$\")",
+      "Bash(git -C /c/Users/Nikola/Desktop/reactify-solutions log --oneline)",
+      "Bash(cygpath -w /tmp)",
+      "Bash(python -c ' *)",
+      "Bash(npm install *)"
     ]
   }
 }

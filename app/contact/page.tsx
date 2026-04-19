@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: "Contact Us",
   description:
     "Get in touch with Reactify Solutions. Whether you have a question, need support, or want to learn more about how we can assist you, please don't hesitate to reach out.",
+  alternates: { canonical: "/contact" },
   openGraph: {
     title: "Contact Us",
     description:

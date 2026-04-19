@@ -6,11 +6,15 @@ import Technologies from "@/components/Technologies";
 import { Metadata } from "next";
 import Solutions from "@/components/Solutions";
 import CTA from "@/components/CTA/CTA";
+import Blog from "@/components/Blogs";
 
 export const metadata: Metadata = {
-  title: { absolute: "Reactify Solutions | The Engine Behind Your Digital Growth" },
+  title: {
+    absolute: "Reactify Solutions | The Engine Behind Your Digital Growth",
+  },
   description:
     "Reactify Solutions - Your Partner in Cutting-Edge Web Development and Digital Transformation. We specialize in crafting innovative web solutions using the latest technologies to drive your business forward.",
+  alternates: { canonical: "/" },
   openGraph: {
     title: "Reactify Solutions | The Engine Behind Your Digital Growth",
     description:
@@ -40,6 +44,7 @@ export default async function page() {
       <Solutions />
       <Technologies />
       <Testimonials />
+      <Blog />
       <CTA />
     </>
   );

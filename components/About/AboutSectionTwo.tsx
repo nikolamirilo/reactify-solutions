@@ -12,7 +12,7 @@ const AboutSectionTwo = () => {
             >
               <Image
                 src="/images/about/about-image-2.svg"
-                alt="about image"
+                alt="Reactify Solutions team building modern web and AI applications"
                 fill
               />
             </div>

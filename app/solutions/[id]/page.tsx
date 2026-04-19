@@ -15,6 +15,10 @@ import {
 } from "react-icons/fa";
 import { MdOutlineMailOutline } from "react-icons/md";
 
+export async function generateStaticParams() {
+  return solutionsData.map((s) => ({ id: s.id }));
+}
+
 export async function generateMetadata({
   params,
 }: {
@@ -32,6 +36,7 @@ export async function generateMetadata({
   return {
     title: solution.name,
     description: solution.briefDescription,
+    alternates: { canonical: `/solutions/${id}` },
     openGraph: {
       title: `${solution.name} - Reactify Solutions`,
       description: solution.briefDescription,
@@ -58,8 +63,53 @@ export default async function SolutionDetailsPage({
     notFound();
   }
 
+  const baseUrl = "https://www.reactify-solutions.com";
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SoftwareApplication",
+        name: solution.name,
+        description: solution.fullDescription,
+        applicationCategory: "BusinessApplication",
+        operatingSystem: "Web",
+        url: solution.productUrl,
+        image: `${baseUrl}${solution.images[0]}`,
+        publisher: {
+          "@id": `${baseUrl}/#organization`,
+        },
+      },
+      {
+        "@type": "BreadcrumbList",
+        itemListElement: [
+          {
+            "@type": "ListItem",
+            position: 1,
+            name: "Home",
+            item: baseUrl,
+          },
+          {
+            "@type": "ListItem",
+            position: 2,
+            name: "Solutions",
+            item: `${baseUrl}/#solutions`,
+          },
+          {
+            "@type": "ListItem",
+            position: 3,
+            name: solution.name,
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <div className="pb-16 pt-[120px] md:pt-[150px]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
       <div className="container max-w-6xl">
         {/* Hero Card */}
         <div className="dark:bg-transparent! mb-12 rounded-2xl bg-gradient-to-br py-8 dark:text-white md:py-12">
