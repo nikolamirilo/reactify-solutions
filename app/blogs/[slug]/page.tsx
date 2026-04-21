@@ -4,6 +4,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
+import CTA from "@/components/CTA/CTA";
 
 export async function generateStaticParams() {
   return getAllPostSlugs().map((slug) => ({ slug }));
@@ -109,7 +110,7 @@ export default async function BlogPostPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <section className="pb-[120px] pt-[120px] lg:pt-[150px]">
+      <section className="pb-12 pt-[120px] lg:pt-[150px]">
         <div className="container">
           <div className="-mx-4 flex flex-wrap justify-center">
             <div className="w-full px-4 lg:w-9/12 xl:w-8/12">
@@ -155,11 +156,14 @@ export default async function BlogPostPage({
                 </div>
 
                 <Component />
+
               </article>
+
             </div>
           </div>
         </div>
       </section>
+      <CTA />
     </>
   );
 }

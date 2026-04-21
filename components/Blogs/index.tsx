@@ -23,7 +23,7 @@ const Blog = ({ variant = "default" }: { variant?: "blogs" | "default" }) => {
             center
           />
         )}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 xl:grid-cols-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 2xl:grid-cols-4">
           {blogs.map((blog) => (
             <SingleBlog key={blog.id} blog={blog} />
           ))}

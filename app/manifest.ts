@@ -6,9 +6,9 @@ export default function manifest(): MetadataRoute.Manifest {
     short_name: "Reactify Solutions",
     description:
       "We provide cutting-edge digital solutions by utilizing the latest technologies to develop innovative and intuitive software that enhances your online presence and drives substantial growth. Integrating AI insights, we optimize your site for search engines and craft impactful marketing campaigns to maximize visibility and engagement.",
-    theme_color: "#000000",
-    categories: ["business", "productivity", "utilities"],
-    background_color: "#1D2144",
+    theme_color: "#0E1A2A",
+    categories: ["business", "productivity", "utilities", "ai", "software", "development", "solutions"],
+    background_color: "#0E1A2A",
     start_url: "/",
     display: "standalone",
     orientation: "portrait",
