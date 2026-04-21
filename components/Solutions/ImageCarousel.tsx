@@ -1,27 +1,49 @@
 "use client";
 
 import Image from "next/image";
-import { Carousel } from "@material-tailwind/react";
+import { AnimatePresence, motion } from "framer-motion";
+import { useCallback, useEffect, useState } from "react";
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 interface ImageCarouselProps {
   images: string[];
   solutionName: string;
+  accentFrom?: string;
 }
 
 export default function ImageCarousel({
   images,
   solutionName,
+  accentFrom = "#00d4c8",
 }: ImageCarouselProps) {
+  const [active, setActive] = useState(0);
+  const [paused, setPaused] = useState(false);
+
+  const next = useCallback(
+    () => setActive((i) => (i + 1) % images.length),
+    [images.length],
+  );
+  const prev = useCallback(
+    () => setActive((i) => (i - 1 + images.length) % images.length),
+    [images.length],
+  );
+
+  useEffect(() => {
+    if (images.length <= 1 || paused) return;
+    const id = setInterval(next, 6000);
+    return () => clearInterval(id);
+  }, [next, images.length, paused]);
+
   if (images.length === 1) {
     return (
-      <div className="relative aspect-video w-full overflow-hidden rounded-xl">
+      <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated">
         <Image
           src={images[0]}
           alt={solutionName}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
           className="object-cover"
-          quality={100}
+          quality={75}
           priority
         />
       </div>
@@ -29,85 +51,89 @@ export default function ImageCarousel({
   }
 
   return (
-    // ① aspect-video lives HERE so the carousel inherits a defined height
-    <div className="relative aspect-video w-full overflow-hidden rounded-xl">
-      <Carousel
-        // ② fill the outer wrapper completely - no internal padding/margin
-        className="h-full w-full"
-        autoplay={true}
-        autoplayDelay={5000}
-        loop={true}
-        navigation={({ setActiveIndex, activeIndex, length }) => (
-          <div className="absolute bottom-4 left-2/4 z-50 flex -translate-x-2/4 gap-2">
-            {new Array(length).fill("").map((_, i) => (
-              <span
-                key={i}
-                className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                  activeIndex === i ? "w-8 bg-white" : "w-4 bg-white/50"
-                }`}
-                onClick={() => setActiveIndex(i)}
-              />
-            ))}
-          </div>
-        )}
-        prevArrow={({ handlePrev }) => (
-          <button
-            onClick={handlePrev}
-            className="!absolute left-4 top-2/4 -translate-y-2/4 rounded-full bg-white/80 p-2 transition-colors hover:bg-white dark:bg-black/80 dark:hover:bg-black"
+    <div
+      className="relative w-full"
+      onMouseEnter={() => setPaused(true)}
+      onMouseLeave={() => setPaused(false)}
+    >
+      <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated">
+        <AnimatePresence mode="wait">
+          <motion.div
+            key={active}
+            initial={{ opacity: 0, scale: 1.04 }}
+            animate={{ opacity: 1, scale: 1 }}
+            exit={{ opacity: 0, scale: 0.98 }}
+            transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
+            className="absolute inset-0"
           >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-6 w-6 text-black dark:text-white"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M15.75 19.5L8.25 12l7.5-7.5"
-              />
-            </svg>
-          </button>
-        )}
-        nextArrow={({ handleNext }) => (
-          <button
-            onClick={handleNext}
-            className="!absolute right-4 top-2/4 -translate-y-2/4 rounded-full bg-white/80 p-2 transition-colors hover:bg-white dark:bg-black/80 dark:hover:bg-black"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={2}
-              stroke="currentColor"
-              className="h-6 w-6 text-black dark:text-white"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="M8.25 4.5l7.5 7.5-7.5 7.5"
-              />
-            </svg>
-          </button>
-        )}
-      >
-        {images.map((img, index) => (
-          // ③ slides are h-full/w-full - they fill the carousel, not re-define it
-          <div key={index} className="relative h-full w-full">
             <Image
-              src={img}
-              alt={`${solutionName} - Image ${index + 1}`}
+              src={images[active]}
+              alt={`${solutionName} — slide ${active + 1}`}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-              className="object-contain"
-              quality={100}
-              priority={index === 0}
+              className="object-cover"
+              quality={75}
+              priority={active === 0}
             />
-          </div>
+          </motion.div>
+        </AnimatePresence>
+
+        <button
+          type="button"
+          onClick={prev}
+          aria-label="Previous image"
+          className="absolute left-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white backdrop-blur-sm transition-all hover:-translate-y-[calc(50%+2px)] hover:bg-black/80 md:h-12 md:w-12"
+        >
+          <HiChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
+        </button>
+        <button
+          type="button"
+          onClick={next}
+          aria-label="Next image"
+          className="absolute right-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white backdrop-blur-sm transition-all hover:-translate-y-[calc(50%+2px)] hover:bg-black/80 md:h-12 md:w-12"
+        >
+          <HiChevronRight className="h-5 w-5 md:h-6 md:w-6" />
+        </button>
+
+        <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-black/50 px-3 py-1.5 backdrop-blur-sm">
+          {images.map((_, i) => (
+            <button
+              key={i}
+              type="button"
+              onClick={() => setActive(i)}
+              aria-label={`Go to slide ${i + 1}`}
+              className={`block h-1.5 rounded-full transition-all ${
+                active === i ? "w-7" : "w-1.5 bg-white/40 hover:bg-white/60"
+              }`}
+              style={active === i ? { backgroundColor: accentFrom } : {}}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="mt-3 flex gap-2 overflow-x-auto pb-1 md:mt-4 md:gap-3">
+        {images.map((img, i) => (
+          <button
+            key={img}
+            type="button"
+            onClick={() => setActive(i)}
+            aria-label={`Show slide ${i + 1}`}
+            className={`relative h-14 w-24 flex-shrink-0 overflow-hidden rounded-lg border transition-all md:h-16 md:w-28 ${
+              active === i
+                ? "border-primaryColor/60 opacity-100"
+                : "border-darkBorder opacity-60 hover:opacity-100"
+            }`}
+          >
+            <Image
+              src={img}
+              alt=""
+              fill
+              sizes="112px"
+              className="object-cover"
+            />
+          </button>
         ))}
-      </Carousel>
+      </div>
     </div>
   );
 }

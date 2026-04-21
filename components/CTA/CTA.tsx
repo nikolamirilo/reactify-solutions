@@ -1,6 +1,7 @@
 //@ts-nocheck
 "use client";
 import React, { useState, useEffect } from "react";
+import { motion } from "framer-motion";
 import { PopupModal } from "react-calendly";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
@@ -18,7 +19,12 @@ const CTA = () => {
 
     return (
         <section className="mb-16 overflow-hidden">
-            <div className="mx-auto max-w-[90vw] xl:max-w-screen-xl">
+            <motion.div
+                initial={{ opacity: 0, y: 32 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+                className="mx-auto max-w-[90vw] xl:max-w-screen-xl">
                 <div className="relative overflow-hidden rounded-3xl border border-darkBorder bg-darkSurface/60 px-6 py-10 backdrop-blur-sm sm:px-10 sm:py-14 lg:grid lg:grid-cols-[32%,68%] lg:items-center lg:gap-12">
                     <div className="absolute -top-24 -right-24 h-72 w-72 rounded-full bg-primaryColor/10 blur-3xl pointer-events-none" />
                     <div className="absolute -bottom-24 -left-24 h-64 w-64 rounded-full bg-accentGreen/10 blur-3xl pointer-events-none" />
@@ -56,7 +62,7 @@ const CTA = () => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </motion.div>
             {rootElement && (
                 <PopupModal
                     url="https://calendly.com/reactify-developer/30min"

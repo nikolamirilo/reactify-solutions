@@ -1,5 +1,7 @@
 //@ts-nocheck
+"use client";
 import { Testimonial } from "@/types";
+import { motion } from "framer-motion";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 const starIcon = (
   <svg width="18" height="16" viewBox="0 0 18 16" className="fill-current">
@@ -7,22 +9,35 @@ const starIcon = (
   </svg>
 );
 
-const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
+const SingleTestimonial = ({
+  testimonial,
+  index = 0,
+}: {
+  testimonial: Testimonial;
+  index?: number;
+}) => {
   let ratingIcons = [];
-  for (let index = 0; index < testimonial.rate; index++) {
+  for (let i = 0; i < testimonial.rate; i++) {
     ratingIcons.push(
-      <span key={index} className="text-yellow">
+      <span key={i} className="text-yellow">
         {starIcon}
-      </span>
+      </span>,
     );
   }
 
   return (
-    <div className="w-full">
-      <div
-        className="wow fadeInUp relative min-h-[350px] md:min-h-[400px] overflow-hidden rounded-lg bg-white/5 p-8 lg:px-5 xl:px-8"
-        data-wow-delay=".1s"
-      >
+    <motion.div
+      initial={{ opacity: 0, y: 32 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, amount: 0.2 }}
+      transition={{
+        duration: 0.6,
+        delay: index * 0.1,
+        ease: [0.22, 1, 0.36, 1],
+      }}
+      className="w-full"
+    >
+      <div className="relative min-h-[350px] overflow-hidden rounded-lg bg-white/5 p-8 transition-colors hover:bg-white/[0.07] md:min-h-[400px] lg:px-5 xl:px-8">
         <BiSolidQuoteAltLeft
           size={40}
           className="-z-1 absolute top-1 right-5 text-white/10"
@@ -32,9 +47,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
         </p>
         <div className="flex items-center">
           <div className="w-full">
-            <div className="mb-3 flex items-center space-x-1">
-              {ratingIcons}
-            </div>
+            <div className="mb-3 flex items-center space-x-1">{ratingIcons}</div>
             <h5 className="ml-1 mb-2 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
               {testimonial.fullname}
             </h5>
@@ -44,7 +57,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

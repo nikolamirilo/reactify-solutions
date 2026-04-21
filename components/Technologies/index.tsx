@@ -1,6 +1,7 @@
 "use client";
 import { Technology } from "@/types";
 import Image from "next/image";
+import { motion } from "framer-motion";
 import SectionTitle from "../Common/SectionTitle";
 import { technologiesData } from "@/constants";
 
@@ -24,7 +25,12 @@ const Technologies = () => {
       </div>
 
       {/* Marquee Row 1 - scrolls left */}
-      <div className="relative mb-4 mt-6">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.8 }}
+        className="relative mb-4 mt-6">
         {/* Fade edges */}
         <div className="pointer-events-none absolute bottom-0 left-0 top-0 z-10 w-24 bg-gradient-to-r from-dark to-transparent md:w-40" />
         <div className="pointer-events-none absolute bottom-0 right-0 top-0 z-10 w-24 bg-gradient-to-l from-dark to-transparent md:w-40" />
@@ -34,10 +40,15 @@ const Technologies = () => {
             <TechCard key={`row1-${i}`} brand={brand} />
           ))}
         </div>
-      </div>
+      </motion.div>
 
       {/* Marquee Row 2 - scrolls right */}
-      <div className="relative">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true, amount: 0.1 }}
+        transition={{ duration: 0.8, delay: 0.15 }}
+        className="relative">
         {/* Fade edges */}
         <div className="pointer-events-none absolute bottom-0 left-0 top-0 z-10 w-24 bg-gradient-to-r from-dark to-transparent md:w-40" />
         <div className="pointer-events-none absolute bottom-0 right-0 top-0 z-10 w-24 bg-gradient-to-l from-dark to-transparent md:w-40" />
@@ -47,7 +58,7 @@ const Technologies = () => {
             <TechCard key={`row2-${i}`} brand={brand} />
           ))}
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

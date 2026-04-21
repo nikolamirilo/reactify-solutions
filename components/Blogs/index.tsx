@@ -1,4 +1,7 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
 import SectionTitle from "../Common/SectionTitle";
 import SingleBlog from "./SingleBlog";
 import blogData from "./blogData";
@@ -23,21 +26,48 @@ const Blog = ({ variant = "default" }: { variant?: "blogs" | "default" }) => {
             center
           />
         )}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 2xl:grid-cols-4">
+        <motion.div
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.1 }}
+          variants={{
+            hidden: {},
+            show: { transition: { staggerChildren: 0.1 } },
+          }}
+          className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 2xl:grid-cols-4"
+        >
           {blogs.map((blog) => (
-            <SingleBlog key={blog.id} blog={blog} />
+            <motion.div
+              key={blog.id}
+              variants={{
+                hidden: { opacity: 0, y: 32 },
+                show: {
+                  opacity: 1,
+                  y: 0,
+                  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+                },
+              }}
+            >
+              <SingleBlog blog={blog} />
+            </motion.div>
           ))}
-        </div>
+        </motion.div>
 
         {variant === "default" && (
-          <div className="mt-14 flex justify-center">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.5 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            className="mt-14 flex justify-center"
+          >
             <Link
               href="/blogs"
               className="inline-flex items-center gap-2 rounded-xl bg-primaryColor px-8 py-4 text-base font-semibold text-accentContrast shadow-glowSoft transition-all duration-300 hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow active:translate-y-0"
             >
               Read all posts
             </Link>
-          </div>
+          </motion.div>
         )}
       </div>
     </section>

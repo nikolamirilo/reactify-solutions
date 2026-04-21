@@ -16,7 +16,9 @@
       "Bash(npm outdated *)",
       "Bash(npm audit *)",
       "Bash(npm ls *)",
-      "Bash(npm view *)"
+      "Bash(npm view *)",
+      "WebFetch(domain:www.quicktalog.app)",
+      "WebFetch(domain:unbg.tech)"
     ]
   }
 }

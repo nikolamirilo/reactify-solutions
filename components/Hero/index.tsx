@@ -1,22 +1,51 @@
 //@ts-nocheck
+"use client";
 import Link from "next/link";
+import { motion } from "framer-motion";
 import { HiArrowRight } from "react-icons/hi2";
 import { RiStackLine } from "react-icons/ri";
 import { LuSend } from "react-icons/lu";
 
+const fadeUp = {
+  hidden: { opacity: 0, y: 24 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
+  },
+};
+
 const Hero = () => {
   return (
-    <section
+    <motion.section
       id="home"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.9, ease: "easeOut" }}
       className="relative z-10 overflow-hidden pt-[120px] pb-16 md:pt-[150px] md:pb-[120px] xl:pt-[180px] xl:pb-[160px]"
     >
       <div className="absolute inset-x-0 top-0 h-[720px] radial-fade-top pointer-events-none z-[-1]" />
       <div className="absolute inset-0 bg-grid-faint opacity-40 [mask-image:linear-gradient(to_bottom,black,transparent_75%)] pointer-events-none z-[-1]" />
 
       {/* Decorative orbs */}
-      <div className="pointer-events-none absolute -top-24 -right-24 h-[520px] w-[520px] rounded-full bg-primaryColor/10 blur-[120px] z-[-1]" />
-      <div className="pointer-events-none absolute top-32 right-48 h-[260px] w-[260px] rounded-full bg-accentGreen/10 blur-[90px] z-[-1]" />
-      <div className="pointer-events-none absolute -bottom-32 -left-32 h-[380px] w-[380px] rounded-full bg-primaryColor/[0.07] blur-[100px] z-[-1]" />
+      <motion.div
+        aria-hidden
+        animate={{ opacity: [0.6, 1, 0.6] }}
+        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
+        className="pointer-events-none absolute -top-24 -right-24 h-[520px] w-[520px] rounded-full bg-primaryColor/10 blur-[120px] z-[-1]"
+      />
+      <motion.div
+        aria-hidden
+        animate={{ opacity: [0.4, 0.9, 0.4] }}
+        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        className="pointer-events-none absolute top-32 right-48 h-[260px] w-[260px] rounded-full bg-accentGreen/10 blur-[90px] z-[-1]"
+      />
+      <motion.div
+        aria-hidden
+        animate={{ opacity: [0.4, 0.8, 0.4] }}
+        transition={{ duration: 7, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+        className="pointer-events-none absolute -bottom-32 -left-32 h-[380px] w-[380px] rounded-full bg-primaryColor/[0.07] blur-[100px] z-[-1]"
+      />
 
       {/* Concentric rings — top right */}
       <svg
@@ -63,36 +92,44 @@ const Hero = () => {
       {/* Bottom fade into next section */}
       <div className="pointer-events-none absolute inset-x-0 bottom-0 h-56 bg-gradient-to-b from-transparent to-dark z-[-1]" />
 
-      <div className="container">
+      <motion.div
+        initial="hidden"
+        animate="show"
+        variants={{
+          hidden: {},
+          show: { transition: { staggerChildren: 0.12, delayChildren: 0.05 } },
+        }}
+        className="container"
+      >
         <div className="mx-auto max-w-[860px] text-center">
-          <div
-            className="wow fadeInUp inline-flex items-center gap-2 rounded-full border border-darkBorder bg-darkSurface/70 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.14em] text-textSecondary backdrop-blur-sm"
-            data-wow-delay=".1s"
+          <motion.div
+            variants={fadeUp}
+            className="inline-flex items-center gap-2 rounded-full border border-darkBorder bg-darkSurface/70 px-4 py-1.5 text-xs font-mono uppercase tracking-[0.14em] text-textSecondary backdrop-blur-sm"
           >
             <span className="h-1.5 w-1.5 rounded-full bg-primaryColor shadow-[0_0_10px_rgba(0,212,200,0.8)] animate-pulse" />
             <span>now shipping · cutting-edge builds</span>
-          </div>
+          </motion.div>
 
-          <h1
-            className="wow fadeInUp font-display mt-6 text-4xl font-semibold leading-[1.05] text-white sm:text-5xl md:text-6xl lg:text-[68px]"
-            data-wow-delay=".2s"
+          <motion.h1
+            variants={fadeUp}
+            className="font-display mt-6 text-4xl font-semibold leading-[1.05] text-white sm:text-5xl md:text-6xl lg:text-[68px]"
           >
             Accelerate your growth with{" "}
             <span className="text-gradient-accent">innovative solutions.</span>
-          </h1>
+          </motion.h1>
 
-          <p
-            className="wow fadeInUp mx-auto mt-6 max-w-[680px] text-base leading-relaxed text-textSecondary sm:text-lg"
-            data-wow-delay=".3s"
+          <motion.p
+            variants={fadeUp}
+            className="mx-auto mt-6 max-w-[680px] text-base leading-relaxed text-textSecondary sm:text-lg"
           >
             We provide cutting-edge digital solutions by utilizing the latest
             technologies to develop innovative and intuitive software that
             enhances your online presence and drives substantial growth.
-          </p>
+          </motion.p>
 
-          <div
-            className="wow fadeInUp mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
-            data-wow-delay=".4s"
+          <motion.div
+            variants={fadeUp}
+            className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row"
           >
             <Link
               href="#services"
@@ -100,7 +137,6 @@ const Hero = () => {
             >
               <RiStackLine className="h-5 w-5" />
               Services
-
             </Link>
             <Link
               href="/contact"
@@ -109,11 +145,11 @@ const Hero = () => {
               <LuSend className="h-4 w-4 transition-transform group-hover:translate-x-1" />
               Reach out
             </Link>
-          </div>
+          </motion.div>
 
-          <div
-            className="wow fadeInUp mx-auto mt-14 grid max-w-[640px] grid-cols-3 gap-3 sm:gap-4"
-            data-wow-delay=".5s"
+          <motion.div
+            variants={fadeUp}
+            className="mx-auto mt-14 grid max-w-[640px] grid-cols-3 gap-3 sm:gap-4"
           >
             {[
               { k: "reply window", v: "within 24h" },
@@ -132,10 +168,10 @@ const Hero = () => {
                 </div>
               </div>
             ))}
-          </div>
+          </motion.div>
         </div>
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 
