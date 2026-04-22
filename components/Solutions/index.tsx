@@ -18,7 +18,7 @@ const Solutions = () => {
       <div className="container relative flex flex-col items-center justify-center">
         <SectionTitle
           title="Our Solutions"
-          paragraph="We don't just ship client work — we build and run our own production-grade products. Explore the platforms we've launched, the problems they solve, and the impact they deliver."
+          paragraph="We don't just ship client work - we build and run our own production-grade products. Explore the platforms we've launched, the problems they solve, and the impact they deliver."
           center
         />
 

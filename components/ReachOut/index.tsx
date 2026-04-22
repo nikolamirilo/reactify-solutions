@@ -128,8 +128,8 @@ const ReachOut = () => {
               <span className="text-gradient-accent">We&apos;ll reply within a day.</span>
             </h1>
             <p className="mt-6 max-w-[560px] text-base leading-relaxed text-textSecondary sm:text-lg">
-              Three fields. A real partner reads every message — not a bot, not a
-              sales rep — and writes back within one business day. Even if
+              Three fields. A real partner reads every message - not a bot, not a
+              sales rep - and writes back within one business day. Even if
               it&apos;s to say we&apos;re not the right fit.
             </p>
           </div>
@@ -292,7 +292,7 @@ const ReachOut = () => {
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
                     rows={7}
-                    placeholder="A few sentences on the problem, what you've already tried, and what success looks like. Rough and messy is fine — this isn't a pitch, and you don't need to know the answer yet. Just tell us where you're stuck."
+                    placeholder="A few sentences on the problem, what you've already tried, and what success looks like. Rough and messy is fine - this isn't a pitch, and you don't need to know the answer yet. Just tell us where you're stuck."
                     required
                     minLength={30}
                     maxLength={2000}

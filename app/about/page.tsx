@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn more about Reactify Solutions — the team behind Quicktalog and unbg. We build web apps, AI solutions, data analytics, and automations for small and medium-sized businesses.",
+    "Learn more about Reactify Solutions - the team behind Quicktalog and unbg. We build web apps, AI solutions, data analytics, and automations for small and medium-sized businesses.",
   alternates: { canonical: "/about" },
   openGraph: {
     title: "About Us",

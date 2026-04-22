@@ -47,7 +47,7 @@ const Hero = () => {
         className="pointer-events-none absolute -bottom-32 -left-32 h-[380px] w-[380px] rounded-full bg-primaryColor/[0.07] blur-[100px] z-[-1]"
       />
 
-      {/* Concentric rings — top right */}
+      {/* Concentric rings - top right */}
       <svg
         aria-hidden="true"
         className="pointer-events-none absolute -right-20 top-4 hidden opacity-40 lg:block z-[-1]"
@@ -68,7 +68,7 @@ const Hero = () => {
         <circle cx="280" cy="280" r="4" fill="#00d4c8" />
       </svg>
 
-      {/* Flowing lines — bottom left */}
+      {/* Flowing lines - bottom left */}
       <svg
         aria-hidden="true"
         className="pointer-events-none absolute -bottom-4 -left-10 hidden opacity-50 lg:block z-[-1]"

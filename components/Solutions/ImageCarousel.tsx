@@ -68,7 +68,7 @@ export default function ImageCarousel({
           >
             <Image
               src={images[active]}
-              alt={`${solutionName} — slide ${active + 1}`}
+              alt={`${solutionName} - slide ${active + 1}`}
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
               className="object-cover"

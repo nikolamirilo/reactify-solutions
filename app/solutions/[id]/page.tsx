@@ -489,7 +489,7 @@ export default async function SolutionDetailsPage({
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-textSecondary md:text-lg">
               We turn ambitious product ideas into live, revenue-generating
-              software — from discovery to deployment. Let&apos;s talk about
+              software - from discovery to deployment. Let&apos;s talk about
               yours.
             </p>
             <div className="mt-8 flex flex-col flex-wrap items-center justify-center gap-3 sm:flex-row">
