@@ -15,6 +15,8 @@ import SolutionHero from "@/components/Solutions/SolutionHero";
 import SolutionStats from "@/components/Solutions/SolutionStats";
 import SolutionTimeline from "@/components/Solutions/SolutionTimeline";
 import SolutionFAQ from "@/components/Solutions/SolutionFAQ";
+import RevealOnScroll from "@/components/Common/RevealOnScroll";
+import ReadingProgress from "@/components/Common/ReadingProgress";
 
 export async function generateStaticParams() {
   return solutionsData.map((s) => ({ id: s.id }));
@@ -107,6 +109,10 @@ export default async function SolutionDetailsPage({
 
   return (
     <div className="relative pb-16 pt-[120px] md:pt-[150px]">
+      <ReadingProgress
+        colorFrom={solution.accentFrom}
+        colorTo={solution.accentTo}
+      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
@@ -137,6 +143,7 @@ export default async function SolutionDetailsPage({
         />
 
         {/* Gallery + About */}
+        <RevealOnScroll>
         <div className="mb-14 grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-10">
           <div className="lg:col-span-3">
             <ImageCarousel
@@ -183,7 +190,10 @@ export default async function SolutionDetailsPage({
           </div>
         </div>
 
+        </RevealOnScroll>
+
         {/* Challenge + Solution */}
+        <RevealOnScroll>
         <div className="mb-14 grid grid-cols-1 gap-5 md:gap-6 lg:grid-cols-2">
           <div className="relative overflow-hidden rounded-2xl border border-red-500/20 bg-red-500/5 p-6 backdrop-blur-sm md:p-8">
             <div className="pointer-events-none absolute -right-12 -top-12 h-40 w-40 rounded-full bg-red-500/15 blur-3xl" />
@@ -216,7 +226,10 @@ export default async function SolutionDetailsPage({
           </div>
         </div>
 
+        </RevealOnScroll>
+
         {/* Key Features + Tech */}
+        <RevealOnScroll>
         <div className="mb-14 grid grid-cols-1 gap-6 lg:grid-cols-5">
           <div className="rounded-2xl border border-darkBorder bg-darkSurface/60 p-6 backdrop-blur-sm md:p-8 lg:col-span-3">
             <div className="mb-5 flex items-center justify-between">
@@ -260,7 +273,10 @@ export default async function SolutionDetailsPage({
           </div>
         </div>
 
+        </RevealOnScroll>
+
         {/* Use Cases */}
+        <RevealOnScroll>
         <div className="mb-14">
           <div className="mb-6 flex flex-col gap-2 md:mb-8">
             <div className="font-mono text-xs uppercase tracking-[0.14em] text-primaryColor">
@@ -303,7 +319,10 @@ export default async function SolutionDetailsPage({
           </div>
         </div>
 
+        </RevealOnScroll>
+
         {/* Timeline */}
+        <RevealOnScroll>
         <div className="mb-14">
           <div className="mb-6 flex flex-col gap-2 md:mb-10">
             <div className="font-mono text-xs uppercase tracking-[0.14em] text-primaryColor">
@@ -320,7 +339,10 @@ export default async function SolutionDetailsPage({
           />
         </div>
 
+        </RevealOnScroll>
+
         {/* Functionalities */}
+        <RevealOnScroll>
         <div className="mb-14">
           <div className="mb-6 flex flex-col gap-2 md:mb-8">
             <div className="font-mono text-xs uppercase tracking-[0.14em] text-primaryColor">
@@ -348,8 +370,11 @@ export default async function SolutionDetailsPage({
           </div>
         </div>
 
+        </RevealOnScroll>
+
         {/* Pricing */}
         {solution.pricing && solution.pricing.length > 0 && (
+          <RevealOnScroll>
           <div className="mb-14">
             <div className="mb-6 flex flex-col gap-2 md:mb-8">
               <div className="font-mono text-xs uppercase tracking-[0.14em] text-primaryColor">
@@ -413,9 +438,11 @@ export default async function SolutionDetailsPage({
               ))}
             </div>
           </div>
+          </RevealOnScroll>
         )}
 
         {/* Results */}
+        <RevealOnScroll>
         <div className="relative mb-14 overflow-hidden rounded-3xl border border-primaryColor/20 bg-primaryColor/5 p-6 backdrop-blur-sm md:p-10">
           <div className="pointer-events-none absolute -right-32 -top-32 h-72 w-72 rounded-full bg-primaryColor/15 blur-3xl" />
           <div className="pointer-events-none absolute -bottom-32 -left-32 h-72 w-72 rounded-full bg-accentGreen/10 blur-3xl" />
@@ -452,7 +479,10 @@ export default async function SolutionDetailsPage({
           </div>
         </div>
 
+        </RevealOnScroll>
+
         {/* FAQ */}
+        <RevealOnScroll>
         <div className="mb-14">
           <div className="mb-6 flex flex-col gap-2 md:mb-8">
             <div className="font-mono text-xs uppercase tracking-[0.14em] text-primaryColor">
@@ -465,7 +495,10 @@ export default async function SolutionDetailsPage({
           <SolutionFAQ faq={solution.faq} accentFrom={solution.accentFrom} />
         </div>
 
+        </RevealOnScroll>
+
         {/* CTA */}
+        <RevealOnScroll>
         <div className="relative overflow-hidden rounded-3xl border border-darkBorder bg-darkSurface/70 p-8 text-center backdrop-blur-sm md:p-14">
           <div className="pointer-events-none absolute inset-0 opacity-40 [mask-image:radial-gradient(circle_at_center,black,transparent_70%)]">
             <div
@@ -510,6 +543,7 @@ export default async function SolutionDetailsPage({
             </div>
           </div>
         </div>
+        </RevealOnScroll>
       </div>
     </div>
   );

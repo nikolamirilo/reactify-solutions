@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import { IoArrowBackCircleOutline } from "react-icons/io5";
 import CTA from "@/components/CTA/CTA";
+import ReadingProgress from "@/components/Common/ReadingProgress";
 
 export async function generateStaticParams() {
   return getAllPostSlugs().map((slug) => ({ slug }));
@@ -106,6 +107,7 @@ export default async function BlogPostPage({
 
   return (
     <>
+      <ReadingProgress />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

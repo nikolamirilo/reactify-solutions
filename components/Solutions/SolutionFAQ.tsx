@@ -4,6 +4,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { HiChevronDown } from "react-icons/hi2";
 import { Solution } from "./solutionsData";
+import AnimatedList from "../react-bits/AnimatedList";
 
 interface Props {
   faq: Solution["faq"];
@@ -14,16 +15,18 @@ const SolutionFAQ = ({ faq, accentFrom }: Props) => {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
-    <div className="flex flex-col gap-3">
+    <AnimatedList
+      className="flex flex-col gap-3"
+      itemClassName=""
+      stagger={0.06}
+      duration={0.5}
+      offset={20}
+    >
       {faq.map((item, idx) => {
         const isOpen = open === idx;
         return (
-          <motion.div
+          <div
             key={item.question}
-            initial={{ opacity: 0, y: 16 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.3 }}
-            transition={{ delay: idx * 0.05, duration: 0.45 }}
             className={`overflow-hidden rounded-2xl border bg-darkSurface/60 backdrop-blur-sm transition-colors ${
               isOpen ? "border-primaryColor/40" : "border-darkBorder"
             }`}
@@ -68,10 +71,10 @@ const SolutionFAQ = ({ faq, accentFrom }: Props) => {
                 </motion.div>
               )}
             </AnimatePresence>
-          </motion.div>
+          </div>
         );
       })}
-    </div>
+    </AnimatedList>
   );
 };
 

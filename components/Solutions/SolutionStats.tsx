@@ -2,12 +2,51 @@
 
 import { motion } from "framer-motion";
 import { Solution } from "./solutionsData";
+import CountUp from "../react-bits/CountUp";
 
 interface Props {
   stats: Solution["stats"];
   accentFrom: string;
   accentTo: string;
 }
+
+const NUM_PATTERN = /^([^\d-]*)(-?\d[\d,]*(?:\.\d+)?)(.*)$/;
+
+const parseStatValue = (value: string) => {
+  const match = value.match(NUM_PATTERN);
+  if (!match) return null;
+  const [, prefix, numStr, suffix] = match;
+  const hasSeparator = numStr.includes(",");
+  const numeric = Number(numStr.replace(/,/g, ""));
+  if (Number.isNaN(numeric)) return null;
+  const decimals = numStr.includes(".")
+    ? numStr.split(".")[1]?.length ?? 0
+    : 0;
+  return {
+    prefix,
+    numeric,
+    suffix,
+    separator: hasSeparator ? "," : "",
+    decimals,
+  };
+};
+
+const AnimatedValue = ({ value }: { value: string }) => {
+  const parsed = parseStatValue(value);
+  if (!parsed) return <>{value}</>;
+  return (
+    <>
+      {parsed.prefix}
+      <CountUp
+        to={parsed.numeric}
+        duration={2}
+        separator={parsed.separator}
+        decimals={parsed.decimals}
+      />
+      {parsed.suffix}
+    </>
+  );
+};
 
 const SolutionStats = ({ stats, accentFrom, accentTo }: Props) => {
   return (
@@ -52,7 +91,7 @@ const SolutionStats = ({ stats, accentFrom, accentTo }: Props) => {
               color: "transparent",
             }}
           >
-            {stat.value}
+            <AnimatedValue value={stat.value} />
           </div>
           <div className="mt-1 text-sm font-semibold text-white md:text-base">
             {stat.label}

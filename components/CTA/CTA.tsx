@@ -5,6 +5,8 @@ import { motion } from "framer-motion";
 import { PopupModal } from "react-calendly";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { DotLottieReact } from '@lottiefiles/dotlottie-react';
+import Magnet from "../react-bits/Magnet";
+import ClickSpark from "../react-bits/ClickSpark";
 
 const CTA = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -52,13 +54,22 @@ const CTA = () => {
                             vision a reality.
                         </p>
                         <div className="flex justify-center lg:justify-start">
-                            <button
-                                onClick={() => setIsOpen(true)}
-                                className="inline-flex items-center gap-2 rounded-xl bg-primaryColor px-8 py-4 text-lg font-semibold text-accentContrast shadow-glowSoft transition-all duration-300 ease-in-out hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow active:translate-y-0"
-                            >
-                                <FaRegCalendarAlt />
-                                Schedule a call
-                            </button>
+                            <Magnet padding={80} magnetStrength={3}>
+                                <ClickSpark
+                                    sparkColor="#00d4c8"
+                                    sparkCount={12}
+                                    sparkRadius={28}
+                                    sparkSize={6}
+                                >
+                                    <button
+                                        onClick={() => setIsOpen(true)}
+                                        className="inline-flex items-center gap-2 rounded-xl bg-primaryColor px-8 py-4 text-lg font-semibold text-accentContrast shadow-glowSoft transition-all duration-300 ease-in-out hover:bg-primaryDark hover:shadow-glow"
+                                    >
+                                        <FaRegCalendarAlt />
+                                        Schedule a call
+                                    </button>
+                                </ClickSpark>
+                            </Magnet>
                         </div>
                     </div>
                 </div>

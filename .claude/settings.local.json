@@ -18,7 +18,22 @@
       "Bash(npm ls *)",
       "Bash(npm view *)",
       "WebFetch(domain:www.quicktalog.app)",
-      "WebFetch(domain:unbg.tech)"
+      "WebFetch(domain:unbg.tech)",
+      "WebFetch(domain:reactbits.dev)",
+      "WebSearch",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:reactscript.com)",
+      "WebFetch(domain:madewithreactjs.com)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(npm --version)",
+      "Bash(NODE_OPTIONS=\"--use-openssl-ca\" npm install ogl --no-audit --no-fund)",
+      "Bash(NODE_OPTIONS=\"--use-openssl-ca\" npm config get registry)",
+      "Bash(NODE_OPTIONS=\"--use-openssl-ca\" npm config get strict-ssl)",
+      "Bash(NODE_OPTIONS=\"--use-openssl-ca\" npm config get cafile)",
+      "Bash(tasklist //FI \"IMAGENAME eq node.exe\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:54975)",
+      "Bash(curl -s http://localhost:3000 -o /tmp/home.html)"
     ]
   }
 }
