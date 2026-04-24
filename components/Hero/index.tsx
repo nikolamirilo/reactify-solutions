@@ -200,21 +200,16 @@ const Hero = () => {
           >
             {[
               {
-                k: "reply window",
-                // CountUp-animated "within 24h"
-                render: (
-                  <>
-                    within <CountUp to={24} duration={1.6} start={ready} />h
-                  </>
-                ),
+                k: "no sales",
+                render: "talk to builders",
               },
               {
-                k: "who you'll meet",
-                render: "a named partner",
+                k: "idea → product",
+                render: "weeks, not months",
               },
               {
-                k: "based in",
-                render: "EU · remote-first",
+                k: "beyond build",
+                render: "we challenge you",
               },
             ].map(({ k, render }) => (
               <div

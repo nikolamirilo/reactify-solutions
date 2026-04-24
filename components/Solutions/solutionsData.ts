@@ -85,12 +85,12 @@ const solutionsData: Solution[] = [
     stats: [
       {
         label: "Total Users",
-        value: "1,400+",
+        value: "2,000+",
         description: "Businesses and individuals using Quicktalog",
       },
       {
         label: "Catalogs Created",
-        value: "400+",
+        value: "500+",
         description: "Digital catalogs generated",
       },
       {

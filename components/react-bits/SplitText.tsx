@@ -1,7 +1,7 @@
 "use client";
 
-import { motion, useInView, useReducedMotion, Variants } from "framer-motion";
-import { ReactNode, useEffect, useRef, useState } from "react";
+import { motion, useInView, useReducedMotion } from "framer-motion";
+import { Fragment, ReactNode, useEffect, useRef, useState } from "react";
 import { usePreloadReady } from "@/hooks/usePreloadReady";
 
 type Trigger = "mount" | "inView" | "preload";
@@ -47,28 +47,6 @@ const SplitText = ({
   trigger = "mount",
 }: SplitTextProps) => {
   const prefersReducedMotion = useReducedMotion();
-  const units = splitType === "words" ? text.split(" ") : Array.from(text);
-
-  const container: Variants = {
-    hidden: {},
-    show: {
-      transition: {
-        staggerChildren: prefersReducedMotion ? 0 : stagger,
-        delayChildren: delay,
-      },
-    },
-  };
-
-  const item: Variants = {
-    hidden: { ...animationFrom },
-    show: {
-      ...animationTo,
-      transition: {
-        duration: prefersReducedMotion ? 0 : duration,
-        ease: [0.22, 1, 0.36, 1],
-      },
-    },
-  };
 
   const Wrapper: any = motion[as as keyof typeof motion];
 
@@ -97,27 +75,47 @@ const SplitText = ({
         ? preloadReady
         : mounted;
 
+  // Split by word so whole words stay on one line; within each word,
+  // optionally split into chars for the per-character cascade animation.
+  const words = text.split(" ");
+  let unitIndex = 0;
+
   return (
     <Wrapper
       ref={ref}
       aria-label={ariaLabel ?? text}
-      initial="hidden"
-      animate={shouldAnimate ? "show" : "hidden"}
-      variants={container}
       className={`inline-block ${className}`}
     >
-      {units.map((unit, i) => (
-        <motion.span
-          key={i}
-          aria-hidden
-          variants={item}
-          className={`inline-block will-change-transform ${charClassName}`}
-          style={{ whiteSpace: unit === " " ? "pre" : undefined }}
-        >
-          {unit === " " ? "\u00A0" : unit}
-          {splitType === "words" && i < units.length - 1 ? "\u00A0" : ""}
-        </motion.span>
-      ))}
+      {words.map((word, wi) => {
+        const charsInWord = splitType === "words" ? [word] : Array.from(word);
+        const isLast = wi === words.length - 1;
+        return (
+          <Fragment key={wi}>
+            <span className="inline-block whitespace-nowrap">
+              {charsInWord.map((unit, ui) => {
+                const i = unitIndex++;
+                return (
+                  <motion.span
+                    key={ui}
+                    aria-hidden
+                    initial={animationFrom}
+                    animate={shouldAnimate ? animationTo : animationFrom}
+                    transition={{
+                      duration: prefersReducedMotion ? 0 : duration,
+                      delay: prefersReducedMotion ? 0 : delay + i * stagger,
+                      ease: [0.22, 1, 0.36, 1],
+                    }}
+                    className={`inline-block will-change-transform ${charClassName}`}
+                  >
+                    {unit}
+                  </motion.span>
+                );
+              })}
+            </span>
+            {!isLast && " "}
+          </Fragment>
+        );
+      })}
       {children}
     </Wrapper>
   );

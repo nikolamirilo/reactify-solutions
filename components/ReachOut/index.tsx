@@ -32,15 +32,24 @@ const REPLY_PROMISE = [
 ];
 
 const PARTNERS = [
-  { initials: "NM", name: "Nikola Mirilo", role: "partner · eng", color: "#00d4c8" },
-  { initials: "RS", name: "Reactify team", role: "partner · product", color: "#4ade80" },
+  {
+    initials: "NM",
+    name: "Nikola Mirilo",
+    role: "partner · eng",
+    color: "#00d4c8",
+  },
+  {
+    initials: "RS",
+    name: "Reactify team",
+    role: "partner · product",
+    color: "#4ade80",
+  },
 ];
 
 const HERO_METRICS = [
   { k: "reply window", v: "within 24h", dot: true },
   { k: "who reads it", v: "a named partner" },
   { k: "based in", v: "EU · remote-first" },
-  { k: "NDA turnaround", v: "same-day" },
 ];
 
 const CHANNELS = [
@@ -99,9 +108,9 @@ const ReachOut = () => {
   }
 
   return (
-    <section className="relative z-10 overflow-hidden pt-[120px] pb-20 md:pt-[150px] md:pb-28">
-      <div className="absolute inset-x-0 top-0 h-[720px] radial-fade-top pointer-events-none z-[-1]" />
-      <div className="absolute inset-0 bg-grid-faint opacity-40 [mask-image:linear-gradient(to_bottom,black,transparent_75%)] pointer-events-none z-[-1]" />
+    <section className="relative z-10 overflow-hidden pb-20 pt-[120px] md:pb-28 md:pt-[150px]">
+      <div className="radial-fade-top pointer-events-none absolute inset-x-0 top-0 z-[-1] h-[720px]" />
+      <div className="bg-grid-faint pointer-events-none absolute inset-0 z-[-1] opacity-40 [mask-image:linear-gradient(to_bottom,black,transparent_75%)]" />
 
       {isOpen && (
         <InfoModal
@@ -122,14 +131,16 @@ const ReachOut = () => {
               </span>
               written reply · &lt; 1 business day
             </div>
-            <h1 className="font-display mt-5 text-[42px] font-semibold leading-[1.03] text-white sm:text-[56px] lg:text-[68px]">
+            <h1 className="mt-5 font-display text-[42px] font-semibold leading-[1.03] text-white sm:text-[56px] lg:text-[68px]">
               Tell us what you&apos;re building.
               <br />
-              <span className="text-gradient-accent">We&apos;ll reply within a day.</span>
+              <span className="text-gradient-accent">
+                We&apos;ll reply within a day.
+              </span>
             </h1>
             <p className="mt-6 max-w-[560px] text-base leading-relaxed text-textSecondary sm:text-lg">
-              Three fields. A real partner reads every message - not a bot, not a
-              sales rep - and writes back within one business day. Even if
+              Three fields. A real partner reads every message - not a bot, not
+              a sales rep - and writes back within one business day. Even if
               it&apos;s to say we&apos;re not the right fit.
             </p>
           </div>
@@ -319,7 +330,7 @@ const ReachOut = () => {
                 <button
                   type="submit"
                   disabled={isLoading}
-                  className="group inline-flex items-center justify-center gap-2 rounded-xl bg-primaryColor px-7 py-3.5 font-semibold text-accentContrast shadow-glowSoft transition-all hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow disabled:cursor-not-allowed disabled:opacity-60 active:translate-y-0"
+                  className="group inline-flex items-center justify-center gap-2 rounded-xl bg-primaryColor px-7 py-3.5 font-semibold text-accentContrast shadow-glowSoft transition-all hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-60"
                 >
                   {isLoading && <ImSpinner9 className="animate-spin" />}
                   {isLoading ? "Sending..." : "Send message"}
@@ -344,7 +355,7 @@ const ReachOut = () => {
               <div className="inline-flex items-center gap-2 rounded-full border border-primaryColor/30 bg-primaryColor/10 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-primaryColor">
                 our reply promise
               </div>
-              <h3 className="font-display mt-4 text-xl font-semibold text-white">
+              <h3 className="mt-4 font-display text-xl font-semibold text-white">
                 What you&apos;ll get back.
               </h3>
               <ul className="mt-5 space-y-4">
@@ -358,7 +369,11 @@ const ReachOut = () => {
                         stroke="currentColor"
                         strokeWidth="2.5"
                       >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M5 10l3 3 7-7" />
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          d="M5 10l3 3 7-7"
+                        />
                       </svg>
                     </span>
                     <div>
@@ -403,7 +418,7 @@ const ReachOut = () => {
               <div className="inline-flex items-center gap-2 rounded-full border border-darkBorder bg-darkElevated px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-textSecondary">
                 prefer a different channel?
               </div>
-              <h3 className="font-display mt-4 text-xl font-semibold text-white">
+              <h3 className="mt-4 font-display text-xl font-semibold text-white">
                 Reach us directly.
               </h3>
               <div className="mt-5 flex flex-col gap-2">
