@@ -270,6 +270,7 @@ const solutionsData: Solution[] = [
       "unbg is a free, privacy-first background removal tool powered by AI that runs entirely in the user's browser. Unlike cloud-based alternatives like remove.bg, unbg never uploads images to any server - all processing happens locally using an ONNX neural network model. It supports batch processing, a before/after comparison slider, manual brush editing (erase & restore), and high-resolution PNG downloads. Built with Next.js 16 and React 19, it delivers a premium, responsive experience on desktop and mobile.",
     images: [
       "/images/solutions/unbg/unbg-banner.png",
+      "/images/solutions/unbg/unbg-home.png",
       "/images/solutions/unbg/unbg-processing.png",
       "/images/solutions/unbg/unbg-edit.png",
     ],

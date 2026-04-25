@@ -45,8 +45,7 @@ const SolutionCard = ({
     target: cardRef,
     offset: ["start end", "end start"],
   });
-  const imageY = useTransform(scrollYProgress, [0, 1], ["-6%", "6%"]);
-  const imageScale = useTransform(scrollYProgress, [0, 0.5, 1], [1.08, 1, 1.08]);
+  const imageY = useTransform(scrollYProgress, [0, 1], ["-3%", "3%"]);
 
   const previewStats = solution.stats.slice(0, 3);
   const previewFeatures = solution.keyFeatures.slice(0, 4);
@@ -78,18 +77,18 @@ const SolutionCard = ({
           aria-label={`View ${solution.name} details`}
           className="relative block overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated lg:col-span-3"
         >
-          <div className="relative aspect-[16/10] w-full overflow-hidden">
+          <div className="relative aspect-[16/9] w-full overflow-hidden">
             <motion.div
-              style={{ y: imageY, scale: imageScale }}
-              className="absolute inset-0 h-[110%] w-full"
+              style={{ y: imageY }}
+              className="absolute inset-0 h-[108%] w-full"
             >
               <Image
                 src={solution.images[0]}
                 alt={solution.name}
                 fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 700px"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 820px"
                 className="object-cover object-center"
-                quality={75}
+                quality={95}
                 priority={index === 0}
               />
             </motion.div>
