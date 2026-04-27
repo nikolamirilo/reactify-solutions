@@ -30,7 +30,7 @@ const Hero = () => {
       transition={{ duration: 0.45, ease: "easeOut" }}
       className="relative z-10 overflow-hidden pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px]"
     >
-      {/* react-bits Aurora — signature WebGL-style backdrop (CSS variant) */}
+      {/* react-bits Aurora - signature WebGL-style backdrop (CSS variant) */}
       <Aurora
         colorStops={["#00d4c8", "#4ade80", "#00a89e"]}
         amplitude={0.7}

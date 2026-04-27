@@ -22,9 +22,9 @@ interface SplitTextProps {
   ariaLabel?: string;
   children?: ReactNode;
   /**
-   * "mount" (default): fire on client mount — reliable for above-the-fold.
-   * "inView": fire when viewport intersection observed — use for below-the-fold.
-   * "preload": fire after the PreLoader overlay hides — use for hero-area content.
+   * "mount" (default): fire on client mount - reliable for above-the-fold.
+   * "inView": fire when viewport intersection observed - use for below-the-fold.
+   * "preload": fire after the PreLoader overlay hides - use for hero-area content.
    */
   trigger?: Trigger;
 }
@@ -50,14 +50,14 @@ const SplitText = ({
 
   const Wrapper: any = motion[as as keyof typeof motion];
 
-  // Mount trigger — reliable for above-the-fold elements.
+  // Mount trigger - reliable for above-the-fold elements.
   const [mounted, setMounted] = useState(false);
   useEffect(() => {
     const raf = requestAnimationFrame(() => setMounted(true));
     return () => cancelAnimationFrame(raf);
   }, []);
 
-  // Viewport trigger — only used when trigger="inView".
+  // Viewport trigger - only used when trigger="inView".
   const ref = useRef<HTMLElement>(null);
   const inView = useInView(ref, {
     once,
@@ -65,15 +65,15 @@ const SplitText = ({
     margin: "0px 0px -10% 0px",
   });
 
-  // Preload trigger — only used when trigger="preload".
+  // Preload trigger - only used when trigger="preload".
   const preloadReady = usePreloadReady();
 
   const shouldAnimate =
     trigger === "inView"
       ? inView
       : trigger === "preload"
-        ? preloadReady
-        : mounted;
+      ? preloadReady
+      : mounted;
 
   // Split by word so whole words stay on one line; within each word,
   // optionally split into chars for the per-character cascade animation.

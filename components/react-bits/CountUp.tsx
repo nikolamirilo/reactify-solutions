@@ -23,17 +23,13 @@ interface CountUpProps {
   startOnView?: boolean;
   once?: boolean;
   /**
-   * External gate — animation only runs while `start` is true.
+   * External gate - animation only runs while `start` is true.
    * Default true. Use this to defer start until e.g. a preloader has finished.
    */
   start?: boolean;
 }
 
-const formatNumber = (
-  value: number,
-  decimals: number,
-  separator: string,
-) => {
+const formatNumber = (value: number, decimals: number, separator: string) => {
   const fixed = value.toFixed(decimals);
   const [intPart, decPart] = fixed.split(".");
   const withSep = separator
@@ -80,7 +76,18 @@ const CountUp = ({
     });
 
     return () => controls.stop();
-  }, [inView, from, to, duration, delay, decimals, separator, prefersReducedMotion, startOnView, start]);
+  }, [
+    inView,
+    from,
+    to,
+    duration,
+    delay,
+    decimals,
+    separator,
+    prefersReducedMotion,
+    startOnView,
+    start,
+  ]);
 
   return (
     <span ref={ref} className={className}>

@@ -31,7 +31,7 @@ const Technologies = () => {
         />
       </div>
 
-      {/* react-bits LogoLoop — row 1 scrolls left */}
+      {/* react-bits LogoLoop - row 1 scrolls left */}
       <LogoLoop
         logos={toLogoItems(row1)}
         direction="left"
@@ -43,10 +43,10 @@ const Technologies = () => {
         fadeOutColor="#0a0e1a"
         scaleOnHover={false}
         className="mb-4 mt-6"
-        ariaLabel="Technologies we use — row 1"
+        ariaLabel="Technologies we use - row 1"
       />
 
-      {/* react-bits LogoLoop — row 2 scrolls right */}
+      {/* react-bits LogoLoop - row 2 scrolls right */}
       <LogoLoop
         logos={toLogoItems(row2)}
         direction="right"
@@ -57,7 +57,7 @@ const Technologies = () => {
         fadeOut
         fadeOutColor="#0a0e1a"
         scaleOnHover={false}
-        ariaLabel="Technologies we use — row 2"
+        ariaLabel="Technologies we use - row 2"
       />
     </section>
   );
@@ -70,9 +70,7 @@ const TechCardNode = ({ brand }: { brand: Technology }) => {
   const isNextLogo = image.includes("next");
 
   return (
-    <div
-      className="group relative flex flex-col items-center justify-center gap-3 rounded-xl border border-darkBorder bg-darkSurface/70 px-6 py-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-primaryColor/40 hover:bg-darkElevated hover:shadow-[0_0_30px_rgba(0,212,200,0.15)] md:px-8 md:py-6"
-    >
+    <div className="group relative flex flex-col items-center justify-center gap-3 rounded-xl border border-darkBorder bg-darkSurface/70 px-6 py-5 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:border-primaryColor/40 hover:bg-darkElevated hover:shadow-[0_0_30px_rgba(0,212,200,0.15)] md:px-8 md:py-6">
       <div
         className={`relative flex h-12 w-12 items-center justify-center transition-transform duration-300 group-hover:scale-110 md:h-16 md:w-16 ${
           isNextLogo ? "rounded-full border border-darkBorder bg-white p-1" : ""

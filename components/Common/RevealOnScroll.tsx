@@ -23,7 +23,7 @@ const offsets = {
 } as const;
 
 /**
- * Page-level section reveal — outer wrapper that fades a whole section in
+ * Page-level section reveal - outer wrapper that fades a whole section in
  * as it enters the viewport. Meant to compose above inner staggers, not
  * replace them. amount is tuned (0.08) so the reveal fires the moment the
  * section crosses into view, before inner staggers start playing.
@@ -44,12 +44,12 @@ const RevealOnScroll = ({
     direction === "up"
       ? { y: distance }
       : direction === "down"
-        ? { y: -distance }
-        : direction === "left"
-          ? { x: distance }
-          : direction === "right"
-            ? { x: -distance }
-            : {};
+      ? { y: -distance }
+      : direction === "left"
+      ? { x: distance }
+      : direction === "right"
+      ? { x: -distance }
+      : {};
 
   if (prefersReducedMotion) {
     return <div className={className}>{children}</div>;
