@@ -5,14 +5,14 @@ import { allPostsMeta } from "@/content/blogs";
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.APP_URL || "https://www.reactify-solutions.com";
 
-  const solutionEntries: MetadataRoute.Sitemap = solutionsData.map(
-    (solution) => ({
+  const solutionEntries: MetadataRoute.Sitemap = solutionsData
+    .filter((solution) => solution.visible)
+    .map((solution) => ({
       url: `${baseUrl}/solutions/${solution.id}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
-    }),
-  );
+    }));
 
   const blogEntries: MetadataRoute.Sitemap = allPostsMeta.map((post) => ({
     url: `${baseUrl}/blogs/${post.slug}`,
@@ -36,6 +36,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     {
       url: `${baseUrl}/contact`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/support`,
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.8,

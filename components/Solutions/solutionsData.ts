@@ -33,6 +33,7 @@ export interface Solution {
   category: string;
   status: "live" | "beta" | "coming-soon";
   launchYear: string;
+  visible: boolean;
   briefDescription: string;
   fullDescription: string;
   images: string[];
@@ -67,6 +68,7 @@ const solutionsData: Solution[] = [
     category: "SaaS · AI Catalog Builder",
     status: "live",
     launchYear: "2024",
+    visible: true,
     briefDescription:
       "AI-powered digital catalog platform that helps businesses create, share, and track mobile-friendly product catalogs instantly.",
     fullDescription:
@@ -264,6 +266,7 @@ const solutionsData: Solution[] = [
     category: "Privacy-First AI Tool",
     status: "live",
     launchYear: "2025",
+    visible: true,
     briefDescription:
       "AI-powered background removal tool that runs 100% in the browser. No uploads, no sign-ups, no watermarks - just instant transparent PNGs.",
     fullDescription:
@@ -416,6 +419,136 @@ const solutionsData: Solution[] = [
         question: "Does it work on mobile?",
         answer:
           "Yes. unbg is fully mobile-optimised with touch support and automatic HEIC/HEIF conversion for photos taken on iPhone.",
+      },
+    ],
+  },
+  {
+    id: "linea",
+    name: "Linea",
+    tagline: "Bring Linear into Confluence",
+    category: "Atlassian Forge App · Confluence ↔ Linear",
+    status: "live",
+    launchYear: "2026",
+    visible: false,
+    briefDescription:
+      "Confluence Forge app that lets teams reference, link, and embed Linear issues directly inside Confluence pages - without ever leaving the editor or sending data to a third-party server.",
+    fullDescription:
+      "Linea is a privacy-first Atlassian Forge app that connects Confluence with Linear. It runs entirely inside Atlassian's Forge runtime, talks directly to the Linear API, and stores nothing on Reactify Solutions infrastructure. Teams can paste a Linear issue URL and get a live, formatted card; create new Linear issues from a Confluence page; and keep documentation and engineering work in lock-step.",
+    images: [
+      "/images/solutions/linea/linea-banner.png",
+      "/images/solutions/linea/linea-card.png",
+      "/images/solutions/linea/linea-create.png",
+    ],
+    productUrl: "https://marketplace.atlassian.com",
+    accentFrom: "#5e6ad2",
+    accentTo: "#00d4c8",
+    socialMedia: {},
+    stats: [
+      {
+        label: "Data sent to us",
+        value: "0",
+        description: "Linea has no Reactify backend - nothing is collected",
+      },
+      {
+        label: "Runtime",
+        value: "Forge",
+        description: "Runs entirely inside Atlassian's sandboxed runtime",
+      },
+      {
+        label: "Setup time",
+        value: "< 2 min",
+        description: "Install from the Marketplace and connect Linear",
+      },
+    ],
+    technologies: [
+      "Atlassian Forge",
+      "TypeScript",
+      "React",
+      "Forge UI Kit",
+      "Linear API (GraphQL)",
+    ],
+    functionalities: [
+      "Paste a Linear URL and render a live issue card inline",
+      "Create new Linear issues from a Confluence page",
+      "Link Confluence pages to Linear issues for two-way context",
+      "Filter and search Linear issues from a macro",
+      "Per-space configuration of the connected Linear workspace",
+    ],
+    keyFeatures: [
+      "Zero data collection - nothing leaves Atlassian and Linear",
+      "Native Forge UI - no iframes, no custom hosting",
+      "Secure credential storage via Forge storage APIs",
+      "Live issue status, assignee, and labels",
+      "Works across the Confluence editor and viewer",
+    ],
+    targetAudience: [
+      "Engineering teams documenting in Confluence and shipping in Linear",
+      "Product managers connecting specs to issues",
+      "Operations teams running incident write-ups",
+    ],
+    useCases: [
+      {
+        title: "Spec → issue linking",
+        description:
+          "Reference Linear issues directly from a product spec so reviewers can see status without leaving the page.",
+      },
+      {
+        title: "Sprint planning notes",
+        description:
+          "Embed an entire sprint's worth of Linear issues into a planning doc and keep statuses live.",
+      },
+      {
+        title: "Incident reports",
+        description:
+          "Turn an incident retro into a set of Linear follow-up issues created straight from the page.",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Discovery",
+        detail:
+          "Talked to Confluence-heavy engineering teams about the gap between docs and Linear.",
+      },
+      {
+        phase: "Design",
+        detail:
+          "Designed the macro and editor flows around Forge UI Kit primitives so it feels native.",
+      },
+      {
+        phase: "Build",
+        detail:
+          "Implemented the Linear GraphQL integration and per-space config, all inside Forge.",
+      },
+      {
+        phase: "Launch",
+        detail:
+          "Shipped to the Atlassian Marketplace as a private listing for early customers.",
+      },
+    ],
+    challenge:
+      "Teams that document in Confluence and execute in Linear constantly context-switch between the two tools, copy-pasting issue URLs that quickly go stale and losing track of which page maps to which issue.",
+    solution:
+      "Linea brings Linear into the Confluence editor. Issue cards stay live, new issues can be created without leaving the page, and because the app runs entirely on Forge there is no third-party backend, no data collection, and no extra security review for buyers.",
+    results: [
+      "Eliminated the doc ↔ issue context switch for early-access teams",
+      "Removed the security-review burden that comes with third-party SaaS connectors",
+      "Kept Linea fully inside the Atlassian/Linear trust boundary",
+    ],
+    faq: [
+      {
+        question: "Where is my data stored?",
+        answer:
+          "Linea has no Reactify Solutions backend. Configuration lives in Forge storage (Atlassian); issue data lives in Linear. Reactify never receives or stores anything.",
+      },
+      {
+        question: "Do I need a Linear account?",
+        answer:
+          "Yes. Linea is a connector - you'll need a Linear workspace and an API key with the appropriate permissions.",
+      },
+      {
+        question: "Which Atlassian products does it work with?",
+        answer:
+          "Linea targets Confluence Cloud. Jira and Data Center are not currently supported.",
       },
     ],
   },

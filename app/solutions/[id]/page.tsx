@@ -19,7 +19,7 @@ import RevealOnScroll from "@/components/Common/RevealOnScroll";
 import ReadingProgress from "@/components/Common/ReadingProgress";
 
 export async function generateStaticParams() {
-  return solutionsData.map((s) => ({ id: s.id }));
+  return solutionsData.filter((s) => s.visible).map((s) => ({ id: s.id }));
 }
 
 export async function generateMetadata({
@@ -28,7 +28,7 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  const solution = solutionsData.find((s) => s.id === id);
+  const solution = solutionsData.find((s) => s.id === id && s.visible);
 
   if (!solution) {
     return {
@@ -61,7 +61,7 @@ export default async function SolutionDetailsPage({
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const solution = solutionsData.find((s) => s.id === id);
+  const solution = solutionsData.find((s) => s.id === id && s.visible);
   if (!solution) {
     notFound();
   }

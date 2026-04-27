@@ -23,9 +23,11 @@ const Solutions = () => {
         />
 
         <div className="mt-6 flex w-full flex-col gap-12 md:mt-10 md:gap-16 lg:gap-24">
-          {solutionsData.map((solution, idx) => (
-            <SolutionCard key={solution.id} solution={solution} index={idx} />
-          ))}
+          {solutionsData
+            .filter((solution) => solution.visible)
+            .map((solution, idx) => (
+              <SolutionCard key={solution.id} solution={solution} index={idx} />
+            ))}
         </div>
       </div>
     </section>
