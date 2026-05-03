@@ -45,13 +45,8 @@ export default function manifest(): MetadataRoute.Manifest {
         purpose: "any",
       },
       {
-        src: "/apple-icon.png",
+        src: "/images/logo/logo.png",
         sizes: "192x192",
-        type: "image/png",
-      },
-      {
-        src: "/twitter-image.png",
-        sizes: "512x512",
         type: "image/png",
       },
     ],

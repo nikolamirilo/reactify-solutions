@@ -285,6 +285,12 @@ export const technologiesData: Technology[] = [
       "https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/metamask-colored.svg",
     url: "https://metamask.io/",
   },
+  {
+    name: "Solidity",
+    image:
+      "https://www.iebschool.com/uploads/logo_herramienta/9e9e66cf28eeb5f0fb9a5d7d82b09a8127deea9d.png",
+    url: "https://www.soliditylang.org/",
+  },
   // ── Design & Animation ──
   {
     name: "Figma",
