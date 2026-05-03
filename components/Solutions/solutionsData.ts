@@ -552,6 +552,163 @@ const solutionsData: Solution[] = [
       },
     ],
   },
+  {
+    id: "barkoff",
+    name: "BarkOff",
+    tagline: "Calm Your Dog's Barking with Positive Reinforcement",
+    category: "Mobile App · React Native / Expo",
+    status: "coming-soon",
+    launchYear: "2026",
+    visible: false,
+    briefDescription:
+      "Privacy-first mobile app that automatically detects dog barks and plays custom calming sounds, with on-device analytics to track behavior over time.",
+    fullDescription:
+      "BarkOff is a positive-reinforcement training companion for dog owners. It uses the device microphone to detect barks in real time, automatically plays custom calming sounds matched to the bark's intensity, and tracks every session so owners can identify triggers and measure progress. All audio processing happens on device - nothing is uploaded or stored on a server. No shock, no ultrasonic punishment, just data and gentle redirection.",
+    images: [
+      "/images/solutions/barkoff/barkoff-banner.png",
+      "/images/solutions/barkoff/barkoff-home.png",
+      "/images/solutions/barkoff/barkoff-session.png",
+      "/images/solutions/barkoff/barkoff-analytics.png",
+    ],
+    accentFrom: "#f59e0b",
+    accentTo: "#4ade80",
+    socialMedia: {},
+    stats: [
+      {
+        label: "Audio Processing",
+        value: "100%",
+        description: "Runs on device - no recordings ever uploaded",
+      },
+      {
+        label: "Approach",
+        value: "0 Shocks",
+        description: "Positive reinforcement only, no punishment hardware",
+      },
+      {
+        label: "Detection",
+        value: "Real-time",
+        description:
+          "Microphone-based dBFS metering with adjustable sensitivity",
+      },
+      {
+        label: "Background Audio",
+        value: "Yes",
+        description: "Keeps listening with the screen off",
+      },
+    ],
+    technologies: [
+      "React Native",
+      "Expo",
+      "TypeScript",
+      "expo-av",
+      "expo-file-system",
+      "Reanimated",
+      "Victory Native",
+    ],
+    functionalities: [
+      "Real-time bark detection using the device microphone",
+      "Auto-play calming sounds matched to bark intensity level",
+      "Per-level custom sound recordings (record your own voice)",
+      "Session tracking with timestamped bark events",
+      "Visual reports and analytics charts for behavior trends",
+      "Configurable sensitivity, thresholds, and cooldown timing",
+      "Pet profile with per-pet sound and threshold presets",
+      "Background audio support for screen-off listening",
+    ],
+    keyFeatures: [
+      "Smart bark detection with adjustable sensitivity",
+      "Custom calming sounds per bark intensity level",
+      "Privacy-first - all processing stays on device",
+      "Behavior analytics with session reports and charts",
+      "Positive-reinforcement approach, never punitive",
+      "Background listening when the screen is off",
+      "Customizable thresholds and cooldown timing",
+      "Per-pet profiles for multi-dog households",
+    ],
+    targetAudience: [
+      "Dog owners with anxious or vocal pets",
+      "Owners who leave dogs alone during the work day",
+      "Professional dog trainers tracking client progress",
+      "Pet sitters monitoring unfamiliar animals",
+      "Multi-dog households needing per-pet behavioral insight",
+    ],
+    useCases: [
+      {
+        title: "Work-from-home distractions",
+        description:
+          "Let BarkOff listen during meetings and play a recorded reassurance clip the moment your dog starts barking.",
+      },
+      {
+        title: "Separation anxiety training",
+        description:
+          "Run timed sessions while you step out, then review which moments triggered barks to build a desensitisation plan.",
+      },
+      {
+        title: "Trainer-led programs",
+        description:
+          "Trainers configure thresholds and sound libraries per client, then review session charts to measure progress between visits.",
+      },
+      {
+        title: "Multi-dog homes",
+        description:
+          "Switch profiles per pet so each dog gets the calming sounds and sensitivity that work for them.",
+      },
+    ],
+    timeline: [
+      {
+        phase: "Discovery",
+        detail:
+          "Talked to dog owners and trainers about why shock and ultrasonic collars fail and what insight they actually want.",
+      },
+      {
+        phase: "Prototype",
+        detail:
+          "Built an Expo prototype using on-device dBFS metering to validate bark detection without cloud audio.",
+      },
+      {
+        phase: "Build",
+        detail:
+          "Added per-level sound recording, session logging, analytics charts, and background audio support.",
+      },
+      {
+        phase: "Beta",
+        detail:
+          "Currently in private beta with dog owners and trainers refining sensitivity defaults and sound libraries.",
+      },
+    ],
+    challenge:
+      "Dog owners struggle with excessive barking when they're away or busy. Existing solutions either rely on punishment-based devices (shock or ultrasonic collars), require constant manual intervention, or provide no insight into when and how often the dog barks - making it impossible to identify triggers or measure progress over time.",
+    solution:
+      "BarkOff combines on-device audio metering with a positive-reinforcement playback engine. The microphone listens continuously (even with the screen off), classifies barks by intensity, and plays a custom calming sound the owner has recorded. Every event is logged locally so owners and trainers can see exactly when barks happen and whether interventions are working - all without sending a single audio sample off the device.",
+    results: [
+      "Eliminated the need for punishment-based anti-bark hardware",
+      "Kept 100% of audio processing on device for full privacy",
+      "Surfaced bark patterns owners had no previous visibility into",
+      "Gave trainers a measurable baseline to evaluate progress between sessions",
+    ],
+    faq: [
+      {
+        question: "Does BarkOff record or upload my dog's audio?",
+        answer:
+          "No. All bark detection runs locally on your device using audio metering, not recordings. Nothing is uploaded, and no audio is stored on a server.",
+      },
+      {
+        question: "Is this a shock or ultrasonic device?",
+        answer:
+          "No. BarkOff is purely positive-reinforcement - it plays calming sounds you record yourself. There is no punitive feedback of any kind.",
+      },
+      {
+        question: "Will it keep working when my phone screen is off?",
+        answer:
+          "Yes. BarkOff uses background audio so it can keep listening and responding while the screen is locked.",
+      },
+      {
+        question: "Can I use it for more than one dog?",
+        answer:
+          "Yes. You can create per-pet profiles with different sounds, sensitivity, and thresholds for each dog in the household.",
+      },
+    ],
+  },
 ];
 
 export default solutionsData;
