@@ -150,6 +150,7 @@ export default async function SolutionDetailsPage({
               images={solution.images}
               solutionName={solution.name}
               accentFrom={solution.accentFrom}
+              orientation={solution.imageOrientation}
             />
           </div>
 

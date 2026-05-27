@@ -37,6 +37,8 @@ export interface Solution {
   briefDescription: string;
   fullDescription: string;
   images: string[];
+  imageOrientation?: "landscape" | "portrait";
+  logo?: string;
   productUrl?: string;
   accentFrom: string;
   accentTo: string;
@@ -559,17 +561,20 @@ const solutionsData: Solution[] = [
     category: "Mobile App · React Native / Expo",
     status: "coming-soon",
     launchYear: "2026",
-    visible: false,
+    visible: true,
     briefDescription:
       "Privacy-first mobile app that automatically detects dog barks and plays custom calming sounds, with on-device analytics to track behavior over time.",
     fullDescription:
       "BarkOff is a positive-reinforcement training companion for dog owners. It uses the device microphone to detect barks in real time, automatically plays custom calming sounds matched to the bark's intensity, and tracks every session so owners can identify triggers and measure progress. All audio processing happens on device - nothing is uploaded or stored on a server. No shock, no ultrasonic punishment, just data and gentle redirection.",
     images: [
-      "/images/solutions/barkoff/barkoff-banner.png",
-      "/images/solutions/barkoff/barkoff-home.png",
-      "/images/solutions/barkoff/barkoff-session.png",
-      "/images/solutions/barkoff/barkoff-analytics.png",
+      "/images/solutions/bark-off/store1.png",
+      "/images/solutions/bark-off/store2.png",
+      "/images/solutions/bark-off/store3.png",
+      "/images/solutions/bark-off/store4.png",
+      "/images/solutions/bark-off/store5.png",
     ],
+    imageOrientation: "portrait",
+    logo: "/images/solutions/bark-off/logo.jpeg",
     accentFrom: "#f59e0b",
     accentTo: "#4ade80",
     socialMedia: {},

@@ -9,15 +9,21 @@ interface ImageCarouselProps {
   images: string[];
   solutionName: string;
   accentFrom?: string;
+  orientation?: "landscape" | "portrait";
 }
 
 export default function ImageCarousel({
   images,
   solutionName,
   accentFrom = "#00d4c8",
+  orientation = "landscape",
 }: ImageCarouselProps) {
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
+  const isPortrait = orientation === "portrait";
+  const stageAspect = isPortrait
+    ? "aspect-[4/5] sm:aspect-[3/2] md:aspect-[16/10]"
+    : "aspect-video";
 
   const next = useCallback(
     () => setActive((i) => (i + 1) % images.length),
@@ -34,18 +40,62 @@ export default function ImageCarousel({
     return () => clearInterval(id);
   }, [next, images.length, paused]);
 
-  if (images.length === 1) {
-    return (
-      <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated">
+  const renderSlide = (src: string, alt: string, priority = false) => {
+    if (!isPortrait) {
+      return (
         <Image
-          src={images[0]}
-          alt={solutionName}
+          src={src}
+          alt={alt}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
           className="object-cover"
           quality={75}
-          priority
+          priority={priority}
         />
+      );
+    }
+    return (
+      <>
+        <Image
+          src={src}
+          alt=""
+          fill
+          aria-hidden
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
+          className="scale-125 object-cover opacity-40 blur-2xl"
+          quality={75}
+          priority={priority}
+        />
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{
+            background: `radial-gradient(circle at 50% 50%, ${accentFrom}1f, transparent 65%)`,
+          }}
+        />
+        <div className="relative flex h-full w-full items-center justify-center p-4 sm:p-6 md:p-8">
+          <div className="relative h-full aspect-[9/16]">
+            <Image
+              src={src}
+              alt={alt}
+              fill
+              sizes="(max-width: 768px) 70vw, 320px"
+              className="rounded-2xl object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.55)]"
+              quality={95}
+              priority={priority}
+            />
+          </div>
+        </div>
+      </>
+    );
+  };
+
+  if (images.length === 1) {
+    return (
+      <div
+        className={`relative ${stageAspect} w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated`}
+      >
+        {renderSlide(images[0], solutionName, true)}
       </div>
     );
   }
@@ -56,7 +106,9 @@ export default function ImageCarousel({
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
-      <div className="relative aspect-video w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated">
+      <div
+        className={`relative ${stageAspect} w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated`}
+      >
         <AnimatePresence mode="wait">
           <motion.div
             key={active}
@@ -66,15 +118,11 @@ export default function ImageCarousel({
             transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
             className="absolute inset-0"
           >
-            <Image
-              src={images[active]}
-              alt={`${solutionName} - slide ${active + 1}`}
-              fill
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-              className="object-cover"
-              quality={75}
-              priority={active === 0}
-            />
+            {renderSlide(
+              images[active],
+              `${solutionName} - slide ${active + 1}`,
+              active === 0,
+            )}
           </motion.div>
         </AnimatePresence>
 
@@ -118,7 +166,11 @@ export default function ImageCarousel({
             type="button"
             onClick={() => setActive(i)}
             aria-label={`Show slide ${i + 1}`}
-            className={`relative h-14 w-24 flex-shrink-0 overflow-hidden rounded-lg border transition-all md:h-16 md:w-28 ${
+            className={`relative flex-shrink-0 overflow-hidden rounded-lg border transition-all ${
+              isPortrait
+                ? "h-20 w-12 md:h-24 md:w-14"
+                : "h-14 w-24 md:h-16 md:w-28"
+            } ${
               active === i
                 ? "border-primaryColor/60 opacity-100"
                 : "border-darkBorder opacity-60 hover:opacity-100"
@@ -128,7 +180,7 @@ export default function ImageCarousel({
               src={img}
               alt=""
               fill
-              sizes="112px"
+              sizes={isPortrait ? "56px" : "112px"}
               className="object-cover"
             />
           </button>

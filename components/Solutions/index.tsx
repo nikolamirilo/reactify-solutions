@@ -51,6 +51,7 @@ const SolutionCard = ({
 
   const previewStats = solution.stats.slice(0, 3);
   const previewFeatures = solution.keyFeatures.slice(0, 4);
+  const isPortrait = solution.imageOrientation === "portrait";
 
   return (
     <motion.article
@@ -80,24 +81,82 @@ const SolutionCard = ({
           className="relative block overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated lg:col-span-3"
         >
           <div className="relative aspect-[16/9] w-full overflow-hidden">
-            <motion.div
-              style={{ y: imageY }}
-              className="absolute inset-0 h-[108%] w-full"
-            >
-              <Image
-                src={solution.images[0]}
-                alt={solution.name}
-                fill
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 820px"
-                className="object-cover object-center"
-                quality={95}
-                priority={index === 0}
-              />
-            </motion.div>
+            {isPortrait ? (
+              <>
+                <div className="absolute inset-0">
+                  <Image
+                    src={solution.images[0]}
+                    alt=""
+                    fill
+                    aria-hidden
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 820px"
+                    className="scale-125 object-cover object-center opacity-40 blur-2xl"
+                    quality={75}
+                    priority={index === 0}
+                  />
+                </div>
+                <div
+                  aria-hidden
+                  className="absolute inset-0"
+                  style={{
+                    background: `radial-gradient(circle at 50% 50%, ${solution.accentFrom}22, transparent 60%)`,
+                  }}
+                />
+                <div className="relative flex h-full w-full items-center justify-center gap-3 p-4 sm:gap-4 sm:p-6">
+                  {solution.logo && (
+                    <div className="hidden h-[78%] aspect-square overflow-hidden rounded-2xl border border-white/10 shadow-[0_20px_60px_-20px_rgba(0,0,0,0.6)] sm:block">
+                      <div className="relative h-full w-full">
+                        <Image
+                          src={solution.logo}
+                          alt={`${solution.name} logo`}
+                          fill
+                          sizes="220px"
+                          className="object-cover"
+                          quality={95}
+                        />
+                      </div>
+                    </div>
+                  )}
+                  <motion.div
+                    style={{ y: imageY }}
+                    className="relative h-[92%] aspect-[9/16]"
+                  >
+                    <Image
+                      src={solution.images[0]}
+                      alt={solution.name}
+                      fill
+                      sizes="(max-width: 768px) 200px, 260px"
+                      className="rounded-2xl object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.5)]"
+                      quality={95}
+                      priority={index === 0}
+                    />
+                  </motion.div>
+                </div>
+              </>
+            ) : (
+              <motion.div
+                style={{ y: imageY }}
+                className="absolute inset-0 h-[108%] w-full"
+              >
+                <Image
+                  src={solution.images[0]}
+                  alt={solution.name}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 820px"
+                  className="object-cover object-center"
+                  quality={95}
+                  priority={index === 0}
+                />
+              </motion.div>
+            )}
 
             <div
               aria-hidden
-              className="absolute inset-0 bg-gradient-to-t from-dark via-dark/30 to-transparent"
+              className={`absolute inset-0 ${
+                isPortrait
+                  ? "bg-gradient-to-t from-dark/80 via-transparent to-transparent"
+                  : "bg-gradient-to-t from-dark via-dark/30 to-transparent"
+              }`}
             />
 
             <div className="absolute left-4 top-4 flex items-center gap-2">
