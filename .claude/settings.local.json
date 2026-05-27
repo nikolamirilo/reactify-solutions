@@ -37,7 +37,13 @@
       "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3001)",
       "WebFetch(domain:www.datalumina.com)",
       "Bash(node \"C:/Users/Nikola/AppData/Local/Temp/claude_usage_calc.js\")",
-      "mcp__ad19e2e9-b30b-4e7d-995e-e960b5f108f0__getConfluencePage"
+      "mcp__ad19e2e9-b30b-4e7d-995e-e960b5f108f0__getConfluencePage",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:3000/privacy-policy/linea\")",
+      "Bash(curl -s \"http://localhost:3000/privacy-policy/linea\")",
+      "Bash(grep -oE \"\\(Privacy Policy · Linea|1\\\\\\\\. About this policy|3\\\\\\\\. How Linea works|Atlassian Forge\\)\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\\\\n\" \"http://localhost:3000/privacy-policy/nonexistent\")",
+      "Bash(netstat -ano)",
+      "Bash(findstr :3000)"
     ]
   }
 }

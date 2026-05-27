@@ -10,6 +10,7 @@ import { FaRegGem, FaUsers } from "react-icons/fa";
 import { MdOutlineMailOutline, MdWarningAmber } from "react-icons/md";
 import { HiArrowRight } from "react-icons/hi2";
 import solutionsData from "@/components/Solutions/solutionsData";
+import policiesData from "@/components/PrivacyPolicies/policiesData";
 import ImageCarousel from "@/components/Solutions/ImageCarousel";
 import SolutionHero from "@/components/Solutions/SolutionHero";
 import SolutionStats from "@/components/Solutions/SolutionStats";
@@ -134,7 +135,10 @@ export default async function SolutionDetailsPage({
           <span className="text-white">{solution.name}</span>
         </div>
 
-        <SolutionHero solution={solution} />
+        <SolutionHero
+          solution={solution}
+          hasPrivacyPolicy={policiesData.some((p) => p.id === solution.id)}
+        />
 
         <SolutionStats
           stats={solution.stats}

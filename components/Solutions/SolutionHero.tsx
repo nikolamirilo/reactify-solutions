@@ -3,14 +3,16 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { FaExternalLinkAlt, FaShoppingCart } from "react-icons/fa";
+import { FaShieldHalved } from "react-icons/fa6";
 import { HiArrowRight } from "react-icons/hi2";
 import { Solution } from "./solutionsData";
 
 interface Props {
   solution: Solution;
+  hasPrivacyPolicy?: boolean;
 }
 
-const SolutionHero = ({ solution }: Props) => {
+const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -139,6 +141,15 @@ const SolutionHero = ({ solution }: Props) => {
               Read case study
               <HiArrowRight className="h-4 w-4" />
             </Link>
+            {hasPrivacyPolicy && (
+              <Link
+                href={`/solutions/${solution.id}/privacy-policy`}
+                className="inline-flex items-center gap-2 rounded-xl border border-darkBorder bg-darkSurface/60 px-6 py-3 font-semibold text-white transition-all hover:-translate-y-0.5 hover:border-primaryColor/40 hover:bg-darkSurface"
+              >
+                Privacy policy
+                <FaShieldHalved className="h-4 w-4" />
+              </Link>
+            )}
           </motion.div>
         </div>
 

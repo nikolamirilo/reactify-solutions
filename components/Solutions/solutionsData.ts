@@ -556,7 +556,7 @@ const solutionsData: Solution[] = [
   },
   {
     id: "bark-off",
-    name: "BarkOff",
+    name: "Bark Off",
     tagline: "Calm Your Dog's Barking with Positive Reinforcement",
     category: "Mobile App · React Native / Expo",
     status: "coming-soon",
@@ -565,7 +565,7 @@ const solutionsData: Solution[] = [
     briefDescription:
       "Privacy-first mobile app that automatically detects dog barks and plays custom calming sounds, with on-device analytics to track behavior over time.",
     fullDescription:
-      "BarkOff is a positive-reinforcement training companion for dog owners. It uses the device microphone to detect barks in real time, automatically plays custom calming sounds matched to the bark's intensity, and tracks every session so owners can identify triggers and measure progress. All audio processing happens on device - nothing is uploaded or stored on a server. No shock, no ultrasonic punishment, just data and gentle redirection.",
+      "Bark Off is a positive-reinforcement training companion for dog owners. It uses the device microphone to detect barks in real time, automatically plays custom calming sounds matched to the bark's intensity, and tracks every session so owners can identify triggers and measure progress. All audio processing happens on device - nothing is uploaded or stored on a server. No shock, no ultrasonic punishment, just data and gentle redirection.",
     images: [
       "/images/solutions/bark-off/store1.png",
       "/images/solutions/bark-off/store2.png",
@@ -641,7 +641,7 @@ const solutionsData: Solution[] = [
       {
         title: "Work-from-home distractions",
         description:
-          "Let BarkOff listen during meetings and play a recorded reassurance clip the moment your dog starts barking.",
+          "Let Bark Off listen during meetings and play a recorded reassurance clip the moment your dog starts barking.",
       },
       {
         title: "Separation anxiety training",
@@ -684,7 +684,7 @@ const solutionsData: Solution[] = [
     challenge:
       "Dog owners struggle with excessive barking when they're away or busy. Existing solutions either rely on punishment-based devices (shock or ultrasonic collars), require constant manual intervention, or provide no insight into when and how often the dog barks - making it impossible to identify triggers or measure progress over time.",
     solution:
-      "BarkOff combines on-device audio metering with a positive-reinforcement playback engine. The microphone listens continuously (even with the screen off), classifies barks by intensity, and plays a custom calming sound the owner has recorded. Every event is logged locally so owners and trainers can see exactly when barks happen and whether interventions are working - all without sending a single audio sample off the device.",
+      "Bark Off combines on-device audio metering with a positive-reinforcement playback engine. The microphone listens continuously (even with the screen off), classifies barks by intensity, and plays a custom calming sound the owner has recorded. Every event is logged locally so owners and trainers can see exactly when barks happen and whether interventions are working - all without sending a single audio sample off the device.",
     results: [
       "Eliminated the need for punishment-based anti-bark hardware",
       "Kept 100% of audio processing on device for full privacy",
@@ -693,19 +693,19 @@ const solutionsData: Solution[] = [
     ],
     faq: [
       {
-        question: "Does BarkOff record or upload my dog's audio?",
+        question: "Does Bark Off record or upload my dog's audio?",
         answer:
           "No. All bark detection runs locally on your device using audio metering, not recordings. Nothing is uploaded, and no audio is stored on a server.",
       },
       {
         question: "Is this a shock or ultrasonic device?",
         answer:
-          "No. BarkOff is purely positive-reinforcement - it plays calming sounds you record yourself. There is no punitive feedback of any kind.",
+          "No. Bark Off is purely positive-reinforcement - it plays calming sounds you record yourself. There is no punitive feedback of any kind.",
       },
       {
         question: "Will it keep working when my phone screen is off?",
         answer:
-          "Yes. BarkOff uses background audio so it can keep listening and responding while the screen is locked.",
+          "Yes. Bark Off uses background audio so it can keep listening and responding while the screen is locked.",
       },
       {
         question: "Can I use it for more than one dog?",
