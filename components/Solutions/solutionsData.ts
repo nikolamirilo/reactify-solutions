@@ -555,7 +555,7 @@ const solutionsData: Solution[] = [
     ],
   },
   {
-    id: "barkoff",
+    id: "bark-off",
     name: "BarkOff",
     tagline: "Calm Your Dog's Barking with Positive Reinforcement",
     category: "Mobile App · React Native / Expo",

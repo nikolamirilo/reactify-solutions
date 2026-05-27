@@ -144,28 +144,29 @@ export default async function SolutionDetailsPage({
 
         {/* Gallery + About */}
         <RevealOnScroll>
-        <div className="mb-14 grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-10">
-          <div className="lg:col-span-3">
-            <ImageCarousel
-              images={solution.images}
-              solutionName={solution.name}
-              accentFrom={solution.accentFrom}
-              orientation={solution.imageOrientation}
-            />
-          </div>
-
-          <div className="flex flex-col gap-5 lg:col-span-2" id="case-study">
-            <div className="inline-flex w-fit items-center gap-2 rounded-full border border-darkBorder bg-darkSurface/70 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-textSecondary">
+        {solution.imageOrientation === "portrait" ? (
+          <div className="mb-14" id="case-study">
+            <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-darkBorder bg-darkSurface/70 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-textSecondary">
               Overview
             </div>
-            <h2 className="font-display text-3xl font-semibold text-white md:text-4xl">
+            <h2 className="font-display mb-5 text-3xl font-semibold text-white md:text-4xl">
               About this project
             </h2>
+
+            <div className="md:float-right md:ml-8 md:mb-6 md:w-[280px]">
+              <ImageCarousel
+                images={solution.images}
+                solutionName={solution.name}
+                accentFrom={solution.accentFrom}
+                orientation={solution.imageOrientation}
+              />
+            </div>
+
             <p className="text-base leading-relaxed text-textSecondary md:text-lg">
               {solution.fullDescription}
             </p>
 
-            <div className="mt-2 rounded-2xl border border-darkBorder bg-darkSurface/60 p-5 backdrop-blur-sm md:p-6">
+            <div className="mt-6 max-w-3xl rounded-2xl border border-darkBorder bg-darkSurface/60 p-5 backdrop-blur-sm md:p-6">
               <div className="flex items-center gap-2 text-sm font-semibold text-white">
                 <FaUsers
                   className="h-4 w-4"
@@ -188,8 +189,57 @@ export default async function SolutionDetailsPage({
                 ))}
               </ul>
             </div>
+
+            <div className="clear-both" />
           </div>
-        </div>
+        ) : (
+          <div className="mb-14 grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-10">
+            <div className="lg:col-span-3">
+              <ImageCarousel
+                images={solution.images}
+                solutionName={solution.name}
+                accentFrom={solution.accentFrom}
+                orientation={solution.imageOrientation}
+              />
+            </div>
+
+            <div className="flex flex-col gap-5 lg:col-span-2" id="case-study">
+              <div className="inline-flex w-fit items-center gap-2 rounded-full border border-darkBorder bg-darkSurface/70 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-textSecondary">
+                Overview
+              </div>
+              <h2 className="font-display text-3xl font-semibold text-white md:text-4xl">
+                About this project
+              </h2>
+              <p className="text-base leading-relaxed text-textSecondary md:text-lg">
+                {solution.fullDescription}
+              </p>
+
+              <div className="mt-2 rounded-2xl border border-darkBorder bg-darkSurface/60 p-5 backdrop-blur-sm md:p-6">
+                <div className="flex items-center gap-2 text-sm font-semibold text-white">
+                  <FaUsers
+                    className="h-4 w-4"
+                    style={{ color: solution.accentFrom }}
+                  />
+                  Built for
+                </div>
+                <ul className="mt-3 flex flex-col gap-2">
+                  {solution.targetAudience.map((item) => (
+                    <li
+                      key={item}
+                      className="flex items-start gap-2 text-sm text-textSecondary md:text-base"
+                    >
+                      <FaCircleCheck
+                        className="mt-0.5 h-3.5 w-3.5 flex-shrink-0"
+                        style={{ color: solution.accentFrom }}
+                      />
+                      {item}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          </div>
+        )}
 
         </RevealOnScroll>
 

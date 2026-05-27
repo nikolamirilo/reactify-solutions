@@ -21,9 +21,15 @@ export default function ImageCarousel({
   const [active, setActive] = useState(0);
   const [paused, setPaused] = useState(false);
   const isPortrait = orientation === "portrait";
-  const stageAspect = isPortrait
-    ? "aspect-[4/5] sm:aspect-[3/2] md:aspect-[16/10]"
-    : "aspect-video";
+
+  // In portrait mode the carousel is sized to the phone screenshot itself,
+  // not stretched to the column width.
+  const wrapperClass = isPortrait
+    ? "relative mx-auto w-full max-w-[260px] sm:max-w-[280px]"
+    : "relative w-full";
+  const stageClass = isPortrait
+    ? "relative aspect-[9/16] w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated"
+    : "relative aspect-video w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated";
 
   const next = useCallback(
     () => setActive((i) => (i + 1) % images.length),
@@ -40,74 +46,47 @@ export default function ImageCarousel({
     return () => clearInterval(id);
   }, [next, images.length, paused]);
 
-  const renderSlide = (src: string, alt: string, priority = false) => {
-    if (!isPortrait) {
-      return (
-        <Image
-          src={src}
-          alt={alt}
-          fill
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-          className="object-cover"
-          quality={75}
-          priority={priority}
-        />
-      );
-    }
-    return (
-      <>
-        <Image
-          src={src}
-          alt=""
-          fill
-          aria-hidden
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw"
-          className="scale-125 object-cover opacity-40 blur-2xl"
-          quality={75}
-          priority={priority}
-        />
-        <div
-          aria-hidden
-          className="absolute inset-0"
-          style={{
-            background: `radial-gradient(circle at 50% 50%, ${accentFrom}1f, transparent 65%)`,
-          }}
-        />
-        <div className="relative flex h-full w-full items-center justify-center p-4 sm:p-6 md:p-8">
-          <div className="relative h-full aspect-[9/16]">
-            <Image
-              src={src}
-              alt={alt}
-              fill
-              sizes="(max-width: 768px) 70vw, 320px"
-              className="rounded-2xl object-contain drop-shadow-[0_20px_50px_rgba(0,0,0,0.55)]"
-              quality={95}
-              priority={priority}
-            />
-          </div>
-        </div>
-      </>
-    );
-  };
+  const slideSizes = isPortrait
+    ? "(max-width: 640px) 70vw, 280px"
+    : "(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 70vw";
+
+  const renderSlide = (src: string, alt: string, priority = false) => (
+    <Image
+      src={src}
+      alt={alt}
+      fill
+      sizes={slideSizes}
+      className="object-cover"
+      quality={isPortrait ? 95 : 75}
+      priority={priority}
+    />
+  );
 
   if (images.length === 1) {
     return (
-      <div
-        className={`relative ${stageAspect} w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated`}
-      >
-        {renderSlide(images[0], solutionName, true)}
+      <div className={wrapperClass}>
+        <div className={stageClass}>
+          {renderSlide(images[0], solutionName, true)}
+        </div>
       </div>
     );
   }
 
   return (
     <div
-      className="relative w-full"
+      className={wrapperClass}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
       <div
-        className={`relative ${stageAspect} w-full overflow-hidden rounded-2xl border border-darkBorder bg-darkElevated`}
+        className={stageClass}
+        style={
+          isPortrait
+            ? {
+                boxShadow: `0 30px 80px -30px ${accentFrom}55, 0 20px 50px -20px rgba(0,0,0,0.55)`,
+              }
+            : undefined
+        }
       >
         <AnimatePresence mode="wait">
           <motion.div
@@ -130,20 +109,32 @@ export default function ImageCarousel({
           type="button"
           onClick={prev}
           aria-label="Previous image"
-          className="absolute left-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white backdrop-blur-sm transition-all hover:-translate-y-[calc(50%+2px)] hover:bg-black/80 md:h-12 md:w-12"
+          className={`absolute top-1/2 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white backdrop-blur-sm transition-all hover:-translate-y-[calc(50%+2px)] hover:bg-black/80 ${
+            isPortrait
+              ? "left-2 h-8 w-8 md:h-9 md:w-9"
+              : "left-3 h-10 w-10 md:h-12 md:w-12"
+          }`}
         >
-          <HiChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
+          <HiChevronLeft className={isPortrait ? "h-4 w-4" : "h-5 w-5 md:h-6 md:w-6"} />
         </button>
         <button
           type="button"
           onClick={next}
           aria-label="Next image"
-          className="absolute right-3 top-1/2 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white backdrop-blur-sm transition-all hover:-translate-y-[calc(50%+2px)] hover:bg-black/80 md:h-12 md:w-12"
+          className={`absolute top-1/2 flex -translate-y-1/2 items-center justify-center rounded-full border border-white/10 bg-black/60 text-white backdrop-blur-sm transition-all hover:-translate-y-[calc(50%+2px)] hover:bg-black/80 ${
+            isPortrait
+              ? "right-2 h-8 w-8 md:h-9 md:w-9"
+              : "right-3 h-10 w-10 md:h-12 md:w-12"
+          }`}
         >
-          <HiChevronRight className="h-5 w-5 md:h-6 md:w-6" />
+          <HiChevronRight className={isPortrait ? "h-4 w-4" : "h-5 w-5 md:h-6 md:w-6"} />
         </button>
 
-        <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-black/50 px-3 py-1.5 backdrop-blur-sm">
+        <div
+          className={`absolute left-1/2 flex -translate-x-1/2 items-center gap-2 rounded-full bg-black/50 px-3 py-1.5 backdrop-blur-sm ${
+            isPortrait ? "bottom-3" : "bottom-4"
+          }`}
+        >
           {images.map((_, i) => (
             <button
               key={i}
@@ -159,33 +150,31 @@ export default function ImageCarousel({
         </div>
       </div>
 
-      <div className="mt-3 flex gap-2 overflow-x-auto pb-1 md:mt-4 md:gap-3">
-        {images.map((img, i) => (
-          <button
-            key={img}
-            type="button"
-            onClick={() => setActive(i)}
-            aria-label={`Show slide ${i + 1}`}
-            className={`relative flex-shrink-0 overflow-hidden rounded-lg border transition-all ${
-              isPortrait
-                ? "h-20 w-12 md:h-24 md:w-14"
-                : "h-14 w-24 md:h-16 md:w-28"
-            } ${
-              active === i
-                ? "border-primaryColor/60 opacity-100"
-                : "border-darkBorder opacity-60 hover:opacity-100"
-            }`}
-          >
-            <Image
-              src={img}
-              alt=""
-              fill
-              sizes={isPortrait ? "56px" : "112px"}
-              className="object-cover"
-            />
-          </button>
-        ))}
-      </div>
+      {!isPortrait && (
+        <div className="mt-3 flex gap-2 overflow-x-auto pb-1 md:mt-4 md:gap-3">
+          {images.map((img, i) => (
+            <button
+              key={img}
+              type="button"
+              onClick={() => setActive(i)}
+              aria-label={`Show slide ${i + 1}`}
+              className={`relative h-14 w-24 flex-shrink-0 overflow-hidden rounded-lg border transition-all md:h-16 md:w-28 ${
+                active === i
+                  ? "border-primaryColor/60 opacity-100"
+                  : "border-darkBorder opacity-60 hover:opacity-100"
+              }`}
+            >
+              <Image
+                src={img}
+                alt=""
+                fill
+                sizes="112px"
+                className="object-cover"
+              />
+            </button>
+          ))}
+        </div>
+      )}
     </div>
   );
 }
