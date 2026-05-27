@@ -8,7 +8,7 @@ export interface PolicySection {
 export interface PrivacyPolicy {
   /** URL slug used at /privacy-policy/[id] */
   id: string;
-  /** Product display name (e.g. "Linea", "BarkOff") */
+  /** Product display name (e.g. "Linea", "Bark Off") */
   productName: string;
   /** Last updated date displayed at the top of the page */
   lastUpdated: string;
@@ -230,14 +230,14 @@ const policiesData: PrivacyPolicy[] = [
     ],
   },
   {
-    id: "barkoff",
-    productName: "BarkOff",
+    id: "bark-off",
+    productName: "Bark Off",
     lastUpdated: "27 May 2026",
-    metaTitle: "Privacy Policy · BarkOff",
+    metaTitle: "Privacy Policy · Bark Off",
     metaDescription:
-      "Privacy Policy for BarkOff - the Reactify Solutions mobile app that helps calm dog barking. BarkOff is fully offline, collects no personal data, and never transmits audio off your device.",
+      "Privacy Policy for Bark Off - the Reactify Solutions mobile app that helps calm dog barking. Bark Off is fully offline, collects no personal data, and never transmits audio off your device.",
     breadcrumbDescription:
-      "How BarkOff, the Reactify Solutions positive-reinforcement bark-training app, handles data. Short version: it doesn't collect any, and nothing ever leaves your phone.",
+      "How Bark Off, the Reactify Solutions positive-reinforcement bark-training app, handles data. Short version: it doesn't collect any, and nothing ever leaves your phone.",
     sections: [
       {
         heading: "1. About this policy",
@@ -245,7 +245,7 @@ const policiesData: PrivacyPolicy[] = [
           <>
             <p>
               This Privacy Policy applies specifically to{" "}
-              <strong>BarkOff</strong>, a mobile application published by
+              <strong>Bark Off</strong>, a mobile application published by
               Reactify Solutions that helps dog owners detect barking in real
               time and respond with positive-reinforcement calming sounds.
             </p>
@@ -266,7 +266,7 @@ const policiesData: PrivacyPolicy[] = [
           <>
             <p>
               <strong>
-                BarkOff does not collect, store, or transmit any personal
+                Bark Off does not collect, store, or transmit any personal
                 data to Reactify Solutions.
               </strong>{" "}
               We do not operate any backend service, we do not run analytics
@@ -274,7 +274,7 @@ const policiesData: PrivacyPolicy[] = [
               users in any way.
             </p>
             <p>
-              BarkOff has <strong>no user accounts</strong>, no sign-up
+              Bark Off has <strong>no user accounts</strong>, no sign-up
               flow, and does not request your name, email address, phone
               number, location, contacts, or any other identifier. The app
               does not call any third-party APIs.
@@ -283,11 +283,11 @@ const policiesData: PrivacyPolicy[] = [
         ),
       },
       {
-        heading: "3. How BarkOff works on your device",
+        heading: "3. How Bark Off works on your device",
         body: (
           <>
             <p>
-              BarkOff runs entirely on your phone. All processing - bark
+              Bark Off runs entirely on your phone. All processing - bark
               detection, sound playback, and session history - happens
               locally. Nothing is sent over the network.
             </p>
@@ -301,7 +301,7 @@ const policiesData: PrivacyPolicy[] = [
               </li>
               <li>
                 <strong>Calming sounds you record</strong> - you can record
-                your own voice or other sounds for BarkOff to play back when
+                your own voice or other sounds for Bark Off to play back when
                 a bark is detected. Those recordings are stored only in the
                 app&rsquo;s private storage on your device.
               </li>
@@ -320,7 +320,7 @@ const policiesData: PrivacyPolicy[] = [
         body: (
           <>
             <p>
-              BarkOff only asks for permissions that are strictly required
+              Bark Off only asks for permissions that are strictly required
               for the app to function:
             </p>
             <ul className="list-disc space-y-1 pl-6">
@@ -340,7 +340,7 @@ const policiesData: PrivacyPolicy[] = [
               </li>
             </ul>
             <p>
-              BarkOff does not request access to your location, contacts,
+              Bark Off does not request access to your location, contacts,
               photos, camera, calendar, Bluetooth, or any other sensor or
               data source.
             </p>
@@ -352,7 +352,7 @@ const policiesData: PrivacyPolicy[] = [
         body: (
           <>
             <p>
-              BarkOff has no third-party SDKs for analytics, advertising,
+              Bark Off has no third-party SDKs for analytics, advertising,
               crash reporting, attribution, or social integrations. The app
               does not communicate with any external service operated by
               Reactify Solutions or anyone else.
@@ -371,7 +371,7 @@ const policiesData: PrivacyPolicy[] = [
         heading: "6. Children's privacy",
         body: (
           <p>
-            BarkOff is designed for dog owners and is not directed at
+            Bark Off is designed for dog owners and is not directed at
             children under 13. Because the app does not collect any
             personal information from any user, it does not knowingly
             collect information from children either.
@@ -384,11 +384,11 @@ const policiesData: PrivacyPolicy[] = [
           <>
             <p>
               Because Reactify Solutions does not hold any personal data
-              from BarkOff users, there is no data on our side to access,
+              from Bark Off users, there is no data on our side to access,
               correct, export, or delete.
             </p>
             <p>
-              Anything BarkOff stores - custom sound recordings, session
+              Anything Bark Off stores - custom sound recordings, session
               history, and settings - lives only on your device. You can
               delete that data at any time by:
             </p>
@@ -398,7 +398,7 @@ const policiesData: PrivacyPolicy[] = [
                 inside the app.
               </li>
               <li>
-                Uninstalling BarkOff, which removes all of its local data
+                Uninstalling Bark Off, which removes all of its local data
                 from the device.
               </li>
             </ul>
@@ -422,7 +422,7 @@ const policiesData: PrivacyPolicy[] = [
         heading: "9. Changes to this policy",
         body: (
           <p>
-            If we ever change BarkOff so that it begins collecting
+            If we ever change Bark Off so that it begins collecting
             personal data, transmitting audio, or contacting a remote
             service, we will update this page and announce the change in
             the app&rsquo;s store listings at least <strong>30 days</strong>{" "}
@@ -435,7 +435,7 @@ const policiesData: PrivacyPolicy[] = [
         heading: "10. Contact",
         body: (
           <p>
-            Questions about BarkOff or this policy can be directed to{" "}
+            Questions about Bark Off or this policy can be directed to{" "}
             <a
               href="mailto:support@reactify-solutions.com"
               className={linkClass}
