@@ -267,11 +267,10 @@ const policiesData: PrivacyPolicy[] = [
             <p>
               <strong>
                 Bark Off does not collect, store, or transmit any personal
-                data to Reactify Solutions.
+                data.
               </strong>{" "}
-              We do not operate any backend service, we do not run analytics
-              on usage, we do not use advertising SDKs, and we do not profile
-              users in any way.
+              We do not operate any backend service, we do not use advertising SDKs, and we do not profile
+              users in any way. We collect only anonymus analytics data.
             </p>
             <p>
               Bark Off has <strong>no user accounts</strong>, no sign-up
