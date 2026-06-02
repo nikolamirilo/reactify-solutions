@@ -93,7 +93,7 @@ const Support = () => {
                   {/* Name */}
                   <div>
                     <label htmlFor="name" className={labelClasses}>
-                      Your Name <span className="text-red-500">*</span>
+                      Your Name <span className="text-error">*</span>
                     </label>
                     <input
                       id="name"
@@ -109,7 +109,7 @@ const Support = () => {
                   {/* Email */}
                   <div>
                     <label htmlFor="email" className={labelClasses}>
-                      Your Email <span className="text-red-500">*</span>
+                      Your Email <span className="text-error">*</span>
                     </label>
                     <input
                       id="email"
@@ -125,7 +125,7 @@ const Support = () => {
                   {/* Product */}
                   <div>
                     <label htmlFor="product" className={labelClasses}>
-                      Product <span className="text-red-500">*</span>
+                      Product <span className="text-error">*</span>
                     </label>
                     <select
                       id="product"
@@ -148,7 +148,7 @@ const Support = () => {
                   {/* Topic */}
                   <div>
                     <label htmlFor="topic" className={labelClasses}>
-                      Topic <span className="text-red-500">*</span>
+                      Topic <span className="text-error">*</span>
                     </label>
                     <select
                       id="topic"
@@ -176,7 +176,7 @@ const Support = () => {
                   {topic === "Custom" && (
                     <div>
                       <label htmlFor="customTopic" className={labelClasses}>
-                        Custom Topic <span className="text-red-500">*</span>
+                        Custom Topic <span className="text-error">*</span>
                       </label>
                       <input
                         id="customTopic"
@@ -194,7 +194,7 @@ const Support = () => {
                 {/* Right column - message */}
                 <div className="flex w-full flex-col lg:w-1/2">
                   <label htmlFor="message" className={labelClasses}>
-                    Your Message <span className="text-red-500">*</span>
+                    Your Message <span className="text-error">*</span>
                   </label>
                   <textarea
                     id="message"

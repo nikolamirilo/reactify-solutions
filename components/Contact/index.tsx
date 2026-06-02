@@ -84,7 +84,7 @@ const Contact = () => {
                   {/* Name */}
                   <div>
                     <label htmlFor="name" className={labelClasses}>
-                      Your Name <span className="text-red-500">*</span>
+                      Your Name <span className="text-error">*</span>
                     </label>
                     <input
                       id="name"
@@ -100,7 +100,7 @@ const Contact = () => {
                   {/* Email */}
                   <div>
                     <label htmlFor="email" className={labelClasses}>
-                      Your Email <span className="text-red-500">*</span>
+                      Your Email <span className="text-error">*</span>
                     </label>
                     <input
                       id="email"
@@ -116,7 +116,7 @@ const Contact = () => {
                   {/* Subject */}
                   <div>
                     <label htmlFor="subject" className={labelClasses}>
-                      Subject <span className="text-red-500">*</span>
+                      Subject <span className="text-error">*</span>
                     </label>
                     <select
                       id="subject"
@@ -140,7 +140,7 @@ const Contact = () => {
                   {subject === "Custom" && (
                     <div>
                       <label htmlFor="customSubject" className={labelClasses}>
-                        Custom Subject <span className="text-red-500">*</span>
+                        Custom Subject <span className="text-error">*</span>
                       </label>
                       <input
                         id="customSubject"
@@ -158,7 +158,7 @@ const Contact = () => {
                 {/* Right column - message */}
                 <div className="flex w-full flex-col lg:w-1/2">
                   <label htmlFor="message" className={labelClasses}>
-                    Your Message <span className="text-red-500">*</span>
+                    Your Message <span className="text-error">*</span>
                   </label>
                   <textarea
                     id="message"

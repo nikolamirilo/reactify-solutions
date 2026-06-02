@@ -67,7 +67,7 @@ const CreateTestimonial = () => {
                   {/* Full Name */}
                   <div>
                     <label htmlFor="fullName" className={labelClasses}>
-                      Your Full Name <span className="text-red-500">*</span>
+                      Your Full Name <span className="text-error">*</span>
                     </label>
                     <input
                       id="fullName"
@@ -83,7 +83,7 @@ const CreateTestimonial = () => {
                   {/* Profession */}
                   <div>
                     <label htmlFor="profession" className={labelClasses}>
-                      Your Profession <span className="text-red-500">*</span>
+                      Your Profession <span className="text-error">*</span>
                     </label>
                     <input
                       id="profession"
@@ -99,7 +99,7 @@ const CreateTestimonial = () => {
                   {/* Star Rating */}
                   <div>
                     <label className={labelClasses}>
-                      Your Rating <span className="text-red-500">*</span>
+                      Your Rating <span className="text-error">*</span>
                     </label>
                     <div className="py-1">
                       <StarRatings
@@ -119,7 +119,7 @@ const CreateTestimonial = () => {
                 {/* Right column - testimonial message */}
                 <div className="flex w-full flex-col lg:w-1/2">
                   <label htmlFor="content" className={labelClasses}>
-                    Your Testimonial <span className="text-red-500">*</span>
+                    Your Testimonial <span className="text-error">*</span>
                   </label>
                   <textarea
                     id="content"
