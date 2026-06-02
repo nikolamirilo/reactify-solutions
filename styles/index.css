@@ -1,53 +1,55 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+:root {
+  /* RGB channels — used as: rgb(var(--color-name) / <alpha>) */
+  --color-bg-base:          10 14 26;
+  --color-bg-surface:       13 18 32;
+  --color-bg-elevated:      17 23 38;
+  --color-border:           31 38 54;
+  --color-border-strong:    39 50 69;
+  --color-accent:           0 212 200;
+  --color-accent-dark:      0 168 158;
+  --color-accent-green:     74 222 128;
+  --color-accent-contrast:  6 42 39;
+  --color-text-muted:       136 146 166;
+  --color-text-secondary:   201 209 224;
+  --color-text-dim:         90 100 120;
+  --color-text-primary:     245 247 251;
+  --color-error:            239 68 68;
+  --color-star-yellow:      251 176 64;
+}
+
 html {
   scroll-behavior: smooth !important;
-  background-color: #0a0e1a;
+  background-color: rgb(var(--color-bg-base));
 }
 
 body {
-  background-color: #0a0e1a;
-  color: #c9d1e0;
+  background-color: rgb(var(--color-bg-base));
+  color: rgb(var(--color-text-secondary));
 }
 
-:root {
-  --color-bg-base: #0a0e1a;
-  --color-bg-surface: #0d1220;
-  --color-bg-elevated: #111726;
-  --color-border: #1f2636;
-  --color-border-strong: #273245;
-  --color-accent: #00d4c8;
-  --color-accent-dark: #00a89e;
-  --color-accent-green: #4ade80;
-  --color-accent-contrast: #062a27;
-  --color-text: #f5f7fb;
-  --color-text-secondary: #c9d1e0;
-  --color-text-muted: #8892a6;
-  --color-text-dim: #5a6478;
-}
-
-/*Scrollbar*/
 ::-webkit-scrollbar {
   width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-  background: #0d1220;
+  background: rgb(var(--color-bg-surface));
   border-radius: 0rem;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #00d4c8;
+  background: rgb(var(--color-accent));
   border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #00d4c8;
+  background: rgb(var(--color-accent));
 }
 
 ::selection {
-  background: rgba(0, 212, 200, 0.25);
-  color: #f5f7fb;
+  background: rgb(var(--color-accent) / 0.25);
+  color: rgb(var(--color-text-primary));
 }
 
 @tailwind base;
