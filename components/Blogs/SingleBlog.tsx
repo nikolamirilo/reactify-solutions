@@ -15,11 +15,11 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
   } = blog;
   const href = `/blogs/${slug}`;
   return (
-    <div className="relative overflow-hidden rounded-lg bg-white/5">
-      <Link href={href} className="relative block h-[180px] w-full">
+    <div className="relative flex h-full flex-col overflow-hidden rounded-lg bg-white/5">
+      <Link href={href} className="relative block h-[180px] w-full shrink-0">
         <Image src={image} alt={title} fill className="object-cover" />
       </Link>
-      <div className="p-5">
+      <div className="flex flex-1 flex-col p-5">
         <h3>
           <Link
             href={href}
@@ -28,7 +28,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
             {title}
           </Link>
         </h3>
-        <p className="mb-4 border-b border-textColor border-opacity-10 pb-4 text-sm font-medium leading-relaxed text-textColor dark:border-white dark:border-opacity-10">
+        <p className="mb-4 flex-1 border-b border-textColor border-opacity-10 pb-4 text-sm font-medium leading-relaxed text-textColor dark:border-white dark:border-opacity-10">
           {excerpt}
         </p>
         <div className="flex items-center">

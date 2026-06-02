@@ -6,7 +6,6 @@ import Technologies from "@/components/Technologies";
 import { Metadata } from "next";
 import Solutions from "@/components/Solutions";
 import CTA from "@/components/CTA/CTA";
-import Blog from "@/components/Blogs";
 
 export const metadata: Metadata = {
   title: {
@@ -41,22 +40,13 @@ export default async function page() {
       <ScrollUp />
       <Hero />
       <RevealOnScroll>
-        <AboutSectionOne />
+        <Solutions />
       </RevealOnScroll>
       <RevealOnScroll>
         <Services />
       </RevealOnScroll>
       <RevealOnScroll>
-        <Solutions />
-      </RevealOnScroll>
-      <RevealOnScroll>
         <Technologies />
-      </RevealOnScroll>
-      <RevealOnScroll>
-        <Testimonials />
-      </RevealOnScroll>
-      <RevealOnScroll>
-        <Blog />
       </RevealOnScroll>
       <RevealOnScroll>
         <CTA />

@@ -15,27 +15,22 @@ const menuData: Menu[] = [
   },
   {
     id: 3,
-    title: "About",
-    path: "#about",
+    title: "Add Testimonial",
+    path: "/add-testimonial",
     newTab: false,
   },
   {
     id: 4,
-    title: "Testimonials",
-    path: "#testimonials",
-    newTab: false,
-  },
-  {
-    id: 5,
     title: "Blogs",
     path: "/blogs",
     newTab: false,
   },
   {
-    id: 6,
-    title: "Contact",
+    id: 5,
+    title: "Book a Call",
     path: "/contact",
     newTab: false,
+    highlighted: true
   },
 ];
 export default menuData;

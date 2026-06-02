@@ -22,6 +22,7 @@ export type Menu = {
   path?: string;
   newTab: boolean;
   submenu?: Menu[];
+  highlighted?: boolean
 };
 export type Technology = {
   name: string;

@@ -39,6 +39,7 @@ const Blog = ({ variant = "default" }: { variant?: "blogs" | "default" }) => {
           {blogs.map((blog) => (
             <motion.div
               key={blog.id}
+              className="h-full"
               variants={{
                 hidden: { opacity: 0, y: 32 },
                 show: {
