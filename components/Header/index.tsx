@@ -100,10 +100,9 @@ const Header = () => {
                           menuItem.highlighted
                             ? "group inline-flex items-center gap-2 rounded-xl bg-primaryColor px-6 py-2 font-semibold text-accentContrast shadow-glowSoft transition-all duration-300 hover:bg-primaryDark hover:shadow-glow"
                             : cx(
-                              "relative px-4 lg:px-1 lg:py-6",
-                              "after:absolute after:bottom-3 after:left-1 after:right-1 after:h-px after:origin-left after:scale-x-0 after:rounded-full after:bg-primaryColor/50 after:transition-transform after:duration-300 hover:after:scale-x-100",
+                              "px-4 lg:px-1 lg:py-6",
                               isActive
-                                ? "text-primaryColor after:scale-x-100"
+                                ? "text-primaryColor"
                                 : "text-textSecondary hover:text-white"
                             ),
                         )}

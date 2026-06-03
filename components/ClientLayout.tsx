@@ -13,9 +13,13 @@ export default function ClientLayout({
 }) {
     return (
         <Providers>
-            <Header />
-            {children}
-            <Footer />
+            <div className="flex min-h-screen flex-col">
+                <Header />
+                <main className="flex-1">
+                    {children}
+                </main>
+                <Footer />
+            </div>
             <ScrollToTop />
         </Providers>
     );
