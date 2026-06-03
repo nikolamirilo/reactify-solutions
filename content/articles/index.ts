@@ -32,6 +32,9 @@ import CuttingOpenAiCostsProductionPost, {
 import LangGraphProductionAgents2026Post, {
   meta as langGraphProductionAgents2026Meta,
 } from "./posts/langgraph-production-agents-2026";
+import McpProductionAiIntegrations2026Post, {
+  meta as mcpProductionAiIntegrations2026Meta,
+} from "./posts/mcp-production-ai-integrations-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -82,6 +85,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: langGraphProductionAgents2026Meta,
     Component: LangGraphProductionAgents2026Post,
+  },
+  {
+    meta: mcpProductionAiIntegrations2026Meta,
+    Component: McpProductionAiIntegrations2026Post,
   },
 ];
 
