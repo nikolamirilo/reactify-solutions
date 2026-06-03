@@ -22,7 +22,7 @@ export const meta: Blog = {
 
 export default function NextjsSeoChecklist2026Post() {
   return (
-    <div className="prose prose-lg dark:prose-invert max-w-none text-textColor dark:text-white/80">
+    <div className="prose prose-lg prose-invert max-w-none text-white/80">
       <p className="mb-6 text-lg leading-relaxed">
         Most SEO audits produce 200-item checklists that nobody ever finishes.
         This is not that. This is the 10% of the work that delivers 90% of the

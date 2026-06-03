@@ -23,7 +23,7 @@ export const meta: Blog = {
 
 export default function CuttingOpenAiCostsProductionPost() {
   return (
-    <div className="prose prose-lg dark:prose-invert max-w-none text-textColor dark:text-white/80">
+    <div className="prose prose-lg prose-invert max-w-none text-white/80">
       <p className="mb-6 text-lg leading-relaxed">
         At a certain scale, the OpenAI bill is the bill. We run AI features for
         several clients and for our own product, Quicktalog, and have spent

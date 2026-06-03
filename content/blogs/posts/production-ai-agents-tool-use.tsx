@@ -23,7 +23,7 @@ export const meta: Blog = {
 
 export default function ProductionAiAgentsToolUsePost() {
   return (
-    <div className="prose prose-lg dark:prose-invert max-w-none text-textColor dark:text-white/80">
+    <div className="prose prose-lg prose-invert max-w-none text-white/80">
       <p className="mb-6 text-lg leading-relaxed">
         An agent is a chatbot that can do things. The model reasons about a
         task, picks a tool to call, reads the result, and decides what to do

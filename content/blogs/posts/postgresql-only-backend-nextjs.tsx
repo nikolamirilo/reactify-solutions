@@ -23,7 +23,7 @@ export const meta: Blog = {
 
 export default function PostgresqlOnlyBackendNextjsPost() {
   return (
-    <div className="prose prose-lg dark:prose-invert max-w-none text-textColor dark:text-white/80">
+    <div className="prose prose-lg prose-invert max-w-none text-white/80">
       <p className="mb-6 text-lg leading-relaxed">
         You open a new Next.js project and now you need a database, a queue, a
         vector store, a scheduler, a search index, a pub/sub system, and an auth

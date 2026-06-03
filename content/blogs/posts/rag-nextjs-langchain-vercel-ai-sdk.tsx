@@ -23,7 +23,7 @@ export const meta: Blog = {
 
 export default function RagNextjsLangchainVercelAiSdkPost() {
   return (
-    <div className="prose prose-lg dark:prose-invert max-w-none text-textColor dark:text-white/80">
+    <div className="prose prose-lg prose-invert max-w-none text-white/80">
       <p className="mb-6 text-lg leading-relaxed">
         &quot;Just add ChatGPT to your docs&quot; has become shorthand for a
         whole family of features: internal knowledge search, customer support

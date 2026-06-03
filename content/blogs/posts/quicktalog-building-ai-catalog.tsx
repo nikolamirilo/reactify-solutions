@@ -22,7 +22,7 @@ export const meta: Blog = {
 
 export default function QuicktalogBuildingAiCatalogPost() {
   return (
-    <div className="prose prose-lg dark:prose-invert max-w-none text-textColor dark:text-white/80">
+    <div className="prose prose-lg prose-invert max-w-none text-white/80">
       <p className="mb-6 text-lg leading-relaxed">
         When we started building{" "}
         <a
