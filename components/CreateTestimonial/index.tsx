@@ -40,10 +40,10 @@ const CreateTestimonial = () => {
   }
 
   const inputClasses =
-    "w-full rounded-xl border-none bg-white/80 dark:bg-white/5 backdrop-blur-sm py-3.5 px-5 text-base text-dark dark:text-white placeholder-gray-400 dark:placeholder-gray-500 shadow-[0_2px_10px_rgba(0,0,0,0.06)] dark:shadow-[0_2px_10px_rgba(0,0,0,0.3)] outline-none transition-all duration-300 focus:shadow-[0_0_0_2px_rgba(27,153,139,0.3),0_4px_16px_rgba(27,153,139,0.1)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_4px_16px_rgba(0,0,0,0.4)]";
+    "w-full rounded-xl border-none bg-white/5 backdrop-blur-sm py-3.5 px-5 text-base text-white placeholder-textColor shadow-[0_2px_10px_rgba(0,0,0,0.3)] outline-none transition-all duration-300 focus:shadow-[0_0_0_2px_rgba(27,153,139,0.3),0_4px_16px_rgba(27,153,139,0.1)] hover:shadow-[0_4px_16px_rgba(0,0,0,0.4)]";
 
   const labelClasses =
-    "mb-2 block text-sm font-semibold text-dark/80 dark:text-white/90 tracking-wide";
+    "mb-2 block text-sm font-semibold text-textSecondary tracking-wide";
 
   return (
     <section id="testimonial" className="overflow-hidden pb-16 pt-5">
@@ -57,7 +57,7 @@ const CreateTestimonial = () => {
       <div className="container">
         <div className="w-full max-w-[70rem]">
           <div
-            className="wow fadeInUp rounded-2xl border border-gray-200 bg-white/60 px-8 py-10 shadow-lg backdrop-blur-md dark:border-white/10 dark:bg-white/[0.03] sm:p-[50px]"
+            className="wow fadeInUp rounded-2xl border border-darkBorder bg-darkSurface/40 px-8 py-10 shadow-lg backdrop-blur-md sm:p-[50px]"
             data-wow-delay=".15s"
           >
             <form action="submit" onSubmit={handleSubmit}>

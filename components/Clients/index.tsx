@@ -4,10 +4,10 @@ import { useState } from "react";
 
 const SectionTitle = ({ title, paragraph, center }) => (
   <div className={`mb-12 max-w-3xl ${center ? "text-center" : ""}`}>
-    <h2 className="mb-4 text-3xl font-bold text-dark dark:text-white sm:text-4xl">
+    <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
       {title}
     </h2>
-    <p className="text-base text-textColor dark:text-textColor/80 sm:text-lg">
+    <p className="text-base text-textColor sm:text-lg">
       {paragraph}
     </p>
   </div>
@@ -28,14 +28,7 @@ const SingleClient = ({ client, delay }) => {
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="
-          relative flex h-40 w-56 items-center justify-center
-          overflow-hidden rounded-3xl border border-primaryColor/20
-          bg-white p-8 shadow-one transition-all duration-500
-          hover:-translate-y-2 hover:shadow-xl
-          dark:border-white/10 dark:bg-dark
-          sm:h-44 sm:w-64 lg:h-48 lg:w-72
-        "
+        className="relative flex h-40 w-56 items-center justify-center overflow-hidden rounded-3xl border border-darkBorder bg-darkSurface p-8 shadow-one transition-all duration-500 hover:-translate-y-2 hover:shadow-xl sm:h-44 sm:w-64 lg:h-48 lg:w-72"
         aria-label={`Visit ${name} website`}
       >
         {/* Hover primary tint */}
@@ -113,7 +106,7 @@ const Clients = () => {
             {/* Metrics */}
             <div className="mt-14 flex flex-wrap items-center justify-center gap-10 text-center opacity-80">
               <div>
-                <p className="text-3xl font-bold text-dark dark:text-white">
+                <p className="text-3xl font-bold text-white">
                   50+
                 </p>
                 <p className="text-sm text-textColor">Clients</p>
@@ -122,7 +115,7 @@ const Clients = () => {
               <div className="h-12 w-px bg-primaryColor/20" />
 
               <div>
-                <p className="text-3xl font-bold text-dark dark:text-white">
+                <p className="text-3xl font-bold text-white">
                   200+
                 </p>
                 <p className="text-sm text-textColor">Delivered Projects</p>
@@ -131,7 +124,7 @@ const Clients = () => {
               <div className="h-12 w-px bg-primaryColor/20" />
 
               <div>
-                <p className="text-3xl font-bold text-dark dark:text-white">
+                <p className="text-3xl font-bold text-white">
                   98%
                 </p>
                 <p className="text-sm text-textColor">Satisfaction Rate</p>

@@ -23,7 +23,7 @@ const RelatedPost = ({
         <h5>
           <Link
             href={slug}
-            className="hover:text-primaryColor dark:hover:text-primaryColor mb-[6px] block text-base font-medium leading-snug text-black dark:text-white"
+            className="mb-[6px] block text-base font-medium leading-snug text-white hover:text-primaryColor"
           >
             {title}
           </Link>

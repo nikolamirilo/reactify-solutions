@@ -42,13 +42,13 @@ const SingleTestimonial = ({
           size={40}
           className="-z-1 absolute top-1 right-5 text-white/10"
         />
-        <p className="relative mb-8 min-h-[8rem] border-b border-textColor border-opacity-10 pt-2 pb-8 text-base leading-relaxed text-textColor dark:border-white dark:border-opacity-10 dark:text-white">
+        <p className="relative mb-8 min-h-[8rem] border-b border-white/10 pt-2 pb-8 text-base leading-relaxed text-textSecondary">
           {testimonial.content}
         </p>
         <div className="flex items-center">
           <div className="w-full">
             <div className="mb-3 flex items-center space-x-1">{ratingIcons}</div>
-            <h5 className="ml-1 mb-2 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
+            <h5 className="ml-1 mb-2 text-lg font-semibold text-white lg:text-base xl:text-lg">
               {testimonial.fullname}
             </h5>
             <p className="ml-1 text-base text-textColor">

@@ -41,7 +41,7 @@ export default function QuicktalogBuildingAiCatalogPost() {
         100,000 times. Here is how the technical pieces fit together.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The problem, concretely
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -67,7 +67,7 @@ export default function QuicktalogBuildingAiCatalogPost() {
         the rest was a solved problem.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The pipeline
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -96,7 +96,7 @@ export default function QuicktalogBuildingAiCatalogPost() {
         </li>
       </ol>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Why Tesseract over a cloud OCR API
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -114,7 +114,7 @@ export default function QuicktalogBuildingAiCatalogPost() {
         uploads.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Making GPT the structuring layer, not the OCR layer
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -137,7 +137,7 @@ export default function QuicktalogBuildingAiCatalogPost() {
         when we tune the prompt.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Prompt design for consistent JSON
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -161,7 +161,7 @@ export default function QuicktalogBuildingAiCatalogPost() {
         </li>
       </ol>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The stack
       </h2>
       <ul className="mb-6 list-disc space-y-2 pl-6">
@@ -185,7 +185,7 @@ export default function QuicktalogBuildingAiCatalogPost() {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         What we learned
       </h2>
       <p className="mb-4 leading-relaxed">Three things stand out.</p>
@@ -208,7 +208,7 @@ export default function QuicktalogBuildingAiCatalogPost() {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Want to build something similar?
       </h2>
       <p className="mb-6 leading-relaxed">

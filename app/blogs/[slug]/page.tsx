@@ -128,13 +128,13 @@ export default async function BlogPostPage({
                       </span>
                     ))}
                   </div>
-                  <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl md:text-5xl">
+                  <h1 className="mb-5 text-3xl font-bold leading-tight text-white sm:text-4xl md:text-5xl">
                     {meta.title}
                   </h1>
-                  <p className="mb-6 text-lg leading-relaxed text-textColor dark:text-white/70">
+                  <p className="mb-6 text-lg leading-relaxed text-textColor/70">
                     {meta.excerpt}
                   </p>
-                  <div className="flex flex-wrap items-center gap-3 text-sm text-textColor dark:text-white/60">
+                  <div className="flex flex-wrap items-center gap-3 text-sm text-textColor/60">
                     <span>By {meta.author.name}</span>
                     <span aria-hidden>•</span>
                     <time dateTime={meta.publishDate}>{publishedLabel}</time>

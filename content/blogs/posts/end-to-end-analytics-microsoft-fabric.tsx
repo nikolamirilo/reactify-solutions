@@ -33,7 +33,7 @@ export default function EndToEndAnalyticsMicrosoftFabricPost() {
         in eighteen months.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The reference architecture
       </h2>
       <pre className="mb-6 overflow-x-auto rounded-lg bg-black/60 p-4 text-sm text-white">
@@ -56,7 +56,7 @@ Power BI reports`}
         without copying data.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Start by picking the right capacity
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -78,7 +78,7 @@ Power BI reports`}
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Bronze: raw and boring on purpose
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -95,7 +95,7 @@ Power BI reports`}
         not a rewrite of history.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Silver: where you actually do the work
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -122,7 +122,7 @@ Power BI reports`}
         debug it. Mix both tools.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Gold: the star schema earns its keep
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -147,7 +147,7 @@ Power BI reports`}
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Direct Lake: the actual killer feature
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -176,7 +176,7 @@ Power BI reports`}
         Capacity Metrics app will show it.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Governance that scales past one team
       </h2>
       <ul className="mb-6 list-disc space-y-2 pl-6">
@@ -199,7 +199,7 @@ Power BI reports`}
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         When not to use Fabric
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -211,7 +211,7 @@ Power BI reports`}
         operational complexity.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Talk to us
       </h2>
       <p className="mb-6 leading-relaxed">

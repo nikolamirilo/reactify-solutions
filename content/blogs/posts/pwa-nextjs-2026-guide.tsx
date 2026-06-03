@@ -31,7 +31,7 @@ export default function PwaNextjs2026GuidePost() {
         what you need to ship a real, installable PWA in Next.js 16 today.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Why a PWA instead of React Native
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -59,7 +59,7 @@ export default function PwaNextjs2026GuidePost() {
         game or a deeply integrated system app, it is not.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         What makes an app installable
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -75,7 +75,7 @@ export default function PwaNextjs2026GuidePost() {
         Miss any of these and the install prompt will not appear.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The manifest, the Next.js way
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -136,7 +136,7 @@ export default function manifest(): MetadataRoute.Manifest {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Icons, where iOS makes you work
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -162,7 +162,7 @@ export default function manifest(): MetadataRoute.Manifest {
         your app looking broken on iPhone.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Service workers without losing a week
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -192,7 +192,7 @@ export default function manifest(): MetadataRoute.Manifest {
         they hate loading spinners.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Push notifications
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -248,7 +248,7 @@ export async function sendPush(subscription: webPush.PushSubscription, body: str
         <li>Silent notifications are not supported.</li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Install prompts
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -287,7 +287,7 @@ export function InstallButton() {
         on iOS and not already installed.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Offline strategy
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -314,7 +314,7 @@ export function InstallButton() {
         architecture.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Testing
       </h2>
       <p className="mb-4 leading-relaxed">Before you ship, run:</p>
@@ -328,7 +328,7 @@ export function InstallButton() {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         A worked example: Quicktalog
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -347,7 +347,7 @@ export function InstallButton() {
         that is meaningful retention.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         When to go native instead
       </h2>
       <p className="mb-4 leading-relaxed">

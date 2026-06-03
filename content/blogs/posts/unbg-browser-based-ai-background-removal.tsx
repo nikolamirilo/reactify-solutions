@@ -39,7 +39,7 @@ export default function UnbgBrowserBasedAiBackgroundRemovalPost() {
         watermark, no limits. This post walks through how.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The architecture in one diagram
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -63,7 +63,7 @@ Transparent PNG → download or edit
         IndexedDB and works offline.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Why ONNX Runtime Web
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -87,7 +87,7 @@ Transparent PNG → download or edit
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The hard part: mobile
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -112,7 +112,7 @@ Transparent PNG → download or edit
         </li>
       </ol>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         UX details that mattered
       </h2>
       <p className="mb-4 leading-relaxed">Things that moved the product:</p>
@@ -139,7 +139,7 @@ Transparent PNG → download or edit
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         What we gave up
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -167,7 +167,7 @@ Transparent PNG → download or edit
         page.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Bigger picture: browser ML is ready
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -182,7 +182,7 @@ Transparent PNG → download or edit
         objection entirely. Your infrastructure bill collapses to a CDN.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Try it or build one
       </h2>
       <p className="mb-6 leading-relaxed">

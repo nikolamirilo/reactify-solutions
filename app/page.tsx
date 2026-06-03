@@ -1,7 +1,7 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Services from "@/components/Services";
-import Hero from "@/components/Hero";
+import Hero from "@/components/HeroV2";
 import Technologies from "@/components/Technologies";
 import { Metadata } from "next";
 import Solutions from "@/components/Solutions";
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
 };
 
 import PreLoader from "@/components/Common/PreLoader";
-import Testimonials from "@/components/Testimonials";
 import RevealOnScroll from "@/components/Common/RevealOnScroll";
+import Methodology from "@/components/Methodology";
 
 export default async function page() {
   return (
@@ -44,6 +44,9 @@ export default async function page() {
       </RevealOnScroll>
       <RevealOnScroll>
         <Services />
+      </RevealOnScroll>
+      <RevealOnScroll>
+        <Methodology />
       </RevealOnScroll>
       <RevealOnScroll>
         <Technologies />

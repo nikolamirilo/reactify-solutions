@@ -37,7 +37,7 @@ export default function PostgresqlOnlyBackendNextjsPost() {
         into plain SQL.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The standard SaaS stack and what Postgres replaces
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -59,7 +59,7 @@ export default function PostgresqlOnlyBackendNextjsPost() {
         the first one, plus a handful of extensions for most of the rest.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         pgvector: goodbye Pinecone, for most workloads
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -98,7 +98,7 @@ limit 10;`}
         pgvector is not a compromise. It is the better choice.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         pg_cron: the cron service you already have
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -133,7 +133,7 @@ select cron.schedule(
         a queue or HTTP endpoint.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         pg_trgm and tsvector: search without Algolia
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -185,7 +185,7 @@ limit 10;`}
         small catalog, or searching inside a user&apos;s own data, it is plenty.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         JSONB: the Mongo you thought you needed
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -222,7 +222,7 @@ where payload @> '{"event_type": "purchase"}'
         document database.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Row-level security: auth policies in the database
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -250,7 +250,7 @@ create policy "users write their own docs"
         sets a session variable with the user id can use it.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         LISTEN/NOTIFY: realtime without Pusher
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -284,7 +284,7 @@ await pg.query(\`
         &quot;tell the admin when a new order comes in,&quot; this is plenty.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         pgmq: a queue inside your database
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -318,7 +318,7 @@ select pgmq.delete('email_jobs', 42);`}
         and processes messages. Paired with pg_cron, you never leave Postgres.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         When Postgres is not enough
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -347,7 +347,7 @@ select pgmq.delete('email_jobs', 42);`}
         scaling Postgres for another two years before switching.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The integration looks like this
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -383,7 +383,7 @@ export async function search(query: string) {
         architecture diagram with twelve boxes becomes one box.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Start here
       </h2>
       <p className="mb-6 leading-relaxed">

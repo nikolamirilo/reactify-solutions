@@ -33,7 +33,7 @@ export default function CuttingOpenAiCostsProductionPost() {
         All of them require some work.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Know your baseline before you touch anything
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -54,7 +54,7 @@ export default function CuttingOpenAiCostsProductionPost() {
         which feature drove it.&quot; Without this, every cost cut is a guess.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Technique 1: prompt caching
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -105,7 +105,7 @@ export async function structureMenu(ocrText: string) {
         releases and only bust it intentionally when the prompt changes.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Technique 2: the Batch API for non-realtime work
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -173,7 +173,7 @@ export async function submitBatch(tasks: { id: string; prompt: string }[]) {
         deal.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Technique 3: model routing
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -235,7 +235,7 @@ export async function route(input: string) {
         output quality on our eval set.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Evaluation is how you know it worked
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -255,7 +255,7 @@ export async function route(input: string) {
         consciously whether that tradeoff is acceptable. Usually it is not.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Structured outputs reduce retries
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -296,7 +296,7 @@ export async function extract(ocrText: string) {
         features.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Context budgets matter more than you think
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -318,7 +318,7 @@ export async function extract(ocrText: string) {
         <li>Reuse a cached summary where you can.</li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Fallbacks: cheaper model when the big one fails
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -328,7 +328,7 @@ export async function extract(ocrText: string) {
         answer is acceptable, and when the feature should just fail cleanly.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Watch the provider bill weekly
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -338,7 +338,7 @@ export async function extract(ocrText: string) {
         a spreadsheet.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         What we would do differently
       </h2>
       <p className="mb-6 leading-relaxed">

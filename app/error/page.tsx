@@ -133,7 +133,7 @@ export default function page () {
                     </defs>
                   </svg>
                 </div>
-                <h3 className="mb-4 text-3xl font-bold text-black dark:text-white sm:text-4xl">
+                <h3 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
                   Sorry, the page can’t be found
                 </h3>
                 <p className="mb-10 text-base font-medium leading-relaxed text-textColor sm:text-lg sm:leading-relaxed">

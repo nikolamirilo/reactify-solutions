@@ -27,7 +27,7 @@ const menuData: Menu[] = [
   },
   {
     id: 5,
-    title: "Book a Call",
+    title: "Reach Out",
     path: "/contact",
     newTab: false,
     highlighted: true

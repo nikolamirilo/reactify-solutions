@@ -30,7 +30,7 @@ export default function NextjsSeoChecklist2026Post() {
         actually do it on a real project.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         1. Nail the Metadata API on every route
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -61,7 +61,7 @@ export default function NextjsSeoChecklist2026Post() {
         page titles get a consistent suffix without repeating it.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         2. sitemap.ts and robots.ts, do not skip these
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -89,7 +89,7 @@ export default function NextjsSeoChecklist2026Post() {
         <code>/api</code>, and preview routes. Allow everything else.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         3. Structured data for the things that matter
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -121,7 +121,7 @@ export default function NextjsSeoChecklist2026Post() {
         Invalid schema is worse than no schema.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         4. Core Web Vitals, the cheap wins first
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -154,7 +154,7 @@ export default function NextjsSeoChecklist2026Post() {
         uses.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         5. generateStaticParams and generateMetadata on dynamic routes
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -182,7 +182,7 @@ export async function generateMetadata({ params }) {
 }`}
       />
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         6. Internal linking is still king
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -198,7 +198,7 @@ export async function generateMetadata({ params }) {
         link graph clearly.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         7. Analytics and Search Console from day one
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -218,7 +218,7 @@ export async function generateMetadata({ params }) {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         8. Common mistakes we still see in 2026
       </h2>
       <ul className="mb-6 list-disc space-y-2 pl-6">
@@ -245,7 +245,7 @@ export async function generateMetadata({ params }) {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The real unlock: content
       </h2>
       <p className="mb-6 leading-relaxed">

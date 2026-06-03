@@ -31,7 +31,7 @@ export default function QuickIntroductionReactNativePost() {
         of the thing.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Use Expo, not bare React Native
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -55,7 +55,7 @@ npx expo start`}
         Next.js, you already know the pattern.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Components are different, the mental model is the same
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -127,7 +127,7 @@ const styles = StyleSheet.create({
         not row. And there is no margin collapsing.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Navigation with expo-router
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -153,7 +153,7 @@ const styles = StyleSheet.create({
         overhead is close to zero if you come from App Router.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         State works the way you expect
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -169,7 +169,7 @@ const styles = StyleSheet.create({
         <code>op-sqlite</code>.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Native APIs through Expo modules
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -188,7 +188,7 @@ const styles = StyleSheet.create({
         ejecting.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Platform differences are real but manageable
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -218,7 +218,7 @@ const styles = StyleSheet.create({
         reconsider the architecture.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Building and shipping with EAS
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -243,7 +243,7 @@ eas submit --platform android`}
         initial screenshot requirements eat a day. Budget for it.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         When React Native is the wrong choice
       </h2>
       <ul className="mb-6 list-disc space-y-2 pl-6">
@@ -263,7 +263,7 @@ eas submit --platform android`}
         React Native is what we would reach for.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Ship a demo, not a tutorial
       </h2>
       <p className="mb-6 leading-relaxed">

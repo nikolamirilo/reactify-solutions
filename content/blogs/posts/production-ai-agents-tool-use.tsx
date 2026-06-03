@@ -34,7 +34,7 @@ export default function ProductionAiAgentsToolUsePost() {
         production.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         When an agent is the right tool
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -54,7 +54,7 @@ export default function ProductionAiAgentsToolUsePost() {
         LLM in the middle is a flaky, expensive coordinator.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The tool-calling loop
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -107,7 +107,7 @@ export async function runAgent(userMessage: string) {
 }`}
       />
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Tools matter more than prompts
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -133,7 +133,7 @@ export async function runAgent(userMessage: string) {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Termination conditions
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -158,7 +158,7 @@ export async function runAgent(userMessage: string) {
         not just a timeout.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Observability from day one
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -178,7 +178,7 @@ export async function runAgent(userMessage: string) {
         what happened.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Evaluation is the work
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -196,7 +196,7 @@ export async function runAgent(userMessage: string) {
         Human review on 10% of runs catches what the judge model misses.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         What usually goes wrong
       </h2>
       <p className="mb-4 leading-relaxed">
@@ -221,7 +221,7 @@ export async function runAgent(userMessage: string) {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Where to go from here
       </h2>
       <p className="mb-6 leading-relaxed">

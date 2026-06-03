@@ -1,13 +1,13 @@
 const NewsLatterBox = () => {
   return (
     <div
-      className="wow fadeInUp bg-primaryColor/[3%] dark:bg-primaryColor/10 relative z-10 h-full rounded-md p-8 sm:p-11 lg:p-8 xl:p-11"
+      className="wow fadeInUp relative z-10 h-full rounded-md bg-primaryColor/10 p-8 sm:p-11 lg:p-8 xl:p-11"
       data-wow-delay=".2s"
     >
-      <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
+      <h3 className="mb-4 text-2xl font-bold leading-tight text-white">
         Subscribe to receive future updates
       </h3>
-      <p className="mb-11 border-b border-textColor border-opacity-25 pb-11 text-base font-medium leading-relaxed text-textColor dark:border-white dark:border-opacity-25">
+      <p className="mb-11 border-b border-white/25 pb-11 text-base font-medium leading-relaxed text-textColor">
         Lorem ipsum dolor sited Sed ullam corper consectur adipiscing Mae ornare
         massa quis lectus.
       </p>
@@ -16,13 +16,13 @@ const NewsLatterBox = () => {
           type="text"
           name="name"
           placeholder="Enter your name"
-          className="focus:border-primaryColor mb-4 w-full rounded-md border border-textColor border-opacity-10 py-3 px-6 text-base font-medium text-textColor placeholder-textColor outline-none focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
+          className="focus:border-primaryColor mb-4 w-full rounded-md border border-white/10 bg-darkElevated py-3 px-6 text-base font-medium text-textSecondary placeholder-textColor outline-none focus:border-opacity-100 focus-visible:shadow-none"
         />
         <input
           type="email"
           name="email"
           placeholder="Enter your email"
-          className="focus:border-primaryColor mb-4 w-full rounded-md border border-textColor border-opacity-10 py-3 px-6 text-base font-medium text-textColor placeholder-textColor outline-none focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
+          className="focus:border-primaryColor mb-4 w-full rounded-md border border-white/10 bg-darkElevated py-3 px-6 text-base font-medium text-textSecondary placeholder-textColor outline-none focus:border-opacity-100 focus-visible:shadow-none"
         />
         <input
           type="submit"

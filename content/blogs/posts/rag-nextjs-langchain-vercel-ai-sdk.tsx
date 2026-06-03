@@ -34,7 +34,7 @@ export default function RagNextjsLangchainVercelAiSdkPost() {
         with code-shaped explanations rather than a full repo walkthrough.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         When RAG is the right tool
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -61,7 +61,7 @@ export default function RagNextjsLangchainVercelAiSdkPost() {
         large and churning.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         The stack
       </h2>
       <ul className="mb-6 list-disc space-y-2 pl-6">
@@ -92,7 +92,7 @@ export default function RagNextjsLangchainVercelAiSdkPost() {
         UI integration. Combining them avoids the biggest pain points of each.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Ingestion: document to chunks to embeddings to pgvector
       </h2>
       <CodeBlock
@@ -141,7 +141,7 @@ export async function ingest(docId: string, text: string) {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Retrieval: similarity and filtering
       </h2>
       <CodeBlock
@@ -179,7 +179,7 @@ export async function ingest(docId: string, text: string) {
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Generation: streaming with the Vercel AI SDK
       </h2>
       <CodeBlock
@@ -215,7 +215,7 @@ Context:
         reach for every time.
       </p>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Evaluation, the step most teams skip
       </h2>
       <p className="mb-6 leading-relaxed">
@@ -239,7 +239,7 @@ Context:
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Things that bit us
       </h2>
       <ul className="mb-6 list-disc space-y-2 pl-6">
@@ -258,7 +258,7 @@ Context:
         </li>
       </ul>
 
-      <h2 className="mb-4 mt-10 text-3xl font-bold text-black dark:text-white">
+      <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
         Ship small, measure, iterate
       </h2>
       <p className="mb-6 leading-relaxed">

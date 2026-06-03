@@ -23,23 +23,23 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
         <h3>
           <Link
             href={href}
-            className="mb-3 block text-base font-bold leading-snug text-black hover:text-primaryColor dark:text-white dark:hover:text-primaryColor sm:text-lg"
+            className="mb-3 block text-base font-bold leading-snug text-white hover:text-primaryColor sm:text-lg"
           >
             {title}
           </Link>
         </h3>
-        <p className="mb-4 flex-1 border-b border-textColor border-opacity-10 pb-4 text-sm font-medium leading-relaxed text-textColor dark:border-white dark:border-opacity-10">
+        <p className="mb-4 flex-1 border-b border-white/10 pb-4 text-sm font-medium leading-relaxed text-textColor">
           {excerpt}
         </p>
         <div className="flex items-center">
-          <div className="mr-4 flex items-center border-r border-textColor border-opacity-10 pr-4 dark:border-white dark:border-opacity-10">
+          <div className="mr-4 flex items-center border-r border-white/10 pr-4">
             <div className="mr-3">
               <div className="relative h-8 w-8 overflow-hidden rounded-full">
                 <Image src={author.image} alt={author.name} fill />
               </div>
             </div>
             <div className="w-full">
-              <h4 className="mb-0.5 text-xs font-medium text-dark dark:text-white">
+              <h4 className="mb-0.5 text-xs font-medium text-white">
                 {author.name}
               </h4>
               <p className="text-[11px] text-textColor">{author.designation}</p>

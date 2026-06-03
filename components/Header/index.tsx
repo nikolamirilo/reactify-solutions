@@ -4,7 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { LuSend } from "react-icons/lu";
 import menuData from "./menuData";
+import Hamburger from "./Hamburger";
 
 const HOME_ONLY_PATHS = ["#services", "#about", "#testimonials"];
 const STICKY_OFFSET = 80;
@@ -71,32 +73,7 @@ const Header = () => {
           </div>
 
           <div className="flex w-full items-center justify-end px-4">
-            <button
-              onClick={() => setNavbarOpen((open) => !open)}
-              id="navbarToggler"
-              aria-label="Mobile Menu"
-              aria-expanded={navbarOpen}
-              className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] lg:hidden"
-            >
-              <span
-                className={cx(
-                  "relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300",
-                  navbarOpen && "top-[7px] rotate-45"
-                )}
-              />
-              <span
-                className={cx(
-                  "relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300",
-                  navbarOpen && "opacity-0"
-                )}
-              />
-              <span
-                className={cx(
-                  "relative my-1.5 block h-0.5 w-[30px] bg-white transition-all duration-300",
-                  navbarOpen && "top-[-8px] -rotate-45"
-                )}
-              />
-            </button>
+            <Hamburger navbarOpen={navbarOpen} setNavbarOpen={setNavbarOpen} cx={cx} />
 
             <nav
               id="navbarCollapse"
@@ -119,13 +96,21 @@ const Header = () => {
                       <Link
                         href={href}
                         className={cx(
-                          "flex justify-end rounded-md py-2 text-base transition-colors lg:mr-0 lg:inline-flex",
+                          "flex justify-end py-2 text-base font-medium transition-all duration-200 lg:mr-0 lg:inline-flex",
                           menuItem.highlighted
-                            ? "bg-primaryDark px-6 py-2 text-white"
-                            : `px-4 lg:px-0 lg:py-6 text-textSecondary hover:text-white ${isActive && "!text-primaryColor"}`,
-                          
+                            ? "group inline-flex items-center gap-2 rounded-xl bg-primaryColor px-6 py-2 font-semibold text-accentContrast shadow-glowSoft transition-all duration-300 hover:bg-primaryDark hover:shadow-glow"
+                            : cx(
+                              "relative px-4 lg:px-1 lg:py-6",
+                              "after:absolute after:bottom-3 after:left-1 after:right-1 after:h-px after:origin-left after:scale-x-0 after:rounded-full after:bg-primaryColor/50 after:transition-transform after:duration-300 hover:after:scale-x-100",
+                              isActive
+                                ? "text-primaryColor after:scale-x-100"
+                                : "text-textSecondary hover:text-white"
+                            ),
                         )}
                       >
+                        {menuItem.highlighted && (
+                          <LuSend className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                        )}
                         {menuItem.title}
                       </Link>
                     </li>
