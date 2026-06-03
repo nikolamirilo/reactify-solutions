@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="lg-sup-title lg-sup-desc">
+  <title id="lg-sup-title">LangGraph supervisor multi-agent pattern</title>
+  <desc id="lg-sup-desc">A supervisor agent routes tasks to specialized researcher, analyst, and writer worker agents.</desc>
+  <defs>
+    <marker id="sup-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0f766e" />
+    </marker>
+    <marker id="sup-arrow-back" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#94a3b8" />
+    </marker>
+    <linearGradient id="sup-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#14b8a6" />
+      <stop offset="100%" stop-color="#0f766e" />
+    </linearGradient>
+    <linearGradient id="worker-grad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f1f5f9" />
+      <stop offset="100%" stop-color="#cbd5e1" />
+    </linearGradient>
+    <style>
+      .sup-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; fill: #ffffff; }
+      .sup-label-dark { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; fill: #0f172a; }
+      .sup-sub { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 11px; fill: #475569; }
+      .sup-edge { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; fill: #64748b; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="420" fill="#ffffff" />
+
+  <rect x="40" y="170" width="120" height="60" rx="12" fill="#1f2937" />
+  <text x="100" y="200" text-anchor="middle" class="sup-label" font-size="14">User Query</text>
+  <text x="100" y="218" text-anchor="middle" class="sup-label" font-size="11" opacity="0.7">START</text>
+
+  <rect x="320" y="160" width="180" height="80" rx="16" fill="url(#sup-grad)" />
+  <text x="410" y="190" text-anchor="middle" class="sup-label" font-size="16">Supervisor</text>
+  <text x="410" y="210" text-anchor="middle" class="sup-label" font-size="11" opacity="0.85">routes to next worker</text>
+  <text x="410" y="226" text-anchor="middle" class="sup-label" font-size="11" opacity="0.85">or returns FINISH</text>
+
+  <rect x="600" y="40" width="160" height="64" rx="12" fill="url(#worker-grad)" stroke="#64748b"/>
+  <text x="680" y="68" text-anchor="middle" class="sup-label-dark" font-size="14">Researcher</text>
+  <text x="680" y="86" text-anchor="middle" class="sup-sub">web search, RAG</text>
+
+  <rect x="600" y="172" width="160" height="64" rx="12" fill="url(#worker-grad)" stroke="#64748b"/>
+  <text x="680" y="200" text-anchor="middle" class="sup-label-dark" font-size="14">Analyst</text>
+  <text x="680" y="218" text-anchor="middle" class="sup-sub">SQL, calculations</text>
+
+  <rect x="600" y="304" width="160" height="64" rx="12" fill="url(#worker-grad)" stroke="#64748b"/>
+  <text x="680" y="332" text-anchor="middle" class="sup-label-dark" font-size="14">Writer</text>
+  <text x="680" y="350" text-anchor="middle" class="sup-sub">drafts answer</text>
+
+  <path d="M160,200 L320,200" fill="none" stroke="#0f766e" stroke-width="2.5" marker-end="url(#sup-arrow)" />
+
+  <path d="M500,180 Q550,150 600,72" fill="none" stroke="#0f766e" stroke-width="2" marker-end="url(#sup-arrow)" />
+  <path d="M500,200 L600,204" fill="none" stroke="#0f766e" stroke-width="2" marker-end="url(#sup-arrow)" />
+  <path d="M500,220 Q550,250 600,336" fill="none" stroke="#0f766e" stroke-width="2" marker-end="url(#sup-arrow)" />
+
+  <path d="M600,72 Q540,110 500,170" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#sup-arrow-back)" />
+  <path d="M600,204 L500,210" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#sup-arrow-back)" />
+  <path d="M600,336 Q540,280 500,230" fill="none" stroke="#94a3b8" stroke-width="1.5" stroke-dasharray="4,4" marker-end="url(#sup-arrow-back)" />
+
+  <text x="540" y="125" class="sup-edge">delegate</text>
+  <text x="540" y="265" class="sup-edge">result returned to state</text>
+</svg>

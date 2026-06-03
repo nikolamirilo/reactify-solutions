@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" role="img" aria-labelledby="lg-arch-title lg-arch-desc">
+  <title id="lg-arch-title">LangGraph core architecture</title>
+  <desc id="lg-arch-desc">Diagram showing State, Nodes, Edges, and a Checkpointer in a LangGraph workflow.</desc>
+  <defs>
+    <marker id="lg-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#7c3aed" />
+    </marker>
+    <linearGradient id="lg-node" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#a78bfa" />
+      <stop offset="100%" stop-color="#7c3aed" />
+    </linearGradient>
+    <linearGradient id="lg-state" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fef3c7" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+    <linearGradient id="lg-check" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e0f2fe" />
+      <stop offset="100%" stop-color="#38bdf8" />
+    </linearGradient>
+    <style>
+      .lg-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; fill: #ffffff; }
+      .lg-label-dark { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-weight: 600; fill: #111827; }
+      .lg-edge-label { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 12px; fill: #6b7280; }
+      .lg-section { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; font-size: 13px; fill: #4b5563; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="800" height="460" fill="#ffffff" />
+
+  <rect x="290" y="30" width="220" height="60" rx="12" fill="url(#lg-state)" stroke="#d97706" stroke-width="1.5"/>
+  <text x="400" y="58" text-anchor="middle" class="lg-label-dark" font-size="16">Shared State</text>
+  <text x="400" y="78" text-anchor="middle" class="lg-section">messages, tools, scratchpad…</text>
+
+  <rect x="60" y="170" width="160" height="70" rx="14" fill="url(#lg-node)" />
+  <text x="140" y="200" text-anchor="middle" class="lg-label" font-size="15">Planner Node</text>
+  <text x="140" y="220" text-anchor="middle" class="lg-label" font-size="11" opacity="0.85">decompose task</text>
+
+  <rect x="320" y="170" width="160" height="70" rx="14" fill="url(#lg-node)" />
+  <text x="400" y="200" text-anchor="middle" class="lg-label" font-size="15">Tool Node</text>
+  <text x="400" y="220" text-anchor="middle" class="lg-label" font-size="11" opacity="0.85">call APIs / DBs</text>
+
+  <rect x="580" y="170" width="160" height="70" rx="14" fill="url(#lg-node)" />
+  <text x="660" y="200" text-anchor="middle" class="lg-label" font-size="15">Responder Node</text>
+  <text x="660" y="220" text-anchor="middle" class="lg-label" font-size="11" opacity="0.85">final answer</text>
+
+  <path d="M140,170 Q140,120 290,90" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#lg-arrow)" />
+  <path d="M400,170 V100" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#lg-arrow)" />
+  <path d="M660,170 Q660,120 510,90" fill="none" stroke="#7c3aed" stroke-width="2" marker-end="url(#lg-arrow)" />
+
+  <path d="M220,205 L320,205" fill="none" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#lg-arrow)" />
+  <path d="M480,205 L580,205" fill="none" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#lg-arrow)" />
+  <path d="M400,240 Q300,300 220,235" fill="none" stroke="#9ca3af" stroke-width="2" stroke-dasharray="5,4" marker-end="url(#lg-arrow)" />
+  <text x="290" y="290" class="lg-edge-label">conditional edge (loop)</text>
+
+  <rect x="290" y="360" width="220" height="60" rx="12" fill="url(#lg-check)" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="400" y="388" text-anchor="middle" class="lg-label-dark" font-size="15">Checkpointer</text>
+  <text x="400" y="408" text-anchor="middle" class="lg-section">Postgres / Redis / SQLite</text>
+
+  <path d="M400,240 V360" fill="none" stroke="#0284c7" stroke-width="2" stroke-dasharray="2,4" />
+  <text x="412" y="305" class="lg-edge-label">persist after every node</text>
+</svg>
