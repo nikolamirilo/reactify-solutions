@@ -29,6 +29,9 @@ import PwaNextjs2026GuidePost, {
 import CuttingOpenAiCostsProductionPost, {
   meta as cuttingOpenAiCostsProductionMeta,
 } from "./posts/cutting-openai-costs-production";
+import LangGraphProductionAgents2026Post, {
+  meta as langGraphProductionAgents2026Meta,
+} from "./posts/langgraph-production-agents-2026";
 
 type PostRegistryEntry = {
   meta: Blog;
@@ -75,6 +78,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: cuttingOpenAiCostsProductionMeta,
     Component: CuttingOpenAiCostsProductionPost,
+  },
+  {
+    meta: langGraphProductionAgents2026Meta,
+    Component: LangGraphProductionAgents2026Post,
   },
 ];
 
