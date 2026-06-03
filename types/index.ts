@@ -49,7 +49,7 @@ type Author = {
   designation: string;
 };
 
-export type Blog = {
+export type Article = {
   id: number;
   slug: string;
   title: string;

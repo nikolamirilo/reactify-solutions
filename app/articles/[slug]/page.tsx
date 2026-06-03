@@ -1,4 +1,4 @@
-import { getAllPostSlugs, getPostBySlug } from "@/content/blogs";
+import { getAllPostSlugs, getPostBySlug } from "@/content/articles";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -27,11 +27,11 @@ export async function generateMetadata({
   return {
     title: meta.title,
     description: meta.metaDescription,
-    alternates: { canonical: `/blogs/${meta.slug}` },
+    alternates: { canonical: `/articles/${meta.slug}` },
     openGraph: {
       title: meta.title,
       description: meta.metaDescription,
-      url: `/blogs/${meta.slug}`,
+      url: `/articles/${meta.slug}`,
       type: "article",
       publishedTime: meta.publishDate,
       authors: [meta.author.name],
@@ -80,7 +80,7 @@ export default async function BlogPostPage({
         publisher: { "@id": `${baseUrl}/#organization` },
         mainEntityOfPage: {
           "@type": "WebPage",
-          "@id": `${baseUrl}/blogs/${meta.slug}`,
+          "@id": `${baseUrl}/articles/${meta.slug}`,
         },
         keywords: meta.tags.join(", "),
       },
@@ -91,8 +91,8 @@ export default async function BlogPostPage({
           {
             "@type": "ListItem",
             position: 2,
-            name: "Blog",
-            item: `${baseUrl}/blogs`,
+            name: "Articles",
+            item: `${baseUrl}/articles`,
           },
           { "@type": "ListItem", position: 3, name: meta.title },
         ],

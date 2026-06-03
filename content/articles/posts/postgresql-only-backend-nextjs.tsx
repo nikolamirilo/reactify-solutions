@@ -1,7 +1,7 @@
-import CodeBlock from "@/components/Blogs/CodeBlock";
-import { Blog } from "@/types";
+import CodeBlock from "@/components/Articles/CodeBlock";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 8,
   slug: "postgresql-only-backend-nextjs",
   title:
@@ -10,7 +10,7 @@ export const meta: Blog = {
     "Postgres has grown extensions that cover almost every common backend need. Vector search, scheduling, full-text search, queues, realtime, auth. This is how to collapse your stack down to one database.",
   metaDescription:
     "How to replace Pinecone, Redis, Algolia, cron services, and auth databases with one PostgreSQL instance in a Next.js app. Covers pgvector, pg_cron, pg_trgm, RLS, LISTEN/NOTIFY, and pgmq.",
-  image: "/images/blogs/blog-06.jpg",
+  image: "/images/articles/article-06.jpg",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",

@@ -1,7 +1,7 @@
-import CodeBlock from "@/components/Blogs/CodeBlock";
-import { Blog } from "@/types";
+import CodeBlock from "@/components/Articles/CodeBlock";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 5,
   slug: "nextjs-seo-checklist-2026",
   title: "The Next.js SEO checklist for 2026: what actually matters",
@@ -9,7 +9,7 @@ export const meta: Blog = {
     "An opinionated, practical SEO checklist for Next.js apps. Skip the 200-item audits. This is the 10% of work that delivers 90% of the results for modern sites.",
   metaDescription:
     "A practical SEO checklist for Next.js 16 applications in 2026. Metadata API, structured data, canonical URLs, Core Web Vitals, and common mistakes to avoid.",
-  image: "/images/blogs/blog-03.png",
+  image: "/images/articles/article-03.png",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",
@@ -77,7 +77,7 @@ export default function NextjsSeoChecklist2026Post() {
   return [
     { url: "https://example.com", priority: 1 },
     ...posts.map((p) => ({
-      url: \`https://example.com/blogs/\${p.slug}\`,
+      url: \`https://example.com/articles/\${p.slug}\`,
       lastModified: new Date(p.publishDate),
       priority: 0.7,
     })),
@@ -165,7 +165,7 @@ export default function NextjsSeoChecklist2026Post() {
       </p>
       <CodeBlock
         language="tsx"
-        filename="app/blogs/[slug]/page.tsx"
+        filename="app/articles/[slug]/page.tsx"
         code={`export async function generateStaticParams() {
   const posts = await getAllPosts();
   return posts.map((p) => ({ slug: p.slug }));
@@ -176,7 +176,7 @@ export async function generateMetadata({ params }) {
   return {
     title: post.title,
     description: post.metaDescription,
-    alternates: { canonical: \`/blogs/\${post.slug}\` },
+    alternates: { canonical: \`/articles/\${post.slug}\` },
     openGraph: { /* ... */ },
   };
 }`}

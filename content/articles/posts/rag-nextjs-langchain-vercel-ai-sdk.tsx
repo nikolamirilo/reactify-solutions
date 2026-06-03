@@ -1,7 +1,7 @@
-import CodeBlock from "@/components/Blogs/CodeBlock";
-import { Blog } from "@/types";
+import CodeBlock from "@/components/Articles/CodeBlock";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 3,
   slug: "rag-nextjs-langchain-vercel-ai-sdk",
   title:
@@ -10,7 +10,7 @@ export const meta: Blog = {
     "A practical architecture for shipping RAG-powered features in Next.js. Ingestion with LangChain, retrieval with pgvector, streaming with the Vercel AI SDK, and the tradeoffs that actually matter.",
   metaDescription:
     "End-to-end guide toblog-ing production Retrieval-Augmented Generation (RAG) systems using Next.js App Router, LangChain, Vercel AI SDK, and pgvector. Architecture, code patterns, and evaluation.",
-  image: "/images/blogs/blog-01.webp",
+  image: "/images/articles/article-01.webp",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",

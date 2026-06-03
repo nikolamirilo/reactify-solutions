@@ -1,7 +1,7 @@
-import CodeBlock from "@/components/Blogs/CodeBlock";
-import { Blog } from "@/types";
+import CodeBlock from "@/components/Articles/CodeBlock";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 9,
   slug: "pwa-nextjs-2026-guide",
   title: "Shipping installable PWAs with Next.js 16: the 2026 guide",
@@ -9,7 +9,7 @@ export const meta: Blog = {
     "What it takes to ship a real, installable PWA on Next.js 16 today. Manifest, icons, service worker, push notifications, and the iOS quirks that trip teams up. With Quicktalog as the worked example.",
   metaDescription:
     "A practical 2026 guide to building installable Progressive Web Apps with Next.js 16. Covers app/manifest.ts, service workers, push notifications, iOS quirks, and real offline patterns.",
-  image: "/images/blogs/blog-07.png",
+  image: "/images/articles/article-07.png",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",

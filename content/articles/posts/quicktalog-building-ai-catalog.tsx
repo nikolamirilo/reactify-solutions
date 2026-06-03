@@ -1,6 +1,6 @@
-import { Blog } from "@/types";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 1,
   slug: "quicktalog-building-ai-catalog",
   title:

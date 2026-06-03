@@ -67,9 +67,9 @@ const CHANNELS = [
   },
   {
     icon: <FiBookOpen className="h-4 w-4" />,
-    title: "Read us on our blog",
+    title: "Read our articles",
     sub: "fresh engineering write-ups",
-    href: "/blogs",
+    href: "/articles",
   },
 ];
 

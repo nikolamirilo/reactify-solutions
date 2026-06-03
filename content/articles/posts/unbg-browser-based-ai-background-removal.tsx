@@ -1,6 +1,6 @@
-import { Blog } from "@/types";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 2,
   slug: "unbg-browser-based-ai-background-removal",
   title: "Building unbg: how we run AI background removal 100% in the browser",

@@ -1,7 +1,7 @@
-import CodeBlock from "@/components/Blogs/CodeBlock";
-import { Blog } from "@/types";
+import CodeBlock from "@/components/Articles/CodeBlock";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 10,
   slug: "cutting-openai-costs-production",
   title:
@@ -10,7 +10,7 @@ export const meta: Blog = {
     "Three techniques that have reliably cut our OpenAI costs by 40% to 70% in production, without degrading output quality. Real patterns from running AI features at scale on Quicktalog and client work.",
   metaDescription:
     "Practical guide to cutting OpenAI API costs in production. Covers prompt caching, the Batch API, model routing, structured outputs, context budgets, and the eval setup that keeps quality honest.",
-  image: "/images/blogs/blog-08.webp",
+  image: "/images/articles/article-08.webp",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",

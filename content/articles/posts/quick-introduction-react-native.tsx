@@ -1,7 +1,7 @@
-import CodeBlock from "@/components/Blogs/CodeBlock";
-import { Blog } from "@/types";
+import CodeBlock from "@/components/Articles/CodeBlock";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 7,
   slug: "quick-introduction-react-native",
   title: "A quick introduction to building apps with React Native",
@@ -9,7 +9,7 @@ export const meta: Blog = {
     "A practical intro for React developers who want to ship a mobile app without learning Swift or Kotlin. Expo setup, component differences, navigation, native APIs, and shipping to the stores.",
   metaDescription:
     "A practical introduction to React Native for web developers. Covers Expo, component model, expo-router, state, native APIs, platform differences, and building with EAS.",
-  image: "/images/blogs/blog-05.webp",
+  image: "/images/articles/article-05.webp",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",

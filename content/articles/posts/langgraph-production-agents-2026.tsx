@@ -1,7 +1,7 @@
-import CodeBlock from "@/components/Blogs/CodeBlock";
-import { Blog } from "@/types";
+import CodeBlock from "@/components/Articles/CodeBlock";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 11,
   slug: "langgraph-production-agents-2026",
   title:
@@ -10,7 +10,7 @@ export const meta: Blog = {
     "Why graph-based orchestration won the production agent argument, how LangGraph models agents as cyclic state machines, and the architectural decisions that matter when you put one in front of real users.",
   metaDescription:
     "A practical, technical guide to LangGraph for production AI agents in 2026. Covers StateGraph, nodes, conditional edges, checkpointers, multi-agent supervisor and swarm patterns, human-in-the-loop, and how LangGraph compares to CrewAI and AutoGen.",
-  image: "/images/blogs/blog-06.webp",
+  image: "/images/articles/article-11.webp",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",
@@ -489,7 +489,7 @@ await graph.invoke(null, thread);`}
         </li>
         <li>
           <a
-            href="/blogs/production-ai-agents-tool-use"
+            href="/articles/production-ai-agents-tool-use"
             className="font-semibold text-primaryColor hover:underline"
           >
             Building production AI agents with tool use

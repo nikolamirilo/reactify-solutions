@@ -1,7 +1,7 @@
-import CodeBlock from "@/components/Blogs/CodeBlock";
-import { Blog } from "@/types";
+import CodeBlock from "@/components/Articles/CodeBlock";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 6,
   slug: "production-ai-agents-tool-use",
   title:
@@ -10,7 +10,7 @@ export const meta: Blog = {
     "Tool selection, retry and timeout strategy, evaluation, and the guardrails that keep an agent from falling over in production. A practical architecture built from real client work.",
   metaDescription:
     "A practical guide to building production AI agents with tool use. Covers the tool-calling loop, termination conditions, observability, evaluation, and common failure modes.",
-  image: "/images/blogs/blog-04.jpg",
+  image: "/images/articles/article-04.jpg",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",

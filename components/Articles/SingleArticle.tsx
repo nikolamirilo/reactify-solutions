@@ -1,8 +1,8 @@
-import { Blog } from "@/types";
+import { Article } from "@/types";
 import Image from "next/image";
 import Link from "next/link";
 
-const SingleBlog = ({ blog }: { blog: Blog }) => {
+const SingleArticle = ({ article }: { article: Article }) => {
   const {
     slug,
     title,
@@ -12,8 +12,8 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
     tags,
     publishDate,
     readingTime,
-  } = blog;
-  const href = `/blogs/${slug}`;
+  } = article;
+  const href = `/articles/${slug}`;
   return (
     <div className="relative flex h-full flex-col overflow-hidden rounded-lg bg-white/5">
       <Link href={href} className="relative block h-[180px] w-full shrink-0">
@@ -56,4 +56,4 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
   );
 };
 
-export default SingleBlog;
+export default SingleArticle;

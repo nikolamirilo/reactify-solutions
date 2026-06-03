@@ -1,4 +1,4 @@
-import { Blog } from "@/types";
+import { Article } from "@/types";
 import QuicktalogBuildingAiCatalogPost, {
   meta as quicktalogBuildingAiCatalogMeta,
 } from "./posts/quicktalog-building-ai-catalog";
@@ -34,7 +34,7 @@ import LangGraphProductionAgents2026Post, {
 } from "./posts/langgraph-production-agents-2026";
 
 type PostRegistryEntry = {
-  meta: Blog;
+  meta: Article;
   Component: () => JSX.Element;
 };
 
@@ -85,7 +85,7 @@ const posts: PostRegistryEntry[] = [
   },
 ];
 
-export const allPostsMeta: Blog[] = posts
+export const allPostsMeta: Article[] = posts
   .map((p) => p.meta)
   .sort(
     (a, b) =>

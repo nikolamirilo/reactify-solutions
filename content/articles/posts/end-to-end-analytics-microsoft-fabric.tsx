@@ -1,6 +1,6 @@
-import { Blog } from "@/types";
+import { Article } from "@/types";
 
-export const meta: Blog = {
+export const meta: Article = {
   id: 4,
   slug: "end-to-end-analytics-microsoft-fabric",
   title:
@@ -9,7 +9,7 @@ export const meta: Blog = {
     "A practical walkthrough of building a production analytics pipeline in Microsoft Fabric. Ingestion, Lakehouse, Dataflow Gen2, semantic model, Direct Lake Power BI, and the decisions that save you from rebuilding it in a year.",
   metaDescription:
     "Implementation guide for end-to-end data analytics on Microsoft Fabric. Covers Lakehouse ingestion, Dataflow Gen2 transformations, semantic models, Direct Lake Power BI, governance, and cost.",
-  image: "/images/blogs/blog-02.png",
+  image: "/images/articles/article-02.png",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",

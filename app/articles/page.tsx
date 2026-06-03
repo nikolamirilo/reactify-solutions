@@ -1,22 +1,22 @@
-import Blog from "@/components/Blogs";
+import Articles from "@/components/Articles";
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blogs",
+  title: "Articles",
   description:
     "Technical write-ups, product case studies, and practical lessons from building AI-powered software, digital catalogs, and automation tooling.",
-  alternates: { canonical: "/blogs" },
+  alternates: { canonical: "/articles" },
   openGraph: {
-    title: "Blog | Reactify Solutions",
+    title: "Article | Reactify Solutions",
     description:
       "Technical write-ups, product case studies, and lessons from building AI-powered software for real businesses.",
-    url: "/blogs",
+    url: "/articles",
     images: ["/opengraph-image.png"],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Blog | Reactify Solutions",
+    title: "Article | Reactify Solutions",
     description:
       "Technical write-ups and product case studies from Reactify Solutions.",
   },
@@ -26,10 +26,10 @@ export default function page() {
   return (
     <>
       <Breadcrumb
-        pageName="Blog"
+        pageName="Articles"
         description="Technical write-ups, product case studies, and practical lessons from building AI-powered software, digital catalogs, and automation tooling."
       />
-      <Blog variant="blogs" />
+      <Articles variant="articles" />
     </>
   );
 }
