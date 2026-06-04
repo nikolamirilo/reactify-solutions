@@ -35,6 +35,9 @@ import LangGraphProductionAgents2026Post, {
 import McpProductionAiIntegrations2026Post, {
   meta as mcpProductionAiIntegrations2026Meta,
 } from "./posts/mcp-production-ai-integrations-2026";
+import AiAgentMemorySystems2026Post, {
+  meta as aiAgentMemorySystems2026Meta,
+} from "./posts/ai-agent-memory-systems-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -89,6 +92,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: mcpProductionAiIntegrations2026Meta,
     Component: McpProductionAiIntegrations2026Post,
+  },
+  {
+    meta: aiAgentMemorySystems2026Meta,
+    Component: AiAgentMemorySystems2026Post,
   },
 ];
 
