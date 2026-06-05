@@ -38,6 +38,9 @@ import McpProductionAiIntegrations2026Post, {
 import AiAgentMemorySystems2026Post, {
   meta as aiAgentMemorySystems2026Meta,
 } from "./posts/ai-agent-memory-systems-2026";
+import BrowserAgentsProduction2026Post, {
+  meta as browserAgentsProduction2026Meta,
+} from "./posts/browser-agents-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -96,6 +99,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: aiAgentMemorySystems2026Meta,
     Component: AiAgentMemorySystems2026Post,
+  },
+  {
+    meta: browserAgentsProduction2026Meta,
+    Component: BrowserAgentsProduction2026Post,
   },
 ];
 
