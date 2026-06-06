@@ -26,33 +26,24 @@ const Articles = ({ variant = "default" }: { variant?: "articles" | "default" })
             center
           />
         )}
-        <motion.div
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.1 }}
-          variants={{
-            hidden: {},
-            show: { transition: { staggerChildren: 0.1 } },
-          }}
-          className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 2xl:grid-cols-4"
-        >
-          {articles.map((article) => (
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 2xl:grid-cols-4">
+          {articles.map((article, index) => (
             <motion.div
               key={article.id}
               className="h-full"
-              variants={{
-                hidden: { opacity: 0, y: 32 },
-                show: {
-                  opacity: 1,
-                  y: 0,
-                  transition: { duration: 0.6, ease: [0.22, 1, 0.36, 1] },
-                },
+              initial={{ opacity: 0, y: 32 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: "some" }}
+              transition={{
+                duration: 0.6,
+                ease: [0.22, 1, 0.36, 1],
+                delay: Math.min(index, 3) * 0.1,
               }}
             >
               <SingleArticle article={article} />
             </motion.div>
           ))}
-        </motion.div>
+        </div>
 
         {variant === "default" && (
           <motion.div
