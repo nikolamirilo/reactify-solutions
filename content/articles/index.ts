@@ -41,6 +41,9 @@ import AiAgentMemorySystems2026Post, {
 import BrowserAgentsProduction2026Post, {
   meta as browserAgentsProduction2026Meta,
 } from "./posts/browser-agents-production-2026";
+import CodeExecutionSandboxesAiAgents2026Post, {
+  meta as codeExecutionSandboxesAiAgents2026Meta,
+} from "./posts/code-execution-sandboxes-ai-agents-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -103,6 +106,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: browserAgentsProduction2026Meta,
     Component: BrowserAgentsProduction2026Post,
+  },
+  {
+    meta: codeExecutionSandboxesAiAgents2026Meta,
+    Component: CodeExecutionSandboxesAiAgents2026Post,
   },
 ];
 
