@@ -44,6 +44,9 @@ import BrowserAgentsProduction2026Post, {
 import CodeExecutionSandboxesAiAgents2026Post, {
   meta as codeExecutionSandboxesAiAgents2026Meta,
 } from "./posts/code-execution-sandboxes-ai-agents-2026";
+import VoiceAiAgentsProduction2026Post, {
+  meta as voiceAiAgentsProduction2026Meta,
+} from "./posts/voice-ai-agents-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -110,6 +113,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: codeExecutionSandboxesAiAgents2026Meta,
     Component: CodeExecutionSandboxesAiAgents2026Post,
+  },
+  {
+    meta: voiceAiAgentsProduction2026Meta,
+    Component: VoiceAiAgentsProduction2026Post,
   },
 ];
 
