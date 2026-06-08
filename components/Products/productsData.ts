@@ -1,32 +1,32 @@
-export interface SolutionStat {
+export interface ProductStat {
   label: string;
   value: string;
   description: string;
 }
 
-export interface SolutionPricingTier {
+export interface ProductPricingTier {
   name: string;
   price: string;
   highlight?: boolean;
   features: string[];
 }
 
-export interface SolutionUseCase {
+export interface ProductUseCase {
   title: string;
   description: string;
 }
 
-export interface SolutionFaq {
+export interface ProductFaq {
   question: string;
   answer: string;
 }
 
-export interface SolutionTimelineStep {
+export interface ProductTimelineStep {
   phase: string;
   detail: string;
 }
 
-export interface Solution {
+export interface Product {
   id: string;
   name: string;
   tagline: string;
@@ -48,21 +48,21 @@ export interface Solution {
     linkedin?: string;
     twitter?: string;
   };
-  stats: SolutionStat[];
+  stats: ProductStat[];
   technologies: string[];
   functionalities: string[];
   keyFeatures: string[];
   targetAudience: string[];
-  useCases: SolutionUseCase[];
-  pricing?: SolutionPricingTier[];
-  timeline: SolutionTimelineStep[];
+  useCases: ProductUseCase[];
+  pricing?: ProductPricingTier[];
+  timeline: ProductTimelineStep[];
   challenge: string;
   solution: string;
   results: string[];
-  faq: SolutionFaq[];
+  faq: ProductFaq[];
 }
 
-const solutionsData: Solution[] = [
+const productsData: Product[] = [
   {
     id: "quicktalog",
     name: "Quicktalog",
@@ -716,4 +716,4 @@ const solutionsData: Solution[] = [
   },
 ];
 
-export default solutionsData;
+export default productsData;

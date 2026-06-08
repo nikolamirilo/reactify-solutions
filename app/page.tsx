@@ -4,7 +4,7 @@ import Services from "@/components/Services";
 import Hero from "@/components/HeroV2";
 import Technologies from "@/components/Technologies";
 import { Metadata } from "next";
-import Solutions from "@/components/Solutions";
+import Products from "@/components/Products";
 import CTA from "@/components/CTA/CTA";
 
 export const metadata: Metadata = {
@@ -40,7 +40,7 @@ export default async function page() {
       <ScrollUp />
       <Hero />
       <RevealOnScroll>
-        <Solutions />
+        <Products />
       </RevealOnScroll>
       <RevealOnScroll>
         <Services />

@@ -1,14 +1,14 @@
 //@ts-nocheck
 "use client";
 import { sendEmail } from "@/actions";
-import solutionsData from "@/components/Solutions/solutionsData";
+import productsData from "@/components/Products/productsData";
 import { useState } from "react";
 import { ImSpinner9 } from "react-icons/im";
 import InfoModal from "../Modal/InfoModal";
 
-const supportProducts = solutionsData
-  .filter((solution) => solution.visible)
-  .map((solution) => ({ id: solution.id, name: solution.name }));
+const supportProducts = productsData
+  .filter((product) => product.visible)
+  .map((product) => ({ id: product.id, name: product.name }));
 
 const Support = () => {
   const [name, setName] = useState("");

@@ -5,14 +5,14 @@ import Link from "next/link";
 import { FaExternalLinkAlt, FaShoppingCart } from "react-icons/fa";
 import { FaShieldHalved } from "react-icons/fa6";
 import { HiArrowRight } from "react-icons/hi2";
-import { Solution } from "./solutionsData";
+import { Product } from "./productsData";
 
 interface Props {
-  solution: Solution;
+  product: Product;
   hasPrivacyPolicy?: boolean;
 }
 
-const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
+const ProductHero = ({ product, hasPrivacyPolicy = false }: Props) => {
   return (
     <motion.div
       initial={{ opacity: 0, y: 24 }}
@@ -24,14 +24,14 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
         aria-hidden
         className="pointer-events-none absolute -right-32 -top-32 h-96 w-96 rounded-full blur-[110px]"
         style={{
-          background: `radial-gradient(circle, ${solution.accentFrom}35, transparent 60%)`,
+          background: `radial-gradient(circle, ${product.accentFrom}35, transparent 60%)`,
         }}
       />
       <div
         aria-hidden
         className="pointer-events-none absolute -bottom-32 -left-32 h-96 w-96 rounded-full blur-[110px]"
         style={{
-          background: `radial-gradient(circle, ${solution.accentTo}25, transparent 60%)`,
+          background: `radial-gradient(circle, ${product.accentTo}25, transparent 60%)`,
         }}
       />
       <div
@@ -56,22 +56,22 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
               <span className="relative flex h-1.5 w-1.5">
                 <span
                   className="absolute inline-flex h-full w-full animate-ping rounded-full opacity-75"
-                  style={{ backgroundColor: solution.accentFrom }}
+                  style={{ backgroundColor: product.accentFrom }}
                 />
                 <span
                   className="relative inline-flex h-1.5 w-1.5 rounded-full"
-                  style={{ backgroundColor: solution.accentFrom }}
+                  style={{ backgroundColor: product.accentFrom }}
                 />
               </span>
-              {solution.status === "live"
+              {product.status === "live"
                 ? "live · in production"
-                : solution.status}
+                : product.status}
             </span>
             <span className="rounded-full border border-darkBorder bg-darkSurface/80 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-textSecondary">
-              {solution.category}
+              {product.category}
             </span>
             <span className="rounded-full border border-darkBorder bg-darkSurface/80 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-textSecondary">
-              since {solution.launchYear}
+              since {product.launchYear}
             </span>
           </motion.div>
 
@@ -81,7 +81,7 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
             transition={{ delay: 0.2, duration: 0.6 }}
             className="font-display mb-4 text-4xl font-semibold leading-[1.05] text-white sm:text-5xl md:text-6xl"
           >
-            {solution.name}
+            {product.name}
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -89,13 +89,13 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
             transition={{ delay: 0.28, duration: 0.6 }}
             className="mb-2 text-xl font-medium md:text-2xl"
             style={{
-              backgroundImage: `linear-gradient(90deg, ${solution.accentFrom} 0%, ${solution.accentTo} 100%)`,
+              backgroundImage: `linear-gradient(90deg, ${product.accentFrom} 0%, ${product.accentTo} 100%)`,
               WebkitBackgroundClip: "text",
               backgroundClip: "text",
               color: "transparent",
             }}
           >
-            {solution.tagline}
+            {product.tagline}
           </motion.p>
           <motion.p
             initial={{ opacity: 0, y: 16 }}
@@ -103,7 +103,7 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
             transition={{ delay: 0.36, duration: 0.6 }}
             className="mt-4 max-w-2xl text-base leading-relaxed text-textSecondary md:text-lg"
           >
-            {solution.briefDescription}
+            {product.briefDescription}
           </motion.p>
 
           <motion.div
@@ -112,9 +112,9 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
             transition={{ delay: 0.44, duration: 0.6 }}
             className="mt-8 flex flex-wrap gap-3"
           >
-            {solution.productUrl && (
+            {product.productUrl && (
               <Link
-                href={solution.productUrl}
+                href={product.productUrl}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center gap-2 rounded-xl bg-primaryColor px-6 py-3 font-semibold text-accentContrast shadow-glowSoft transition-all hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow"
@@ -123,9 +123,9 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
                 <FaExternalLinkAlt className="h-3.5 w-3.5 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" />
               </Link>
             )}
-            {solution.productUrl && solution.name === "Quicktalog" && (
+            {product.productUrl && product.name === "Quicktalog" && (
               <Link
-                href={`${solution.productUrl}/pricing`}
+                href={`${product.productUrl}/pricing`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-xl border border-darkBorder bg-darkSurface/60 px-6 py-3 font-semibold text-white transition-all hover:-translate-y-0.5 hover:border-primaryColor/40 hover:bg-darkSurface"
@@ -143,7 +143,7 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
             </Link>
             {hasPrivacyPolicy && (
               <Link
-                href={`/solutions/${solution.id}/privacy-policy`}
+                href={`/products/${product.id}/privacy-policy`}
                 className="inline-flex items-center gap-2 rounded-xl border border-darkBorder bg-darkSurface/60 px-6 py-3 font-semibold text-white transition-all hover:-translate-y-0.5 hover:border-primaryColor/40 hover:bg-darkSurface"
               >
                 Privacy policy
@@ -159,7 +159,7 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
           transition={{ delay: 0.5, duration: 0.6 }}
           className="flex flex-wrap gap-2"
         >
-          {solution.technologies.slice(0, 5).map((tech) => (
+          {product.technologies.slice(0, 5).map((tech) => (
             <span
               key={tech}
               className="rounded-full border border-darkBorder bg-darkSurface/70 px-3 py-1 font-mono text-[11px] uppercase tracking-[0.14em] text-textSecondary"
@@ -173,4 +173,4 @@ const SolutionHero = ({ solution, hasPrivacyPolicy = false }: Props) => {
   );
 };
 
-export default SolutionHero;
+export default ProductHero;

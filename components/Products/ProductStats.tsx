@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Solution } from "./solutionsData";
+import { Product } from "./productsData";
 import CountUp from "../react-bits/CountUp";
 
 interface Props {
-  stats: Solution["stats"];
+  stats: Product["stats"];
   accentFrom: string;
   accentTo: string;
 }
@@ -48,7 +48,7 @@ const AnimatedValue = ({ value }: { value: string }) => {
   );
 };
 
-const SolutionStats = ({ stats, accentFrom, accentTo }: Props) => {
+const ProductStats = ({ stats, accentFrom, accentTo }: Props) => {
   return (
     <motion.div
       initial="hidden"
@@ -105,4 +105,4 @@ const SolutionStats = ({ stats, accentFrom, accentTo }: Props) => {
   );
 };
 
-export default SolutionStats;
+export default ProductStats;

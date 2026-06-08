@@ -7,14 +7,14 @@ import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 interface ImageCarouselProps {
   images: string[];
-  solutionName: string;
+  productName: string;
   accentFrom?: string;
   orientation?: "landscape" | "portrait";
 }
 
 export default function ImageCarousel({
   images,
-  solutionName,
+  productName,
   accentFrom = "#00d4c8",
   orientation = "landscape",
 }: ImageCarouselProps) {
@@ -66,7 +66,7 @@ export default function ImageCarousel({
     return (
       <div className={wrapperClass}>
         <div className={stageClass}>
-          {renderSlide(images[0], solutionName, true)}
+          {renderSlide(images[0], productName, true)}
         </div>
       </div>
     );
@@ -99,7 +99,7 @@ export default function ImageCarousel({
           >
             {renderSlide(
               images[active],
-              `${solutionName} - slide ${active + 1}`,
+              `${productName} - slide ${active + 1}`,
               active === 0,
             )}
           </motion.div>

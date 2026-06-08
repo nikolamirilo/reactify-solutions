@@ -9,24 +9,30 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
+    title: "Products",
+    path: "/products",
+    newTab: false,
+  },
+  {
+    id: 3,
     title: "Services",
     path: "#services",
     newTab: false,
   },
   {
-    id: 3,
+    id: 4,
     title: "Add Testimonial",
     path: "/add-testimonial",
     newTab: false,
   },
   {
-    id: 4,
+    id: 5,
     title: "Articles",
     path: "/articles",
     newTab: false,
   },
   {
-    id: 5,
+    id: 6,
     title: "Reach Out",
     path: "/contact",
     newTab: false,

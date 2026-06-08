@@ -1,17 +1,17 @@
 import Breadcrumb from "@/components/Common/Breadcrumb";
 import policiesData from "@/components/PrivacyPolicies/policiesData";
-import solutionsData from "@/components/Solutions/solutionsData";
+import productsData from "@/components/Products/productsData";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 export async function generateStaticParams() {
-  // Only prerender policy pages for solutions that both exist (visible) and
+  // Only prerender policy pages for products that both exist (visible) and
   // have a policy defined in policiesData.
-  const solutionIds = new Set(
-    solutionsData.filter((s) => s.visible).map((s) => s.id),
+  const productIds = new Set(
+    productsData.filter((s) => s.visible).map((s) => s.id),
   );
   return policiesData
-    .filter((p) => solutionIds.has(p.id))
+    .filter((p) => productIds.has(p.id))
     .map((p) => ({ id: p.id }));
 }
 
@@ -27,7 +27,7 @@ export async function generateMetadata({
     return { title: "Privacy Policy Not Found" };
   }
 
-  const canonical = `/solutions/${policy.id}/privacy-policy`;
+  const canonical = `/products/${policy.id}/privacy-policy`;
 
   return {
     title: policy.metaTitle,
@@ -47,7 +47,7 @@ export async function generateMetadata({
   };
 }
 
-export default async function SolutionPrivacyPolicyPage({
+export default async function ProductPrivacyPolicyPage({
   params,
 }: {
   params: Promise<{ id: string }>;

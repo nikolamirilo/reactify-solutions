@@ -3,15 +3,15 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { HiChevronDown } from "react-icons/hi2";
-import { Solution } from "./solutionsData";
+import { Product } from "./productsData";
 import AnimatedList from "../react-bits/AnimatedList";
 
 interface Props {
-  faq: Solution["faq"];
+  faq: Product["faq"];
   accentFrom: string;
 }
 
-const SolutionFAQ = ({ faq, accentFrom }: Props) => {
+const ProductFAQ = ({ faq, accentFrom }: Props) => {
   const [open, setOpen] = useState<number | null>(0);
 
   return (
@@ -78,4 +78,4 @@ const SolutionFAQ = ({ faq, accentFrom }: Props) => {
   );
 };
 
-export default SolutionFAQ;
+export default ProductFAQ;

@@ -9,18 +9,18 @@ import {
 import { FaRegGem, FaUsers } from "react-icons/fa";
 import { MdOutlineMailOutline, MdWarningAmber } from "react-icons/md";
 import { HiArrowRight } from "react-icons/hi2";
-import solutionsData from "@/components/Solutions/solutionsData";
+import productsData from "@/components/Products/productsData";
 import policiesData from "@/components/PrivacyPolicies/policiesData";
-import ImageCarousel from "@/components/Solutions/ImageCarousel";
-import SolutionHero from "@/components/Solutions/SolutionHero";
-import SolutionStats from "@/components/Solutions/SolutionStats";
-import SolutionTimeline from "@/components/Solutions/SolutionTimeline";
-import SolutionFAQ from "@/components/Solutions/SolutionFAQ";
+import ImageCarousel from "@/components/Products/ImageCarousel";
+import ProductHero from "@/components/Products/ProductHero";
+import ProductStats from "@/components/Products/ProductStats";
+import ProductTimeline from "@/components/Products/ProductTimeline";
+import ProductFAQ from "@/components/Products/ProductFAQ";
 import RevealOnScroll from "@/components/Common/RevealOnScroll";
 import ReadingProgress from "@/components/Common/ReadingProgress";
 
 export async function generateStaticParams() {
-  return solutionsData.filter((s) => s.visible).map((s) => ({ id: s.id }));
+  return productsData.filter((s) => s.visible).map((s) => ({ id: s.id }));
 }
 
 export async function generateMetadata({
@@ -29,41 +29,41 @@ export async function generateMetadata({
   params: Promise<{ id: string }>;
 }): Promise<Metadata> {
   const { id } = await params;
-  const solution = solutionsData.find((s) => s.id === id && s.visible);
+  const product = productsData.find((s) => s.id === id && s.visible);
 
-  if (!solution) {
+  if (!product) {
     return {
-      title: "Solution Not Found",
+      title: "Product Not Found",
     };
   }
 
   return {
-    title: solution.name,
-    description: solution.briefDescription,
-    alternates: { canonical: `/solutions/${id}` },
+    title: product.name,
+    description: product.briefDescription,
+    alternates: { canonical: `/products/${id}` },
     openGraph: {
-      title: `${solution.name} - Reactify Solutions`,
-      description: solution.briefDescription,
-      images: [solution.images[0]],
-      url: `/solutions/${id}`,
+      title: `${product.name} - Reactify Solutions`,
+      description: product.briefDescription,
+      images: [product.images[0]],
+      url: `/products/${id}`,
     },
     twitter: {
       card: "summary_large_image",
-      title: `${solution.name} - Reactify Solutions`,
-      description: solution.briefDescription,
-      images: [solution.images[0]],
+      title: `${product.name} - Reactify Solutions`,
+      description: product.briefDescription,
+      images: [product.images[0]],
     },
   };
 }
 
-export default async function SolutionDetailsPage({
+export default async function ProductDetailsPage({
   params,
 }: {
   params: Promise<{ id: string }>;
 }) {
   const { id } = await params;
-  const solution = solutionsData.find((s) => s.id === id && s.visible);
-  if (!solution) {
+  const product = productsData.find((s) => s.id === id && s.visible);
+  if (!product) {
     notFound();
   }
 
@@ -73,12 +73,12 @@ export default async function SolutionDetailsPage({
     "@graph": [
       {
         "@type": "SoftwareApplication",
-        name: solution.name,
-        description: solution.fullDescription,
+        name: product.name,
+        description: product.fullDescription,
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web",
-        url: solution.productUrl,
-        image: `${baseUrl}${solution.images[0]}`,
+        url: product.productUrl,
+        image: `${baseUrl}${product.images[0]}`,
         publisher: {
           "@id": `${baseUrl}/#organization`,
         },
@@ -95,13 +95,13 @@ export default async function SolutionDetailsPage({
           {
             "@type": "ListItem",
             position: 2,
-            name: "Solutions",
-            item: `${baseUrl}/#solutions`,
+            name: "Products",
+            item: `${baseUrl}/products`,
           },
           {
             "@type": "ListItem",
             position: 3,
-            name: solution.name,
+            name: product.name,
           },
         ],
       },
@@ -111,8 +111,8 @@ export default async function SolutionDetailsPage({
   return (
     <div className="relative pb-16 pt-[120px] md:pt-[150px]">
       <ReadingProgress
-        colorFrom={solution.accentFrom}
-        colorTo={solution.accentTo}
+        colorFrom={product.accentFrom}
+        colorTo={product.accentTo}
       />
       <script
         type="application/ld+json"
@@ -128,27 +128,27 @@ export default async function SolutionDetailsPage({
             Home
           </Link>
           <FaCircleChevronRight className="h-3 w-3 opacity-60" />
-          <Link href="/#solutions" className="hover:text-primaryColor">
-            Solutions
+          <Link href="/products" className="hover:text-primaryColor">
+            Products
           </Link>
           <FaCircleChevronRight className="h-3 w-3 opacity-60" />
-          <span className="text-white">{solution.name}</span>
+          <span className="text-white">{product.name}</span>
         </div>
 
-        <SolutionHero
-          solution={solution}
-          hasPrivacyPolicy={policiesData.some((p) => p.id === solution.id)}
+        <ProductHero
+          product={product}
+          hasPrivacyPolicy={policiesData.some((p) => p.id === product.id)}
         />
 
-        <SolutionStats
-          stats={solution.stats}
-          accentFrom={solution.accentFrom}
-          accentTo={solution.accentTo}
+        <ProductStats
+          stats={product.stats}
+          accentFrom={product.accentFrom}
+          accentTo={product.accentTo}
         />
 
         {/* Gallery + About */}
         <RevealOnScroll>
-        {solution.imageOrientation === "portrait" ? (
+        {product.imageOrientation === "portrait" ? (
           <div className="mb-14" id="case-study">
             <div className="mb-6 inline-flex w-fit items-center gap-2 rounded-full border border-darkBorder bg-darkSurface/70 px-3 py-1 font-mono text-[10px] uppercase tracking-[0.14em] text-textSecondary">
               Overview
@@ -159,34 +159,34 @@ export default async function SolutionDetailsPage({
 
             <div className="md:float-right md:ml-8 md:mb-6 md:w-[280px]">
               <ImageCarousel
-                images={solution.images}
-                solutionName={solution.name}
-                accentFrom={solution.accentFrom}
-                orientation={solution.imageOrientation}
+                images={product.images}
+                productName={product.name}
+                accentFrom={product.accentFrom}
+                orientation={product.imageOrientation}
               />
             </div>
 
             <p className="text-base leading-relaxed text-textSecondary md:text-lg">
-              {solution.fullDescription}
+              {product.fullDescription}
             </p>
 
             <div className="mt-6 max-w-3xl rounded-2xl border border-darkBorder bg-darkSurface/60 p-5 backdrop-blur-sm md:p-6">
               <div className="flex items-center gap-2 text-sm font-semibold text-white">
                 <FaUsers
                   className="h-4 w-4"
-                  style={{ color: solution.accentFrom }}
+                  style={{ color: product.accentFrom }}
                 />
                 Built for
               </div>
               <ul className="mt-3 flex flex-col gap-2">
-                {solution.targetAudience.map((item) => (
+                {product.targetAudience.map((item) => (
                   <li
                     key={item}
                     className="flex items-start gap-2 text-sm text-textSecondary md:text-base"
                   >
                     <FaCircleCheck
                       className="mt-0.5 h-3.5 w-3.5 flex-shrink-0"
-                      style={{ color: solution.accentFrom }}
+                      style={{ color: product.accentFrom }}
                     />
                     {item}
                   </li>
@@ -200,10 +200,10 @@ export default async function SolutionDetailsPage({
           <div className="mb-14 grid grid-cols-1 gap-8 lg:grid-cols-5 lg:gap-10">
             <div className="lg:col-span-3">
               <ImageCarousel
-                images={solution.images}
-                solutionName={solution.name}
-                accentFrom={solution.accentFrom}
-                orientation={solution.imageOrientation}
+                images={product.images}
+                productName={product.name}
+                accentFrom={product.accentFrom}
+                orientation={product.imageOrientation}
               />
             </div>
 
@@ -215,26 +215,26 @@ export default async function SolutionDetailsPage({
                 About this project
               </h2>
               <p className="text-base leading-relaxed text-textSecondary md:text-lg">
-                {solution.fullDescription}
+                {product.fullDescription}
               </p>
 
               <div className="mt-2 rounded-2xl border border-darkBorder bg-darkSurface/60 p-5 backdrop-blur-sm md:p-6">
                 <div className="flex items-center gap-2 text-sm font-semibold text-white">
                   <FaUsers
                     className="h-4 w-4"
-                    style={{ color: solution.accentFrom }}
+                    style={{ color: product.accentFrom }}
                   />
                   Built for
                 </div>
                 <ul className="mt-3 flex flex-col gap-2">
-                  {solution.targetAudience.map((item) => (
+                  {product.targetAudience.map((item) => (
                     <li
                       key={item}
                       className="flex items-start gap-2 text-sm text-textSecondary md:text-base"
                     >
                       <FaCircleCheck
                         className="mt-0.5 h-3.5 w-3.5 flex-shrink-0"
-                        style={{ color: solution.accentFrom }}
+                        style={{ color: product.accentFrom }}
                       />
                       {item}
                     </li>
@@ -260,7 +260,7 @@ export default async function SolutionDetailsPage({
                 The challenge
               </h3>
               <p className="text-base leading-relaxed text-textSecondary md:text-lg">
-                {solution.challenge}
+                {product.challenge}
               </p>
             </div>
           </div>
@@ -275,7 +275,7 @@ export default async function SolutionDetailsPage({
                 Our solution
               </h3>
               <p className="text-base leading-relaxed text-textSecondary md:text-lg">
-                {solution.solution}
+                {product.solution}
               </p>
             </div>
           </div>
@@ -296,14 +296,14 @@ export default async function SolutionDetailsPage({
               </div>
             </div>
             <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-              {solution.keyFeatures.map((feat) => (
+              {product.keyFeatures.map((feat) => (
                 <li
                   key={feat}
                   className="flex items-start gap-3 rounded-xl border border-darkBorder bg-darkElevated/60 p-3 text-sm text-textSecondary md:text-base"
                 >
                   <FaCircleCheck
                     className="mt-0.5 h-4 w-4 flex-shrink-0"
-                    style={{ color: solution.accentFrom }}
+                    style={{ color: product.accentFrom }}
                   />
                   <span>{feat}</span>
                 </li>
@@ -316,7 +316,7 @@ export default async function SolutionDetailsPage({
               Technology stack
             </h3>
             <div className="flex flex-wrap gap-2">
-              {solution.technologies.map((tech) => (
+              {product.technologies.map((tech) => (
                 <span
                   key={tech}
                   className="rounded-full border border-darkBorder bg-darkElevated/80 px-3 py-1.5 text-xs font-semibold text-textSecondary transition-colors hover:border-primaryColor/40 hover:text-primaryColor md:text-sm"
@@ -338,11 +338,11 @@ export default async function SolutionDetailsPage({
               Use cases
             </div>
             <h2 className="font-display text-3xl font-semibold text-white md:text-4xl">
-              Where {solution.name} shines
+              Where {product.name} shines
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-5">
-            {solution.useCases.map((useCase, idx) => (
+            {product.useCases.map((useCase, idx) => (
               <div
                 key={useCase.title}
                 className="group relative overflow-hidden rounded-2xl border border-darkBorder bg-darkSurface/60 p-6 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-primaryColor/40"
@@ -351,14 +351,14 @@ export default async function SolutionDetailsPage({
                   aria-hidden
                   className="pointer-events-none absolute inset-x-0 bottom-0 h-0.5 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
                   style={{
-                    background: `linear-gradient(90deg, ${solution.accentFrom}, ${solution.accentTo})`,
+                    background: `linear-gradient(90deg, ${product.accentFrom}, ${product.accentTo})`,
                   }}
                 />
                 <div
                   className="mb-3 inline-flex h-9 w-9 items-center justify-center rounded-lg font-mono text-sm font-semibold"
                   style={{
-                    backgroundColor: `${solution.accentFrom}20`,
-                    color: solution.accentFrom,
+                    backgroundColor: `${product.accentFrom}20`,
+                    color: product.accentFrom,
                   }}
                 >
                   {String(idx + 1).padStart(2, "0")}
@@ -387,10 +387,10 @@ export default async function SolutionDetailsPage({
               The journey, end to end
             </h2>
           </div>
-          <SolutionTimeline
-            timeline={solution.timeline}
-            accentFrom={solution.accentFrom}
-            accentTo={solution.accentTo}
+          <ProductTimeline
+            timeline={product.timeline}
+            accentFrom={product.accentFrom}
+            accentTo={product.accentTo}
           />
         </div>
 
@@ -408,14 +408,14 @@ export default async function SolutionDetailsPage({
             </h2>
           </div>
           <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4">
-            {solution.functionalities.map((functionality) => (
+            {product.functionalities.map((functionality) => (
               <div
                 key={functionality}
                 className="flex items-start gap-3 rounded-xl border border-darkBorder bg-darkSurface/60 p-4 backdrop-blur-sm transition-colors hover:border-primaryColor/40"
               >
                 <FaCircleCheck
                   className="mt-0.5 h-4 w-4 flex-shrink-0"
-                  style={{ color: solution.accentFrom }}
+                  style={{ color: product.accentFrom }}
                 />
                 <span className="text-sm text-textSecondary md:text-base">
                   {functionality}
@@ -428,7 +428,7 @@ export default async function SolutionDetailsPage({
         </RevealOnScroll>
 
         {/* Pricing */}
-        {solution.pricing && solution.pricing.length > 0 && (
+        {product.pricing && product.pricing.length > 0 && (
           <RevealOnScroll>
           <div className="mb-14">
             <div className="mb-6 flex flex-col gap-2 md:mb-8">
@@ -440,7 +440,7 @@ export default async function SolutionDetailsPage({
               </h2>
             </div>
             <div className="grid grid-cols-1 gap-4 md:grid-cols-3 md:gap-6">
-              {solution.pricing.map((tier) => (
+              {product.pricing.map((tier) => (
                 <div
                   key={tier.name}
                   className={`relative flex flex-col rounded-2xl border p-6 backdrop-blur-sm transition-all md:p-8 ${
@@ -468,15 +468,15 @@ export default async function SolutionDetailsPage({
                       >
                         <FaCircleCheck
                           className="mt-0.5 h-3.5 w-3.5 flex-shrink-0"
-                          style={{ color: solution.accentFrom }}
+                          style={{ color: product.accentFrom }}
                         />
                         {f}
                       </li>
                     ))}
                   </ul>
-                  {solution.productUrl && (
+                  {product.productUrl && (
                     <Link
-                      href={`${solution.productUrl}/pricing`}
+                      href={`${product.productUrl}/pricing`}
                       target="_blank"
                       rel="noopener noreferrer"
                       className={`mt-6 inline-flex items-center justify-center gap-2 rounded-xl px-5 py-3 text-sm font-semibold transition-all hover:-translate-y-0.5 md:text-base ${
@@ -511,18 +511,18 @@ export default async function SolutionDetailsPage({
               </h2>
             </div>
             <div className="grid grid-cols-1 gap-3 md:grid-cols-2 md:gap-4">
-              {solution.results.map((result) => (
+              {product.results.map((result) => (
                 <div
                   key={result}
                   className="flex items-start gap-3 rounded-xl border border-darkBorder bg-darkSurface/60 p-4 backdrop-blur-sm md:p-5"
                 >
                   <span
                     className="mt-0.5 flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full"
-                    style={{ backgroundColor: `${solution.accentFrom}20` }}
+                    style={{ backgroundColor: `${product.accentFrom}20` }}
                   >
                     <FaCircleCheck
                       className="h-4 w-4"
-                      style={{ color: solution.accentFrom }}
+                      style={{ color: product.accentFrom }}
                     />
                   </span>
                   <span className="text-sm leading-relaxed text-textSecondary md:text-base">
@@ -547,7 +547,7 @@ export default async function SolutionDetailsPage({
               Common questions
             </h2>
           </div>
-          <SolutionFAQ faq={solution.faq} accentFrom={solution.accentFrom} />
+          <ProductFAQ faq={product.faq} accentFrom={product.accentFrom} />
         </div>
 
         </RevealOnScroll>
@@ -573,7 +573,7 @@ export default async function SolutionDetailsPage({
             </div>
             <h2 className="font-display mx-auto mt-4 max-w-2xl text-3xl font-semibold leading-tight text-white md:text-5xl">
               Ready to build something like{" "}
-              <span className="text-gradient-accent">{solution.name}</span>?
+              <span className="text-gradient-accent">{product.name}</span>?
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-textSecondary md:text-lg">
               We turn ambitious product ideas into live, revenue-generating
@@ -589,10 +589,10 @@ export default async function SolutionDetailsPage({
                 <MdOutlineMailOutline className="h-5 w-5" />
               </Link>
               <Link
-                href="/#solutions"
+                href="/products"
                 className="inline-flex items-center gap-2 rounded-xl border border-darkBorder bg-darkSurface/60 px-7 py-3.5 font-semibold text-white transition-all hover:-translate-y-0.5 hover:border-primaryColor/40 hover:bg-darkSurface"
               >
-                See other solutions
+                See other products
                 <HiArrowRight className="h-4 w-4" />
               </Link>
             </div>

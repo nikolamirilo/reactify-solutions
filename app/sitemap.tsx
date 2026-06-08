@@ -1,14 +1,14 @@
 import { MetadataRoute } from "next";
-import solutionsData from "@/components/Solutions/solutionsData";
+import productsData from "@/components/Products/productsData";
 import { allPostsMeta } from "@/content/articles";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.APP_URL || "https://www.reactify-solutions.com";
 
-  const solutionEntries: MetadataRoute.Sitemap = solutionsData
-    .filter((solution) => solution.visible)
-    .map((solution) => ({
-      url: `${baseUrl}/solutions/${solution.id}`,
+  const productEntries: MetadataRoute.Sitemap = productsData
+    .filter((product) => product.visible)
+    .map((product) => ({
+      url: `${baseUrl}/products/${product.id}`,
       lastModified: new Date(),
       changeFrequency: "monthly" as const,
       priority: 0.8,
@@ -47,6 +47,12 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
+      url: `${baseUrl}/products`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.85,
+    },
+    {
       url: `${baseUrl}/articles`,
       lastModified: new Date(),
       changeFrequency: "weekly",
@@ -70,7 +76,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       changeFrequency: "yearly",
       priority: 0.4,
     },
-    ...solutionEntries,
+    ...productEntries,
     ...articleEntries,
   ];
 }

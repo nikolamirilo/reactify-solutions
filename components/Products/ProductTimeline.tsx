@@ -1,15 +1,15 @@
 "use client";
 
-import { Solution } from "./solutionsData";
+import { Product } from "./productsData";
 import Stepper from "../react-bits/Stepper";
 
 interface Props {
-  timeline: Solution["timeline"];
+  timeline: Product["timeline"];
   accentFrom: string;
   accentTo: string;
 }
 
-const SolutionTimeline = ({ timeline, accentFrom, accentTo }: Props) => {
+const ProductTimeline = ({ timeline, accentFrom, accentTo }: Props) => {
   const steps = timeline.map((step, idx) => ({
     title: step.phase,
     description: step.detail,
@@ -26,4 +26,4 @@ const SolutionTimeline = ({ timeline, accentFrom, accentTo }: Props) => {
   );
 };
 
-export default SolutionTimeline;
+export default ProductTimeline;
