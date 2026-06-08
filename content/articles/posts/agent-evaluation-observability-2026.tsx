@@ -132,7 +132,7 @@ export default function AgentEvaluationObservability2026Post() {
         configuration line.
       </p>
       <CodeBlock
-        language="python"
+        language="bash"
         filename="instrument.py"
         code={`# pip install openinference-instrumentation-openai-agents \\
 #             opentelemetry-sdk opentelemetry-exporter-otlp
@@ -394,7 +394,7 @@ result = await Runner.run(agent, input="What is my order status?")`}
         once.
       </p>
       <CodeBlock
-        language="python"
+        language="bash"
         filename="evals/trajectory_judge.py"
         code={`# pip install deepeval openai-agents
 from deepeval import evaluate
@@ -482,7 +482,7 @@ evaluate(
         same traces.
       </p>
       <CodeBlock
-        language="python"
+        language="bash"
         filename="phoenix_eval.py"
         code={`# pip install arize-phoenix arize-phoenix-otel \\
 #             openinference-instrumentation-langchain \\
