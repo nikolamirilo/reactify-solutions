@@ -50,6 +50,9 @@ import VoiceAiAgentsProduction2026Post, {
 import AgentEvaluationObservability2026Post, {
   meta as agentEvaluationObservability2026Meta,
 } from "./posts/agent-evaluation-observability-2026";
+import MultiAgentOrchestration2026Post, {
+  meta as multiAgentOrchestration2026Meta,
+} from "./posts/multi-agent-orchestration-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -124,6 +127,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: agentEvaluationObservability2026Meta,
     Component: AgentEvaluationObservability2026Post,
+  },
+  {
+    meta: multiAgentOrchestration2026Meta,
+    Component: MultiAgentOrchestration2026Post,
   },
 ];
 
