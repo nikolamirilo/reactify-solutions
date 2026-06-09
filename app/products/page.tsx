@@ -55,7 +55,7 @@ export default function ProductsPage() {
 
       <section className="pb-16 pt-2 md:pb-24">
         <div className="container">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-2 md:gap-8">
+          <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
             {products.map((product) => (
               <ProductGridCard key={product.id} product={product} />
             ))}

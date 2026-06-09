@@ -15,15 +15,14 @@ const statusLabel = (status: Product["status"]) => {
  */
 const ProductGridCard = ({ product }: { product: Product }) => {
   const isPortrait = product.imageOrientation === "portrait";
-  const previewStats = product.stats.slice(0, 3);
 
   return (
     <Link
       href={`/products/${product.id}`}
       aria-label={`View ${product.name} details`}
-      className="group flex flex-col overflow-hidden rounded-3xl border border-darkBorder bg-darkSurface/70 transition-colors duration-300 hover:border-primaryColor/40"
+      className="group flex flex-col overflow-hidden rounded-3xl border border-darkBorder bg-darkSurface/70 transition-colors duration-300 hover:border-primaryColor/40 md:flex-row"
     >
-      <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-darkBorder bg-darkElevated">
+      <div className="relative aspect-[16/9] w-full overflow-hidden border-b border-darkBorder bg-darkElevated md:aspect-auto md:w-1/2 md:shrink-0 md:self-stretch md:border-b-0 md:border-r">
         {isPortrait ? (
           <>
             <div
@@ -51,7 +50,7 @@ const ProductGridCard = ({ product }: { product: Product }) => {
             src={product.images[0]}
             alt={product.name}
             fill
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 560px"
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 30vw"
             className="object-cover object-center"
             quality={75}
           />
@@ -101,25 +100,9 @@ const ProductGridCard = ({ product }: { product: Product }) => {
           </p>
         </div>
 
-        <p className="line-clamp-3 text-sm leading-relaxed text-textSecondary">
+        <p className="line-clamp-2 text-sm leading-relaxed text-textSecondary">
           {product.briefDescription}
         </p>
-
-        <div className="grid grid-cols-3 gap-2">
-          {previewStats.map((stat) => (
-            <div
-              key={stat.label}
-              className="rounded-xl border border-darkBorder bg-darkElevated/60 px-2 py-2 text-center"
-            >
-              <div className="text-sm font-semibold text-white sm:text-base">
-                {stat.value}
-              </div>
-              <div className="font-mono text-[9px] uppercase tracking-[0.1em] text-textColor">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
 
         <div className="mt-auto inline-flex items-center gap-2 pt-1 text-sm font-semibold text-primaryColor">
           View case study
