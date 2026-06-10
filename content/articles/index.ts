@@ -53,6 +53,9 @@ import AgentEvaluationObservability2026Post, {
 import MultiAgentOrchestration2026Post, {
   meta as multiAgentOrchestration2026Meta,
 } from "./posts/multi-agent-orchestration-2026";
+import ContextEngineeringAiAgents2026Post, {
+  meta as contextEngineeringAiAgents2026Meta,
+} from "./posts/context-engineering-ai-agents-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -131,6 +134,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: multiAgentOrchestration2026Meta,
     Component: MultiAgentOrchestration2026Post,
+  },
+  {
+    meta: contextEngineeringAiAgents2026Meta,
+    Component: ContextEngineeringAiAgents2026Post,
   },
 ];
 
