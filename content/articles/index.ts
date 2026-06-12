@@ -59,6 +59,9 @@ import ContextEngineeringAiAgents2026Post, {
 import AiAgentSecurity2026Post, {
   meta as aiAgentSecurity2026Meta,
 } from "./posts/ai-agent-security-2026";
+import DurableAiAgents2026Post, {
+  meta as durableAiAgents2026Meta,
+} from "./posts/durable-ai-agents-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -145,6 +148,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: aiAgentSecurity2026Meta,
     Component: AiAgentSecurity2026Post,
+  },
+  {
+    meta: durableAiAgents2026Meta,
+    Component: DurableAiAgents2026Post,
   },
 ];
 
