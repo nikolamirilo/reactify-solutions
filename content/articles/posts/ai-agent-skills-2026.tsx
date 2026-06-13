@@ -169,7 +169,7 @@ export default function AiAgentSkills2026Post() {
         scripts &mdash; is layered on top.
       </p>
       <CodeBlock
-        language="markdown"
+        language="bash"
         filename="pdf-invoice-extractor/SKILL.md"
         code={`---
 name: pdf-invoice-extractor
@@ -251,7 +251,7 @@ You are extracting structured data from a PDF invoice.
         layout sitting alongside <code>SKILL.md</code>.
       </p>
       <CodeBlock
-        language="text"
+        language="bash"
         filename="pdf-invoice-extractor/"
         code={`pdf-invoice-extractor/
 ├── SKILL.md            # required: frontmatter + procedural instructions
@@ -457,7 +457,7 @@ console.log(result.summary);`}
         repo to be the source of truth.
       </p>
       <CodeBlock
-        language="text"
+        language="bash"
         filename="repository layout"
         code={`acme-finance/
 ├── .claude/
