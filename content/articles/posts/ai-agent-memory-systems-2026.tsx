@@ -164,7 +164,7 @@ export default function AiAgentMemorySystems2026Post() {
         a service: the agent writes raw turns through{" "}
         <code>add()</code>, Mem0 does single-pass hierarchical extraction
         into structured facts, and at search time it fuses three retrieval
-        signals — semantic similarity, BM25 keyword match, and entity match —
+        signals - semantic similarity, BM25 keyword match, and entity match -
         into a single ranked result. The April 2026 algorithm scored 92.5 on
         LoCoMo and 94.4 on LongMemEval at roughly 6,900 tokens per query,
         with the largest gains on temporal reasoning (+29.6 points) and
@@ -360,7 +360,7 @@ const app = graph.compile({ checkpointer: new MemorySaver() });`}
         about. The <code>remember</code> node writes back at the end of the
         turn; in production we run it via a background queue so the agent
         does not wait on it. And the LangGraph checkpointer carries
-        short-term memory for the thread for free — the long-term store only
+        short-term memory for the thread for free - the long-term store only
         needs to handle cross-session knowledge, which is the part that is
         actually hard.
       </p>

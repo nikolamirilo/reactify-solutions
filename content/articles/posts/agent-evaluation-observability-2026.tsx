@@ -7,7 +7,7 @@ export const meta: Article = {
   title:
     "AI agent evaluation and observability in 2026: LangSmith, Langfuse, Arize Phoenix, Braintrust, and the OpenTelemetry GenAI conventions",
   excerpt:
-    "Why evaluation and observability stopped being optional in 2026, how the OpenTelemetry GenAI conventions reshaped the tracing layer, and the architectural calls — trajectory vs outcome, LLM-as-judge vs deterministic, online vs offline — that decide whether an agent survives the first Monday in production.",
+    "Why evaluation and observability stopped being optional in 2026, how the OpenTelemetry GenAI conventions reshaped the tracing layer, and the architectural calls - trajectory vs outcome, LLM-as-judge vs deterministic, online vs offline - that decide whether an agent survives the first Monday in production.",
   metaDescription:
     "A practical, technical guide to AI agent evaluation and observability in 2026. Covers the OpenTelemetry GenAI semantic conventions for agent and tool spans, OpenInference, LangSmith, Langfuse v3, Arize Phoenix, Braintrust, Helicone, trajectory and LLM-as-judge evaluation, online and offline evals, CI gates, audio replay, regression suites, and working Python and TypeScript instrumentation examples.",
   image: "/images/articles/article-03.png",
@@ -41,15 +41,15 @@ export default function AgentEvaluationObservability2026Post() {
         we see. LangChain&rsquo;s 2026 State of AI Agents report has 57%
         of organisations running agents in production and pegs{" "}
         <em>quality</em> as the single biggest barrier to deployment at
-        32% — almost double the next contender. 89% of those teams have
+        32% - almost double the next contender. 89% of those teams have
         already wired observability; only 52% have wired evals. The gap is
         the bug. An agent that hallucinates a tool call, retries a paid
         side effect, or quietly degrades after a model swap does not show
         up in your APM dashboard until the refund queue does. The
-        platforms grew up to fix this in 2025 — LangSmith on the
+        platforms grew up to fix this in 2025 - LangSmith on the
         LangChain stack, Langfuse v3 rebuilt around OpenTelemetry, Arize
         Phoenix and OpenInference on the rigour end, Braintrust on the
-        trace-to-eval loop, Helicone on drop-in simplicity — and the
+        trace-to-eval loop, Helicone on drop-in simplicity - and the
         OpenTelemetry GenAI semantic conventions standardised the trace
         shape that ties them together. The category is no longer a
         differentiator; not having one is.
@@ -77,8 +77,8 @@ export default function AgentEvaluationObservability2026Post() {
         Third, evaluation moved from a research artefact to a CI gate.
         LangChain, Braintrust, Confident AI, and Future AGI all ship
         evaluation suites as a GitHub Action; LLM-as-judge agreement with
-        human reviewers landed around 85% on most tasks — higher than two
-        humans on the same rubric — and the procurement objection
+        human reviewers landed around 85% on most tasks - higher than two
+        humans on the same rubric - and the procurement objection
         collapsed.
       </p>
       <p className="mb-6 leading-relaxed">
@@ -97,7 +97,7 @@ export default function AgentEvaluationObservability2026Post() {
       <p className="mb-6 leading-relaxed">
         The single biggest thing that happened to agent observability in
         2025–2026 was the OpenTelemetry GenAI semantic conventions getting
-        boring. Boring is the point — every platform, every framework,
+        boring. Boring is the point - every platform, every framework,
         every LLM provider now emits the same span shape, with the same
         attribute names, with the same metric units, and a trace exported
         from a LangGraph agent on Tuesday can be queried from Phoenix on
@@ -121,11 +121,11 @@ export default function AgentEvaluationObservability2026Post() {
         OTel work and converged on it. Phoenix is built on OTel; every
         OpenInference trace is a valid OTLP trace; the conventions extend
         the spec for higher-cardinality LLM payloads. The practical
-        consequence is that an agent instrumented once — typically with
+        consequence is that an agent instrumented once - typically with
         an SDK like <code>openinference-instrumentation-openai</code>,{" "}
         <code>traceloop-sdk</code>, or the native instrumentation that
         ships with the OpenAI Agents SDK, LangGraph, Mastra, CrewAI,
-        Vercel AI SDK, or Pydantic AI — exports usable spans to any OTLP
+        Vercel AI SDK, or Pydantic AI - exports usable spans to any OTLP
         collector. Langfuse v3 rebuilt its ingestion endpoint around
         OTLP; Langfuse Cloud and Datadog LLM Observability accept the
         same payload. The lock-in is gone. Switching vendors is now a
@@ -147,7 +147,7 @@ from openinference.instrumentation.openai_agents import (
     OpenAIAgentsInstrumentor,
 )
 
-# 1. Wire OTLP — same endpoint shape for Phoenix, Langfuse, Datadog,
+# 1. Wire OTLP - same endpoint shape for Phoenix, Langfuse, Datadog,
 #    Honeycomb, Jaeger, or any OTel collector.
 provider = TracerProvider()
 provider.add_span_processor(
@@ -172,12 +172,12 @@ result = await Runner.run(agent, input="What is my order status?")`}
       <p className="mb-6 leading-relaxed">
         Three things to notice. The exporter URL is the only line that
         differs between Phoenix, Langfuse, Datadog, and a local Jaeger;
-        the agent code is untouched. The instrumentation is one line —
+        the agent code is untouched. The instrumentation is one line -
         and there is an equivalent one-liner for LangGraph, CrewAI,
         Mastra, the Vercel AI SDK, Pydantic AI, Claude Agent SDK, and
         LlamaIndex. And the spans are <em>structured</em>: when you open
         a trace, the agent loop renders as a tree of named operations
-        with model, tool, and token attributes — not a wall of stringified
+        with model, tool, and token attributes - not a wall of stringified
         JSON. That is the entire reason this category became usable.
       </p>
 
@@ -194,12 +194,12 @@ result = await Runner.run(agent, input="What is my order status?")`}
           that emits spans. Native framework hooks (LangSmith for
           LangChain, Phoenix for OpenAI Agents SDK) are the lowest-friction
           path; OTel instrumentation libraries cover the long tail. Plan
-          for both — your agent will not stay on one framework.
+          for both - your agent will not stay on one framework.
         </li>
         <li>
           <strong>Tracing backend.</strong> The store that holds traces,
           spans, attributes, and events. ClickHouse has won the analytic
-          store war for this category — Langfuse, Logfire, and most
+          store war for this category - Langfuse, Logfire, and most
           self-hosted stacks are on it; LangSmith runs its own
           purpose-built store; Phoenix runs on Postgres for OSS and
           ClickHouse-backed managed Arize for scale. Query latency on
@@ -234,7 +234,7 @@ result = await Runner.run(agent, input="What is my order status?")`}
           watches production traces, computes online evaluator scores,
           alerts on regression, and lets you replay a failed trace against
           a new prompt or model. This is where the platform earns or
-          loses its seat — the offline eval suite tells you the model
+          loses its seat - the offline eval suite tells you the model
           got worse; the online layer tells you <em>which user</em> and{" "}
           <em>which span</em>.
         </li>
@@ -250,7 +250,7 @@ result = await Runner.run(agent, input="What is my order status?")`}
       <ul className="mb-6 list-disc space-y-2 pl-6">
         <li>
           <strong>LangSmith.</strong> The LangChain-native default.
-          Deepest framework integration in the category — node-by-node
+          Deepest framework integration in the category - node-by-node
           LangGraph state diffs, model + tool call breakdowns, replay
           against new model versions in one click, and the eval suite
           that ships with the LangChain SDK. Pricing is seat-based ($39
@@ -275,7 +275,7 @@ result = await Runner.run(agent, input="What is my order status?")`}
           <strong>Arize Phoenix.</strong> The ML-grade rigour pick.
           Open-source local UI (Postgres-backed), Arize AX as the managed
           enterprise tier, and OpenInference as the wire convention.
-          Phoenix wins on eval rigour — drift detection, embeddings
+          Phoenix wins on eval rigour - drift detection, embeddings
           analysis, deterministic evaluators, and the cleanest LLM-as-
           judge primitives in the category. Out-of-the-box support for
           OpenAI Agents SDK, Claude Agent SDK, LangGraph, Vercel AI SDK,
@@ -319,7 +319,7 @@ result = await Runner.run(agent, input="What is my order status?")`}
         events. <strong>Logfire</strong> (Pydantic) is OTel-native, ~27x
         cheaper than Langfuse at moderate scale on the published
         benchmarks, and the natural fit for Pydantic AI agents.{" "}
-        <strong>Confident AI / DeepEval</strong> is the eval-first stack —
+        <strong>Confident AI / DeepEval</strong> is the eval-first stack -
         50+ research-backed metrics, CI/CD regression testing, and a
         production-to-eval pipeline; if your bottleneck is the offline
         suite rather than the trace store, this is the cleanest answer.
@@ -339,7 +339,7 @@ result = await Runner.run(agent, input="What is my order status?")`}
         Outcome evaluation is the cheap baseline. Run the agent on a
         labelled input, compare the final response to the ground truth,
         score it. Works well for narrow tasks with a single right answer
-        — order lookups, scheduling, retrieval — and falls apart for
+        - order lookups, scheduling, retrieval - and falls apart for
         anything open-ended. The fatal failure mode is the agent that
         produces the right answer by the wrong reasoning: a customer
         balance reported correctly because the agent guessed it, not
@@ -349,7 +349,7 @@ result = await Runner.run(agent, input="What is my order status?")`}
         whole story.
       </p>
       <p className="mb-6 leading-relaxed">
-        Trajectory evaluation scores the whole path — which tools the
+        Trajectory evaluation scores the whole path - which tools the
         agent picked, which arguments it passed, how many turns it took,
         whether it looped, whether the intermediate reasoning was
         grounded. Three classes of metrics have emerged in 2026:{" "}
@@ -378,7 +378,7 @@ result = await Runner.run(agent, input="What is my order status?")`}
         the merge on every failure.
       </p>
       <p className="mb-6 leading-relaxed">
-        LLM-as-judge fills the gap deterministic checks cannot —
+        LLM-as-judge fills the gap deterministic checks cannot -
         open-ended quality, tone, faithfulness, helpfulness, the
         subjective rubric a human would use. The 2026 pattern is GPT-5
         or Claude Opus 4.5 as the judge, a tight rubric in the prompt
@@ -390,7 +390,7 @@ result = await Runner.run(agent, input="What is my order status?")`}
         dollars), and pin its model version (a silent provider-side model
         rev changes your scores). The trick we use on long-running suites
         is to cache judge scores against a hash of the (trace, rubric,
-        judge_model) tuple — replays are free, real evaluations cost
+        judge_model) tuple - replays are free, real evaluations cost
         once.
       </p>
       <CodeBlock
@@ -432,7 +432,7 @@ evaluate(
 )`}
       />
       <p className="mb-6 leading-relaxed">
-        The pattern that earns its keep is layered scoring — the
+        The pattern that earns its keep is layered scoring - the
         deterministic check fails fast on the cheap cases (wrong tool,
         bad schema, missing argument), the judge runs only on what
         survives, and the dashboard rolls both into a per-PR delta. The
@@ -452,7 +452,7 @@ evaluate(
         production traces, asynchronously, sampling at whatever rate the
         judge budget allows (1–10% is typical for paid judges, 100% for
         deterministic checks). This is where you catch the drift that
-        the offline suite cannot anticipate — the user phrasing your
+        the offline suite cannot anticipate - the user phrasing your
         dataset never sampled, the tool behaviour that changed
         upstream, the model provider&rsquo;s silent rev.
       </p>
@@ -510,7 +510,7 @@ agent = create_react_agent(
 )
 result = agent.invoke({"messages": [("user", "Where is order 84291?")]})
 
-# 3. Evaluators run against the same traces — no separate instrumentation.
+# 3. Evaluators run against the same traces - no separate instrumentation.
 from phoenix.evals import (
     HallucinationEvaluator, ToxicityEvaluator, llm_classify, OpenAIModel,
 )
@@ -523,9 +523,9 @@ results = llm_classify(
 )`}
       />
       <p className="mb-6 leading-relaxed">
-        The patterns that pay off are the OpenInference instrumentors —
+        The patterns that pay off are the OpenInference instrumentors -
         you call one per framework and per LLM SDK; Phoenix handles the
-        rest — and running evaluators directly against the span dataframe
+        rest - and running evaluators directly against the span dataframe
         the platform already holds. There is no separate
         &ldquo;evaluation dataset&rdquo; to keep in sync with production;
         the spans <em>are</em> the dataset, and the evaluators score
@@ -559,7 +559,7 @@ import { Agent, run, tool } from "@openai/agents";
 import { z } from "zod";
 
 // 1. OTLP exporter; Langfuse Cloud is the endpoint. Self-host is identical
-//    — just swap the URL for your Langfuse instance.
+//    - just swap the URL for your Langfuse instance.
 const sdk = new NodeSDK({
   traceExporter: new OTLPTraceExporter({
     url: "https://cloud.langfuse.com/api/public/otel/v1/traces",
@@ -591,7 +591,7 @@ const result = await run(agent, "Where is order 84291?");`}
         Three operational notes. The exporter URL is the only thing that
         changes between Cloud and self-host; the same span flow works on
         both. ClickHouse query performance scales with cardinality, not
-        raw volume — index your high-selectivity attributes (user ID,
+        raw volume - index your high-selectivity attributes (user ID,
         session ID, agent name) and the trace dashboard stays sub-second
         on tens of millions of spans. And the OpenTelemetry context
         propagates across processes, so an HTTP call from the agent
@@ -610,7 +610,7 @@ const result = await run(agent, "Where is order 84291?");`}
       <ul className="mb-6 list-disc space-y-2 pl-6">
         <li>
           <strong>Instrument before the first user.</strong> Wire the
-          tracing SDK on day one — well before evals, well before the
+          tracing SDK on day one - well before evals, well before the
           dashboard is pretty. The single biggest source of post-incident
           frustration is &ldquo;we cannot reproduce the trace because it
           was not captured.&rdquo; OpenTelemetry GenAI is one line. Run
@@ -643,7 +643,7 @@ const result = await run(agent, "Where is order 84291?");`}
           imagination.</strong> The offline dataset must look like
           production. Sample low-score online traces weekly, annotate
           them, freeze them into the offline suite. The dataset is a
-          living artefact, not a one-off — versioned, dated, and
+          living artefact, not a one-off - versioned, dated, and
           attributed to the trace it came from. The flywheel beats the
           handcrafted prompt every time.
         </li>
@@ -659,7 +659,7 @@ const result = await run(agent, "Where is order 84291?");`}
           <strong>Online evaluators on a sample, deterministic checks
           on every call.</strong> Schema validation, hallucination
           canaries, refusal allowlist, and tool-call legality run on
-          100% of traces — they are cheap. LLM-as-judge evaluators run
+          100% of traces - they are cheap. LLM-as-judge evaluators run
           on a 1–10% sample by default, and on 100% of traces flagged by
           deterministic anomalies. The budget is bounded; the coverage
           is total.
@@ -715,7 +715,7 @@ const result = await run(agent, "Where is order 84291?");`}
         <li>
           <strong>Internal developer-tool agents.</strong> Coding agents,
           spec-to-PR agents, codebase-search agents. The eval surface is
-          unusual — outcome is testable (does the diff compile? do the
+          unusual - outcome is testable (does the diff compile? do the
           tests pass?) but trajectory matters disproportionately (did
           the agent read the right files?). The 2026 pattern is a
           composite scorer: test-pass rate + trajectory rubric + token
@@ -742,7 +742,7 @@ const result = await run(agent, "Where is order 84291?");`}
         </li>
         <li>
           <strong>Dataset overfit.</strong> Offline eval suites that
-          stop growing become a memorisation surface — the prompt is
+          stop growing become a memorisation surface - the prompt is
           tuned to pass the dataset, not to behave well in production.
           The defence is the trace-to-eval flywheel; the dataset has to
           be refreshed from real traces on a cadence, and the old cases
@@ -774,7 +774,7 @@ const result = await run(agent, "Where is order 84291?");`}
           deterministic checks on 100%, and reserve 100% judge runs for
           traces flagged by the cheap checks. The cost story is the
           single biggest reason teams turn off online evals after a
-          quarter — the discipline is to sample, not to skip.
+          quarter - the discipline is to sample, not to skip.
         </li>
       </ul>
 
@@ -880,7 +880,7 @@ const result = await run(agent, "Where is order 84291?");`}
           everything. The budget is the constraint; sampling 1–10% of
           traces against the judge while running 100% of deterministic
           checks gives total coverage and bounded cost. Pin the sample
-          rate per intent, not globally — high-stakes intents get
+          rate per intent, not globally - high-stakes intents get
           higher sampling.
         </li>
         <li>
@@ -919,15 +919,15 @@ const result = await run(agent, "Where is order 84291?");`}
           with disagreement detection is better. Phoenix, Confident AI,
           and Braintrust are all moving toward ensembles with disagreement
           flagged as a separate signal. The pattern that surfaces is the
-          uncertain-case routing — high-confidence judgements are
+          uncertain-case routing - high-confidence judgements are
           automated; low-confidence ones go to a human.
         </li>
         <li>
           <strong>Agent-as-a-judge crosses the chasm.</strong> Using an
           agent (not just an LLM) to evaluate another agent is the
           research-to-production crossing of 2026. The agent-judge runs
-          its own tool calls — re-executing API lookups, validating
-          source citations — and produces a richer rubric than a text-
+          its own tool calls - re-executing API lookups, validating
+          source citations - and produces a richer rubric than a text-
           only judge could. Early production deployments in coding-
           agent and research-agent stacks; broader uptake by year end.
         </li>
@@ -953,8 +953,8 @@ const result = await run(agent, "Where is order 84291?");`}
           Default redaction, on-prem judge models, and on-device
           tokenisation become standard for regulated workloads. The
           OpenTelemetry GenAI spec already nudges this direction; the
-          platforms operationalise it. The compliance objection — the
-          last serious one against the category — closes by the end of
+          platforms operationalise it. The compliance objection - the
+          last serious one against the category - closes by the end of
           2026.
         </li>
       </ul>

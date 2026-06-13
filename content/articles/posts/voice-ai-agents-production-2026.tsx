@@ -7,7 +7,7 @@ export const meta: Article = {
   title:
     "Voice AI agents in production 2026: LiveKit Agents, OpenAI Realtime, Pipecat, Vapi, and Retell compared",
   excerpt:
-    "How the voice agent stack consolidated in 2025, why cascaded STT-LLM-TTS still beats speech-to-speech in production, and the architectural calls — turn detection, barge-in, telephony, observability — that decide whether a voice agent survives a Monday morning call queue.",
+    "How the voice agent stack consolidated in 2025, why cascaded STT-LLM-TTS still beats speech-to-speech in production, and the architectural calls - turn detection, barge-in, telephony, observability - that decide whether a voice agent survives a Monday morning call queue.",
   metaDescription:
     "A practical, technical guide to voice AI agents in production in 2026. Covers LiveKit Agents 1.0, OpenAI Realtime API GA, Pipecat and Pipecat Cloud, Vapi and Retell, the cascaded vs speech-to-speech architectural decision, sub-300ms latency budgets, semantic turn detection, barge-in handling, SIP telephony, function calling, observability, and working TypeScript and Python examples.",
   image:
@@ -60,7 +60,7 @@ export default function VoiceAiAgentsProduction2026Post() {
         Three forces collapsed the stack. First, the latency floor moved.
         Deepgram Aura-2 ships sub-200ms time-to-first-audio (tunable to
         ~90ms), Cartesia Sonic 4 publishes ~40ms, ElevenLabs Flash v2.5
-        sits at ~75ms. STT joined the party — Deepgram Nova-3 lands a
+        sits at ~75ms. STT joined the party - Deepgram Nova-3 lands a
         partial in roughly 150ms. The 300ms response budget that defines
         natural conversation, once aspirational, became the new baseline.
         Second, the orchestration problem was solved in the open. LiveKit
@@ -98,7 +98,7 @@ export default function VoiceAiAgentsProduction2026Post() {
         Cascaded pipelines are the production default. They dominate
         enterprise deployments because every component is independently
         observable, every transcript is auditable for compliance, and the
-        provider matrix is deep — five-plus credible STT vendors, seven-plus
+        provider matrix is deep - five-plus credible STT vendors, seven-plus
         TTS, dozens of LLMs. The cost is predictable
         (~$0.0095–$0.17/min depending on the choice of provider and
         model), and you can hot-swap any single stage without rewriting the
@@ -110,7 +110,7 @@ export default function VoiceAiAgentsProduction2026Post() {
       <p className="mb-6 leading-relaxed">
         Speech-to-speech (OpenAI <code>gpt-realtime</code>, Gemini Live,
         xAI Grok Voice, Moshi) skips the text layer. Audio in, audio out,
-        one model. The benchmarks are striking — Moshi publishes ~160ms
+        one model. The benchmarks are striking - Moshi publishes ~160ms
         end-to-end on a 7B parameter model with full-duplex streaming, and
         OpenAI&rsquo;s Realtime API gets close on the right network. Tone,
         prosody, and emotional carry-over are noticeably better because no
@@ -124,7 +124,7 @@ export default function VoiceAiAgentsProduction2026Post() {
       <p className="mb-6 leading-relaxed">
         Our default on client work is a cascaded pipeline for any workload
         with a compliance or audit requirement, and a hybrid for
-        latency-bound consumer experiences — speech-to-speech for the
+        latency-bound consumer experiences - speech-to-speech for the
         small-talk surface, cascaded for the tool-calling path where the
         transcript matters. The pure speech-to-speech case is real but
         narrow: real-time UX where prosody is the product (companions,
@@ -167,7 +167,7 @@ export default function VoiceAiAgentsProduction2026Post() {
         </li>
         <li>
           <strong>LLM.</strong> GPT-4.1, Claude Sonnet 4, Gemini 2.5 Flash,
-          Llama 4 — pick the cheapest model that hits your tool-call
+          Llama 4 - pick the cheapest model that hits your tool-call
           accuracy bar. Voice agents are tool-bound far more often than
           chat agents, and a mid-tier model with a tight system prompt
           beats a frontier model with a sloppy one every time. Stream the
@@ -178,11 +178,11 @@ export default function VoiceAiAgentsProduction2026Post() {
           is the latency leader; ElevenLabs Flash v2.5 (~75ms) wins on voice
           range and language coverage; Deepgram Aura-2 is the enterprise-on-
           prem play. Streaming, chunked, with mid-stream cancellation
-          support is table stakes — without it, barge-in is broken.
+          support is table stakes - without it, barge-in is broken.
         </li>
         <li>
           <strong>Orchestration.</strong> The piece that holds it together
-          — turn-taking, interruption, function calling, conversation
+          - turn-taking, interruption, function calling, conversation
           state, retry logic, observability. This is what LiveKit Agents,
           Pipecat, the OpenAI Agents SDK, Vapi, and Retell all are. Most
           teams should not write this layer themselves in 2026.
@@ -212,13 +212,13 @@ export default function VoiceAiAgentsProduction2026Post() {
           <code>gpt-realtime</code>, remote MCP servers, SIP-based phone
           calling, and image inputs. WebRTC for browser and mobile,
           WebSocket for server-to-server. The cleanest path when you want
-          a single-vendor stack — the speech-to-speech model handles
+          a single-vendor stack - the speech-to-speech model handles
           turn-taking, prosody, and tool calls in one round trip. The
           trade-off is the lock-in and the price.
         </li>
         <li>
           <strong>Pipecat (+ Pipecat Cloud).</strong> Open-source Python
-          framework from Daily with pipeline-based composition — Deepgram
+          framework from Daily with pipeline-based composition - Deepgram
           STT processor in, GPT-4 processor next, ElevenLabs TTS out.
           40+ AI service plugins, SDKs for Python, JavaScript, React, iOS,
           Android, C++. Pipecat Cloud reached GA on Daily&rsquo;s enterprise
@@ -250,7 +250,7 @@ export default function VoiceAiAgentsProduction2026Post() {
         when the call already lives inside an existing Twilio Flex contact
         center and the migration risk of moving it is the binding
         constraint. <strong>Amazon Bedrock AgentCore + Pipecat</strong> is
-        the AWS-native play for teams already deep in Bedrock and IAM — the
+        the AWS-native play for teams already deep in Bedrock and IAM - the
         Bedrock integration is published, documented, and supported.
       </p>
 
@@ -263,7 +263,7 @@ export default function VoiceAiAgentsProduction2026Post() {
         pipeline class that accepts STT, LLM, and TTS plug-ins, runs the
         adaptive turn-detection model, handles barge-in, and exposes tool
         calls as Python decorators. The same agent runs on a WebRTC room
-        for browser users and on a SIP trunk for phone callers — the
+        for browser users and on a SIP trunk for phone callers - the
         transport layer is uniform.
       </p>
       <CodeBlock
@@ -313,13 +313,13 @@ if __name__ == "__main__":
     cli.run_app(WorkerOptions(entrypoint_fnc=entrypoint))`}
       />
       <p className="mb-6 leading-relaxed">
-        Three things to notice. The TTS is Cartesia, not OpenAI — on a
+        Three things to notice. The TTS is Cartesia, not OpenAI - on a
         cascaded pipeline you almost always want the lowest-latency TTS in
         the category, because TTS is the last stage and any wasted ms is
         a perceived lag. The turn detector is a separate model on top of
         VAD; the energy-only path is the single largest source of
         production complaints. And tool calls are plain decorated Python
-        functions — the framework handles streaming the tool call out of
+        functions - the framework handles streaming the tool call out of
         the LLM, executing it, and feeding the result back into the same
         turn. The same agent attaches to a SIP trunk by configuring a
         dispatch rule against a LiveKit Phone Number; no code changes in
@@ -331,7 +331,7 @@ if __name__ == "__main__":
       </h2>
       <p className="mb-6 leading-relaxed">
         OpenAI&rsquo;s Realtime API took the opposite stance to LiveKit. The
-        model — <code>gpt-realtime</code> at GA — accepts audio and emits
+        model - <code>gpt-realtime</code> at GA - accepts audio and emits
         audio in a single bidirectional stream. There is no separate STT
         or TTS to wire. Tool calls, MCP servers, image inputs, and SIP
         phone calls all live inside the same session. The browser path is
@@ -383,7 +383,7 @@ export async function startSession(audioElement: HTMLAudioElement) {
       />
       <p className="mb-6 leading-relaxed">
         The pattern that earns its keep on Realtime is end-of-turn delegation
-        — let the server-side turn detector decide when to respond, then
+        - let the server-side turn detector decide when to respond, then
         invalidate the audio buffer on every detected barge-in. The single
         biggest bug we see on Realtime deployments is leaving the audio
         element playing while the model speaks over a user who was already
@@ -406,7 +406,7 @@ export async function startSession(audioElement: HTMLAudioElement) {
         LLM processor, a TTS processor, and out through the same transport.
         Each processor implements a uniform interface; swapping Deepgram for
         AssemblyAI or ElevenLabs for Cartesia is a one-line change. Pipecat
-        Cloud — Daily&rsquo;s managed deployment platform — runs the same
+        Cloud - Daily&rsquo;s managed deployment platform - runs the same
         pipeline code on enterprise infrastructure with integrated SIP,
         PSTN, Krisp noise cancellation, and HIPAA compliance.
       </p>
@@ -464,7 +464,7 @@ async def main(room_url: str, token: str):
       />
       <p className="mb-6 leading-relaxed">
         The Pipecat pattern that pays off in production is the context
-        aggregator pair — one before the LLM that captures the user&rsquo;s
+        aggregator pair - one before the LLM that captures the user&rsquo;s
         finalised utterance, one after that captures the assistant&rsquo;s
         spoken response. Without both, you cannot reliably reconstruct what
         the agent <em>actually said</em> versus what the LLM intended to
@@ -515,7 +515,7 @@ async def main(room_url: str, token: str):
       </ul>
       <p className="mb-6 leading-relaxed">
         The number to design to is 300ms time-to-first-audible-response, and
-        the path to it is overlapping streams — the LLM emits tokens while
+        the path to it is overlapping streams - the LLM emits tokens while
         the STT is still finalising, the TTS starts speaking before the LLM
         is done, and the agent listens for barge-in throughout. None of
         the platforms above ship that pipeline correctly out of the
@@ -595,9 +595,9 @@ async def main(room_url: str, token: str):
       <ul className="mb-6 list-disc space-y-2 pl-6">
         <li>
           <strong>Contact-center deflection.</strong> The headline use
-          case. Voice agents handle the top of the call tree — order
+          case. Voice agents handle the top of the call tree - order
           status, appointment scheduling, password resets, balance
-          enquiries — and escalate to a human only on intent the agent
+          enquiries - and escalate to a human only on intent the agent
           cannot resolve. Healthcare contact centers report ~30% reduction
           in hold time and 85% reduction in agent training time after
           deployment; the financial-services figures are similar. Kore,
@@ -608,7 +608,7 @@ async def main(room_url: str, token: str):
         <li>
           <strong>Outbound and reactivation.</strong> Insurance renewals,
           appointment reminders, debt collection, lead qualification. The
-          economics are blunt — a voice agent at $0.40/call against
+          economics are blunt - a voice agent at $0.40/call against
           $7–$12/call for a human, and the agent can be on the phone at
           3am. Vapi and Retell are the dominant managed platforms in this
           shape; the open-source build path is Pipecat + Twilio SIP for
@@ -626,7 +626,7 @@ async def main(room_url: str, token: str):
         <li>
           <strong>Voice in physical and embedded contexts.</strong>{" "}
           Drive-thru ordering, in-car assistants, smart-home interfaces,
-          warehouse pick-and-place. Latency is the binding constraint —
+          warehouse pick-and-place. Latency is the binding constraint -
           200ms is felt, 500ms is broken. Pipecat is overrepresented here
           because the pipeline is small enough to run on edge hardware;
           LiveKit&rsquo;s emphasis on physical-AI agents in 2026 product
@@ -646,7 +646,7 @@ async def main(room_url: str, token: str):
           <strong>Compounded tail latency.</strong> Every component is
           fast in isolation. The combined p99 is not. A 250ms STT plus a
           400ms LLM plus a 75ms TTS plus 100ms of network is 825ms median
-          and 1.6s p99 — and the p99 is what the caller remembers. Pin
+          and 1.6s p99 - and the p99 is what the caller remembers. Pin
           regions, co-locate providers, and benchmark the actual stack,
           not the vendor numbers.
         </li>
@@ -683,7 +683,7 @@ async def main(room_url: str, token: str):
           intent is harder to ship than the agent itself. Retell, Vapi,
           and Cognigy ship this as a first-class primitive; LiveKit and
           Pipecat give you the building blocks. Test the handoff with as
-          much rigour as the happy path — it is the moment the agent has
+          much rigour as the happy path - it is the moment the agent has
           already failed, and the caller is already frustrated.
         </li>
       </ul>
@@ -709,7 +709,7 @@ async def main(room_url: str, token: str):
         </li>
         <li>
           <strong>Pipecat (+ Pipecat Cloud).</strong> The right answer when
-          the pipeline is the product — when you need every processor swappable
+          the pipeline is the product - when you need every processor swappable
           and a path from local dev to managed deployment on the same code.
           Pipecat Cloud is the polished operations layer; the open framework
           runs on AWS, GCP, on-prem, or embedded edge hardware with the
@@ -717,7 +717,7 @@ async def main(room_url: str, token: str):
         </li>
         <li>
           <strong>Vapi.</strong> The right answer when developer ergonomics
-          and flexibility are the binding constraints — broad LLM provider
+          and flexibility are the binding constraints - broad LLM provider
           matrix, transparent per-minute pricing, deep customisation surface.
           Plan around the compliance add-on cost and the absence of native
           warm transfer and branded calling out of the box.
@@ -763,8 +763,8 @@ async def main(room_url: str, token: str):
         </li>
         <li>
           Define the human handoff before the agent. The warm-transfer
-          path — what context is passed, how the transcript is summarised,
-          which queue the call lands in — is the gating UX decision.
+          path - what context is passed, how the transcript is summarised,
+          which queue the call lands in - is the gating UX decision.
           Build the dashboard view of an in-progress agent call before
           you ship a single agent. The supervisor sees the conversation
           live; the agent is allowed to fail.
@@ -774,11 +774,11 @@ async def main(room_url: str, token: str):
           incidents are unreproducible without the audio; the trace
           without the audio is half the story. LangSmith, Langfuse,
           Helicone, Arize, and Future AGI all ship voice-aware traces in
-          2026 — wire one in before the production cutover.
+          2026 - wire one in before the production cutover.
         </li>
         <li>
           Treat the compliance recording, redaction, and retention rules
-          as gating requirements. PCI, HIPAA, two-party consent, GDPR —
+          as gating requirements. PCI, HIPAA, two-party consent, GDPR -
           all jurisdiction-specific, all non-negotiable. Procurement asks
           for this on the first call; engineering should not be the team
           that learns it on the third.
@@ -814,7 +814,7 @@ async def main(room_url: str, token: str):
         <li>
           <strong>Telephony stops being separate from the agent.</strong>{" "}
           LiveKit Phone Numbers, OpenAI Realtime SIP, Pipecat Cloud
-          integrated PSTN, Retell verified numbers — the pattern of a
+          integrated PSTN, Retell verified numbers - the pattern of a
           single primitive for &ldquo;voice agent on a phone number&rdquo;
           is the new shape. Twilio is no longer the only door; the door
           is the agent framework.
@@ -830,8 +830,8 @@ async def main(room_url: str, token: str):
         <li>
           <strong>Edge and on-device voice agents arrive.</strong>{" "}
           Phi-4-mini, Llama 4 8B, and Moshi are deployable on a single
-          consumer GPU. Latency-bound use cases — drive-thru, in-car,
-          smart-home — move on-device by year end. Pipecat&rsquo;s edge
+          consumer GPU. Latency-bound use cases - drive-thru, in-car,
+          smart-home - move on-device by year end. Pipecat&rsquo;s edge
           story and Deepgram&rsquo;s on-prem Aura-2 are the early
           examples.
         </li>

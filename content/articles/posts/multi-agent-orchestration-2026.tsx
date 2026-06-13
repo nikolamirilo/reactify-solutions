@@ -183,7 +183,7 @@ class State(TypedDict):
     messages: Annotated[list, add_messages]
     next: str
 
-# Workers are normal nodes — they receive the brief in messages,
+# Workers are normal nodes - they receive the brief in messages,
 # do their job, and return state.
 def researcher(state: State) -> Command[Literal["supervisor"]]:
     result = ChatAnthropic(model="claude-sonnet-4-6").invoke(state["messages"])
@@ -199,7 +199,7 @@ def writer(state: State) -> Command[Literal["supervisor"]]:
         goto="supervisor",
     )
 
-# The supervisor is a model bound to "routing tools" — one per worker —
+# The supervisor is a model bound to "routing tools" - one per worker -
 # plus a FINISH tool. The tool the model picks becomes the next node.
 @tool
 def route_to(target: Literal["researcher", "writer", "FINISH"], brief: str):
@@ -272,7 +272,7 @@ class TriageBrief(BaseModel):
     customer_id: str
     summary: str
 
-# Specialist agents — each has a scoped tool list and tight instructions.
+# Specialist agents - each has a scoped tool list and tight instructions.
 billing = Agent(
     name="Billing",
     model="gpt-5",
@@ -287,7 +287,7 @@ returns = Agent(
 )
 
 # Triage agent receives the user and hands off. The on_handoff callback
-# fires before the next agent runs — typical use is to log, audit, or
+# fires before the next agent runs - typical use is to log, audit, or
 # enrich the brief with state the target needs.
 async def log_handoff(ctx, brief: TriageBrief):
     await audit.write(target=ctx.next_agent.name, customer=brief.customer_id)

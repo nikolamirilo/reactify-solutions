@@ -7,7 +7,7 @@ export const meta: Article = {
   title:
     "Code execution sandboxes for AI agents in 2026: E2B, Modal, Vercel Sandbox, Cloudflare, and Daytona compared",
   excerpt:
-    "Why every serious AI agent now runs inside a sandbox, how the five frontier platforms differ once you ship them, and the production patterns — isolation model, cold start budget, credential injection, snapshots — that decide whether your agent fleet survives real traffic.",
+    "Why every serious AI agent now runs inside a sandbox, how the five frontier platforms differ once you ship them, and the production patterns - isolation model, cold start budget, credential injection, snapshots - that decide whether your agent fleet survives real traffic.",
   metaDescription:
     "A practical, technical guide to AI agent code execution sandboxes in 2026. Covers E2B (Firecracker microVMs, $21M Series A, 88% Fortune 100), Modal (gVisor, 50,000+ concurrent sessions, GPU), Vercel Sandbox (Hive, sub-second starts, snapshots), Cloudflare Sandboxes (persistent containers, PTY, code interpreter), Daytona (sub-90ms cold starts), the isolation model trade-offs (microVM vs gVisor vs container), prompt-injection threat model, credential injection, observability, and working TypeScript examples.",
   image:
@@ -64,7 +64,7 @@ export default function CodeExecutionSandboxesAiAgents2026Post() {
         Johann Rehberger published the &ldquo;ZombAIs&rdquo; write-up where a
         webpage with a hidden prompt-injection payload convinced Claude
         Computer Use to download a binary, <code>chmod +x</code> it, and
-        connect back to a command-and-control server — on the first try, on
+        connect back to a command-and-control server - on the first try, on
         an unprotected host. Greshake et al. had already formalised the
         indirect-prompt-injection class of attack in 2023; ZombAIs made the
         consequence concrete.
@@ -80,7 +80,7 @@ export default function CodeExecutionSandboxesAiAgents2026Post() {
         Vercel, Modal, Cloudflare Containers, Docker, Together, Beam,
         Northflank, Blaxel, Daytona. E2B remains the dedicated pure-play
         leader. The market consolidated around a small set of architectural
-        choices — and those choices are the lens for the rest of this post.
+        choices - and those choices are the lens for the rest of this post.
       </p>
 
       <h2 className="mb-4 mt-10 text-3xl font-bold text-white">
@@ -96,9 +96,9 @@ export default function CodeExecutionSandboxesAiAgents2026Post() {
           Containers, Cloud Hypervisor) gives every sandbox its own kernel.
           That is the gold standard for untrusted code: a guest-kernel CVE
           cannot reach the host. gVisor sits a layer up, intercepting syscalls
-          in user space — strong enough for almost every real workload,
+          in user space - strong enough for almost every real workload,
           weaker on paper. Plain Linux containers share a kernel and a Docker
-          daemon, and the daemon is the single biggest escape vector — an
+          daemon, and the daemon is the single biggest escape vector - an
           agent that finds the host socket can launch sibling containers with
           host mounts. For anything you cannot fully audit, microVM is the
           baseline.
@@ -111,7 +111,7 @@ export default function CodeExecutionSandboxesAiAgents2026Post() {
           a sleep state in roughly the same window. Modal&rsquo;s Memory
           Snapshots (alpha) cut initialisation-heavy workloads further. The
           difference between 150ms and 1.5s matters once you are running
-          10,000 sandboxes a day — at that scale, every saved second is a
+          10,000 sandboxes a day - at that scale, every saved second is a
           chargeable CPU-second avoided.
         </li>
         <li>
@@ -119,7 +119,7 @@ export default function CodeExecutionSandboxesAiAgents2026Post() {
           Pro sessions at 24 hours and treats every run as disposable.
           Vercel Sandbox runs for up to 45 minutes by default (extendable to
           5 hours on Enterprise) and bills only on active CPU. Cloudflare
-          Sandboxes are persistent by name — you{" "}
+          Sandboxes are persistent by name - you{" "}
           <code>getSandbox(&quot;agent-session-47&quot;)</code> by ID and get
           the same one back, sleeping in between. Northflank has no session
           limit. Long-running coding agents benefit from persistence; pure
@@ -187,8 +187,8 @@ export default function CodeExecutionSandboxesAiAgents2026Post() {
           start times in the category.
         </li>
         <li>
-          <strong>Northflank.</strong> Complete cloud platform —
-          sandboxes plus managed databases, APIs, GPU workloads, CI/CD — with
+          <strong>Northflank.</strong> Complete cloud platform -
+          sandboxes plus managed databases, APIs, GPU workloads, CI/CD - with
           Kata Containers + Cloud Hypervisor microVM isolation, gVisor
           option, true self-serve BYOC across AWS, GCP, Azure, Oracle, bare
           metal. Unlimited sessions, any OCI image. Used at production scale
@@ -200,7 +200,7 @@ export default function CodeExecutionSandboxesAiAgents2026Post() {
         the focus here. <strong>Docker Sandboxes</strong> (launched February
         2026) wrap microVMs around the same Docker workflow developers
         already use, and ship Docker CLI, Git, GitHub CLI, Node, Python,
-        Go, <code>uv</code>, and <code>jq</code> pre-installed — a good fit
+        Go, <code>uv</code>, and <code>jq</code> pre-installed - a good fit
         for local coding-agent runs. <strong>Browser sandboxes</strong>{" "}
         (Browserbase, Firecrawl Browser Sandbox, Steel) are the right
         primitive when the workload is web automation rather than arbitrary
@@ -212,8 +212,8 @@ export default function CodeExecutionSandboxesAiAgents2026Post() {
       </h2>
       <p className="mb-6 leading-relaxed">
         E2B&rsquo;s pitch is the cleanest in the category: one SDK call, one
-        microVM. Firecracker — the same isolation technology that runs AWS
-        Lambda — boots in ~150ms with its own kernel and network namespace.
+        microVM. Firecracker - the same isolation technology that runs AWS
+        Lambda - boots in ~150ms with its own kernel and network namespace.
         The default image ships Python, pip, Node, and bash. You write
         code that runs in the sandbox; the SDK handles the lifecycle. The
         Code Interpreter SDK adds a Jupyter-style stateful execution layer
@@ -245,14 +245,14 @@ print(df.describe())
       />
       <p className="mb-6 leading-relaxed">
         Three patterns we apply on every E2B deployment. Always set an
-        explicit <code>timeout</code> at sandbox-creation time — a stuck
+        explicit <code>timeout</code> at sandbox-creation time - a stuck
         agent that loops on a syntax error will otherwise burn the full
         24-hour Pro cap. Treat the sandbox as the only place untrusted code
         runs; do not exfiltrate file paths or shell history back into the
         model context without sanitisation. And register a small set of
         custom tools (database read, vector store write, internal HTTP
         call) outside the sandbox rather than letting the model issue raw
-        shell commands — the principle of least privilege applies inside
+        shell commands - the principle of least privilege applies inside
         the sandbox as well as outside it.
       </p>
 
@@ -278,7 +278,7 @@ import modal
 
 app = modal.App("agent-runtime")
 
-# Define a per-task image at runtime — the agent picks its own deps.
+# Define a per-task image at runtime - the agent picks its own deps.
 image = (
     modal.Image.debian_slim()
     .pip_install("numpy", "scikit-learn", "matplotlib")
@@ -308,7 +308,7 @@ print('device:', torch.cuda.get_device_name(0))
         definition: an agent that picks its own dependencies at task time
         and defines a per-run image instead of relying on a fat default.
         Ramp&rsquo;s internal background-agent platform, &ldquo;Inspect&rdquo;,
-        is a public example — they spin a fresh Modal sandbox per task
+        is a public example - they spin a fresh Modal sandbox per task
         with Vite, Postgres, and Temporal pre-installed, then destroy it.
         No production credential ever touches the sandbox, and the blast
         radius of any one task is zero.
@@ -360,7 +360,7 @@ export async function runAgentTask(repoUrl: string, task: string) {
       stdout: process.stdout,
     });
 
-    // Snapshot the post-install state — next run resumes from here.
+    // Snapshot the post-install state - next run resumes from here.
     const snapshotId = await sandbox.snapshot();
     return { exitCode: result.exitCode, snapshotId };
   } finally {
@@ -374,7 +374,7 @@ export async function runAgentTask(repoUrl: string, task: string) {
         orchestration layer that dispatches tasks to multiple coding agents
         in parallel; the sub-second starts let them fan out to dozens of
         sandboxes per high-level task without resource contention. Roo
-        Code uses snapshots to turn agents into persistent collaborators —
+        Code uses snapshots to turn agents into persistent collaborators -
         start a task on Monday, snapshot it, resume Thursday when the
         reviewer is back. The pattern they describe internally as
         &ldquo;snapshot, fork, branch&rdquo; is the cleanest pattern we
@@ -396,7 +396,7 @@ export async function runAgentTask(repoUrl: string, task: string) {
         stateful code-interpreter contexts that survive between calls,
         background processes with live preview URLs, filesystem watching
         backed by Linux <code>inotify</code>, and secure credential
-        injection at the egress layer — the model never sees the secret.
+        injection at the egress layer - the model never sees the secret.
       </p>
       <CodeBlock
         language="typescript"
@@ -428,7 +428,7 @@ export default {
   },
 };
 
-// Credentials never reach the sandbox — they are injected at egress.
+// Credentials never reach the sandbox - they are injected at egress.
 export class AgentRuntime extends Sandbox {
   static outboundByHost = {
     "api.internal.company.com": (request, env) => {
@@ -443,7 +443,7 @@ export class AgentRuntime extends Sandbox {
         The pattern that makes Cloudflare Sandboxes interesting beyond the
         feature list is the persistent code interpreter context. Most
         Jupyter-style execution layers reset state between calls, which
-        forces the agent to re-import, re-load, and re-fit on every turn —
+        forces the agent to re-import, re-load, and re-fit on every turn -
         an enormous waste of tokens and time. Cloudflare&rsquo;s contexts
         preserve variables and imports across calls the way an actual
         Jupyter kernel does, and the SDK supports stdout streaming via
@@ -460,8 +460,8 @@ export class AgentRuntime extends Sandbox {
         Daytona spent early 2025 repositioning from a generic
         development-environment product to AI-agent sandbox infrastructure,
         and the entire pitch now centres on cold-start latency.
-        Sandbox creation lands in the 90ms range — the fastest published
-        figure in the category — with OCI/Docker compatibility, stateful
+        Sandbox creation lands in the 90ms range - the fastest published
+        figure in the category - with OCI/Docker compatibility, stateful
         workspaces that retain shell history and dependencies across
         sessions, and optional Kata Containers for the workloads that need
         microVM-grade isolation. Daytona is the right answer when sub-second
@@ -542,7 +542,7 @@ print(out)  # -> '3'`}
         Treat any single number as directional. A 200-sandbox steady-state
         comparison Northflank published in January 2026 put their managed
         platform at roughly $7,200/month against E2B at $16,800, Modal at
-        $24,500, and Vercel Sandbox at $31,000 for the same workload —
+        $24,500, and Vercel Sandbox at $31,000 for the same workload -
         useful as a shape, not as a quote, since pricing schedules and
         billing dimensions (active CPU vs total time, included storage,
         idle behaviour) are constantly moving. Run your own twenty-task
@@ -565,7 +565,7 @@ print(out)  # -> '3'`}
           poisoned files into the next one. The exception is long-running
           coding-agent sessions where the user explicitly owns the sandbox
           (Roo Code, Replit Agent, Lovable). Even there, snapshot to disk
-          and resume — do not keep the VM warm across days.
+          and resume - do not keep the VM warm across days.
         </li>
         <li>
           <strong>Credential injection at the egress layer.</strong> The
@@ -599,7 +599,7 @@ print(out)  # -> '3'`}
         <li>
           <strong>Step-level observability.</strong> Every shell command,
           every file write, every model call, every tool result is a span.
-          Browser-only session replay is necessary but not sufficient —
+          Browser-only session replay is necessary but not sufficient -
           without structured traces through LangSmith, Langfuse, Helicone,
           Arize Phoenix, or Future AGI, debugging a silent failure is a
           guessing game. The audit log is also your compliance artefact;
@@ -651,7 +651,7 @@ print(out)  # -> '3'`}
           the sandbox becomes your isolation boundary. cto.new launched to
           30,000+ users on Northflank&rsquo;s microVM sandboxes; Hugging
           Face Spaces runs untrusted user models on similar plumbing.
-          BYOC plus microVM is the right stack here — managed-only
+          BYOC plus microVM is the right stack here - managed-only
           providers will not let you isolate per-customer at the
           infrastructure layer, which is what enterprise procurement asks
           for the moment you sell upmarket.
@@ -668,7 +668,7 @@ print(out)  # -> '3'`}
       <ul className="mb-6 list-disc space-y-2 pl-6">
         <li>
           <strong>Prompt injection still lives in the agent loop, not the
-          sandbox.</strong> The sandbox stops the blast — it does not stop
+          sandbox.</strong> The sandbox stops the blast - it does not stop
           the call. An injected tool result that tells the agent to
           exfiltrate the contents of <code>/workspace</code> over an
           allowlisted egress route is still a data leak. The sandbox is
@@ -678,7 +678,7 @@ print(out)  # -> '3'`}
         <li>
           <strong>Image cold-pulls dominate the first run.</strong> Every
           headline cold-start number assumes a warm image. The first time a
-          new image lands on a node, you pay the pull cost — sometimes
+          new image lands on a node, you pay the pull cost - sometimes
           tens of seconds. Pre-warm images for hot agent paths, or
           standardise on a small base image with deps installed at runtime.
         </li>
@@ -699,8 +699,8 @@ print(out)  # -> '3'`}
         </li>
         <li>
           <strong>GPU passthrough is rare.</strong> If your agent needs a
-          GPU inside the sandbox — for local inference, embeddings, vision
-          — Modal, Northflank, Beam, and Daytona ship it. E2B and Vercel
+          GPU inside the sandbox - for local inference, embeddings, vision
+          - Modal, Northflank, Beam, and Daytona ship it. E2B and Vercel
           Sandbox do not. Plan the platform choice around the GPU
           requirement, not the other way round.
         </li>
@@ -749,7 +749,7 @@ print(out)  # -> '3'`}
         </li>
         <li>
           <strong>Daytona.</strong> The right answer when cold start is the
-          binding constraint — real-time agent UIs, per-keystroke linting,
+          binding constraint - real-time agent UIs, per-keystroke linting,
           per-tool-call sandbox-per-call patterns. Opt into Kata for
           untrusted code.
         </li>
@@ -776,7 +776,7 @@ print(out)  # -> '3'`}
           Choose isolation by threat model. First-party code on first-party
           infra: containers or gVisor is fine. Anything you cannot fully
           audit: microVM (Firecracker, Kata, Cloud Hypervisor). Do not
-          downgrade for cost — the gap between gVisor and microVM at the
+          downgrade for cost - the gap between gVisor and microVM at the
           pricing layer is in the tens of percent, not multiples.
         </li>
         <li>
@@ -827,7 +827,7 @@ print(out)  # -> '3'`}
           OpenAI Agents SDK, Anthropic Claude Agent SDK, and Google ADK all
           now ship reference sandbox integrations in their first-party
           docs. The default no longer ships without one. Expect every
-          serious agent framework — LangGraph, CrewAI, AG2, Agno — to wire
+          serious agent framework - LangGraph, CrewAI, AG2, Agno - to wire
           a default sandbox by year end.
         </li>
         <li>
@@ -840,7 +840,7 @@ print(out)  # -> '3'`}
         <li>
           <strong>Snapshots become a primary primitive.</strong> Vercel,
           Cloudflare, and Modal all shipped or roadmapped snapshot-and-fork
-          in 2026. The pattern — boot once, snapshot, fork on every run —
+          in 2026. The pattern - boot once, snapshot, fork on every run -
           is the most cost-effective shape for any high-volume sandbox
           fleet. The bottleneck shifts from compute to storage and pull
           bandwidth.
@@ -849,7 +849,7 @@ print(out)  # -> '3'`}
           <strong>Credential injection at egress becomes the default.</strong>{" "}
           Cloudflare shipped the cleanest version of this pattern at GA.
           Expect every serious platform to ship an egress-time auth layer
-          in the next two quarters — the alternative (credentials in env,
+          in the next two quarters - the alternative (credentials in env,
           credentials in prompt) is no longer defensible.
         </li>
         <li>
@@ -880,8 +880,8 @@ print(out)  # -> '3'`}
         are clean, the cost models have collapsed onto active-CPU
         billing, and the threat model is no longer hypothetical. The
         platform you pick matters less than the discipline you bring to
-        the four axes — isolation, cold start, session model, deployment
-        surface — and the five production patterns above.
+        the four axes - isolation, cold start, session model, deployment
+        surface - and the five production patterns above.
       </p>
       <p className="mb-6 leading-relaxed">
         If you want a second opinion on which sandbox platform fits your
@@ -995,7 +995,7 @@ print(out)  # -> '3'`}
             target="_blank"
             rel="noopener noreferrer"
           >
-            Firecrawl: AI Agent Sandbox — how to safely run autonomous agents
+            Firecrawl: AI Agent Sandbox - how to safely run autonomous agents
             in 2026
           </a>
           {" "}&mdash; the canonical threat-model write-up: ZombAIs,

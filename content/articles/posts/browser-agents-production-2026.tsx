@@ -66,12 +66,12 @@ export default function BrowserAgentsProduction2026Post() {
         public scores cluster in the high 80s and 90s (Alumnium at 98.5%,
         Surfer 2 at 97.1%, Browser Use at 89.1% in its technical report).
         On WebArena, the reproducible self-hosted equivalent, the leader
-        sits at 74.3% — meaningfully harder. On OSWorld, which evaluates
+        sits at 74.3% - meaningfully harder. On OSWorld, which evaluates
         desktop-wide computer use rather than browser-only tasks, Claude
         Opus 4.8 leads at 83.4%. On Online-Mind2Web (300 tasks across
         136 real websites), Browser Use Cloud&rsquo;s bu-max scored 97%.
         On ClawBench, the most adversarial of the live-web evaluations,
-        Claude Sonnet 4.6 leads at 33.3% — a reminder that the ceiling is
+        Claude Sonnet 4.6 leads at 33.3% - a reminder that the ceiling is
         not 99%, it is whatever the live web throws at you.
       </p>
       <p className="mb-6 leading-relaxed">
@@ -219,8 +219,8 @@ export async function samplingLoop(
         many hours to clicks-off-by-thirty-pixels. Set
         <code>enable_zoom: true</code> for Opus 4.7+ and prompt for
         specific UI regions when targets are small. And require explicit
-        human confirmation for any irreversible action — purchases,
-        sends, deletes — regardless of the model&rsquo;s built-in
+        human confirmation for any irreversible action - purchases,
+        sends, deletes - regardless of the model&rsquo;s built-in
         prompt-injection classifiers. The classifiers are good; they are
         not a substitute for a confirmation step on a transaction.
       </p>
@@ -244,7 +244,7 @@ export async function samplingLoop(
         conservative-by-default. Atlas pauses for explicit user
         confirmation on logins, payments, message sends, and anything
         that looks like an irreversible action. That posture is the
-        right one — and it is also why Operator/Atlas is not the right
+        right one - and it is also why Operator/Atlas is not the right
         answer when you need an agent embedded inside your own product
         rather than a polished consumer experience. For embedded
         agents, the open-source loop libraries plus a managed browser
@@ -265,7 +265,7 @@ export async function samplingLoop(
         Browser Use, started by Magnus M&uuml;ller and Gregor &Zcaron;uni&cacute;,
         is the open-source loop library most production Python teams
         reach for first. The pitch is simple: hand it an LLM client,
-        point it at a Chromium endpoint, and it runs the loop —
+        point it at a Chromium endpoint, and it runs the loop -
         DOM extraction, screenshot, plan via the model, execute via
         Playwright, repeat. Multi-provider via LiteLLM (OpenAI,
         Anthropic, Google, local models via Ollama), multi-tab, and
@@ -322,7 +322,7 @@ asyncio.run(main())`}
         identification on sites where the DOM is opaque (a lot of
         salesforce-rendered or React-with-CSS-modules pages fall in this
         bucket). And custom <code>tools</code> are the production lever
-        most teams underuse — registering a database-write tool, a
+        most teams underuse - registering a database-write tool, a
         notification tool, or a domain-specific extraction tool gives the
         agent precise primitives and dramatically reduces the number of
         steps it spends fumbling for the same outcome.
@@ -335,8 +335,8 @@ asyncio.run(main())`}
         Stagehand is Browserbase&rsquo;s open-source TypeScript SDK and
         takes a different stance on the same problem. Rather than wrap
         the loop in a single <code>Agent()</code> call, it exposes four
-        primitives — <code>act()</code>, <code>extract()</code>,{" "}
-        <code>observe()</code>, and <code>agent()</code> — on top of
+        primitives - <code>act()</code>, <code>extract()</code>,{" "}
+        <code>observe()</code>, and <code>agent()</code> - on top of
         Playwright. You write deterministic Playwright code where you
         can, and call the AI primitives where the page actually changes.
         The result is a hybrid that fits TypeScript codebases already
@@ -388,7 +388,7 @@ console.log({ summary, actions });`}
         engagements. <code>extract()</code> with a Zod schema gives you
         type-safe structured output, which collapses the &ldquo;parse the
         agent&rsquo;s reply&rdquo; problem most loop libraries leave open.{" "}
-        <code>observe()</code> is the under-rated primitive — running it
+        <code>observe()</code> is the under-rated primitive - running it
         before <code>act()</code> turns &ldquo;click the submit
         button&rdquo; into a cached, replayable action that does not
         require a fresh LLM call on every run. And action caching means
@@ -484,7 +484,7 @@ console.log({ summary, actions });`}
         </li>
         <li>
           <strong>ClawBench.</strong> 153 everyday tasks across 144 live
-          platforms — purchases, appointments, job applications.
+          platforms - purchases, appointments, job applications.
           Currently the most adversarial: leader Claude Sonnet 4.6 at
           33.3%. A useful reality check.
         </li>
@@ -499,7 +499,7 @@ console.log({ summary, actions });`}
         Two warnings. Scores are not comparable across benchmarks. A 95%
         on WebVoyager and a 75% on WebArena reflect different difficulty
         regimes, not different vendors lying. And every benchmark we
-        list is gamed at the margins — the leaderboards are useful for
+        list is gamed at the margins - the leaderboards are useful for
         eliminating obvious losers and for understanding the rough shape
         of the frontier, not for choosing the vendor that ranks first.
         The highest-leverage hour you can spend is wiring your top two
@@ -616,8 +616,8 @@ console.log({ summary, actions });`}
           <strong>Long-session drift.</strong> Agents that run for tens
           of minutes accumulate state that the model loses track of:
           which tab is which, which form has been submitted, what was
-          the last extracted value. The fix is structural — break
-          long flows into sub-tasks with explicit handoffs — not a
+          the last extracted value. The fix is structural - break
+          long flows into sub-tasks with explicit handoffs - not a
           better prompt.
         </li>
         <li>
@@ -642,8 +642,8 @@ console.log({ summary, actions });`}
         <li>
           <strong>Observability.</strong> Browser agents fail silently.
           A run that returns &ldquo;done&rdquo; might have clicked the
-          wrong button on step 7. Without step-level traces — every
-          screenshot, every action, every model reply — debugging is a
+          wrong button on step 7. Without step-level traces - every
+          screenshot, every action, every model reply - debugging is a
           guessing game. Session replay from your cloud browser plus
           OpenInference-style tracing through LangSmith, Langfuse,
           Helicone, Arize Phoenix, or Future AGI is non-optional.
@@ -710,7 +710,7 @@ console.log({ summary, actions });`}
           yours or the vendor&rsquo;s, not about model quality.
         </li>
         <li>
-          Run the first iteration with the fully managed stack — cloud
+          Run the first iteration with the fully managed stack - cloud
           browser plus paid model API. The temptation to self-host on
           day one is real and almost always wrong. Pay for the easy
           path while you iterate on the prompt, the tool set, and the
@@ -764,7 +764,7 @@ console.log({ summary, actions });`}
           Arc Max. The browser itself is becoming the agent surface for
           consumer use. The implication for product teams is that any
           web property that wants AI agents to behave well on it will
-          treat &ldquo;agent-ready&rdquo; as a real design constraint —
+          treat &ldquo;agent-ready&rdquo; as a real design constraint -
           semantic markup, predictable IDs, machine-readable forms.
         </li>
         <li>
