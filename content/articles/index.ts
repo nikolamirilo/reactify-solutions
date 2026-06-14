@@ -65,6 +65,9 @@ import DurableAiAgents2026Post, {
 import AiAgentSkills2026Post, {
   meta as aiAgentSkills2026Meta,
 } from "./posts/ai-agent-skills-2026";
+import AgUiProtocolGenerativeUi2026Post, {
+  meta as agUiProtocolGenerativeUi2026Meta,
+} from "./posts/ag-ui-protocol-generative-ui-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -159,6 +162,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: aiAgentSkills2026Meta,
     Component: AiAgentSkills2026Post,
+  },
+  {
+    meta: agUiProtocolGenerativeUi2026Meta,
+    Component: AgUiProtocolGenerativeUi2026Post,
   },
 ];
 
