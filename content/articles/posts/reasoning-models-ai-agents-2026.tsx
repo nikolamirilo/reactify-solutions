@@ -216,7 +216,7 @@ export default function ReasoningModelsAiAgents2026Post() {
         final answer.
       </p>
       <CodeBlock
-        language="python"
+        language="bash"
         filename="o4_mini_agent.py"
         code={`from openai import OpenAI
 
@@ -285,7 +285,7 @@ encrypted_blobs = [
         the next turn, in order, or the model loses its place.
       </p>
       <CodeBlock
-        language="python"
+        language="bash"
         filename="claude_interleaved_agent.py"
         code={`import anthropic
 
@@ -355,7 +355,7 @@ response = client.messages.create(
         the thinking level to minimal.
       </p>
       <CodeBlock
-        language="python"
+        language="bash"
         filename="gemini3_agent.py"
         code={`from google import genai
 
@@ -443,7 +443,7 @@ followup = client.models.generate_content(
         routing decision cheap enough to run on every request.
       </p>
       <CodeBlock
-        language="python"
+        language="bash"
         filename="router.py"
         code={`from openai import OpenAI
 
