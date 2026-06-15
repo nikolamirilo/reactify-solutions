@@ -68,6 +68,9 @@ import AiAgentSkills2026Post, {
 import AgUiProtocolGenerativeUi2026Post, {
   meta as agUiProtocolGenerativeUi2026Meta,
 } from "./posts/ag-ui-protocol-generative-ui-2026";
+import ReasoningModelsAiAgents2026Post, {
+  meta as reasoningModelsAiAgents2026Meta,
+} from "./posts/reasoning-models-ai-agents-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -166,6 +169,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: agUiProtocolGenerativeUi2026Meta,
     Component: AgUiProtocolGenerativeUi2026Post,
+  },
+  {
+    meta: reasoningModelsAiAgents2026Meta,
+    Component: ReasoningModelsAiAgents2026Post,
   },
 ];
 
