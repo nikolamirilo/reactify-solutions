@@ -5,6 +5,7 @@ import "prismjs/components/prism-jsx";
 import "prismjs/components/prism-tsx";
 import "prismjs/components/prism-bash";
 import "prismjs/components/prism-json";
+import "prismjs/components/prism-python";
 
 type Language =
   | "tsx"
@@ -12,7 +13,8 @@ type Language =
   | "javascript"
   | "jsx"
   | "bash"
-  | "json";
+  | "json"
+  | "python";
 
 type Props = {
   code: string;
