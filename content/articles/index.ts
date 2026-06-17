@@ -71,6 +71,9 @@ import AgUiProtocolGenerativeUi2026Post, {
 import AiCodingAgentsProduction2026Post, {
   meta as aiCodingAgentsProduction2026Meta,
 } from "./posts/ai-coding-agents-production-2026";
+import A2aProtocolCrossVendorAgents2026Post, {
+  meta as a2aProtocolCrossVendorAgents2026Meta,
+} from "./posts/a2a-protocol-cross-vendor-agents-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -173,6 +176,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: aiCodingAgentsProduction2026Meta,
     Component: AiCodingAgentsProduction2026Post,
+  },
+  {
+    meta: a2aProtocolCrossVendorAgents2026Meta,
+    Component: A2aProtocolCrossVendorAgents2026Post,
   },
 ];
 
