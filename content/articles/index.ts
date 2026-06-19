@@ -77,6 +77,9 @@ import A2aProtocolCrossVendorAgents2026Post, {
 import LlmGatewaysProduction2026Post, {
   meta as llmGatewaysProduction2026Meta,
 } from "./posts/llm-gateways-production-2026";
+import PydanticAiProduction2026Post, {
+  meta as pydanticAiProduction2026Meta,
+} from "./posts/pydantic-ai-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -187,6 +190,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: llmGatewaysProduction2026Meta,
     Component: LlmGatewaysProduction2026Post,
+  },
+  {
+    meta: pydanticAiProduction2026Meta,
+    Component: PydanticAiProduction2026Post,
   },
 ];
 
