@@ -80,6 +80,9 @@ import LlmGatewaysProduction2026Post, {
 import PydanticAiProduction2026Post, {
   meta as pydanticAiProduction2026Meta,
 } from "./posts/pydantic-ai-production-2026";
+import OpenAiAgentsSdkAgentkitProduction2026Post, {
+  meta as openAiAgentsSdkAgentkitProduction2026Meta,
+} from "./posts/openai-agents-sdk-agentkit-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -194,6 +197,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: pydanticAiProduction2026Meta,
     Component: PydanticAiProduction2026Post,
+  },
+  {
+    meta: openAiAgentsSdkAgentkitProduction2026Meta,
+    Component: OpenAiAgentsSdkAgentkitProduction2026Post,
   },
 ];
 
