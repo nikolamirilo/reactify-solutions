@@ -11,7 +11,7 @@ export const meta: Article = {
   metaDescription:
     "A practical, technical guide to LLM gateways in 2026. Covers what an AI gateway does, the LiteLLM, Portkey, and OpenRouter landscape, OpenAI-compatible client patterns, a working LiteLLM config.yaml with fallbacks and routing strategies, semantic caching and PII redaction at the gateway layer, real production deployments at Netflix, Fletch.ai, and Decisional, the Palo Alto Networks acquisition of Portkey, BerriAI's LiteLLM Agent Platform, and how Chinese open-weight models grew from 15 to over 50 percent of OpenRouter token volume between 2025 and 2026.",
   image:
-    "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=2400&q=80",
+    "https://images.unsplash.com/photo-1544197150-b99a580bb7a8?auto=format&fit=crop&w=2400&q=80",
   author: {
     name: "Reactify Solutions",
     image: "/icon.png",

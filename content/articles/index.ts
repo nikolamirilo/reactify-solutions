@@ -83,6 +83,9 @@ import PydanticAiProduction2026Post, {
 import OpenAiAgentsSdkAgentkitProduction2026Post, {
   meta as openAiAgentsSdkAgentkitProduction2026Meta,
 } from "./posts/openai-agents-sdk-agentkit-production-2026";
+import ClaudeAgentSdkProduction2026Post, {
+  meta as claudeAgentSdkProduction2026Meta,
+} from "./posts/claude-agent-sdk-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -201,6 +204,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: openAiAgentsSdkAgentkitProduction2026Meta,
     Component: OpenAiAgentsSdkAgentkitProduction2026Post,
+  },
+  {
+    meta: claudeAgentSdkProduction2026Meta,
+    Component: ClaudeAgentSdkProduction2026Post,
   },
 ];
 
