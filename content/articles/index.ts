@@ -86,6 +86,9 @@ import OpenAiAgentsSdkAgentkitProduction2026Post, {
 import ClaudeAgentSdkProduction2026Post, {
   meta as claudeAgentSdkProduction2026Meta,
 } from "./posts/claude-agent-sdk-production-2026";
+import MastraTypescriptAgentFramework2026Post, {
+  meta as mastraTypescriptAgentFramework2026Meta,
+} from "./posts/mastra-typescript-agent-framework-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -208,6 +211,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: claudeAgentSdkProduction2026Meta,
     Component: ClaudeAgentSdkProduction2026Post,
+  },
+  {
+    meta: mastraTypescriptAgentFramework2026Meta,
+    Component: MastraTypescriptAgentFramework2026Post,
   },
 ];
 
