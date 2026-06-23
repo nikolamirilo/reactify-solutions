@@ -86,6 +86,9 @@ import OpenAiAgentsSdkAgentkitProduction2026Post, {
 import ClaudeAgentSdkProduction2026Post, {
   meta as claudeAgentSdkProduction2026Meta,
 } from "./posts/claude-agent-sdk-production-2026";
+import MicrosoftAgentFrameworkProduction2026Post, {
+  meta as microsoftAgentFrameworkProduction2026Meta,
+} from "./posts/microsoft-agent-framework-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -208,6 +211,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: claudeAgentSdkProduction2026Meta,
     Component: ClaudeAgentSdkProduction2026Post,
+  },
+  {
+    meta: microsoftAgentFrameworkProduction2026Meta,
+    Component: MicrosoftAgentFrameworkProduction2026Post,
   },
 ];
 
