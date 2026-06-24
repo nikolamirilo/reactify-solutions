@@ -89,6 +89,9 @@ import ClaudeAgentSdkProduction2026Post, {
 import MicrosoftAgentFrameworkProduction2026Post, {
   meta as microsoftAgentFrameworkProduction2026Meta,
 } from "./posts/microsoft-agent-framework-production-2026";
+import AwsBedrockAgentCoreProduction2026Post, {
+  meta as awsBedrockAgentCoreProduction2026Meta,
+} from "./posts/aws-bedrock-agentcore-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -215,6 +218,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: microsoftAgentFrameworkProduction2026Meta,
     Component: MicrosoftAgentFrameworkProduction2026Post,
+  },
+  {
+    meta: awsBedrockAgentCoreProduction2026Meta,
+    Component: AwsBedrockAgentCoreProduction2026Post,
   },
 ];
 
