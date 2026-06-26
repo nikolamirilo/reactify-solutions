@@ -92,6 +92,9 @@ import MicrosoftAgentFrameworkProduction2026Post, {
 import AwsBedrockAgentCoreProduction2026Post, {
   meta as awsBedrockAgentCoreProduction2026Meta,
 } from "./posts/aws-bedrock-agentcore-production-2026";
+import MastraTypescriptAgentsProduction2026Post, {
+  meta as mastraTypescriptAgentsProduction2026Meta,
+} from "./posts/mastra-typescript-agents-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -222,6 +225,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: awsBedrockAgentCoreProduction2026Meta,
     Component: AwsBedrockAgentCoreProduction2026Post,
+  },
+  {
+    meta: mastraTypescriptAgentsProduction2026Meta,
+    Component: MastraTypescriptAgentsProduction2026Post,
   },
 ];
 
