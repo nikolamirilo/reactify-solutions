@@ -95,6 +95,9 @@ import AwsBedrockAgentCoreProduction2026Post, {
 import MastraTypescriptAgentsProduction2026Post, {
   meta as mastraTypescriptAgentsProduction2026Meta,
 } from "./posts/mastra-typescript-agents-production-2026";
+import AgenticRagProductionArchitecture2026Post, {
+  meta as agenticRagProductionArchitecture2026Meta,
+} from "./posts/agentic-rag-production-architecture-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -229,6 +232,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: mastraTypescriptAgentsProduction2026Meta,
     Component: MastraTypescriptAgentsProduction2026Post,
+  },
+  {
+    meta: agenticRagProductionArchitecture2026Meta,
+    Component: AgenticRagProductionArchitecture2026Post,
   },
 ];
 
