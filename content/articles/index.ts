@@ -98,6 +98,9 @@ import MastraTypescriptAgentsProduction2026Post, {
 import CloudflareAgentsProduction2026Post, {
   meta as cloudflareAgentsProduction2026Meta,
 } from "./posts/cloudflare-agents-production-2026";
+import AgenticCommerceProtocols2026Post, {
+  meta as agenticCommerceProtocols2026Meta,
+} from "./posts/agentic-commerce-protocols-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -236,6 +239,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: cloudflareAgentsProduction2026Meta,
     Component: CloudflareAgentsProduction2026Post,
+  },
+  {
+    meta: agenticCommerceProtocols2026Meta,
+    Component: AgenticCommerceProtocols2026Post,
   },
 ];
 
