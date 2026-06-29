@@ -101,6 +101,9 @@ import CloudflareAgentsProduction2026Post, {
 import AgenticCommerceProtocols2026Post, {
   meta as agenticCommerceProtocols2026Meta,
 } from "./posts/agentic-commerce-protocols-2026";
+import CrewAiProductionMultiAgentSystems2026Post, {
+  meta as crewAiProductionMultiAgentSystems2026Meta,
+} from "./posts/crewai-production-multi-agent-systems-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -243,6 +246,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: agenticCommerceProtocols2026Meta,
     Component: AgenticCommerceProtocols2026Post,
+  },
+  {
+    meta: crewAiProductionMultiAgentSystems2026Meta,
+    Component: CrewAiProductionMultiAgentSystems2026Post,
   },
 ];
 
