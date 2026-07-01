@@ -104,6 +104,9 @@ import AgenticCommerceProtocols2026Post, {
 import CrewAiProductionMultiAgentSystems2026Post, {
   meta as crewAiProductionMultiAgentSystems2026Meta,
 } from "./posts/crewai-production-multi-agent-systems-2026";
+import GoogleAdkProduction2026Post, {
+  meta as googleAdkProduction2026Meta,
+} from "./posts/google-adk-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -250,6 +253,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: crewAiProductionMultiAgentSystems2026Meta,
     Component: CrewAiProductionMultiAgentSystems2026Post,
+  },
+  {
+    meta: googleAdkProduction2026Meta,
+    Component: GoogleAdkProduction2026Post,
   },
 ];
 
