@@ -107,6 +107,9 @@ import CrewAiProductionMultiAgentSystems2026Post, {
 import GoogleAdkProduction2026Post, {
   meta as googleAdkProduction2026Meta,
 } from "./posts/google-adk-production-2026";
+import DspyProductionAgents2026Post, {
+  meta as dspyProductionAgents2026Meta,
+} from "./posts/dspy-production-agents-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -257,6 +260,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: googleAdkProduction2026Meta,
     Component: GoogleAdkProduction2026Post,
+  },
+  {
+    meta: dspyProductionAgents2026Meta,
+    Component: DspyProductionAgents2026Post,
   },
 ];
 
