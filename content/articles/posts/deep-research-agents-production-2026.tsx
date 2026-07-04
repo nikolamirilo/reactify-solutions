@@ -623,7 +623,7 @@ final = client.interactions.create(
         with a planner sub-agent and a researcher sub-agent.
       </p>
       <CodeBlock
-        language="yaml"
+        language="bash"
         filename="configs/config_web_docker.yml (AI-Q blueprint)"
         code={`llms:
   nemotron_llm_non_thinking:
