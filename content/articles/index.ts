@@ -110,6 +110,9 @@ import GoogleAdkProduction2026Post, {
 import DeepResearchAgentsProduction2026Post, {
   meta as deepResearchAgentsProduction2026Meta,
 } from "./posts/deep-research-agents-production-2026";
+import StructuredOutputsProduction2026Post, {
+  meta as structuredOutputsProduction2026Meta,
+} from "./posts/structured-outputs-production-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -264,6 +267,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: deepResearchAgentsProduction2026Meta,
     Component: DeepResearchAgentsProduction2026Post,
+  },
+  {
+    meta: structuredOutputsProduction2026Meta,
+    Component: StructuredOutputsProduction2026Post,
   },
 ];
 
