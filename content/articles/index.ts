@@ -110,6 +110,9 @@ import GoogleAdkProduction2026Post, {
 import DeepResearchAgentsProduction2026Post, {
   meta as deepResearchAgentsProduction2026Meta,
 } from "./posts/deep-research-agents-production-2026";
+import VercelAiSdk6ProductionAgents2026Post, {
+  meta as vercelAiSdk6ProductionAgents2026Meta,
+} from "./posts/vercel-ai-sdk-6-production-agents-2026";
 
 type PostRegistryEntry = {
   meta: Article;
@@ -264,6 +267,10 @@ const posts: PostRegistryEntry[] = [
   {
     meta: deepResearchAgentsProduction2026Meta,
     Component: DeepResearchAgentsProduction2026Post,
+  },
+  {
+    meta: vercelAiSdk6ProductionAgents2026Meta,
+    Component: VercelAiSdk6ProductionAgents2026Post,
   },
 ];
 
