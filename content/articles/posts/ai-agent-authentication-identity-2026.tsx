@@ -681,8 +681,8 @@ async def mcp_endpoint(request: Request):
         code={`# Requesting-app side: exchange an ID token for an ID-JAG
 # at the IdP, then exchange the ID-JAG for an access token
 # at the resource's authorization server.
+import os
 import httpx
-import time
 
 IDP_TOKEN_URL = "https://acme.okta.com/oauth2/v1/token"
 RESOURCE_AUTH_TOKEN_URL = "https://auth.todo0.example.com/oauth/token"
@@ -691,6 +691,10 @@ TOKEN_EXCHANGE = "urn:ietf:params:oauth:grant-type:token-exchange"
 ID_JAG_TYPE = "urn:ietf:params:oauth:token-type:id-jag"
 ID_TOKEN_TYPE = "urn:ietf:params:oauth:token-type:id_token"
 JWT_BEARER = "urn:ietf:params:oauth:grant-type:jwt-bearer"
+
+# Load client credentials from the environment. Never hardcode.
+IDP_CLIENT = (os.environ["IDP_CLIENT_ID"], os.environ["IDP_CLIENT_SECRET"])
+RES_CLIENT = (os.environ["RES_CLIENT_ID"], os.environ["RES_CLIENT_SECRET"])
 
 async def get_resource_access_token(user_id_token: str) -> str:
     async with httpx.AsyncClient() as http:
@@ -705,7 +709,7 @@ async def get_resource_access_token(user_id_token: str) -> str:
                 "audience": "https://todo0.example.com",
                 "scope": "todos:read todos:write",
             },
-            auth=("agent0-client-id", "agent0-client-secret"),
+            auth=IDP_CLIENT,
         )
         idp_response.raise_for_status()
         id_jag = idp_response.json()["access_token"]
@@ -719,7 +723,7 @@ async def get_resource_access_token(user_id_token: str) -> str:
                 "assertion": id_jag,
                 "scope": "todos:read todos:write",
             },
-            auth=("agent0-at-todo0", "agent0-secret-at-todo0"),
+            auth=RES_CLIENT,
         )
         res_response.raise_for_status()
         return res_response.json()["access_token"]
@@ -825,7 +829,15 @@ async def get_resource_access_token(user_id_token: str) -> str:
         language="python"
         filename="src/scheduled_agent/m2m.py"
         code={`# Machine-to-machine agent: no user, agent is its own principal.
+import os
 import httpx
+
+# Load from the environment. In production these come from a workload
+# identity provider (IAM Roles Anywhere, Azure MI, GCP Workload Identity).
+AGENT_CLIENT = (
+    os.environ["AGENT_CLIENT_ID"],
+    os.environ["AGENT_CLIENT_SECRET"],
+)
 
 async def get_agent_token() -> str:
     async with httpx.AsyncClient() as http:
@@ -837,8 +849,7 @@ async def get_agent_token() -> str:
                 # The audience/resource this token is for.
                 "audience": "https://api.acme.com",
             },
-            auth=("agent-daily-report-client-id",
-                  "agent-daily-report-secret"),
+            auth=AGENT_CLIENT,
         )
         response.raise_for_status()
         return response.json()["access_token"]
