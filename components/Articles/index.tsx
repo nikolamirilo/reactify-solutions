@@ -1,66 +1,38 @@
-"use client";
-
-import Link from "next/link";
-import { motion } from "framer-motion";
 import SectionTitle from "../Common/SectionTitle";
-import SingleArticle from "./SingleArticle";
-import articleData from "./articleData";
+import ArticlesGrid from "./ArticlesGrid";
+import { allPostsMeta } from "@/content/articles";
 
-const Articles = ({ variant = "default" }: { variant?: "articles" | "default" }) => {
-  const latest = articleData.slice(0, 4);
-  const articles = variant === "default" ? latest : articleData;
-  if (latest.length === 0) {
+// Server Component on purpose. The post registry in `@/content/articles` holds a
+// reference to every article body, so importing it from a client component pulled
+// all of them (plus Prism) into the browser bundle for a listing that only needs
+// titles and excerpts. Rendering here keeps the bodies on the server and sends
+// just the metadata across to the small client grid.
+const Articles = ({
+  variant = "default",
+}: {
+  variant?: "articles" | "default";
+}) => {
+  if (allPostsMeta.length === 0) {
     return null;
   }
+
+  const isPreview = variant === "default";
+  const articles = isPreview ? allPostsMeta.slice(0, 4) : allPostsMeta;
 
   return (
     <section
       id="articles"
-      className={variant === "default" ? "py-16 md:py-20 lg:py-28" : "pt-2 pb-16"}
+      className={isPreview ? "py-16 md:py-20 lg:py-28" : "pt-2 pb-16"}
     >
       <div className="container">
-        {variant === "default" && (
+        {isPreview && (
           <SectionTitle
             title="Check out our posts"
             paragraph="Technical write-ups, product case studies, and practical lessons from building AI-powered software, digital catalogs, and automation tooling."
             center
           />
         )}
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:gap-6 2xl:grid-cols-4">
-          {articles.map((article, index) => (
-            <motion.div
-              key={article.id}
-              className="h-full"
-              initial={{ opacity: 0, y: 32 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: "some" }}
-              transition={{
-                duration: 0.6,
-                ease: [0.22, 1, 0.36, 1],
-                delay: Math.min(index, 3) * 0.1,
-              }}
-            >
-              <SingleArticle article={article} />
-            </motion.div>
-          ))}
-        </div>
-
-        {variant === "default" && (
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="mt-14 flex justify-center"
-          >
-            <Link
-              href="/articles"
-              className="inline-flex items-center gap-2 rounded-xl bg-primaryColor px-8 py-4 text-base font-semibold text-accentContrast shadow-glowSoft transition-all duration-300 hover:-translate-y-0.5 hover:bg-primaryDark hover:shadow-glow active:translate-y-0"
-            >
-              Read all posts
-            </Link>
-          </motion.div>
-        )}
+        <ArticlesGrid articles={articles} showViewAll={isPreview} />
       </div>
     </section>
   );
