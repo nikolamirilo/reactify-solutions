@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect } from "react";
-import { recoverFromStaleAssets } from "@/components/Common/ChunkErrorRecovery";
 
 /**
  * Root error boundary. Without this file Next.js renders its built-in
@@ -20,9 +19,6 @@ export default function GlobalError({
   reset: () => void;
 }) {
   useEffect(() => {
-    // A chunk that 404s because the deployment moved under us is recoverable:
-    // reload to fetch HTML matching the assets now being served.
-    if (recoverFromStaleAssets(error)) return;
     console.error("Root error boundary caught:", error);
   }, [error]);
 
@@ -53,7 +49,7 @@ export default function GlobalError({
               color: "#9aa7bd",
             }}
           >
-            This page failed to load. Trying again usually clears it.
+            This page didn&apos;t load properly. Try again, or reload.
           </p>
           <button
             type="button"
