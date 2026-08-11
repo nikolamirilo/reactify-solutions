@@ -2,11 +2,12 @@
 
 import { useEffect } from "react";
 import Link from "next/link";
-import { recoverFromStaleAssets } from "@/components/Common/ChunkErrorRecovery";
 
 /**
- * Segment-level error boundary. Catches render errors below the root layout, so
- * the header and footer stay on screen and the visitor keeps a way out.
+ * Segment-level error boundary. Purely a safety net - it is not expected to
+ * render in normal use. Without it Next.js falls back to its bare
+ * "Application error: a client-side exception has occurred" screen, which gives
+ * a visitor no way forward and logs nothing useful.
  */
 export default function Error({
   error,
@@ -16,7 +17,6 @@ export default function Error({
   reset: () => void;
 }) {
   useEffect(() => {
-    if (recoverFromStaleAssets(error)) return;
     console.error("Page error boundary caught:", error);
   }, [error]);
 
@@ -34,8 +34,7 @@ export default function Error({
           Something went wrong
         </h1>
         <p className="mt-5 text-base leading-relaxed text-textSecondary md:text-lg">
-          This page failed to load. Trying again usually clears it - if it keeps
-          happening, let us know and we&apos;ll take a look.
+          This page didn&apos;t load properly. Try again, or head back home.
         </p>
 
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
