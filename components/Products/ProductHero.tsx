@@ -5,7 +5,7 @@ import Link from "next/link";
 import { FaExternalLinkAlt, FaShoppingCart } from "react-icons/fa";
 import { FaShieldHalved } from "react-icons/fa6";
 import { HiArrowRight } from "react-icons/hi2";
-import { Product } from "./productsData";
+import type { Product } from "./productsData";
 
 interface Props {
   product: Product;

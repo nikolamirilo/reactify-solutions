@@ -1,16 +1,20 @@
 //@ts-nocheck
 "use client";
 import { sendEmail } from "@/actions";
-import productsData from "@/components/Products/productsData";
 import { useState } from "react";
 import { ImSpinner9 } from "react-icons/im";
 import InfoModal from "../Modal/InfoModal";
 
-const supportProducts = productsData
-  .filter((product) => product.visible)
-  .map((product) => ({ id: product.id, name: product.name }));
+export interface SupportProductOption {
+  id: string;
+  name: string;
+}
 
-const Support = () => {
+// The product list arrives from the server page. Importing `productsData` here
+// instead would pull every product's full case study into the browser bundle
+// just to fill this dropdown.
+const Support = ({ products }: { products: SupportProductOption[] }) => {
+  const supportProducts = products;
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");

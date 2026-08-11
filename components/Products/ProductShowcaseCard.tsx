@@ -5,9 +5,9 @@ import Image from "next/image";
 import { HiArrowRight } from "react-icons/hi2";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
-import { Product } from "./productsData";
+import type { ProductPreview } from "./productPreview";
 
-const statusLabel = (status: Product["status"]) => {
+const statusLabel = (status: ProductPreview["status"]) => {
   if (status === "live") return "live · in production";
   if (status === "beta") return "beta";
   return "coming soon";
@@ -22,11 +22,11 @@ const ProductShowcaseCard = ({
   product,
   priority = false,
 }: {
-  product: Product;
+  product: ProductPreview;
   priority?: boolean;
 }) => {
-  const previewStats = product.stats.slice(0, 3);
-  const previewFeatures = product.keyFeatures.slice(0, 4);
+  const previewStats = product.stats;
+  const previewFeatures = product.keyFeatures;
   const isPortrait = product.imageOrientation === "portrait";
 
   return (
@@ -64,7 +64,7 @@ const ProductShowcaseCard = ({
                   )}
                   <div className="relative aspect-[9/16] h-[92%]">
                     <Image
-                      src={product.images[0]}
+                      src={product.image}
                       alt={product.name}
                       fill
                       sizes="(max-width: 768px) 200px, 260px"
@@ -77,7 +77,7 @@ const ProductShowcaseCard = ({
               </>
             ) : (
               <Image
-                src={product.images[0]}
+                src={product.image}
                 alt={product.name}
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 60vw, 820px"
