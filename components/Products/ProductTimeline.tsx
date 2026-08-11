@@ -1,6 +1,6 @@
 "use client";
 
-import { Product } from "./productsData";
+import type { Product } from "./productsData";
 import Stepper from "../react-bits/Stepper";
 
 interface Props {

@@ -3,7 +3,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useState } from "react";
 import { HiChevronDown } from "react-icons/hi2";
-import { Product } from "./productsData";
+import type { Product } from "./productsData";
 import AnimatedList from "../react-bits/AnimatedList";
 
 interface Props {

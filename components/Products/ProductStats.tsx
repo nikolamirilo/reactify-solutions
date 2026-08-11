@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Product } from "./productsData";
+import type { Product } from "./productsData";
 import CountUp from "../react-bits/CountUp";
 
 interface Props {

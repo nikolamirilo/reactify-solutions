@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { HiArrowRight } from "react-icons/hi2";
-import { Product } from "./productsData";
+import type { Product } from "./productsData";
 
 const statusLabel = (status: Product["status"]) => {
   if (status === "live") return "live · in production";

@@ -2,10 +2,10 @@
 
 import { ReactNode, useEffect, useRef } from "react";
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
-import { Product } from "./productsData";
+import type { ProductPreview } from "./productPreview";
 
 interface ProductSelectorProps {
-  products: Product[];
+  products: ProductPreview[];
   active: number;
   onSelect: (index: number) => void;
   onPrev: () => void;
