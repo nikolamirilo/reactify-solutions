@@ -714,6 +714,220 @@ const productsData: Product[] = [
       },
     ],
   },
+  {
+    id: "shot-and-share",
+    name: "Shot & Share",
+    tagline: "Every Photo Your Guests Take",
+    category: "SaaS · Event Photo Collection",
+    status: "live",
+    launchYear: "2026",
+    visible: true,
+    briefDescription:
+      "QR-code photo collection for events. Guests scan a code on the table and their photos land in one gallery - no app, no account, nothing to install.",
+    fullDescription:
+      "Shot & Share is a photo collection platform for weddings, birthdays, and company events. The host creates an event, gets a link and a printable QR card straight away, and puts it on the tables. Guests point a phone camera at it, pick their photos, and upload - there is no sign-in prompt anywhere on the guest side, because every sign-in prompt is a guest who never hands their photos over. Everything arrives in one gallery the host can download as a single ZIP. Plans are paid once per event rather than by subscription, and limits are measured in gigabytes instead of photo counts, so a recent phone with large files is not punished.",
+    images: [
+      "/images/solutions/shot-and-share/shot-and-share-banner.png",
+      "/images/solutions/shot-and-share/shot-and-share-how-it-works.png",
+      "/images/solutions/shot-and-share/shot-and-share-why.png",
+      "/images/solutions/shot-and-share/shot-and-share-pricing.png",
+      "/images/solutions/shot-and-share/shot-and-share-comparison.png",
+    ],
+    productUrl: "https://www.shotandshare.com",
+    accentFrom: "#e8556f",
+    accentTo: "#a81742",
+    socialMedia: {},
+    stats: [
+      {
+        label: "Guest Friction",
+        value: "0 Accounts",
+        description: "No app, no sign-in - guests upload from the browser",
+      },
+      {
+        label: "Free Plan",
+        value: "1 GB",
+        description: "About 250 photos, clean QR code, bulk ZIP download",
+      },
+      {
+        label: "Keep Forever",
+        value: "€29 Once",
+        description: "The Archive add-on is one-off, never an annual charge",
+      },
+      {
+        label: "Grace Period",
+        value: "14 Days",
+        description: "Expired events are paused and restorable, not deleted",
+      },
+    ],
+    technologies: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Supabase",
+      "PostgreSQL",
+      "Supabase Storage",
+      "Row Level Security",
+      "Vercel",
+    ],
+    functionalities: [
+      "Event creation with an instant share link and printable QR card",
+      "Account-free guest upload straight from the phone browser",
+      "Shared live gallery that fills as guests upload, toggleable per event",
+      "Photo and video uploads, up to 200 MB a clip on paid plans",
+      "Bulk ZIP download of every file in one go",
+      "Revocable upload links - kill a leaked link and issue a fresh one",
+      "Storage-based quotas with reservation before upload, so limits never overrun",
+      "Expiry warnings at 14, 7 and 1 days, then a pause-and-restore window",
+      "The Archive add-on to keep an event's media permanently",
+      "Live slideshow at the venue, driven from any laptop and projector",
+      "Custom event pages with themes, cover images, and multiple albums",
+    ],
+    keyFeatures: [
+      "Guests never sign in or install anything",
+      "One gallery for every phone at the event",
+      "Gigabyte quotas instead of photo counts",
+      "Paid once per event, no subscription",
+      "Clean, unwatermarked QR code even on the free plan",
+      "Revocable links with immediate effect",
+      "Nothing deleted quietly - warnings, then a restore window",
+      "Live slideshow as photos arrive",
+    ],
+    targetAudience: [
+      "Couples collecting guest photos from their wedding",
+      "Birthday and anniversary hosts",
+      "Companies running offsites, parties, and conferences",
+      "Event planners handling collection on a client's behalf",
+      "Anyone who ends up chasing photos in a group chat afterwards",
+    ],
+    useCases: [
+      {
+        title: "Weddings",
+        description:
+          "Put the QR card on every table and collect the whole day from 90+ phones, then download it as one ZIP the morning after.",
+      },
+      {
+        title: "Birthdays and parties",
+        description:
+          "Drop the link in the group chat instead of asking twelve people to airdrop you their camera roll.",
+      },
+      {
+        title: "Company events",
+        description:
+          "Collect offsite and conference photos without asking staff or attendees to create an account on anything.",
+      },
+      {
+        title: "Venue slideshows",
+        description:
+          "Point a laptop at the projector and let guest photos appear on screen as they upload, with no venue software involved.",
+      },
+    ],
+    pricing: [
+      {
+        name: "Frame",
+        price: "Free",
+        features: [
+          "1 GB of storage, about 256 photos",
+          "Unlimited guests",
+          "Photos kept for 30 days",
+          "Photos only",
+          "Bulk ZIP download",
+          "Clean QR code, no watermark",
+        ],
+      },
+      {
+        name: "Roll",
+        price: "€19",
+        highlight: true,
+        features: [
+          "10 GB of storage, about 2,560 photos",
+          "Unlimited guests",
+          "Photos kept for 6 months",
+          "Video, up to 200 MB a clip",
+          "Bulk ZIP download",
+          "Custom event page",
+        ],
+      },
+      {
+        name: "Reel",
+        price: "€39",
+        features: [
+          "30 GB of storage, about 7,680 photos",
+          "Photos kept for 12 months",
+          "Branded, print-ready QR card",
+          "Live slideshow at the venue",
+          "Multiple albums",
+          "Priority support",
+        ],
+      },
+    ],
+    timeline: [
+      {
+        phase: "Discovery",
+        detail:
+          "Mapped where guest photos actually get lost - group chats, airdrops, and sign-in walls that stop uploads dead.",
+      },
+      {
+        phase: "Design",
+        detail:
+          "Reduced the guest side to a single screen: open the link, choose photos, done. No account, no app, no onboarding.",
+      },
+      {
+        phase: "Build",
+        detail:
+          "Built the event, quota, and revocable-token model on Supabase with row-level security, storage reservations, and ZIP archiving.",
+      },
+      {
+        phase: "Launch",
+        detail:
+          "Shipped one-off per-event pricing with a genuinely usable free tier and The Archive add-on for permanent storage.",
+      },
+    ],
+    challenge:
+      "After an event, the photos that matter are on other people's phones. Chasing them means group chats, half-finished airdrops, and compressed screenshots - and the tools built to solve it make it worse by asking every guest to install an app or create an account before they can upload. Free tiers cap you at fifty photos, watermark the QR code, and block bulk download, while permanent storage is sold as a subscription that people forget to renew until the photos are gone.",
+    solution:
+      "Shot & Share removes every step between a guest and their upload. Scanning the QR code opens a single browser screen with no sign-in prompt, and the photos land in the host's gallery immediately. Quotas are counted in gigabytes rather than photos, so a modern phone's file sizes are not penalised, and upload space is reserved before a transfer starts so an event can never silently overrun. Links are revocable, expiry is announced 14, 7 and 1 days ahead and then pauses the event rather than deleting it, and The Archive add-on keeps everything permanently for a single €29 payment instead of a yearly charge.",
+    results: [
+      "Removed the account and app-install step that stops most guests uploading",
+      "Made the free tier a working product - about 250 photos, clean QR code, bulk download",
+      "Replaced photo-count caps with storage quotas, roughly 12x more photos at the mid tier",
+      "Turned permanent storage into a one-off €29 payment instead of a recurring fee",
+      "Made expiry recoverable, with staged warnings and a 14-day restore window",
+      "Gave hosts a kill switch for shared links without rebuilding the event",
+    ],
+    faq: [
+      {
+        question: "Do guests need an account?",
+        answer:
+          "No. They open the link, choose photos and upload. There is no sign-in prompt anywhere on the guest side, on purpose - it is the single biggest reason people fail to hand over their photos.",
+      },
+      {
+        question: "What happens when the storage window ends?",
+        answer:
+          "Emails go out 14, 7 and 1 days beforehand. When it ends the event is paused rather than deleted, and stays restorable for another 14 days. Add The Archive at any point and nothing is ever removed.",
+      },
+      {
+        question: "Can I stop people uploading?",
+        answer:
+          "Yes. Revoke the link from the dashboard and it stops working immediately. You can then issue a fresh one for the people who should still have it.",
+      },
+      {
+        question: "How many photos actually fit?",
+        answer:
+          "Roll holds about 2,500 and Reel about 7,500, based on a 4 MB photo. Modern phones vary, which is exactly why the limit is in gigabytes rather than a photo count.",
+      },
+      {
+        question: "Can guests see what everyone else uploaded?",
+        answer:
+          "That is your choice per event. The shared gallery is on by default because guests like seeing the night from other people's phones, and it can be turned off.",
+      },
+      {
+        question: "Is video included?",
+        answer:
+          "On the paid plans, up to 200 MB a clip. The free plan is photos only - one large video would eat the entire free allowance.",
+      },
+    ],
+  },
 ];
 
 export default productsData;
