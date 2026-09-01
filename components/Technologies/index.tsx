@@ -1,5 +1,5 @@
 "use client";
-import Image from "next/image";
+import Image from "@/components/Common/Image";
 import SectionTitle from "../Common/SectionTitle";
 import { technologiesData } from "@/constants";
 import LogoLoop, { LogoItem } from "../react-bits/LogoLoop";

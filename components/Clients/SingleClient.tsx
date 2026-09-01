@@ -1,5 +1,5 @@
 import { Client } from "@/types";
-import Image from "next/image";
+import Image from "@/components/Common/Image";
 
 const SingleClient = ({ client }: { client: Client }) => {
   const { href, image, name } = client;

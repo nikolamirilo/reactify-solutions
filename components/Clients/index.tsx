@@ -1,15 +1,12 @@
 "use client";
+import Image from "@/components/Common/Image";
 import { clientsData } from "@/constants/client";
 import { useState } from "react";
 
 const SectionTitle = ({ title, paragraph, center }) => (
   <div className={`mb-12 max-w-3xl ${center ? "text-center" : ""}`}>
-    <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">
-      {title}
-    </h2>
-    <p className="text-base text-textColor sm:text-lg">
-      {paragraph}
-    </p>
+    <h2 className="mb-4 text-3xl font-bold text-white sm:text-4xl">{title}</h2>
+    <p className="text-base text-textColor sm:text-lg">{paragraph}</p>
   </div>
 );
 
@@ -51,7 +48,7 @@ const SingleClient = ({ client, delay }) => {
             }
           `}
         >
-          <img
+          <Image
             src={image}
             alt={name}
             width={name === "Minexa.ai" ? 140 : 200}
@@ -106,27 +103,21 @@ const Clients = () => {
             {/* Metrics */}
             <div className="mt-14 flex flex-wrap items-center justify-center gap-10 text-center opacity-80">
               <div>
-                <p className="text-3xl font-bold text-white">
-                  50+
-                </p>
+                <p className="text-3xl font-bold text-white">50+</p>
                 <p className="text-sm text-textColor">Clients</p>
               </div>
 
               <div className="h-12 w-px bg-primaryColor/20" />
 
               <div>
-                <p className="text-3xl font-bold text-white">
-                  200+
-                </p>
+                <p className="text-3xl font-bold text-white">200+</p>
                 <p className="text-sm text-textColor">Delivered Projects</p>
               </div>
 
               <div className="h-12 w-px bg-primaryColor/20" />
 
               <div>
-                <p className="text-3xl font-bold text-white">
-                  98%
-                </p>
+                <p className="text-3xl font-bold text-white">98%</p>
                 <p className="text-sm text-textColor">Satisfaction Rate</p>
               </div>
             </div>

@@ -1,5 +1,5 @@
 import { getAllPostSlugs, getPostBySlug } from "@/content/articles";
-import Image from "next/image";
+import Image from "@/components/Common/Image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
