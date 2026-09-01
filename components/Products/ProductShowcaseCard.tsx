@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import Image from "next/image";
+import Image from "@/components/Common/Image";
 import { HiArrowRight } from "react-icons/hi2";
 import { FaCircleCheck } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";

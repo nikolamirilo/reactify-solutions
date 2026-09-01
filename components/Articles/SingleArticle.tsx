@@ -1,5 +1,5 @@
 import { Article } from "@/types";
-import Image from "next/image";
+import Image from "@/components/Common/Image";
 import Link from "next/link";
 
 const SingleArticle = ({ article }: { article: Article }) => {
