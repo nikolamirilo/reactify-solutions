@@ -12,7 +12,10 @@ export default function DocsSidebar({ nav }: { nav: DocTopicNav }) {
 
   return (
     <nav aria-label="Docs navigation" className="flex flex-col gap-5">
-      <div className="flex h-11 items-center gap-2.5 rounded-[10px] border border-darkBorder bg-darkSurface px-3">
+      <Link
+        href="/docs"
+        className="flex h-11 items-center gap-2.5 rounded-[10px] border border-darkBorder bg-darkSurface px-3 transition-colors hover:border-primaryColor/30"
+      >
         <div className="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-md border border-primaryColor/20 bg-primaryColor/10">
           <span className="h-2 w-2 rounded-sm bg-primaryColor" />
         </div>
@@ -24,7 +27,7 @@ export default function DocsSidebar({ nav }: { nav: DocTopicNav }) {
             {nav.sublabel}
           </span>
         </div>
-      </div>
+      </Link>
 
       {nav.pages.map((section) => (
         <div key={section.title} className="flex flex-col gap-0.5">

@@ -14,14 +14,23 @@ export type DocNavSection = {
 
 export type DocTopicNav = {
   topic: string;
+  moduleName: string;
+  description: string;
   label: string;
   sublabel: string;
   pages: DocNavSection[];
 };
 
+// Each entry here is a module on the /docs directory. There is one today
+// (Claude), and the shape is built to hold more without any change to the
+// pages that read it: /docs lists every module in this array, and
+// /docs/<topic> is that module's own landing page.
 export const docsNav: DocTopicNav[] = [
   {
     topic: "claude",
+    moduleName: "Claude",
+    description:
+      "Settings, CLAUDE.md, hooks, skills, subagents, plugins, and MCP. Every way to customize Claude Code and the Claude apps, in plain language.",
     label: "Claude customization",
     sublabel: "reference",
     pages: [

@@ -1,6 +1,6 @@
 ---
 title: settings.json
-description: Claude Code reads settings from four files. When two of them set the same thing, one has to win — here is the order, and the one exception.
+description: Claude Code reads settings from four files. When two of them set the same thing, one has to win. Here is the order, and the one exception.
 lastReviewed: 2026-09-03
 verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
 appliesTo: Claude Code
@@ -19,10 +19,10 @@ appliesTo: Claude Code
 
 You will likely only ever use two of them.
 
-- **`~/.claude/settings.json`** — yours, applies to every project. Put your model choice and personal preferences here.
-- **`.claude/settings.json`** — your team's, committed to git. Put shared permissions, hooks, and MCP servers here.
-- **`.claude/settings.local.json`** — yours, this project only. Claude Code adds it to `.gitignore` for you automatically.
-- **The managed file** — your company sets this, at an OS-specific path. You cannot override it.
+- **`~/.claude/settings.json`**: yours, applies to every project. Put your model choice and personal preferences here.
+- **`.claude/settings.json`**: your team's, committed to git. Put shared permissions, hooks, and MCP servers here.
+- **`.claude/settings.local.json`**: yours, this project only. Claude Code adds it to `.gitignore` for you automatically.
+- **The managed file**: your company sets this, at an OS-specific path. You cannot override it.
 
 One more file is not in this list: `~/.claude.json` holds a small set of global config keys and your personal MCP servers. It follows different rules and is not merged the way the four settings files are.
 
@@ -48,39 +48,39 @@ Start Claude Code and run <code>/permissions</code>. Your deny rule appears even
 
 ## The order, strongest first
 
-1. **Managed** — your company's file. Nothing beats it.
-2. **Command-line flags** — what you typed when you started Claude.
-3. **Local** — `.claude/settings.local.json`
-4. **Project** — `.claude/settings.json`
-5. **User** — `~/.claude/settings.json`
+1. **Managed**: your company's file. Nothing beats it.
+2. **Command-line flags**: what you typed when you started Claude.
+3. **Local**: `.claude/settings.local.json`
+4. **Project**: `.claude/settings.json`
+5. **User**: `~/.claude/settings.json`
 
 ## Two kinds of settings behave differently
 
-A **plain value** — a single setting like `model` — follows this order strictly: the strongest file wins, and the others are ignored entirely.
+A **plain value**, a single setting like `model`, follows this order strictly. The strongest file wins, and the others are ignored entirely.
 
-A **list** — a setting that holds an array — behaves differently. Claude Code collects the entries from every file that sets it and uses all of them together, rather than letting the strongest file replace the rest. Six settings work this way: `permissions.allow`, `permissions.deny`, `permissions.ask`, `permissions.additionalDirectories`, `sandbox.filesystem.allowWrite`, and `allowedHttpHookUrls`.
+A **list**, a setting that holds an array, behaves differently. Claude Code collects the entries from every file that sets it and uses all of them together, rather than letting the strongest file replace the rest. Six settings work this way: `permissions.allow`, `permissions.deny`, `permissions.ask`, `permissions.additionalDirectories`, `sandbox.filesystem.allowWrite`, and `allowedHttpHookUrls`.
 
 <Callout type="warn" title="Exception: deny always wins">
 
-Permission lists have one more rule that ignores file order completely: **`deny` beats `ask`, and `ask` beats `allow`.** If any file denies something, it stays denied — even if a stronger file explicitly allows it. This is deliberate: a `deny` is a safety rule, so no weaker or stronger file can quietly switch it off.
+Permission lists have one more rule that ignores file order completely. **`deny` beats `ask`, and `ask` beats `allow`.** If any file denies something, it stays denied, even if a stronger file explicitly allows it. This is deliberate. A `deny` is a safety rule, so no weaker or stronger file can quietly switch it off.
 
 </Callout>
 
 ## When not to use it
 
-Use `settings.json` for configuration — permissions, your model, hooks, MCP servers. It is not the place for facts and conventions Claude should keep in mind; that is what [CLAUDE.md](/docs/claude/claude-md) is for. And it is not the place for a reusable multi-step procedure; that is a [skill](/docs/claude/skills).
+Use `settings.json` for configuration: permissions, your model, hooks, MCP servers. It is not the place for facts and conventions Claude should keep in mind. That is what [CLAUDE.md](/docs/claude/claude-md) is for. And it is not the place for a reusable multi-step procedure. That is a [skill](/docs/claude/skills).
 
 <FullReference label="More settings worth knowing">
 
-- **`hooks`** — lifecycle automation. See [Hooks](/docs/claude/hooks).
-- **`outputStyle`** — the active Output Style for the session.
-- **`cleanupPeriodDays`** — how long session transcripts are kept. Setting it to `0` disables session persistence entirely.
-- **`includeCoAuthoredBy`** — toggles the "Co-authored-by Claude" trailer on commits Claude creates.
-- **`disableAllHooks`** — a kill switch for every hook, regardless of where it is defined.
-- **`sandbox.filesystem.allowWrite`** — filesystem sandbox rules, merged like the permission arrays above.
-- **`autoUpdatesChannel`** — `"latest"` or `"stable"`; stable trails latest by roughly a week.
-- **`strictPluginOnlyCustomization`** — a managed-only policy that locks out file-based skills, commands, and agents so only plugins can add customization. Used by organizations that want a single audited distribution channel.
+- **`hooks`**: lifecycle automation. See [Hooks](/docs/claude/hooks).
+- **`outputStyle`**: the active Output Style for the session.
+- **`cleanupPeriodDays`**: how long session transcripts are kept. Setting it to `0` disables session persistence entirely.
+- **`includeCoAuthoredBy`**: toggles the "Co-authored-by Claude" trailer on commits Claude creates.
+- **`disableAllHooks`**: a kill switch for every hook, regardless of where it is defined.
+- **`sandbox.filesystem.allowWrite`**: filesystem sandbox rules, merged like the permission arrays above.
+- **`autoUpdatesChannel`**: `"latest"` or `"stable"`. Stable trails latest by roughly a week.
+- **`strictPluginOnlyCustomization`**: a managed-only policy that locks out file-based skills, commands, and agents so only plugins can add customization. Used by organizations that want a single audited distribution channel.
 
-There are well over a hundred documented settings in total. This page covers the dozen that change behavior for most people; the rest are in Anthropic's own settings reference.
+There are well over a hundred documented settings in total. This page covers the dozen that change behavior for most people. The rest are in Anthropic's own settings reference.
 
 </FullReference>

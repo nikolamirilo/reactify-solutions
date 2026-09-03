@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import productsData from "@/components/Products/productsData";
 import { allPostsMeta } from "@/content/articles";
-import { allDocPages } from "@/content/docs";
+import { allDocPages, docsNav } from "@/content/docs";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.APP_URL || "https://www.reactify-solutions.com";
@@ -23,6 +23,13 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     lastModified: new Date(post.publishDate),
     changeFrequency: "monthly" as const,
     priority: 0.7,
+  }));
+
+  const docModuleEntries: MetadataRoute.Sitemap = docsNav.map((topic) => ({
+    url: `${baseUrl}/docs/${topic.topic}`,
+    lastModified: buildDate,
+    changeFrequency: "weekly" as const,
+    priority: 0.9,
   }));
 
   const docEntries: MetadataRoute.Sitemap = allDocPages.map((page) => ({
@@ -89,6 +96,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     },
     ...productEntries,
     ...articleEntries,
+    ...docModuleEntries,
     ...docEntries,
   ];
 }

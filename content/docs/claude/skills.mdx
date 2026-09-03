@@ -1,6 +1,6 @@
 ---
 title: Skills
-description: A folder with a SKILL.md file that Claude loads only when it is relevant — the one artifact that works the same way in Claude Code, the API, and the apps.
+description: A folder with a SKILL.md file that Claude loads only when it is relevant. The one artifact that works the same way in Claude Code, the API, and the apps.
 lastReviewed: 2026-09-03
 verifiedAgainst: Anthropic's Claude Code and Claude apps docs, Sep 2026
 appliesTo: Claude Code & apps
@@ -11,15 +11,15 @@ appliesTo: Claude Code & apps
 - A skill is a folder with a `SKILL.md` file, loaded automatically when it is relevant, or invoked directly with `/skill-name`.
 - Unlike `CLAUDE.md`, a skill's body costs no context until you actually use it.
 - Only six frontmatter fields are portable outside Claude Code: `name`, `description`, `license`, `compatibility`, `metadata`, `allowed-tools`.
-- The thing people get wrong: assuming a skill syncs between Claude Code and the apps. It does not — upload it separately to each surface, and keep the source in git.
+- Do not assume a skill syncs between Claude Code and the apps. It does not. Upload it separately to each surface, and keep the source in git.
 
 </InOneMinute>
 
 ## What it is
 
-`CLAUDE.md` loads in full, every session, whether you need it or not. A skill is the opposite: Claude sees only its name and a one-line description by default — roughly 100 tokens — and loads the full body only when the current task actually matches it. This is called **progressive disclosure**, and it is why skills scale to a large library without bloating every conversation.
+`CLAUDE.md` loads in full, every session, whether you need it or not. A skill works the other way. Claude sees only its name and a one-line description by default, roughly 100 tokens, and loads the full body only when the current task actually matches it. This is called **progressive disclosure**, and it is why skills scale to a large library without bloating every conversation.
 
-Skills are also the one artifact in this whole reference that is genuinely portable. A folder with a `SKILL.md` file works in Claude Code, the Claude API, and the apps, because Anthropic published Agent Skills as an open standard and other tools — including several outside the Claude ecosystem — read the same file layout.
+Skills are also the one artifact in this whole reference that is genuinely portable. A folder with a `SKILL.md` file works in Claude Code, the Claude API, and the apps, because Anthropic published Agent Skills as an open standard, and a number of tools outside Claude now read the same file layout.
 
 ## The smallest working example
 
@@ -34,7 +34,7 @@ description: Summarizes uncommitted changes and flags anything risky. Use when t
 Summarize the changes above in two or three bullet points, then list any risks.`} />
 
 - The opening `---` must be the very first line, or Claude Code treats the whole file as plain content instead of a skill.
-- `description` does two jobs at once: it tells Claude what the skill does, and when to use it. Both matter for Claude to pick it automatically.
+- `description` does two jobs at once. It tells Claude what the skill does, and when to use it. Both matter for Claude to pick it automatically.
 - The `!` prefix on a line runs that command and inserts its output before the rest of the prompt.
 
 <CheckItWorked>
@@ -49,11 +49,11 @@ Save the file, then either ask a question that matches the description, or type 
 | Project | `.claude/skills/<name>/SKILL.md` | This project, shared via git |
 | Plugin | `<plugin>/skills/<name>/SKILL.md` | Wherever the plugin is enabled |
 
-If two skills share a name, the more specific one wins: a project skill overrides a personal one, and either overrides a bundled skill with the same name. A plugin's skills are namespaced as `plugin-name:skill-name`, so they never collide with yours.
+If two skills share a name, the more specific one wins. A project skill overrides a personal one, and either overrides a bundled skill with the same name. A plugin's skills are namespaced as `plugin-name:skill-name`, so they never collide with yours.
 
 ## Bundled resources
 
-A skill can bundle three optional folders, each loaded only when Claude actually needs it:
+A skill can bundle three optional folders, each loaded only when Claude actually needs it.
 
 <CodeBlock language="text" filename="skill-name/" code={`skill-name/
 ├── SKILL.md          # required
@@ -63,13 +63,13 @@ A skill can bundle three optional folders, each loaded only when Claude actually
 
 <Callout type="note" title="'Modules' is not a real folder">
 
-If you have seen "modules" mentioned as a skill directory, that is not part of the spec — the three canonical folders are `scripts/`, `references/`, and `assets/`. You can add other folders freely; they just will not be recognized automatically the way these three are.
+If you have seen "modules" mentioned as a skill directory, that is not part of the spec. The three canonical folders are `scripts/`, `references/`, and `assets/`. You can add other folders freely, they just will not be recognized automatically the way these three are.
 
 </Callout>
 
 ## Staying portable
 
-The Agent Skills spec defines exactly six frontmatter fields: `name`, `description`, `license`, `compatibility`, `metadata`, and `allowed-tools`. Claude Code also understands several extra fields — `model`, `effort`, `disable-model-invocation`, `user-invocable`, and others — but a skill using any of them may error if you upload it somewhere else expecting the same file to work unchanged. If you plan to share a skill outside Claude Code, stick to the six.
+The Agent Skills spec defines exactly six frontmatter fields: `name`, `description`, `license`, `compatibility`, `metadata`, and `allowed-tools`. Claude Code also understands several extra fields, `model`, `effort`, `disable-model-invocation`, `user-invocable`, and others, but a skill using any of them may error if you upload it somewhere else expecting the same file to work unchanged. If you plan to share a skill outside Claude Code, stick to the six.
 
 ## When not to use it
 
