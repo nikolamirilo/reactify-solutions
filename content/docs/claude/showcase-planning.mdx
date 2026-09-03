@@ -1,0 +1,38 @@
+---
+title: "Phase 4: Planning"
+description: Turns the product definition into business requirements and a technical architecture. The second phase in this example that fans out into sub-skills.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- Phase 4 of 8, invoked after [Product definition](/docs/claude/showcase-product-definition).
+- Splits into two sub-skills, business requirements and architecture, run in that order because architecture needs a budget and timeline before it can size a stack sensibly.
+- Unlike [Research](/docs/claude/showcase-research)'s three independent sub-skills, these two have a strict dependency between them: business requirements always runs first.
+- Waits for explicit user confirmation before handing off to implementation, since this is the last phase before anything gets built.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/planning/SKILL.md" code={`---
+name: planning
+description: Turns the defined product into business requirements and a technical architecture. Use after product-definition, before implementation. Invokes /definition-of-business-requirements and /definition-of-architecture, in that order.
+---
+Read docs/product/definition.md.
+
+Invoke /definition-of-business-requirements, then /definition-of-architecture.
+
+Once both exist, confirm the plan with the user before invoking /implementation.`} />
+
+## Its sub-skills
+
+| Sub-skill | Runs | Produces |
+|---|---|---|
+| [Business requirements](/docs/claude/showcase-business-requirements) | First | `docs/product/planning/business-requirements.md` |
+| [Architecture](/docs/claude/showcase-architecture) | Second, reads the file above | `docs/product/planning/architecture.md` |
+
+## Where it fits
+
+Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as phase 4, after [Product definition](/docs/claude/showcase-product-definition). Hands off to [Implementation](/docs/claude/showcase-implementation) once the user has confirmed the plan both sub-skills produced.

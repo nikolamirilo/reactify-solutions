@@ -1,0 +1,30 @@
+---
+title: "Planning sub-skill: Architecture"
+description: Turns the product definition and business requirements into a technical architecture, stack, components, and the riskiest technical decision made explicit. The second of planning's two sub-skills.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Planning](/docs/claude/showcase-planning), invoked second, after [Business requirements](/docs/claude/showcase-business-requirements).
+- Reads `docs/product/definition.md` *and* `docs/product/planning/business-requirements.md`. Writes `docs/product/planning/architecture.md`.
+- Its instructions include a deliberate anti-pattern guard: flag the riskiest technical decision explicitly, rather than making it silently and letting it surface later as a surprise during implementation.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/definition-of-architecture/SKILL.md" code={`---
+name: definition-of-architecture
+description: Turns the product definition and business requirements into a technical architecture, stack, major components, and the riskiest technical decision. Use as the second of planning's two sub-skills, invoked by /planning, after business requirements exist.
+---
+Read docs/product/definition.md and docs/product/planning/business-requirements.md.
+
+Propose a stack and component breakdown sized to the budget and timeline already set. Flag the riskiest technical decision explicitly, do not bury it.
+
+Write docs/product/planning/architecture.md.`} />
+
+## Where it fits
+
+Invoked by [Planning](/docs/claude/showcase-planning), second of its two sub-skills, after [Business requirements](/docs/claude/showcase-business-requirements). Once this file exists, Planning confirms the whole plan with the user and hands off to [Implementation](/docs/claude/showcase-implementation).

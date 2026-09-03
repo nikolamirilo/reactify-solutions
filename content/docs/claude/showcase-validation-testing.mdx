@@ -1,0 +1,31 @@
+---
+title: "Phase 6: Validation and testing"
+description: Tests the built product against the original success definition and the approved scope, and reports anything that shipped outside it.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- Phase 6 of 8, invoked after [Implementation](/docs/claude/showcase-implementation).
+- Checks the product against two different, earlier files: the success definition from phase 1, and the scope from phase 3, not just whether the code runs.
+- Its explicit job is to report scope drift, features that shipped but were not in the approved definition, not silently accept it.
+- Runs before SEO and accessibility, on the reasoning that testing a product that does not do what it was supposed to do first is wasted effort on the other two.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/validation-and-testing/SKILL.md" code={`---
+name: validation-and-testing
+description: Tests the built product against the success definition from understanding-of-idea and the scope from product-definition. Use after implementation, before seo and accessibility.
+---
+Read docs/product/idea.md for the success definition and docs/product/definition.md for the core features.
+
+Write and run tests against both.
+
+Report any feature that shipped outside the approved scope.`} />
+
+## Where it fits
+
+Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as phase 6, after [Implementation](/docs/claude/showcase-implementation). Hands off to [SEO](/docs/claude/showcase-seo) and [Accessibility](/docs/claude/showcase-accessibility), the two remaining phases.

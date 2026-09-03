@@ -1,0 +1,32 @@
+---
+title: "Research sub-skill: Market"
+description: Sizes the market and names the likely first customer segment. The third of research's three sub-skills, and the only one that reads a sibling's output.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Research](/docs/claude/showcase-research), invoked third and last of the three.
+- Reads `docs/product/idea.md` *and* `docs/product/research/competitors.md`. Writes `docs/product/research/market.md`.
+- The one sub-skill in this trio with an explicit ordering dependency on a sibling, not just the parent phase. Its description says so directly, rather than leaving Claude to guess a sensible invocation order.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/market-research/SKILL.md" code={`---
+name: market-research
+description: Sizes the market and identifies the likely first customer segment. Use as the third of research's three sub-skills, invoked by /research, after competitors-research has already written its file.
+---
+Read docs/product/idea.md and docs/product/research/competitors.md.
+
+Estimate rough market size and name the specific first segment worth targeting.
+
+Write docs/product/research/market.md.`} />
+
+- Compare this description to [Trends research](/docs/claude/showcase-trends-research)'s. That one only needs to say which slot it fills. This one also needs to say what has to exist before it runs, since it genuinely cannot do its job without competitors.md.
+
+## Where it fits
+
+Invoked by [Research](/docs/claude/showcase-research), last of its three sub-skills, after [Trends research](/docs/claude/showcase-trends-research) and [Competitor research](/docs/claude/showcase-competitors-research). Once all three files exist, Research merges them and hands off to [Product definition](/docs/claude/showcase-product-definition).

@@ -22,16 +22,16 @@ export type DocTopicNav = {
 };
 
 // Each entry here is a module on the /docs directory. There is one today
-// (Claude), and the shape is built to hold more without any change to the
-// pages that read it: /docs lists every module in this array, and
+// (Claude Code), and the shape is built to hold more without any change to
+// the pages that read it: /docs lists every module in this array, and
 // /docs/<topic> is that module's own landing page.
 export const docsNav: DocTopicNav[] = [
   {
     topic: "claude",
-    moduleName: "Claude",
+    moduleName: "Claude Code",
     description:
-      "Settings, CLAUDE.md, hooks, skills, subagents, plugins, and MCP. Every way to customize Claude Code and the Claude apps, in plain language.",
-    label: "Claude customization",
+      "Settings, CLAUDE.md, memory, hooks, skills, subagents, plugins, and MCP. Every way to customize Claude Code, in plain language.",
+    label: "Claude Code customization",
     sublabel: "reference",
     pages: [
       {
@@ -47,19 +47,34 @@ export const docsNav: DocTopicNav[] = [
         title: "Claude Code",
         pages: [
           { slug: "settings", label: "settings.json" },
-          { slug: "claude-md", label: "CLAUDE.md & memory" },
+          { slug: "claude-md", label: "CLAUDE.md" },
+          { slug: "memory", label: "Memory management" },
           { slug: "hooks", label: "Hooks" },
           { slug: "skills", label: "Skills" },
           { slug: "subagents", label: "Subagents & commands" },
           { slug: "mcp", label: "MCP servers" },
           { slug: "plugins", label: "Plugins" },
+          { slug: "teams", label: "Rolling out to a team" },
         ],
       },
       {
-        title: "Claude apps",
+        title: "Skills Showcase",
         pages: [
-          { slug: "apps", label: "Claude.ai, Desktop & Cowork" },
-          { slug: "teams", label: "Rolling out to a team" },
+          { slug: "skills-showcase", label: "Overview" },
+          { slug: "showcase-orchestrator", label: "The orchestrator skill" },
+          { slug: "showcase-understanding-of-idea", label: "Understanding the idea" },
+          { slug: "showcase-research", label: "Research" },
+          { slug: "showcase-trends-research", label: "↳ Trends research" },
+          { slug: "showcase-competitors-research", label: "↳ Competitor research" },
+          { slug: "showcase-market-research", label: "↳ Market research" },
+          { slug: "showcase-product-definition", label: "Product definition" },
+          { slug: "showcase-planning", label: "Planning" },
+          { slug: "showcase-business-requirements", label: "↳ Business requirements" },
+          { slug: "showcase-architecture", label: "↳ Architecture" },
+          { slug: "showcase-implementation", label: "Implementation" },
+          { slug: "showcase-validation-testing", label: "Validation & testing" },
+          { slug: "showcase-seo", label: "SEO" },
+          { slug: "showcase-accessibility", label: "Accessibility" },
         ],
       },
       {

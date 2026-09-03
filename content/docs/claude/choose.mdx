@@ -1,9 +1,9 @@
 ---
 title: Which one should I use?
-description: A one-line answer for each of Claude's eight customization tools, plus the four moments that tell you to move something from one to another.
+description: A one-line answer for each of Claude Code's eight customization tools, plus the four moments that tell you to move something from one to another.
 lastReviewed: 2026-09-03
-verifiedAgainst: Anthropic's Claude Code and Claude apps docs, Sep 2026
-appliesTo: Claude Code & apps
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
 ---
 
 <InOneMinute>
@@ -24,9 +24,10 @@ appliesTo: Claude Code & apps
 | Trigger an exact prompt yourself, on demand | A slash command |
 | Make something run every time, no matter what the model decides | A hook |
 | Give dozens of teammates identical setup in one install | A plugin |
-| Connect Claude to an external tool or database | MCP (Connectors in the apps) |
-| Keep a bounded project's files and instructions together | A Project (apps only) |
-| Change Claude's tone or output format for a task | An Output Style (Code) or Style (apps) |
+| Connect Claude to an external tool or database | MCP |
+| Change Claude's tone or output format for a task | An Output Style |
+
+Auto memory is not on this list because you do not choose to use it. Claude writes it on its own, from corrections you make mid-conversation, and it sits alongside `CLAUDE.md` rather than competing with it. See [Memory management](/docs/claude/memory) for how the two work together.
 
 ## Four moments that tell you to move
 
@@ -35,7 +36,7 @@ appliesTo: Claude Code & apps
 - A `CLAUDE.md` section is turning into numbered steps → move it to a **skill**. Instructions load every session whether you need them or not; a skill's body loads only when it is relevant.
 - A rule keeps getting skipped → move it from `CLAUDE.md` to a **hook**. `CLAUDE.md` is context Claude reads. A hook is a command that runs, with no way for the model to opt out.
 - One task is filling the conversation with noise you do not need afterward → move it to a **subagent**. It runs in its own context window and hands back only a summary.
-- The same workflow needs to work in Claude Code, the web app, and Excel → build it as a **skill**, not a Claude Code-only slash command. Skills are the one artifact that is portable across all three.
+- The same procedure needs to work in Claude Code and somewhere else entirely, the API, a different tool that reads the same format → build it as a **skill**, not a Claude Code-only slash command. A skill is the one artifact here that is portable outside Claude Code at all.
 
 </InOneMinute>
 
@@ -43,7 +44,7 @@ appliesTo: Claude Code & apps
 
 `CLAUDE.md` is durable, always-loaded context: facts and conventions Claude should know on every single message. That is exactly why it is the wrong place for two things. Procedures only matter when you are doing that specific task, so they should not cost context on every other message. Hard rules need to hold even when the model would otherwise reasonably decide to skip them.
 
-A skill fixes the first problem through **progressive disclosure**. Claude sees only the skill's name and a one-line description by default, and loads the full body only when the task matches. A hook fixes the second problem by moving the rule out of the model's judgment entirely. It is a script that runs, not a suggestion the model reads.
+A skill fixes the first problem through **progressive disclosure**. Claude sees only the skill's name and a one-line description by default, and loads the full body only when the current task actually matches it. A hook fixes the second problem by moving the rule out of the model's judgment entirely. It is a script that runs, not a suggestion the model reads.
 
 ## Read next
 

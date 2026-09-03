@@ -106,10 +106,10 @@ export default async function TopicLandingPage({
         </span>
         <span className="hidden h-[30px] w-px flex-shrink-0 bg-darkBorder sm:block" />
         <p className="m-0 text-[15px] leading-relaxed text-textSecondary">
-          Claude Code keeps your customization in files on disk. The Claude apps keep
-          it in your account.{" "}
+          Every one of these is a plain file, in your repository or your home
+          directory.{" "}
           <strong className="font-semibold text-white">
-            Skills are the connective tissue between them.
+            Nothing here depends on being signed into anything.
           </strong>
         </p>
       </div>
