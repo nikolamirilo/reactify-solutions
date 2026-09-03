@@ -21,6 +21,8 @@ appliesTo: Claude Code
 
 A subagent is a separate Claude instance the main session can spawn to handle one scoped task. It runs in its own context window and returns only a final summary. The back-and-forth it took to get there never enters your main conversation. That is useful for two different reasons: keeping your context clean, and routing a task to a cheaper model on purpose.
 
+<SubagentDiagram />
+
 ### The smallest working example
 
 <CodeBlock language="yaml" filename=".claude/agents/code-reviewer.md" code={`---

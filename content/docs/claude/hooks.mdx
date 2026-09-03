@@ -56,6 +56,8 @@ For a hook that runs **before** a tool, `PreToolUse`, your script's exit code de
 | `2` | **Blocks the action.** The only exit code that does. |
 | anything else | Lets the action through. Shows your stderr in the transcript. |
 
+<HookFlowDiagram />
+
 <Callout type="warn" title="Silence is not approval">
 
 Exiting `0` with no output means "no opinion," not "allowed." Claude falls back to your normal permission rules. If you want a hook to actively approve something, it has to say so explicitly. See the JSON form below.

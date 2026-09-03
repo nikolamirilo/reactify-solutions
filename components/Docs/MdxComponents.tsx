@@ -4,6 +4,12 @@ import Callout from "./Callout";
 import InOneMinute from "./InOneMinute";
 import CheckItWorked from "./CheckItWorked";
 import FullReference from "./FullReference";
+import TwoWorldsDiagram from "./diagrams/TwoWorldsDiagram";
+import PrecedenceDiagram from "./diagrams/PrecedenceDiagram";
+import HookFlowDiagram from "./diagrams/HookFlowDiagram";
+import ProgressiveDisclosureDiagram from "./diagrams/ProgressiveDisclosureDiagram";
+import SubagentDiagram from "./diagrams/SubagentDiagram";
+import RolloutStagesDiagram from "./diagrams/RolloutStagesDiagram";
 
 // Markdown elements get a `.docs-*` class from styles/index.css instead of a
 // `prose` block — @tailwindcss/typography isn't installed, and the rest of
@@ -44,4 +50,10 @@ export const mdxComponents: MDXComponents = {
   InOneMinute,
   CheckItWorked,
   FullReference,
+  TwoWorldsDiagram,
+  PrecedenceDiagram,
+  HookFlowDiagram,
+  ProgressiveDisclosureDiagram,
+  SubagentDiagram,
+  RolloutStagesDiagram,
 };
