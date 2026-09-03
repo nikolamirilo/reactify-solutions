@@ -10,6 +10,7 @@ import ProgressiveDisclosureDiagram from "./diagrams/ProgressiveDisclosureDiagra
 import SubagentDiagram from "./diagrams/SubagentDiagram";
 import RolloutStagesDiagram from "./diagrams/RolloutStagesDiagram";
 import SkillHierarchyDiagram from "./diagrams/SkillHierarchyDiagram";
+import WorkflowDiagram from "./diagrams/WorkflowDiagram";
 
 // Markdown elements get a `.docs-*` class from styles/index.css instead of a
 // `prose` block — @tailwindcss/typography isn't installed, and the rest of
@@ -56,4 +57,5 @@ export const mdxComponents: MDXComponents = {
   SubagentDiagram,
   RolloutStagesDiagram,
   SkillHierarchyDiagram,
+  WorkflowDiagram,
 };
