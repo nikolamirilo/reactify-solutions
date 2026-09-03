@@ -53,6 +53,7 @@ export const docsNav: DocTopicNav[] = [
           { slug: "hooks", label: "Hooks" },
           { slug: "skills", label: "Skills" },
           { slug: "subagents", label: "Subagents & commands" },
+          { slug: "workflows", label: "Workflows" },
           { slug: "mcp", label: "MCP servers" },
           { slug: "plugins", label: "Plugins" },
           { slug: "teams", label: "Rolling out to a team" },

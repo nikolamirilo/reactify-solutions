@@ -1,0 +1,128 @@
+---
+title: Workflows
+description: A workflow is a JavaScript script that orchestrates multiple Claude agents in a deterministic sequence. Use one when a task is too structured to leave to a single conversation but too complex to run as a one-shot subagent.
+lastReviewed: 2026-09-03
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A workflow is a `.js` script in `.claude/workflows/` that runs agents in sequence, in parallel, or in a pipeline.
+- Three primitives: `agent()` runs one agent, `parallel()` fans out many at once, `pipeline()` chains stages where each feeds the next.
+- Every script must start with `export const meta = { name, description }` — a pure literal, no variables or calls.
+- Workflows run in the background. You get a task ID immediately; a notification arrives when it finishes.
+- Use a workflow when the structure of the task is fixed and you want it to run the same way every time.
+
+</InOneMinute>
+
+## What it is
+
+A [subagent](/docs/claude/subagents) handles one scoped task. A workflow handles a whole pipeline of them.
+
+Where a subagent is spawned ad-hoc by Claude mid-conversation, a workflow is a script you write once that defines exactly which agents run, in what order, and how their outputs flow into each other. Claude does not decide the structure at runtime — you do, upfront, in plain JavaScript.
+
+<WorkflowDiagram />
+
+This makes workflows the right tool when the process itself is the asset: a review pipeline that fans out across multiple dimensions and verifies every finding, a build-and-test sequence that always runs the same steps, a research task that gathers from several sources and then synthesizes.
+
+## The smallest working example
+
+<CodeBlock language="javascript" filename=".claude/workflows/summarize-prs.js" code={`export const meta = {
+  name: 'summarize-prs',
+  description: 'Summarize open pull requests and flag anything risky',
+}
+
+const prs = await agent('List the open pull requests in this repo and return their titles and numbers as JSON', {
+  label: 'list-prs',
+  schema: { type: 'array', items: { type: 'object', properties: { number: { type: 'number' }, title: { type: 'string' } } } },
+})
+
+const summaries = await parallel(
+  prs.map((pr) => () =>
+    agent(\`Summarize PR #\${pr.number} "\${pr.title}". Note any risky changes.\`, { label: \`review:\${pr.number}\` })
+  )
+)
+
+return { summaries }`} />
+
+- `export const meta` must be a pure literal — no variables, function calls, or string interpolation anywhere in its value.
+- `agent()` runs a single Claude instance and returns its response. Pass a `schema` to get structured JSON back.
+- `parallel()` runs every task at the same time and returns an array of results in input order.
+- The script is plain JavaScript, not TypeScript. You can use `await`, `Array.map`, and any built-in JS — no imports needed for the workflow primitives.
+
+<CheckItWorked>
+Ask Claude to run this workflow: "use a workflow to summarize open PRs." Claude will confirm before launching, show a task ID, and notify you when it finishes.
+</CheckItWorked>
+
+## The three primitives
+
+### `agent(prompt, opts?)`
+
+Runs one Claude agent and returns its final response. The agent runs in its own context window — it sees only the prompt you pass, not your main conversation.
+
+| Option | What it does |
+|---|---|
+| `label` | Short name shown in progress output, e.g. `"review:auth"` |
+| `phase` | Groups this agent under a named phase in the progress view |
+| `schema` | JSON Schema the agent must match. Returns a parsed object, not a string. |
+
+### `parallel(tasks)`
+
+Accepts an array of zero-argument functions, each returning an `agent()` call (or another `parallel` or `pipeline`). Runs them all at once and returns results in the same order as the input.
+
+<CodeBlock language="javascript" filename="example" code={`const results = await parallel([
+  () => agent('Check for security issues', { label: 'security' }),
+  () => agent('Check for performance issues', { label: 'perf' }),
+  () => agent('Check for accessibility issues', { label: 'a11y' }),
+])`} />
+
+### `pipeline(items, ...stages)`
+
+Applies a sequence of transform stages to an array of items. Each stage receives one item (or the result of the previous stage) and returns the next value. Stages run in order per item — useful when one agent's output feeds directly into the next.
+
+<CodeBlock language="javascript" filename="example" code={`const verified = await pipeline(
+  findings,
+  (f) => agent(\`Verify this finding: \${f.summary}\`, { label: \`verify:\${f.file}\`, schema: VERDICT_SCHEMA }),
+  (v) => v.isReal ? v : null,
+).then((results) => results.filter(Boolean))`} />
+
+## Phases
+
+Add a `phases` array to `meta` and pass `phase` in individual `agent()` calls to group work visually in the progress view.
+
+<CodeBlock language="javascript" filename=".claude/workflows/review.js" code={`export const meta = {
+  name: 'review',
+  description: 'Review changed files, then verify each finding',
+  phases: [{ title: 'Review' }, { title: 'Verify' }],
+}
+
+const findings = await parallel(
+  DIMENSIONS.map((d) => () => agent(d.prompt, { label: \`review:\${d.key}\`, phase: 'Review', schema: FINDINGS_SCHEMA }))
+)
+
+const verified = await parallel(
+  findings.flat().map((f) => () => agent(\`Adversarially verify: \${f.title}\`, { label: \`verify:\${f.file}\`, phase: 'Verify', schema: VERDICT_SCHEMA }))
+)
+
+return verified.filter((v) => v.verdict?.isReal)`} />
+
+## Resuming after a failure
+
+If a workflow fails partway through, you can resume it without re-running the work that already completed. Pass the original run ID back to the Workflow tool as `resumeFromRunId`. Any `agent()` call with the same prompt and options returns its cached result instantly — only changed or new calls re-run.
+
+Stop the failed run first with `TaskStop`, then relaunch with the same script and the `resumeFromRunId` set to the failed run's ID.
+
+## Where they live
+
+| Location | Path | Applies to |
+|---|---|---|
+| Project | `.claude/workflows/<name>.js` | This project, shared via git |
+
+Unlike skills and subagents, there is no personal (`~/.claude/`) location for workflows. They are project-scoped by design, because a workflow that hardcodes a repo structure should not silently apply elsewhere.
+
+## When not to use one
+
+A workflow is for a task whose structure is fixed and repeatable. If the steps depend on what Claude finds mid-task, a plain conversation with [subagents](/docs/claude/subagents) is more flexible. If the task is a reusable procedure Claude should reach for automatically, that is a [skill](/docs/claude/skills). Workflows are opt-in — Claude will not launch one unless you ask explicitly, or the user types something like "use a workflow."
+
+Keep workflows under 15 agents unless the task genuinely demands more. A long pipeline that could be a short one just adds latency and cost.
