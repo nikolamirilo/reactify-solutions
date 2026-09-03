@@ -109,7 +109,7 @@ function CollapsibleSection({
   pathname: string;
 }) {
   const isActive = sectionContainsPath(section, topicHref, pathname);
-  const [open, setOpen] = useState(isActive);
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     if (isActive) setOpen(true);

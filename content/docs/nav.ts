@@ -45,7 +45,7 @@ export const docsNav: DocTopicNav[] = [
         ],
       },
       {
-        title: "Claude Code",
+        title: "Customization",
         pages: [
           { slug: "settings", label: "settings.json" },
           { slug: "claude-md", label: "CLAUDE.md" },
