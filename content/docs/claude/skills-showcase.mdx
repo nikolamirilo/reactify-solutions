@@ -1,0 +1,92 @@
+---
+title: Skills Showcase
+description: A worked example of skill hierarchy, three levels deep. One orchestrator skill, the phase skills it hands off to, and the sub-skills a few of those phases invoke.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A skill can invoke other skills. Its `description` field is what tells Claude which one to reach for, at every level.
+- This example nests three levels deep: one orchestrator skill, the phase skills it hands off to, and the sub-skills a few of those phases invoke in turn.
+- Not every phase needs sub-skills. A phase that is a straightforward sequence can just write numbered steps inside its own `SKILL.md`, see product definition below.
+- This is a worked example to read, not something to install. Copy the pattern. The specific skill names are ours, not Anthropic's.
+
+</InOneMinute>
+
+<Callout type="note" title="What this section is">
+
+Every other page in this reference documents a real, verifiable Claude Code mechanic. This section is different: it is an example we built to make one specific idea concrete, how skills compose into a hierarchy. The mechanics it relies on, `SKILL.md`, the `description` field, progressive disclosure, are real and documented on [Skills](/docs/claude/skills). The process itself, the phases, the sub-skills, is invented for teaching, not something Anthropic defines.
+
+</Callout>
+
+## Why hierarchy, not one giant skill
+
+A skill covering an entire product development process, from idea to launch, would be enormous. Load it in full and you have defeated the point of a skill: Claude sees the whole body the moment anything about the project comes up, not only when the specific phase that skill covers is actually relevant.
+
+Splitting it into an orchestrator skill and separate phase skills fixes this the same way splitting a bloated `CLAUDE.md` section into its own skill does. Claude loads the orchestrator's short description, then only the one phase skill that matches what you are actually doing. A phase with real internal complexity, research here, can split again into its own sub-skills, for the same reason, one level deeper.
+
+## The example, as a tree
+
+<SkillHierarchyDiagram />
+
+## How the orchestrator hands off
+
+The orchestrator's `SKILL.md` does not do the research, or write the code, or run the accessibility audit. Its body is closer to a table of contents with routing logic: it names every phase, in order, and tells Claude which skill to invoke for each one.
+
+<CodeBlock language="yaml" filename=".claude/skills/develop-new-digital-product/SKILL.md" code={`---
+name: develop-new-digital-product
+description: Runs the full process for building a new digital product, from a raw idea to a validated, accessible, SEO-ready launch. Use when the user wants to build something new and does not yet have a plan broken into phases.
+---
+## Phases, in order
+
+1. Understanding the idea -> invoke /understanding-of-idea
+2. Research -> invoke /research (splits further into trends, competitors, market)
+3. Product definition -> invoke /product-definition
+4. Planning -> invoke /planning (splits further into business requirements, architecture)
+5. Implementation -> invoke /implementation
+6. Validation and testing -> invoke /validation-and-testing
+7. SEO -> invoke /seo
+8. Accessibility -> invoke /accessibility
+
+Work through these phases in order. Do not skip a phase without telling the user which one and why.`} />
+
+- Every line under "Phases, in order" is a routing instruction, not a task Claude performs directly.
+- The parenthetical on research and planning is what tells Claude those two invocations fan out further, so it does not treat them as one flat step.
+- "Do not skip a phase without telling the user" is the one enforcement-flavored line in the whole file, and it is still advice. A rule that must never be skipped belongs in a hook, not a skill description.
+
+See the [full orchestrator page](/docs/claude/showcase-orchestrator) for why its description has to work harder than any other skill's in this tree.
+
+## Read each phase
+
+**Research, three levels deep**
+
+- [Research](/docs/claude/showcase-research), the phase skill
+- [Trends research](/docs/claude/showcase-trends-research)
+- [Competitor research](/docs/claude/showcase-competitors-research)
+- [Market research](/docs/claude/showcase-market-research)
+
+**Planning, two sub-skills**
+
+- [Planning](/docs/claude/showcase-planning), the phase skill
+- [Business requirements](/docs/claude/showcase-business-requirements)
+- [Architecture](/docs/claude/showcase-architecture)
+
+**The rest, one level**
+
+- [Understanding the idea](/docs/claude/showcase-understanding-of-idea)
+- [Product definition](/docs/claude/showcase-product-definition)
+- [Implementation](/docs/claude/showcase-implementation)
+- [Validation and testing](/docs/claude/showcase-validation-testing)
+- [SEO](/docs/claude/showcase-seo)
+- [Accessibility](/docs/claude/showcase-accessibility)
+
+Or start from the top: [the orchestrator skill](/docs/claude/showcase-orchestrator).
+
+## How phases hand off context
+
+Watch for one more detail as you read through the individual pages: each phase writes its output to a file under `docs/product/`, and reads the files earlier phases wrote before doing its own work. Research writes three files under `docs/product/research/`, product definition reads all of them plus the original idea, and so on down the chain. This is not a special mechanic, just plain files and plain instructions, but it is what actually lets eight separate skills behave like one coherent process instead of eight disconnected ones.
+
+## When to stop nesting
+
+Three levels is already a lot to hold in your head, and it is about as deep as this pattern should go. If a sub-skill wants sub-skills of its own, that is usually a sign the phase above it is still trying to do too much, not that you need a fourth level. Tighten the phase skill's own description and steps first, before reaching for another layer.

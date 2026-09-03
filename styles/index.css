@@ -27,6 +27,8 @@
 html {
   scroll-behavior: smooth !important;
   background-color: rgb(var(--color-bg-base));
+  scrollbar-width: thin;
+  scrollbar-color: rgb(var(--color-accent)) rgb(var(--color-bg-surface));
 }
 
 body {
@@ -34,8 +36,13 @@ body {
   color: rgb(var(--color-text-secondary));
 }
 
+/* Both axes need setting explicitly - a horizontal scrollbar (a code
+   block's overflow-x, for instance) is sized by height, not width, and
+   without it Chrome falls back to its native ~15px bar instead of this
+   6px one. */
 ::-webkit-scrollbar {
   width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-track {

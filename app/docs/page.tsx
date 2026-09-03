@@ -8,12 +8,12 @@ import Image from "@/components/Common/Image";
 export const metadata: Metadata = {
   title: "Docs",
   description:
-    "Practical, plain-language documentation from Reactify Solutions, organized into modules. Claude is the first one. Free, no signup.",
+    "Practical, plain-language documentation from Reactify Solutions, organized into modules. Claude Code is the first one. Free, no signup.",
   alternates: { canonical: "/docs" },
   openGraph: {
     title: "Docs | Reactify Solutions",
     description:
-      "Practical, plain-language documentation from Reactify Solutions, organized into modules. Claude is the first one.",
+      "Practical, plain-language documentation from Reactify Solutions, organized into modules. Claude Code is the first one.",
     url: "/docs",
     images: ["/opengraph-image.png"],
   },

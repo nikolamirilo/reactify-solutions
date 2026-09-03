@@ -1,0 +1,28 @@
+---
+title: "Phase 8: Accessibility"
+description: Audits the built product against WCAG 2.2 AA, fixing what is straightforward and flagging what needs a design decision instead of silently choosing one. The last phase in this example.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- Phase 8 of 8, the last skill in this tree, invoked alongside [SEO](/docs/claude/showcase-seo) once [Validation and testing](/docs/claude/showcase-validation-testing) passes.
+- Unlike every other phase in this example, it does not name a specific file to read. It audits the running product directly against a named external standard, WCAG 2.2 AA.
+- Draws a firm line between fixes it can make on its own, contrast, labeling, and ones that need a human call, a layout change, and refuses to blur that line.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/accessibility/SKILL.md" code={`---
+name: accessibility
+description: Audits the built product against basic accessibility standards. Use after validation-and-testing, alongside seo, as the last phase before launch.
+---
+Check color contrast, keyboard navigation, and screen-reader labeling against WCAG 2.2 AA.
+
+Fix what is straightforward. List what needs a design decision instead of silently choosing one.`} />
+
+## Where it fits
+
+Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as the last of 8 phases, after [Validation and testing](/docs/claude/showcase-validation-testing) passes, alongside [SEO](/docs/claude/showcase-seo). Nothing in this tree runs after it. Start over from [the orchestrator skill](/docs/claude/showcase-orchestrator), or back out to the [Skills Showcase overview](/docs/claude/skills-showcase).

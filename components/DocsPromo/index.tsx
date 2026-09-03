@@ -31,8 +31,8 @@ const DocsPromo = () => {
 
             <p className="mb-6 max-w-[540px] text-[15.5px] leading-relaxed text-textSecondary">
               Settings, CLAUDE.md, hooks, skills, subagents, plugins, MCP. Every way to
-              customize Claude, in plain language, with one example you can copy. We
-              built it because we needed it.
+              customize Claude Code, in plain language, with one example you can copy.
+              We built it because we needed it.
             </p>
 
             <div className="mb-4 flex flex-wrap items-center gap-4">
@@ -78,7 +78,7 @@ const DocsPromo = () => {
               {"         isolated context\n"}
               <span className="text-primaryColor">.mcp.json</span>
               {"           your tools, in git\n"}
-              <span className="text-textFaint"># plus claude.ai, Desktop &amp; Cowork</span>
+              <span className="text-textFaint"># every file, versioned in git</span>
             </pre>
           </div>
         </div>

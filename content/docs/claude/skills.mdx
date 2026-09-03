@@ -1,9 +1,9 @@
 ---
 title: Skills
-description: A folder with a SKILL.md file that Claude loads only when it is relevant. The one artifact that works the same way in Claude Code, the API, and the apps.
+description: A folder with a SKILL.md file that Claude loads only when it is relevant. The one artifact in this reference that is portable outside Claude Code.
 lastReviewed: 2026-09-03
-verifiedAgainst: Anthropic's Claude Code and Claude apps docs, Sep 2026
-appliesTo: Claude Code & apps
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
 ---
 
 <InOneMinute>
@@ -11,7 +11,7 @@ appliesTo: Claude Code & apps
 - A skill is a folder with a `SKILL.md` file, loaded automatically when it is relevant, or invoked directly with `/skill-name`.
 - Unlike `CLAUDE.md`, a skill's body costs no context until you actually use it.
 - Only six frontmatter fields are portable outside Claude Code: `name`, `description`, `license`, `compatibility`, `metadata`, `allowed-tools`.
-- Do not assume a skill syncs between Claude Code and the apps. It does not. Upload it separately to each surface, and keep the source in git.
+- A skill can invoke other skills. See the [Skills Showcase](/docs/claude/skills-showcase) for a full worked example of one skill routing to phase skills, and phase skills routing to their own sub-skills.
 
 </InOneMinute>
 
@@ -21,7 +21,7 @@ appliesTo: Claude Code & apps
 
 <ProgressiveDisclosureDiagram />
 
-Skills are also the one artifact in this whole reference that is genuinely portable. A folder with a `SKILL.md` file works in Claude Code, the Claude API, and the apps, because Anthropic published Agent Skills as an open standard, and a number of tools outside Claude now read the same file layout.
+Skills are also the one artifact in this whole reference that is genuinely portable. A folder with a `SKILL.md` file works in Claude Code and beyond it, because Anthropic published Agent Skills as an open standard, and a number of tools outside Claude Code now read the same file layout.
 
 ## The smallest working example
 

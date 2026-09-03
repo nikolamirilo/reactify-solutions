@@ -1,0 +1,28 @@
+---
+title: "Phase 7: SEO"
+description: Writes page titles, descriptions, and structured data for the product's public-facing pages, grounded in what the product actually does.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- Phase 7 of 8, invoked alongside [Accessibility](/docs/claude/showcase-accessibility) once [Validation and testing](/docs/claude/showcase-validation-testing) passes.
+- Reads `docs/product/definition.md`, not the implementation itself, to stay grounded in what was actually approved rather than guessing from the finished UI.
+- Has an explicit guardrail: do not invent claims the product cannot back up. An SEO skill with no such instruction will happily oversell.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/seo/SKILL.md" code={`---
+name: seo
+description: Adds search optimization for the product's public-facing pages. Use after validation-and-testing, alongside accessibility.
+---
+Read docs/product/definition.md for what the product actually does.
+
+Write page titles, descriptions, and structured data that describe it accurately. Do not invent claims the product cannot back up.`} />
+
+## Where it fits
+
+Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as phase 7, after [Validation and testing](/docs/claude/showcase-validation-testing) passes, alongside [Accessibility](/docs/claude/showcase-accessibility). Neither phase depends on the other's output, so nothing stops them running in either order.

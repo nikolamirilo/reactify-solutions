@@ -1,0 +1,31 @@
+---
+title: "Research sub-skill: Competitors"
+description: Maps existing products solving the same or an adjacent problem, and the gap this idea could fill. The second of research's three sub-skills.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Research](/docs/claude/showcase-research), invoked second of the three.
+- Reads `docs/product/idea.md`. Writes `docs/product/research/competitors.md`.
+- Does not read [Trends research](/docs/claude/showcase-trends-research)'s output. These two run independently of each other, only their parent merges what they produce.
+- [Market research](/docs/claude/showcase-market-research), the last of the three, reads this skill's file back in, since sizing a market usually starts from who else is already in it.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/competitors-research/SKILL.md" code={`---
+name: competitors-research
+description: Maps existing products solving the same or an adjacent problem. Use as the second of research's three sub-skills, invoked by /research.
+---
+Read docs/product/idea.md.
+
+List direct and adjacent competitors, one line each: what they do well, and the gap this idea could fill.
+
+Write docs/product/research/competitors.md.`} />
+
+## Where it fits
+
+Invoked by [Research](/docs/claude/showcase-research), the second of its three sub-skills, alongside [Trends research](/docs/claude/showcase-trends-research). [Market research](/docs/claude/showcase-market-research) runs last and reads this skill's output.

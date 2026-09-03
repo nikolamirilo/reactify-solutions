@@ -1,9 +1,9 @@
 ---
 title: Common mistakes
-description: The specific, verifiable errors people make with Claude customization, plus two terms that sound official but are not real parts of any spec.
+description: The specific, verifiable errors people make with Claude Code customization, plus two terms that sound official but are not real parts of any spec.
 lastReviewed: 2026-09-03
-verifiedAgainst: Anthropic's Claude Code and Claude apps docs, Sep 2026
-appliesTo: Claude Code & apps
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
 ---
 
 <InOneMinute>
@@ -56,7 +56,7 @@ A skill runs code. Vet one before installing it from someone you do not know, th
 
 <Callout type="warn" title={'"Traits" is not an official feature'}>
 
-There is no `traits:` field in the Agent Skills spec, in Claude Code, or in the apps. The confusion usually comes from subagents being informally described as having a "persona," or from a third-party skill author inventing their own `traits:` key as a personal convention. The actual, supported ways to control tone and persona are [Output Styles and subagent prompts](/docs/claude/subagents) in Claude Code, and Styles plus your profile preferences in [the apps](/docs/claude/apps).
+There is no `traits:` field in the Agent Skills spec or in Claude Code. The confusion usually comes from subagents being informally described as having a "persona," or from a third-party skill author inventing their own `traits:` key as a personal convention. The actual, supported way to control tone and persona in Claude Code is [Output Styles and subagent prompts](/docs/claude/subagents).
 
 </Callout>
 

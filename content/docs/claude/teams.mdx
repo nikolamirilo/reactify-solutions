@@ -2,8 +2,8 @@
 title: Rolling out to a team
 description: A staged rollout. What to do this week for yourself, this month for your project, and this quarter for your organization, with the thresholds that tell you when to move to the next stage.
 lastReviewed: 2026-09-03
-verifiedAgainst: Anthropic's Claude Code and Claude apps docs, Sep 2026
-appliesTo: Claude Code & apps
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
 ---
 
 <InOneMinute>
@@ -25,7 +25,7 @@ Follow [Set up in 20 minutes](/docs/claude/quickstart): a personal `CLAUDE.md`, 
 
 ## Stage 2: this month, your project or team
 
-Commit a project `.claude/settings.json` with shared permissions, hooks, and MCP servers. Write a thin `CLAUDE.md`. If your team already uses multiple AI tools, have it do `@AGENTS.md` and add only what is Claude-specific on top. Convert your three most-repeated prompts into project skills under `.claude/skills/`. Add one `PostToolUse` hook that runs your formatter, and one `code-reviewer` subagent.
+Commit a project `.claude/settings.json` with shared permissions, hooks, and MCP servers. Write a thin `CLAUDE.md`. If your team already uses multiple AI tools, have it do `@AGENTS.md` and add only what is Claude-specific on top. Convert your three most-repeated prompts into project skills under `.claude/skills/`, and if a few of those turn out to share phases or steps, see the [Skills Showcase](/docs/claude/skills-showcase) for how to split one big skill into an orchestrator and its sub-skills instead. Add one `PostToolUse` hook that runs your formatter, and one `code-reviewer` subagent.
 
 **Move on once:** a new teammate clones the repo and inherits identical behavior, with no setup document to follow.
 
@@ -42,7 +42,7 @@ If more than roughly a dozen people need the same setup, package it as a [plugin
 - A `CLAUDE.md` section growing into numbered steps → move it to a skill.
 - A rule that keeps getting skipped → move it from `CLAUDE.md` to a hook.
 - A task filling your context with noise you do not need afterward → move it to a subagent.
-- A workflow needed in Excel, the web app, *and* the terminal → build it as a portable skill using only the six spec-compliant frontmatter fields, not a Claude Code-only slash command.
+- A workflow that needs to travel outside Claude Code entirely → build it as a portable skill using only the six spec-compliant frontmatter fields, not a Claude Code-only slash command.
 
 </InOneMinute>
 
@@ -51,7 +51,6 @@ If more than roughly a dozen people need the same setup, package it as a [plugin
 <FullReference label="What Team and Enterprise plans add">
 
 - **Skill provisioning.** Owners (not admins or general members) can provision skills organization-wide from Organization Settings, then Skills. Provisioned skills appear for everyone, enabled by default, and individually toggleable.
-- **Skill content scanning.** Enterprise plans can scan skills uploaded through claude.ai and Cowork before they can run. A failed scan blocks use. This does not cover skills uploaded through the API or Console.
 - **Managed settings and managed marketplaces.** `managed-settings.json` and a managed marketplace let IT enforce policy that individual projects cannot override, mirroring the deny-always-wins rule from [settings.json](/docs/claude/settings) at the organization level.
 - **The three-tier admin model.** Individual users, team leads, and org owners each have a different scope of control. Provisioning and scanning specifically require the owner tier.
 
