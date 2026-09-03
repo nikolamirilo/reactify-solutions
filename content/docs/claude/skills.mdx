@@ -19,6 +19,8 @@ appliesTo: Claude Code & apps
 
 `CLAUDE.md` loads in full, every session, whether you need it or not. A skill works the other way. Claude sees only its name and a one-line description by default, roughly 100 tokens, and loads the full body only when the current task actually matches it. This is called **progressive disclosure**, and it is why skills scale to a large library without bloating every conversation.
 
+<ProgressiveDisclosureDiagram />
+
 Skills are also the one artifact in this whole reference that is genuinely portable. A folder with a `SKILL.md` file works in Claude Code, the Claude API, and the apps, because Anthropic published Agent Skills as an open standard, and a number of tools outside Claude now read the same file layout.
 
 ## The smallest working example
