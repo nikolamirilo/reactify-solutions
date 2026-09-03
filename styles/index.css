@@ -150,12 +150,17 @@ body {
   .docs-li {
     @apply text-[15px] leading-relaxed text-textSecondary;
   }
+  /* A flex row here would turn every inline run (text, <code>, <strong>)
+     inside the <li> into its own non-wrapping flex item instead of letting
+     them wrap like normal prose, which is what overflowed the page on
+     narrow screens. Position the bullet in a padding gutter instead, so
+     the <li>'s content stays normal inline flow and wraps correctly. */
   .docs-ul > .docs-li {
-    @apply flex gap-2.5;
+    @apply relative pl-5;
   }
   .docs-ul > .docs-li::before {
     content: "\2013";
-    @apply flex-shrink-0 text-textFaint;
+    @apply absolute left-0 text-textFaint;
   }
   .docs-a {
     @apply text-primaryColor underline decoration-primaryColor/30 underline-offset-4 transition-colors hover:text-accentGreen;
