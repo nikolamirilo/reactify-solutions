@@ -12,11 +12,14 @@
   "dependencies": {
     "@lottiefiles/dotlottie-react": "^0.17.15",
     "@material-tailwind/react": "^2.1.10",
+    "@mdx-js/mdx": "^3.1.1",
     "@neondatabase/serverless": "^1.0.2",
     "@react-email/components": "^1.0.7",
     "@vercel/postgres": "^0.9.0",
     "framer-motion": "^11.18.2",
+    "github-slugger": "^2.0.0",
     "lucide-react": "^0.469.0",
+    "minisearch": "^7.2.0",
     "next": "^16.1.6",
     "next-themes": "^0.2.1",
     "prismjs": "^1.30.0",
@@ -27,6 +30,8 @@
     "react-icons": "^5.5.0",
     "react-modal-video": "^2.0.0",
     "react-star-ratings": "^2.3.0",
+    "rehype-slug": "^6.0.0",
+    "remark-gfm": "^4.0.1",
     "resend": "^3.4.0"
   },
   "devDependencies": {

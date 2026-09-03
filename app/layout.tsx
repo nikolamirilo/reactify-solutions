@@ -35,6 +35,17 @@ export default function RootLayout({
             __html: `(function(){try{var t=localStorage.getItem('theme');if(!t||t==='"dark"'||t==='dark'){document.documentElement.classList.add('dark')}else{document.documentElement.classList.remove('dark')}}catch(e){document.documentElement.classList.add('dark')}})()`,
           }}
         />
+        {/* CodeBlock highlights with Prism.highlight() itself and injects the
+            result via dangerouslySetInnerHTML. Left alone, prismjs also runs
+            its own DOM-scanning auto-highlighter on mount, which mutates
+            matching <pre> elements (adding tabindex="0") outside React's
+            knowledge and causes a hydration mismatch warning. This flag must
+            be set on window before prismjs's own module code first runs. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.Prism=window.Prism||{};window.Prism.manual=true;`,
+          }}
+        />
       </head>
       <body className={`bg-dark overflow-x-hidden ${roboto.className}`}>
         <script

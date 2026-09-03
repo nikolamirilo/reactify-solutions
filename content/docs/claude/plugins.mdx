@@ -1,0 +1,70 @@
+---
+title: Plugins and marketplaces
+description: Package commands, skills, hooks, and MCP servers into one installable bundle — worth it once a dozen or more people need identical setup.
+lastReviewed: 2026-09-03
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A plugin bundles slash commands, subagents, skills, hooks, and MCP servers into one installable pack.
+- A marketplace is just a public GitHub repo — no npm package, no hosting required.
+- Reach for this once roughly a dozen or more people need identical setup. Below that, shared skills in a shared repo are simpler.
+- The thing people get wrong: putting a plugin-level `CLAUDE.md` in the bundle expecting it to load. The plugin system ignores it — use a skill instead.
+
+</InOneMinute>
+
+## What it is
+
+Everything else on this reference — commands, skills, hooks, MCP servers — is something you set up once, in one project. A plugin packages several of those together so a whole team can install identical tooling in one step, instead of copying files around by hand.
+
+## The smallest working example
+
+<CodeBlock language="text" filename="my-plugin/" code={`my-plugin/
+├── .claude-plugin/
+│   └── plugin.json      # required: name, version, description
+├── commands/
+├── agents/
+├── skills/
+│   └── api-tester/
+│       └── SKILL.md
+├── hooks/
+└── .mcp.json`} />
+
+<CodeBlock language="json" filename="my-plugin/.claude-plugin/plugin.json" code={`{
+  "name": "api-tester",
+  "version": "1.0.0",
+  "description": "Shared API testing commands and a skill."
+}`} />
+
+- `plugin.json` needs at minimum a `name`. `version`, `description`, `author`, and `keywords` are all optional but worth setting.
+- Anything under `commands/`, `agents/`, `skills/`, and `hooks/` is picked up automatically by folder convention — no manifest entry per file.
+
+<CheckItWorked>
+Run <code>claude --plugin-dir ./my-plugin</code> from anywhere. Its commands and skills are available immediately, without publishing anything.
+</CheckItWorked>
+
+## Publishing one for your team
+
+A marketplace is a public GitHub repository with a `marketplace.json` at its root, listing one or more plugins by name and source.
+
+<CodeBlock language="json" filename="marketplace.json" code={`{
+  "name": "acme-plugins",
+  "owner": "Acme Inc",
+  "plugins": [
+    { "name": "api-tester", "source": "./plugins/api-tester" }
+  ]
+}`} />
+
+Install from it with `/plugin install api-tester@acme-plugins`, a direct GitHub URL, or a local path — no npm registry or hosting step required.
+
+## When to reach for this
+
+Plugins are worth the extra packaging step once a dozen or more people need the exact same setup — the install becomes one command instead of a setup document everyone has to follow by hand. Below that scale, a shared skill or a shared `.claude/` folder in your repo does the same job with less machinery.
+
+<FullReference label="Enterprise distribution">
+
+Organizations can enforce a managed marketplace and, with `strictPluginOnlyCustomization`, lock out file-based skills, commands, and agents entirely — so plugins become the *only* way anyone can customize Claude Code, giving IT a single audited distribution channel. This is a managed-settings-only policy; it is not something an individual project can turn on for itself.
+
+</FullReference>

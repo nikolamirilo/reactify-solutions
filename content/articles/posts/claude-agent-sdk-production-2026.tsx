@@ -1038,6 +1038,17 @@ async for message in query(
       <ul className="mb-6 list-disc space-y-2 pl-6">
         <li>
           <a
+            href="/docs/claude/subagents"
+            className="font-semibold text-primaryColor hover:underline"
+          >
+            Subagents &amp; slash commands, in our docs
+          </a>
+          {" "}&mdash; the same subagent concept the SDK exposes
+          programmatically, explained for Claude Code&rsquo;s own
+          <code>.claude/agents/</code> files.
+        </li>
+        <li>
+          <a
             href="https://code.claude.com/docs/en/agent-sdk/overview"
             className="font-semibold text-primaryColor hover:underline"
             target="_blank"

@@ -4,7 +4,8 @@ module.exports = withMT({
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}"
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./content/**/*.{js,ts,jsx,tsx,mdx}"
   ],
   darkMode: "class",
   theme: {
@@ -21,6 +22,7 @@ module.exports = withMT({
       darkSurface:    "rgb(var(--color-bg-surface)       / <alpha-value>)",
       darkElevated:   "rgb(var(--color-bg-elevated)      / <alpha-value>)",
       darkBorder:     "rgb(var(--color-border)           / <alpha-value>)",
+      darkBorderStrong: "rgb(var(--color-border-strong)  / <alpha-value>)",
       primaryColor:   "rgb(var(--color-accent)           / <alpha-value>)",
       primaryDark:    "rgb(var(--color-accent-dark)      / <alpha-value>)",
       accentGreen:    "rgb(var(--color-accent-green)     / <alpha-value>)",
@@ -30,6 +32,8 @@ module.exports = withMT({
       textColor:      "rgb(var(--color-text-muted)       / <alpha-value>)",
       textSecondary:  "rgb(var(--color-text-secondary)   / <alpha-value>)",
       textDim:        "rgb(var(--color-text-dim)         / <alpha-value>)",
+      textFaint:      "rgb(var(--docs-text-faint)        / <alpha-value>)",
+      docsCodeBg:     "rgb(var(--docs-code-bg)           / <alpha-value>)",
       textPrimary:    "rgb(var(--color-text-primary)     / <alpha-value>)",
       error:          "rgb(var(--color-error)            / <alpha-value>)",
     },
