@@ -2,13 +2,114 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import type { DocTopicNav } from "@/content/docs/nav";
+import { useState, useEffect } from "react";
+import type { DocTopicNav, DocNavPage } from "@/content/docs/nav";
 
 const cx = (...classes: Array<string | false | undefined>) =>
   classes.filter(Boolean).join(" ");
 
+function ChevronIcon({ open }: { open: boolean }) {
+  return (
+    <svg
+      width="12"
+      height="12"
+      viewBox="0 0 12 12"
+      fill="none"
+      className={cx("flex-shrink-0 transition-transform duration-200", open ? "rotate-90" : "")}
+    >
+      <path d="M4 2.5L7.5 6L4 9.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
+    </svg>
+  );
+}
+
+function PageLink({
+  page,
+  href,
+  isActive,
+}: {
+  page: DocNavPage;
+  href: string;
+  isActive: boolean;
+}) {
+  return (
+    <Link
+      href={href}
+      className={cx(
+        "relative rounded-md px-3 py-[7px] text-[13.5px] transition-colors",
+        isActive
+          ? "bg-primaryColor/[0.07] font-medium text-primaryColor"
+          : "text-textSecondary hover:text-white",
+      )}
+    >
+      {isActive && (
+        <span className="absolute inset-y-[5px] left-0 w-[2px] rounded-full bg-primaryColor shadow-[0_0_10px_rgba(0,212,200,0.6)]" />
+      )}
+      {page.label}
+    </Link>
+  );
+}
+
+function CollapsiblePage({
+  page,
+  topicHref,
+  pathname,
+}: {
+  page: DocNavPage;
+  topicHref: string;
+  pathname: string;
+}) {
+  const href = `${topicHref}/${page.slug}`;
+  const isActive = pathname === href;
+  const childSlugs = page.children?.map((c) => `${topicHref}/${c.slug}`) ?? [];
+  const hasActiveChild = childSlugs.includes(pathname);
+  const [open, setOpen] = useState(isActive || hasActiveChild);
+
+  // Re-sync when pathname changes (navigating to a child)
+  useEffect(() => {
+    if (isActive || hasActiveChild) setOpen(true);
+  }, [isActive, hasActiveChild]);
+
+  if (!page.children?.length) {
+    return <PageLink page={page} href={href} isActive={isActive} />;
+  }
+
+  return (
+    <div>
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className={cx(
+          "flex w-full items-center justify-between rounded-md px-3 py-[7px] text-left text-[13.5px] transition-colors",
+          isActive || hasActiveChild
+            ? "font-medium text-white"
+            : "text-textSecondary hover:text-white",
+        )}
+      >
+        <span>{page.label}</span>
+        <ChevronIcon open={open} />
+      </button>
+
+      {open && (
+        <div className="mt-0.5 flex flex-col gap-0.5 border-l border-darkBorder ml-3 pl-2">
+          {page.children.map((child) => {
+            const childHref = `${topicHref}/${child.slug}`;
+            return (
+              <PageLink
+                key={child.slug}
+                page={child}
+                href={childHref}
+                isActive={pathname === childHref}
+              />
+            );
+          })}
+        </div>
+      )}
+    </div>
+  );
+}
+
 export default function DocsSidebar({ nav }: { nav: DocTopicNav }) {
   const pathname = usePathname();
+  const topicHref = `/docs/${nav.topic}`;
 
   return (
     <nav aria-label="Docs navigation" className="flex flex-col gap-5">
@@ -34,27 +135,14 @@ export default function DocsSidebar({ nav }: { nav: DocTopicNav }) {
           <div className="px-3 pb-2 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-textFaint">
             {section.title}
           </div>
-          {section.pages.map((page) => {
-            const href = `/docs/${nav.topic}/${page.slug}`;
-            const isActive = pathname === href;
-            return (
-              <Link
-                key={page.slug}
-                href={href}
-                className={cx(
-                  "relative rounded-md px-3 py-[7px] text-[13.5px] transition-colors",
-                  isActive
-                    ? "bg-primaryColor/[0.07] font-medium text-primaryColor"
-                    : "text-textSecondary hover:text-white",
-                )}
-              >
-                {isActive && (
-                  <span className="absolute inset-y-[5px] left-0 w-[2px] rounded-full bg-primaryColor shadow-[0_0_10px_rgba(0,212,200,0.6)]" />
-                )}
-                {page.label}
-              </Link>
-            );
-          })}
+          {section.pages.map((page) => (
+            <CollapsiblePage
+              key={page.slug}
+              page={page}
+              topicHref={topicHref}
+              pathname={pathname}
+            />
+          ))}
         </div>
       ))}
     </nav>

@@ -5,6 +5,7 @@
 export type DocNavPage = {
   slug: string;
   label: string;
+  children?: DocNavPage[];
 };
 
 export type DocNavSection = {
@@ -62,21 +63,36 @@ export const docsNav: DocTopicNav[] = [
         pages: [
           { slug: "skills-showcase", label: "Overview" },
           { slug: "showcase-orchestrator", label: "The orchestrator skill" },
-          { slug: "showcase-definition-and-planning", label: "Phase 1: Definition & planning" },
-          { slug: "showcase-understanding-of-idea", label: "↳ Understanding the idea" },
-          { slug: "showcase-research", label: "↳ Research" },
-          { slug: "showcase-product-definition", label: "↳ Product definition" },
-          { slug: "showcase-planning", label: "↳ Planning" },
-          { slug: "showcase-implementation", label: "Phase 2: Implementation" },
-          { slug: "showcase-database-implementation", label: "↳ Database" },
-          { slug: "showcase-backend-implementation", label: "↳ Backend" },
-          { slug: "showcase-frontend-implementation", label: "↳ Frontend" },
-          { slug: "showcase-integration-and-deployment", label: "↳ Integration & deployment" },
-          { slug: "showcase-pre-launch-activities", label: "Phase 3: Pre-launch activities" },
-          { slug: "showcase-validation-testing", label: "↳ Validation & testing" },
-          { slug: "showcase-seo", label: "↳ SEO" },
-          { slug: "showcase-accessibility", label: "↳ Accessibility" },
-          { slug: "showcase-ui-ux-polish", label: "↳ UI/UX polish" },
+          {
+            slug: "showcase-definition-and-planning",
+            label: "Phase 1: Definition & planning",
+            children: [
+              { slug: "showcase-understanding-of-idea", label: "Understanding the idea" },
+              { slug: "showcase-research", label: "Research" },
+              { slug: "showcase-product-definition", label: "Product definition" },
+              { slug: "showcase-planning", label: "Planning" },
+            ],
+          },
+          {
+            slug: "showcase-implementation",
+            label: "Phase 2: Implementation",
+            children: [
+              { slug: "showcase-database-implementation", label: "Database" },
+              { slug: "showcase-backend-implementation", label: "Backend" },
+              { slug: "showcase-frontend-implementation", label: "Frontend" },
+              { slug: "showcase-integration-and-deployment", label: "Integration & deployment" },
+            ],
+          },
+          {
+            slug: "showcase-pre-launch-activities",
+            label: "Phase 3: Pre-launch activities",
+            children: [
+              { slug: "showcase-validation-testing", label: "Validation & testing" },
+              { slug: "showcase-seo", label: "SEO" },
+              { slug: "showcase-accessibility", label: "Accessibility" },
+              { slug: "showcase-ui-ux-polish", label: "UI/UX polish" },
+            ],
+          },
         ],
       },
       {
