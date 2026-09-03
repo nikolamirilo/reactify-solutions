@@ -1,0 +1,51 @@
+---
+title: Slash commands
+description: A slash command is a saved prompt template you trigger yourself by typing /name. Use one for a procedure you want to run exactly, on demand, without Claude deciding when to reach for it.
+lastReviewed: 2026-09-03
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A slash command is a prompt template you trigger by typing `/name` in the chat input.
+- As of 2026, a single-file slash command and a skill are the same underlying feature. The single-file form still works, but it is the older pattern.
+- `$ARGUMENTS` captures everything you type after the command name. `$1`, `$2` capture positional arguments individually.
+- `disable-model-invocation: true` locks the command to manual use only — Claude will never call it on your behalf.
+
+</InOneMinute>
+
+## What it is
+
+A slash command is an explicit prompt template you trigger yourself by typing `/name`. The difference from a [skill](/docs/claude/skills) is that Claude does not decide to use it on your behalf unless you allow that. You are always the one pulling the trigger.
+
+## The smallest working example
+
+<CodeBlock language="markdown" filename=".claude/commands/commit.md" code={`---
+description: Create a git commit with a conventional message
+allowed-tools: Bash(git add:*), Bash(git commit:*)
+argument-hint: [message]
+---
+# Commit Changes
+!\`git diff --cached\`
+
+Create a commit message following Conventional Commits. If $ARGUMENTS is provided, use it.`} />
+
+- `$ARGUMENTS` captures everything typed after the command name. `$1`, `$2` capture positional arguments individually.
+- `allowed-tools` scopes exactly what this command may run. Useful for a command you want to trust without reviewing every time.
+- The `!` prefix runs a command and inserts its output before your prompt reaches Claude, same as in a skill.
+
+<CheckItWorked>
+Type <code>/commit fix login bug</code>. Claude drafts a commit using your staged diff and the text you passed as <code>$ARGUMENTS</code>.
+</CheckItWorked>
+
+## How it behaves
+
+- Files live in `.claude/commands/` (project) or `~/.claude/commands/` (personal). The filename becomes the command name.
+- `disable-model-invocation: true` means only you can trigger it by typing the slash command. The model itself will never call it automatically.
+- Subdirectories create namespaces: `.claude/commands/frontend/component.md` becomes `/frontend:component`.
+- If a skill and a command share a name, the skill wins.
+
+## When not to use one
+
+A slash command is for a procedure you want to trigger explicitly, every time. If it should fire automatically when Claude recognises the right moment, that is a [skill](/docs/claude/skills). If you need to keep noisy work out of your main conversation, that is a [subagent](/docs/claude/subagents). If the task fans out across multiple agents in a fixed structure, that is a [workflow](/docs/claude/workflows).
