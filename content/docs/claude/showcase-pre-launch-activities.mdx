@@ -1,0 +1,42 @@
+---
+title: "Phase 3: Pre-launch activities"
+description: Validates the build, then optimizes it for search, accessibility, and everyday use before launch. The last of three phases.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- Phase 3 of 3, the last phase in this example, invoked once [Implementation](/docs/claude/showcase-implementation) reports a working, deployed build.
+- Invokes four sub-skills, but not all in a strict line: validation runs first, then the other three run independently of each other.
+- Nothing invokes anything after this phase. Once all four sub-skills report back, the process is done.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/pre-launch-activities/SKILL.md" code={`---
+name: pre-launch-activities
+description: Runs the third and last phase of building a new digital product, validating it, then optimizing it for search, accessibility, and everyday use before launch. Use as phase 3 of develop-new-digital-product, after implementation ships a working, deployed build. Invokes /validation-and-testing, /seo, /accessibility, and /ui-ux-polish.
+---
+## Invoke
+
+1. /validation-and-testing first. There is no point polishing a product that does not work.
+2. /seo, /accessibility, and /ui-ux-polish, in any order, once validation passes. None of the three depends on either of the others.
+
+Report back once all four are done. That is the whole process, end to end.`} />
+
+- This is the one phase in the tree whose sub-skills are not all sequential. Validation gates the other three, but those three do not gate each other. The description says so directly, "in any order", rather than leaving Claude to invent a sequence that does not matter.
+
+## Its sub-skills
+
+| Sub-skill | Runs |
+|---|---|
+| [Validation & testing](/docs/claude/showcase-validation-testing) | First, gates the other three |
+| [SEO](/docs/claude/showcase-seo) | After validation, any order |
+| [Accessibility](/docs/claude/showcase-accessibility) | After validation, any order |
+| [UI/UX polish](/docs/claude/showcase-ui-ux-polish) | After validation, any order |
+
+## Where it fits
+
+Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as phase 3, after [Implementation](/docs/claude/showcase-implementation). Nothing in this tree runs after it. Start over from [the orchestrator skill](/docs/claude/showcase-orchestrator), or back out to the [Skills Showcase overview](/docs/claude/skills-showcase).

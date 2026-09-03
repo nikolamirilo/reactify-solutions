@@ -1,0 +1,30 @@
+---
+title: "Implementation sub-skill: Integration & deployment"
+description: Wires the database, backend, and frontend together end to end and deploys the result. The fourth and last of implementation's four sub-skills.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Implementation](/docs/claude/showcase-implementation), invoked fourth and last of its four, after [Database](/docs/claude/showcase-database-implementation), [Backend](/docs/claude/showcase-backend-implementation), and [Frontend](/docs/claude/showcase-frontend-implementation) all exist.
+- Its whole job is catching what only breaks when the three pieces run together, not re-testing each piece in isolation again.
+- Reports a working, deployed build back to [Implementation](/docs/claude/showcase-implementation), which is what tells that phase it is safe to hand off to [Pre-launch activities](/docs/claude/showcase-pre-launch-activities).
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/integration-and-deployment/SKILL.md" code={`---
+name: integration-and-deployment
+description: Wires the frontend, backend, and database together end to end and deploys the result. Use as the fourth and last of implementation's four sub-skills, invoked by /implementation, after the other three exist.
+---
+Run the full stack together, not each piece in isolation, and fix whatever only breaks when they are connected.
+
+Deploy to a real environment.
+
+Report the working, deployed build back to /implementation.`} />
+
+## Where it fits
+
+Invoked by [Implementation](/docs/claude/showcase-implementation), last of its four sub-skills, after [Database](/docs/claude/showcase-database-implementation), [Backend](/docs/claude/showcase-backend-implementation), and [Frontend](/docs/claude/showcase-frontend-implementation). Once this skill reports back, [Implementation](/docs/claude/showcase-implementation) hands off to [Pre-launch activities](/docs/claude/showcase-pre-launch-activities).

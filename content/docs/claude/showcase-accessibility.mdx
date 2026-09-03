@@ -1,15 +1,15 @@
 ---
-title: "Phase 8: Accessibility"
-description: Audits the built product against WCAG 2.2 AA, fixing what is straightforward and flagging what needs a design decision instead of silently choosing one. The last phase in this example.
+title: "Pre-launch sub-skill: Accessibility"
+description: Audits the built product against WCAG 2.2 AA, fixing what is straightforward and flagging what needs a design decision instead of silently choosing one.
 lastReviewed: 2026-09-03
 appliesTo: Claude Code
 ---
 
 <InOneMinute>
 
-- Phase 8 of 8, the last skill in this tree, invoked alongside [SEO](/docs/claude/showcase-seo) once [Validation and testing](/docs/claude/showcase-validation-testing) passes.
-- Unlike every other phase in this example, it does not name a specific file to read. It audits the running product directly against a named external standard, WCAG 2.2 AA.
-- Draws a firm line between fixes it can make on its own, contrast, labeling, and ones that need a human call, a layout change, and refuses to blur that line.
+- A sub-skill of [Pre-launch activities](/docs/claude/showcase-pre-launch-activities), invoked alongside [SEO](/docs/claude/showcase-seo) and [UI/UX polish](/docs/claude/showcase-ui-ux-polish), once [Validation & testing](/docs/claude/showcase-validation-testing) passes.
+- Unlike most sub-skills in this example, it does not name a specific `docs/product/` file to read. It audits the running product directly against a named external standard, WCAG 2.2 AA.
+- Draws a firm line between fixes it can make on its own, contrast, labeling, and ones that need a human call, a layout change, and refuses to blur that line. [UI/UX polish](/docs/claude/showcase-ui-ux-polish), its sibling, draws a similar line for usability rather than accessibility.
 
 </InOneMinute>
 
@@ -25,4 +25,4 @@ Fix what is straightforward. List what needs a design decision instead of silent
 
 ## Where it fits
 
-Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as the last of 8 phases, after [Validation and testing](/docs/claude/showcase-validation-testing) passes, alongside [SEO](/docs/claude/showcase-seo). Nothing in this tree runs after it. Start over from [the orchestrator skill](/docs/claude/showcase-orchestrator), or back out to the [Skills Showcase overview](/docs/claude/skills-showcase).
+Invoked by [Pre-launch activities](/docs/claude/showcase-pre-launch-activities), after [Validation & testing](/docs/claude/showcase-validation-testing) passes, alongside [SEO](/docs/claude/showcase-seo) and [UI/UX polish](/docs/claude/showcase-ui-ux-polish). Once all four sub-skills in this phase report back, nothing in the tree runs after it. Start over from [the orchestrator skill](/docs/claude/showcase-orchestrator), or back out to the [Skills Showcase overview](/docs/claude/skills-showcase).

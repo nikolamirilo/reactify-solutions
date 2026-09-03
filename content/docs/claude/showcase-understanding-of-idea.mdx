@@ -1,5 +1,5 @@
 ---
-title: "Phase 1: Understanding the idea"
+title: "Definition & planning sub-skill: Understanding the idea"
 description: Turns a raw, one-paragraph idea into a clear problem statement, target user, and success definition, before any research starts.
 lastReviewed: 2026-09-03
 appliesTo: Claude Code
@@ -7,7 +7,7 @@ appliesTo: Claude Code
 
 <InOneMinute>
 
-- Phase 1 of 8 in the [Skills Showcase](/docs/claude/skills-showcase) example, invoked first by the orchestrator.
+- A sub-skill of [Definition & planning](/docs/claude/showcase-definition-and-planning), invoked first of its four.
 - Its job: turn a vague idea into a written problem statement, target user, and definition of success.
 - It invokes no sub-skill. Everything it needs to do fits inside one file.
 - It asks before it assumes. A skill that fills in the user's answers itself defeats the point of this phase.
@@ -33,4 +33,4 @@ Save the answers to docs/product/idea.md: problem statement, target user, and su
 
 ## Where it fits
 
-Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as the first phase, before anything else runs. It hands off to [Research](/docs/claude/showcase-research), which is the first phase to read `docs/product/idea.md`.
+Invoked by [Definition & planning](/docs/claude/showcase-definition-and-planning), first of its four sub-skills, before anything else runs. Hands off to [Research](/docs/claude/showcase-research), which is the next sub-skill to read `docs/product/idea.md`.

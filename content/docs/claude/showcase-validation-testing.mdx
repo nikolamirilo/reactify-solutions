@@ -1,16 +1,16 @@
 ---
-title: "Phase 6: Validation and testing"
-description: Tests the built product against the original success definition and the approved scope, and reports anything that shipped outside it.
+title: "Pre-launch sub-skill: Validation & testing"
+description: Tests the built product against the original success definition and the approved scope, and reports anything that shipped outside it. Gates the other three sub-skills in this phase.
 lastReviewed: 2026-09-03
 appliesTo: Claude Code
 ---
 
 <InOneMinute>
 
-- Phase 6 of 8, invoked after [Implementation](/docs/claude/showcase-implementation).
-- Checks the product against two different, earlier files: the success definition from phase 1, and the scope from phase 3, not just whether the code runs.
+- A sub-skill of [Pre-launch activities](/docs/claude/showcase-pre-launch-activities), invoked first of its four, right after [Implementation](/docs/claude/showcase-implementation) reports a working, deployed build.
+- Checks the product against two different, earlier files: the success definition from `idea.md`, and the scope from `definition.md`, not just whether the code runs.
 - Its explicit job is to report scope drift, features that shipped but were not in the approved definition, not silently accept it.
-- Runs before SEO and accessibility, on the reasoning that testing a product that does not do what it was supposed to do first is wasted effort on the other two.
+- The one sub-skill in this phase that gates the rest. [SEO](/docs/claude/showcase-seo), [Accessibility](/docs/claude/showcase-accessibility), and [UI/UX polish](/docs/claude/showcase-ui-ux-polish) all wait for this one to pass first.
 
 </InOneMinute>
 
@@ -28,4 +28,4 @@ Report any feature that shipped outside the approved scope.`} />
 
 ## Where it fits
 
-Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as phase 6, after [Implementation](/docs/claude/showcase-implementation). Hands off to [SEO](/docs/claude/showcase-seo) and [Accessibility](/docs/claude/showcase-accessibility), the two remaining phases.
+Invoked by [Pre-launch activities](/docs/claude/showcase-pre-launch-activities), first of its four sub-skills, right after [Implementation](/docs/claude/showcase-implementation). Once it passes, [SEO](/docs/claude/showcase-seo), [Accessibility](/docs/claude/showcase-accessibility), and [UI/UX polish](/docs/claude/showcase-ui-ux-polish) can all run, in any order.

@@ -1,6 +1,6 @@
 ---
 title: The orchestrator skill
-description: develop-new-digital-product does not do any of the work itself. It names every phase, in order, and which skill to invoke for each one.
+description: develop-new-digital-product does not do any of the work itself. It names three phases, in order, and which skill to invoke for each one.
 lastReviewed: 2026-09-03
 appliesTo: Claude Code
 ---
@@ -8,9 +8,9 @@ appliesTo: Claude Code
 <InOneMinute>
 
 - This is the top of the tree in the [Skills Showcase](/docs/claude/skills-showcase). Nothing invokes it, it invokes everything else.
-- Its job is routing, not doing. The body is a phase list with instructions for which skill to reach for at each one.
+- Its job is routing, not doing. The body is a three-phase list with instructions for which skill to reach for at each one.
 - Its `description` has to cover the whole process in one or two sentences, specific enough that Claude reaches for it, and not a phase skill directly, when the request is genuinely "build me something new."
-- Two of its eight phases, research and planning, fan out into their own sub-skills. The other six stay flat.
+- All three phases fan out into their own sub-skills. Unlike the first draft of this example, no phase here is a bare leaf.
 
 </InOneMinute>
 
@@ -22,23 +22,22 @@ description: Runs the full process for building a new digital product, from a ra
 ---
 ## Phases, in order
 
-1. Understanding the idea -> invoke /understanding-of-idea
-2. Research -> invoke /research (splits further into trends, competitors, market)
-3. Product definition -> invoke /product-definition
-4. Planning -> invoke /planning (splits further into business requirements, architecture)
-5. Implementation -> invoke /implementation
-6. Validation and testing -> invoke /validation-and-testing
-7. SEO -> invoke /seo
-8. Accessibility -> invoke /accessibility
+1. Definition and planning -> invoke /definition-and-planning
+   (covers understanding the idea, research, product definition, and planning)
+2. Implementation -> invoke /implementation
+   (covers the database, backend, frontend, and integration and deployment)
+3. Pre-launch activities -> invoke /pre-launch-activities
+   (covers validation and testing, SEO, accessibility, and UI/UX polish)
 
 Work through these phases in order. Do not skip a phase without telling the user which one and why.`} />
 
+- Each phase line names what it covers in parentheses, the same trick the earlier version of this skill used for research and planning. That is what tells Claude a phase is not a single step, without needing a fourth level in the tree to prove it.
+- "Do not skip a phase without telling the user" is the one enforcement-flavored line in the whole file, and it is still advice. A rule that must never be skipped belongs in a hook, not a skill description.
+
 ## Why the description matters most here
 
-An orchestrator's description has to do two jobs a phase skill's does not. It has to be broad enough to match "I want to build X" before any phase has even been chosen, and specific enough that Claude does not reach for it once the user is already deep in one phase. "Review my competitor list" should match [Competitor research](/docs/claude/showcase-competitors-research) directly, not restart the whole process from the top.
-
-That is a harder needle to thread than it looks. A description this broad, "runs the full process for building a new digital product", would be a bad description for any phase skill: too vague to tell Claude when to prefer it over a sibling. It works here only because nothing else in the tree is competing for the same, very general request.
+An orchestrator's description has to do two jobs a phase skill's does not. It has to be broad enough to match "I want to build X" before any phase has even been chosen, and specific enough that Claude does not reach for it once the user is already deep in one phase. "Review my database schema" should match [Database implementation](/docs/claude/showcase-database-implementation) directly, not restart the whole process from the top.
 
 ## Where it fits
 
-Nothing sits above this skill. It is the entry point for the whole example. It hands off to eight phase skills, in a fixed order: [Understanding the idea](/docs/claude/showcase-understanding-of-idea), [Research](/docs/claude/showcase-research), [Product definition](/docs/claude/showcase-product-definition), [Planning](/docs/claude/showcase-planning), [Implementation](/docs/claude/showcase-implementation), [Validation and testing](/docs/claude/showcase-validation-testing), [SEO](/docs/claude/showcase-seo), and [Accessibility](/docs/claude/showcase-accessibility).
+Nothing sits above this skill. It is the entry point for the whole example. It hands off to three phase skills, in a fixed order: [Definition & planning](/docs/claude/showcase-definition-and-planning), [Implementation](/docs/claude/showcase-implementation), and [Pre-launch activities](/docs/claude/showcase-pre-launch-activities).

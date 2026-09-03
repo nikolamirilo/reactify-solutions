@@ -1,16 +1,15 @@
 ---
-title: "Phase 5: Implementation"
-description: Builds the product against the approved architecture. The phase where the example finally writes code, five phases in.
+title: "Phase 2: Implementation"
+description: Builds the database, backend, frontend, and deploys the result. The phase where the example switches from writing planning documents to writing code.
 lastReviewed: 2026-09-03
 appliesTo: Claude Code
 ---
 
 <InOneMinute>
 
-- Phase 5 of 8, invoked once [Planning](/docs/claude/showcase-planning) and its two sub-skills are done and the user has confirmed the plan.
-- The first phase in this whole tree that writes application code rather than a planning document.
-- Reads every file under `docs/product/`, not just the immediately preceding one, since implementation has to honor the original idea and scope, not only the architecture.
-- Deliberately conservative about deviating from the approved architecture without saying so.
+- Phase 2 of 3, invoked once [Definition & planning](/docs/claude/showcase-definition-and-planning) is confirmed.
+- Invokes four sub-skills in a fixed, dependency-driven order: the database has to exist before the backend can query it, the backend before the frontend can call it.
+- A deliberate contrast with phase 1: none of its sub-skills write to `docs/product/`. By this point the plan has become code, and the codebase itself is the handoff.
 
 </InOneMinute>
 
@@ -18,16 +17,26 @@ appliesTo: Claude Code
 
 <CodeBlock language="yaml" filename=".claude/skills/implementation/SKILL.md" code={`---
 name: implementation
-description: Builds the product against docs/product/planning/architecture.md. Use after planning is complete and the user has approved it.
+description: Runs the second phase of building a new digital product, the database, the backend, the frontend, and getting it all deployed together. Use as phase 2 of develop-new-digital-product, after definition-and-planning is confirmed. Invokes /database-implementation, /backend-implementation, /frontend-implementation, and /integration-and-deployment, in that order.
 ---
-Read every file under docs/product/.
+## Invoke, in order
 
-Build in the order architecture.md lays out its components.
+1. /database-implementation
+2. /backend-implementation
+3. /frontend-implementation
+4. /integration-and-deployment
 
-Do not deviate from the approved architecture without flagging the change and why.`} />
+Unlike the previous phase, none of these write to docs/product/. Read docs/product/planning.md for the architecture, then build. Hand off to /pre-launch-activities once integration-and-deployment reports a working, deployed build.`} />
 
-- "Read every file under docs/product/" is a small but deliberate choice. By phase 5, five separate files exist. Rereading all of them, instead of only the most recent one, is what keeps implementation honest to the original idea rather than drifting from whatever architecture.md alone says.
+## Its sub-skills
+
+| Sub-skill | Depends on |
+|---|---|
+| [Database](/docs/claude/showcase-database-implementation) | `docs/product/planning.md` |
+| [Backend](/docs/claude/showcase-backend-implementation) | The schema database-implementation just wrote |
+| [Frontend](/docs/claude/showcase-frontend-implementation) | The API backend-implementation just shipped |
+| [Integration & deployment](/docs/claude/showcase-integration-and-deployment) | All three of the above, running together |
 
 ## Where it fits
 
-Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as phase 5, after [Planning](/docs/claude/showcase-planning) is confirmed. Hands off to [Validation and testing](/docs/claude/showcase-validation-testing).
+Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as phase 2, after [Definition & planning](/docs/claude/showcase-definition-and-planning). Hands off to [Pre-launch activities](/docs/claude/showcase-pre-launch-activities).
