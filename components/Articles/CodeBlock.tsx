@@ -63,26 +63,26 @@ export default function CodeBlock({
 
   return (
     <figure className="mb-6 overflow-hidden rounded-xl border border-white/10 bg-[#0d1117] shadow-[0_8px_30px_rgba(0,0,0,0.25)]">
-      <div className="flex items-center justify-between border-b border-white/10 bg-[#161b22] px-4 py-2.5">
-        <div className="flex items-center gap-3">
-          <div className="flex gap-1.5">
+      <div className="flex items-center justify-between gap-3 border-b border-white/10 bg-[#161b22] px-4 py-2.5">
+        <div className="flex min-w-0 items-center gap-3">
+          <div className="flex flex-shrink-0 gap-1.5">
             <span className="h-3 w-3 rounded-full bg-[#ff5f56]" />
             <span className="h-3 w-3 rounded-full bg-[#ffbd2e]" />
             <span className="h-3 w-3 rounded-full bg-[#27c93f]" />
           </div>
           {filename && (
-            <span className="font-mono text-xs text-white/70">{filename}</span>
+            <span className="truncate font-mono text-xs text-white/70">{filename}</span>
           )}
         </div>
-        <div className="flex items-center gap-3">
-          <span className="font-mono text-[10px] uppercase tracking-wider text-white/40">
+        <div className="flex flex-shrink-0 items-center gap-3">
+          <span className="hidden font-mono text-[10px] uppercase tracking-wider text-white/40 xs:inline">
             {language}
           </span>
           <button
             type="button"
             onClick={handleCopy}
             aria-label={copied ? "Copied" : "Copy code"}
-            className="flex items-center gap-1.5 rounded-md border border-white/10 bg-white/[0.03] px-2 py-1 font-mono text-[10px] text-white/50 transition-colors hover:border-primaryColor/40 hover:text-primaryColor"
+            className="flex flex-shrink-0 items-center gap-1.5 rounded-md border border-white/10 bg-white/[0.03] px-2 py-1 font-mono text-[10px] text-white/50 transition-colors hover:border-primaryColor/40 hover:text-primaryColor"
           >
             {copied ? (
               <>
