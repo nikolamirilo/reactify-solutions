@@ -1,0 +1,30 @@
+---
+title: "Implementation sub-skill: Frontend"
+description: Builds the UI against the API backend-implementation exposed. The third of implementation's four sub-skills.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Implementation](/docs/claude/showcase-implementation), invoked third of its four, after [Backend](/docs/claude/showcase-backend-implementation).
+- Checks which endpoints the backend actually shipped, not just what the plan called for. Plans and code drift, and this is the sub-skill positioned to notice.
+- Flags a planned feature with no working endpoint instead of building UI against an assumption that will fail in [Integration & deployment](/docs/claude/showcase-integration-and-deployment).
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/frontend-implementation/SKILL.md" code={`---
+name: frontend-implementation
+description: Builds the UI against the API backend-implementation exposed. Use as the third of implementation's four sub-skills, invoked by /implementation, after the backend exists.
+---
+Read docs/product/definition.md for the core features, and check which endpoints backend-implementation actually shipped, not just what was planned.
+
+Build the UI those endpoints support.
+
+Flag any planned feature whose endpoint does not exist yet, instead of building against an assumption.`} />
+
+## Where it fits
+
+Invoked by [Implementation](/docs/claude/showcase-implementation), third of its four sub-skills, after [Backend](/docs/claude/showcase-backend-implementation). Hands off to [Integration & deployment](/docs/claude/showcase-integration-and-deployment), which runs all three built pieces together.

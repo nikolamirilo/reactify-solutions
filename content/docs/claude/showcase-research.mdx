@@ -1,16 +1,16 @@
 ---
-title: "Phase 2: Research"
-description: Coordinates trends, competitor, and market research. The first phase in this example that fans out into its own sub-skills.
+title: "Definition & planning sub-skill: Research"
+description: Researches trends, competitors, and market sizing for the idea, in that order, as one flat skill rather than three separate sub-skills.
 lastReviewed: 2026-09-03
 appliesTo: Claude Code
 ---
 
 <InOneMinute>
 
-- Phase 2 of 8, invoked by the orchestrator right after [Understanding the idea](/docs/claude/showcase-understanding-of-idea).
-- It does none of the research itself. It invokes three sub-skills in a fixed order and merges what they produce.
-- This is the first split in the tree: `research` is a phase skill *and* a parent to three narrower sub-skills.
-- It checks its own precondition, `docs/product/idea.md` existing, before invoking anything, rather than assuming the orchestrator already handled that.
+- A sub-skill of [Definition & planning](/docs/claude/showcase-definition-and-planning), invoked second of its four, after [Understanding the idea](/docs/claude/showcase-understanding-of-idea).
+- Covers three internal steps, trends, competitors, market, but stays one skill rather than three, the same shape [Product definition](/docs/claude/showcase-product-definition) uses.
+- Reads `docs/product/idea.md`. Writes one file, `docs/product/research.md`, not three separate files in a subfolder.
+- Step 3, market sizing, explicitly depends on step 2's competitor list. Ordering inside one file makes that dependency free, no coordination between separate skills required.
 
 </InOneMinute>
 
@@ -18,31 +18,21 @@ appliesTo: Claude Code
 
 <CodeBlock language="yaml" filename=".claude/skills/research/SKILL.md" code={`---
 name: research
-description: Coordinates trends, competitor, and market research for a new product idea. Use after understanding-of-idea is written, before product-definition. Invokes /trends-research, /competitors-research, and /market-research in turn.
+description: Researches trends, competitors, and market sizing for the idea in docs/product/idea.md, in that order. Use as the second step of definition-and-planning, after understanding-of-idea.
 ---
-## Read first
+## Steps
 
-Read docs/product/idea.md. If it does not exist, stop and invoke /understanding-of-idea first.
+1. Read docs/product/idea.md. If it does not exist, stop and invoke /understanding-of-idea first.
+2. Trends: what is changing in this space right now, and why now is (or is not) a good time.
+3. Competitors: direct and adjacent products solving the same or an adjacent problem, one line each, what they do well, and the gap this idea could fill.
+4. Market: rough size and the specific first segment worth targeting, informed by the competitor list from step 3.
 
-## Invoke, in order
+Write all three as one file, docs/product/research.md.`} />
 
-1. /trends-research
-2. /competitors-research
-3. /market-research
+## Why this stays one skill
 
-Each sub-skill writes its own file under docs/product/research/. Once all three exist, summarize them in docs/product/research-summary.md and hand off to /product-definition.`} />
-
-- The description names all three sub-skills explicitly. That is what tells Claude "research" is not a leaf, and lets it route a request like "just do the competitor part" straight to [Competitor research](/docs/claude/showcase-competitors-research) without going through this file at all.
-- "If it does not exist, stop" is a small but real safeguard. Without it, a user jumping straight to `/research` on a fresh project would produce research grounded in nothing.
-
-## Its sub-skills
-
-| Sub-skill | What it produces |
-|---|---|
-| [Trends research](/docs/claude/showcase-trends-research) | `docs/product/research/trends.md` |
-| [Competitor research](/docs/claude/showcase-competitors-research) | `docs/product/research/competitors.md` |
-| [Market research](/docs/claude/showcase-market-research) | `docs/product/research/market.md` |
+An earlier version of this example split trends, competitor, and market research into three separate sub-skills, each its own file, each independently invocable. That added a fourth level to the tree for no real gain, none of the three is ever useful to run completely on its own mid-process, and market sizing needed competitor data anyway, which meant coordinating two separate skills instead of just reading the previous step's output. Numbered steps inside one file do the same job with one less layer to route through.
 
 ## Where it fits
 
-Invoked by [the orchestrator](/docs/claude/showcase-orchestrator) as phase 2, after [Understanding the idea](/docs/claude/showcase-understanding-of-idea). Hands off to [Product definition](/docs/claude/showcase-product-definition) once all three sub-skills above have written their files.
+Invoked by [Definition & planning](/docs/claude/showcase-definition-and-planning), second of its four sub-skills, after [Understanding the idea](/docs/claude/showcase-understanding-of-idea). Hands off to [Product definition](/docs/claude/showcase-product-definition).
