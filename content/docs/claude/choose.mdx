@@ -10,7 +10,7 @@ appliesTo: Claude Code & apps
 
 - Each tool answers a different question. Match your problem to the question, not the other way around.
 - Most people reach for `CLAUDE.md` for everything, because it is the first one they learn. It is the wrong tool for enforcement and for reusable procedures.
-- The thing people get wrong: writing a hard rule in `CLAUDE.md` and being surprised when Claude occasionally skips it. `CLAUDE.md` is advice. A hook is enforcement.
+- Here is where it bites people: they write a hard rule in `CLAUDE.md`, then get surprised when Claude occasionally skips it. `CLAUDE.md` is advice. A hook is enforcement.
 
 </InOneMinute>
 
@@ -41,9 +41,9 @@ appliesTo: Claude Code & apps
 
 ## Why `CLAUDE.md` is not the answer to everything
 
-`CLAUDE.md` is durable, always-loaded context — facts and conventions Claude should know on every single message. That is exactly why it is the wrong place for two things: procedures (which only matter when you are doing that specific task, so they should not cost context on every other message) and hard rules (which need to hold even when the model would otherwise reasonably decide to skip them).
+`CLAUDE.md` is durable, always-loaded context: facts and conventions Claude should know on every single message. That is exactly why it is the wrong place for two things. Procedures only matter when you are doing that specific task, so they should not cost context on every other message. Hard rules need to hold even when the model would otherwise reasonably decide to skip them.
 
-A skill fixes the first problem through **progressive disclosure**: Claude sees only the skill's name and a one-line description by default, and loads the full body only when the task matches. A hook fixes the second problem by moving the rule out of the model's judgment entirely — it is a script that runs, not a suggestion the model reads.
+A skill fixes the first problem through **progressive disclosure**. Claude sees only the skill's name and a one-line description by default, and loads the full body only when the task matches. A hook fixes the second problem by moving the rule out of the model's judgment entirely. It is a script that runs, not a suggestion the model reads.
 
 ## Read next
 

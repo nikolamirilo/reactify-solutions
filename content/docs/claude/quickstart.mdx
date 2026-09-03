@@ -1,6 +1,6 @@
 ---
 title: Set this up in 20 minutes
-description: Four copy-paste changes that give you an immediate win — a personal CLAUDE.md, a settings.json with a hard deny on .env, Memory turned on, and a faster default Style.
+description: Four copy-paste changes that pay off right away. a personal CLAUDE.md, a settings.json with a hard deny on .env, Memory turned on, and a faster default Style.
 lastReviewed: 2026-09-03
 verifiedAgainst: Anthropic's Claude Code and Claude apps docs, Sep 2026
 appliesTo: Claude Code & apps
@@ -11,7 +11,7 @@ appliesTo: Claude Code & apps
 - Two files, both in `~/.claude/`, both personal to you, both apply to every project.
 - `CLAUDE.md` is instructions you write. `settings.json` is configuration Claude Code enforces.
 - Do this once. It stops you re-typing the same preferences every session.
-- The thing people get wrong: putting a hard rule in `CLAUDE.md` and assuming it always holds. Claude treats `CLAUDE.md` as advice, not enforcement — a rule that must never be broken belongs in `settings.json` or a hook instead.
+- Do not treat `CLAUDE.md` as a hard rule. Claude reads it as advice, not enforcement. A rule that must never be broken belongs in `settings.json` or a hook instead.
 
 </InOneMinute>
 
@@ -21,7 +21,7 @@ Two personal files apply to every project you open in Claude Code, because they 
 
 ## 1. A personal CLAUDE.md
 
-Create `~/.claude/CLAUDE.md` with the preferences you would otherwise repeat in every session — your preferred commit style, a note about which package manager you use, how verbose you want explanations to be.
+Create `~/.claude/CLAUDE.md` with the preferences you would otherwise repeat in every session: your preferred commit style, a note about which package manager you use, how much detail you want in explanations.
 
 <CodeBlock language="markdown" filename="~/.claude/CLAUDE.md" code={`# Personal preferences
 
@@ -59,12 +59,12 @@ Run <code>/permissions</code> inside Claude Code. Your deny rule is listed even 
 
 ## 3. Turn on Memory in the apps
 
-In claude.ai or Claude Desktop, go to Settings → Memory and turn it on. Claude will start noticing durable facts about how you work and recalling them in later conversations — separately from anything in Claude Code, since the two do not share memory.
+In claude.ai or Claude Desktop, go to Settings, then Memory, and turn it on. Claude starts noticing durable facts about how you work and recalling them in later conversations. This is separate from anything in Claude Code. The two do not share memory.
 
 ## 4. Switch your default Style
 
-In the same settings area, switch your default Style from Normal to Concise. Most people find Claude's default writing style longer than they want for everyday work; Concise is the fastest fix, and you can always ask for more detail on a specific reply.
+In the same settings area, switch your default Style from Normal to Concise. Most people find Claude's default writing style longer than they want for everyday work. Concise is the fastest fix, and you can always ask for more detail on a specific reply.
 
 ## What you get for this
 
-You stop re-typing the same instructions every session, in both Claude Code and the apps. That is the whole benchmark for this page — once that is true, move on to [Which one should I use?](/docs/claude/choose) to figure out what belongs in a *project's* configuration instead of yours.
+You stop re-typing the same instructions every session, in both Claude Code and the apps. That is the whole benchmark for this page. Once it is true, move on to [Which one should I use?](/docs/claude/choose) to figure out what belongs in a *project's* configuration instead of yours.

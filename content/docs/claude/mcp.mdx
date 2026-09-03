@@ -1,6 +1,6 @@
 ---
 title: Connecting tools with MCP
-description: Give Claude Code access to GitHub, a database, or your filesystem — the three scopes, the transports that matter, and one working config.
+description: Give Claude Code access to GitHub, a database, or your filesystem. The three scopes, the transports that matter, and one working config.
 lastReviewed: 2026-09-03
 verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
 appliesTo: Claude Code
@@ -8,16 +8,16 @@ appliesTo: Claude Code
 
 <InOneMinute>
 
-- MCP (Model Context Protocol) connects Claude Code to an external tool — a database, an API, your filesystem.
+- MCP (Model Context Protocol) connects Claude Code to an external tool: a database, an API, your filesystem.
 - Project-scoped servers live in `.mcp.json` at your repo root, committed to git.
 - Prefer `http` for a remote server. `sse` still works but is deprecated.
-- The thing people get wrong: an entry with a `url` but no `type` field. Claude Code treats that as an error, not a default.
+- Watch this one: an entry with a `url` but no `type` field. Claude Code treats that as an error, not a default.
 
 </InOneMinute>
 
 ## What it is
 
-An MCP server exposes a set of tools — read a file, query a database, search an API — that Claude Code can call the same way it calls its own built-in tools. It is how you connect Claude to something specific to your stack without waiting for Anthropic to build it in.
+An MCP server exposes a set of tools, read a file, query a database, search an API, that Claude Code can call the same way it calls its own built-in tools. It is how you connect Claude to something specific to your stack without waiting for Anthropic to build it in.
 
 ## The smallest working example
 
@@ -31,7 +31,7 @@ An MCP server exposes a set of tools — read a file, query a database, search a
   }
 }`} />
 
-- `.mcp.json` at your repo root is committed to git — everyone on the team gets the same server, and Claude Code asks for approval the first time each person uses it.
+- `.mcp.json` at your repo root is committed to git. Everyone on the team gets the same server, and Claude Code asks for approval the first time each person uses it.
 - `type: "http"` is the current standard transport for a remote server. In JSON, `"streamable-http"` is accepted as an alias for `"http"`.
 - Environment variable syntax like `${GITHUB_TOKEN}` keeps the actual secret out of the committed file.
 
@@ -47,14 +47,14 @@ Restart Claude Code in the project. On first use, it prompts you to approve the 
 | User | `~/.claude.json` | Just you, every project |
 | Project | `.mcp.json` at the repo root | Your whole team, via git |
 
-Add a server with `claude mcp add` rather than editing the file by hand — it writes to the correct scope for you.
+Add a server with `claude mcp add` rather than editing the file by hand. It writes to the correct scope for you.
 
 ## Transports
 
-- **`stdio`** — a local child process. The default, and the simplest for a server that runs on your own machine.
-- **`http`** — streamable HTTP. The current standard for anything remote.
-- **`sse`** — deprecated. Migrate to `http` when a server offers both.
-- **`ws`** — WebSocket, configured only via the file, not the CLI.
+- **`stdio`**: a local child process. The default, and the simplest for a server that runs on your own machine.
+- **`http`**: streamable HTTP. The current standard for anything remote.
+- **`sse`**: deprecated. Migrate to `http` when a server offers both.
+- **`ws`**: WebSocket, configured only via the file, not the CLI.
 
 <Callout type="warn" title="A url with no type is an error">
 
@@ -67,8 +67,8 @@ If an entry has a `url` field but no `type` field, Claude Code treats it as a co
 - MCP tools are permissionable the same way built-in tools are, using rules like `mcp__github__*`.
 - MCP resources and prompts a server exposes surface as slash commands automatically.
 - Import servers you already configured in Claude Desktop with `claude mcp add-from-claude-desktop`, instead of retyping them.
-- When a project has enough tools that they start crowding your context, Claude Code can defer tool definitions and load them on demand — this activates automatically once tools cross a size threshold.
+- When a project has enough tools that they start crowding your context, Claude Code can defer tool definitions and load them on demand. This activates automatically once tools cross a size threshold.
 
 ## When not to use it
 
-MCP connects Claude to a *tool*. If what you actually need is a reusable *procedure* — a set of steps, not a live data source — that is a [skill](/docs/claude/skills) instead.
+MCP connects Claude to a *tool*. If what you actually need is a reusable *procedure*, a set of steps rather than a live data source, that is a [skill](/docs/claude/skills) instead.

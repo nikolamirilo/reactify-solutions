@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
-import { LuArrowRight } from "react-icons/lu";
+import { LuArrowRight, LuBox } from "react-icons/lu";
 import { docsNav } from "@/lib/docs";
 import { openDocsSearch } from "@/components/Docs/DocsSearch";
 import Image from "@/components/Common/Image";
@@ -8,25 +8,27 @@ import Image from "@/components/Common/Image";
 export const metadata: Metadata = {
   title: "Docs",
   description:
-    "Every way you can customize Claude — settings, CLAUDE.md, hooks, skills, subagents, MCP — in plain language with working examples. Free, no signup.",
+    "Practical, plain-language documentation from Reactify Solutions, organized into modules. Claude is the first one. Free, no signup.",
   alternates: { canonical: "/docs" },
   openGraph: {
     title: "Docs | Reactify Solutions",
     description:
-      "Every way you can customize Claude — settings, CLAUDE.md, hooks, skills, subagents, plugins and MCP — in plain language, with one example you can copy.",
+      "Practical, plain-language documentation from Reactify Solutions, organized into modules. Claude is the first one.",
     url: "/docs",
     images: ["/opengraph-image.png"],
   },
   twitter: {
     card: "summary_large_image",
     title: "Docs | Reactify Solutions",
-    description: "Every way you can customize Claude, explained in plain language.",
+    description: "Practical documentation, organized into modules. Free, no signup.",
   },
 };
 
-export default function DocsIndexPage() {
-  const claude = docsNav.find((t) => t.topic === "claude");
+function countPages(topic: (typeof docsNav)[number]): number {
+  return topic.pages.reduce((total, section) => total + section.pages.length, 0);
+}
 
+export default function DocsIndexPage() {
   return (
     <div className="relative overflow-hidden">
       <div className="pointer-events-none absolute inset-x-0 top-0 z-[-1] h-[560px] radial-fade-top" />
@@ -73,71 +75,50 @@ export default function DocsIndexPage() {
           open resource · free forever
         </span>
 
-        <h1 className="font-display mb-5 max-w-[820px] text-4xl font-semibold leading-[1.08] text-white sm:text-5xl md:text-[56px]">
-          Every way you can customize{" "}
-          <span className="text-gradient-accent">Claude</span>.
+        <h1 className="font-display mb-5 max-w-[760px] text-4xl font-semibold leading-[1.08] text-white sm:text-5xl md:text-[52px]">
+          Documentation, in <span className="text-gradient-accent">plain language</span>.
         </h1>
 
-        <p className="mb-9 max-w-[640px] text-lg leading-relaxed text-textSecondary">
-          Settings, CLAUDE.md, hooks, skills, subagents, plugins and MCP. We explain
-          them in plain language, with one example you can copy into your project.
-          We built it because we needed it.
+        <p className="mb-14 max-w-[620px] text-lg leading-relaxed text-textSecondary">
+          We write these guides for ourselves first, so each one is short, honest about
+          what we are still figuring out, and built around a working example rather
+          than a wall of theory. They are grouped into modules below. Pick one to begin.
         </p>
 
-        <div className="mb-3 flex flex-wrap items-center gap-4">
-          {claude && (
-            <Link
-              href={`/docs/${claude.topic}`}
-              className="flex h-[46px] items-center gap-2 rounded-[11px] bg-primaryColor px-6 font-semibold text-accentContrast shadow-glow transition-colors hover:bg-primaryDark"
-            >
-              Start here
-              <LuArrowRight className="h-4 w-4" />
-            </Link>
-          )}
-        </div>
-        <div className="mb-16 font-mono text-[11px] uppercase tracking-[0.1em] text-textFaint">
-          no signup · no email gate · we update it as claude ships
-        </div>
-
-        {docsNav.map((topic) => (
-          <div key={topic.topic} className="grid grid-cols-1 gap-5 md:grid-cols-3">
-            {topic.pages.map((section) => (
-              <div
-                key={section.title}
-                className="flex flex-col gap-3.5 rounded-2xl border border-darkBorder bg-darkSurface/50 p-6"
+        <div className="flex flex-wrap gap-5">
+          {docsNav.map((topic) => {
+            const pageCount = countPages(topic);
+            return (
+              <Link
+                key={topic.topic}
+                href={`/docs/${topic.topic}`}
+                className="group flex w-full flex-col gap-4 rounded-2xl border border-darkBorder bg-darkSurface/50 p-7 transition-colors hover:border-primaryColor/30 sm:w-[360px]"
               >
-                <h3 className="font-display text-lg font-semibold text-white">
-                  {section.title}
-                </h3>
-                <div className="flex flex-col gap-2">
-                  {section.pages.map((page) => (
-                    <Link
-                      key={page.slug}
-                      href={`/docs/${topic.topic}/${page.slug}`}
-                      className="text-[13.5px] text-textSecondary hover:text-primaryColor"
-                    >
-                      {page.label}
-                    </Link>
-                  ))}
+                <div className="flex items-center justify-between">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-xl border border-primaryColor/20 bg-primaryColor/10 text-primaryColor">
+                    <LuBox className="h-5 w-5" />
+                  </div>
+                  <LuArrowRight className="h-4 w-4 text-textFaint transition-transform group-hover:translate-x-1 group-hover:text-primaryColor" />
                 </div>
-              </div>
-            ))}
-          </div>
-        ))}
-
-        <div className="mt-6 flex flex-col items-start gap-4 rounded-2xl border border-darkBorder bg-docsCodeBg px-6 py-5 sm:flex-row sm:items-center">
-          <span className="flex-shrink-0 font-mono text-[10.5px] uppercase tracking-[0.13em] text-textFaint">
-            In one sentence
-          </span>
-          <span className="hidden h-[30px] w-px flex-shrink-0 bg-darkBorder sm:block" />
-          <p className="m-0 text-[15px] leading-relaxed text-textSecondary">
-            Claude Code keeps your customization in files on disk. The Claude apps keep
-            it in your account.{" "}
-            <strong className="font-semibold text-white">
-              Skills are the connective tissue between them.
-            </strong>
-          </p>
+                <div>
+                  <h2 className="font-display mb-1.5 text-xl font-semibold text-white">
+                    {topic.moduleName}
+                  </h2>
+                  <p className="text-[14.5px] leading-relaxed text-textSecondary">
+                    {topic.description}
+                  </p>
+                </div>
+                <div className="font-mono text-[10.5px] uppercase tracking-[0.13em] text-textFaint">
+                  {pageCount} pages
+                </div>
+              </Link>
+            );
+          })}
         </div>
+
+        <p className="mt-6 font-mono text-[10.5px] uppercase tracking-[0.13em] text-textFaint">
+          more modules are on the way
+        </p>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const DocsPromo = () => {
             </h2>
 
             <p className="mb-6 max-w-[540px] text-[15.5px] leading-relaxed text-textSecondary">
-              Settings, CLAUDE.md, hooks, skills, subagents, plugins, MCP — every way to
+              Settings, CLAUDE.md, hooks, skills, subagents, plugins, MCP. Every way to
               customize Claude, in plain language, with one example you can copy. We
               built it because we needed it.
             </p>

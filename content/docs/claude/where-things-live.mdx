@@ -1,6 +1,6 @@
 ---
 title: Where everything lives
-description: Every file path, every scope, and which one wins when two of them disagree — the lookup page for the rest of this reference.
+description: Every file path, every scope, and which one wins when two of them disagree. The lookup page for the rest of this reference.
 lastReviewed: 2026-09-03
 verifiedAgainst: Anthropic's Claude Code and Claude apps docs, Sep 2026
 appliesTo: Claude Code & apps
@@ -10,7 +10,7 @@ appliesTo: Claude Code & apps
 
 - This page is a lookup table, not a tutorial. Bookmark it and come back when you need a path.
 - Every Claude Code artifact has two common locations: your home directory (`~/.claude/`, personal, every project) and your repo (`.claude/`, shared with your team via git).
-- The thing people get wrong: assuming the strongest-sounding file always wins. For permissions specifically, a `deny` rule wins regardless of which file it is in.
+- Do not assume the strongest-sounding file always wins. For permissions specifically, a `deny` rule wins regardless of which file it is in.
 
 </InOneMinute>
 
@@ -19,32 +19,32 @@ appliesTo: Claude Code & apps
 | Artifact | Personal (all projects) | Project (shared via git) |
 |---|---|---|
 | Settings | `~/.claude/settings.json` | `.claude/settings.json` |
-| Local-only settings | — | `.claude/settings.local.json` (auto-gitignored) |
+| Local-only settings | None | `.claude/settings.local.json` (auto-gitignored) |
 | Memory | `~/.claude/CLAUDE.md` | `./CLAUDE.md` |
 | Hooks | inside either `settings.json` | inside either `settings.json` |
 | Skills | `~/.claude/skills/<name>/SKILL.md` | `.claude/skills/<name>/SKILL.md` |
 | Subagents | `~/.claude/agents/<name>.md` | `.claude/agents/<name>.md` |
 | Slash commands | `~/.claude/commands/<name>.md` | `.claude/commands/<name>.md` |
 | MCP servers | `~/.claude.json` | `.mcp.json` (repo root) |
-| Output styles | — | `.claude/output-styles/*.md` |
+| Output styles | None | `.claude/output-styles/*.md` |
 
-An enterprise-managed file can also exist above all of these — `managed-settings.json` and a managed `CLAUDE.md`, deployed by an organization's IT and impossible for anyone below that level to override.
+An enterprise-managed file can also exist above all of these: `managed-settings.json` and a managed `CLAUDE.md`, deployed by an organization's IT and impossible for anyone below that level to override.
 
 ## Which file wins
 
-For most settings: **the more specific file wins.** Your personal local file beats your project's shared file, which beats your personal global file. A company-managed file beats everything and cannot be overridden by anyone.
+For most settings, **the more specific file wins.** Your personal local file beats your project's shared file, which beats your personal global file. A company-managed file beats everything and cannot be overridden by anyone.
 
-Permission rules are the one exception, and it is worth memorizing: **`deny` always wins, regardless of which file it is in.** A `deny` in your weakest file beats an `allow` in your strongest one. This is deliberate — it means a safety rule can never be quietly switched off by a more specific file.
+Permission rules are the one exception, and it is worth memorizing: **`deny` always wins, regardless of which file it is in.** A `deny` in your weakest file beats an `allow` in your strongest one. This is deliberate. It means a safety rule can never be quietly switched off by a more specific file.
 
-<CodeBlock language="json" filename="~/.claude/settings.json — the weakest file" code={`{ "permissions": { "deny": ["Read(./.env)"] } }`} />
+<CodeBlock language="json" filename="~/.claude/settings.json (the weakest file)" code={`{ "permissions": { "deny": ["Read(./.env)"] } }`} />
 
-<CodeBlock language="json" filename=".claude/settings.local.json — a stronger file" code={`{ "permissions": { "allow": ["Read(./.env)"] } }`} />
+<CodeBlock language="json" filename=".claude/settings.local.json (a stronger file)" code={`{ "permissions": { "allow": ["Read(./.env)"] } }`} />
 
 Claude Code still refuses to read `.env`. See [settings.json](/docs/claude/settings) for the full precedence order across all four files.
 
 ## Claude apps: where each artifact lives
 
-Nothing here is a file path — everything is a setting inside your account.
+Nothing here is a file path. Everything is a setting inside your account.
 
 | Artifact | Where |
 |---|---|

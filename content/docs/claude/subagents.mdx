@@ -8,10 +8,10 @@ appliesTo: Claude Code
 
 <InOneMinute>
 
-- A subagent is a separate Claude instance for one scoped task — it keeps noisy work out of your main conversation.
+- A subagent is a separate Claude instance for one scoped task. It keeps noisy work out of your main conversation.
 - A slash command is a saved prompt template you trigger yourself, by typing `/name`.
-- As of 2026, a single-file slash command and a skill are the same underlying feature — the single-file form still works, but it is considered the older pattern.
-- The thing people get wrong: giving a subagent every tool by default. Omitting the `tools` field inherits everything, including MCP tools — list only what the task needs.
+- As of 2026, a single-file slash command and a skill are the same underlying feature. The single-file form still works, but it is the older pattern.
+- Do not give a subagent every tool by default. Omitting the `tools` field inherits everything, including MCP tools. List only what the task needs.
 
 </InOneMinute>
 
@@ -19,7 +19,7 @@ appliesTo: Claude Code
 
 ### What they are
 
-A subagent is a separate Claude instance the main session can spawn to handle one scoped task. It runs in its own context window and returns only a final summary — the back-and-forth it took to get there never enters your main conversation. That is useful for two different reasons: keeping your context clean, and routing a task to a cheaper model on purpose.
+A subagent is a separate Claude instance the main session can spawn to handle one scoped task. It runs in its own context window and returns only a final summary. The back-and-forth it took to get there never enters your main conversation. That is useful for two different reasons: keeping your context clean, and routing a task to a cheaper model on purpose.
 
 ### The smallest working example
 
@@ -31,7 +31,7 @@ model: sonnet
 ---
 You are a code reviewer. For each issue, explain the problem, show the current code, and provide an improved version.`} />
 
-- `tools` is explicit and short — this subagent can only read and search, not edit or run commands.
+- `tools` is explicit and short. This subagent can only read and search, not edit or run commands.
 - `model` picks a specific tier for this subagent only, independent of whatever model your main session is using.
 - The body below the frontmatter is this subagent's entire system prompt.
 
@@ -42,7 +42,7 @@ Ask Claude to "review my recent changes" in a project with this file. It should 
 ### How it behaves
 
 - Subagent files live in `.claude/agents/` (project) or `~/.claude/agents/` (personal), scanned recursively.
-- Omitting `tools` inherits every tool the main thread has, including MCP tools — worth setting explicitly for anything you did not build yourself.
+- Omitting `tools` inherits every tool the main thread has, including MCP tools. Worth setting explicitly for anything you did not build yourself.
 - `model` accepts `sonnet`, `opus`, `haiku`, a full model ID, or `inherit` (the default).
 - Three built-in types ship with Claude Code: `Explore` (read-only, fast model by default), `Plan` (read-only, used in plan mode), and `general-purpose`.
 
@@ -50,7 +50,7 @@ Ask Claude to "review my recent changes" in a project with this file. It should 
 
 ### What they are
 
-A slash command is an explicit prompt template you trigger yourself by typing `/name` — the difference from a skill is that Claude does not decide to use it on your behalf unless you allow that.
+A slash command is an explicit prompt template you trigger yourself by typing `/name`. The difference from a skill is that Claude does not decide to use it on your behalf unless you allow that.
 
 ### The smallest working example
 
@@ -64,8 +64,8 @@ argument-hint: [message]
 
 Create a commit message following Conventional Commits. If $ARGUMENTS is provided, use it.`} />
 
-- `$ARGUMENTS` captures everything typed after the command name; `$1`, `$2` capture positional arguments individually.
-- `allowed-tools` scopes exactly what this command may run — useful for a command you want to trust without reviewing every time.
+- `$ARGUMENTS` captures everything typed after the command name. `$1`, `$2` capture positional arguments individually.
+- `allowed-tools` scopes exactly what this command may run. Useful for a command you want to trust without reviewing every time.
 - The `!` prefix runs a command and inserts its output before your prompt reaches Claude, same as in a skill.
 
 <CheckItWorked>
@@ -75,10 +75,10 @@ Type <code>/commit fix login bug</code>. Claude drafts a commit using your stage
 ### How it behaves
 
 - Files live in `.claude/commands/` (project) or `~/.claude/commands/` (personal). The filename becomes the command name.
-- `disable-model-invocation: true` means only you can trigger it by typing the slash command — the model itself will never call it automatically.
+- `disable-model-invocation: true` means only you can trigger it by typing the slash command. The model itself will never call it automatically.
 - Subdirectories create namespaces: `.claude/commands/frontend/component.md` becomes `/frontend:component`.
 - If a skill and a command share a name, the skill wins.
 
 ## When not to use either
 
-A subagent is for context isolation and, optionally, cost control — not for something you need to trigger by hand every time (that is a slash command) or something Claude should reach for on its own without being asked (that is a skill).
+A subagent is for context isolation and, optionally, cost control. It is not for something you need to trigger by hand every time, that is a slash command, and not for something Claude should reach for on its own without being asked, that is a skill.
