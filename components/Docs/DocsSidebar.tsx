@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
-import type { DocTopicNav, DocNavPage } from "@/content/docs/nav";
+import type { DocTopicNav, DocNavPage, DocNavSection } from "@/content/docs/nav";
 
 const cx = (...classes: Array<string | false | undefined>) =>
   classes.filter(Boolean).join(" ");
@@ -22,15 +22,7 @@ function ChevronIcon({ open }: { open: boolean }) {
   );
 }
 
-function PageLink({
-  page,
-  href,
-  isActive,
-}: {
-  page: DocNavPage;
-  href: string;
-  isActive: boolean;
-}) {
+function PageLink({ page, href, isActive }: { page: DocNavPage; href: string; isActive: boolean }) {
   return (
     <Link
       href={href}
@@ -64,7 +56,6 @@ function CollapsiblePage({
   const hasActiveChild = childSlugs.includes(pathname);
   const [open, setOpen] = useState(isActive || hasActiveChild);
 
-  // Re-sync when pathname changes (navigating to a child)
   useEffect(() => {
     if (isActive || hasActiveChild) setOpen(true);
   }, [isActive, hasActiveChild]);
@@ -79,9 +70,7 @@ function CollapsiblePage({
         onClick={() => setOpen((v) => !v)}
         className={cx(
           "flex w-full items-center justify-between rounded-md px-3 py-[7px] text-left text-[13.5px] transition-colors",
-          isActive || hasActiveChild
-            ? "font-medium text-white"
-            : "text-textSecondary hover:text-white",
+          isActive || hasActiveChild ? "font-medium text-white" : "text-textSecondary hover:text-white",
         )}
       >
         <span>{page.label}</span>
@@ -93,16 +82,55 @@ function CollapsiblePage({
           {page.children.map((child) => {
             const childHref = `${topicHref}/${child.slug}`;
             return (
-              <PageLink
-                key={child.slug}
-                page={child}
-                href={childHref}
-                isActive={pathname === childHref}
-              />
+              <PageLink key={child.slug} page={child} href={childHref} isActive={pathname === childHref} />
             );
           })}
         </div>
       )}
+    </div>
+  );
+}
+
+function sectionContainsPath(section: DocNavSection, topicHref: string, pathname: string): boolean {
+  return section.pages.some(
+    (p) =>
+      pathname === `${topicHref}/${p.slug}` ||
+      p.children?.some((c) => pathname === `${topicHref}/${c.slug}`),
+  );
+}
+
+function CollapsibleSection({
+  section,
+  topicHref,
+  pathname,
+}: {
+  section: DocNavSection;
+  topicHref: string;
+  pathname: string;
+}) {
+  const isActive = sectionContainsPath(section, topicHref, pathname);
+  const [open, setOpen] = useState(isActive);
+
+  useEffect(() => {
+    if (isActive) setOpen(true);
+  }, [isActive]);
+
+  return (
+    <div className="flex flex-col gap-0.5">
+      <button
+        onClick={() => setOpen((v) => !v)}
+        className="flex items-center justify-between px-3 pb-2 text-left"
+      >
+        <span className="font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-textFaint">
+          {section.title}
+        </span>
+        <ChevronIcon open={open} />
+      </button>
+
+      {open &&
+        section.pages.map((page) => (
+          <CollapsiblePage key={page.slug} page={page} topicHref={topicHref} pathname={pathname} />
+        ))}
     </div>
   );
 }
@@ -131,19 +159,12 @@ export default function DocsSidebar({ nav }: { nav: DocTopicNav }) {
       </Link>
 
       {nav.pages.map((section) => (
-        <div key={section.title} className="flex flex-col gap-0.5">
-          <div className="px-3 pb-2 font-mono text-[10.5px] font-medium uppercase tracking-[0.13em] text-textFaint">
-            {section.title}
-          </div>
-          {section.pages.map((page) => (
-            <CollapsiblePage
-              key={page.slug}
-              page={page}
-              topicHref={topicHref}
-              pathname={pathname}
-            />
-          ))}
-        </div>
+        <CollapsibleSection
+          key={section.title}
+          section={section}
+          topicHref={topicHref}
+          pathname={pathname}
+        />
       ))}
     </nav>
   );
