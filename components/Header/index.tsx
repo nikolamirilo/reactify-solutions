@@ -43,6 +43,14 @@ const Header = () => {
   const resolveHref = (item: MenuItem) =>
     item.path.startsWith("#") && path !== "/" ? `/${item.path}` : item.path;
 
+  // The docs section renders its own fixed-height header (see
+  // app/docs/layout.tsx) rather than this one, which grows and goes
+  // `!fixed !z-[9999]` on scroll — behavior a sticky docs sidebar and the
+  // search modal can't share safely.
+  if (path?.startsWith("/docs")) {
+    return null;
+  }
+
   return (
     <header
       className={cx(

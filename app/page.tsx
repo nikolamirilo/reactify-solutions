@@ -32,6 +32,7 @@ export const metadata: Metadata = {
 import PreLoader from "@/components/Common/PreLoader";
 import RevealOnScroll from "@/components/Common/RevealOnScroll";
 import Methodology from "@/components/Methodology";
+import DocsPromo from "@/components/DocsPromo";
 
 export default async function page() {
   return (
@@ -50,6 +51,9 @@ export default async function page() {
       </RevealOnScroll>
       <RevealOnScroll>
         <Technologies />
+      </RevealOnScroll>
+      <RevealOnScroll>
+        <DocsPromo />
       </RevealOnScroll>
       <RevealOnScroll>
         <CTA />

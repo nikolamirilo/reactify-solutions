@@ -1,15 +1,19 @@
 import { MetadataRoute } from "next";
 import productsData from "@/components/Products/productsData";
 import { allPostsMeta } from "@/content/articles";
+import { allDocPages } from "@/content/docs";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.APP_URL || "https://www.reactify-solutions.com";
+  // Fixed per build, not per request — a lastModified that changes on every
+  // build teaches crawlers to ignore the field entirely.
+  const buildDate = new Date();
 
   const productEntries: MetadataRoute.Sitemap = productsData
     .filter((product) => product.visible)
     .map((product) => ({
       url: `${baseUrl}/products/${product.id}`,
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: "monthly" as const,
       priority: 0.8,
     }));
@@ -21,62 +25,70 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
+  const docEntries: MetadataRoute.Sitemap = allDocPages.map((page) => ({
+    url: `${baseUrl}/docs/${page.topic}/${page.slug}`,
+    lastModified: new Date(page.lastReviewed),
+    changeFrequency: "monthly" as const,
+    priority: 0.9,
+  }));
+
   return [
     {
       url: `${baseUrl}`,
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: "monthly",
       priority: 1,
     },
     {
       url: `${baseUrl}/about`,
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: "monthly",
       priority: 0.9,
     },
     {
       url: `${baseUrl}/contact`,
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/support`,
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: "monthly",
       priority: 0.8,
     },
     {
       url: `${baseUrl}/products`,
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: "monthly",
       priority: 0.85,
     },
     {
       url: `${baseUrl}/articles`,
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: "weekly",
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/schedule-call`,
-      lastModified: new Date(),
-      changeFrequency: "monthly",
-      priority: 0.7,
+      url: `${baseUrl}/docs`,
+      lastModified: buildDate,
+      changeFrequency: "weekly",
+      priority: 0.9,
     },
     {
       url: `${baseUrl}/add-testimonial`,
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: "monthly",
       priority: 0.5,
     },
     {
       url: `${baseUrl}/sla`,
-      lastModified: new Date(),
+      lastModified: buildDate,
       changeFrequency: "yearly",
       priority: 0.4,
     },
     ...productEntries,
     ...articleEntries,
+    ...docEntries,
   ];
 }

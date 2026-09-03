@@ -1,0 +1,63 @@
+---
+title: CLAUDE.md and memory
+description: How to write project instructions Claude actually follows, why short beats complete, and where auto memory fits in.
+lastReviewed: 2026-09-03
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- `CLAUDE.md` loads at the start of every conversation. It is context Claude reads, not a rule it enforces.
+- Two versions exist: `./CLAUDE.md` (your team's, in git) and `~/.claude/CLAUDE.md` (yours, every project).
+- Keep it short. Files over 200 lines cost context and dilute how closely Claude follows any single line.
+- The thing people get wrong: writing a hard rule here and expecting it to always hold. A rule that must never be broken belongs in a [hook](/docs/claude/hooks) instead.
+
+</InOneMinute>
+
+## What it is
+
+`CLAUDE.md` is durable project memory — the facts, conventions, and pitfalls you would otherwise explain at the start of every session. Claude Code reads it automatically, before you type anything.
+
+There is a second, newer memory system alongside it: **auto memory**, notes Claude writes itself based on corrections you make during a conversation. Both load at the start of every session, and Claude treats both the same way — as context to consider, not as rules it is forced to obey.
+
+## The smallest working example
+
+<CodeBlock language="markdown" filename="CLAUDE.md" code={`# Project conventions
+
+- Use pnpm, not npm.
+- Run \`pnpm test\` before every commit — do not skip this.
+- API routes live in app/api/, not pages/api/.
+- Never edit generated files in db/migrations/generated/.`} />
+
+- One concern per line. Each bullet is a fact or a pitfall, not a paragraph of explanation.
+- No history, no "as you know" — Claude does not need the reasoning, just the rule.
+
+<CheckItWorked>
+Open the project in Claude Code and ask "what do you know about this project?" It should repeat your conventions back without you pasting them.
+</CheckItWorked>
+
+## How it behaves
+
+1. **Files higher in the hierarchy load first.** An enterprise-managed `CLAUDE.md`, if your organization has one, loads before your project's, which loads before your personal one.
+2. **Claude Code walks the directory tree.** It reads project-level files in and above your working directory, and lazily loads any `CLAUDE.md` in a subdirectory when Claude actually touches a file there.
+3. **`@path/to/file` imports another file's content.** The standard way to pull in personal preferences without committing them is `@~/.claude/my-preferences.md` inside your project's `CLAUDE.md`.
+4. **Imports do not save context.** Splitting instructions across multiple imported files helps you organize them, but every imported file still loads at launch — it is not lazy.
+5. **`CLAUDE.local.md` is deprecated.** Use an import to a home-directory file instead; imports survive git worktrees in a way a local-only file does not.
+6. **`.claude/rules/*.md` is a separate, scoped layer.** Use it for instructions that should only apply to files in a specific subtree, rather than the whole project.
+
+## Quick ways to add to it
+
+- Type **`#`** followed by text, mid-conversation, to append a memory without leaving Claude Code.
+- Run **`/memory`** to open your memory files for review and browse what auto memory has written.
+- Run **`/init`** to have Claude generate a starting `CLAUDE.md` by analyzing your codebase.
+
+<Callout type="note" title="Working with AGENTS.md">
+
+Claude Code does not read `AGENTS.md` directly. If your team already maintains one for other tools, the standard pattern is a `CLAUDE.md` that does `@AGENTS.md` — one shared source of truth, plus a thin file for anything Claude-specific.
+
+</Callout>
+
+## When not to use it
+
+A rule that must never be broken — not "usually followed," but never — belongs in a [hook](/docs/claude/hooks), which runs as a command rather than being read as advice. A multi-step procedure you only need occasionally belongs in a [skill](/docs/claude/skills), so it does not cost context on every unrelated message.

@@ -1,0 +1,93 @@
+---
+title: Hooks
+description: A hook is a command Claude Code runs automatically at a fixed moment — before a tool runs, after an edit, when a session starts.
+lastReviewed: 2026-09-03
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A hook runs every time. `CLAUDE.md` only asks nicely.
+- They go in the `hooks` key of any settings file.
+- Use one for a rule you can never skip. Use a skill for a procedure.
+- The thing people get wrong: exit code `2` blocks. Every other non-zero code lets the action through.
+
+</InOneMinute>
+
+## What it is
+
+Claude reads `CLAUDE.md` as advice. Most of the time it follows it. Sometimes it does not.
+
+A hook is not advice. It is a command your machine runs, at a moment you choose, regardless of what the model decided. That is the whole idea: move the rules you cannot afford to lose out of the prompt and into a script.
+
+## The smallest working example
+
+Run Prettier every time Claude writes or edits a file.
+
+<CodeBlock language="json" filename=".claude/settings.json" code={`{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          { "type": "command", "command": "npx prettier --write ." }
+        ]
+      }
+    ]
+  }
+}`} />
+
+- `PostToolUse` means "after the tool ran."
+- `matcher` picks which tools it applies to — here, writes and edits.
+- The command runs in your project folder, with your own permissions.
+
+<CheckItWorked>
+Ask Claude to edit any file, then run <code>git diff</code>. The file is already formatted, without Claude having to be told.
+</CheckItWorked>
+
+## What your exit code means
+
+For a hook that runs **before** a tool — `PreToolUse` — your script's exit code decides whether the tool runs at all.
+
+| Exit code | What Claude does |
+|---|---|
+| `0` | Carries on as normal. |
+| `2` | **Blocks the action.** The only exit code that does. |
+| anything else | Lets the action through. Shows your stderr in the transcript. |
+
+<Callout type="warn" title="Silence is not approval">
+
+Exiting `0` with no output means "no opinion," not "allowed." Claude falls back to your normal permission rules. If you want a hook to actively approve something, it has to say so explicitly — see the JSON form below.
+
+</Callout>
+
+A hook can also return a decision as JSON on stdout, instead of relying on its exit code alone:
+
+<CodeBlock language="json" filename="stdout from a PreToolUse hook" code={`{
+  "hookSpecificOutput": {
+    "hookEventName": "PreToolUse",
+    "permissionDecision": "deny",
+    "permissionDecisionReason": "Destructive command blocked by hook"
+  }
+}`} />
+
+For a hook that runs **after** a tool — `PostToolUse`, like the Prettier example above — the tool has already run, so a `2` cannot block it. Instead, a non-zero exit sends your stderr back to Claude, which can act on it (for example, fixing a lint error the hook just reported).
+
+## When to use one
+
+Reach for a hook when a rule must hold every time, with no exception the model could reasonably decide to make: running a formatter, blocking commands that touch secrets, enforcing a commit message format. If the rule is closer to "usually do this," it belongs in [CLAUDE.md](/docs/claude/claude-md) instead — a hook that fires constantly for a soft preference just adds noise.
+
+<FullReference label="Handler types, timeouts, and the full event list">
+
+**Five handler types.** `command` (a shell script — the fast, common case), `http` (calls an endpoint), `mcp_tool` (calls an MCP tool), `prompt` (sends the event to a model and expects `{ok, reason}` back), and `agent` (spawns a subagent that can read files before deciding).
+
+**Timeouts.** Command hooks have a short default timeout; prompt hooks default to 30 seconds; agent hooks to 60 seconds; HTTP hooks to 600 seconds (pass `"async": true` for a slow webhook you do not need to block on).
+
+**The `matcher` field** filters on tool name — `Bash`, `Edit`, `Write`, `Read`, `Glob`, `Grep`, `WebFetch`, or an MCP tool as `mcp__<server>__<tool>`. Some events, like `UserPromptSubmit` and `Stop`, fire once per turn rather than per tool and ignore a matcher entirely. An optional `if` field narrows further — for example `"if": "Bash(rm *)"`.
+
+**The full event list** runs to nearly thirty names, grouped into three cadences: once per session (`SessionStart`, `SessionEnd`), once per turn (`UserPromptSubmit`, `Stop`), and once per tool call (`PreToolUse`, `PostToolUse`). The original handful — `PreToolUse`, `PostToolUse`, `UserPromptSubmit`, `Notification`, `Stop`, `SubagentStop`, `PreCompact`, `SessionStart`, `SessionEnd` — are all still there; the rest cover finer-grained moments like `PermissionDenied`, `PostToolBatch`, and `PreModelSwitch`.
+
+**Security.** A hook runs arbitrary code with your credentials, under Claude Code's workspace trust model. `disableAllHooks` is a global kill switch. Never write a hook that reads a secret and sends it to an external endpoint without reviewing exactly what it does first.
+
+</FullReference>
