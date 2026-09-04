@@ -1,0 +1,42 @@
+---
+title: "Phase 2: Implementation"
+description: Builds the database, backend, frontend, and deploys the result. The phase where the example switches from writing planning documents to writing code.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- Phase 2 of 3, invoked once [Definition & planning](/handbooks/claude/showcase-definition-and-planning) is confirmed.
+- Invokes four sub-skills in a fixed, dependency-driven order: the database has to exist before the backend can query it, the backend before the frontend can call it.
+- A deliberate contrast with phase 1: none of its sub-skills write to `docs/product/`. By this point the plan has become code, and the codebase itself is the handoff.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/implementation/SKILL.md" code={`---
+name: implementation
+description: Runs the second phase of building a new digital product, the database, the backend, the frontend, and getting it all deployed together. Use as phase 2 of develop-new-digital-product, after definition-and-planning is confirmed. Invokes /database-implementation, /backend-implementation, /frontend-implementation, and /integration-and-deployment, in that order.
+---
+## Invoke, in order
+
+1. /database-implementation
+2. /backend-implementation
+3. /frontend-implementation
+4. /integration-and-deployment
+
+Unlike the previous phase, none of these write to docs/product/. Read docs/product/planning.md for the architecture, then build. Hand off to /pre-launch-activities once integration-and-deployment reports a working, deployed build.`} />
+
+## Its sub-skills
+
+| Sub-skill | Depends on |
+|---|---|
+| [Database](/handbooks/claude/showcase-database-implementation) | `docs/product/planning.md` |
+| [Backend](/handbooks/claude/showcase-backend-implementation) | The schema database-implementation just wrote |
+| [Frontend](/handbooks/claude/showcase-frontend-implementation) | The API backend-implementation just shipped |
+| [Integration & deployment](/handbooks/claude/showcase-integration-and-deployment) | All three of the above, running together |
+
+## Where it fits
+
+Invoked by [the orchestrator](/handbooks/claude/showcase-orchestrator) as phase 2, after [Definition & planning](/handbooks/claude/showcase-definition-and-planning). Hands off to [Pre-launch activities](/handbooks/claude/showcase-pre-launch-activities).

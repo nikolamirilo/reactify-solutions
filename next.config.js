@@ -28,6 +28,23 @@ const nextConfig = {
         destination: "/products/:id",
         permanent: true,
       },
+      // The docs section was renamed to handbooks. Same permanent-redirect
+      // treatment so inbound links and search rankings carry over.
+      {
+        source: "/docs",
+        destination: "/handbooks",
+        permanent: true,
+      },
+      {
+        source: "/docs/:topic",
+        destination: "/handbooks/:topic",
+        permanent: true,
+      },
+      {
+        source: "/docs/:topic/:slug",
+        destination: "/handbooks/:topic/:slug",
+        permanent: true,
+      },
     ];
   },
 };

@@ -1,0 +1,33 @@
+---
+title: "Definition & planning sub-skill: Planning"
+description: Turns the product definition into business requirements and a technical architecture, in that order, as one flat skill.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Definition & planning](/handbooks/claude/showcase-definition-and-planning), invoked last of its four, after [Product definition](/handbooks/claude/showcase-product-definition).
+- Covers two internal steps, business requirements then architecture, in one file, not two.
+- Step 2, architecture, needs a budget and timeline before it can size a stack sensibly, which is exactly what step 1 produces.
+- Confirms the whole plan with the user before handing off. This is the last sub-skill in the phase, so it is the last checkpoint before anything gets built.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/planning/SKILL.md" code={`---
+name: planning
+description: Turns the product definition into business requirements and a technical architecture, in that order. Use as the fourth and last step of definition-and-planning, after product-definition.
+---
+## Steps
+
+1. Read docs/product/definition.md. If it does not exist, stop and invoke /product-definition first.
+2. Business requirements: draft a budget range, target timeline, and the specific person or role who approves scope changes.
+3. Architecture: propose a stack and component breakdown sized to the budget and timeline from step 2. Flag the riskiest technical decision explicitly, do not bury it.
+
+Write both as one file, docs/product/planning.md. Confirm the plan with the user before invoking /implementation.`} />
+
+## Where it fits
+
+Invoked by [Definition & planning](/handbooks/claude/showcase-definition-and-planning), last of its four sub-skills, after [Product definition](/handbooks/claude/showcase-product-definition). Once `docs/product/planning.md` exists and the user has confirmed it, [Definition & planning](/handbooks/claude/showcase-definition-and-planning) hands off to [Implementation](/handbooks/claude/showcase-implementation).

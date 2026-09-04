@@ -1,0 +1,78 @@
+---
+title: Skills
+description: A folder with a SKILL.md file that Claude loads only when it is relevant. The one artifact in this reference that is portable outside Claude Code.
+lastReviewed: 2026-09-03
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A skill is a folder with a `SKILL.md` file, loaded automatically when it is relevant, or invoked directly with `/skill-name`.
+- Unlike `CLAUDE.md`, a skill's body costs no context until you actually use it.
+- Only six frontmatter fields are portable outside Claude Code: `name`, `description`, `license`, `compatibility`, `metadata`, `allowed-tools`.
+- A skill can invoke other skills. See the [Skills Showcase](/handbooks/claude/skills-showcase) for a full worked example of one skill routing to phase skills, and phase skills routing to their own sub-skills.
+
+</InOneMinute>
+
+## What it is
+
+`CLAUDE.md` loads in full, every session, whether you need it or not. A skill works the other way. Claude sees only its name and a one-line description by default, roughly 100 tokens, and loads the full body only when the current task actually matches it. This is called **progressive disclosure**, and it is why skills scale to a large library without bloating every conversation.
+
+<ProgressiveDisclosureDiagram />
+
+Skills are also the one artifact in this whole reference that is genuinely portable. A folder with a `SKILL.md` file works in Claude Code and beyond it, because Anthropic published Agent Skills as an open standard, and a number of tools outside Claude Code now read the same file layout.
+
+## The smallest working example
+
+<CodeBlock language="yaml" filename=".claude/skills/summarize-diff/SKILL.md" code={`---
+name: summarize-diff
+description: Summarizes uncommitted changes and flags anything risky. Use when the user asks what changed, wants a commit message, or asks to review their diff.
+---
+## Current changes
+!\`git diff HEAD\`
+
+## Instructions
+Summarize the changes above in two or three bullet points, then list any risks.`} />
+
+- The opening `---` must be the very first line, or Claude Code treats the whole file as plain content instead of a skill.
+- `description` does two jobs at once. It tells Claude what the skill does, and when to use it. Both matter for Claude to pick it automatically.
+- The `!` prefix on a line runs that command and inserts its output before the rest of the prompt.
+
+<CheckItWorked>
+Save the file, then either ask a question that matches the description, or type <code>/summarize-diff</code> directly. Claude Code picks it up without a restart.
+</CheckItWorked>
+
+## Where they live, and which one wins
+
+| Location | Path | Applies to |
+|---|---|---|
+| Personal | `~/.claude/skills/<name>/SKILL.md` | All your projects |
+| Project | `.claude/skills/<name>/SKILL.md` | This project, shared via git |
+| Plugin | `<plugin>/skills/<name>/SKILL.md` | Wherever the plugin is enabled |
+
+If two skills share a name, the more specific one wins. A project skill overrides a personal one, and either overrides a bundled skill with the same name. A plugin's skills are namespaced as `plugin-name:skill-name`, so they never collide with yours.
+
+## Bundled resources
+
+A skill can bundle three optional folders, each loaded only when Claude actually needs it.
+
+<CodeBlock language="text" filename="skill-name/" code={`skill-name/
+├── SKILL.md          # required
+├── scripts/          # executable code
+├── references/       # documentation loaded on demand
+└── assets/           # templates, images, data files`} />
+
+<Callout type="note" title="'Modules' is not a real folder">
+
+If you have seen "modules" mentioned as a skill directory, that is not part of the spec. The three canonical folders are `scripts/`, `references/`, and `assets/`. You can add other folders freely, they just will not be recognized automatically the way these three are.
+
+</Callout>
+
+## Staying portable
+
+The Agent Skills spec defines exactly six frontmatter fields: `name`, `description`, `license`, `compatibility`, `metadata`, and `allowed-tools`. Claude Code also understands several extra fields, `model`, `effort`, `disable-model-invocation`, `user-invocable`, and others, but a skill using any of them may error if you upload it somewhere else expecting the same file to work unchanged. If you plan to share a skill outside Claude Code, stick to the six.
+
+## When not to use it
+
+A skill is for a reusable, on-demand procedure. If the thing you need should always be in context regardless of task, that is [CLAUDE.md](/handbooks/claude/claude-md). If it must run every time with no chance of the model skipping it, that is a [hook](/handbooks/claude/hooks).

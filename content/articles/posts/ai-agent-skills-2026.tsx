@@ -896,10 +896,10 @@ console.log(result.summary);`}
       <ul className="mb-6 list-disc space-y-2 pl-6">
         <li>
           <a
-            href="/docs/claude/skills"
+            href="/handbooks/claude/skills"
             className="font-semibold text-primaryColor hover:underline"
           >
-            Skills, in our docs
+            Skills, in our handbooks
           </a>
           {" "}&mdash; the plain-language version, with a copy-paste
           SKILL.md and where it fits alongside hooks, subagents, and

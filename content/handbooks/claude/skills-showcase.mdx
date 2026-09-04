@@ -1,0 +1,92 @@
+---
+title: Skills Showcase
+description: A worked example of skill hierarchy, three levels deep. One orchestrator skill, three phase skills it hands off to, and four sub-skills under each phase.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A skill can invoke other skills. Its `description` field is what tells Claude which one to reach for, at every level.
+- This example nests three levels deep: one orchestrator skill, three phase skills it hands off to, and four sub-skills under each of those three.
+- Not every skill needs a further split. Several sub-skills here cover more than one internal step but stay a single file, numbered steps instead of another layer of the tree.
+- This is a worked example to read, not something to install. Copy the pattern. The specific skill names are ours, not Anthropic's.
+
+</InOneMinute>
+
+<Callout type="note" title="What this section is">
+
+Every other page in this reference documents a real, verifiable Claude Code mechanic. This section is different: it is an example we built to make one specific idea concrete, how skills compose into a hierarchy. The mechanics it relies on, `SKILL.md`, the `description` field, progressive disclosure, are real and documented on [Skills](/handbooks/claude/skills). The process itself, the phases, the sub-skills, is invented for teaching, not something Anthropic defines.
+
+</Callout>
+
+## Why hierarchy, not one giant skill
+
+A skill covering an entire product development process, from idea to launch, would be enormous. Load it in full and you have defeated the point of a skill: Claude sees the whole body the moment anything about the project comes up, not only when the specific phase that skill covers is actually relevant.
+
+Splitting it into an orchestrator skill and separate phase skills fixes this the same way splitting a bloated `CLAUDE.md` section into its own skill does. Claude loads the orchestrator's short description, then only the one phase skill that matches what you are actually doing. A phase with real internal complexity can split again into its own sub-skills, for the same reason, one level deeper.
+
+## The example, as a tree
+
+<SkillHierarchyDiagram />
+
+Three phases, four sub-skills each, twelve in total. That symmetry is not a rule, it is a coincidence of this particular process, but it makes a useful point on its own: once every phase in a tree has children, the shape stops looking lopsided, and the tree is easier to reason about than one where some branches go deep and others stop cold.
+
+## How the orchestrator hands off
+
+The orchestrator's `SKILL.md` does not do the research, or write the code, or run the accessibility audit. Its body is closer to a table of contents with routing logic: it names each phase, in order, and tells Claude which skill to invoke for it.
+
+<CodeBlock language="yaml" filename=".claude/skills/develop-new-digital-product/SKILL.md" code={`---
+name: develop-new-digital-product
+description: Runs the full process for building a new digital product, from a raw idea to a validated, accessible, SEO-ready launch. Use when the user wants to build something new and does not yet have a plan broken into phases.
+---
+## Phases, in order
+
+1. Definition and planning -> invoke /definition-and-planning
+   (covers understanding the idea, research, product definition, and planning)
+2. Implementation -> invoke /implementation
+   (covers the database, backend, frontend, and integration and deployment)
+3. Pre-launch activities -> invoke /pre-launch-activities
+   (covers validation and testing, SEO, accessibility, and UI/UX polish)
+
+Work through these phases in order. Do not skip a phase without telling the user which one and why.`} />
+
+See the [full orchestrator page](/handbooks/claude/showcase-orchestrator) for why its description has to work harder than any other skill's in this tree.
+
+## Read each phase
+
+**Phase 1: Definition & planning**
+
+- [Definition & planning](/handbooks/claude/showcase-definition-and-planning), the phase skill
+- [Understanding the idea](/handbooks/claude/showcase-understanding-of-idea)
+- [Research](/handbooks/claude/showcase-research)
+- [Product definition](/handbooks/claude/showcase-product-definition)
+- [Planning](/handbooks/claude/showcase-planning)
+
+**Phase 2: Implementation**
+
+- [Implementation](/handbooks/claude/showcase-implementation), the phase skill
+- [Database](/handbooks/claude/showcase-database-implementation)
+- [Backend](/handbooks/claude/showcase-backend-implementation)
+- [Frontend](/handbooks/claude/showcase-frontend-implementation)
+- [Integration & deployment](/handbooks/claude/showcase-integration-and-deployment)
+
+**Phase 3: Pre-launch activities**
+
+- [Pre-launch activities](/handbooks/claude/showcase-pre-launch-activities), the phase skill
+- [Validation & testing](/handbooks/claude/showcase-validation-testing)
+- [SEO](/handbooks/claude/showcase-seo)
+- [Accessibility](/handbooks/claude/showcase-accessibility)
+- [UI/UX polish](/handbooks/claude/showcase-ui-ux-polish)
+
+Or start from the top: [the orchestrator skill](/handbooks/claude/showcase-orchestrator).
+
+## How phases hand off context
+
+Watch for one more detail as you read through the individual pages: every sub-skill in Phase 1 writes its output to a plain file under `docs/product/`, and reads the files earlier sub-skills wrote before doing its own work. That is what actually lets four separate skills behave like one coherent phase instead of four disconnected ones.
+
+Implementation breaks that pattern on purpose. None of its four sub-skills write to `docs/product/`. By the time planning is done, the plan has become a codebase, so the codebase itself is the handoff, a schema the backend reads, an API the frontend calls. The contrast is deliberate: not every phase needs the same handoff mechanism, only a consistent one within itself.
+
+## When to stop nesting
+
+Three levels is already a lot to hold in your head, and it is about as deep as this pattern should go. An earlier version of this example split research into three separate sub-skills of its own, trends, competitors, market, which pushed part of the tree to four levels for no real benefit, none of the three was independently useful, and coordinating them cost more than writing three numbered steps in one file. If a sub-skill wants sub-skills of its own, that is usually a sign it is still trying to do too much, not that you need a fourth level. Tighten the skill's own steps first, before reaching for another layer.

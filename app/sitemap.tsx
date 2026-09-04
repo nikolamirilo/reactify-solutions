@@ -1,7 +1,7 @@
 import { MetadataRoute } from "next";
 import productsData from "@/components/Products/productsData";
 import { allPostsMeta } from "@/content/articles";
-import { allDocPages, docsNav } from "@/content/docs";
+import { allHandbookPages, handbooksNav } from "@/content/handbooks";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
   const baseUrl = process.env.APP_URL || "https://www.reactify-solutions.com";
@@ -25,15 +25,15 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     priority: 0.7,
   }));
 
-  const docModuleEntries: MetadataRoute.Sitemap = docsNav.map((topic) => ({
-    url: `${baseUrl}/docs/${topic.topic}`,
+  const docModuleEntries: MetadataRoute.Sitemap = handbooksNav.map((topic) => ({
+    url: `${baseUrl}/handbooks/${topic.topic}`,
     lastModified: buildDate,
     changeFrequency: "weekly" as const,
     priority: 0.9,
   }));
 
-  const docEntries: MetadataRoute.Sitemap = allDocPages.map((page) => ({
-    url: `${baseUrl}/docs/${page.topic}/${page.slug}`,
+  const docEntries: MetadataRoute.Sitemap = allHandbookPages.map((page) => ({
+    url: `${baseUrl}/handbooks/${page.topic}/${page.slug}`,
     lastModified: new Date(page.lastReviewed),
     changeFrequency: "monthly" as const,
     priority: 0.9,
@@ -77,7 +77,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/docs`,
+      url: `${baseUrl}/handbooks`,
       lastModified: buildDate,
       changeFrequency: "weekly",
       priority: 0.9,

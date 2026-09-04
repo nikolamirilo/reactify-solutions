@@ -1,0 +1,28 @@
+---
+title: "Pre-launch sub-skill: Accessibility"
+description: Audits the built product against WCAG 2.2 AA, fixing what is straightforward and flagging what needs a design decision instead of silently choosing one.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Pre-launch activities](/handbooks/claude/showcase-pre-launch-activities), invoked alongside [SEO](/handbooks/claude/showcase-seo) and [UI/UX polish](/handbooks/claude/showcase-ui-ux-polish), once [Validation & testing](/handbooks/claude/showcase-validation-testing) passes.
+- Unlike most sub-skills in this example, it does not name a specific `docs/product/` file to read. It audits the running product directly against a named external standard, WCAG 2.2 AA.
+- Draws a firm line between fixes it can make on its own, contrast, labeling, and ones that need a human call, a layout change, and refuses to blur that line. [UI/UX polish](/handbooks/claude/showcase-ui-ux-polish), its sibling, draws a similar line for usability rather than accessibility.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/accessibility/SKILL.md" code={`---
+name: accessibility
+description: Audits the built product against basic accessibility standards. Use after validation-and-testing, alongside seo, as the last phase before launch.
+---
+Check color contrast, keyboard navigation, and screen-reader labeling against WCAG 2.2 AA.
+
+Fix what is straightforward. List what needs a design decision instead of silently choosing one.`} />
+
+## Where it fits
+
+Invoked by [Pre-launch activities](/handbooks/claude/showcase-pre-launch-activities), after [Validation & testing](/handbooks/claude/showcase-validation-testing) passes, alongside [SEO](/handbooks/claude/showcase-seo) and [UI/UX polish](/handbooks/claude/showcase-ui-ux-polish). Once all four sub-skills in this phase report back, nothing in the tree runs after it. Start over from [the orchestrator skill](/handbooks/claude/showcase-orchestrator), or back out to the [Skills Showcase overview](/handbooks/claude/skills-showcase).

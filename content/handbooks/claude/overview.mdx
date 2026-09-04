@@ -1,0 +1,49 @@
+---
+title: Claude Code customization, explained
+description: Every file-based way to customize Claude Code, from a single settings file to a full plugin, and how they fit together before you dive into any one of them.
+lastReviewed: 2026-09-03
+verifiedAgainst: Anthropic's Claude Code docs, Sep 2026
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- Claude Code keeps every customization in a plain file, in your repository or your home directory: settings, memory, hooks, skills, subagents, commands, plugins, MCP servers.
+- That means each one is versionable, diffable, and reviewable in a pull request, the same as any other code.
+- Skills are worth knowing on their own. `SKILL.md` follows an open standard, so the same skill folder can work outside Claude Code too, wherever something reads that same format.
+- Nine or ten file types is a lot to keep straight at once. [Which one should I use?](/handbooks/claude/choose) turns the choice into a table instead of a wall of text.
+
+</InOneMinute>
+
+## One habit worth building
+
+Everything that shapes how Claude Code behaves, a settings file, a project memory file, an automation script, a reusable procedure, is a plain file that lives in your repository or your home directory. That means it is versionable, diffable, and reviewable in a pull request, exactly like the code sitting next to it.
+
+Hold onto that one idea before the rest of this reference gets specific. A dozen different file types can sound like a lot to learn. They are all the same kind of thing underneath: text, in git, doing one clearly scoped job.
+
+## What is on this reference
+
+| File or folder | What it does |
+|---|---|
+| `settings.json` | Permissions, model choice, hooks, MCP servers |
+| `CLAUDE.md` | Durable facts and conventions Claude reads at the start of every session |
+| Auto memory & `.claude/rules/` | The rest of Claude's memory system, see [Memory management](/handbooks/claude/memory) |
+| A skill (`SKILL.md`) | A reusable procedure, loaded only when the task matches |
+| A subagent | One task, run in its own isolated context |
+| A slash command | A prompt you trigger yourself, by typing `/name` |
+| A hook | A command that runs automatically, with no way for the model to skip it |
+| MCP (`.mcp.json`) | A live connection to an external tool or data source |
+| A plugin | Several of the above, bundled for a one-step team install |
+
+## Where to go next
+
+- **New to all of this?** Read [Set up in 20 minutes](/handbooks/claude/quickstart) for changes that pay off right away.
+- **Not sure which artifact you need?** [Which one should I use?](/handbooks/claude/choose) is a decision table, not a wall of text.
+- **Looking up a specific file path or precedence rule?** [Where everything lives](/handbooks/claude/where-things-live) is the single reference page for that.
+- **Want to see how skills compose into bigger workflows?** The [Skills Showcase](/handbooks/claude/skills-showcase) walks through one worked example: an orchestrator skill handing off to phase skills, and phase skills handing off to their own sub-skills.
+
+<FullReference label="Where this page's facts come from">
+
+This overview compresses Anthropic's Claude Code documentation, settings, memory, hooks, skills, subagents, slash commands, plugins, and MCP, into one map. Every specific claim on the pages that follow links back to where it came from in that source material, and carries its own **Last reviewed** date.
+
+</FullReference>

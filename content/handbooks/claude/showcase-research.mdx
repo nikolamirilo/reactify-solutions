@@ -1,0 +1,38 @@
+---
+title: "Definition & planning sub-skill: Research"
+description: Researches trends, competitors, and market sizing for the idea, in that order, as one flat skill rather than three separate sub-skills.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Definition & planning](/handbooks/claude/showcase-definition-and-planning), invoked second of its four, after [Understanding the idea](/handbooks/claude/showcase-understanding-of-idea).
+- Covers three internal steps, trends, competitors, market, but stays one skill rather than three, the same shape [Product definition](/handbooks/claude/showcase-product-definition) uses.
+- Reads `docs/product/idea.md`. Writes one file, `docs/product/research.md`, not three separate files in a subfolder.
+- Step 3, market sizing, explicitly depends on step 2's competitor list. Ordering inside one file makes that dependency free, no coordination between separate skills required.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/research/SKILL.md" code={`---
+name: research
+description: Researches trends, competitors, and market sizing for the idea in docs/product/idea.md, in that order. Use as the second step of definition-and-planning, after understanding-of-idea.
+---
+## Steps
+
+1. Read docs/product/idea.md. If it does not exist, stop and invoke /understanding-of-idea first.
+2. Trends: what is changing in this space right now, and why now is (or is not) a good time.
+3. Competitors: direct and adjacent products solving the same or an adjacent problem, one line each, what they do well, and the gap this idea could fill.
+4. Market: rough size and the specific first segment worth targeting, informed by the competitor list from step 3.
+
+Write all three as one file, docs/product/research.md.`} />
+
+## Why this stays one skill
+
+An earlier version of this example split trends, competitor, and market research into three separate sub-skills, each its own file, each independently invocable. That added a fourth level to the tree for no real gain, none of the three is ever useful to run completely on its own mid-process, and market sizing needed competitor data anyway, which meant coordinating two separate skills instead of just reading the previous step's output. Numbered steps inside one file do the same job with one less layer to route through.
+
+## Where it fits
+
+Invoked by [Definition & planning](/handbooks/claude/showcase-definition-and-planning), second of its four sub-skills, after [Understanding the idea](/handbooks/claude/showcase-understanding-of-idea). Hands off to [Product definition](/handbooks/claude/showcase-product-definition).
