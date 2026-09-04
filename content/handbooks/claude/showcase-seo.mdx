@@ -1,0 +1,28 @@
+---
+title: "Pre-launch sub-skill: SEO"
+description: Writes page titles, descriptions, and structured data for the product's public-facing pages, grounded in what the product actually does.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Pre-launch activities](/handbooks/claude/showcase-pre-launch-activities), invoked alongside [Accessibility](/handbooks/claude/showcase-accessibility) and [UI/UX polish](/handbooks/claude/showcase-ui-ux-polish), once [Validation & testing](/handbooks/claude/showcase-validation-testing) passes.
+- Reads `docs/product/definition.md`, not the implementation itself, to stay grounded in what was actually approved rather than guessing from the finished UI.
+- Has an explicit guardrail: do not invent claims the product cannot back up. An SEO skill with no such instruction will happily oversell.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/seo/SKILL.md" code={`---
+name: seo
+description: Adds search optimization for the product's public-facing pages. Use after validation-and-testing, alongside accessibility.
+---
+Read docs/product/definition.md for what the product actually does.
+
+Write page titles, descriptions, and structured data that describe it accurately. Do not invent claims the product cannot back up.`} />
+
+## Where it fits
+
+Invoked by [Pre-launch activities](/handbooks/claude/showcase-pre-launch-activities), after [Validation & testing](/handbooks/claude/showcase-validation-testing) passes, alongside [Accessibility](/handbooks/claude/showcase-accessibility) and [UI/UX polish](/handbooks/claude/showcase-ui-ux-polish). None of the three depends on either of the others, so nothing stops them running in any order, or at the same time.

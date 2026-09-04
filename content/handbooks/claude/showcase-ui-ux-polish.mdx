@@ -1,0 +1,30 @@
+---
+title: "Pre-launch sub-skill: UI/UX polish"
+description: Reviews the built product's everyday usability, loading states, error messages, empty states, and small friction a functional test would not catch.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Pre-launch activities](/handbooks/claude/showcase-pre-launch-activities), invoked alongside [SEO](/handbooks/claude/showcase-seo) and [Accessibility](/handbooks/claude/showcase-accessibility), once [Validation & testing](/handbooks/claude/showcase-validation-testing) passes.
+- Covers what functional tests do not: a flow that works but feels clumsy, a missing loading state, an error message no one would understand.
+- Draws the same line [Accessibility](/handbooks/claude/showcase-accessibility) does, fix the small, low-risk stuff directly, flag anything that would change layout or interaction significantly, rather than deciding alone.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/ui-ux-polish/SKILL.md" code={`---
+name: ui-ux-polish
+description: Reviews the built product's everyday usability, loading states, error messages, empty states, and small friction points a functional test would not catch. Use alongside seo and accessibility, once validation-and-testing passes.
+---
+Walk through the product's main flows as a first-time user would, not as someone who already knows where everything is.
+
+Fix small, low-risk friction directly: inconsistent spacing, a missing loading state, an unclear button label.
+
+Flag anything that would change layout or interaction significantly, instead of choosing on your own.`} />
+
+## Where it fits
+
+Invoked by [Pre-launch activities](/handbooks/claude/showcase-pre-launch-activities), after [Validation & testing](/handbooks/claude/showcase-validation-testing) passes, alongside [SEO](/handbooks/claude/showcase-seo) and [Accessibility](/handbooks/claude/showcase-accessibility). None of the three depends on either of the others. Once all four sub-skills in this phase report back, the whole process is done.

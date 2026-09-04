@@ -660,10 +660,10 @@ app.listen(3000);`}
       <ul className="mb-6 list-disc space-y-2 pl-6">
         <li>
           <a
-            href="/docs/claude/mcp"
+            href="/handbooks/claude/mcp"
             className="font-semibold text-primaryColor hover:underline"
           >
-            MCP servers, in our docs
+            MCP servers, in our handbooks
           </a>
           {" "}&mdash; the three config scopes, the transports that
           matter today, and one working <code>.mcp.json</code> to

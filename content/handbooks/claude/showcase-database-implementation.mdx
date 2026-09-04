@@ -1,0 +1,30 @@
+---
+title: "Implementation sub-skill: Database"
+description: Builds the database schema and migrations from the approved architecture. The first of implementation's four sub-skills, and the first to write actual code rather than a planning document.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Implementation](/handbooks/claude/showcase-implementation), invoked first of its four.
+- Reads `docs/product/planning.md` for the architecture. From here on, the sub-skills in this phase stop reading and writing `docs/product/` files, and start reading and writing the codebase itself.
+- Writes migrations, not a hand-edited database, so the change is reviewable and repeatable, the same reason a hook runs a formatter instead of asking Claude to format by hand.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/database-implementation/SKILL.md" code={`---
+name: database-implementation
+description: Builds the database schema and migrations from the architecture in docs/product/planning.md. Use as the first of implementation's four sub-skills, invoked by /implementation, before any code that depends on the schema.
+---
+Read docs/product/planning.md for the architecture.
+
+Write the schema as migrations, not a hand-edited database, so the change is reviewable and repeatable.
+
+Do not add a table or column the architecture did not call for without flagging it.`} />
+
+## Where it fits
+
+Invoked by [Implementation](/handbooks/claude/showcase-implementation), first of its four sub-skills. Hands off to [Backend](/handbooks/claude/showcase-backend-implementation), which builds against the schema this skill just wrote.

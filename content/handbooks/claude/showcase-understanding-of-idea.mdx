@@ -1,0 +1,36 @@
+---
+title: "Definition & planning sub-skill: Understanding the idea"
+description: Turns a raw, one-paragraph idea into a clear problem statement, target user, and success definition, before any research starts.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Definition & planning](/handbooks/claude/showcase-definition-and-planning), invoked first of its four.
+- Its job: turn a vague idea into a written problem statement, target user, and definition of success.
+- It invokes no sub-skill. Everything it needs to do fits inside one file.
+- It asks before it assumes. A skill that fills in the user's answers itself defeats the point of this phase.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/understanding-of-idea/SKILL.md" code={`---
+name: understanding-of-idea
+description: Turns a raw, one-paragraph idea into a clear problem statement, target user, and success definition. Use as the first phase when developing a new digital product, before any research starts.
+---
+## Ask, do not assume
+
+Ask the user for: the one-sentence version of the idea, who they think has this problem today, and what "working" looks like six months in. Push back if any answer is vague. Do not fill it in yourself.
+
+## Write the output
+
+Save the answers to docs/product/idea.md: problem statement, target user, and success definition, one paragraph each.`} />
+
+- The instruction to push back on vague answers is doing real work here. Without it, this skill would happily write a confident-sounding idea.md from three shaky answers, and every later phase reads that file as settled fact.
+- `docs/product/idea.md` is the first file in the chain every later phase reads from. See [how phases hand off context](/handbooks/claude/skills-showcase#how-phases-hand-off-context).
+
+## Where it fits
+
+Invoked by [Definition & planning](/handbooks/claude/showcase-definition-and-planning), first of its four sub-skills, before anything else runs. Hands off to [Research](/handbooks/claude/showcase-research), which is the next sub-skill to read `docs/product/idea.md`.

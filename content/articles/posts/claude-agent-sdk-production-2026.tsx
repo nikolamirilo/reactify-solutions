@@ -1038,10 +1038,10 @@ async for message in query(
       <ul className="mb-6 list-disc space-y-2 pl-6">
         <li>
           <a
-            href="/docs/claude/subagents"
+            href="/handbooks/claude/subagents"
             className="font-semibold text-primaryColor hover:underline"
           >
-            Subagents &amp; slash commands, in our docs
+            Subagents &amp; slash commands, in our handbooks
           </a>
           {" "}&mdash; the same subagent concept the SDK exposes
           programmatically, explained for Claude Code&rsquo;s own

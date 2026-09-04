@@ -1,0 +1,30 @@
+---
+title: "Implementation sub-skill: Backend"
+description: Builds the API and business logic against the schema database-implementation just created. The second of implementation's four sub-skills.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Implementation](/handbooks/claude/showcase-implementation), invoked second of its four, after [Database](/handbooks/claude/showcase-database-implementation).
+- Reads `docs/product/definition.md` for which features to build, and the migrations the previous sub-skill wrote for how to build them.
+- Writes tests alongside the code it produces, rather than treating tests as a separate, later pass, since [Validation and testing](/handbooks/claude/showcase-validation-testing) checks the whole product later, not each piece as it is built.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/backend-implementation/SKILL.md" code={`---
+name: backend-implementation
+description: Builds the API and business logic against the schema database-implementation created. Use as the second of implementation's four sub-skills, invoked by /implementation, after the schema exists.
+---
+Read docs/product/definition.md for the core features, and the migrations database-implementation wrote for the schema.
+
+Build the API endpoints and business logic the frontend will call.
+
+Write tests alongside the code, not as a separate later pass.`} />
+
+## Where it fits
+
+Invoked by [Implementation](/handbooks/claude/showcase-implementation), second of its four sub-skills, after [Database](/handbooks/claude/showcase-database-implementation). Hands off to [Frontend](/handbooks/claude/showcase-frontend-implementation), which builds against the API this skill exposes.

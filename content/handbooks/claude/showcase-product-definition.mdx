@@ -1,0 +1,36 @@
+---
+title: "Definition & planning sub-skill: Product definition"
+description: Turns the idea and its research into a defined scope, core features, and an explicit not-building-this-yet list. The pattern research and planning later copied.
+lastReviewed: 2026-09-03
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A sub-skill of [Definition & planning](/handbooks/claude/showcase-definition-and-planning), invoked third of its four, after [Research](/handbooks/claude/showcase-research) writes `docs/product/research.md`.
+- Has four internal steps, but stays a single skill. [Research](/handbooks/claude/showcase-research) and [Planning](/handbooks/claude/showcase-planning), its two siblings, both use the same shape.
+- These four steps run in one strict, un-branching order, and none of them is independently reusable. Splitting them into separate sub-skills would add files without adding flexibility.
+- Reads `docs/product/idea.md` and `docs/product/research.md`. Writes `docs/product/definition.md`, the file every remaining phase depends on.
+
+</InOneMinute>
+
+## SKILL.md
+
+<CodeBlock language="yaml" filename=".claude/skills/product-definition/SKILL.md" code={`---
+name: product-definition
+description: Turns idea and research into a defined product, scope, core features, and what is explicitly out. Use after research is complete, before planning. Not split into sub-skills, this phase stays one sequence of steps.
+---
+## Steps
+
+1. Read docs/product/idea.md and docs/product/research.md.
+2. Draft three candidate scopes: minimal, realistic, ambitious.
+3. Ask the user to pick one, or push back and negotiate if none fit the research.
+4. Write the chosen scope, core features, and an explicit "not building this yet" list to docs/product/definition.md.`} />
+
+## Why this stays one skill
+
+Step 2 cannot run before step 1 finishes, step 4 needs the user's answer from step 3, and nobody would ever invoke "draft three candidate scopes" on its own. When steps depend on each other in a strict line and none is independently reusable, numbered steps inside one `SKILL.md` are the whole answer. Splitting them into four sub-skills would only add files to route through, not flexibility. This is the shape every sub-skill in [Definition & planning](/handbooks/claude/showcase-definition-and-planning) ended up using, once the tree settled on staying three levels deep.
+
+## Where it fits
+
+Invoked by [Definition & planning](/handbooks/claude/showcase-definition-and-planning), third of its four sub-skills, after [Research](/handbooks/claude/showcase-research). Hands off to [Planning](/handbooks/claude/showcase-planning), which reads `docs/product/definition.md` as its own starting point.
