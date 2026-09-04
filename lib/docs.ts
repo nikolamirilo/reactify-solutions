@@ -79,12 +79,19 @@ function extractHeadings(body: string): DocHeading[] {
 export function getAllDocRefs(): DocRef[] {
   return docsNav.flatMap((t) =>
     t.pages.flatMap((section) =>
-      section.pages.map((p) => ({
-        topic: t.topic,
-        slug: p.slug,
-        label: p.label,
-        section: section.title,
-      })),
+      section.pages.flatMap((p) => {
+        const base: DocRef = { topic: t.topic, slug: p.slug, label: p.label, section: section.title };
+        if (!p.children?.length) return [base];
+        return [
+          base,
+          ...p.children.map((child) => ({
+            topic: t.topic,
+            slug: child.slug,
+            label: child.label,
+            section: section.title,
+          })),
+        ];
+      }),
     ),
   );
 }
