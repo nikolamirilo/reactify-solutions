@@ -11,11 +11,11 @@ const STEPS = [
 export default function DiscoveryLoopDiagram() {
   return (
     <DiagramFrame label="The weekly loop, not a phase with an end date">
-      <div className="flex flex-col items-stretch gap-2 sm:flex-row sm:items-center sm:gap-2.5">
+      <div className="flex flex-col items-stretch gap-2 md:flex-row md:items-center md:gap-2.5">
         {STEPS.map((step, i) => (
           <div
             key={step.n}
-            className="flex flex-col items-center gap-2 sm:flex-1 sm:flex-row sm:gap-2.5"
+            className="flex flex-col items-center gap-2 md:flex-1 md:flex-row md:gap-2.5"
           >
             <div className="flex w-full flex-col gap-1.5 rounded-xl border border-darkBorder bg-darkElevated px-4 py-3.5">
               <span className="flex h-6 w-6 items-center justify-center rounded-full border border-primaryColor/30 bg-primaryColor/10 font-mono text-[11px] font-semibold text-primaryColor">
@@ -32,8 +32,8 @@ export default function DiscoveryLoopDiagram() {
             </div>
             {i < STEPS.length - 1 && (
               <>
-                <LuArrowDown className="h-4 w-4 flex-shrink-0 text-textFaint sm:hidden" />
-                <LuArrowRight className="hidden h-4 w-4 flex-shrink-0 text-textFaint sm:block" />
+                <LuArrowDown className="h-4 w-4 flex-shrink-0 text-textFaint md:hidden" />
+                <LuArrowRight className="hidden h-4 w-4 flex-shrink-0 text-textFaint md:block" />
               </>
             )}
           </div>

@@ -1,11 +1,15 @@
 import DiagramFrame from "./DiagramFrame";
 
+// All five assumption categories appear here on purpose: the page's whole
+// premise is that teams skip a category, and ethical is the one most often
+// skipped, so the worked example must not skip it either.
 const COLUMNS = [
   {
     action: "Opens a shared link",
     assumptions: [
       { text: "They open it on a phone", kind: "usability" },
       { text: "They do not need an account first", kind: "desirability" },
+      { text: "The sender's listening history stays private", kind: "ethical" },
     ],
   },
   {
@@ -19,16 +23,18 @@ const COLUMNS = [
     action: "Saves it for later",
     assumptions: [
       { text: "One tap is discoverable", kind: "usability" },
+      { text: "They intend to come back", kind: "desirability" },
       { text: "Saves sync before they close the app", kind: "feasibility" },
     ],
   },
 ];
 
-const KIND_COLORS: Record<string, string> = {
-  desirability: "border-primaryColor/30 bg-primaryColor/[0.07] text-primaryColor",
-  viability: "border-starYellow/30 bg-starYellow/[0.07] text-starYellow",
-  feasibility: "border-accentGreen/30 bg-accentGreen/[0.07] text-accentGreen",
-  usability: "border-darkBorderStrong bg-darkSurface text-textSecondary",
+const KIND_COLORS = {
+  desirability: "border-primaryColor/30 bg-primaryColor/[0.07]",
+  viability: "border-starYellow/30 bg-starYellow/[0.07]",
+  feasibility: "border-accentGreen/30 bg-accentGreen/[0.07]",
+  usability: "border-darkBorderStrong bg-darkSurface",
+  ethical: "border-error/30 bg-error/[0.07]",
 };
 
 export default function StoryMapDiagram() {
@@ -48,10 +54,12 @@ export default function StoryMapDiagram() {
               {col.assumptions.map((a) => (
                 <div
                   key={a.text}
-                  className={`rounded-md border px-2.5 py-1.5 text-[11px] leading-snug ${KIND_COLORS[a.kind]}`}
+                  className={`rounded-md border px-2.5 py-1.5 text-[11px] leading-snug text-textSecondary ${KIND_COLORS[a.kind]}`}
                 >
                   {a.text}
-                  <span className="mt-1 block font-mono text-[9.5px] uppercase tracking-[0.1em] opacity-60">
+                  {/* The category is named in text at full contrast rather than
+                      carried by the chip colour alone. */}
+                  <span className="mt-1 block font-mono text-[10px] uppercase tracking-[0.1em] text-textFaint">
                     {a.kind}
                   </span>
                 </div>

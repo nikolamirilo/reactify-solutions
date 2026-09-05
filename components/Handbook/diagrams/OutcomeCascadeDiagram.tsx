@@ -39,7 +39,7 @@ export default function OutcomeCascadeDiagram() {
             >
               <div className="flex flex-wrap items-baseline justify-between gap-x-3 gap-y-1">
                 <span className="font-display text-[14px] font-semibold">{level.kind}</span>
-                <span className="font-mono text-[10px] uppercase tracking-[0.1em] opacity-70">
+                <span className="font-mono text-[10px] uppercase tracking-[0.1em]">
                   {level.owner}
                 </span>
               </div>
@@ -52,7 +52,10 @@ export default function OutcomeCascadeDiagram() {
                 className="font-mono text-[10.5px] text-textFaint"
                 style={{ marginLeft: `${i * 8 + 14}px` }}
               >
-                ↓ measured by
+                {/* The second gap is not a measurement chain: a traction metric
+                    is a narrower substitute used only while tuning, not the way
+                    a product outcome is measured. */}
+                {i === 0 ? "↓ measured by" : "↓ narrowed to, only while tuning"}
               </div>
             )}
           </div>
