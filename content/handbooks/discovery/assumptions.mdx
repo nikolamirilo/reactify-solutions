@@ -1,0 +1,94 @@
+---
+title: Hidden assumptions
+description: The five kinds of assumption sitting under every idea, two exercises that drag them into the open, and the two-by-two that tells you which ones are worth testing.
+lastReviewed: 2026-09-04
+verifiedAgainst: Continuous Discovery Habits, Teresa Torres, 2021
+appliesTo: Product teams
+---
+
+<InOneMinute>
+
+- Every idea rests on things that must be true. Most stay invisible until launch, which is the most expensive moment to find them.
+- Five categories: desirability, viability, feasibility, usability, ethical. Walk each idea through all five.
+- Two exercises surface them: story mapping the flow, and a pre-mortem where you imagine it already failed.
+- Map each assumption by importance and by how much evidence you have. Test the important ones you are guessing about, ignore the rest.
+
+</InOneMinute>
+
+## The five kinds
+
+Under any product idea sits a set of beliefs you have not checked. Sorting them into five buckets makes the gaps obvious, because teams reliably over-examine one or two categories and skip the rest entirely.
+
+| Type | The question | The failure it prevents |
+|---|---|---|
+| **Desirability** | Does anyone want this? | Building something well that nobody asked for |
+| **Viability** | Should we build it? Does it work for the business? | A loved feature that loses money on every use |
+| **Feasibility** | Can we build it? | Six weeks in, discovering the data does not exist |
+| **Usability** | Can people figure out how to use it? | A capable feature nobody can operate |
+| **Ethical** | Could this cause harm? | The harm, and everything that follows it |
+
+Engineering-led teams tend to cover feasibility thoroughly and assume desirability. Design-led teams cover usability and assume viability. Nearly everyone skips ethical until something goes wrong.
+
+<Callout type="warn" title="Ethical assumptions are not a compliance step">
+Ask who could be harmed by this working exactly as intended. Not by a bug, by the feature succeeding. Whose data is exposed, who gets excluded, what does a bad actor do with it. This is a design question, and it is cheapest to answer now.
+</Callout>
+
+## Exercise one: story mapping
+
+Walk through the idea as a sequence of actions the customer takes, then write the assumptions hiding under each action.
+
+<StoryMapDiagram />
+
+Three layers:
+
+- **Actors.** Who is involved? Often more than one, and the second actor is where assumptions hide.
+- **Actions.** What does each actor do, in order?
+- **Assumptions.** For each action, what must be true for it to happen as drawn?
+
+One action can carry several assumptions, including several from the same category. That is expected. The step-by-step walk is what makes them visible, because "they save it for later" sounds simple until you write down that it requires them to notice the button, want to come back, and have the save finish before the app closes.
+
+## Exercise two: the pre-mortem
+
+Imagine it is six months from now and the feature failed completely. Not disappointed anyone, failed. Now write down why.
+
+Thinking backward from a known failure produces reasons that forward-looking risk assessment does not. Asking "what could go wrong?" gets vague answers. Being told it already went wrong and asked to explain gets specific ones.
+
+Run it as a silent write-down first, then share, for the same reason ideation works that way. It is particularly good at surfacing ethical assumptions, because people will write down a worry they would not raise unprompted in a meeting.
+
+<Callout type="note" title="Ten minutes, whole trio">
+This is a short exercise, not a workshop. The value is in how quickly it converts polite optimism into a specific list.
+</Callout>
+
+## Deciding which ones to test
+
+You will now have more assumptions than you can test, and most of them do not need testing. Sort them on two questions:
+
+1. **How much does this matter?** If it turned out false, does the idea collapse or wobble?
+2. **How much evidence do we have?** Strong evidence, or are we guessing?
+
+<AssumptionMatrixDiagram />
+
+The top-left quadrant is your work: important, and you are guessing. Everything else is either already known, or not worth the time right now.
+
+| Quadrant | What to do |
+|---|---|
+| Important, weak evidence | Test this. Start with the single most important one |
+| Important, strong evidence | Note it and move on. Revisit if the context changes |
+| Not important, weak evidence | Leave it. You can absorb being wrong |
+| Not important, strong evidence | Nothing to do |
+
+<Callout type="danger" title="The comfortable mistake">
+Teams gravitate to testing the assumptions they can test easily, which are usually the ones they already have evidence for. Easy to test and worth testing are unrelated. Pick from the top-left quadrant even when it is the awkward one.
+</Callout>
+
+## Compare across ideas, too
+
+Assumption mapping is also a way to compare the ideas that survived ideation. An idea whose critical assumptions you already have evidence for is cheaper to pursue than one resting entirely on guesses, even if the second one is more exciting.
+
+That comparison only works if you map assumptions for a set of ideas rather than for your favorite.
+
+<CheckItWorked>
+Take the feature your team is building right now and list its assumptions in all five categories. If one category is empty, you have not found its assumptions, you have skipped a category.
+</CheckItWorked>
+
+Next: [Testing and measuring](/handbooks/discovery/testing-and-measuring).

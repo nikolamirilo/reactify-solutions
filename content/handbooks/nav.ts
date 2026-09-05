@@ -19,6 +19,15 @@ export type HandbookTopicNav = {
   description: string;
   label: string;
   sublabel: string;
+  // The landing page H1, rendered as `{lead} {highlight}.` with the
+  // highlight in the accent gradient. Per handbook, because "every way you
+  // can customize X" only makes sense for a tool.
+  headline: { lead: string; highlight: string };
+  // Optional sentence appended after `description` on the landing page.
+  introSuffix?: string;
+  // The closing callout on the landing page: one sentence, with the second
+  // half emphasized.
+  inOneSentence: { lead: string; emphasis: string };
   pages: HandbookNavSection[];
 };
 
@@ -34,6 +43,12 @@ export const handbooksNav: HandbookTopicNav[] = [
       "Settings, CLAUDE.md, memory, hooks, skills, subagents, plugins, and MCP. Every way to customize Claude Code, in plain language.",
     label: "Claude Code customization",
     sublabel: "reference",
+    headline: { lead: "Every way you can customize", highlight: "Claude Code" },
+    introSuffix: "We built it because we needed it ourselves.",
+    inOneSentence: {
+      lead: "Every one of these is a plain file, in your repository or your home directory.",
+      emphasis: "Nothing here depends on being signed into anything.",
+    },
     pages: [
       {
         title: "Start here",
@@ -100,6 +115,57 @@ export const handbooksNav: HandbookTopicNav[] = [
       {
         title: "Reference",
         pages: [{ slug: "mistakes", label: "Common mistakes" }],
+      },
+    ],
+  },
+  {
+    topic: "discovery",
+    handbookName: "Continuous Discovery",
+    description:
+      "Weekly customer conversations, the opportunity solution tree, and the habits that connect a business goal to what you build next. The essentials of Teresa Torres's Continuous Discovery Habits, for product teams.",
+    label: "Continuous discovery habits",
+    sublabel: "playbook",
+    headline: { lead: "Connect customer conversations to", highlight: "what you build next" },
+    inOneSentence: {
+      lead: "Every habit here works at the size of one team and one week.",
+      emphasis: "None of it needs a reorganization to start.",
+    },
+    pages: [
+      {
+        title: "Start here",
+        pages: [
+          { slug: "overview", label: "Overview" },
+          { slug: "mindsets", label: "The six mindsets" },
+          { slug: "product-trio", label: "The product trio" },
+        ],
+      },
+      {
+        title: "Focus on outcomes",
+        pages: [{ slug: "outcomes-over-outputs", label: "Outcomes over outputs" }],
+      },
+      {
+        title: "The opportunity space",
+        pages: [
+          { slug: "opportunity-solution-tree", label: "The opportunity solution tree" },
+          { slug: "experience-maps", label: "Experience maps" },
+          { slug: "customer-interviews", label: "Customer interviews" },
+          { slug: "opportunities", label: "Mapping & prioritizing" },
+        ],
+      },
+      {
+        title: "The solution space",
+        pages: [
+          { slug: "ideation", label: "Generating ideas" },
+          { slug: "assumptions", label: "Hidden assumptions" },
+          { slug: "testing-and-measuring", label: "Testing & measuring" },
+        ],
+      },
+      {
+        title: "Reference",
+        pages: [
+          { slug: "decisions", label: "Making better decisions" },
+          { slug: "start-small", label: "Start small" },
+        ],
       },
     ],
   },

@@ -1,0 +1,98 @@
+---
+title: Testing and measuring
+description: Test the assumption, not the whole idea. How to define success before you run anything, simulate real behavior instead of asking about it, and measure only what you need.
+lastReviewed: 2026-09-04
+verifiedAgainst: Continuous Discovery Habits, Teresa Torres, 2021
+appliesTo: Product teams
+---
+
+<InOneMinute>
+
+- Test one assumption at a time, not the finished idea. A failed feature test tells you it failed. An assumption test tells you why.
+- Write the success criteria before you run the test. Deciding afterward means you will find a way to pass.
+- Simulate the real situation. Watching what people do beats asking what they would do, every time.
+- Measure the few things that tell you whether the assumption held. Instrumenting everything produces dashboards nobody reads.
+
+</InOneMinute>
+
+## Why assumptions and not ideas
+
+Building the whole idea and putting it in front of customers is the slow way to learn, and it teaches you less than it looks.
+
+If the feature does badly, you know only that. You do not know whether people did not want it, could not find it, did not understand it, or wanted it but not enough to change what they were doing. Four different causes, four different responses, and the test does not separate them.
+
+Testing assumptions separately is faster and gives you an answer you can act on. It also protects you from the worst failure mode in discovery, which is becoming committed to an idea because of how much you have already built.
+
+## Start small
+
+The first test of an assumption should be smaller than feels serious. A one-question prompt, a fake door, a mock screen shown to five people, a manual version done by hand for one customer.
+
+Small tests are not lesser versions of real tests. They are the right instrument for an early signal, and the early signal is what you need to decide whether the bigger test is worth running at all.
+
+| Assumption type | A small test |
+|---|---|
+| Desirability | A landing page or in-product prompt describing it, measuring who asks for it |
+| Usability | Five people, one prototype, watching where they hesitate |
+| Feasibility | A spike against real data, timeboxed to a day |
+| Viability | The unit economics on paper, with your worst-case usage assumption |
+| Ethical | A pre-mortem, then asking the group most likely to be affected |
+
+## Define success before you run it
+
+The most important step happens before the test. Write down what result would make you believe the assumption, and what result would make you abandon it.
+
+Both numbers. A threshold for passing and a threshold for failing. Without them, every outcome becomes evidence for whatever you already wanted, because a result of "some people clicked" supports any story you like.
+
+<Callout type="warn" title="If you cannot name a failing result">
+An assumption you would keep believing regardless of the outcome is not being tested. You are collecting supporting material. Either write down what would change your mind, or skip the test and be honest that this is a bet.
+</Callout>
+
+## Simulate, do not survey
+
+Asking "would you use this?" measures imagination. Watching what someone does when the thing appears to be real measures behavior.
+
+Get as close to the real situation as you can afford. A prototype the person actually operates. A button that appears in the product and leads to a "coming soon" note. A manual concierge version where you do the work behind the scenes and see whether anyone comes back.
+
+Prototyping in production is the strongest version of this, because the people who meet it are real users in a real moment rather than volunteers who agreed to look at something.
+
+## Small numbers lie in both directions
+
+With five or twenty participants, two errors are easy to make and worth naming:
+
+- **False positive.** A few enthusiastic people convince you an assumption holds. They were unusual, or they were being polite, or the situation was artificial.
+- **False negative.** A promising idea tests badly because the prototype was rough, the task was confusing, or the people were wrong for it.
+
+Neither means small tests are useless. It means you treat the result as a signal that adjusts your confidence, not a verdict. Strong signals in either direction are worth acting on. Weak ones mean run it again differently.
+
+## Measuring what happens after
+
+Once something ships, the measuring question becomes what to instrument.
+
+Start with what you need to evaluate the assumptions you tested. Add the broader outcome measures after that. Two prerequisites before you instrument anything:
+
+1. **A metric definition.** What exactly counts as the event, and what does not.
+2. **Success criteria.** What number means this worked, agreed before launch.
+
+<Callout type="note" title="Do not measure everything">
+Instrumenting every interaction produces dashboards nobody reads and a false sense of rigor. Measure the few things that tell you whether the outcome moved and whether your assumption held. You can always add more.
+</Callout>
+
+## Refine over time
+
+Your first measure is usually somewhat wrong. The definition catches events you did not intend, or the threshold turns out to be too generous, or the metric moves and the outcome does not.
+
+That is expected. Adjust the definition, note that you adjusted it, and keep the history so a moving number does not get read as progress. Improvements to the product and improvements to the measurement can look identical on a chart if nobody wrote down which happened.
+
+## When the result surprises you
+
+A surprising result is a signal to go back up the tree, not a reason to argue with the data.
+
+- **The assumption failed.** Was the idea wrong, or the test? If the test was fair, take the idea off the table and go to the next one under the same opportunity.
+- **Every idea under this opportunity failed.** The opportunity may be poorly framed, or smaller than you believed. Go back to the opportunity space.
+- **It worked, but the outcome did not move.** The opportunity may not have been connected to the outcome as strongly as your tree suggests. That is a real finding about the tree.
+
+When you learn through testing that an idea will not work, moving to the next idea is not enough on its own. Ask what the failure taught you about the customer, and put that back into the tree.
+
+<CheckItWorked>
+Before your next test, write the passing threshold and the failing threshold on the same page as the test plan. If you cannot agree on the failing one, that disagreement is the more useful conversation.
+</CheckItWorked>
