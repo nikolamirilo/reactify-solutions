@@ -1,0 +1,65 @@
+---
+title: Metrics that are not lies
+description: Vanity numbers always go up and never tell you anything. The three tests a real metric passes, and why split testing is the tool that settles arguments.
+lastReviewed: 2026-09-05
+verifiedAgainst: The Lean Startup, Eric Ries, 2011
+appliesTo: Product teams and founders
+---
+
+<InOneMinute>
+
+- Vanity metrics rise no matter what you do. Total users, total pageviews, cumulative anything.
+- A useful metric passes three tests, which Ries names Actionable, Accessible and Auditable.
+- Split testing is the way to know a change caused the result rather than coincided with it.
+- Report by cohort. A total hides whether the product is getting better.
+
+</InOneMinute>
+
+## Vanity metrics
+
+Some numbers only go up. Total registered users never falls, so it always looks like progress, whatever the product is doing.
+
+| Vanity | Better |
+|---|---|
+| Total registered users | Share of this month's signups still active at 30 days |
+| Total pageviews | Views per visitor, by cohort |
+| Cumulative downloads | Downloads that reach first use |
+| Hits or raw visits | Completed signups |
+
+The tell is simple. If a number cannot go down when you make the product worse, it cannot tell you when you made it better.
+
+## The three tests
+
+Ries uses three words for what a real metric must be. The first is his term of art, so it is worth keeping even though it is a stiff word.
+
+| Test | Means | In practice |
+|---|---|---|
+| **Actionable** | Shows clear cause and effect | You can name what you changed and what moved. Use views per visitor, not raw visits |
+| **Accessible** | Everyone can see and read it | A weekly summary in plain language, not a dashboard only the analyst opens |
+| **Auditable** | Someone owns it, and it can be checked | A named person can explain where a number came from, and the team can verify it by hand if it looks wrong |
+
+Auditable is the one teams skip. When a surprising number arrives and nobody can say where it came from, the discussion becomes an argument about the data instead of a decision about the product.
+
+## Split testing
+
+Run two versions at once and compare. This is the tool that turns opinions into answers, and it matters more than any other measurement habit.
+
+- Test one change at a time, or you will not know which part did the work.
+- Decide the success threshold before you start.
+- Let it run long enough to mean something. Small samples produce confident nonsense in both directions.
+
+<Callout type="note" title="Test the things nobody wants to test">
+The features everyone assumes are essential are the best candidates. Removing one in a split test is cheap, and teams are routinely wrong about which parts customers care about.
+</Callout>
+
+## Report by cohort
+
+A cohort is the group of people who arrived in the same period. Following each group separately shows whether the product is improving, which a total cannot.
+
+<CohortAnalysisDiagram />
+
+After every release, check what it did to the cohort that met it. Are people using the new thing? Did it change signups, or activation, or retention? A feature that ships and moves nothing is information too.
+
+<CheckItWorked>
+Take the number your team reports most often. Ask what would make it go down. If nothing realistic would, it is a vanity metric.
+</CheckItWorked>

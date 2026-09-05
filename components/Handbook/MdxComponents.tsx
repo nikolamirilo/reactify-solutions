@@ -17,6 +17,12 @@ import OutcomeCascadeDiagram from "./diagrams/OutcomeCascadeDiagram";
 import AssumptionMatrixDiagram from "./diagrams/AssumptionMatrixDiagram";
 import ExperienceMapFlowDiagram from "./diagrams/ExperienceMapFlowDiagram";
 import StoryMapDiagram from "./diagrams/StoryMapDiagram";
+import BuildMeasureLearnDiagram from "./diagrams/BuildMeasureLearnDiagram";
+import CohortAnalysisDiagram from "./diagrams/CohortAnalysisDiagram";
+import EnginesOfGrowthDiagram from "./diagrams/EnginesOfGrowthDiagram";
+import FiveWhysDiagram from "./diagrams/FiveWhysDiagram";
+import IshikawaDiagram from "./diagrams/IshikawaDiagram";
+import MvpPatternsDiagram from "./diagrams/MvpPatternsDiagram";
 
 // Markdown elements get a `.handbook-*` class from styles/index.css instead of a
 // `prose` block — @tailwindcss/typography isn't installed, and the rest of
@@ -70,4 +76,10 @@ export const mdxComponents: MDXComponents = {
   AssumptionMatrixDiagram,
   ExperienceMapFlowDiagram,
   StoryMapDiagram,
+  BuildMeasureLearnDiagram,
+  CohortAnalysisDiagram,
+  EnginesOfGrowthDiagram,
+  FiveWhysDiagram,
+  IshikawaDiagram,
+  MvpPatternsDiagram,
 };

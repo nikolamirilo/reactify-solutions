@@ -1,0 +1,57 @@
+---
+title: Finding root causes
+description: Five whys turns a technical fault into a human one, and tells you how much to invest in the fix. Plus when a fishbone is the better tool.
+lastReviewed: 2026-09-05
+verifiedAgainst: The Lean Startup, Eric Ries, 2011
+appliesTo: Product teams and founders
+---
+
+<InOneMinute>
+
+- Ask why five times. Technical problems nearly always end in a human cause: training, process, or an assumption nobody checked.
+- Invest in the fix in proportion to the size of the problem. Small fix for a small symptom.
+- Run it with everyone affected in the room, and blame the system rather than the person.
+- Use a fishbone instead when the problem has several causes at once rather than one chain.
+
+</InOneMinute>
+
+## Five whys
+
+Start with the symptom and keep asking why until you reach something that is not technical.
+
+<FiveWhysDiagram />
+
+The first answer is always a machine. The fifth is usually a person, a process, or a missing piece of training. Stopping at the first answer produces a patch that holds until the next time.
+
+## Invest proportionally
+
+The rule that keeps this from becoming bureaucracy: make the size of the fix match the size of the problem.
+
+A small outage gets a small fix at each level, not a six-month programme. A serious one earns more. The compounding effect comes from doing this consistently on small things, not from occasional grand responses to disasters.
+
+## Run it well
+
+| Do | Do not |
+|---|---|
+| Get everyone affected in the room | Run it with only the person who made the change |
+| Blame the system, not the person | Let it become a search for who to fault |
+| Agree a fix at each of the five levels | Fix only the last one |
+| Appoint someone to own the follow-up | Let the actions sit in a document nobody opens |
+
+<Callout type="danger" title="The failure mode is blame">
+The moment it feels like a hunt for the guilty person, people stop giving honest answers and the technique is finished. Ries is direct about this: be tolerant of all mistakes the first time, and never let the same mistake happen twice.
+</Callout>
+
+## When to use a fishbone instead
+
+Five whys follows a single chain. Some problems do not have one, they have four contributing causes that only matter together.
+
+<IshikawaDiagram />
+
+An Ishikawa or fishbone diagram groups possible causes by kind, so you can see the whole field at once rather than one path through it.
+
+Use five whys when there is a clear chain from symptom to cause. Use a fishbone when several things went wrong together, or when the team disagrees about where to even start looking.
+
+<CheckItWorked>
+Take the last incident your team fixed. Ask why five times about it now. If the fifth answer is still technical, you stopped too early.
+</CheckItWorked>
