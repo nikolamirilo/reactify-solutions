@@ -56,12 +56,13 @@ export default async function TopicLandingPage({
       </div>
 
       <h1 className="font-display mb-5 max-w-[720px] text-3xl font-semibold leading-[1.1] text-white sm:text-4xl md:text-[44px]">
-        Every way you can customize{" "}
-        <span className="text-gradient-accent">{nav.handbookName}</span>.
+        {nav.headline.lead}{" "}
+        <span className="text-gradient-accent">{nav.headline.highlight}</span>.
       </h1>
 
       <p className="mb-9 max-w-[600px] text-lg leading-relaxed text-textSecondary">
-        {nav.description} We built it because we needed it ourselves.
+        {nav.description}
+        {nav.introSuffix ? ` ${nav.introSuffix}` : null}
       </p>
 
       {firstPage && (
@@ -106,10 +107,9 @@ export default async function TopicLandingPage({
         </span>
         <span className="hidden h-[30px] w-px flex-shrink-0 bg-darkBorder sm:block" />
         <p className="m-0 text-[15px] leading-relaxed text-textSecondary">
-          Every one of these is a plain file, in your repository or your home
-          directory.{" "}
+          {nav.inOneSentence.lead}{" "}
           <strong className="font-semibold text-white">
-            Nothing here depends on being signed into anything.
+            {nav.inOneSentence.emphasis}
           </strong>
         </p>
       </div>

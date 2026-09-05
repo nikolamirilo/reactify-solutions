@@ -1,0 +1,92 @@
+---
+title: The opportunity solution tree
+description: The one artifact that connects a business outcome to what you are testing this week. Its four layers, the rules that keep it honest, and what it is actually for.
+lastReviewed: 2026-09-04
+verifiedAgainst: Continuous Discovery Habits, Teresa Torres, 2021
+appliesTo: Product teams
+---
+
+<InOneMinute>
+
+- Four layers: one outcome, the opportunities under it, the solutions under one chosen opportunity, the assumption tests under each solution.
+- Opportunities are customer needs, pain points, and desires in the customer's words. They are never features.
+- The tree is a thinking tool, not a status report. Its job is to make certain bad decisions look obviously wrong.
+- It also solves a political problem: it lets you show people how you decided, instead of asking them to trust the conclusion.
+
+</InOneMinute>
+
+## The shape
+
+<OpportunitySolutionTreeDiagram />
+
+Each layer answers a different question, and the order is the point.
+
+| Layer | The question it answers | Where it comes from |
+|---|---|---|
+| Outcome | What are we trying to change? | Negotiated with your product leader |
+| Opportunities | What gets in our customers' way? | Interviews, in the customer's own words |
+| Solutions | What could we do about the one we picked? | Team ideation, several at a time |
+| Assumption tests | What must be true for this to work? | The gaps in each solution |
+
+## Why a tree rather than a list
+
+A backlog of ideas is flat. Everything sits at the same level, nothing explains why any item is there, and priority becomes a matter of who argued hardest most recently.
+
+A tree carries relationships. Because every solution hangs off an opportunity, and every opportunity hangs off the outcome, the artifact answers "why are we building this?" structurally. You do not have to remember the reasoning. It is drawn.
+
+That structure produces six things worth having:
+
+1. **It resolves the tension between business and customer needs.** The outcome at the top is the business's. Everything under it is the customer's. Both are visible at once, so neither can quietly win.
+2. **It builds shared understanding.** Three people looking at the same picture disagree productively. Three people describing the same picture from memory disagree about nothing useful.
+3. **It replaces project thinking with continuous thinking.** A tree does not finish. It gets pruned and regrown as you learn.
+4. **It improves decisions by widening the frame.** Seeing five sibling opportunities next to each other makes it obvious that you were about to commit to the first one you thought of.
+5. **It speeds up learning.** Small tests attached to specific assumptions produce faster feedback than launching a whole feature and watching a dashboard.
+6. **It makes conversations with leadership easier.** More on this below, because it is the benefit teams underestimate most.
+
+## What counts as an opportunity
+
+This is where most trees go wrong, so it is worth being strict.
+
+An opportunity is a customer need, pain point, or desire. It comes out of a story a real person told you. It is phrased the way they would phrase it.
+
+| Not an opportunity | Why | The opportunity underneath |
+|---|---|---|
+| "Add a dark mode" | A solution | "The app is uncomfortable to use at night" |
+| "Improve onboarding" | A theme, too vague to act on | "I could not tell what to do first" |
+| "Users want better search" | Your words, not theirs | "I could not find the file I saved yesterday" |
+| "Increase engagement" | An outcome, not a need | Belongs at the top of the tree |
+
+<Callout type="warn" title="The solution in disguise">
+The most common mistake is an opportunity that is a feature with the verb removed. If addressing it has exactly one possible implementation, it is a solution wearing a costume. Ask what the customer was trying to do, and put that on the tree instead.
+</Callout>
+
+## Rules that keep a tree honest
+
+- **Siblings should not overlap.** If two opportunities are the same need described twice, merge them. Overlap makes comparison meaningless.
+- **Each opportunity has exactly one parent.** If a need seems to belong under two branches, either the parents are wrong or the need is really two distinct needs. Split it or re-parent it, but do not duplicate it, because a need in two places gets counted twice when you compare branches.
+- **No vertical stacks.** One parent with exactly one child, repeating down the page, is a sign you are describing one need at four levels of detail rather than mapping distinct needs.
+- **Frame from the customer's side.** Every node in the opportunity space should be something a customer would recognize as their own experience.
+- **Compare sets, not singles.** Assess a group of sibling opportunities against each other. Judging one opportunity in isolation gives you no scale.
+- **One target opportunity at a time.** Address it, deliver value, then move to the next. Working three at once delivers nothing three times as slowly.
+
+## What the tree does for you politically
+
+Most product conversations with leadership are a request for trust. You present a conclusion, and they either accept your judgment or substitute their own.
+
+Walking someone through the tree changes the shape of that conversation. They can see the outcome you are working toward, the needs you found, the ones you set aside, the ideas you considered, and what you are testing now. Disagreement becomes specific and useful: they can point at the branch they think you underweighted, which is a far better conversation than a debate about a roadmap date.
+
+Show the process, not just the destination. It builds understanding and it invites the kind of feedback you can actually use.
+
+<Callout type="note" title="Do not dump the whole tree on people">
+Bring the part relevant to the decision at hand. A wall of every opportunity you have ever found overwhelms the conversation and buries the branch you needed a view on.
+</Callout>
+
+## Decisions are mostly reversible
+
+Choosing a target opportunity feels heavy. It is usually not. Most discovery decisions are two-way doors: you can walk back through them next week having learned something, at little cost.
+
+Treating them as irreversible produces the worst outcome available, which is waiting for more data while nothing gets tested. [Making better decisions](/handbooks/discovery/decisions) covers when to slow down and when the caution is just fear.
+
+<CheckItWorked>
+Draw your current work as a tree, from memory, in ten minutes. If you cannot name the outcome at the top, or if the opportunity layer is empty and solutions hang directly off the outcome, you have found the gap worth closing first.
+</CheckItWorked>

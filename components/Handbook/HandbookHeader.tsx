@@ -33,7 +33,7 @@ export default function HandbookHeader({ onToggleSidebar, sidebarOpen }: Props) 
         </span>
       </div>
 
-      <div className="flex flex-grow justify-center">
+      <div className="flex min-w-0 flex-grow justify-center">
         <button
           type="button"
           onClick={openHandbookSearch}
@@ -67,7 +67,7 @@ export default function HandbookHeader({ onToggleSidebar, sidebarOpen }: Props) 
         </Link>
         <Link
           href="/contact"
-          className="hidden h-9 items-center rounded-lg bg-primaryColor px-4 font-semibold text-accentContrast shadow-glowSoft transition-colors hover:bg-primaryDark sm:flex"
+          className="hidden h-9 items-center rounded-lg bg-primaryColor px-4 font-semibold text-accentContrast shadow-glowSoft transition-colors hover:bg-primaryDark lg:flex"
         >
           Reach Out
         </Link>
