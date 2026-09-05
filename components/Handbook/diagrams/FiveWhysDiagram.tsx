@@ -6,7 +6,7 @@ const CHAIN = [
   { q: "Why was it wrong?", a: "One engineer changed it by hand." },
   { q: "Why by hand?", a: "There is no script for that change." },
   { q: "Why no script?", a: "The person who set it up has left." },
-  { q: "Why did nobody notice?", a: "Nobody was trained on that system." },
+  { q: "Why did nobody else know how?", a: "Nobody was trained on that system." },
 ];
 
 export default function FiveWhysDiagram() {

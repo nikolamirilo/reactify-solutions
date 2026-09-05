@@ -13,7 +13,7 @@ const BONES = [
 export default function IshikawaDiagram() {
   return (
     <DiagramFrame label="Ishikawa, the same outage grouped by kind of cause">
-      <div className="grid gap-2.5 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="grid gap-2.5 sm:grid-cols-2 2xl:grid-cols-4">
         {BONES.map((b) => (
           <div key={b.group} className="flex flex-col gap-1.5">
             <div className="rounded-md border border-darkBorderStrong bg-darkElevated px-2.5 py-1.5 font-mono text-[10px] uppercase tracking-[0.1em] text-textSecondary">

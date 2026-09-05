@@ -14,9 +14,9 @@ const PATTERNS = [
     example: "Food on the Table",
   },
   {
-    name: "Several small ones",
-    build: "A run of tiny experiments instead of one big bet",
-    proves: "Which direction is worth building?",
+    name: "Wizard of Oz",
+    build: "It looks finished. People do the work by hand behind it",
+    proves: "Would they use this if it were automated?",
     example: "Aardvark",
   },
 ];

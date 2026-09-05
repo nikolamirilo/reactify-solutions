@@ -56,7 +56,7 @@ export default function CohortAnalysisDiagram() {
             The vanity read
           </div>
           <div className="mt-1 text-[12px] leading-snug text-textSecondary">
-            Total users went from 2,400 to 8,900. The line goes up and to the right.
+            Monthly signups went from 2,400 to 8,900, so registered users only ever climbs. The line goes up and to the right.
           </div>
         </div>
         <div className="rounded-lg border border-accentGreen/25 bg-accentGreen/[0.06] px-3 py-2.5">

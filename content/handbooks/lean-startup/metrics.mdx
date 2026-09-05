@@ -28,9 +28,9 @@ Some numbers only go up. Total registered users never falls, so it always looks 
 
 The tell is simple. If a number cannot go down when you make the product worse, it cannot tell you when you made it better.
 
-## The three tests
+## The three tests, or the three A's
 
-Ries uses three words for what a real metric must be. The first is his term of art, so it is worth keeping even though it is a stiff word.
+Ries names three things a real metric must be.
 
 | Test | Means | In practice |
 |---|---|---|
@@ -38,11 +38,11 @@ Ries uses three words for what a real metric must be. The first is his term of a
 | **Accessible** | Everyone can see and read it | A weekly summary in plain language, not a dashboard only the analyst opens |
 | **Auditable** | Someone owns it, and it can be checked | A named person can explain where a number came from, and the team can verify it by hand if it looks wrong |
 
-Auditable is the one teams skip. When a surprising number arrives and nobody can say where it came from, the discussion becomes an argument about the data instead of a decision about the product.
+Auditable gets skipped most. When a surprising number arrives and nobody can say where it came from, the discussion becomes an argument about the data instead of a decision about the product.
 
 ## Split testing
 
-Run two versions at once and compare. This is the tool that turns opinions into answers, and it matters more than any other measurement habit.
+Run two versions at once and compare. This is the tool that turns opinions into answers.
 
 - Test one change at a time, or you will not know which part did the work.
 - Decide the success threshold before you start.
@@ -58,7 +58,9 @@ A cohort is the group of people who arrived in the same period. Following each g
 
 <CohortAnalysisDiagram />
 
-After every release, check what it did to the cohort that met it. Are people using the new thing? Did it change signups, or activation, or retention? A feature that ships and moves nothing is information too.
+Track each cohort through the same stages the diagram shows: signed up, activated, subscribed, still active at 30 days. Percentages, not totals.
+
+After every release, check what it did to the cohort that met it. Are people using the new thing? Did it change signups, activation, or retention? Write down what you expect before it ships. A feature that moves nothing is information too.
 
 <CheckItWorked>
 Take the number your team reports most often. Ask what would make it go down. If nothing realistic would, it is a vanity metric.

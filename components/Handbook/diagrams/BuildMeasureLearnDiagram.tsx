@@ -1,4 +1,4 @@
-import { LuArrowRight, LuArrowDown } from "react-icons/lu";
+import { LuArrowRight, LuArrowDown, LuRepeat } from "react-icons/lu";
 import DiagramFrame from "./DiagramFrame";
 
 const STEPS = [
@@ -38,7 +38,12 @@ export default function BuildMeasureLearnDiagram() {
         ))}
       </div>
 
-      <div className="mt-4 flex flex-col gap-2 border-t border-darkBorder pt-3.5">
+      <div className="mt-4 flex items-center gap-2 border-t border-darkBorder pt-3.5 text-[12px] text-textFaint">
+        <LuRepeat className="h-3.5 w-3.5 flex-shrink-0 text-primaryColor" />
+        What you learn feeds the next build. Each pass ends with a decision, not a release.
+      </div>
+
+      <div className="mt-3 flex flex-col gap-2">
         <div className="text-[12px] leading-relaxed text-textFaint">
           <span className="font-mono text-[10px] uppercase tracking-[0.1em] text-textSecondary">
             Plan in reverse ·{" "}

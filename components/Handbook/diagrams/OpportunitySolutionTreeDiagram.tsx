@@ -66,7 +66,7 @@ export default function OpportunitySolutionTreeDiagram() {
                         >
                           {child.label}
                           {child.target && (
-                            <span className="rounded border border-primaryColor/40 px-1 font-mono text-[9px] uppercase tracking-[0.08em]">
+                            <span className="rounded border border-primaryColor/40 px-1 font-mono text-[10px] uppercase tracking-[0.08em]">
                               target
                             </span>
                           )}
