@@ -169,6 +169,49 @@ export const handbooksNav: HandbookTopicNav[] = [
       },
     ],
   },
+  {
+    topic: "lean-startup",
+    handbookName: "The Lean Startup",
+    description:
+      "Validated learning, the build-measure-learn loop, MVPs, metrics that are not vanity, and the three engines of growth. The essentials of Eric Ries's The Lean Startup, for anyone building something new under uncertainty.",
+    label: "Lean startup method",
+    sublabel: "playbook",
+    headline: { lead: "Build less, learn faster, and", highlight: "know when to change course" },
+    inOneSentence: {
+      lead: "Every method here works on a product with no customers and no revenue yet.",
+      emphasis: "Progress is measured in what you have proved, not what you have shipped.",
+    },
+    pages: [
+      {
+        title: "Start here",
+        pages: [
+          { slug: "overview", label: "Overview" },
+          { slug: "principles", label: "The five principles" },
+        ],
+      },
+      {
+        title: "The loop",
+        pages: [
+          { slug: "build-measure-learn", label: "Build, measure, learn" },
+          { slug: "mvp", label: "The MVP" },
+          { slug: "metrics", label: "Metrics that are not lies" },
+          { slug: "innovation-accounting", label: "Innovation accounting" },
+          { slug: "pivot-or-persevere", label: "Pivot or persevere" },
+        ],
+      },
+      {
+        title: "Growth",
+        pages: [{ slug: "engines-of-growth", label: "Engines of growth" }],
+      },
+      {
+        title: "Practice",
+        pages: [
+          { slug: "root-cause", label: "Finding root causes" },
+          { slug: "inside-a-company", label: "Inside an existing company" },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getTopicNav(topic: string): HandbookTopicNav | undefined {
