@@ -23,6 +23,14 @@ import EnginesOfGrowthDiagram from "./diagrams/EnginesOfGrowthDiagram";
 import FiveWhysDiagram from "./diagrams/FiveWhysDiagram";
 import IshikawaDiagram from "./diagrams/IshikawaDiagram";
 import MvpPatternsDiagram from "./diagrams/MvpPatternsDiagram";
+import InterviewSnapshotDiagram from "./diagrams/InterviewSnapshotDiagram";
+import DecisionDoorsDiagram from "./diagrams/DecisionDoorsDiagram";
+import IdeationLoopDiagram from "./diagrams/IdeationLoopDiagram";
+import MindsetGridDiagram from "./diagrams/MindsetGridDiagram";
+import OpportunityBranchRulesDiagram from "./diagrams/OpportunityBranchRulesDiagram";
+import ProductTrioVennDiagram from "./diagrams/ProductTrioVennDiagram";
+import KeystoneHabitDiagram from "./diagrams/KeystoneHabitDiagram";
+import ThresholdGaugeDiagram from "./diagrams/ThresholdGaugeDiagram";
 
 // Markdown elements get a `.handbook-*` class from styles/index.css instead of a
 // `prose` block — @tailwindcss/typography isn't installed, and the rest of
@@ -82,4 +90,12 @@ export const mdxComponents: MDXComponents = {
   FiveWhysDiagram,
   IshikawaDiagram,
   MvpPatternsDiagram,
+  InterviewSnapshotDiagram,
+  DecisionDoorsDiagram,
+  IdeationLoopDiagram,
+  MindsetGridDiagram,
+  OpportunityBranchRulesDiagram,
+  ProductTrioVennDiagram,
+  KeystoneHabitDiagram,
+  ThresholdGaugeDiagram,
 };
