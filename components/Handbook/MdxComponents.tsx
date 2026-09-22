@@ -6,6 +6,8 @@ import CheckItWorked from "./CheckItWorked";
 import FullReference from "./FullReference";
 import PrecedenceDiagram from "./diagrams/PrecedenceDiagram";
 import HookFlowDiagram from "./diagrams/HookFlowDiagram";
+import HookLifecycleDiagram from "./diagrams/HookLifecycleDiagram";
+import HookResolutionDiagram from "./diagrams/HookResolutionDiagram";
 import ProgressiveDisclosureDiagram from "./diagrams/ProgressiveDisclosureDiagram";
 import SubagentDiagram from "./diagrams/SubagentDiagram";
 import RolloutStagesDiagram from "./diagrams/RolloutStagesDiagram";
@@ -73,6 +75,8 @@ export const mdxComponents: MDXComponents = {
   FullReference,
   PrecedenceDiagram,
   HookFlowDiagram,
+  HookLifecycleDiagram,
+  HookResolutionDiagram,
   ProgressiveDisclosureDiagram,
   SubagentDiagram,
   RolloutStagesDiagram,
