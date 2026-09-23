@@ -1,0 +1,81 @@
+---
+title: Writing state and questions
+description: Most bad Jev answers come from vague questions or noisy state. How to structure the evidence, phrase the question, and split big judgments into small ones.
+lastReviewed: 2026-09-23
+verifiedAgainst: TypeSafe AI docs on state, building with System One, and jev-1.13 known issues, Sep 2026
+appliesTo: Jev by TypeSafe AI
+---
+
+<InOneMinute>
+
+- **State** is the evidence. **Questions** are what you want decided. Keep them separate.
+- Use a JSON object for state when there is more than one piece of context. Named fields help.
+- Ask small, snap-judgment questions. One decision per question.
+- Jev reads questions literally. Write the exact condition you care about.
+- Only include what the questions need. Extra text distracts it.
+
+</InOneMinute>
+
+## State: the evidence
+
+State can be a string, a JSON object, or an array. For anything beyond a single message, use an object.
+
+<CodeBlock language="json" filename="state" code={`{
+  "subject": "Stripe sync broken",
+  "message": "My Stripe connection has failed for three days.",
+  "plan": "pro",
+  "previousTickets": 2
+}`} />
+
+Put everything a decision needs to compare into the same state. If the question is "does this order match the refund policy?", both the order and the policy go in.
+
+Text only. Images, audio, and video are not supported, so describe them as text or structured fields first. English gives the best results. Other languages work, with lower accuracy.
+
+## Questions: small and literal
+
+Think of each question as something a person could answer in one second after reading the state.
+
+| Instead of | Ask |
+|---|---|
+| "Handle this incident" | "Which team should investigate?" |
+| "Is this a good candidate?" | Four Scores: Python depth, leadership, system design, range |
+| "Is this not a non-urgent message?" | "Does this need attention right now?" |
+| "Is the invoice overdue?" | Compute the date difference in code, then ask about the rest |
+
+Jev answers the question **as written**. It does not guess what you meant. If "urgent" means "customer is losing money right now" in your business, say exactly that in the `instructions`.
+
+## Split big judgments
+
+A single question that tries to weigh five things at once gives a blurry answer. Five small questions give five sharp ones, and they run in parallel, so it costs you almost no extra time.
+
+Then combine them in code, where you can see and change the logic:
+
+<CodeBlock language="python" filename="combine.py" code={`# every score normalized to 0..1 by dividing by the top level
+fit = (
+    0.4 * scores["python_depth"].score / 4
+    + 0.4 * scores["system_design"].score / 4
+    + 0.2 * scores["leadership"].score / 4
+)`} />
+
+If the ranking feels off, change a weight. You do not have to rewrite a prompt and hope.
+
+## Things Jev is bad at
+
+These are the known weak spots for `jev-1.13`. Plan around them.
+
+- **Math and counting.** Do arithmetic in code.
+- **Dates.** Jev sees dates as text, not as ordered values. Compare them in code.
+- **Double negatives and long reasoning chains.** Keep the question direct.
+- **Big, noisy state.** Irrelevant text pulls answers off course. Trim it.
+- **Hostile input.** Jev does not treat the state as possibly adversarial. Test with tricky inputs if users control the text.
+- **Opposite questions do not add to 1.** "Is it spam?" and "Is it not spam?" are two separate answers. Ask one.
+
+<Callout type="note" title="A good rule">
+Keep math, filtering, and control flow in code. Give Jev only the judgment calls that code cannot make.
+</Callout>
+
+<FullReference label="Where this page's facts come from">
+
+TypeSafe's pages on [state](https://docs.typesafe.ai/concepts/state.md), [how to build with System One](https://docs.typesafe.ai/concepts/how-to-build-with-system-one.md), [composite scoring](https://docs.typesafe.ai/patterns/composite-scoring.md), and the [jev-1.13 known issues](https://docs.typesafe.ai/model-jaggedness/jev-1.13.md). The incident example is from Vercel's [What is Jev?](https://vercel.com/i/what-is-jev).
+
+</FullReference>

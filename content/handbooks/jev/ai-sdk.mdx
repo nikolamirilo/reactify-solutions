@@ -1,0 +1,143 @@
+---
+title: Jev with the Vercel AI SDK
+description: Call Jev from TypeScript through the AI SDK's experimental_evaluate function and Vercel AI Gateway, including routing logic and tests with a mock model.
+lastReviewed: 2026-09-23
+verifiedAgainst: Vercel's Jev and AI SDK guide and AI Gateway changelog, Sep 2026
+appliesTo: AI SDK 7.0.105+, Vercel AI Gateway
+---
+
+<InOneMinute>
+
+- In the AI SDK, Jev is called with `experimental_evaluate`, and the model id is `typesafe-ai/jev`.
+- It goes through **Vercel AI Gateway**, so you use your gateway key, not a TypeSafe key.
+- Needs `ai` version 7.0.105 or later.
+- One naming difference: the AI SDK calls Noul `boolean`, and the answer field is `probability`.
+- There is a mock evaluation model for unit tests.
+
+</InOneMinute>
+
+## One question
+
+<CodeBlock language="typescript" filename="was-refunded.ts" code={`import { experimental_evaluate as evaluate } from "ai";
+
+export async function wasRefunded(transcript: string) {
+  const result = await evaluate({
+    model: "typesafe-ai/jev",
+    state: transcript,
+    questions: {
+      refunded: {
+        type: "boolean",
+        instructions: "Was a refund issued to the customer?",
+        criteria: {
+          true: "The agent confirmed that money was returned to the customer.",
+          false: "No refund was issued, or the refund was declined.",
+        },
+      },
+    },
+  });
+
+  return result.answers.refunded.probability;
+}`} />
+
+## Routing a ticket
+
+Three questions, one call, then plain code decides.
+
+<CodeBlock language="typescript" filename="route-ticket.ts" code={`import { experimental_evaluate as evaluate } from "ai";
+
+export async function routeTicket(ticket: {
+  subject: string;
+  message: string;
+  plan: string;
+}) {
+  const result = await evaluate({
+    model: "typesafe-ai/jev",
+    state: ticket,
+    questions: {
+      department: {
+        type: "choice",
+        instructions: "Which team should handle this ticket?",
+        criteria: {
+          billing: "Charges, invoices, and refunds",
+          technical: "Bugs, outages, and integration failures",
+          account: "Login, permissions, and profile changes",
+          other: "Anything that does not fit the other teams",
+        },
+      },
+      severity: {
+        type: "score",
+        instructions: "How severe is the issue for the customer?",
+        criteria: [
+          "Cosmetic or informational",
+          "Degraded, but a workaround exists",
+          "Blocking with no workaround",
+          "Blocking and causing financial or data loss",
+        ],
+      },
+      requestsRefund: {
+        type: "boolean",
+        instructions: "Is the customer asking for money back?",
+      },
+    },
+    providerOptions: {
+      gateway: { zeroDataRetention: true },
+    },
+  });
+
+  const { department, severity, requestsRefund } = result.answers;
+  const confidence = result.providerMetadata?.typesafe?.confidence as
+    | Record<string, number>
+    | undefined;
+
+  if ((confidence?.department ?? 0) < 0.6) {
+    return { action: "human-review" as const };
+  }
+
+  return {
+    action: "assign" as const,
+    queue: department.choice,
+    severity: severity.score,
+    refundRequested: requestsRefund.probability >= 0.8,
+  };
+}`} />
+
+Note where confidence lives here: in `result.providerMetadata.typesafe.confidence`, keyed by question name. If it is missing, treat it as zero and send the case to a person.
+
+## Testing without the network
+
+The AI SDK ships a mock evaluation model, so you can test your routing logic with fixed answers.
+
+<CodeBlock language="typescript" filename="route-ticket.test.ts" code={`import { Experimental_EvaluationMockModelV4 as MockEvaluationModel } from "ai/test";
+
+const model = new MockEvaluationModel({
+  doEvaluate: async () => ({
+    answers: {
+      department: {
+        type: "choice",
+        choice: "technical",
+        probabilities: { billing: 0.05, technical: 0.93, account: 0.02, other: 0 },
+      },
+      severity: { type: "score", score: 2.4, probabilities: { 0: 0, 1: 0.1, 2: 0.4, 3: 0.5 } },
+      requestsRefund: { type: "boolean", probability: 0.2 },
+    },
+    warnings: [],
+    providerMetadata: { typesafe: { confidence: { department: 0.91 } } },
+  }),
+});`} />
+
+To use it, let `routeTicket` accept an optional `model` argument that defaults to `"typesafe-ai/jev"`, and pass the mock in tests.
+
+## Other ways in
+
+| Route | When it makes sense |
+|---|---|
+| AI SDK `experimental_evaluate` | You are already on the AI SDK in TypeScript |
+| TypeSafe SDKs pointed at AI Gateway | You want the TypeSafe client but one bill through Vercel |
+| TypeSafe API directly | Simplest setup, no gateway |
+| OpenRouter, Cloudflare | You already route models through one of them |
+
+<FullReference label="Where this page's facts come from">
+
+Vercel's [How to classify, route, and score with Jev and AI SDK](https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk), the [AI Gateway evaluation docs](https://vercel.com/docs/ai-gateway/modalities/evaluation), and the changelog entry [AI Gateway now supports TypeSafe clients and an HTTP API for Jev](https://vercel.com/changelog/ai-gateway-now-supports-typesafe-clients-and-http-api-for-jev). The code is shortened from Vercel's examples.
+
+</FullReference>

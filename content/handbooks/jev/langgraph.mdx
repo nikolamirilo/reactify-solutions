@@ -1,0 +1,204 @@
+---
+title: Jev in LangGraph and LangChain
+description: Use Jev as a fast router node inside a LangGraph graph, and as middleware that picks a model or checks tool calls in a LangChain agent. Full, runnable examples.
+lastReviewed: 2026-09-23
+verifiedAgainst: LangChain TypeSafe integration docs and the LangChain Jev blog post, Sep 2026
+appliesTo: langchain-typesafe, LangGraph, LangChain create_agent
+---
+
+<InOneMinute>
+
+- Install `langchain-typesafe` and set `TYPESAFE_API_KEY`.
+- `TypeSafeClassifier` is a normal LangChain Runnable. Call `.invoke()` with `state` and `questions`.
+- In **LangGraph**, put Jev in a node and let a plain Python function turn its answer into a conditional edge.
+- In a **LangChain agent**, two ready-made middlewares: `ModelRouterMiddleware` picks the model, `AutoModeMiddleware` checks risky tool calls.
+- The LLM still does the writing. Jev only makes the decisions in between.
+
+</InOneMinute>
+
+## Why Jev fits a graph so well
+
+A LangGraph graph is a set of nodes with edges between them. The hard part is usually the edge: deciding where to go next. Many teams make that decision with an extra LLM call and then parse the text.
+
+Jev is built for exactly that step. It answers in a fraction of a second, the answer is already one of your node names, and the confidence tells you when to send the case to a human instead.
+
+<JevLangGraphDiagram />
+
+## Install
+
+<CodeBlock language="bash" filename="terminal" code={`pip install langchain-typesafe langgraph
+export TYPESAFE_API_KEY=your_key_here`} />
+
+## The classifier on its own
+
+<CodeBlock language="python" filename="classify.py" code={`from langchain_typesafe import Choice, Noul, Score, TypeSafeClassifier
+
+classifier = TypeSafeClassifier()
+
+response = classifier.invoke({
+    "state": "The deploy failed twice and customers are seeing 500s. Can someone look now?",
+    "questions": {
+        "urgent": Noul(instructions="Does this need attention right now?"),
+        "team": Choice(
+            instructions="Which team?",
+            criteria={"infra": "Servers, deploys, outages", "billing": "Charges and refunds"},
+        ),
+        "severity": Score(
+            instructions="How severe?",
+            criteria=["Cosmetic.", "Degraded.", "Outage."],
+        ),
+    },
+})
+
+response.nouls["urgent"].noul        # 0.98
+response.choices["team"].choice      # "infra"
+response.scores["severity"].score    # 1.9`} />
+
+`state` can be a string, a dict, or a list of LangChain messages, so you can pass an agent's message history straight in. Because it is a Runnable, `.ainvoke()` and `.batch()` work too, and calls show up in LangSmith traces with token usage.
+
+## Jev as a router node in LangGraph
+
+A support graph: Jev triages the ticket, then a conditional edge sends it to the right specialist, or to a human when Jev is unsure.
+
+<CodeBlock language="python" filename="support_graph.py" code={`from typing import TypedDict
+
+from langchain_typesafe import Choice, Noul, TypeSafeClassifier
+from langgraph.graph import END, START, StateGraph
+
+classifier = TypeSafeClassifier()
+
+
+class TicketState(TypedDict, total=False):
+    message: str
+    team: str
+    confidence: float
+    urgent: float
+    reply: str
+
+
+def triage(state: TicketState) -> dict:
+    result = classifier.invoke({
+        "state": state["message"],
+        "questions": {
+            "team": Choice(
+                instructions="Which team should handle this ticket?",
+                criteria={
+                    "billing": "Charges, invoices, and refunds",
+                    "technical": "Bugs, outages, and integration failures",
+                },
+            ),
+            "urgent": Noul(instructions="Is the customer losing money or blocked right now?"),
+        },
+    })
+    team = result.choices["team"]
+    return {
+        "team": team.choice,
+        "confidence": team.confidence,
+        "urgent": result.nouls["urgent"].noul,
+    }
+
+
+def route(state: TicketState) -> str:
+    # plain code owns the policy
+    if state["confidence"] < 0.5:
+        return "human_review"
+    return state["team"]
+
+
+def billing(state: TicketState) -> dict:
+    ...  # your billing agent, e.g. an LLM with billing tools
+
+
+def technical(state: TicketState) -> dict:
+    ...  # your technical agent
+
+
+def human_review(state: TicketState) -> dict:
+    ...  # open a ticket for a person
+
+
+builder = StateGraph(TicketState)
+builder.add_node("triage", triage)
+builder.add_node("billing", billing)
+builder.add_node("technical", technical)
+builder.add_node("human_review", human_review)
+
+builder.add_edge(START, "triage")
+builder.add_conditional_edges("triage", route, ["billing", "technical", "human_review"])
+for node in ["billing", "technical", "human_review"]:
+    builder.add_edge(node, END)
+
+graph = builder.compile()
+graph.invoke({"message": "I was charged twice this month."})`} />
+
+A few things worth noticing:
+
+- **The Choice options are node names.** No mapping table, no string cleanup.
+- **The threshold lives in `route()`.** You can read it, test it, and change it without touching a prompt.
+- **`urgent` is stored in state.** Any later node can use it, for example to page someone on call.
+
+<CheckItWorked>
+Run the graph with a clear billing message and a vague one like <code>"it is broken again"</code>. The first should land in <code>billing</code>. The second should have lower confidence and may go to <code>human_review</code>.
+</CheckItWorked>
+
+## Other places to add a Jev node
+
+The same pattern works anywhere a graph has to decide something:
+
+- **Loop exit.** After each agent step, a Noul: "Has the user's request been fully answered?" Stop when it is high.
+- **Retrieval filter.** Score each retrieved passage for relevance, drop the low ones before the LLM sees them.
+- **Tool check.** Before a tool node runs, a Noul: "Could this action delete or change data?" Route risky calls to an approval node.
+
+## Middleware for LangChain agents
+
+If you use LangChain's `create_agent` instead of building a graph by hand, there are two ready-made middlewares. They are experimental, so install the extra:
+
+<CodeBlock language="bash" filename="terminal" code={`pip install "langchain-typesafe[experimental]"`} />
+
+### Pick the cheapest model that can do the job
+
+`ModelRouterMiddleware` asks Jev which model fits each request, then calls that one.
+
+<CodeBlock language="python" filename="router_agent.py" code={`from langchain.agents import create_agent
+from langchain_typesafe.experimental.middleware import ModelChoice, ModelRouterMiddleware
+
+router = ModelRouterMiddleware(
+    choices={
+        "fast": ModelChoice(
+            model="anthropic:claude-haiku-4-5",
+            criteria="Direct lookups, extraction, and localized changes.",
+        ),
+        "powerful": ModelChoice(
+            model="anthropic:claude-opus-5-5",
+            criteria="Architecture and high-stakes decisions.",
+        ),
+    },
+    instructions="Choose the least costly model that can complete the task.",
+)
+
+agent = create_agent("anthropic:claude-haiku-4-5", middleware=[router])`} />
+
+### Check tool calls before they run
+
+`AutoModeMiddleware` scores each call to the listed tools for risk before it executes. This is the same idea as the "auto mode" in coding agents like Claude Code, Codex, and Cursor.
+
+<CodeBlock language="python" filename="guarded_agent.py" code={`from langchain.agents import create_agent
+from langchain_typesafe.experimental.middleware import AutoModeMiddleware
+
+guardrail = AutoModeMiddleware(tools=["bash"])
+
+agent = create_agent("anthropic:claude-haiku-4-5", middleware=[guardrail])`} />
+
+<Callout type="warn" title="Experimental means it can change">
+Both middlewares live under <code>langchain_typesafe.experimental</code>. Pin the package version, and expect names or options to change between releases.
+</Callout>
+
+## JavaScript
+
+Everything on this page is the Python package. On TypeScript, the most direct route today is the [Vercel AI SDK](/handbooks/jev/ai-sdk) or the TypeSafe JS SDK from [Your first call](/handbooks/jev/quickstart). A Jev call inside a LangGraph.js node looks the same as the Python version above.
+
+<FullReference label="Where this page's facts come from">
+
+LangChain's [TypeSafe integration docs](https://docs.langchain.com/oss/python/integrations/providers/typesafe) and the LangChain blog post [Building a harness with Jev](https://www.langchain.com/blog/building-a-harness-with-jev). The support graph is our own example, built on the standard LangGraph `StateGraph` API. Model names in the middleware examples are placeholders, swap in whichever models you use.
+
+</FullReference>

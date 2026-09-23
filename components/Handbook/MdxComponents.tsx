@@ -33,6 +33,12 @@ import OpportunityBranchRulesDiagram from "./diagrams/OpportunityBranchRulesDiag
 import ProductTrioVennDiagram from "./diagrams/ProductTrioVennDiagram";
 import KeystoneHabitDiagram from "./diagrams/KeystoneHabitDiagram";
 import ThresholdGaugeDiagram from "./diagrams/ThresholdGaugeDiagram";
+import JevVsLlmDiagram from "./diagrams/JevVsLlmDiagram";
+import JevRequestDiagram from "./diagrams/JevRequestDiagram";
+import JevPrimitivesDiagram from "./diagrams/JevPrimitivesDiagram";
+import JevConfidenceDiagram from "./diagrams/JevConfidenceDiagram";
+import JevLangGraphDiagram from "./diagrams/JevLangGraphDiagram";
+import JevAgentLoopDiagram from "./diagrams/JevAgentLoopDiagram";
 
 // Markdown elements get a `.handbook-*` class from styles/index.css instead of a
 // `prose` block — @tailwindcss/typography isn't installed, and the rest of
@@ -102,4 +108,10 @@ export const mdxComponents: MDXComponents = {
   ProductTrioVennDiagram,
   KeystoneHabitDiagram,
   ThresholdGaugeDiagram,
+  JevVsLlmDiagram,
+  JevRequestDiagram,
+  JevPrimitivesDiagram,
+  JevConfidenceDiagram,
+  JevLangGraphDiagram,
+  JevAgentLoopDiagram,
 };

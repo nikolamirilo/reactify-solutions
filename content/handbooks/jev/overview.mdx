@@ -1,0 +1,80 @@
+---
+title: What is Jev?
+description: Jev is a model from TypeSafe AI that returns decisions, not text. You give it evidence and a few typed questions, and it gives back choices, scores, and probabilities your code can use directly.
+lastReviewed: 2026-09-23
+verifiedAgainst: TypeSafe AI docs (jev-1.13.0), Vercel and LangChain Jev guides, Sep 2026
+appliesTo: Jev by TypeSafe AI
+---
+
+<InOneMinute>
+
+- Jev is a **decision model**. It does not write prose. It picks from answers you define and tells you how sure it is.
+- You send **state** (the evidence) and **questions** (what to decide). You get back **typed answers** with probabilities.
+- Three question types: **Choice** (pick one option), **Score** (place it on a scale), **Noul** (yes or no, as a probability).
+- It is fast and cheap: 70 to 500 ms per call, with output tokens free.
+- Use it for routing, classification, scoring, and guardrails. Keep the LLM for anything that has to write words.
+
+</InOneMinute>
+
+## The idea in one picture
+
+Most AI features today ask a chat model a question and then parse whatever text comes back. That works, but it is slow, it costs output tokens, and sometimes the text does not match what your code expected.
+
+Jev flips it around. You list the possible answers up front. The model can only return one of them.
+
+<JevVsLlmDiagram />
+
+## Why it is called a "System One" model
+
+The name comes from Daniel Kahneman's two modes of thinking. **System One** is the fast, intuitive snap judgment. **System Two** is the slow, careful reasoning.
+
+Chat LLMs are built for System Two work: explaining, planning, writing. Jev is built for System One work: "which team owns this?", "is this urgent?", "how bad is it?". Questions a person would answer in a second, but that your software asks thousands of times a day.
+
+TypeSafe trains it with a method they call **reinforcement learning for calibrated decisions**. The goal is honest probabilities. When Jev says 0.9, it should be right about nine times out of ten.
+
+## What you get from it
+
+| Property | What it means for you |
+|---|---|
+| Typed output | The answer is always one of your options. No parsing, no "hallucinated" labels. |
+| Probabilities | Every answer comes with a number you can put in an `if` statement. |
+| Parallel questions | Ten questions in one request take about as long as one. |
+| Low cost | Input tokens only. Output is free. |
+
+<Callout type="warn" title="Typed does not mean correct">
+Jev guarantees the *shape* of the answer, not that the answer is right. It can still pick the wrong team. That is why you test it on real data and use confidence to decide when a human should check.
+</Callout>
+
+## When to use it, and when not to
+
+**Good fit:**
+
+- Routing a request to the right agent, team, or model
+- Classifying tickets, emails, documents, or search results
+- Scoring things on a rubric (severity, relevance, sentiment)
+- Guardrails: "is this tool call safe?", "does this message contain PII?"
+
+**Not a fit:**
+
+- Writing replies, summaries, or code. Use an LLM.
+- Math, counting, or comparing dates. Do it in code.
+- Images or audio. Jev reads text only, so convert them to text first.
+
+## What this handbook covers
+
+| Page | What it answers |
+|---|---|
+| [Your first call](/handbooks/jev/quickstart) | HTTP, Python, and TypeScript, in five minutes |
+| [Choice, Score, Noul](/handbooks/jev/question-types) | Which question type to use, and what each returns |
+| [Writing state & questions](/handbooks/jev/state-and-questions) | How to phrase things so Jev gets them right |
+| [Confidence & thresholds](/handbooks/jev/confidence) | Turning probabilities into safe decisions |
+| [LangGraph & LangChain](/handbooks/jev/langgraph) | Jev as a router node, and as agent middleware |
+| [Vercel AI SDK](/handbooks/jev/ai-sdk) | `experimental_evaluate` and the AI Gateway |
+| [Common patterns](/handbooks/jev/patterns) | Intent routing, fan-out, composite scoring, guardrails |
+| [Limits, pricing & weak spots](/handbooks/jev/limits) | The numbers, and where Jev gets things wrong |
+
+<FullReference label="Where this page's facts come from">
+
+TypeSafe AI's documentation at [docs.typesafe.ai](https://docs.typesafe.ai/introduction), their [launch post](https://typesafe.ai/blog/introducing-system-one-models-and-jev), Vercel's [What is Jev?](https://vercel.com/i/what-is-jev), and LangChain's [Building a harness with Jev](https://www.langchain.com/blog/building-a-harness-with-jev). Numbers are for `jev-1.13.0`, the current model at the time of review.
+
+</FullReference>

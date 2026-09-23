@@ -1,0 +1,95 @@
+---
+title: Choice, Score, and Noul
+description: Jev has three question types. Choice picks one option, Score places something on an ordered scale, and Noul gives the probability that a statement is true. Here is when to use each and what it returns.
+lastReviewed: 2026-09-23
+verifiedAgainst: TypeSafe AI primitives docs (jev-1.13.0), Sep 2026
+appliesTo: Jev by TypeSafe AI
+---
+
+<InOneMinute>
+
+- **Choice**: "which one?" Categories with no order. Up to 255 options.
+- **Score**: "how much?" An ordered scale of 2 to 10 levels.
+- **Noul**: "is this true?" One probability between 0 and 1.
+- You can mix all three in one request. They run in parallel and do not affect each other.
+
+</InOneMinute>
+
+## At a glance
+
+<JevPrimitivesDiagram />
+
+| Type | Ask it when | You define | You get back |
+|---|---|---|---|
+| Choice | The answers are categories | `criteria`: a map of options | `choice`, `probabilities`, `confidence` |
+| Score | The answers have an order | `criteria`: a list of levels, lowest first | `score`, `probabilities`, `legend`, `confidence` |
+| Noul | The answer is yes or no | Only `instructions` (optionally `criteria` for true/false) | `noul` |
+
+## Choice
+
+Pick one option from a set. Good for routing tickets to a team, tagging documents, or choosing which tool or model to use.
+
+<CodeBlock language="json" filename="question" code={`"department": {
+  "type": "choice",
+  "instructions": "Which team should handle this ticket?",
+  "criteria": {
+    "billing": "Charges, invoices, and refunds",
+    "technical": "Bugs, outages, and integration failures",
+    "account": "Login, permissions, and profile changes",
+    "other": "Anything that does not fit the other teams"
+  }
+}`} />
+
+The description next to each option matters. `"billing": null` works, but a short description makes the boundary between options much clearer.
+
+Add an `other` option when real inputs may not fit any category. Without it, Jev has to pick something.
+
+## Score
+
+Place the input on an ordered scale. Good for severity, relevance, sentiment, or seniority.
+
+<CodeBlock language="json" filename="question" code={`"severity": {
+  "type": "score",
+  "instructions": "How severe is the issue for the customer?",
+  "criteria": [
+    "Cosmetic or informational",
+    "Degraded, but a workaround exists",
+    "Blocking with no workaround"
+  ]
+}`} />
+
+Levels are numbered from `0`. The `score` is the average level weighted by probability. If Jev gives level 1 a probability of 0.57 and level 2 a probability of 0.43, the score is `(1 × 0.57) + (2 × 0.43) = 1.43`.
+
+That fractional score is handy. You can sort by it, or divide by the top level to get a 0 to 1 number and combine it with other scores in code.
+
+**Write levels as situations, not degrees.** "Feature broken but a workaround exists" works much better than "moderately severe".
+
+## Noul
+
+The name is a mix of "null" and "bool". It returns one number: the probability that the statement is true.
+
+<CodeBlock language="json" filename="question" code={`"is_human_escalation": {
+  "type": "noul",
+  "instructions": "Is the customer asking for a human agent?"
+}`} />
+
+<CodeBlock language="python" filename="usage" code={`wants_human = result.nouls["is_human_escalation"].noul > 0.9`} />
+
+- Near **1.0** means a strong yes. Near **0.0** means a strong no.
+- Near **0.5** means Jev sees both as equally likely. Treat that as "I do not know".
+- Phrase it so that a high value means yes. Avoid double negatives.
+- Noul has no separate `confidence` field. The probability already is the confidence.
+
+## Which one should I use?
+
+- If you would draw it as a dropdown, use **Choice**.
+- If you would draw it as a slider, use **Score**.
+- If you would draw it as a checkbox, use **Noul**.
+
+And if a question feels like it needs two of these at once, it is probably two questions. Ask both in the same request and combine the answers in code.
+
+<FullReference label="Where this page's facts come from">
+
+TypeSafe's [primitives overview](https://docs.typesafe.ai/primitives.md), and the [Choice](https://docs.typesafe.ai/primitives/choice.md), [Score](https://docs.typesafe.ai/primitives/score.md), and [Noul](https://docs.typesafe.ai/primitives/noul.md) pages. The example questions come from Vercel's [Jev and AI SDK guide](https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk).
+
+</FullReference>
