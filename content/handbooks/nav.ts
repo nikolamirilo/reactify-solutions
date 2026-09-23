@@ -212,6 +212,50 @@ export const handbooksNav: HandbookTopicNav[] = [
       },
     ],
   },
+  {
+    topic: "jev",
+    handbookName: "Jev",
+    description:
+      "What TypeSafe AI's Jev model is, how its three question types work, how to read confidence, and how to wire it into LangGraph, LangChain, and the Vercel AI SDK. A model that makes decisions instead of writing text.",
+    label: "Jev decision model",
+    sublabel: "guide",
+    headline: { lead: "Fast, typed decisions for", highlight: "your agents and apps" },
+    inOneSentence: {
+      lead: "Jev never writes a sentence, it only picks from the answers you give it.",
+      emphasis: "Your code decides what happens next.",
+    },
+    pages: [
+      {
+        title: "Start here",
+        pages: [
+          { slug: "overview", label: "What is Jev?" },
+          { slug: "quickstart", label: "Your first call" },
+        ],
+      },
+      {
+        title: "The basics",
+        pages: [
+          { slug: "question-types", label: "Choice, Score, Noul" },
+          { slug: "state-and-questions", label: "Writing state & questions" },
+          { slug: "confidence", label: "Confidence & thresholds" },
+        ],
+      },
+      {
+        title: "Integrations",
+        pages: [
+          { slug: "langgraph", label: "LangGraph & LangChain" },
+          { slug: "ai-sdk", label: "Vercel AI SDK" },
+        ],
+      },
+      {
+        title: "Reference",
+        pages: [
+          { slug: "patterns", label: "Common patterns" },
+          { slug: "limits", label: "Limits, pricing & weak spots" },
+        ],
+      },
+    ],
+  },
 ];
 
 export function getTopicNav(topic: string): HandbookTopicNav | undefined {

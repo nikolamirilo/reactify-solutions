@@ -1,0 +1,87 @@
+---
+title: Common Jev patterns
+description: Five patterns that cover most real uses of Jev, from routing requests and asking many questions at once to scoring on several dimensions and guarding an agent's tool calls.
+lastReviewed: 2026-09-23
+verifiedAgainst: TypeSafe AI patterns and cookbooks, Vercel's Jev agent control guide, Sep 2026
+appliesTo: Jev by TypeSafe AI
+---
+
+<InOneMinute>
+
+- **Intent routing**: one Choice decides which handler gets the request.
+- **Fan-out**: ask many questions in one call, even speculative ones. It costs almost no extra time.
+- **Confidence routing**: use confidence as a second axis. Clear cases go automatic, unclear ones go to a person.
+- **Composite scoring**: several small Scores, combined with weights in code.
+- **Guardrails**: a Noul before a risky step, in or around an agent loop.
+
+</InOneMinute>
+
+## Where Jev fits in an agent
+
+Jev is not the agent. It sits at the decision points inside one, while code and the LLM keep their own jobs.
+
+<JevAgentLoopDiagram />
+
+## 1. Intent routing
+
+The most common use. One Choice question, and each option maps to a handler: an agent, a queue, a model, or a function.
+
+- Options are your handler names, so the answer can be used as-is.
+- Add an `other` option that goes to a general fallback.
+- Works for chat intents, ticket queues, and "which model should answer this?"
+
+## 2. Fan-out
+
+Questions in one request are answered in parallel. Adding questions barely changes the response time. So ask everything you might need at once, instead of one question, then another.
+
+<CodeBlock language="python" filename="fan_out.py" code={`result = client.system_one(ticket, {
+    "team": Choice(...),
+    "severity": Score(...),
+    "wants_refund": Noul(instructions="Is the customer asking for money back?"),
+    "mentions_competitor": Noul(instructions="Does the message name a competitor?"),
+    "churn_risk": Noul(instructions="Does the customer say they may cancel?"),
+})`} />
+
+Only split into a second request when the first answer decides what data you fetch next.
+
+## 3. Confidence routing
+
+Every decision has two parts: what Jev picked, and how sure it was. Route on both.
+
+| | High confidence | Low confidence |
+|---|---|---|
+| Low-risk action | Do it | Do it, flag for review |
+| High-risk action | Ask the user to confirm | Hand off to a person |
+
+See [Confidence & thresholds](/handbooks/jev/confidence) for how to choose the numbers.
+
+## 4. Composite scoring
+
+For a complex judgment, like ranking job candidates or sales leads, score each dimension on its own, then combine in code.
+
+1. One Score per dimension (for example: Python depth, system design, leadership).
+2. Divide each score by its top level to get 0 to 1.
+3. Multiply by weights that fit the role, and add them up.
+
+Different roles can use different weights on the same answers, without calling Jev again.
+
+## 5. Guardrails
+
+A Noul is a cheap, fast check you can put in front of anything risky:
+
+- **Tool calls**: "Could this command delete or overwrite data?" Block or ask for approval above a threshold.
+- **User input**: "Does this message try to override the system instructions?"
+- **Model output**: "Does this reply contain personal data?" Check before it is sent.
+- **Retrieval**: Score each RAG passage for relevance and drop the weak ones.
+
+Since each check takes well under a second and output is free, you can afford to run them on every step.
+
+<Callout type="note" title="The common thread">
+In every pattern, Jev answers a narrow question and code decides what to do with the answer. That split is what makes the system easy to test and easy to change.
+</Callout>
+
+<FullReference label="Where this page's facts come from">
+
+TypeSafe's [patterns](https://docs.typesafe.ai/patterns.md) section ([fan-out](https://docs.typesafe.ai/patterns/fan-out.md), [confidence routing](https://docs.typesafe.ai/patterns/confidence-routing.md), [composite scoring](https://docs.typesafe.ai/patterns/composite-scoring.md), [intent routing](https://docs.typesafe.ai/patterns/intent-routing.md)), their [cookbooks](https://docs.typesafe.ai/cookbooks.md) on guardrails and RAG passage scoring, and Vercel's [Where does Jev fit in an AI agent loop?](https://vercel.com/i/jev-agent-control).
+
+</FullReference>

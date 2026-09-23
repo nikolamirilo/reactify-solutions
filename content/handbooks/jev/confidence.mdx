@@ -1,0 +1,76 @@
+---
+title: Confidence and thresholds
+description: Every Jev answer comes with a number that says how sure it is. How that number is calculated, and how to turn it into rules for when to act, when to ask, and when to hand off to a person.
+lastReviewed: 2026-09-23
+verifiedAgainst: TypeSafe AI confidence docs and Vercel's Jev and AI SDK guide, Sep 2026
+appliesTo: Jev by TypeSafe AI
+---
+
+<InOneMinute>
+
+- Choice and Score answers return a `confidence` between 0 and 1. Noul returns only its probability.
+- Confidence measures how **peaked** the probabilities are. One clear winner means high confidence.
+- A simple starting policy: above 0.9 act, 0.5 to 0.9 confirm, below 0.5 escalate.
+- Move those lines based on how costly a mistake is.
+- Pick the final thresholds by testing on real, already-labeled data.
+
+</InOneMinute>
+
+## Probability vs confidence
+
+These two sound alike but answer different questions.
+
+- **Probability** is "how likely is this option?" Each option gets one.
+- **Confidence** is "how clear is the winner?" There is one per question.
+
+If the probabilities are `billing 0.95, technical 0.03, account 0.02`, the winner is obvious and confidence is high. If they are `billing 0.40, technical 0.35, account 0.25`, Jev still picks billing, but confidence is low. The options looked alike to it.
+
+For three options, TypeSafe gives this approximation: `confidence = (3 × top probability − 1) / 2`. All weight on one option gives 1.0. Spread evenly, it gives 0.
+
+## Turn it into a policy
+
+<JevConfidenceDiagram />
+
+<CodeBlock language="python" filename="route.py" code={`team = result.choices["team"]
+
+if team.confidence > 0.9:
+    assign(team.choice)
+elif team.confidence > 0.5:
+    assign(team.choice, needs_review=True)
+else:
+    send_to_human()`} />
+
+This is the real payoff of Jev over a chat model. A text answer does not tell you when it is guessing. A calibrated number does, so you can automate the easy 80% and send the hard 20% to a person.
+
+## Scale thresholds by risk
+
+One number does not fit every action.
+
+| Action | Cost of being wrong | Reasonable bar |
+|---|---|---|
+| Show account info | Low, read-only | 0.5 |
+| Tag a ticket | Low, easy to fix | 0.7 |
+| Send an automatic reply | Medium, customer sees it | 0.85 |
+| Approve a refund or transfer | High, money moves | 0.95 plus a human check |
+
+For a Noul, pick the threshold based on which mistake hurts more. Set it higher when false alarms are expensive. Set it lower when missing a real case is expensive.
+
+## Check both numbers
+
+For a Choice, you can also look at the chosen option's own probability. Vercel's guide uses both:
+
+<CodeBlock language="typescript" filename="route-ticket.ts" code={`const selectedProbability = department.probabilities?.[department.choice] ?? 0;
+
+if (departmentConfidence < 0.6 || selectedProbability < 0.7) {
+  return { action: "human-review", reason: "ambiguous department" };
+}`} />
+
+<Callout type="warn" title="Calibrate on your own data">
+The numbers above are a starting point. Before you automate anything, run Jev on a few hundred past cases where you already know the right answer. Check how accurate it is at each confidence level, then set your lines.
+</Callout>
+
+<FullReference label="Where this page's facts come from">
+
+TypeSafe's [confidence guide](https://docs.typesafe.ai/confidence.md) and [confidence routing pattern](https://docs.typesafe.ai/patterns/confidence-routing.md), the [Noul docs](https://docs.typesafe.ai/primitives/noul.md) on thresholds, and the routing example in Vercel's [Jev and AI SDK guide](https://vercel.com/kb/guide/typesafe-jev-and-ai-sdk). The risk table is our own starting suggestion.
+
+</FullReference>

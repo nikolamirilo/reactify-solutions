@@ -1,0 +1,144 @@
+---
+title: Your first Jev call
+description: Get an API key, send one request over HTTP, then do the same with the Python and TypeScript SDKs. About five minutes.
+lastReviewed: 2026-09-23
+verifiedAgainst: TypeSafe AI API reference and SDK docs (jev-1.13.0), Sep 2026
+appliesTo: Jev by TypeSafe AI
+---
+
+<InOneMinute>
+
+- Create an API key in the TypeSafe console and export it as `TYPESAFE_API_KEY`.
+- Every call is one `POST` to `https://api.typesafe.ai/v1/systemone`.
+- The body has three fields: `model`, `state`, and `questions`.
+- Python: `pip install typesafe-sdk`. TypeScript: `npm install @typesafe-ai/sdk`.
+- Want to try it without code first? The console has a playground.
+
+</InOneMinute>
+
+## How a request is shaped
+
+<JevRequestDiagram />
+
+Every question has a name you pick, like `urgent` or `team`. The answer comes back under that same name, so you never have to match things up by position.
+
+## 1. Set your key
+
+<CodeBlock language="bash" filename="terminal" code={`export TYPESAFE_API_KEY=your_key_here`} />
+
+## 2. Call it over HTTP
+
+<CodeBlock language="bash" filename="terminal" code={`curl https://api.typesafe.ai/v1/systemone \\
+  -H "Authorization: Bearer $TYPESAFE_API_KEY" \\
+  -H "Content-Type: application/json" \\
+  -d '{
+    "model": "jev-latest",
+    "state": "Stripe sync has failed for 3 days and I am losing sales. Please help ASAP.",
+    "questions": {
+      "urgent": {
+        "type": "noul",
+        "instructions": "The message conveys urgency or time-sensitivity"
+      },
+      "team": {
+        "type": "choice",
+        "instructions": "Which team should handle this?",
+        "criteria": {
+          "billing": "Charges, invoices, and refunds",
+          "technical": "Bugs, outages, and integration failures"
+        }
+      }
+    }
+  }'`} />
+
+The response looks like this (numbers will vary):
+
+<CodeBlock language="json" filename="response" code={`{
+  "model": "jev-1.13.0",
+  "answers": {
+    "urgent": { "type": "noul", "noul": 0.99 },
+    "team": {
+      "type": "choice",
+      "choice": "technical",
+      "probabilities": { "billing": 0.04, "technical": 0.96 },
+      "confidence": 0.92
+    }
+  },
+  "usage": { "input_tokens": 118, "output_tokens": 0 }
+}`} />
+
+## 3. The same thing in Python
+
+Needs Python 3.10 or newer.
+
+<CodeBlock language="bash" filename="terminal" code={`pip install typesafe-sdk`} />
+
+<CodeBlock language="python" filename="triage.py" code={`from typesafe_sdk import Choice, Noul, Score, TypeSafeClient
+
+client = TypeSafeClient()  # reads TYPESAFE_API_KEY
+
+result = client.system_one(
+    "I was charged twice. Please help ASAP.",
+    {
+        "billing": Noul(instructions="Is this about billing?"),
+        "tone": Choice(
+            instructions="What is the tone?",
+            criteria={"calm": None, "angry": None},
+        ),
+        "urgency": Score(
+            instructions="How urgent is this?",
+            criteria=["low", "medium", "high"],
+        ),
+    },
+)
+
+print(result.nouls["billing"].noul)     # 0.98
+print(result.choices["tone"].choice)    # "angry"
+print(result.scores["urgency"].score)   # 1.8`} />
+
+Answers are grouped by type: `result.nouls`, `result.choices`, and `result.scores`. There is also an `AsyncTypeSafeClient` with the same method for async code.
+
+## 4. The same thing in TypeScript
+
+Needs Node.js 20 or newer.
+
+<CodeBlock language="bash" filename="terminal" code={`npm install @typesafe-ai/sdk`} />
+
+<CodeBlock language="typescript" filename="triage.ts" code={`import { choice, TypeSafeClient } from "@typesafe-ai/sdk";
+
+const client = new TypeSafeClient(); // reads TYPESAFE_API_KEY
+
+const response = await client.systemOne({
+  state: { document: "I was charged twice. Please fix this ASAP." },
+  questions: {
+    category: choice("What is this ticket about?", {
+      billing: null,
+      technical: null,
+      other: null,
+    }),
+  },
+});
+
+console.log(response.answers.category.choice); // "billing"`} />
+
+The SDK infers the answer types from your questions, so `response.answers.category.choice` is typed as `"billing" | "technical" | "other"`. The `score()` and `noul()` helpers work the same way.
+
+<CheckItWorked>
+Change the state to <code>"Thanks, all sorted now!"</code> and run it again. The urgency number should drop close to zero.
+</CheckItWorked>
+
+## If something fails
+
+| Status | Meaning | What to do |
+|---|---|---|
+| `401` | Missing or wrong API key | Check `TYPESAFE_API_KEY` |
+| `422` | The request did not validate | Check question types and `criteria` |
+| `429` | Rate limit hit | Back off and retry |
+| `529` | Service overloaded | Back off and retry |
+
+Both SDKs retry `429` and `529` for you with exponential backoff.
+
+<FullReference label="Where this page's facts come from">
+
+The [API reference](https://docs.typesafe.ai/api.md), [quickstart](https://docs.typesafe.ai/introduction/quickstart.md), [Python SDK usage](https://docs.typesafe.ai/sdk/python/usage.md), and [JavaScript SDK](https://docs.typesafe.ai/sdk/javascript.md) pages in TypeSafe's docs. The sample response is illustrative; field names match the API reference.
+
+</FullReference>

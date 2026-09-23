@@ -1,0 +1,73 @@
+---
+title: Limits, pricing, and weak spots
+description: The current Jev model, its context limits, rate limits, and price, plus the short list of things it does badly. One page to check before you ship.
+lastReviewed: 2026-09-23
+verifiedAgainst: TypeSafe AI models page and jev-1.13 known issues, Sep 2026
+appliesTo: jev-1.13.0
+---
+
+<InOneMinute>
+
+- Current model: `jev-1.13.0`. The alias `jev-latest` points to it.
+- 64k tokens per request in total. Output tokens are free.
+- $0.042 per million input tokens on TypeSafe directly.
+- Text only, best in English, 255 options max per Choice, 2 to 10 levels per Score.
+- It does not write text, do math, or compare dates well.
+
+</InOneMinute>
+
+## The model
+
+| Name | Points to | Notes |
+|---|---|---|
+| `jev-latest` | `jev-1.13.0` | Stable, the SDK default |
+| `jev-preview` | `jev-1.13.0` | Same model for now |
+| `jev-1.13.0` | itself | Pin this in production so upgrades do not surprise you |
+
+Jev is not fine-tuned per customer. You shape its behavior through `state`, `instructions`, and `criteria`. TypeSafe says it does not train on customer requests, and zero data retention is available for enterprise.
+
+## Limits
+
+| Limit | Value |
+|---|---|
+| Context per request | 64k tokens (state plus all questions) |
+| State plus longest question | 32k tokens |
+| Choice options | up to 255 |
+| Score levels | 2 to 10 |
+| Requests | 1,200 per minute |
+| Throughput | 250,000 tokens per second |
+| Input | Text only: string, JSON object, or array |
+
+Rate limits were being adjusted during launch, so check the models page if you plan for high volume.
+
+## Speed and price
+
+- **Latency**: 70 to 500 ms end to end.
+- **Price**: $0.042 per million input tokens. Output is free.
+- **TypeSafe's own benchmark**: up to 200 times faster and 400 times cheaper than frontier chat models on decision tasks. Treat that as the best case, and measure on your own workload.
+
+<Callout type="warn" title="Prices differ by channel">
+The number above is TypeSafe's direct price. Gateways like Vercel AI Gateway, OpenRouter, and Cloudflare set their own. Some third-party guides also list older or different numbers, so check the page for the channel you actually use.
+</Callout>
+
+## Weak spots
+
+From TypeSafe's own list for `jev-1.13`:
+
+| Weak spot | What to do instead |
+|---|---|
+| Reads questions literally | Write the exact condition in `instructions` |
+| Math and counting | Do it in code |
+| Dates | Parse and compare in code |
+| Double negatives, long chains of logic | Ask a direct, single-step question |
+| Long, noisy state | Only send what the question needs |
+| Adversarial input | Test with hostile examples, use explicit criteria |
+| Instructions that conflict with criteria | Make them say the same thing |
+| Opposite questions do not sum to 1 | Ask one version of each question |
+| Generating text | Use an LLM, or turn extraction into a bounded Choice |
+
+<FullReference label="Where this page's facts come from">
+
+TypeSafe's [models page](https://docs.typesafe.ai/models.md), [state docs](https://docs.typesafe.ai/concepts/state.md), [jev-1.13 known issues](https://docs.typesafe.ai/model-jaggedness/jev-1.13.md), and the [launch post](https://typesafe.ai/blog/introducing-system-one-models-and-jev) for the benchmark numbers.
+
+</FullReference>
