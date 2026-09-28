@@ -384,8 +384,8 @@
   "reason": "Domain: none free on 5 TLDs incl. .build and brixlabs.com; crowded word"
  },
  "Sprag": {
-  "status": "finalist",
-  "reason": ""
+  "status": "cut",
+  "reason": "Dropped from the final ten for Ramsden: same-market namesakes sprag.ai (AI inference platform, also holds sprag.com) and sprag.io (CLI for Claude/Codex, 2026); legal score 1"
  },
  "Swage": {
   "status": "cut",
@@ -852,8 +852,8 @@
   "reason": "Radio test: spelled Tompion/Tompian/Tompkin; soft ending"
  },
  "Ramsden": {
-  "status": "keep",
-  "reason": "Replacement candidate, sent to independent review (round 3)"
+  "status": "finalist",
+  "reason": ""
  },
  "Brindley": {
   "status": "cut",

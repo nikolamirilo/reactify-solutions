@@ -250,3 +250,97 @@ VERDICT Saxton: FAIL - A live EU trade mark, BYRON SAXTON (EUTM 019023717, WWE, 
 - Serbian, German, Spanish, French, Italian: no negative meaning. Hungarian readers may say "Shaxton".
 - Radio test mostly passes. Spelling is anchored by Paxton, Braxton and Caxton, though fast speech can be misheard as "Saxon".
 - It looks and reads as a personal surname. Neither the founder nor the company is named Saxton, so a USPTO Principal Register filing risks a Section 2(e)(4) "primarily merely a surname" refusal.
+
+---
+---
+
+# Independent review, round 3: Ramsden (fresh context, 2026-09-28)
+VERDICT Ramsden: PASS - No live RAMSDEN mark covers software or IT services in classes 9/35/42 in the US, EU, WIPO or Serbia, no established software or tech company or product uses the name, and ramsden.io can be registered ($14.99 first year, $46 renewal). The remaining risks are a taken .com, exact social handles held by individuals, and UK associations with a fish-and-chip chain and a pawnbroker, none of which is a disqualifier under 2.9.
+
+Reviewer stance: I tried to find a concrete disqualifier and did not find one. No earlier work file in this repo screens Ramsden (grep of `work/` found it only in `raw/vercel_calls.jsonl`), so every check below was run fresh today.
+
+## Domain re-check
+
+Tool: Vercel `get_bulk_availability` (read-only), then `get_bulk_price` / `get_domain_price`. I did not call any buy, purchase or transfer tool.
+
+| Domain | Vercel `available` | 1st year | Renewal | Confirmation |
+|---|---|---|---|---|
+| **ramsden.io** | **true** | **$14.99** | **$46.00** (transfer $46.00) | RDAP returns 404 "Object not found" at the .io registry: https://rdap.identitydigital.services/rdap/domain/ramsden.io |
+| ramsden.com | false | - | - | Registered since 1998-09-24, expires 2028-09-23, registrar NameCheap, nameservers ns1-3.digitalocean.com, status "client transfer prohibited" (https://rdap.verisign.com/com/v1/domain/ramsden.com). Neither ramsden.com nor www.ramsden.com resolved in DNS through Firecrawl, so the domain is held but has no website. Not for sale as far as I could see. |
+| ramsden.ai | false | - | - | Dormant personal-blog placeholder (title "r.ai", body "ramsden.ai / Blog will be back soon.") on Cloudflare Pages: https://ramsden.ai |
+| ramsden.co | false | - | - | For-sale landing page (Firecrawl scrape of https://ramsden.co) |
+| ramsden.dev, ramsden.tech | false | - | - | Registered. ramsden.dev did not respond to Firecrawl. I did not check ramsden.tech further. |
+| ramsden.app | true | $9.99 | $15.00 | Vercel |
+| ramsdenlabs.com | true | $11.25 | $11.25 | Vercel |
+| ramsdenhq.com | true | $11.25 | $11.25 | Vercel |
+| getramsden.com | true | $11.25 | $11.25 | Vercel |
+| ramsden.software | true | $29.99 | $32.00 | Vercel |
+| ramsden.rs | no result | - | - | Vercel's bulk call returned nothing for .rs (the TLD is probably not supported). Check it at a Serbian registrar before deciding. |
+
+Conclusion: at least one usable domain exists. The best, ramsden.io, is confirmed unregistered by both Vercel and registry RDAP. The .io renewal is expensive ($46 a year). ramsdenlabs.com at $11.25 a year is a cheap .com fallback that also fits the planned "Ramsden Labs" name.
+
+## TMview
+
+Search: basic search "ramsden" (TMview covers USPTO, EUIPO, WIPO, the Serbian office and national offices). Firecrawl `query` scrape with waitFor 7000.
+
+- All offices: **112 results over 4 pages.** I reviewed every row on every page:
+  - p1: https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=ramsden
+  - p2: https://www.tmdn.org/tmview/#/tmview/results?page=2&pageSize=30&criteria=C&basicSearch=ramsden
+  - p3: https://www.tmdn.org/tmview/#/tmview/results?page=3&pageSize=30&criteria=C&basicSearch=ramsden
+  - p4: https://www.tmdn.org/tmview/#/tmview/results?page=4&pageSize=30&criteria=C&basicSearch=ramsden
+- **Serbia (RS): "No rows found"**: https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=ramsden&offices=RS
+- **WIPO (WO): no results**: https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=ramsden&offices=WO
+- **USPTO (US): 12 results**, all HARRY RAMSDEN(')S restaurant or food marks (classes 29/30/43; the class 42 filings are all Ended), plus "RAMSDEN'S EARTH SUPPLEMENTS" (class 5, Ended) and TWO-SHARE (Ended). None is live in class 9, 35 or 42: https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=ramsden&offices=US
+- **EUIPO (EM): 4 results**: https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=ramsden&offices=EM
+  - RAMSDEN JEANS, 018488173, class 25 (clothing).
+  - HARRY RAMSDEN, 016371601, classes 29/30/43.
+  - Harry Ramsden's, 005957907, classes 43/30/29.
+  - **Harry Ramsden's, 000006460, classes 29/30/42, Registered, expires 2036-04-01.** This is the only live in-scope class 42 hit, so I checked its specification. Class 42 reads **"Restaurant and catering services."** The mark was filed on 1996-04-01, before Nice 8th edition (2002) moved restaurant services from class 42 to class 43. The number is 42 but the services are not IT services. Detail: https://www.tmdn.org/tmview/#/tmview/detail/EM500000000006460
+- Out-of-scope offices (for context, not disqualifying):
+  - RAMSDEN, CN, class 35, registered to 何晓铟 (the same owner also holds CN classes 16/25/29/30/31/32/43).
+  - **Ramsdens, GB, classes 14/35/36, Ramsdens Holdings PLC** (a UK pawnbroker, jeweller and foreign-exchange retailer).
+  - Ramsden Law Pty Ltd, AU, class 45 (several marks).
+  - Ramsden Faes, AU, classes 36/42, **Ended**.
+
+Judgment: the brief's rule is "a live confusingly similar mark in classes 9/35/42." EUTM 000006460 is class 42 by number only; it covers restaurant and catering services. I do not count it as a conflict for software or IT services. The UK "Ramsdens" class 35 mark is outside the listed jurisdictions and covers a retail and financial business. I did not run a formal phonetic-variant search (Ramsdon, Ramsten, Ramden), so that is a gap.
+
+## Closest conflicts
+
+No established software or tech company or product is named Ramsden. The closest hits:
+
+1. **Ramsden Management Services Ltd (UK)**. Its LinkedIn tagline is "management consultancy ... Project & Programme Management and the delivery of AI and digital solutions" (https://uk.linkedin.com/company/ramsden-management-services-ltd). It appears to be one contractor's company: director Des O'Dell since May 2000 (https://uk.linkedin.com/in/des-o-dell-40b74b9), 1-10 employees and revenue under $5M according to ZoomInfo (https://www.zoominfo.com/c/the-ig-group/345973580). This is the closest in field, but it is a tiny consultancy, not an established tech brand. Judgment: not disqualifying.
+2. **Ramsden Digital**, a freelance digital-marketing and web-design sole trader (https://ramsdendigital.com/). Tiny. Not disqualifying.
+3. **Ramsdens (Ramsdens Holdings PLC / Ramsdens Financial Ltd)**, a UK FX, pawnbroking and jewellery retailer. It publishes a "Ramsdens Multi Currency Card" app (https://apps.apple.com/gb/app/ramsdens-multi-currency-card/id6448112929, https://play.google.com/store/apps/developer?id=Ramsdens) and has a GitHub org, Ramsdens-Financial-Limited (GitHub `search_users` type:org). It is a well-known UK brand, but in finance and retail, not software. Judgment: association risk in the UK only.
+4. **Harry Ramsden's**, a UK fish-and-chip restaurant chain with a loyalty app (https://uk.linkedin.com/company/harry-ramsdens-group, https://apps.apple.com/be/app/harry-ramsdens/id6746223498). Different field.
+5. **ramsden.ai / github.com/ramsden-ai**. The GitHub org is named "ramsden.ai", was created in Oct 2023, and holds one `.github` repo whose profile README is the unedited GitHub template (https://github.com/ramsden-ai, https://raw.githubusercontent.com/ramsden-ai/.github/main/profile/README.md). The site is a personal-blog placeholder (https://ramsden.ai). It is not a company or product, but it is the nearest "Ramsden + AI" footprint, so keep an eye on it.
+6. People, not companies: Luke Ramsden, co-founder and CPTO of Architect AI (https://tech.eu/2025/09/09/architect-ai-secures-475m-to-build-the-first-agentic-websites/), and Jim Ramsden, creative director at Etch Software Studio (https://etch.co/team/jim). These are surnames, not brands.
+7. Non-tech Crunchbase entries: Ramsden International (grocery exporter), Ramsden Lawyers, Ramsden and Whale (drums) (https://www.crunchbase.com/organization/ramsden-international, https://www.crunchbase.com/organization/ramsden-lawyers, https://www.crunchbase.com/organization/ramsden-and-whale). LinkedIn company search also returned only non-tech firms: foundry, law, estate agency, recruitment, rehab, real estate.
+8. Product Hunt: no product named Ramsden (Firecrawl search `site:producthunt.com ramsden`; the only hits were people named Ramsden). npm: no `ramsden` package (https://registry.npmjs.org/ramsden returns 404).
+
+## Language and radio test
+
+The meanings below are my own assessment unless a source is linked; I found no dictionary entry for "Ramsden" itself in any listed language.
+
+- **English:** a surname and place name (for example the instrument maker Jesse Ramsden, 1735-1800, known for the Ramsden eyepiece and dividing engine; https://en.wikipedia.org/wiki/Jesse_Ramsden). The elements "ram" (male sheep, to strike) and "RAM" (memory) are neutral and fairly tech-friendly. No vulgar meaning or homophone. The only connotation is a UK one: Harry Ramsden's fish and chips and the Ramsdens pawnbroker.
+- **Serbian (my judgment):** "ram" (рам) means a picture frame, which is neutral. "Ramsden" has no meaning, is spelled phonetically, and transliterates cleanly to Рамсден. No sense of "sram" (shame), because the letters do not form it.
+- **German (judgment):** no meaning. It reads "RAMS-den". It sits close to "Ramsch" (junk), but the pronunciation differs (s, not sch), so I do not count it as a homophone. "Rams" may also recall the designer Dieter Rams, which is a positive association.
+- **Spanish (judgment):** no meaning. Pronounced as written.
+- **French, Italian, Hungarian (quick judgment):** French "rame" (oar; the slang "ça rame" means "it's slow") and Italian "rame" (copper) are not triggered by "Ramsden". Hungarian has no issue.
+- **Radio test (judgment): marginal pass.** Spoken as /ˈræmzdən/, it has one obvious pronunciation. For spelling, the unstressed ending could be heard as "-don" or "-dan", and the s is voiced (z). British listeners know the surname and the -den pattern (Camden, Hampden, Hebden), so they are likely to spell it right. US listeners may sometimes write "Ramsdon" or "Ramzden". Serbian speakers read and write it phonetically. I would test this with 3-5 US listeners.
+
+## Handles
+
+- **GitHub:** `ramsden` is taken by a user account with one repo (https://github.com/Ramsden). `ramsden-ai` is taken (see above). `ramsdenlabs` and `ramsdenhq` returned 0 users in GitHub `search_users` (best effort; likely free).
+- **X:** `@ramsden` is taken by Jim Ramsden, joined 2009 (https://x.com/ramsden, via Firecrawl search snippet). I did not verify variants.
+- **Instagram:** `@ramsden` is taken, private account (https://www.instagram.com/ramsden/, via Firecrawl search snippet). I did not verify variants.
+- **LinkedIn company page:** Firecrawl cannot scrape LinkedIn ("we do not support this site"). No exact `/company/ramsden` page appeared in two `site:linkedin.com/company` searches. Not verified.
+- Net: the exact handle is taken on GitHub, X and Instagram, all by individuals. Suffixed handles (ramsdenlabs, ramsdenhq) look open. This is inconvenient but not a disqualifier under 2.9.
+
+## Main residual risk
+
+The name is clean under 2.9. The biggest non-disqualifying weakness is that **ramsden.com has been held privately since 1998** (NameCheap, parked on DigitalOcean DNS with no website). The company would be ramsden.io with $46 renewals, and exact social handles are taken. The next risk is **association in the UK market**: British buyers are likely to think first of Harry Ramsden's fish and chips or the Ramsdens pawnbroker and FX chain. A related soft risk is authenticity, since this is an English surname used by a Serbian company. Things to do before committing:
+
+1. Get a clearance opinion or run a phonetic-variant search (Ramsdon, Ramsten, Ramden) in classes 9, 35 and 42 at EUIPO and USPTO.
+2. Check ramsden.rs at a Serbian registrar.
+3. Consider a WHOIS or broker inquiry for ramsden.com.
+4. Run a small US radio test for the "-den" spelling.

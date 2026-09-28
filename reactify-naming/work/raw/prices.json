@@ -311,5 +311,45 @@
   "renewal_usd": 30,
   "checked_at": "2026-09-28",
   "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "ramsden.io",
+  "years": 1,
+  "first_year_usd": 14.99,
+  "renewal_usd": 46,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "ramsden.app",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 15,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "ramsden.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "ramsdenlabs.com",
+  "years": 1,
+  "first_year_usd": 11.25,
+  "renewal_usd": 11.25,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "ramsden.build",
+  "years": 1,
+  "first_year_usd": 30,
+  "renewal_usd": 30,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
  }
 ]
