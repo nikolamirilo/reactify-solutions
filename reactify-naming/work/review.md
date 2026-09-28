@@ -473,3 +473,132 @@ Secondary risks, none of them disqualifying on its own:
 - the bare .com, .io, .ai, .dev and .app, the GitHub name and the X handle are all unavailable, and bosklabs.com is taken.
 
 If the founder still wants Bosk, the minimum step before committing is a US clearance opinion on BOSK against BOSKI 99926179. Until that is done, this review counts the name as failed.
+
+---
+---
+
+# Independent review, round 3: Exerga (fresh context, 2026-09-28)
+
+VERDICT Exerga: FAIL - ENERGA SA (Orlen group) holds live EU marks "Energa" (EUTM 018580223, registered 2024, and 007303051) covering class 42 software design, website creation and computer consultancy plus class 35 business consultancy, and "exerga" differs from "energa" by one letter, which in my judgment makes it a confusingly similar live EU mark for identical services. Everything else passes: exerga.co is available at $29.99, and the language, radio, Serbian and US checks are clean.
+
+Reviewer stance: I worked from fresh context and re-ran every check myself. I did not rely on earlier rounds. The one call that decides the verdict (ENERGA) is a **judgment**, and I explain it below so the founder or a trade mark attorney can overrule it on the merits.
+
+## Domain re-check
+
+Tool: Vercel `get_bulk_availability` and `get_bulk_price` / `get_domain_price` (read-only, run 2026-09-28). No buy, purchase or transfer tool was called.
+
+| Domain | Vercel `available` | First year (USD) | Renewal (USD) | Notes |
+|---|---|---|---|---|
+| **exerga.co** | **true** | **29.99** | **24.80** | Proposed domain. Transfer price 30.38 (`get_domain_price`) |
+| exerga.com | false | n/a | n/a | Registered and listed for sale, see below |
+| exerga.io | true | 14.99 | 46.00 | |
+| exerga.dev | true | 9.99 | 13.00 | |
+| exerga.app | true | 9.99 | 15.00 | |
+| exerga.ai | true | 160 (2-year minimum) | 160 | |
+| getexerga.com | true | 11.25 | 11.25 | |
+| exergalabs.com | true | 11.25 | 11.25 | Suits the "Exerga Labs" plan |
+| exerga.tech, exerga.net, exerga.eu | true | not priced | not priced | |
+| exerga.rs | not returned | n/a | n/a | Vercel returned no result, so .rs is probably not supported. Not verified here |
+
+exerga.com:
+- Verisign RDAP says it is registered at Dynadot Inc. It was created 2025-07-17, expires 2027-07-17, has status "client transfer prohibited" and uses nameservers NS1/NS2.DYNA-NS.NET. Source: https://rdap.verisign.com/com/v1/domain/exerga.com
+- https://exerga.com returns a 302 redirect to https://forsale.dynadot.com/exerga.com?drefid=2071, a page saying "This domain name is for sale!" with Buy Now at **$1,422.22**. The same price appears at https://www.dynadot.com/market/user-listings/exerga.com (WebFetch).
+- It is a parked for-sale domain, not an operating business.
+
+Domain result: **pass**. exerga.co is registrable at $29.99 for the first year and $24.80 a year after that, and the .com can be bought for about $1.4k.
+
+## TMview
+
+All searches used TMview through firecrawl_scrape. TMview covers USPTO, EUIPO, WIPO (WO) and the Serbian office (RS). I did not query the WIPO Global Brand Database directly. WIPO coverage here comes from TMview's WO records.
+
+| Search | Results | Relevant finding |
+|---|---|---|
+| `exerga`, all offices, "contains" ([p1](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=exerga), [p2](https://www.tmdn.org/tmview/#/tmview/results?page=2&pageSize=30&criteria=C&basicSearch=exerga), [p3](https://www.tmdn.org/tmview/#/tmview/results?page=3&pageSize=30&criteria=C&basicSearch=exerga)) | 85, all 3 pages read | **No mark named EXERGA in any office.** The hits are EXERGAME(S)/EXERGAMING marks and Greek "επεξεργασία" marks (transliterated "epexergasia"). |
+| `exerg` in Serbia only ([link](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=exerg&offices=RS)) | 0 ("No rows found") | Nothing in Serbia. The control search `energ` in RS ([link](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=energ&offices=RS)) returned 218 results, so the RS filter works. |
+| `energa` in Serbia only ([link](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=energa&offices=RS)) | 0 | ENERGA has no Serbian mark. |
+| `exergy` in EM, US and WO ([link](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=exergy&offices=EM,US,WO)) | 83 | Live marks in 9/42 are held by energy and engineering owners (details under Closest conflicts). |
+| `energa` in EM, WO and US ([link](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=energa&offices=EM,WO,US)) | 157 | **ENERGA Spółka Akcyjna holds several live EUTMs in classes 35-45, including 42.** |
+
+Live marks in classes 9, 35 or 42 that matter:
+
+- **Energa**, EUTM 018580223. Figurative, filed 19/10/2021, registered 20/11/2024, expires 19/10/2031. Owner: ENERGA Spółka Akcyjna. Classes 35-45.
+  - Class 42 (EUIPO eSearch): "Research and development; ... design and development of computers and computer hardware, design, updating, maintenance and rental of computer software, creating and maintaining websites, Internet portals and vortals, creating and maintaining customer service systems accessible via the Internet ..., hosting computer sites (websites), providing databases ...; data conversion of computer programs ...; consultancy in the field of computers and computer hardware."
+  - Class 35 includes business consultancy, marketing, and data processing into computer databases.
+  - Source: https://euipo.europa.eu/eSearch/#details/trademarks/018580223
+- **Energa**, EUTM 007303051. Figurative, filed 10/10/2008, registered 18/12/2009, expires 10/10/2028. Owner: ENERGA SA. Its class 42 lists almost the same software and website services, "not in connection with air and gas compressors, expansion turbines". Source: https://euipo.europa.eu/eSearch/#details/trademarks/007303051. It was registered more than 5 years ago, so it is open to a proof-of-use challenge. **018580223 is not**, because its grace period runs to 20/11/2029.
+- **EXERGY**, EUTM 018766005. Figurative, registered 07/03/2023. Owner: EXERGY INTERNATIONAL S.r.l. Classes 7, 9, 37, 39, 40, 42. The class 9 goods are energy storage apparatus, capacitors and electrical energy analysers, which is energy hardware and not software. Source: https://www.tmdn.org/tmview/#/tmview/detail/EM500000018766005. The same owner also has a WIPO registration.
+- **EXERGY**, EUTM 018469451. Owner: Exergy Holding AB. Classes 11 and 42. Source: the TMview EM search above.
+- **EXERGY**, USPTO. Owner: Exergy Engineering LLC. Classes 7 and 42, registered. Also **EXERGY**, USPTO and EUTM, owner Erich Becker, classes 35 and 36. Source: the TMview EM/US/WO search above.
+- **EXERGAME**, USPTO. Owner: Motion Fitness Company. Class 35, registered, filed 19/01/2023. Also **EXERGAMES**, DPMA (Germany, national). Owner: Franz Rank. Filed 17/07/2026 in classes 9, 10, 28, 35, 38, 41, 42 and 44. Also **Exergame**, INPI France. Classes 9 and 41, registered. Source: the `exerga` search, page 1.
+
+Trade mark result:
+- **USPTO: pass.** No EXERGA mark. The EXERGY and EXERGAME marks are in unrelated fields (judgment).
+- **WIPO (via TMview): pass.** Only EXERGY in energy hardware.
+- **Serbia: pass.** Zero hits for exerg or energa.
+- **EUIPO: fail on ENERGA (judgment, reasoning below).**
+
+### Why I treat ENERGA as disqualifying (judgment)
+
+- **Visual.** EXERGA and ENERGA are both six letters. They share E-?-E-R-G-A, with 5 of 6 letters in the same positions, and differ only in the second letter (x/n). In lower case ("exerga" and "energa"; the Energa logo uses a lower-case word), x and n are both x-height letters, so the word shapes are close. The figurative styling of the Energa marks lowers the similarity only slightly, because the word "Energa" is the dominant element.
+- **Aural.** Both are three syllables with the same vowel pattern and the identical ending: /ek-SER-ga/ against /e-NER-ga/. I would rate this an average degree of similarity.
+- **Conceptual.** "Energa" alludes to energy (energia/Energie/energy). "Exerga" means nothing to the general public. For specialists it evokes *exergy*, which is also an energy concept. So the concepts do not clearly separate the marks.
+- **Services.** They are identical: class 42 software design and maintenance, website creation and computer consultancy, and class 35 business consultancy. These are exactly the services a software products and development company would register.
+- **Owner.** ENERGA is a large listed Polish energy group owned by PKN Orlen, serving about 2.7 million customers (https://en.wikipedia.org/wiki/Energa). It has the resources to oppose. It may also claim a reputation in Poland, which would let it rely on Article 8(5) EUTMR even where services differ.
+- **Side evidence (weak).** A CompanyWall search for "exerga" (https://www.companywall.si/iskanje?n=exerga) returned only "ENERGA" companies. The search engine itself treats the two strings as near-matches.
+- **Counter-arguments.** The "EX-" start is salient and changes the first syllable. Energa is a utility with no known software business. The 2009 mark is open to proof of use. The owner may never act. These points lower the risk but do not, in my judgment, remove it. EU clients are a target market, so an EUTM filing for "EXERGA" in 9/35/42 is the realistic next step, and **018580223 could be used in opposition without any proof-of-use defence until November 2029.**
+- **What would reverse this call.** A written opinion from an EU trade mark attorney that EXERGA and ENERGA are not confusingly similar for class 42 software services.
+
+## Closest conflicts
+
+| Name | Who / what | Field | Status / size | Risk (judgment) | Source |
+|---|---|---|---|---|---|
+| **Energa** | ENERGA SA, Polish energy group (Orlen) | Energy utility; EUTMs cover class 42 software and 35 | Live EUTMs 018580223 and 007303051 | **High (EU)**. One letter apart, identical class 42/35 services | https://euipo.europa.eu/eSearch/#details/trademarks/018580223 ; https://en.wikipedia.org/wiki/Energa |
+| Exergy (NL) | AI "process learning engine" for food manufacturing and plastics recycling | Software / AI | LinkedIn: 2-10 staff, founded 2024, 127 followers, exergytech.nl | Low-medium. Different word (exergy, a known term), small and young | https://www.linkedin.com/company/exergysoftware ; https://ioplus.nl/archive/en/a-sneak-preview-of-the-ai-pitch-competition-what-exergy-has-in-store-for-the-world/ |
+| EXERGY International S.r.l. | ORC power plants | Energy engineering | EUTM and WIPO marks in 9/42, energy hardware | Low. Unrelated goods | https://www.tmdn.org/tmview/#/tmview/detail/EM500000018766005 |
+| EXERGA d.o.o. (Slovenia) | "EXERGA, energetske in procesne tehnologije, konkurenčnost in razvoj, d.o.o.", Celje | Energy and process technology consulting | Coface profile only. Not found as active on Bizi ("Noben zapis") or CompanyWall; status unconfirmed; no website found | Low. Regional (ex-Yugoslav market) same-name company, not software | https://information.coface.com/companyprofile/company/111528053?lang=en ; https://www.bizi.si/iskanje?q=exerga |
+| Exergame Fitness / EXERGAME marks | Interactive fitness gaming products | Fitness / games | USPTO EXERGAME registered in class 35; "exergame" is a generic term | Low. Descriptive term, unrelated services. Some readers may see "Exerga" as a truncation of "exergame" | TMview `exerga` search p1; https://www.facebook.com/exergamefitness/videos/level-up-your-fitness-with-the-fun-of-exergaming-discover-the-benefits-at-exerga/1478532709696234/ |
+| Exerga Brasil Oftalmologia | Eye clinic, São Paulo | Medical | Operating | None (unrelated) | https://www.reclameaqui.com.br/empresa/exerga-brasil-oftalmologia/sobre/ |
+| Exerga (Sweden) | Sole trader, shooting/hunting instructor | Non-tech | Registered 2002 | None | https://www.allabolag.se/foretag/exerga/olofstr%C3%B6m/skogstj%C3%A4nster/7VJQ7419BI5YHGM |
+
+Other searches:
+- A site-restricted search for "exerga" on Crunchbase, Product Hunt, App Store, Google Play and GitHub (firecrawl_search) found no product or company named Exerga.
+- A general web search for "Exerga" (firecrawl_search) returned no software or tech company with that name.
+
+## Language and radio test
+
+- **English: pass.** "Exerga" is not an English word. Near words are *exergue* (numismatics: the space below a coin design, https://dictionary.reverso.net/english-definition/exergue) and *exergy* (thermodynamics). Neither is negative, and I found no vulgar homophone.
+- **Serbian: pass (judgment).** No meaning. X is not a Serbian letter, so it transcribes as Ексерга/Ekserga. Serbian brands commonly keep X. I found no slang or vulgar reading.
+- **German: pass (judgment).** No meaning. Nearest is *Exergie* (technical). Nothing negative.
+- **Spanish: pass (judgment).**
+  - *Exergo* means exergue, and "exerga" is its Latin plural (https://es.wikipedia.org/wiki/Exergo).
+  - It rhymes with the Latin American vulgarism "verga", but it is not a homophone (/ek-SER-ga/ against /BER-ga/). I rate this minor.
+- **French: pass.** Close to *exergue*, as in *mettre en exergue* ("to highlight"). Neutral to positive.
+- **Italian: pass.** *Exerga* is a rare literary plural noun: "parti accessorie di un'opera, in genere stampate preliminarmente" (https://www.sapere.it/sapere/dizionari/dizionari/Italiano/E/EX/exerga.html). It is neutral.
+- **Hungarian: pass (judgment, quick check, no source found).** No meaning and no negative near-homophone that I know of.
+- **Outside the brief's language list (for information only):**
+  - **Portuguese.** "exerga" is a very common misspelling of *enxerga* ("sees"), for example in the 2025 song "Moça Se Exerga" (https://open.spotify.com/track/7kRwmsstqMiPY2kAl2Sugo) and in many LinkedIn posts. It appears in the idiom "se enxerga!" ("know your place"). Brazilian and Portuguese readers will read it as a misspelled verb.
+  - **Romanian.** *exergă* means exergue (https://m.dex.ro/exerg%C4%83).
+- **Radio test: pass with minor caveats (judgment).**
+  - Most English speakers will say "ek-SER-guh". Some may say "EK-ser-guh" or "eg-ZER-guh", so the stress is not fully fixed.
+  - Written after hearing it: English speakers will mostly write "Exerga", with occasional "Exurga" or "Exergah". Serbian speakers may write "Ekserga".
+  - The hard G is clear before "a". I rate this acceptable, not a failure.
+
+## Handles
+
+- **GitHub `exerga`: appears available.** https://github.com/exerga and https://api.github.com/users/exerga both return HTTP 404 (WebFetch).
+- **LinkedIn `company/exerga`: appears available (best effort).** https://www.linkedin.com/company/exerga returns HTTP 404 (WebFetch).
+- **X `@exerga`: unconfirmed.** A firecrawl scrape of https://x.com/exerga returned the profile of @ExergameFitness ("Exergame Fitness", 3,612 followers). That looks like a lookup fallback, not proof that @exerga is taken. Separately, TikTok posts tag an "@EXERGA" gamer account (https://www.tiktok.com/@joshuaheadland/video/7408312391538150689), so the handle is used by at least one individual on TikTok.
+- **Instagram `exerga`: not checked.** WebFetch got HTTP 429, and firecrawl does not support the site.
+
+## Main residual risk
+
+1. **ENERGA SA's EU marks** in classes 35 and 42 (identical software, website and IT-consultancy services, one letter apart) are the reason for FAIL.
+   - The call is a judgment, not a certainty. A trade mark attorney could rate the EX/EN start and the different concepts as enough to tell the marks apart.
+   - If the founder wants to keep Exerga, the minimum step is an EU clearance opinion covering EUTM 018580223 before any EUTM filing or public launch in EU markets.
+   - The Serbian and US registers are clear.
+2. Secondary risks that would not on their own fail the name:
+   - "Exergy" names in energy engineering and one small Dutch AI-software startup ("Exergy", founded 2024) sit close by.
+   - A dormant or deleted Slovenian "EXERGA d.o.o." (energy and process technologies) exists in the ex-Yugoslav market.
+   - Portuguese readers will see a misspelled verb.
+   - The .com costs $1,422.22.
+   - The X and Instagram handles are unverified.
