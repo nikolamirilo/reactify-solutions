@@ -4,7 +4,7 @@ Top 3 su tri najviša ponderisana zbira iz `work/finalists.csv` (rubrika 2.11: 2
 
 ### 1.1 Spelter · 3,75 / 5
 
-- **Značenje i priča:** *spelter* je legura cinka, a isti naziv nosi i mesing (bakar i cink) koji se koristi za tvrdo lemljenje, *brazing* ([Wikipedia: Spelter](https://en.wikipedia.org/wiki/Spelter), **VERIFIED**). To je metal koji popunjava spoj i od dva dela pravi jedan jači komad. To je skriveni blizanac uzora **Braze**: *brazing* je postupak, *spelter* je metal koji ga omogućava. Za firmu koja spaja proizvod, AI i podatke u jednu celinu i ostaje vlasnik rezultata, priča radi bez objašnjavanja agencijskim jezikom.
+- **Značenje i priča:** *spelter* je legura cinka, a isti naziv nosi i mesing (bakar i cink) koji se koristi za tvrdo lemljenje, *brazing* ([Wikipedia: Spelter](https://en.wikipedia.org/wiki/Spelter), **VERIFIED**). To je metal koji popunjava spoj i od dva dela pravi jedan jači komad, pa je spelter skriveni blizanac uzora **Braze**: *brazing* je postupak, *spelter* je metal koji ga omogućava. Za firmu koja spaja proizvod, AI i podatke u jednu celinu i ostaje vlasnik rezultata, priča radi bez objašnjavanja agencijskim jezikom.
 - **Zašto odgovara:** prava engleska reč (izričit zahtev iz 2.5), 7 slova, tvrdi sklopovi **sp-** i **-lt-**, nije vezana za tehnologiju. Radi u sva tri okvira: „Spelter”, „Quicktalog by Spelter”, „Spelter Labs”.
 - **Izgovor:** SPEL-ter (/ˈspɛltər/). Radio-test: jasan; u američkom izgovoru moguće „Spelder” (**VERIFIED**, jezički pregled, `work/research/language_screen_1.json`).
 - **Domeni (VERIFIED, Vercel, 28.09.2026):** **spelter.io** 14,99 USD prva godina / 46 USD obnova; spelter.app 9,99 / 15; spelter.dev 9,99 / 13; spelter.studio 21,99 / 36; spelter.ai 160 USD za minimalne 2 godine; spelter.co je premium (308 / 308). Zauzeti: spelter.com (nemački geodetski biro ÖbVI Thorsten Spelter, [RDAP](https://rdap.verisign.com/com/v1/domain/spelter.com)); spelter.so (registar ga ne izdaje).
@@ -44,7 +44,7 @@ U SAD prvenstvo stvara stvarna upotreba, a ne samo registracija žiga, pa bi sva
 
 ### 1.5 Iskreno poređenje sa Koshavom i Zanatom
 
-Isti rubrika, iste provere. Za Koshavu i Zanat ocene su naša procena (**ESTIMATED**), a domeni i žigovi su provereni 28.09.2026 (**VERIFIED**: Vercel poziv `benchmark-01`, TMview).
+Ista rubrika, iste provere. Za Koshavu i Zanat ocene su naša procena (**ESTIMATED**), a domeni i žigovi su provereni 28.09.2026 (**VERIFIED**: Vercel poziv `benchmark-01`, TMview).
 
 | Kriterijum (težina) | Spelter | Pritchel | Saxton | **Koshava** | **Zanat** |
 |---|---|---|---|---|---|
