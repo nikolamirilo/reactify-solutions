@@ -1,0 +1,1315 @@
+[
+ {
+  "name": "Akmon",
+  "territory": "B",
+  "judge_total": 13,
+  "cool": 5,
+  "story": 5,
+  "risk": 3,
+  "flags": {
+   "cool": "Hard, name-like Greek anvil with a first-smith myth; serious enterprise fit",
+   "story": "The Phoronis Idaean-Dactyls line is accurate and maps Scope, Build and Ship onto the anvil's endurance. Strong as an umbrella. The only concerns are the Acme/Acmon echo and Akmon S.A. (defence).",
+   "risk": "Akmon S.A. Greek defence electronics, akmon.xyz IT shop, Akmon AI humanizer; Acmon/Acme spelling echo"
+  }
+ },
+ {
+  "name": "Moxon",
+  "territory": "C",
+  "judge_total": 13,
+  "cool": 4,
+  "story": 5,
+  "risk": 4,
+  "flags": {
+   "cool": "Name-like, hard -x-, builder-manual story; strong day-one say",
+   "story": "Accurate (Mechanick Exercises was the first English book issued in parts): a maker who ran his own workshop and wrote for other builders. Cool and surname-like. Minor echo: Bierce's 'Moxon's Master', a story about a killer automaton.",
+   "risk": "No active software namesake found (Moxon Technologies UK dissolved 2022; Moxon Industries engineering); mild Moxen/Moxan spelling"
+  }
+ },
+ {
+  "name": "Remek",
+  "territory": "F",
+  "judge_total": 11,
+  "cool": 3,
+  "story": 4,
+  "risk": 4,
+  "flags": {
+   "cool": "Serbian masterpiece root, but heard as 'remake'",
+   "story": "The guild-masterpiece story is accurate and completes the Esnaf/Kalfa thread. English ears may hear 'remake', which suggests a copy.",
+   "risk": "Remek! Trading Systems (small); heard 'remake'/Remeck; Rimac echo; Czech living person Vladimir Remek; HU/SR positive"
+  }
+ },
+ {
+  "name": "Sprag",
+  "territory": "A",
+  "judge_total": 10,
+  "cool": 4,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Hard, Brame-like one syllable with a forward-only story; sounds blunt and is one letter from Sprig",
+   "story": "Accurate (Shakespeare quote checks out). The no-rollback story fits ownership but says little about making high-value products. Sprig (sprig.com) is one letter away.",
+   "risk": "One letter from Sprig (sprig.com UX-research SaaS); small 'Sprag' LinkedIn co; radio otherwise clean; no negative meanings"
+  }
+ },
+ {
+  "name": "Makefast",
+  "territory": "A",
+  "judge_total": 10,
+  "cool": 3,
+  "story": 4,
+  "risk": 3,
+  "flags": {
+   "cool": "Clever make/CLI pun, but reads like a utility tool",
+   "story": "The two readings (build fast / make fast = secure) cover both purposes, and `make` fits the CLI motif. But it is a compound, Makefast Group owns .com, and 'fast' can read as rushed.",
+   "risk": "Makefast Group UK owns makefast.com (hardware TM to check); generic phrase hard to own; German 'fast' = almost"
+  }
+ },
+ {
+  "name": "Groma",
+  "territory": "B",
+  "judge_total": 10,
+  "cool": 4,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Heavy Gr- Roman 'scope' tool plus 'grom'; 'aroma' echo, no domains",
+   "story": "Accurate, but it covers only the Scope stage, not Build or Ship. No domains, and GROMA cadastral software exists.",
+   "risk": "GROMA Czech geodetic software; Bitsight Groma scanning engine; 'aroma' mishear; Serbian grom = thunder (neutral)"
+  }
+ },
+ {
+  "name": "Kalvis",
+  "territory": "C",
+  "judge_total": 10,
+  "cool": 3,
+  "story": 4,
+  "risk": 3,
+  "flags": {
+   "cool": "Smith-god name, but Calvin/'calvo' echo, a little soft",
+   "story": "The Baltic heavenly smith (ship a new sun daily) and the common noun for smith fit well, a sibling to Brigit. Mild Calvis/calvo spelling echo, and it needs an About-page line.",
+   "risk": "UAB Kalvis (LT), Latvian first name; Calvis/Calvin spelling; ES/IT faint 'calvo' (bald)"
+  }
+ },
+ {
+  "name": "Tenax",
+  "territory": "E",
+  "judge_total": 10,
+  "cool": 4,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Hard Latin -x tenacity; slight adhesive/pharma feel",
+   "story": "Horace's 'tenacem propositi' is an accurate ownership story, but it says nothing about making, the acronym is forced, and Tenax is an industrial netting/fibre brand.",
+   "risk": "Several small dev shops (Tenax Technologies, Tenax Infotech) and Tenax netting/Toho Tenax brands; radio clean"
+  }
+ },
+ {
+  "name": "Obris",
+  "territory": "E",
+  "judge_total": 10,
+  "cool": 3,
+  "story": 3,
+  "risk": 4,
+  "flags": {
+   "cool": "Neat motif acronym, but the coinage rhymes with hubris",
+   "story": "The obrussa fire-test story is accurate but deeply hidden in a coinage. It rhymes with hubris.",
+   "risk": "Mostly clean: 'hubris' rhyme, Orbis/Obra echo, ObriSoft translation agency; Serbian 'obris' = outline (neutral)"
+  }
+ },
+ {
+  "name": "Bosk",
+  "territory": "E",
+  "judge_total": 10,
+  "cool": 3,
+  "story": 4,
+  "risk": 3,
+  "flags": {
+   "cool": "Short and hard, but obscure; Bosch echo",
+   "story": "Build-Own-Ship-Keep maps onto the creed in order, and the grove-of-products metaphor suits an umbrella. The word is obscure and needs telling, with a slight Bosch echo.",
+   "risk": "Homophone of Bossk (Star Wars, Lucasfilm character); bosk Java library; German ear near 'Bosch'"
+  }
+ },
+ {
+  "name": "Tanren",
+  "territory": "F",
+  "judge_total": 10,
+  "cool": 3,
+  "story": 4,
+  "risk": 3,
+  "flags": {
+   "cool": "Cool Musashi story, but soft sound",
+   "story": "The 鍛錬 forge-then-refine story is accurate (Musashi) and matches Build and Iterate, but the sound is soft and TANREN is a sales-enablement platform.",
+   "risk": "TANREN Japanese sales-enablement SaaS, TanRen Software S.A.; Tanrin/Tannren spelling"
+  }
+ },
+ {
+  "name": "Sinter",
+  "territory": "A",
+  "judge_total": 9,
+  "cool": 3,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Good process-engineering link, but it opens with 'sin'",
+   "story": "Accurate process story (many particles become one part), but it opens with 'sin' and the name is used by several software products.",
+   "risk": "Starts with 'sin'; software namesakes (Trail of Bits sinter tool, Desktop Metal Live Sinter, Sinter Platform SaaS)"
+  }
+ },
+ {
+  "name": "Quench",
+  "territory": "A",
+  "judge_total": 9,
+  "cool": 3,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Strong forge moment, but also means 'extinguish'",
+   "story": "Accurate hardening moment plus a product-market-fit pun, but 'quench' also means extinguish. Culligan Quench dominates search.",
+   "risk": "Culligan Quench major US brand; Quench.ai enterprise-AI history; 'quench' = extinguish; radio clean"
+  }
+ },
+ {
+  "name": "Caxton",
+  "territory": "A",
+  "judge_total": 9,
+  "cool": 3,
+  "story": 4,
+  "risk": 2,
+  "flags": {
+   "cool": "Classy maker name; Caxton fintech crowds it",
+   "story": "Accurate end-to-end product-owner maker story that works as an umbrella, but Caxton fintech (caxton.io) and Caxton Associates crowd the B2B name.",
+   "risk": "Caxton (caxton.io) London fintech ~150 staff; Caxton Associates hedge fund; Caxten/Kaxton spelling"
+  }
+ },
+ {
+  "name": "Pacta",
+  "territory": "B",
+  "judge_total": 9,
+  "cool": 4,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Adacta-grade Latin -ct- sound; PACTA CLM clash and reads as a sibling",
+   "story": "'Pacta sunt servanda' is accurate but speaks to contracts and services, not products. PACTA (DiliTrust contract SaaS) is a direct conflict, and it is a sibling of Adacta.",
+   "risk": "PACTA AI contract-management SaaS (Berlin, DiliTrust-owned): direct US/EU software TM conflict; Adacta/Facta sibling"
+  }
+ },
+ {
+  "name": "Exerga",
+  "territory": "D",
+  "judge_total": 9,
+  "cool": 3,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Clever exergy/chem story, but soft; 'exercise' echo",
+   "story": "The exergy (Zoran Rant) and exergue double story is rich, but the claim that 'Romanian uses exerga' is inaccurate: Romanian uses exergie. The 'exercise' echo.",
+   "risk": "'exer-' reads 'exercise'; ex/egz radio wobble; neighbours Exergia, Exergen, Exerp; no exact software namesake"
+  }
+ },
+ {
+  "name": "Bronta",
+  "territory": "D",
+  "judge_total": 9,
+  "cool": 4,
+  "story": 2,
+  "risk": 3,
+  "flags": {
+   "cool": "Closest Br-/open-a sound match; coined, Bronto/Bronte echo",
+   "story": "A second-hand coinage from Brontes, with Bronto Software, Brontë and brontosaurus noise. bronta.com is taken.",
+   "risk": "Bronta fitness app (coming soon), bronta.com active; Bronto/Bronte echoes; Italian 'brontolare' = grumble"
+  }
+ },
+ {
+  "name": "Dobra",
+  "territory": "E",
+  "judge_total": 9,
+  "cool": 3,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Warm Serbian 'goods', but echoes the Dobro guitar",
+   "story": "'Goods/assets' plus 'good' fits, but the story is in Serbian and invisible to US/EU audiences. It sits close to the Dobro guitar.",
+   "risk": "Close to Dobro (Gibson guitar TM); Dobra Tecnologia/Dobra ERP; Serbian 'good' positive, Portuguese 'fold' neutral"
+  }
+ },
+ {
+  "name": "Ducat",
+  "territory": "E",
+  "judge_total": 9,
+  "cool": 3,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Great gold-standard story; 'duck it'/Ducati echo",
+   "story": "The 500-year gold-standard quality story is accurate, but it looks like Ducati, has a money/Shylock 'ducats' tone, and is spelled Ducket on the radio.",
+   "risk": "One letter from Ducati; Ducket/Duckett spelling and doo-KAHT pronunciation split; Gul Dukat echo"
+  }
+ },
+ {
+  "name": "Ostro",
+  "territory": "E",
+  "judge_total": 9,
+  "cool": 3,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Rich triple story, but soft vowel onset; heard as 'Austro'",
+   "story": "The three-layer story is accurate but about wind and dye, not making or ownership. Ostro, a $55M US software company, conflicts.",
+   "risk": "Ostro US digital-health/pharma marketing software ($55M+); 'Austro' spelling; Spanish 'ostras' mild"
+  }
+ },
+ {
+  "name": "Farga",
+  "territory": "F",
+  "judge_total": 9,
+  "cool": 3,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Earthy forge word; Fargo/Varga echo",
+   "story": "An accurate Catalan-forge process story, but La Farga (a large metals producer) owns the name, and it echoes Fargo.",
+   "risk": "La Farga large Catalan metals producer; heard as 'Fargo'; Apoyo La Farga app; no negative meanings"
+  }
+ },
+ {
+  "name": "Noren",
+  "territory": "F",
+  "judge_total": 9,
+  "cool": 2,
+  "story": 4,
+  "risk": 3,
+  "flags": {
+   "cool": "Great umbrella story, but soft sound",
+   "story": "Noren = goodwill and noren-wake (a trusted apprentice opens a shop under the house name) fits the holding-to-umbrella plan well. Soft sound, a common noun, and heard as Noreen.",
+   "risk": "Spelled Noreen/Noren (Swedish surname); many restaurants/shops use it; soft onset"
+  }
+ },
+ {
+  "name": "Fabbro",
+  "territory": "F",
+  "judge_total": 9,
+  "cool": 3,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "'Miglior fabbro' is cool, but rehashes Faber",
+   "story": "The Dante/Eliot 'miglior fabbro' story is accurate and strong, but it duplicates Faber (already in the pool), and in Italy it reads as locksmith signage.",
+   "risk": "Italian generic trade word (locksmith/smith signage), common surname; Fabro single-b spelling; Faber sibling"
+  }
+ },
+ {
+  "name": "Vasara",
+  "territory": "F",
+  "judge_total": 9,
+  "cool": 2,
+  "story": 3,
+  "risk": 4,
+  "flags": {
+   "cool": "Soft 3 syllables; an arcade game",
+   "story": "Accurate Finnish 'hammer' / Baltic 'summer', but it is a tool without the maker's story, and it is also a Taito arcade game.",
+   "risk": "Taito 'Vasara' arcade game, 'Basara' echo; Lithuanian/Latvian 'summer' (positive, common Baltic word); mild Vassara spelling"
+  }
+ },
+ {
+  "name": "Swage",
+  "territory": "A",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Copies Braze's shape; heard as 'swag'",
+   "story": "Accurate forming story about load-rated parts. It reads as a Braze derivative, and 'swag' can mislead the umbrella read.",
+   "risk": "Radio fail (swag/swahj, 'swaige'); reads as 'swag'; Swagelok same root; feels derivative of Braze"
+  }
+ },
+ {
+  "name": "Clinch",
+  "territory": "A",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Punchy real word, but sounds like sales talk and is crowded in SaaS",
+   "story": "The clench-nailing story is real, but the everyday sense 'clinch the deal' is sales talk, against the brief. Crowded in B2B SaaS (Clinch ad-tech, ClinchPad).",
+   "risk": "Crowded B2B SaaS: Clinch ad-tech ($13M), Clinch recruitment marketing, ClinchPad CRM; boxing-stall/embrace senses"
+  }
+ },
+ {
+  "name": "Croze",
+  "territory": "A",
+  "judge_total": 8,
+  "cool": 4,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Braze-like -ze plus hidden Serbian 'kroz'; CROZ near-homophone hurts",
+   "story": "Good barrel-and-value story and the Serbian 'kroz' layer is nice, but CROZ is a Zagreb IT consultancy: same region, same industry, near-homophone.",
+   "risk": "CROZ (croz.net) Zagreb software consultancy, near-homophone, same region and industry; spelling crows/kroze"
+  }
+ },
+ {
+  "name": "Duramen",
+  "territory": "A",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Great heartwood story but soft; reads as 'Dura men'",
+   "story": "Accurate heartwood/durare story about a durable core, but the stress is ambiguous and it parses as 'Dura men'. Soft and botanical-clinical.",
+   "risk": "Stress ambiguity (du-RAY-men vs DUR-a-men), parses as 'Dura men'; dura mater medical echo; low software crowding"
+  }
+ },
+ {
+  "name": "Thole",
+  "territory": "A",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Soft and obscure; fails the radio test",
+   "story": "It merges two unrelated Old English words: thol (oar-pin) and tholian (endure), so the combined story is loose. 'Thole' also means to put up with suffering.",
+   "risk": "Radio: th + silent e (toll/thol/tole); small namesakes (Thole Consulting, Thole Solutions VA service)"
+  }
+ },
+ {
+  "name": "Carrack",
+  "territory": "A",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Hard, open-a ship that carries value; 'crack' inside, spelling drifts",
+   "story": "Story of a vessel carrying value suits an umbrella, but it is Columbus-era conquest and colonial trade, with 'crack' inside and carrack.app in software.",
+   "risk": "'crack' embedded; carrack.app AI accounting overlap; Carrick Capital confusion; Spanish 'carraca' = rattle/old wreck"
+  }
+ },
+ {
+  "name": "Yeoman",
+  "territory": "A",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 4,
+  "risk": 2,
+  "flags": {
+   "cool": "Perfect meaning, but devs hear the Yeoman CLI; dated",
+   "story": "Owner-operator plus 'yeoman's work' fits both purposes exactly, but developers will think of the yeoman.io JS scaffolding CLI, which ties the name to web tooling.",
+   "risk": "Yeoman.io well-known dev scaffolding CLI ('yo'); dated/military feel; 'yo, man' joke"
+  }
+ },
+ {
+  "name": "Stet",
+  "territory": "A",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Insider editor's cool, CLI-like; too short to own",
+   "story": "'Let it stand' shows confidence and has CLI flavour, but it means keep unchanged, which fights ship & iterate. It cannot be owned without a modifier.",
+   "risk": "Too short to own: Google STET tool, STET exam; Serbian ear may hear 'steta' (damage/pity); needs modifier"
+  }
+ },
+ {
+  "name": "Exegi",
+  "territory": "B",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 4,
+  "risk": 2,
+  "flags": {
+   "cool": "Grand Horace story, but the g is split and it is heard as Exegy",
+   "story": "Horace's 'exegi monumentum' is an accurate, strong story of finished, owned, durable work. The hard/soft g split and Exegy Inc. hurt it.",
+   "risk": "Radio fail: hard vs soft g; heard as 'Exegy' = Exegy Inc capital-markets tech; Exegi Group web agency"
+  }
+ },
+ {
+  "name": "Dolabra",
+  "territory": "B",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Great 'beat them with the dolabra' quote; 3 syllables, 'dollar' echo",
+   "story": "The Corbulo quote is accurate (Frontinus 4.7.2) and fits 'builders win by building', but the context is a military dig tool, and 'Dolabra Labs' is clumsy. Dolabra Digital has a trademark filing.",
+   "risk": "Dolabra Digital LLC with DOLABRA DIGITAL TM filing in software services; 'dollar'/Dolabella mishear"
+  }
+ },
+ {
+  "name": "Brontes",
+  "territory": "B",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Br- thunder-smith myth; Bronte-sisters spelling, reads plural",
+   "story": "Accurate Cyclops-smith story, but the maker is a one-eyed monster. It will be read and spelled as Brontë.",
+   "risk": "Spelled Bronte/Bronte-diaeresis (Bronte sisters); -es reads plural; Bronto Software/Brontes Technologies echoes"
+  }
+ },
+ {
+  "name": "Spondeo",
+  "territory": "B",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Soft, 3 syllables, 'spondee' echo",
+   "story": "The Gaius stipulatio story is accurate but covers only the service promise, not product making. It is soft, with spondee/spondyl echoes.",
+   "risk": "Spondeo recruitment consultancy (FI/PL), Spondeo Solutions; spondee/spondyl- medical echo; soft 3 syllables"
+  }
+ },
+ {
+  "name": "Artios",
+  "territory": "B",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Soft 3 syllables, pharma feel",
+   "story": "The 'complete, fitted' story is accurate but comes from a Bible verse, which gives a religious read. Soft, and Artios Pharma is a namesake.",
+   "risk": "Artios Pharma biotech, Artios Academies; heard 'Artie-os'; Greek 'artios' = even number (neutral)"
+  }
+ },
+ {
+  "name": "Caslon",
+  "territory": "C",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Classy, but it is a famous typeface",
+   "story": "An accurate 'product became the default' story, but it primarily names a typeface family, so it is weak as a company name.",
+   "risk": "Famous typeface family (Adobe/ITC Caslon) weakens distinctiveness; CASLON Indian banking software; Kaslon"
+  }
+ },
+ {
+  "name": "Eloy",
+  "territory": "C",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 4,
+  "risk": 2,
+  "flags": {
+   "cool": "Soft, vowel-led; Eloi/Aloy echoes",
+   "story": "The Eligius two-thrones integrity story is excellent and the name sounds like 'alloy', but it echoes Wells' feeble Eloi and Aloy. Soft sound.",
+   "risk": "Eloi (H.G. Wells, feeble race) and Aloy (Horizon Zero Dawn protected character) homophones; Eloy UK software; Eloy AZ"
+  }
+ },
+ {
+  "name": "Piran",
+  "territory": "C",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Soft; piranha echo",
+   "story": "Accurate tin-smelting process story that suits the founder, but the pronunciation varies and it echoes 'piranha'.",
+   "risk": "Pronunciation split (PIR-an/PEE-ran/PIE-ran), 'piranha' echo; Piran Technologies Cornish IT support"
+  }
+ },
+ {
+  "name": "Curta",
+  "territory": "C",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Engineers' cult object, but 'kurta' and a heavy backstory",
+   "story": "Beloved engineer object, but it is a product name rather than the maker's. The Buchenwald origin is a sensitive brand story, and it echoes 'kurta'.",
+   "risk": "Curta CTF crypto platform, Curta Inc (Seattle IT); C/K split and 'kurta' tunic confusion"
+  }
+ },
+ {
+  "name": "Ergana",
+  "territory": "D",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Soft; confused with Greek ERGANI",
+   "story": "The Athena Ergane craft-plus-intelligence story is accurate, but it is soft and collides with Greece's ERGANI labour registry.",
+   "risk": "Greek ERGANI labour-registry system and HR apps; ergana.com live; stress drift ER-ga-na/er-GAH-na"
+  }
+ },
+ {
+  "name": "Peracta",
+  "territory": "D",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Adacta sibling; peracta.com is a direct software clash",
+   "story": "An accurate end-to-end ownership story, but peracta.com is live construction-management software and the name reads as an Adacta clone.",
+   "risk": "peracta.com active construction-management software (direct software conflict); Peracto; Adacta-derivative"
+  }
+ },
+ {
+  "name": "Kaldra",
+  "territory": "D",
+  "judge_total": 8,
+  "cool": 4,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Hard K, open a's, reactor nod to Reactify; clashes with an indie app",
+   "story": "The cauldron-reactor story is cute, but an indie-app maker (kaldra.co) uses the name, and so does Magic: The Gathering.",
+   "risk": "Kaldra indie-app maker shipping via kaldra.co (same space); Kaldra = Magic: The Gathering (WotC IP); Caldra spelling"
+  }
+ },
+ {
+  "name": "Abovo",
+  "territory": "E",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Nice bookend to Adacta, but soft and vowel-heavy",
+   "story": "An accurate 'ab ovo' start-to-finish story, a nice pair with Adacta, but Ab Ovo Inc. is a US IT consultancy.",
+   "risk": "Ab Ovo Inc US IT consulting (direct services conflict), Ab Ovo supply-chain software; 'Aboveo' spelling"
+  }
+ },
+ {
+  "name": "Brevet",
+  "territory": "E",
+  "judge_total": 8,
+  "cool": 3,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Nice earned-ownership story; two pronunciations",
+   "story": "The patent, earned-rank and finished-ride stories fit, but it has two pronunciations, and Brevet Group is a sales-training firm.",
+   "risk": "Two pronunciations (BREV-it / bruh-VAY) fail radio test; Brevet Group sales training; French school diploma"
+  }
+ },
+ {
+  "name": "Mokume",
+  "territory": "F",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Braze-cousin story, but 3 soft syllables",
+   "story": "An accurate fused-metals story (disciplines fused into one product), but it has three soft syllables and English speakers will say 'moke-yoom'.",
+   "risk": "Radio: 3 soft syllables, said 'moke-yoom'; jewellery term (mokume-gane); defunct Mokume Software"
+  }
+ },
+ {
+  "name": "Ktema",
+  "territory": "F",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 4,
+  "risk": 2,
+  "flags": {
+   "cool": "The kt- onset fails the radio test",
+   "story": "Thucydides' 'a possession for all time' is accurate: ownership plus lasting work. The kt- onset fails the radio test (Tema / Kuh-tema).",
+   "risk": "kt- onset fails radio (heard Tema/Kuh-tema); Greek wineries use Ktima/Ktema"
+  }
+ },
+ {
+  "name": "Tatara",
+  "territory": "F",
+  "judge_total": 8,
+  "cool": 2,
+  "story": 3,
+  "risk": 3,
+  "flags": {
+   "cool": "Mononoke echo; 'ta-tas' slang risk",
+   "story": "An accurate tamahagane batch-furnace story, but the name is a common surname and brand, with Touhou and Mononoke associations.",
+   "risk": "Common name: Touhou character Kogasa Tatara, Mononoke 'Tataraba', Japanese surname; HU/SR 'Tatar' echo; spelling Tattara"
+  }
+ },
+ {
+  "name": "Pritchel",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 2,
+  "risk": 3,
+  "flags": {
+   "cool": "Sounds like a dated surname; 8 letters, spelling drifts",
+   "story": "The story is about a peripheral finishing punch, with a weak link to high value. 8 letters and unclear spelling on the radio.",
+   "risk": "Radio spelling split (Pritchell/Prichel/Pritchal), Pritchett echo; 8 letters; otherwise uncrowded, no negatives"
+  }
+ },
+ {
+  "name": "Stithy",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Archaic, lisping 'th'; misheard as 'stitchy'",
+   "story": "The forge-as-workshop story suits an umbrella, but Hamlet's 'as foul as Vulcan's stithy' is the best-known use, and the 'th' fails the radio test.",
+   "risk": "Radio fail on th (thin/this) and spelling (stythy/stithey), heard as 'stitchy'; Hamlet 'foul as Vulcan's stithy'"
+  }
+ },
+ {
+  "name": "Broach",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Br- punch undercut by the 'brooch' homophone",
+   "story": "Homophone of 'brooch', and in sailing 'to broach' means losing control. Precision is the only strong part of the story.",
+   "risk": "Homophone of 'brooch' (radio spelling fail); nautical 'broach' = boat out of control; Br- look near Brame"
+  }
+ },
+ {
+  "name": "Clevis",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Crisp and name-like, but about connecting, not making",
+   "story": "The story is about connecting, not making or owning. CLEVIS GmbH (Munich HR-software consultancy) is a real EU conflict.",
+   "risk": "CLEVIS GmbH Munich HR-software consultancy (EU conflict) plus Clevis no-code AI app builder; 'clever' echo"
+  }
+ },
+ {
+  "name": "Fettle",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Quaint and soft; fitness apps own it",
+   "story": "Accurate finishing and upkeep story that fits ownership after launch well, but the name is crowded with fitness apps and reads wellness, not software.",
+   "risk": "German: homophone of 'Vettel' (old hag, also F1 driver) and 'Fett' (fat); crowded Fettle fitness apps"
+  }
+ },
+ {
+  "name": "Helve",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 2,
+  "risk": 3,
+  "flags": {
+   "cool": "Soft, obscure; 'give up' idiom",
+   "story": "The idiom 'throw the helve after the hatchet' means giving up. Soft, and the story is thin on value creation.",
+   "risk": "Negative idiom 'throw the helve after the hatchet'; Helvetica/Helm visual echo; radio Helv/Helve"
+  }
+ },
+ {
+  "name": "Brayer",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Sounds close to the anchors, but carries the donkey 'bray'",
+   "story": "The ink roller is a supporting tool, not the maker's core act. A donkey's 'bray' and closeness to Braze/Brame weaken it.",
+   "risk": "Sound-confusable with anchors Brame/Braze (Bray-); donkey 'bray'; French brayer = hernia truss"
+  }
+ },
+ {
+  "name": "Octant",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Crisp -ct- instrument, but feels like geometry or govtech",
+   "story": "An accurate navigation story about precision and reach, but it has nothing to do with making or ownership, and octant.com is gov-contract software.",
+   "risk": "octant.com gov-contractor proposal software; VMware Octant K8s dashboard; Octant Bio; crowded"
+  }
+ },
+ {
+  "name": "Entasis",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Sounds medical; 3 soft syllables",
+   "story": "Accurate invisible-quality story, but the -asis ending sounds medical, and several consultancies and a biotech use the name.",
+   "risk": "Medical-sounding -asis ending; Entasis Technology (AWS partner), Entasis Partners, Entasis Therapeutics"
+  }
+ },
+ {
+  "name": "Portolan",
+  "territory": "A",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Lovely story, too long and soft",
+   "story": "Accurate 'maps drawn by practitioners' story, but it is about navigation rather than making. Portolan Commerce Solutions is a German ERP.",
+   "risk": "Portolan Commerce Solutions: German ERP/accounting software (direct EU software conflict); 'Portland' mishear"
+  }
+ },
+ {
+  "name": "Sponte",
+  "territory": "B",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Soft; pronunciation split",
+   "story": "The 'sua sponte' initiative story is accurate, but 'spontaneous' suggests unplanned, and Sponte is an established school ERP.",
+   "risk": "Sponte Brazilian school ERP (100k+ app installs); pronunciation split SPON-tay/SPON-tee"
+  }
+ },
+ {
+  "name": "Dactyl",
+  "territory": "B",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Hard -ct- myth, but pterodactyl and poetry-meter feel",
+   "story": "Dactyl Technologies (dactyl.com) is a web and app agency, and there is also a Czech app studio. Pterodactyl and poetic meter dominate the associations.",
+   "risk": "Dactyl Technologies US web/app agency owns dactyl.com; Dactyl Group Brno mobile dev; pterodactyl; Daktyl spelling"
+  }
+ },
+ {
+  "name": "Credne",
+  "territory": "C",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Brigit/Braze link, but can't be spelled from hearing",
+   "story": "An accurate joining-parts story that links to Braze and Brigit, but the final -e fails the radio test and it looks like a typo of 'credence'.",
+   "risk": "Radio fail: final -e (Kred-nuh/Kred-nee/Kredn), Irish Creidhne spelling; looks like typo of 'credence'"
+  }
+ },
+ {
+  "name": "Luchta",
+  "territory": "C",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Great myth, but ch=k is not spelled as spoken",
+   "story": "A lovely three-strokes assembly story, but a weak radio test (Lukta/Lucta) and the luchta Rust build tool is in an adjacent space.",
+   "risk": "luchta open-source Rust build/task tool on GitHub; radio fail (Lukta/Lucta); Spanish 'lucha' echo"
+  }
+ },
+ {
+  "name": "Branca",
+  "territory": "C",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Perfect Br-/open-a shape, but Fernet-Branca and Branca.ai own it",
+   "story": "Fernet-Branca and Branca.ai (AI CRM) own the name. The steam-turbine story is accurate but obscure.",
+   "risk": "Branca.ai US AI company (direct AI conflict); Fernet-Branca famous mark; BRANCA Smart Solutions (ES AI)"
+  }
+ },
+ {
+  "name": "Tekta",
+  "territory": "D",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "-kt- core, but 'tech'/Okta echo and a construction feel",
+   "story": "Inaccurate: 'tekta' is not a Greek form for 'the builders' (the plural is tektones). It echoes Okta and reads as 'tech'.",
+   "risk": "Rhymes with Okta (major identity brand); Tecta spelling (German furniture brand); Tekta Group Moscow developer"
+  }
+ },
+ {
+  "name": "Veracta",
+  "territory": "D",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 2,
+  "risk": 3,
+  "flags": {
+   "cool": "Corporate blend; Vera- is crowded",
+   "story": "An invented blend in the crowded Vera- space that echoes Adacta. 'True deeds' is generic.",
+   "risk": "Veracta Consultores (Madrid); crowded Vera- prefix (Veracode, Veralto); -acta echoes anchor Adacta"
+  }
+ },
+ {
+  "name": "Takta",
+  "territory": "D",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Punchy, but Okta echo and derivative of Takt",
+   "story": "The takt-time process story is apt, but the -a coinage adds nothing, it echoes Okta, and TAKTA exists.",
+   "risk": "Rhymes with Okta (major tech brand); TAKTA electronics R&D, Takt data/AI; Tackta/Tacta spelling"
+  }
+ },
+ {
+  "name": "Robur",
+  "territory": "E",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Heard as 'robber'",
+   "story": "The oak-heartwood/robust story is accurate, but on the radio it sounds like 'robber', a negative homophone.",
+   "risk": "English radio fail: heard as 'robber'; robur.coop software co-op, ROBUR Automation GmbH software"
+  }
+ },
+ {
+  "name": "Rivet",
+  "territory": "E",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Solid Braze sibling, but generic and crowded in AI",
+   "story": "The permanent-commitment story is plain rather than hidden, and the AI dev namespace is saturated (Ironclad Rivet, rivet.dev).",
+   "risk": "Crowded AI-dev namespace: Ironclad Rivet (AI-agent IDE), rivet.dev, RivetAI; poor SEO"
+  }
+ },
+ {
+  "name": "Vatra",
+  "territory": "E",
+  "judge_total": 7,
+  "cool": 4,
+  "story": 2,
+  "risk": 1,
+  "flags": {
+   "cool": "Cool Balkan hearth word in the Koshava vein; Vatra Labs is a twin",
+   "story": "Vatra Labs (vatra.io) is a custom software and AI studio with the same positioning, and there are Romanian nationalist connotations.",
+   "risk": "Vatra Labs (vatra.io) Austrian custom software/AI studio, direct competitor; Vatra Romaneasca nationalist group (anti-Hungarian)"
+  }
+ },
+ {
+  "name": "Lapis",
+  "territory": "E",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Elegant philosopher's stone, but soft and crowded",
+   "story": "The philosopher's-stone chemistry link is nice, but the software field is crowded and the sound is soft.",
+   "risk": "Crowded software: Lapis Lua web framework, Lapis consultancy (AU), Lapis Software Associates; soft sound"
+  }
+ },
+ {
+  "name": "Dobro",
+  "territory": "E",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Overshadowed by the guitar trademark",
+   "story": "The Dopyera Brothers founders' story is accurate, but the name means 'the guitar' (a Gibson trademark), and dobrolab is an AI PM tool.",
+   "risk": "Dobro AI PM assistant (dobrolab.io) same space; Gibson Dobro TM; DOBRO Agency Moscow"
+  }
+ },
+ {
+  "name": "Structa",
+  "territory": "E",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Latin 'built' with -ct-, but generic construction feel",
+   "story": "'Built' is generic and reads as construction or infrastructure. Structa is an AI copilot for real-estate developers.",
+   "risk": "Structa Toronto AI copilot for real estate (AI space); Structa Technology ZA; Strukta spelling"
+  }
+ },
+ {
+  "name": "Takt",
+  "territory": "E",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Lean-manufacturing insider cool; heard as 'tact'",
+   "story": "A standard lean term, used everywhere, that cannot be owned (all domains taken). It is heard as 'tact'.",
+   "risk": "Radio spelling fail (heard as 'tact'); heavy existing use (all domains taken, Takt data/AI co)"
+  }
+ },
+ {
+  "name": "Meijin",
+  "territory": "F",
+  "judge_total": 7,
+  "cool": 2,
+  "story": 3,
+  "risk": 2,
+  "flags": {
+   "cool": "Spelling drifts; anime feel",
+   "story": "An accurate Go-title story, but it is a self-awarded 'master' claim about fame, not making. Mid radio spelling.",
+   "risk": "Radio: MAY-jin spelled Majin/Mayjin (Dragon Ball 'Majin Buu'); Shanxi Meijin Energy; Chinese meijin = US dollar"
+  }
+ },
+ {
+  "name": "Vardar",
+  "territory": "F",
+  "judge_total": 7,
+  "cool": 3,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Strong sound, but political baggage and the story is only wind",
+   "story": "A wind and river story with no making or ownership link, carrying Macedonia naming-dispute and Yugoslav-era political baggage.",
+   "risk": "Macedonian political connotations (Vardar Macedonia, Greece naming dispute); RK/FK Vardar clubs; radar/Vader echo"
+  }
+ },
+ {
+  "name": "Skeg",
+  "territory": "A",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Short but ugly slang echo; SKEG has the same positioning",
+   "story": "SKEG (skeg.com) is an 18-year-old product-development firm with nearly the same positioning, which kills the umbrella use.",
+   "risk": "SKEG (skeg.com) product-development firm with near-identical positioning; Australian slang 'skeg' mildly derogatory"
+  }
+ },
+ {
+  "name": "Gunter",
+  "territory": "A",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Reads as a dated first name; Gunther spelling split",
+   "story": "Accurate surveying facts, but the ownership link is about land parcels. It reads as the dated German name Günter, which is not cool.",
+   "risk": "Radio split Gunter/Gunther/Gunter-umlaut; reads as dated German first name; Friends 'Gunther' echo"
+  }
+ },
+ {
+  "name": "Fairlead",
+  "territory": "A",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Soft, consulting feel",
+   "story": "The 'fair leadership' pun has a consulting feel with no making story. Fairlead Technology Group and others crowd it.",
+   "risk": "Crowded: Fairlead Technology Group (software), Fairlead Solutions custom-software shop, Fairlead Advisors"
+  }
+ },
+ {
+  "name": "Plimsoll",
+  "territory": "A",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Sneaker and 'limits' story; not hard or cool",
+   "story": "The story is about limits and compliance, not making. It is also a UK word for a sneaker, and the name is widely used.",
+   "risk": "Plimsoll Studio (web/software agency), Plimsoll maritime software, UK sneaker meaning; Plimsol spelling"
+  }
+ },
+ {
+  "name": "Curavit",
+  "territory": "B",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 3,
+  "risk": 1,
+  "flags": {
+   "cool": "Serbian 'kurva' echo is dangerous for this founder",
+   "story": "'Faciendum curavit' is the ideal product-owner credit line, but said aloud it risks sounding like the vulgar kurva/kura in Serbian and Hungarian, and it has a medical 'cure' feel.",
+   "risk": "Serbian/Hungarian: 'kura'/'kurva' vulgar echo (Serbian reads c as ts); Curavit Clinical Research (curavit.io)"
+  }
+ },
+ {
+  "name": "Ultro",
+  "territory": "B",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Heard as 'ultra'; generic",
+   "story": "The Latin 'unasked' story is accurate but hidden, because the name reads as a misspelled 'ultra'. Crowded with ERP, CRM and agency namesakes.",
+   "risk": "Crowded: Ultro ERP (ultro.ai), ULTRO CRM, Ultro Digital agency; easily confused with 'ultra'"
+  }
+ },
+ {
+  "name": "Goban",
+  "territory": "C",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "The Go board owns it; 'gob' echo",
+   "story": "'Goban' means a Go board to most searchers, and Go apps use it. Irish 'gobán' may carry a bungler sense.",
+   "risk": "Owned by Go world (goban.app, Goban Mac app); English 'gob' (mouth/spit) echo; Gobban/Goban spelling"
+  }
+ },
+ {
+  "name": "Kuzma",
+  "territory": "C",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Cool -z- sound, but tied to living NBA player Kyle Kuzma",
+   "story": "Kyle Kuzma (a living NBA player) and Kuzma turntables dominate the name, which breaks the no-living-people constraint in spirit.",
+   "risk": "Living person Kyle Kuzma (NBA) dominates search; Kuzma turntables; Russian/Slavic feel for EU/US"
+  }
+ },
+ {
+  "name": "Firnas",
+  "territory": "C",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Sounds like 'furnace', but the spelling fails",
+   "story": "The best-known part of the story is a crash landing. The software space is crowded (Firnas.tech, Firnas AI).",
+   "risk": "Crowded same space: Firnas.tech software house, Firnas Corp, Firnas AI; heard as 'furnace' (Furnass spelling)"
+  }
+ },
+ {
+  "name": "Exergon",
+  "territory": "D",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Reads as an energy fund",
+   "story": "'Exergonic' is accurate but reads as an energy company, and Exergon is an energy VC fund. It is a derivative sibling of Exerga.",
+   "risk": "Exergon Sp. z o.o. Polish energy software/consulting; Exergon Paris VC fund; reads as energy company"
+  }
+ },
+ {
+  "name": "Ergaster",
+  "territory": "D",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "'gaster' reads clinical; long",
+   "story": "The Homo ergaster toolmaker story is accurate, but 'gaster' (stomach) sounds clinical, and it is 8 letters.",
+   "risk": "Contains 'gaster' (stomach, clinical); W.D. Gaster (Undertale character) echo; clunky 8 letters"
+  }
+ },
+ {
+  "name": "Perago",
+  "territory": "D",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Soft and crowded",
+   "story": "An accurate 'I carry it through' story, but the IT space is crowded (Perago NetSuite, Perago e-gov software), and it is soft.",
+   "risk": "Crowded IT: Perago Inc (NetSuite ERP), Perago Information Systems, Perago Solutions cloud consultancy"
+  }
+ },
+ {
+  "name": "Briso",
+  "territory": "E",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Thin coinage; Brizo faucet",
+   "story": "A coinage with no real story beyond brio. It is heard as Brizo, the faucet brand.",
+   "risk": "Radio fail (Brizo faucets, Breeso); Briso Proctor AI SaaS; briso.uk product studio overlap"
+  }
+ },
+ {
+  "name": "Visto",
+  "territory": "E",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Soft; crowded by adtech",
+   "story": "The 'visto bueno' approval story is thin, and Visto (an Accel-backed ad SaaS) plus the historical Visto Corp crowd it.",
+   "risk": "Crowded: Visto NY ad-tech SaaS (Accel), visto.ai, Visto Corp patent history"
+  }
+ },
+ {
+  "name": "Brioso",
+  "territory": "E",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Long and soft; agency clash",
+   "story": "'Spirited' says nothing about making or ownership. Brioso Technologies is a web/app dev agency.",
+   "risk": "Brioso Technologies web/app agency (Noida) direct services conflict; Brioso community app; Briozo spelling"
+  }
+ },
+ {
+  "name": "Brisk",
+  "territory": "E",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Generic adjective; owned by iced tea and AI edtech",
+   "story": "A generic adjective with no hidden story, taken by Brisk Teaching AI and the iced-tea brand.",
+   "risk": "Brisk Teaching AI edtech ($15M), Lipton/PepsiCo Brisk tea, many Brisk- agencies; weak TM as adjective"
+  }
+ },
+ {
+  "name": "Borax",
+  "territory": "E",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Clever Braze-flux link, but it's a laundry booster",
+   "story": "The brazing-flux link to Braze is accurate, but US audiences hear a laundry chemical, and U.S. Borax owns borax.com.",
+   "risk": "Household laundry chemical (20 Mule Team, U.S. Borax owns borax.com); EU REACH reprotoxic substance; 'boring'"
+  }
+ },
+ {
+  "name": "Varpet",
+  "territory": "F",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "'carpet'/'pet' echo; Armenian app clash",
+   "story": "Varpet is an existing Armenian home-services marketplace with the same 'master' meaning. The -pet ending reads as cute.",
+   "risk": "Varpet Armenian home-services marketplace app (varpet.com) with same meaning; rhymes with 'carpet', '-pet' cute"
+  }
+ },
+ {
+  "name": "Zunft",
+  "territory": "F",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Harsh cluster, feels bureaucratic",
+   "story": "The guild-quality story is accurate but German-bureaucratic, and the z/ts split and harsh -nft cluster fail the radio test.",
+   "risk": "Two pronunciations (z vs German ts); contains 'NFT' (crypto read); harsh cluster, bureaucratic German feel"
+  }
+ },
+ {
+  "name": "Arotz",
+  "territory": "F",
+  "judge_total": 6,
+  "cool": 2,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "'rots' inside; obscure",
+   "story": "Basque 'craftsman' is accurate but obscure, and English readers see 'rots' inside it.",
+   "risk": "Radio fail (Arots/Arrotz, Spanish ear hears 'arroz' = rice); 'rots' embedded"
+  }
+ },
+ {
+  "name": "Aurifex",
+  "territory": "B",
+  "judge_total": 5,
+  "cool": 2,
+  "story": 2,
+  "risk": 1,
+  "flags": {
+   "cool": "Rehash of Opifex in crowded AI consulting",
+   "story": "It repeats the explored Opifex pattern, and Aurifex Labs (AI consulting) already holds the exact umbrella form.",
+   "risk": "OR-ih-fex heard as 'orifice' (EN); crowded exact space: Aurifex Labs AI consulting, Aurifex Innovations software"
+  }
+ },
+ {
+  "name": "Hollerith",
+  "territory": "C",
+  "judge_total": 5,
+  "cool": 1,
+  "story": 2,
+  "risk": 2,
+  "flags": {
+   "cool": "Long, with a Nazi-census shadow",
+   "story": "A strong data-to-product story, but it is inseparable from IBM history, carries the Dehomag/Holocaust shadow, and is 9 letters.",
+   "risk": "Historical shadow: Dehomag/Hollerith machines in Nazi censuses ('IBM and the Holocaust'); 9 letters; 'holler'"
+  }
+ },
+ {
+  "name": "Solidus",
+  "territory": "E",
+  "judge_total": 5,
+  "cool": 2,
+  "story": 2,
+  "risk": 1,
+  "flags": {
+   "cool": "Soft; crowded (Rails, Metal Gear)",
+   "story": "Partly inaccurate: the coin did not give English 'solid'. Solidus is a well-known Rails e-commerce framework, and Solidus Snake is a game character.",
+   "risk": "Solidus Rails e-commerce framework, Solidus Systems web/app agency, Solidus Labs; Solidus Snake (Konami character)"
+  }
+ },
+ {
+  "name": "Bezant",
+  "territory": "E",
+  "judge_total": 4,
+  "cool": 2,
+  "story": 1,
+  "risk": 1,
+  "flags": {
+   "cool": "Cool -z- sound, but it's an adware name",
+   "story": "bezant.app is known macOS adware with 'remove Bezant' pages ranking in search. Fatal for a software company.",
+   "risk": "Bezant.app is known macOS adware ('remove Bezant' pages rank); Bezant blockchain; stress ambiguous; Serbian 'bez' = without"
+  }
+ },
+ {
+  "name": "Pintle",
+  "territory": "A",
+  "judge_total": 3,
+  "cool": 1,
+  "story": 1,
+  "risk": 1,
+  "flags": {
+   "cool": "Vulgar root plus a direct AI competitor",
+   "story": "The Old English root means penis, and pintle.ai sells custom AI systems. Disqualifying.",
+   "risk": "Old English 'pintel' = penis (vulgar root); pintle.ai direct AI-services competitor; 'pint/pinto' echo"
+  }
+ }
+]

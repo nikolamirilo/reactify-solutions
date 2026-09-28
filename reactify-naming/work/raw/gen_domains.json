@@ -1,0 +1,3317 @@
+[
+ {
+  "name": "Sprag",
+  "domain": "sprag.com",
+  "available": false
+ },
+ {
+  "name": "Sprag",
+  "domain": "sprag.co",
+  "available": true
+ },
+ {
+  "name": "Sprag",
+  "domain": "sprag.studio",
+  "available": true
+ },
+ {
+  "name": "Sprag",
+  "domain": "spraglabs.com",
+  "available": true
+ },
+ {
+  "name": "Sprag",
+  "domain": "sprag.build",
+  "available": true
+ },
+ {
+  "name": "Sprag",
+  "domain": "sprag.so",
+  "available": false
+ },
+ {
+  "name": "Sprag",
+  "domain": "sprag.app",
+  "available": false
+ },
+ {
+  "name": "Swage",
+  "domain": "swage.com",
+  "available": false
+ },
+ {
+  "name": "Swage",
+  "domain": "swage.co",
+  "available": true
+ },
+ {
+  "name": "Swage",
+  "domain": "swage.studio",
+  "available": true
+ },
+ {
+  "name": "Swage",
+  "domain": "swagelabs.com",
+  "available": true
+ },
+ {
+  "name": "Swage",
+  "domain": "swage.build",
+  "available": true
+ },
+ {
+  "name": "Swage",
+  "domain": "swage.so",
+  "available": false
+ },
+ {
+  "name": "Swage",
+  "domain": "swage.app",
+  "available": false
+ },
+ {
+  "name": "Clinch",
+  "domain": "clinch.com",
+  "available": false
+ },
+ {
+  "name": "Clinch",
+  "domain": "clinch.co",
+  "available": false
+ },
+ {
+  "name": "Clinch",
+  "domain": "clinch.studio",
+  "available": true
+ },
+ {
+  "name": "Clinch",
+  "domain": "clinchlabs.com",
+  "available": false
+ },
+ {
+  "name": "Clinch",
+  "domain": "clinch.build",
+  "available": true
+ },
+ {
+  "name": "Clinch",
+  "domain": "clinch.app",
+  "available": false
+ },
+ {
+  "name": "Croze",
+  "domain": "croze.com",
+  "available": false
+ },
+ {
+  "name": "Croze",
+  "domain": "croze.co",
+  "available": false
+ },
+ {
+  "name": "Croze",
+  "domain": "croze.studio",
+  "available": true
+ },
+ {
+  "name": "Croze",
+  "domain": "crozelabs.com",
+  "available": true
+ },
+ {
+  "name": "Croze",
+  "domain": "croze.build",
+  "available": true
+ },
+ {
+  "name": "Croze",
+  "domain": "croze.so",
+  "available": false
+ },
+ {
+  "name": "Croze",
+  "domain": "croze.app",
+  "available": false
+ },
+ {
+  "name": "Pritchel",
+  "domain": "pritchel.com",
+  "available": false
+ },
+ {
+  "name": "Pritchel",
+  "domain": "pritchel.co",
+  "available": true
+ },
+ {
+  "name": "Pritchel",
+  "domain": "pritchel.studio",
+  "available": true
+ },
+ {
+  "name": "Pritchel",
+  "domain": "pritchellabs.com",
+  "available": true
+ },
+ {
+  "name": "Pritchel",
+  "domain": "pritchel.build",
+  "available": true
+ },
+ {
+  "name": "Stithy",
+  "domain": "stithy.com",
+  "available": false
+ },
+ {
+  "name": "Stithy",
+  "domain": "stithy.co",
+  "available": true
+ },
+ {
+  "name": "Stithy",
+  "domain": "stithy.studio",
+  "available": true
+ },
+ {
+  "name": "Stithy",
+  "domain": "stithylabs.com",
+  "available": true
+ },
+ {
+  "name": "Stithy",
+  "domain": "stithy.build",
+  "available": true
+ },
+ {
+  "name": "Duramen",
+  "domain": "duramen.com",
+  "available": false
+ },
+ {
+  "name": "Duramen",
+  "domain": "duramen.co",
+  "available": false
+ },
+ {
+  "name": "Duramen",
+  "domain": "duramen.studio",
+  "available": true
+ },
+ {
+  "name": "Duramen",
+  "domain": "duramenlabs.com",
+  "available": true
+ },
+ {
+  "name": "Duramen",
+  "domain": "duramen.build",
+  "available": true
+ },
+ {
+  "name": "Thole",
+  "domain": "thole.co",
+  "available": false
+ },
+ {
+  "name": "Thole",
+  "domain": "thole.studio",
+  "available": true
+ },
+ {
+  "name": "Thole",
+  "domain": "tholelabs.com",
+  "available": true
+ },
+ {
+  "name": "Sinter",
+  "domain": "sinter.com",
+  "available": false
+ },
+ {
+  "name": "Sinter",
+  "domain": "sinter.co",
+  "available": true
+ },
+ {
+  "name": "Sinter",
+  "domain": "sinter.studio",
+  "available": false
+ },
+ {
+  "name": "Sinter",
+  "domain": "sinterlabs.com",
+  "available": false
+ },
+ {
+  "name": "Sinter",
+  "domain": "sinter.build",
+  "available": false
+ },
+ {
+  "name": "Sinter",
+  "domain": "sinter.app",
+  "available": false
+ },
+ {
+  "name": "Broach",
+  "domain": "broach.com",
+  "available": false
+ },
+ {
+  "name": "Broach",
+  "domain": "broach.co",
+  "available": false
+ },
+ {
+  "name": "Broach",
+  "domain": "broach.studio",
+  "available": true
+ },
+ {
+  "name": "Broach",
+  "domain": "broachlabs.com",
+  "available": true
+ },
+ {
+  "name": "Clevis",
+  "domain": "clevis.com",
+  "available": false
+ },
+ {
+  "name": "Clevis",
+  "domain": "clevis.co",
+  "available": true
+ },
+ {
+  "name": "Clevis",
+  "domain": "clevis.studio",
+  "available": true
+ },
+ {
+  "name": "Clevis",
+  "domain": "clevislabs.com",
+  "available": true
+ },
+ {
+  "name": "Clevis",
+  "domain": "clevis.build",
+  "available": true
+ },
+ {
+  "name": "Skeg",
+  "domain": "skeg.com",
+  "available": false
+ },
+ {
+  "name": "Skeg",
+  "domain": "skeg.co",
+  "available": false
+ },
+ {
+  "name": "Skeg",
+  "domain": "skeg.studio",
+  "available": true
+ },
+ {
+  "name": "Skeg",
+  "domain": "skeglabs.com",
+  "available": true
+ },
+ {
+  "name": "Skeg",
+  "domain": "skeg.build",
+  "available": true
+ },
+ {
+  "name": "Skeg",
+  "domain": "skeg.so",
+  "available": false
+ },
+ {
+  "name": "Skeg",
+  "domain": "skeg.app",
+  "available": false
+ },
+ {
+  "name": "Quench",
+  "domain": "quench.studio",
+  "available": false
+ },
+ {
+  "name": "Quench",
+  "domain": "quench.build",
+  "available": true
+ },
+ {
+  "name": "Fettle",
+  "domain": "fettle.com",
+  "available": false
+ },
+ {
+  "name": "Fettle",
+  "domain": "fettle.co",
+  "available": false
+ },
+ {
+  "name": "Fettle",
+  "domain": "fettle.studio",
+  "available": false
+ },
+ {
+  "name": "Fettle",
+  "domain": "fettlelabs.com",
+  "available": false
+ },
+ {
+  "name": "Fettle",
+  "domain": "fettle.build",
+  "available": true
+ },
+ {
+  "name": "Fettle",
+  "domain": "fettle.app",
+  "available": false
+ },
+ {
+  "name": "Helve",
+  "domain": "helve.com",
+  "available": false
+ },
+ {
+  "name": "Helve",
+  "domain": "helve.co",
+  "available": false
+ },
+ {
+  "name": "Helve",
+  "domain": "helve.studio",
+  "available": false
+ },
+ {
+  "name": "Helve",
+  "domain": "helvelabs.com",
+  "available": true
+ },
+ {
+  "name": "Helve",
+  "domain": "helve.build",
+  "available": true
+ },
+ {
+  "name": "Makefast",
+  "domain": "makefast.co",
+  "available": true
+ },
+ {
+  "name": "Makefast",
+  "domain": "makefast.studio",
+  "available": true
+ },
+ {
+  "name": "Makefast",
+  "domain": "makefastlabs.com",
+  "available": true
+ },
+ {
+  "name": "Makefast",
+  "domain": "makefast.com",
+  "available": false
+ },
+ {
+  "name": "Makefast",
+  "domain": "makefast.so",
+  "available": false
+ },
+ {
+  "name": "Makefast",
+  "domain": "makefast.app",
+  "available": false
+ },
+ {
+  "name": "Makefast",
+  "domain": "makefast.dev",
+  "available": false
+ },
+ {
+  "name": "Carrack",
+  "domain": "carrack.co",
+  "available": true
+ },
+ {
+  "name": "Carrack",
+  "domain": "carrack.studio",
+  "available": true
+ },
+ {
+  "name": "Carrack",
+  "domain": "carracklabs.com",
+  "available": true
+ },
+ {
+  "name": "Carrack",
+  "domain": "carrack.com",
+  "available": false
+ },
+ {
+  "name": "Carrack",
+  "domain": "carrack.so",
+  "available": false
+ },
+ {
+  "name": "Carrack",
+  "domain": "carrack.app",
+  "available": false
+ },
+ {
+  "name": "Brayer",
+  "domain": "brayer.co",
+  "available": true
+ },
+ {
+  "name": "Brayer",
+  "domain": "brayer.studio",
+  "available": true
+ },
+ {
+  "name": "Brayer",
+  "domain": "brayerlabs.com",
+  "available": true
+ },
+ {
+  "name": "Brayer",
+  "domain": "brayer.com",
+  "available": false
+ },
+ {
+  "name": "Brayer",
+  "domain": "brayer.so",
+  "available": false
+ },
+ {
+  "name": "Brayer",
+  "domain": "brayer.app",
+  "available": false
+ },
+ {
+  "name": "Octant",
+  "domain": "octant.studio",
+  "available": true
+ },
+ {
+  "name": "Octant",
+  "domain": "octant.co",
+  "available": false
+ },
+ {
+  "name": "Octant",
+  "domain": "octant.com",
+  "available": false
+ },
+ {
+  "name": "Octant",
+  "domain": "octantlabs.com",
+  "available": false
+ },
+ {
+  "name": "Octant",
+  "domain": "octant.so",
+  "available": false
+ },
+ {
+  "name": "Octant",
+  "domain": "octant.app",
+  "available": false
+ },
+ {
+  "name": "Octant",
+  "domain": "octant.dev",
+  "available": false
+ },
+ {
+  "name": "Octant",
+  "domain": "octant.ai",
+  "available": false
+ },
+ {
+  "name": "Octant",
+  "domain": "octant.io",
+  "available": false
+ },
+ {
+  "name": "Yeoman",
+  "domain": "yeoman.co",
+  "available": true
+ },
+ {
+  "name": "Yeoman",
+  "domain": "yeoman.studio",
+  "available": true
+ },
+ {
+  "name": "Yeoman",
+  "domain": "yeomanlabs.com",
+  "available": false
+ },
+ {
+  "name": "Caxton",
+  "domain": "caxton.studio",
+  "available": true
+ },
+ {
+  "name": "Caxton",
+  "domain": "caxton.co",
+  "available": false
+ },
+ {
+  "name": "Caxton",
+  "domain": "caxton.com",
+  "available": false
+ },
+ {
+  "name": "Caxton",
+  "domain": "caxtonlabs.com",
+  "available": false
+ },
+ {
+  "name": "Caxton",
+  "domain": "caxton.so",
+  "available": false
+ },
+ {
+  "name": "Caxton",
+  "domain": "caxton.app",
+  "available": false
+ },
+ {
+  "name": "Caxton",
+  "domain": "caxton.ai",
+  "available": false
+ },
+ {
+  "name": "Entasis",
+  "domain": "entasis.co",
+  "available": true
+ },
+ {
+  "name": "Entasis",
+  "domain": "entasis.studio",
+  "available": false
+ },
+ {
+  "name": "Entasis",
+  "domain": "entasislabs.com",
+  "available": false
+ },
+ {
+  "name": "Portolan",
+  "domain": "portolan.studio",
+  "available": true
+ },
+ {
+  "name": "Portolan",
+  "domain": "portolan.co",
+  "available": false
+ },
+ {
+  "name": "Portolan",
+  "domain": "portolan.com",
+  "available": false
+ },
+ {
+  "name": "Portolan",
+  "domain": "portolan.so",
+  "available": false
+ },
+ {
+  "name": "Portolan",
+  "domain": "portolan.app",
+  "available": false
+ },
+ {
+  "name": "Portolan",
+  "domain": "portolanlabs.com",
+  "available": false
+ },
+ {
+  "name": "Gunter",
+  "domain": "gunter.studio",
+  "available": true
+ },
+ {
+  "name": "Gunter",
+  "domain": "gunter.co",
+  "available": false
+ },
+ {
+  "name": "Fairlead",
+  "domain": "fairlead.studio",
+  "available": true
+ },
+ {
+  "name": "Fairlead",
+  "domain": "fairlead.co",
+  "available": false
+ },
+ {
+  "name": "Fairlead",
+  "domain": "fairlead.com",
+  "available": false
+ },
+ {
+  "name": "Fairlead",
+  "domain": "fairleadlabs.com",
+  "available": false
+ },
+ {
+  "name": "Fairlead",
+  "domain": "fairlead.so",
+  "available": false
+ },
+ {
+  "name": "Fairlead",
+  "domain": "fairlead.app",
+  "available": false
+ },
+ {
+  "name": "Plimsoll",
+  "domain": "plimsoll.co",
+  "available": true
+ },
+ {
+  "name": "Plimsoll",
+  "domain": "plimsoll.studio",
+  "available": false
+ },
+ {
+  "name": "Stet",
+  "domain": "stet.co",
+  "available": false
+ },
+ {
+  "name": "Stet",
+  "domain": "stet.studio",
+  "available": false
+ },
+ {
+  "name": "Stet",
+  "domain": "stetlabs.com",
+  "available": false
+ },
+ {
+  "name": "Stet",
+  "domain": "stet.so",
+  "available": false
+ },
+ {
+  "name": "Stet",
+  "domain": "stet.app",
+  "available": false
+ },
+ {
+  "name": "Stet",
+  "domain": "stet.ai",
+  "available": false
+ },
+ {
+  "name": "Pintle",
+  "domain": "pintle.co",
+  "available": true
+ },
+ {
+  "name": "Pintle",
+  "domain": "pintle.studio",
+  "available": true
+ },
+ {
+  "name": "Pintle",
+  "domain": "pintlelabs.com",
+  "available": true
+ },
+ {
+  "name": "Pintle",
+  "domain": "pintle.com",
+  "available": false
+ },
+ {
+  "name": "Pintle",
+  "domain": "pintle.so",
+  "available": false
+ },
+ {
+  "name": "Moxon",
+  "domain": "moxon.com",
+  "available": false
+ },
+ {
+  "name": "Moxon",
+  "domain": "moxon.co",
+  "available": false
+ },
+ {
+  "name": "Moxon",
+  "domain": "moxon.studio",
+  "available": true
+ },
+ {
+  "name": "Moxon",
+  "domain": "moxon.so",
+  "available": false
+ },
+ {
+  "name": "Moxon",
+  "domain": "moxonlabs.com",
+  "available": true
+ },
+ {
+  "name": "Moxon",
+  "domain": "moxon.ai",
+  "available": false
+ },
+ {
+  "name": "Moxon",
+  "domain": "moxon.app",
+  "available": true
+ },
+ {
+  "name": "Moxon",
+  "domain": "moxon.build",
+  "available": true
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.com",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.co",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.studio",
+  "available": true
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.so",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvislabs.com",
+  "available": true
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.ai",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.app",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.build",
+  "available": true
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.com",
+  "available": false
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.co",
+  "available": false
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.studio",
+  "available": true
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.so",
+  "available": false
+ },
+ {
+  "name": "Brontes",
+  "domain": "bronteslabs.com",
+  "available": true
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.ai",
+  "available": false
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.app",
+  "available": true
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.build",
+  "available": true
+ },
+ {
+  "name": "Credne",
+  "domain": "credne.com",
+  "available": false
+ },
+ {
+  "name": "Credne",
+  "domain": "credne.co",
+  "available": true
+ },
+ {
+  "name": "Credne",
+  "domain": "credne.studio",
+  "available": true
+ },
+ {
+  "name": "Credne",
+  "domain": "credne.build",
+  "available": true
+ },
+ {
+  "name": "Credne",
+  "domain": "crednelabs.com",
+  "available": true
+ },
+ {
+  "name": "Credne",
+  "domain": "credne.ai",
+  "available": true
+ },
+ {
+  "name": "Credne",
+  "domain": "credne.app",
+  "available": true
+ },
+ {
+  "name": "Caslon",
+  "domain": "caslon.com",
+  "available": false
+ },
+ {
+  "name": "Caslon",
+  "domain": "caslon.co",
+  "available": false
+ },
+ {
+  "name": "Caslon",
+  "domain": "caslon.studio",
+  "available": true
+ },
+ {
+  "name": "Caslon",
+  "domain": "caslon.build",
+  "available": true
+ },
+ {
+  "name": "Caslon",
+  "domain": "caslonlabs.com",
+  "available": true
+ },
+ {
+  "name": "Caslon",
+  "domain": "caslon.ai",
+  "available": false
+ },
+ {
+  "name": "Caslon",
+  "domain": "caslon.app",
+  "available": false
+ },
+ {
+  "name": "Luchta",
+  "domain": "luchta.com",
+  "available": false
+ },
+ {
+  "name": "Luchta",
+  "domain": "luchta.co",
+  "available": false
+ },
+ {
+  "name": "Luchta",
+  "domain": "luchta.studio",
+  "available": true
+ },
+ {
+  "name": "Luchta",
+  "domain": "luchta.so",
+  "available": false
+ },
+ {
+  "name": "Luchta",
+  "domain": "luchtalabs.com",
+  "available": false
+ },
+ {
+  "name": "Luchta",
+  "domain": "luchta.ai",
+  "available": true
+ },
+ {
+  "name": "Luchta",
+  "domain": "luchta.app",
+  "available": true
+ },
+ {
+  "name": "Luchta",
+  "domain": "luchta.build",
+  "available": true
+ },
+ {
+  "name": "Eloy",
+  "domain": "eloy.com",
+  "available": false
+ },
+ {
+  "name": "Eloy",
+  "domain": "eloy.co",
+  "available": false
+ },
+ {
+  "name": "Eloy",
+  "domain": "eloy.studio",
+  "available": true
+ },
+ {
+  "name": "Eloy",
+  "domain": "eloy.build",
+  "available": true
+ },
+ {
+  "name": "Eloy",
+  "domain": "eloylabs.com",
+  "available": false
+ },
+ {
+  "name": "Eloy",
+  "domain": "eloy.ai",
+  "available": false
+ },
+ {
+  "name": "Eloy",
+  "domain": "eloy.app",
+  "available": false
+ },
+ {
+  "name": "Goban",
+  "domain": "goban.com",
+  "available": false
+ },
+ {
+  "name": "Goban",
+  "domain": "goban.co",
+  "available": false
+ },
+ {
+  "name": "Goban",
+  "domain": "goban.studio",
+  "available": true
+ },
+ {
+  "name": "Goban",
+  "domain": "goban.so",
+  "available": false
+ },
+ {
+  "name": "Goban",
+  "domain": "gobanlabs.com",
+  "available": true
+ },
+ {
+  "name": "Goban",
+  "domain": "goban.ai",
+  "available": false
+ },
+ {
+  "name": "Goban",
+  "domain": "goban.app",
+  "available": false
+ },
+ {
+  "name": "Goban",
+  "domain": "goban.build",
+  "available": true
+ },
+ {
+  "name": "Piran",
+  "domain": "piran.com",
+  "available": false
+ },
+ {
+  "name": "Piran",
+  "domain": "piran.co",
+  "available": false
+ },
+ {
+  "name": "Piran",
+  "domain": "piran.studio",
+  "available": false
+ },
+ {
+  "name": "Piran",
+  "domain": "piran.so",
+  "available": false
+ },
+ {
+  "name": "Piran",
+  "domain": "piranlabs.com",
+  "available": true
+ },
+ {
+  "name": "Piran",
+  "domain": "piran.ai",
+  "available": false
+ },
+ {
+  "name": "Piran",
+  "domain": "piran.app",
+  "available": false
+ },
+ {
+  "name": "Piran",
+  "domain": "piran.build",
+  "available": true
+ },
+ {
+  "name": "Hollerith",
+  "domain": "hollerith.com",
+  "available": false
+ },
+ {
+  "name": "Hollerith",
+  "domain": "hollerith.co",
+  "available": true
+ },
+ {
+  "name": "Hollerith",
+  "domain": "hollerith.studio",
+  "available": true
+ },
+ {
+  "name": "Hollerith",
+  "domain": "hollerith.build",
+  "available": true
+ },
+ {
+  "name": "Kuzma",
+  "domain": "kuzma.com",
+  "available": false
+ },
+ {
+  "name": "Kuzma",
+  "domain": "kuzma.co",
+  "available": false
+ },
+ {
+  "name": "Kuzma",
+  "domain": "kuzma.studio",
+  "available": true
+ },
+ {
+  "name": "Kuzma",
+  "domain": "kuzma.build",
+  "available": true
+ },
+ {
+  "name": "Kuzma",
+  "domain": "kuzmalabs.com",
+  "available": true
+ },
+ {
+  "name": "Kuzma",
+  "domain": "kuzma.ai",
+  "available": true
+ },
+ {
+  "name": "Kuzma",
+  "domain": "kuzma.app",
+  "available": false
+ },
+ {
+  "name": "Curta",
+  "domain": "curta.com",
+  "available": false
+ },
+ {
+  "name": "Curta",
+  "domain": "curta.co",
+  "available": false
+ },
+ {
+  "name": "Curta",
+  "domain": "curta.studio",
+  "available": true
+ },
+ {
+  "name": "Curta",
+  "domain": "curta.build",
+  "available": true
+ },
+ {
+  "name": "Curta",
+  "domain": "curtalabs.com",
+  "available": false
+ },
+ {
+  "name": "Curta",
+  "domain": "curta.ai",
+  "available": false
+ },
+ {
+  "name": "Curta",
+  "domain": "curta.app",
+  "available": false
+ },
+ {
+  "name": "Branca",
+  "domain": "branca.com",
+  "available": false
+ },
+ {
+  "name": "Branca",
+  "domain": "branca.co",
+  "available": false
+ },
+ {
+  "name": "Branca",
+  "domain": "branca.studio",
+  "available": true
+ },
+ {
+  "name": "Branca",
+  "domain": "branca.build",
+  "available": true
+ },
+ {
+  "name": "Branca",
+  "domain": "brancalabs.com",
+  "available": true
+ },
+ {
+  "name": "Branca",
+  "domain": "branca.ai",
+  "available": false
+ },
+ {
+  "name": "Branca",
+  "domain": "branca.app",
+  "available": true
+ },
+ {
+  "name": "Firnas",
+  "domain": "firnas.com",
+  "available": false
+ },
+ {
+  "name": "Firnas",
+  "domain": "firnas.co",
+  "available": false
+ },
+ {
+  "name": "Firnas",
+  "domain": "firnas.studio",
+  "available": true
+ },
+ {
+  "name": "Firnas",
+  "domain": "firnas.so",
+  "available": false
+ },
+ {
+  "name": "Firnas",
+  "domain": "firnaslabs.com",
+  "available": true
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.studio",
+  "available": true
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.build",
+  "available": true
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.works",
+  "available": true
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.co",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.com",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.so",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.ai",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmonlabs.com",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.app",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.dev",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.studio",
+  "available": true
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.co",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.com",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.so",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.ai",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pactalabs.com",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.app",
+  "available": false
+ },
+ {
+  "name": "Exegi",
+  "domain": "exegi.studio",
+  "available": true
+ },
+ {
+  "name": "Exegi",
+  "domain": "exegi.ai",
+  "available": true
+ },
+ {
+  "name": "Exegi",
+  "domain": "exegi.app",
+  "available": true
+ },
+ {
+  "name": "Exegi",
+  "domain": "exegi.build",
+  "available": true
+ },
+ {
+  "name": "Exegi",
+  "domain": "exegi.co",
+  "available": false
+ },
+ {
+  "name": "Exegi",
+  "domain": "exegi.com",
+  "available": false
+ },
+ {
+  "name": "Dolabra",
+  "domain": "dolabra.co",
+  "available": true
+ },
+ {
+  "name": "Dolabra",
+  "domain": "dolabra.studio",
+  "available": true
+ },
+ {
+  "name": "Dolabra",
+  "domain": "dolabra.com",
+  "available": false
+ },
+ {
+  "name": "Dolabra",
+  "domain": "dolabra.ai",
+  "available": false
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.studio",
+  "available": true
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.app",
+  "available": true
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.co",
+  "available": false
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.com",
+  "available": false
+ },
+ {
+  "name": "Brontes",
+  "domain": "brontes.ai",
+  "available": false
+ },
+ {
+  "name": "Spondeo",
+  "domain": "spondeo.co",
+  "available": true
+ },
+ {
+  "name": "Spondeo",
+  "domain": "spondeo.studio",
+  "available": true
+ },
+ {
+  "name": "Spondeo",
+  "domain": "spondeo.com",
+  "available": false
+ },
+ {
+  "name": "Curavit",
+  "domain": "curavit.co",
+  "available": true
+ },
+ {
+  "name": "Curavit",
+  "domain": "curavit.studio",
+  "available": true
+ },
+ {
+  "name": "Curavit",
+  "domain": "curavit.ai",
+  "available": true
+ },
+ {
+  "name": "Curavit",
+  "domain": "curavit.com",
+  "available": false
+ },
+ {
+  "name": "Aurifex",
+  "domain": "aurifex.co",
+  "available": true
+ },
+ {
+  "name": "Aurifex",
+  "domain": "aurifex.studio",
+  "available": true
+ },
+ {
+  "name": "Aurifex",
+  "domain": "aurifex.ai",
+  "available": true
+ },
+ {
+  "name": "Aurifex",
+  "domain": "aurifex.com",
+  "available": false
+ },
+ {
+  "name": "Aurifex",
+  "domain": "aurifexlabs.com",
+  "available": false
+ },
+ {
+  "name": "Aurifex",
+  "domain": "aurifex.app",
+  "available": false
+ },
+ {
+  "name": "Sponte",
+  "domain": "sponte.studio",
+  "available": true
+ },
+ {
+  "name": "Sponte",
+  "domain": "spontelabs.com",
+  "available": true
+ },
+ {
+  "name": "Sponte",
+  "domain": "sponte.co",
+  "available": false
+ },
+ {
+  "name": "Sponte",
+  "domain": "sponte.com",
+  "available": false
+ },
+ {
+  "name": "Sponte",
+  "domain": "sponte.so",
+  "available": false
+ },
+ {
+  "name": "Sponte",
+  "domain": "sponte.ai",
+  "available": false
+ },
+ {
+  "name": "Sponte",
+  "domain": "sponte.app",
+  "available": false
+ },
+ {
+  "name": "Groma",
+  "domain": "groma.co",
+  "available": false
+ },
+ {
+  "name": "Groma",
+  "domain": "groma.studio",
+  "available": false
+ },
+ {
+  "name": "Groma",
+  "domain": "groma.com",
+  "available": false
+ },
+ {
+  "name": "Groma",
+  "domain": "groma.so",
+  "available": false
+ },
+ {
+  "name": "Groma",
+  "domain": "groma.ai",
+  "available": false
+ },
+ {
+  "name": "Groma",
+  "domain": "gromalabs.com",
+  "available": false
+ },
+ {
+  "name": "Groma",
+  "domain": "groma.app",
+  "available": false
+ },
+ {
+  "name": "Groma",
+  "domain": "groma.build",
+  "available": false
+ },
+ {
+  "name": "Dactyl",
+  "domain": "dactyl.studio",
+  "available": true
+ },
+ {
+  "name": "Dactyl",
+  "domain": "dactyl.co",
+  "available": false
+ },
+ {
+  "name": "Dactyl",
+  "domain": "dactyl.com",
+  "available": false
+ },
+ {
+  "name": "Dactyl",
+  "domain": "dactyl.so",
+  "available": false
+ },
+ {
+  "name": "Dactyl",
+  "domain": "dactyl.ai",
+  "available": false
+ },
+ {
+  "name": "Dactyl",
+  "domain": "dactyllabs.com",
+  "available": false
+ },
+ {
+  "name": "Dactyl",
+  "domain": "dactyl.app",
+  "available": false
+ },
+ {
+  "name": "Ultro",
+  "domain": "ultro.studio",
+  "available": true
+ },
+ {
+  "name": "Ultro",
+  "domain": "ultro.co",
+  "available": false
+ },
+ {
+  "name": "Ultro",
+  "domain": "ultro.com",
+  "available": false
+ },
+ {
+  "name": "Ultro",
+  "domain": "ultro.so",
+  "available": false
+ },
+ {
+  "name": "Ultro",
+  "domain": "ultro.ai",
+  "available": false
+ },
+ {
+  "name": "Ultro",
+  "domain": "ultrolabs.com",
+  "available": false
+ },
+ {
+  "name": "Ultro",
+  "domain": "ultro.app",
+  "available": false
+ },
+ {
+  "name": "Artios",
+  "domain": "artios.studio",
+  "available": true
+ },
+ {
+  "name": "Artios",
+  "domain": "artios.co",
+  "available": false
+ },
+ {
+  "name": "Artios",
+  "domain": "artios.com",
+  "available": false
+ },
+ {
+  "name": "Artios",
+  "domain": "artios.ai",
+  "available": false
+ },
+ {
+  "name": "Tenax",
+  "domain": "tenax.co",
+  "available": false
+ },
+ {
+  "name": "Tenax",
+  "domain": "tenax.studio",
+  "available": true
+ },
+ {
+  "name": "Tenax",
+  "domain": "tenax.build",
+  "available": true
+ },
+ {
+  "name": "Dobra",
+  "domain": "dobra.com",
+  "available": false
+ },
+ {
+  "name": "Dobra",
+  "domain": "dobra.co",
+  "available": false
+ },
+ {
+  "name": "Dobra",
+  "domain": "dobra.studio",
+  "available": false
+ },
+ {
+  "name": "Dobra",
+  "domain": "dobra.build",
+  "available": true
+ },
+ {
+  "name": "Dobra",
+  "domain": "dobra.so",
+  "available": false
+ },
+ {
+  "name": "Dobra",
+  "domain": "dobralabs.com",
+  "available": false
+ },
+ {
+  "name": "Dobra",
+  "domain": "dobra.ai",
+  "available": false
+ },
+ {
+  "name": "Dobra",
+  "domain": "dobra.app",
+  "available": false
+ },
+ {
+  "name": "Dobra",
+  "domain": "dobra.io",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.com",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.co",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.studio",
+  "available": true
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.build",
+  "available": true
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.so",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pactalabs.com",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.app",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.ai",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.io",
+  "available": false
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.co",
+  "available": false
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.studio",
+  "available": true
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.build",
+  "available": true
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducatlabs.com",
+  "available": true
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.so",
+  "available": false
+ },
+ {
+  "name": "Ostro",
+  "domain": "ostro.com",
+  "available": false
+ },
+ {
+  "name": "Ostro",
+  "domain": "ostro.co",
+  "available": false
+ },
+ {
+  "name": "Ostro",
+  "domain": "ostro.studio",
+  "available": false
+ },
+ {
+  "name": "Ostro",
+  "domain": "ostro.build",
+  "available": true
+ },
+ {
+  "name": "Ostro",
+  "domain": "ostro.so",
+  "available": false
+ },
+ {
+  "name": "Ostro",
+  "domain": "ostrolabs.com",
+  "available": false
+ },
+ {
+  "name": "Ostro",
+  "domain": "ostro.ai",
+  "available": false
+ },
+ {
+  "name": "Ostro",
+  "domain": "ostro.app",
+  "available": false
+ },
+ {
+  "name": "Ostro",
+  "domain": "ostro.dev",
+  "available": false
+ },
+ {
+  "name": "Obris",
+  "domain": "obris.com",
+  "available": false
+ },
+ {
+  "name": "Obris",
+  "domain": "obris.co",
+  "available": false
+ },
+ {
+  "name": "Obris",
+  "domain": "obris.studio",
+  "available": false
+ },
+ {
+  "name": "Obris",
+  "domain": "obris.build",
+  "available": true
+ },
+ {
+  "name": "Obris",
+  "domain": "obrislabs.com",
+  "available": true
+ },
+ {
+  "name": "Robur",
+  "domain": "robur.com",
+  "available": false
+ },
+ {
+  "name": "Robur",
+  "domain": "robur.co",
+  "available": false
+ },
+ {
+  "name": "Robur",
+  "domain": "robur.studio",
+  "available": true
+ },
+ {
+  "name": "Robur",
+  "domain": "robur.build",
+  "available": true
+ },
+ {
+  "name": "Robur",
+  "domain": "roburlabs.com",
+  "available": false
+ },
+ {
+  "name": "Robur",
+  "domain": "robur.io",
+  "available": false
+ },
+ {
+  "name": "Robur",
+  "domain": "robur.app",
+  "available": false
+ },
+ {
+  "name": "Robur",
+  "domain": "robur.ai",
+  "available": false
+ },
+ {
+  "name": "Briso",
+  "domain": "briso.com",
+  "available": false
+ },
+ {
+  "name": "Briso",
+  "domain": "briso.co",
+  "available": true
+ },
+ {
+  "name": "Briso",
+  "domain": "briso.studio",
+  "available": true
+ },
+ {
+  "name": "Briso",
+  "domain": "briso.build",
+  "available": true
+ },
+ {
+  "name": "Briso",
+  "domain": "brisolabs.com",
+  "available": true
+ },
+ {
+  "name": "Abovo",
+  "domain": "abovo.com",
+  "available": false
+ },
+ {
+  "name": "Abovo",
+  "domain": "abovo.co",
+  "available": false
+ },
+ {
+  "name": "Abovo",
+  "domain": "abovo.studio",
+  "available": false
+ },
+ {
+  "name": "Abovo",
+  "domain": "abovo.build",
+  "available": true
+ },
+ {
+  "name": "Abovo",
+  "domain": "abovo.so",
+  "available": false
+ },
+ {
+  "name": "Abovo",
+  "domain": "abovolabs.com",
+  "available": false
+ },
+ {
+  "name": "Abovo",
+  "domain": "abovo.ai",
+  "available": false
+ },
+ {
+  "name": "Abovo",
+  "domain": "abovo.app",
+  "available": false
+ },
+ {
+  "name": "Abovo",
+  "domain": "abovo.io",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.co",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.studio",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.build",
+  "available": true
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.so",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivetlabs.com",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.ai",
+  "available": false
+ },
+ {
+  "name": "Vatra",
+  "domain": "vatra.com",
+  "available": false
+ },
+ {
+  "name": "Vatra",
+  "domain": "vatra.co",
+  "available": false
+ },
+ {
+  "name": "Vatra",
+  "domain": "vatra.studio",
+  "available": false
+ },
+ {
+  "name": "Vatra",
+  "domain": "vatra.build",
+  "available": true
+ },
+ {
+  "name": "Vatra",
+  "domain": "vatralabs.com",
+  "available": false
+ },
+ {
+  "name": "Vatra",
+  "domain": "vatra.app",
+  "available": false
+ },
+ {
+  "name": "Vatra",
+  "domain": "vatra.ai",
+  "available": false
+ },
+ {
+  "name": "Vatra",
+  "domain": "vatra.io",
+  "available": false
+ },
+ {
+  "name": "Lapis",
+  "domain": "lapis.co",
+  "available": false
+ },
+ {
+  "name": "Lapis",
+  "domain": "lapis.studio",
+  "available": false
+ },
+ {
+  "name": "Lapis",
+  "domain": "lapis.build",
+  "available": true
+ },
+ {
+  "name": "Lapis",
+  "domain": "lapislabs.com",
+  "available": false
+ },
+ {
+  "name": "Lapis",
+  "domain": "lapis.so",
+  "available": false
+ },
+ {
+  "name": "Lapis",
+  "domain": "lapis.app",
+  "available": false
+ },
+ {
+  "name": "Visto",
+  "domain": "visto.com",
+  "available": false
+ },
+ {
+  "name": "Visto",
+  "domain": "visto.co",
+  "available": false
+ },
+ {
+  "name": "Visto",
+  "domain": "visto.studio",
+  "available": false
+ },
+ {
+  "name": "Visto",
+  "domain": "visto.build",
+  "available": true
+ },
+ {
+  "name": "Visto",
+  "domain": "vistolabs.com",
+  "available": false
+ },
+ {
+  "name": "Visto",
+  "domain": "visto.so",
+  "available": false
+ },
+ {
+  "name": "Brioso",
+  "domain": "brioso.com",
+  "available": false
+ },
+ {
+  "name": "Brioso",
+  "domain": "brioso.co",
+  "available": false
+ },
+ {
+  "name": "Brioso",
+  "domain": "brioso.studio",
+  "available": true
+ },
+ {
+  "name": "Brioso",
+  "domain": "brioso.build",
+  "available": true
+ },
+ {
+  "name": "Exerga",
+  "domain": "exerga.com",
+  "available": false
+ },
+ {
+  "name": "Exerga",
+  "domain": "exerga.co",
+  "available": true
+ },
+ {
+  "name": "Exerga",
+  "domain": "exerga.studio",
+  "available": true
+ },
+ {
+  "name": "Exerga",
+  "domain": "exerga.app",
+  "available": true
+ },
+ {
+  "name": "Exerga",
+  "domain": "exerga.build",
+  "available": true
+ },
+ {
+  "name": "Exerga",
+  "domain": "exerga.ai",
+  "available": true
+ },
+ {
+  "name": "Exerga",
+  "domain": "exergalabs.com",
+  "available": true
+ },
+ {
+  "name": "Exerga",
+  "domain": "exergo.com",
+  "available": false
+ },
+ {
+  "name": "Exerga",
+  "domain": "exergo.co",
+  "available": false
+ },
+ {
+  "name": "Exerga",
+  "domain": "exergy.co",
+  "available": false
+ },
+ {
+  "name": "Exerga",
+  "domain": "exergy.studio",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.com",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.co",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.so",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.ai",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.app",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmonlabs.com",
+  "available": false
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.studio",
+  "available": true
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.build",
+  "available": true
+ },
+ {
+  "name": "Akmon",
+  "domain": "akmon.works",
+  "available": true
+ },
+ {
+  "name": "Bronta",
+  "domain": "bronta.com",
+  "available": false
+ },
+ {
+  "name": "Bronta",
+  "domain": "bronta.co",
+  "available": false
+ },
+ {
+  "name": "Bronta",
+  "domain": "bronta.studio",
+  "available": true
+ },
+ {
+  "name": "Bronta",
+  "domain": "bronta.app",
+  "available": true
+ },
+ {
+  "name": "Bronta",
+  "domain": "bronta.build",
+  "available": true
+ },
+ {
+  "name": "Bronta",
+  "domain": "brontalabs.com",
+  "available": true
+ },
+ {
+  "name": "Bronta",
+  "domain": "brontes.co",
+  "available": false
+ },
+ {
+  "name": "Tekta",
+  "domain": "tekta.com",
+  "available": false
+ },
+ {
+  "name": "Tekta",
+  "domain": "tekta.co",
+  "available": false
+ },
+ {
+  "name": "Tekta",
+  "domain": "tekta.studio",
+  "available": false
+ },
+ {
+  "name": "Tekta",
+  "domain": "tekta.so",
+  "available": false
+ },
+ {
+  "name": "Tekta",
+  "domain": "tekta.ai",
+  "available": false
+ },
+ {
+  "name": "Tekta",
+  "domain": "tekta.app",
+  "available": false
+ },
+ {
+  "name": "Tekta",
+  "domain": "tekta.build",
+  "available": true
+ },
+ {
+  "name": "Tekta",
+  "domain": "tektalabs.com",
+  "available": true
+ },
+ {
+  "name": "Ergana",
+  "domain": "ergana.com",
+  "available": false
+ },
+ {
+  "name": "Ergana",
+  "domain": "ergana.co",
+  "available": false
+ },
+ {
+  "name": "Ergana",
+  "domain": "ergana.studio",
+  "available": true
+ },
+ {
+  "name": "Ergana",
+  "domain": "ergana.build",
+  "available": true
+ },
+ {
+  "name": "Ergana",
+  "domain": "erganalabs.com",
+  "available": true
+ },
+ {
+  "name": "Ergana",
+  "domain": "ergane.co",
+  "available": false
+ },
+ {
+  "name": "Peracta",
+  "domain": "peracta.com",
+  "available": false
+ },
+ {
+  "name": "Peracta",
+  "domain": "peracta.co",
+  "available": true
+ },
+ {
+  "name": "Peracta",
+  "domain": "peracta.studio",
+  "available": true
+ },
+ {
+  "name": "Peracta",
+  "domain": "peracta.build",
+  "available": true
+ },
+ {
+  "name": "Peracta",
+  "domain": "peractalabs.com",
+  "available": true
+ },
+ {
+  "name": "Exergon",
+  "domain": "exergon.com",
+  "available": false
+ },
+ {
+  "name": "Exergon",
+  "domain": "exergon.co",
+  "available": true
+ },
+ {
+  "name": "Exergon",
+  "domain": "exergon.studio",
+  "available": true
+ },
+ {
+  "name": "Exergon",
+  "domain": "exergon.app",
+  "available": true
+ },
+ {
+  "name": "Exergon",
+  "domain": "exergon.build",
+  "available": true
+ },
+ {
+  "name": "Exergon",
+  "domain": "exergonlabs.com",
+  "available": true
+ },
+ {
+  "name": "Veracta",
+  "domain": "veracta.co",
+  "available": true
+ },
+ {
+  "name": "Veracta",
+  "domain": "veracta.studio",
+  "available": true
+ },
+ {
+  "name": "Takta",
+  "domain": "takta.com",
+  "available": false
+ },
+ {
+  "name": "Takta",
+  "domain": "takta.co",
+  "available": false
+ },
+ {
+  "name": "Takta",
+  "domain": "takta.studio",
+  "available": false
+ },
+ {
+  "name": "Takta",
+  "domain": "takta.app",
+  "available": false
+ },
+ {
+  "name": "Takta",
+  "domain": "takta.so",
+  "available": false
+ },
+ {
+  "name": "Takta",
+  "domain": "taktalabs.com",
+  "available": false
+ },
+ {
+  "name": "Takta",
+  "domain": "takta.build",
+  "available": true
+ },
+ {
+  "name": "Ergaster",
+  "domain": "ergaster.com",
+  "available": false
+ },
+ {
+  "name": "Ergaster",
+  "domain": "ergaster.co",
+  "available": true
+ },
+ {
+  "name": "Ergaster",
+  "domain": "ergaster.studio",
+  "available": true
+ },
+ {
+  "name": "Ergaster",
+  "domain": "ergaster.build",
+  "available": true
+ },
+ {
+  "name": "Perago",
+  "domain": "perago.co",
+  "available": false
+ },
+ {
+  "name": "Perago",
+  "domain": "perago.studio",
+  "available": true
+ },
+ {
+  "name": "Kaldra",
+  "domain": "kaldra.com",
+  "available": false
+ },
+ {
+  "name": "Kaldra",
+  "domain": "kaldra.co",
+  "available": false
+ },
+ {
+  "name": "Kaldra",
+  "domain": "kaldra.so",
+  "available": false
+ },
+ {
+  "name": "Kaldra",
+  "domain": "kaldra.app",
+  "available": false
+ },
+ {
+  "name": "Kaldra",
+  "domain": "kaldra.studio",
+  "available": true
+ },
+ {
+  "name": "Kaldra",
+  "domain": "kaldra.build",
+  "available": true
+ },
+ {
+  "name": "Kaldra",
+  "domain": "kaldralabs.com",
+  "available": true
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.studio",
+  "available": true
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.build",
+  "available": true
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.com",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.co",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pactalabs.com",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.so",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.ai",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.app",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.dev",
+  "available": false
+ },
+ {
+  "name": "Pacta",
+  "domain": "pacta.io",
+  "available": false
+ },
+ {
+  "name": "Bosk",
+  "domain": "bosk.co",
+  "available": true
+ },
+ {
+  "name": "Bosk",
+  "domain": "bosk.build",
+  "available": true
+ },
+ {
+  "name": "Bosk",
+  "domain": "bosk.studio",
+  "available": false
+ },
+ {
+  "name": "Bosk",
+  "domain": "bosklabs.com",
+  "available": false
+ },
+ {
+  "name": "Bosk",
+  "domain": "bosk.so",
+  "available": false
+ },
+ {
+  "name": "Bosk",
+  "domain": "bosk.app",
+  "available": false
+ },
+ {
+  "name": "Brisk",
+  "domain": "brisk.studio",
+  "available": true
+ },
+ {
+  "name": "Brisk",
+  "domain": "brisk.co",
+  "available": false
+ },
+ {
+  "name": "Brisk",
+  "domain": "brisk.build",
+  "available": false
+ },
+ {
+  "name": "Brisk",
+  "domain": "brisklabs.com",
+  "available": false
+ },
+ {
+  "name": "Brisk",
+  "domain": "brisk.app",
+  "available": false
+ },
+ {
+  "name": "Brisk",
+  "domain": "brisk.so",
+  "available": false
+ },
+ {
+  "name": "Brisk",
+  "domain": "brisk.dev",
+  "available": false
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.studio",
+  "available": true
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducatlabs.com",
+  "available": true
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.build",
+  "available": true
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.co",
+  "available": false
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.app",
+  "available": false
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.so",
+  "available": false
+ },
+ {
+  "name": "Ducat",
+  "domain": "ducat.dev",
+  "available": false
+ },
+ {
+  "name": "Tenax",
+  "domain": "tenax.studio",
+  "available": true
+ },
+ {
+  "name": "Tenax",
+  "domain": "tenax.build",
+  "available": true
+ },
+ {
+  "name": "Tenax",
+  "domain": "tenax.co",
+  "available": false
+ },
+ {
+  "name": "Tenax",
+  "domain": "tenaxlabs.com",
+  "available": false
+ },
+ {
+  "name": "Tenax",
+  "domain": "tenax.so",
+  "available": false
+ },
+ {
+  "name": "Tenax",
+  "domain": "tenax.app",
+  "available": false
+ },
+ {
+  "name": "Brevet",
+  "domain": "brevet.studio",
+  "available": true
+ },
+ {
+  "name": "Brevet",
+  "domain": "brevet.build",
+  "available": true
+ },
+ {
+  "name": "Brevet",
+  "domain": "brevetlabs.com",
+  "available": true
+ },
+ {
+  "name": "Dobro",
+  "domain": "dobro.build",
+  "available": true
+ },
+ {
+  "name": "Dobro",
+  "domain": "dobro.co",
+  "available": false
+ },
+ {
+  "name": "Dobro",
+  "domain": "dobro.studio",
+  "available": false
+ },
+ {
+  "name": "Dobro",
+  "domain": "dobrolabs.com",
+  "available": false
+ },
+ {
+  "name": "Dobro",
+  "domain": "dobro.so",
+  "available": false
+ },
+ {
+  "name": "Dobro",
+  "domain": "dobro.app",
+  "available": false
+ },
+ {
+  "name": "Dobro",
+  "domain": "dobro.ai",
+  "available": false
+ },
+ {
+  "name": "Dobro",
+  "domain": "dobro.dev",
+  "available": false
+ },
+ {
+  "name": "Borax",
+  "domain": "borax.studio",
+  "available": true
+ },
+ {
+  "name": "Borax",
+  "domain": "boraxlabs.com",
+  "available": true
+ },
+ {
+  "name": "Borax",
+  "domain": "borax.build",
+  "available": true
+ },
+ {
+  "name": "Borax",
+  "domain": "borax.co",
+  "available": false
+ },
+ {
+  "name": "Bezant",
+  "domain": "bezant.studio",
+  "available": true
+ },
+ {
+  "name": "Bezant",
+  "domain": "bezantlabs.com",
+  "available": true
+ },
+ {
+  "name": "Bezant",
+  "domain": "bezant.build",
+  "available": true
+ },
+ {
+  "name": "Bezant",
+  "domain": "bezant.com",
+  "available": false
+ },
+ {
+  "name": "Bezant",
+  "domain": "bezant.co",
+  "available": false
+ },
+ {
+  "name": "Bezant",
+  "domain": "bezant.so",
+  "available": false
+ },
+ {
+  "name": "Bezant",
+  "domain": "bezant.app",
+  "available": false
+ },
+ {
+  "name": "Structa",
+  "domain": "structa.studio",
+  "available": true
+ },
+ {
+  "name": "Structa",
+  "domain": "structalabs.com",
+  "available": true
+ },
+ {
+  "name": "Structa",
+  "domain": "structa.co",
+  "available": false
+ },
+ {
+  "name": "Structa",
+  "domain": "structa.build",
+  "available": false
+ },
+ {
+  "name": "Structa",
+  "domain": "structa.so",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.build",
+  "available": true
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.studio",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivetlabs.com",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.so",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.dev",
+  "available": false
+ },
+ {
+  "name": "Rivet",
+  "domain": "rivet.app",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "takt.co",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "takt.studio",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "takt.build",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "taktlabs.com",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "takt.so",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "takt.ai",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "takt.app",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "takt.dev",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "takt.io",
+  "available": false
+ },
+ {
+  "name": "Takt",
+  "domain": "takt.company",
+  "available": false
+ },
+ {
+  "name": "Solidus",
+  "domain": "solidus.build",
+  "available": true
+ },
+ {
+  "name": "Solidus",
+  "domain": "solidus.studio",
+  "available": false
+ },
+ {
+  "name": "Solidus",
+  "domain": "soliduslabs.com",
+  "available": false
+ },
+ {
+  "name": "Solidus",
+  "domain": "solidus.co",
+  "available": false
+ },
+ {
+  "name": "Solidus",
+  "domain": "solidus.so",
+  "available": false
+ },
+ {
+  "name": "Remek",
+  "domain": "remek.com",
+  "available": false
+ },
+ {
+  "name": "Remek",
+  "domain": "remek.co",
+  "available": false
+ },
+ {
+  "name": "Remek",
+  "domain": "remek.studio",
+  "available": true
+ },
+ {
+  "name": "Remek",
+  "domain": "remek.so",
+  "available": false
+ },
+ {
+  "name": "Remek",
+  "domain": "remek.ai",
+  "available": false
+ },
+ {
+  "name": "Remek",
+  "domain": "remek.app",
+  "available": true
+ },
+ {
+  "name": "Remek",
+  "domain": "remek.build",
+  "available": true
+ },
+ {
+  "name": "Remek",
+  "domain": "remeklabs.com",
+  "available": true
+ },
+ {
+  "name": "Remek",
+  "domain": "remek.io",
+  "available": true
+ },
+ {
+  "name": "Farga",
+  "domain": "farga.com",
+  "available": false
+ },
+ {
+  "name": "Farga",
+  "domain": "farga.co",
+  "available": true
+ },
+ {
+  "name": "Farga",
+  "domain": "farga.studio",
+  "available": false
+ },
+ {
+  "name": "Farga",
+  "domain": "farga.so",
+  "available": false
+ },
+ {
+  "name": "Farga",
+  "domain": "farga.ai",
+  "available": true
+ },
+ {
+  "name": "Farga",
+  "domain": "farga.app",
+  "available": false
+ },
+ {
+  "name": "Farga",
+  "domain": "farga.build",
+  "available": true
+ },
+ {
+  "name": "Farga",
+  "domain": "fargalabs.com",
+  "available": true
+ },
+ {
+  "name": "Tanren",
+  "domain": "tanren.com",
+  "available": false
+ },
+ {
+  "name": "Tanren",
+  "domain": "tanren.co",
+  "available": false
+ },
+ {
+  "name": "Tanren",
+  "domain": "tanren.studio",
+  "available": true
+ },
+ {
+  "name": "Tanren",
+  "domain": "tanren.so",
+  "available": false
+ },
+ {
+  "name": "Tanren",
+  "domain": "tanren.ai",
+  "available": false
+ },
+ {
+  "name": "Tanren",
+  "domain": "tanren.app",
+  "available": false
+ },
+ {
+  "name": "Tanren",
+  "domain": "tanren.build",
+  "available": true
+ },
+ {
+  "name": "Tanren",
+  "domain": "tanrenlabs.com",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.com",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.co",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.studio",
+  "available": true
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.so",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.app",
+  "available": false
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvis.build",
+  "available": true
+ },
+ {
+  "name": "Kalvis",
+  "domain": "kalvislabs.com",
+  "available": true
+ },
+ {
+  "name": "Mokume",
+  "domain": "mokume.com",
+  "available": false
+ },
+ {
+  "name": "Mokume",
+  "domain": "mokume.co",
+  "available": false
+ },
+ {
+  "name": "Mokume",
+  "domain": "mokume.studio",
+  "available": true
+ },
+ {
+  "name": "Mokume",
+  "domain": "mokume.so",
+  "available": false
+ },
+ {
+  "name": "Mokume",
+  "domain": "mokume.app",
+  "available": false
+ },
+ {
+  "name": "Mokume",
+  "domain": "mokume.build",
+  "available": true
+ },
+ {
+  "name": "Mokume",
+  "domain": "mokumelabs.com",
+  "available": true
+ },
+ {
+  "name": "Ktema",
+  "domain": "ktema.com",
+  "available": false
+ },
+ {
+  "name": "Ktema",
+  "domain": "ktema.co",
+  "available": true
+ },
+ {
+  "name": "Ktema",
+  "domain": "ktema.studio",
+  "available": true
+ },
+ {
+  "name": "Ktema",
+  "domain": "ktema.so",
+  "available": false
+ },
+ {
+  "name": "Ktema",
+  "domain": "ktema.app",
+  "available": true
+ },
+ {
+  "name": "Ktema",
+  "domain": "ktema.build",
+  "available": true
+ },
+ {
+  "name": "Noren",
+  "domain": "noren.co",
+  "available": false
+ },
+ {
+  "name": "Noren",
+  "domain": "noren.studio",
+  "available": false
+ },
+ {
+  "name": "Noren",
+  "domain": "noren.so",
+  "available": false
+ },
+ {
+  "name": "Noren",
+  "domain": "noren.app",
+  "available": false
+ },
+ {
+  "name": "Noren",
+  "domain": "noren.build",
+  "available": true
+ },
+ {
+  "name": "Noren",
+  "domain": "norenlabs.com",
+  "available": false
+ },
+ {
+  "name": "Tatara",
+  "domain": "tatara.co",
+  "available": false
+ },
+ {
+  "name": "Tatara",
+  "domain": "tatara.studio",
+  "available": false
+ },
+ {
+  "name": "Tatara",
+  "domain": "tatara.so",
+  "available": false
+ },
+ {
+  "name": "Tatara",
+  "domain": "tatara.app",
+  "available": false
+ },
+ {
+  "name": "Tatara",
+  "domain": "tatara.build",
+  "available": true
+ },
+ {
+  "name": "Tatara",
+  "domain": "tataralabs.com",
+  "available": false
+ },
+ {
+  "name": "Meijin",
+  "domain": "meijin.co",
+  "available": false
+ },
+ {
+  "name": "Meijin",
+  "domain": "meijin.studio",
+  "available": true
+ },
+ {
+  "name": "Meijin",
+  "domain": "meijin.so",
+  "available": false
+ },
+ {
+  "name": "Meijin",
+  "domain": "meijin.app",
+  "available": false
+ },
+ {
+  "name": "Meijin",
+  "domain": "meijin.build",
+  "available": true
+ },
+ {
+  "name": "Meijin",
+  "domain": "meijinlabs.com",
+  "available": true
+ },
+ {
+  "name": "Fabbro",
+  "domain": "fabbro.co",
+  "available": false
+ },
+ {
+  "name": "Fabbro",
+  "domain": "fabbro.studio",
+  "available": false
+ },
+ {
+  "name": "Fabbro",
+  "domain": "fabbro.build",
+  "available": true
+ },
+ {
+  "name": "Fabbro",
+  "domain": "fabbrolabs.com",
+  "available": true
+ },
+ {
+  "name": "Vasara",
+  "domain": "vasara.co",
+  "available": false
+ },
+ {
+  "name": "Vasara",
+  "domain": "vasara.studio",
+  "available": true
+ },
+ {
+  "name": "Vasara",
+  "domain": "vasara.so",
+  "available": false
+ },
+ {
+  "name": "Vasara",
+  "domain": "vasara.app",
+  "available": false
+ },
+ {
+  "name": "Vasara",
+  "domain": "vasara.build",
+  "available": true
+ },
+ {
+  "name": "Vasara",
+  "domain": "vasaralabs.com",
+  "available": false
+ },
+ {
+  "name": "Varpet",
+  "domain": "varpet.com",
+  "available": false
+ },
+ {
+  "name": "Varpet",
+  "domain": "varpet.co",
+  "available": true
+ },
+ {
+  "name": "Varpet",
+  "domain": "varpet.studio",
+  "available": true
+ },
+ {
+  "name": "Zunft",
+  "domain": "zunft.com",
+  "available": false
+ },
+ {
+  "name": "Zunft",
+  "domain": "zunft.co",
+  "available": false
+ },
+ {
+  "name": "Zunft",
+  "domain": "zunft.studio",
+  "available": true
+ },
+ {
+  "name": "Zunft",
+  "domain": "zunft.so",
+  "available": false
+ },
+ {
+  "name": "Zunft",
+  "domain": "zunftlabs.com",
+  "available": true
+ },
+ {
+  "name": "Arotz",
+  "domain": "arotz.com",
+  "available": false
+ },
+ {
+  "name": "Arotz",
+  "domain": "arotz.co",
+  "available": true
+ },
+ {
+  "name": "Arotz",
+  "domain": "arotz.studio",
+  "available": true
+ },
+ {
+  "name": "Arotz",
+  "domain": "arotz.so",
+  "available": false
+ },
+ {
+  "name": "Arotz",
+  "domain": "arotz.app",
+  "available": true
+ },
+ {
+  "name": "Vardar",
+  "domain": "vardar.co",
+  "available": false
+ },
+ {
+  "name": "Vardar",
+  "domain": "vardar.studio",
+  "available": true
+ }
+]

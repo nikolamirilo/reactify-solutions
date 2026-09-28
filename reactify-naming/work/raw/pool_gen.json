@@ -1,0 +1,839 @@
+[
+ {
+  "name": "Sprag",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "A sprag is a wedge-shaped steel block in a sprag clutch. It locks when the shaft tries to turn backward and lets it run freely forward. The older meaning is a bar or stick dropped behind a cart wheel so a loaded wagon cannot roll back down a hill. Miners also used a sprag, a short timber prop, to hold the coal face while they worked. Shakespeare used 'sprag' to mean quick-witted (Merry Wives of Windsor: 'He is a good sprag memory'). The metaphor is forward-only momentum with no backsliding (Scope -> Build -> Ship & iterate), and the part that holds the load on the hill, which is ownership. It works in both modes: 'Quicktalog by Sprag', 'Sprag Labs'.",
+  "pronunciation": "SPRAG (/spræɡ/), 1 syllable",
+  "risks": "One letter from Sprig (sprig.com, a product-research SaaS), so there is real confusion risk with a mid-size B2B tool. There is a small LinkedIn company 'Sprag' (spragforward), and Spragos is a Santa Clara cloud firm. I found no negative meaning in EN/SR/DE/ES/FR/IT/HU in a quick check. It is obscure, so the story needs an About-page line.",
+  "why_cool": "One hard syllable with an Spr- cluster and a hard -g stop, in the same family as Braze. It is a real engineering word almost nobody knows, it sounds like a verb, and it fits the terminal motif ('sprag ship'). The hidden story has three layers: forward-only clutch, anti-rollback brake, Shakespeare's 'quick'. It passes the radio test. It is 2+ edits from all six anchors."
+ },
+ {
+  "name": "Swage",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "Swaging forces metal into a die (a swage, or the smith's swage block) to shape it into a precise form under pressure. Cold swaging also work-hardens it, so the part comes out stronger. In rigging, a swaged terminal permanently joins wire rope to its fitting, and the joint is rated as strong as the wire. Sawyers also 'swage' saw teeth to set the cut. Raw stock becomes a precise, load-rated part: products that hold. It is a metal-joining and forming term like Braze, but from the shaping side.",
+  "pronunciation": "SWAYJ (/sweɪdʒ/), 1 syllable",
+  "risks": "Pronunciation and spelling are not fully radio-safe: some people say 'swag' or 'swahj', and hearers may write 'swaige'. It may feel derivative of Braze (same -a-e shape, same metal-joining field), though it is 3 edits away. It may be read as 'swag' (merch/loot). Swagelok (a large industrial tube-fitting brand) comes from the same root. Swageazy is a swag-merch startup. No negative meaning in other languages in a quick check.",
+  "why_cool": "Short and hard, a real English word with a strong-craft feel and a hint of 'swagger'. The permanent-joint-as-strong-as-the-wire story is a good line for an ownership-mindset studio. .co, .studio, labs.com and .build are all open, which is rare for a 5-letter dictionary word."
+ },
+ {
+  "name": "Clinch",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "In clinker (historically also 'clinch-built') boatbuilding, a copper nail is driven through two overlapping planks and clinched, meaning riveted over a copper rove, so the planks never part and the hull lasts decades. 'Clinch' is a variant of 'clench'. In everyday English it means to settle something decisively: clinch the deal, clinch the title. It combines the boatbuilder's permanent fastening with the business sense of closing and securing the result, which is ownership.",
+  "pronunciation": "KLINCH, 1 syllable",
+  "risks": "Crowded in B2B SaaS: Clinch (omnichannel ad-tech, $13M raised), Clinch (recruitment marketing, PageUp), and ClinchPad (a sales CRM). A boxing clinch means holding on to stall, and a romantic 'clinch' is an embrace (mild). Only .studio and .build were open.",
+  "why_cool": "Every English speaker knows it and it is radio-proof. It is a hard Cl- onset plus -nch, and it reads as decisive and confident. The boatbuilding layer is the hidden story and 'clinch the deal' is the surface one. It works well as a verb in copy ('We clinch it')."
+ },
+ {
+  "name": "Croze",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "A croze is the groove a cooper cuts inside the ends of barrel staves so the barrel head seats and seals. 'Croze' is also the name of the tool that cuts it. Without the croze the barrel holds nothing. With it, the vessel ages wine and whisky and makes its contents more valuable over time. There is a hidden Balkan layer: Serbian 'kroz' (said almost the same) means 'through', as in seeing a job through. It also calls to mind the Crozes-Hermitage wine appellation (a separate etymology, from the village of Crozes).",
+  "pronunciation": "KROHZ (/kroʊz/), 1 syllable",
+  "risks": "Serious: CROZ (croz.net) is an established Zagreb software/IT consultancy, from the same region and industry, and a near-homophone. Crozdesk (a software marketplace) is also similar. Spelling is not fully radio-safe (crows / crose / kroze). It rhymes with Braze in feel but is 2 edits away.",
+  "why_cool": "It has Braze's shape: one hard syllable ending in -ze. It is a real but rare English craft word about building a vessel that holds value, with a subtle Serbian echo ('kroz' = through) the founder can own."
+ },
+ {
+  "name": "Pritchel",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "The pritchel is the blacksmith's and farrier's punch that opens the nail holes in a horseshoe. It is also the round 'pritchel hole' in every anvil face that the punch passes through. It is the finishing step that makes a forged blank actually fit and fasten to what it serves, turning a made thing into a used thing. It sounds like a surname, in the same way Brigit sounds like a person.",
+  "pronunciation": "PRITCH-uhl, 2 syllables",
+  "risks": "At 8 letters it is longer than the ideal. Hearers may write Pritchell, Prichel or Pritchal. The story is less directly about value than some others. Pritchel Ridge Energy is unrelated and not software. I found no negative meanings in a quick check.",
+  "why_cool": "It sounds like a person's name (think Mitchell) but carries a real smithing tool inside. It has a hard Pr- onset and a crunchy -tch- core. It is almost unknown in tech, and .co, .studio, labs.com and .build are all open. 'Pritchel Labs' and 'Quicktalog by Pritchel' both read well."
+ },
+ {
+  "name": "Stithy",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "'Stithy' is an archaic English word for an anvil or a smithy (the forge itself), from Old Norse 'stedhi' (anvil). Shakespeare used it as a verb meaning 'to forge': 'by the forge that stithied Mars his helm' (Troilus and Cressida). The name says 'the place where things get forged', a workshop brand that could later hold a family of products.",
+  "pronunciation": "STITH-ee (/ˈstɪði/, th as in 'this'), 2 syllables",
+  "risks": "The 'th' sound and spelling are ambiguous on the radio (stithy / stythy / stithey, 'th' as in 'thin' or 'this'). Hamlet uses it in 'as foul as Vulcan's stithy', a negative line. It can be misheard as 'stitchy'.",
+  "why_cool": "It is a genuinely old English word with Norse roots and a Shakespeare pedigree, yet almost nobody knows it. It is short, with a name-like -y ending. It is the workshop itself, which suits a product studio. .co, .studio, labs.com and .build are all open, and I found no software company using it."
+ },
+ {
+  "name": "Duramen",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "Duramen is the botanical Latin term for heartwood, from 'durare', to harden or to last. It is the dense core of a trunk, filled with resin and tannin, that resists rot and carries the tree's structural load long after it stops growing. Shipwrights specified heartwood oak for keels and frames because sapwood rots. It stands for the durable core that everything else rests on: products built to last and owned for the long run.",
+  "pronunciation": "dyoo-RAY-men (/djʊˈreɪmən/), 3 syllables",
+  "risks": "The stress is ambiguous (du-RAY-men vs DUR-a-men), and it may be parsed as 'Dura men'. Softer than the requested hard Br-/-ct- sound. Duraamen Engineered Products (a Texas concrete-coatings firm) and Duramen Publishing exist but are not software. 'Dura' is also a medical term (the brain membrane) and a Spanish word for 'hard'; both are neutral.",
+  "why_cool": "It has the Latin, serious-enterprise feel the founder asked for (Adacta-like) and a real English dictionary entry. It contains 'dura' (hard, lasting). The story of a durable core that holds the whole structure maps directly to product-first ownership."
+ },
+ {
+  "name": "Thole",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "A thole, or thole pin, is the peg set in a boat's gunwale that the oar pulls against. It is the fulcrum that turns a rower's effort into forward motion. Old English 'tholian' means 'to endure, to bear', and that sense survives in Scots and Northern English 'thole' (to put up with, to see through). The name carries leverage and endurance together, which is ownership when things get hard.",
+  "pronunciation": "THOHL (/θoʊl/), 1 syllable",
+  "risks": "'Th' plus silent 'e' is not fully radio-safe (hearers may write toll, thol or tole). Small namesakes exist: Thole Consulting, Thole Solutions (a South African virtual-assistant service), and a THOLE grocery app in India. It is softer and less punchy than the requested hard sound profile. thole.co was taken.",
+  "why_cool": "It is a one-syllable, old-rooted English word with a genuinely double hidden meaning, leverage plus endurance. It is quiet and serious, and it sounds like a name (Thole). .studio and labs.com are open."
+ },
+ {
+  "name": "Broach",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "Broaching is a machining process in which a long multi-tooth tool cuts a precise internal shape (a keyway, spline or hex) in a single pass. Separately, to broach a cask is to open it and draw off what is inside, and to broach a subject is to be the first to raise it. Precision in one pass, opening something up and going first all fit a builder-to-builder voice.",
+  "pronunciation": "BROHCH, 1 syllable",
+  "risks": "It is a homophone of 'brooch' (jewelry), so the spelling is not radio-safe. In sailing, 'to broach' means a boat slewing broadside out of control, a negative sense for nautical audiences. It is not one edit from Brame (b-r-o-a-c-h vs b-r-a-m-e), but it shares the Br- look.",
+  "why_cool": "It has a hard Br- onset like Braze and Brame and is a single punchy syllable. It is a real English word with three layers: machining precision, opening a cask, raising a subject first. .studio and labs.com are open."
+ },
+ {
+  "name": "Clevis",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "A clevis is a U-shaped metal fitting closed by a pin that connects a load to a chain, rod or line, in rigging, towing and machinery. Everything that pulls rides through it. It is the connector that takes the load, like a company that joins products and client work under one owner.",
+  "pronunciation": "KLEV-is, 2 syllables",
+  "risks": "Real EU conflict: CLEVIS GmbH (Munich, 51-200 employees) is an HR-software consultancy. There is also 'Clevis', a no-code AI app builder. The meaning is less about making and more about connecting.",
+  "why_cool": "It sounds like a person's name (Travis, Elvis) with a hint of 'clever'. It has a hard Cl- onset and a crisp two-syllable shape, with a real load-bearing hardware meaning underneath. .co, .studio, labs.com and .build were all open."
+ },
+ {
+  "name": "Skeg",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "The skeg is the aft extension of a keel (and, on a surfboard, the fin) that keeps a hull tracking straight and shields the rudder. It gives directional stability, holding course while shipping. The word comes from Old Norse 'skegg' (beard, and the projecting part of a ship).",
+  "pronunciation": "SKEG, 1 syllable",
+  "risks": "Major overlap: SKEG (skeg.com, South Africa) is an 18-year-old product development firm turning deep tech into market-ready products, which is nearly the same positioning. In Australian slang 'skeg' means a surfer (mildly derogatory). Only .studio, labs.com and .build were open.",
+  "why_cool": "Four letters, one hard syllable and very CLI-friendly (`skeg ship`). It is an authentic shipbuilding term with Viking roots, and it is radio-safe."
+ },
+ {
+  "name": "Quench",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "Quenching plunges red-hot steel into water or oil to lock in its hardness. It is the decisive moment that fixes a blade's quality, after which it is tempered. The everyday sense, to quench a thirst or satisfy a need, adds a product-market-fit layer.",
+  "pronunciation": "KWENCH, 1 syllable",
+  "risks": "Culligan Quench is a major US water-cooler brand, and Quench.ai (an enterprise AI assistant) rebranded to 'ollo' but its history remains. 'Quench' also means to extinguish (enthusiasm). Only .build was open, and quench.studio was taken.",
+  "why_cool": "It is exceptionally cool as a word, with a rare Qu- onset, a hard -nch ending and a single syllable. It is instantly understood with a dramatic craft moment behind it. It is included as an exceptional name despite weak domains."
+ },
+ {
+  "name": "Fettle",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "In a foundry (and pottery), fettling is the finishing step: grinding off seams, flash and sprues so a casting is actually right. 'In fine fettle' means in excellent condition. The name covers both finishing the work and keeping it in great shape, which is ownership after launch.",
+  "pronunciation": "FET-uhl, 2 syllables",
+  "risks": "Crowded: several Fettle fitness and wellness apps (Fettle Fitness Management, Fettle Connected Fitness in Edinburgh, a social fitness app), plus Fine Fettle (a cannabis retailer). The sound is softer than the requested hard profile. Only .build was open.",
+  "why_cool": "The story is the best double meaning here (finishing the product plus keeping it in fine shape). It is British-craft charming and instantly spellable."
+ },
+ {
+  "name": "Helve",
+  "territory": "A",
+  "source": "generator a3e924",
+  "story": "The helve is the handle of an axe or hammer, the part the maker actually holds and that transfers every blow. A helve hammer was the water-powered trip hammer of early ironworks, the machine that let a forge scale. The name means holding the tool yourself, which is owning the work.",
+  "pronunciation": "HELV, 1 syllable",
+  "risks": "The idiom 'throw the helve after the hatchet' means to give up in despair (negative). The sound is soft, below the requested hard profile. It is visually close to 'Helvetica' and 'Helm'. Only labs.com and .build were open.",
+  "why_cool": "It is a short, old English word (from Old English 'hielfe') that very few people know. It has a quiet, grounded tone and a clean one-syllable sound."
+ },
+ {
+  "name": "Makefast",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Nautical English: to 'make fast' is to secure a line to a cleat or bitt so it holds under load. The compound reads two ways: make (build) + fast (quickly), and 'make fast' (secure it, own it, it will not slip). That covers both purposes: build high-value products, and deliver services that hold because someone owns them. It also works with the terminal motif, since `make` is the classic Unix build command and 'makefast' reads like one.",
+  "pronunciation": "MAKE-fast (/ˈmeɪk.fæst/)",
+  "risks": "Makefast Group, a UK marine and safety-hardware manufacturer (50+ years), owns makefast.com, and a tiny US Windows-utilities brand also uses the name. Different industry, but the UK trademark in hardware classes needs checking. At 8 letters it is longer than the 5-6 letter ideal. 'Fast' could be read as rushed, and the nautical meaning answers that. German 'fast' means 'almost', a mild pun for German readers. No vulgar meanings found in EN/SR/DE/ES/FR/IT/HU.",
+  "why_cool": "It is a verb and a promise at once. The hidden sailor's meaning gives it depth, and it passes the radio test perfectly. It works in both modes: 'Quicktalog by Makefast', 'Makefast Labs'. It sounds builder-to-builder, not like an agency."
+ },
+ {
+  "name": "Carrack",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "The carrack was the first true ocean-going ship (14th-16th c., Genoa and Portugal). It was built to carry high-value cargo across oceans and it opened global trade: Columbus's Santa Maria and Magellan's Victoria, the first ship to circumnavigate the world, were carracks. The Portuguese carrack Madre de Deus, captured in 1592, carried cargo said to be worth about half of England's treasury. The name is a vessel built to carry value a long way, and to finish the voyage.",
+  "pronunciation": "KARR-uk (/ˈkær.ək/)",
+  "risks": "carrack.app is a small 'AI-powered accounting platform for modern firms', a direct software overlap to check. The Carrack is also a Star Citizen ship. Radio test is moderate: listeners may write 'Carack' or 'Karak', and it can be confused with Carrick (Carrick Capital Partners, a software PE firm). 'Crack' sits inside the word. Spanish 'carraca' means a rattle or colloquially an old wreck, which is a different spelling and a mild risk. No vulgar meanings found in SR/DE/IT/HU.",
+  "why_cool": "It has hard K consonants at both ends and open 'a' vowels, like Adacta and Braze. It sounds like a name, feels old and serious, and carries a real story about hauling value across the world. It suits a product-first holding: 'Carrack Inc.', 'Quicktalog by Carrack'."
+ },
+ {
+  "name": "Brayer",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Printing: the brayer is the hand roller that inks the type or block before the impression, so nothing is printed without it. Printmakers use it to pull their own proofs; it is the maker's own tool. The word comes from 'bray', to crush or grind fine in a mortar (Old French 'breier'); the first brayers were pestles for grinding and spreading ink. That gives a hidden process-engineering and chemistry link for the founder.",
+  "pronunciation": "BRAY-er (/ˈbreɪ.ər/)",
+  "risks": "Its sound is close to the anchors Brame and Braze (both 2 edits away, so allowed, but check that it is not confusable). 'Bray' is also a donkey's cry, and it rhymes with 'prayer'. French 'brayer' also means a hernia truss or a flag-carrying sling, an obscure mild risk. It is a surname (Brayer Group consultancy in Israel; VC Marie Brayer), not a brand. No meanings found in SR/DE/ES/IT/HU.",
+  "why_cool": "It has the Br- onset the founder loves (Braze, Brame, Brigit), in 6 letters and 2 syllables. It is a real English word with a hidden craft story, sounds like a surname, and three domains are open. No software company of note uses it."
+ },
+ {
+  "name": "Octant",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Navigation: Hadley's reflecting octant (1731, invented at the same time by Thomas Godfrey in Philadelphia). Its arc is only one eighth of a circle (45 degrees), but its double mirror lets it measure 90 degrees. It let navigators fix their own position at sea without depending on anyone. Latin 'octans' (an eighth). The story is a small, precise instrument with outsized reach and self-reliant navigation.",
+  "pronunciation": "OK-tunt (/ˈɒk.tənt/)",
+  "risks": "Crowded. octant.com is proposal and IDIQ software for government contractors (a Microsoft ISV). VMware's Octant was an open-source Kubernetes dashboard (now archived), and Octant Bio is a biotech. Only .studio was free in this check. It is also a geometry term (one of eight spatial divisions). No negative meanings found in SR/DE/ES/FR/IT/HU.",
+  "why_cool": "It has the hard -ct- core the founder likes in Adacta, a Latin root, 6 letters and 2 syllables, with one obvious spelling and pronunciation. It feels like enterprise and has real instrument heritage."
+ },
+ {
+  "name": "Yeoman",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "A yeoman was a free man who owned and worked his own land: neither lord nor serf, an owner-operator. In English, 'doing yeoman's work' or 'yeoman's service' means solid, dependable, excellent work. So the word holds both purposes: owning what you build (products) and doing reliably excellent work for others (services with an ownership mindset).",
+  "pronunciation": "YOH-mun (/ˈjoʊ.mən/)",
+  "risks": "Real tech conflict: Yeoman (yeoman.io) is a well-known open-source web scaffolding CLI launched at Google I/O 2012, and developers will think of the 'yo' generator. There was also Yeoman Technology Group, an Amazon agency later acquired. The word can sound old-fashioned or military (Navy yeoman, Yeoman Warders), and 'yo, man' is a possible joke. No negative meanings found in SR/DE/ES/FR/IT/HU.",
+  "why_cool": "It has the most direct ownership-plus-quality story of anything in this territory, and US B2B buyers know the idiom 'yeoman's work'. It is old, sturdy and honest, sounds like a name, passes the radio test, and has two open domains."
+ },
+ {
+  "name": "Entasis",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Masonry and architecture: entasis is the slight, deliberate swelling that Greek masons built into column shafts (the Parthenon is the famous case). Without it, a straight column looks concave to the eye. It is invisible craft that makes the finished work look perfect: quality most users never notice but always feel. Greek 'entasis', meaning tension or stretching.",
+  "pronunciation": "EN-tuh-sis (/ˈɛn.tə.sɪs/)",
+  "risks": "The -asis ending sounds medical (stasis, psoriasis). There are 3 syllables and radio spelling is moderate. Several companies use it: Entasis Technology Consulting (an AWS partner, acquired by GuideIT in 2019), Entasis Partners (a UK strategy and architecture consultancy), and Entasis Therapeutics (a biotech). It is not a short, hard word. No negative meanings found in SR/DE/ES/FR/IT/HU.",
+  "why_cool": "It has one of the best hidden-craft stories here: detail invisible to the user that makes the product feel right. It has a Greek root and a serious enterprise feel, and .co was open."
+ },
+ {
+  "name": "Portolan",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Cartography: portolan charts (from about 1275, the Carta Pisana) were navigation maps drawn from pilots' real voyages, using compass bearings and measured distances. They were strikingly accurate because the people who drew them had sailed the routes. Italian 'portolano', a pilot's book of ports. The story is maps made by practitioners: you learn by shipping.",
+  "pronunciation": "POR-tuh-lan (/ˈpɔːr.tə.læn/)",
+  "risks": "Portolan Commerce Solutions is a German family-owned ERP and accounting software company, founded in 1990. At 3 syllables and 8 letters it is longer than the ideal. Only .studio was free in this check. Portolan Capital also uses the name. No negative meanings found in SR/DE/ES/FR/IT/HU.",
+  "why_cool": "It has old roots and a serious, enterprise, almost Latin feel, and it sounds like a place or a name. The story matches the builder ethos of making from real experience, not theory."
+ },
+ {
+  "name": "Gunter",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Surveying: Edmund Gunter (1581-1626) created Gunter's chain, 66 feet long; 10 square chains make an acre and 80 chains make a mile. It was the standard used to survey land in England and in the US Public Land Survey, the measure that turned wilderness into parcels people could own. His 'Gunter's scale' led to the slide rule, and he coined the words 'cosine' and 'cotangent'. The story is the unit that made ownership measurable.",
+  "pronunciation": "GUN-ter (/ˈɡʌn.tər/)",
+  "risks": "It reads as a dated German first name (Günter), and radio spelling is split between Gunter and Gunther (Gunther is also a Friends character, spelled differently). It may feel less 'cool' than the anchors. Only .studio was free in this check. No negative meanings found in SR/ES/FR/IT/HU.",
+  "why_cool": "It sounds like a person's name (as Brigit does), with a hard G, 6 letters and 2 syllables. There is a deep, discoverable story about measurement and ownership, and it gives an engineer's nod to trig and slide rules."
+ },
+ {
+  "name": "Fairlead",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Nautical: a fairlead is the ring, block or fitting that guides a line in a 'fair lead', a clean, true direction, so it runs without chafing or snagging. The hidden reading is fair leadership and honest guidance: the part that keeps everything running true under load.",
+  "pronunciation": "FAIR-leed (/ˈfɛər.liːd/)",
+  "risks": "Crowded: Fairlead Technology Group (document-management software since 1989), Fairlead Integrated (maritime), a 'Fairlead Solutions' custom-software shop, and Fairlead Advisors. It sounds softer and less hard than the founder's profile, and it leans toward a service or consulting feel. Only .studio was free in this check.",
+  "why_cool": "It is a real English compound with a hidden seafaring meaning and a positive double reading (fair + lead). It passes the radio test perfectly and sounds trustworthy to B2B buyers."
+ },
+ {
+  "name": "Plimsoll",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Navigation: the Plimsoll line is the load-line mark on a ship's hull showing the maximum safe loading. Samuel Plimsoll fought for it against owners who overloaded 'coffin ships', and the Merchant Shipping Act of 1876 made it law. It is an integrity marker: never overloaded, never over-promised, always seaworthy.",
+  "pronunciation": "PLIM-sol (/ˈplɪm.sɒl/)",
+  "risks": "In the UK it also means a canvas sneaker. Many companies share it: Plimsoll (UK market-research publisher), Plimsoll Studio (an Illinois agency doing web and software dev), Plimsoll maritime pricing software (Sydney), and a 2026 US compliance-software startup. It is a historical person (died 1898). The story is about limits rather than making. Only .co was free in this check.",
+  "why_cool": "It sounds distinctive, British and name-like, with a principled hidden story about integrity and honest capacity. That fits builder-to-builder, no-sales-talk."
+ },
+ {
+  "name": "Stet",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Printing and proofreading: 'stet' (Latin 'let it stand') is the editor's mark that cancels a correction and says keep it as it is, it was right. It expresses confidence in finished work, close in spirit to the anchor Adacta ('done, closed'). It looks and sounds like a terminal command (`stet`), which matches the CLI motif.",
+  "pronunciation": "STET (/stɛt/)",
+  "risks": "No domain was free in this check (.co, .studio, .so, .app, .ai, stetlabs.com were all taken). There is Google Cloud's open-source 'STET' encryption tool and an old FSF 'Stet' comment tool. STET is also an Indian teacher-eligibility exam. It is very short and hard to own, though Serbian speakers may faintly hear 'šteta' (damage, pity). It would likely need a modifier: 'Stet Labs', 'Stet Co.'.",
+  "why_cool": "It is 4 letters and one hard syllable, reads like a Unix command, and has a quiet, confident hidden story: we ship it and it stands. German 'stet' / 'stets' carries the positive sense of steady or always. Included as exceptional despite weak domains."
+ },
+ {
+  "name": "Pintle",
+  "territory": "A",
+  "source": "generator a240f3",
+  "story": "Navigation and shipbuilding: the pintle is the pin on which a ship's rudder (or a gate) pivots, paired with the gudgeon. It is a small, hard-working part that the whole steering system turns on: small team, full control of direction.",
+  "pronunciation": "PIN-tul (/ˈpɪn.təl/)",
+  "risks": "Its Old English etymology is 'pintel', meaning penis, a hidden vulgar root a journalist could find. There is a direct competitor: Pintle (pintle.ai, Brighton UK) sells 'custom AI systems for established businesses'. Other users include a Copenhagen Sitecore agency, a Korean seller app and a Nigerian dev shop. It may sound like 'pint' or 'pinto'. Lowest-ranked; included for its domains only.",
+  "why_cool": "It is short (6 letters, 2 syllables) and crisp, a real word few people know, with a hidden 'small part, full control' story. Three domains are open."
+ },
+ {
+  "name": "Moxon",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "Joseph Moxon (1627-1691) was a London printer, globe and mathematical-instrument maker, and Hydrographer to Charles II. His 'Mechanick Exercises, or the Doctrine of Handy-Works' (1677-1684) was the first English-language manual of the trades: smithing, joinery, carpentry, turning, and then the whole art of printing and typefounding. He published trade secrets that printers had guarded, and it was the first serial publication in England (monthly parts). Woodworkers still use the 'Moxon vise' named after him. The link to Reactify: a maker who ran his own workshop, made precision products (globes, instruments, type), and wrote openly for other builders. That is the builder-to-builder, terminal-manual voice the brief asks for. Sources: Wikipedia 'Joseph Moxon', archive.org scans, historyofinformation.com.",
+  "pronunciation": "MOK-sun (2 syllables, stress on the first)",
+  "risks": "The web search found no active software company by this name. Moxon Technologies Ltd (UK IT consultancy) was dissolved in 2022. Moxon Industries (Australian machining and engineering) and Moxon Architects (UK) exist in other fields. moxon.com, .co and .ai are taken. There is a small risk of hearing it as 'Moxen' or 'Moxan'. I found no negative meaning in EN, SR, DE, ES, FR, IT or HU.",
+  "why_cool": "Five letters, a hard -x- core and a closed -n ending, so it sounds like a surname, not like software. You spell it the way you hear it. It fits all three frames: 'Moxon', 'Quicktalog by Moxon', 'Moxon Labs'. The story is real and easy to find, it belongs to the builder culture, and it gives the company its own origin text ('Mechanick Exercises' works as a name for a blog or changelog). It also echoes 'moxie'."
+ },
+ {
+  "name": "Brontes",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "Brontes ('Thunder') is one of the three Cyclopes of Hesiod's Theogony. With Steropes and Arges he forged Zeus's thunderbolt, and later tradition (Callimachus, Virgil) places him at the anvil in Hephaestus' and Vulcan's forge. He made the single most valuable artifact in Greek myth, the tool that won the war of the Titans. The link: high-value products made in a small workshop. Sources: Wikipedia 'Cyclopes', Hesiod, Theogony 139-146.",
+  "pronunciation": "BRON-teez (2 syllables, stress on the first)",
+  "risks": "Brontes Technologies was a dental 3D-scanning company, acquired by 3M in 2006 and closed in 2010. Brontes Processing is a Polish rehabilitation-software company. Bronto Software (marketing automation, now NetSuite/Oracle) is close in sound. Readers will think of the Brontë sisters, a neutral-to-positive echo. brontes.com, .co and .ai are taken. I found no negative meanings.",
+  "why_cool": "The Br- onset matches the Braze and Brigit anchors, and the stop-heavy middle is 'short and hard'. It carries thunder, forging and mythic weight without being a cliche like Vulcan or Hephaestus. It reads like a surname (Brontë). 'Brontes Labs' sounds serious and enterprise-grade."
+ },
+ {
+  "name": "Credne",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "Credne (Creidhne) is one of the three craft gods of the Irish Tuatha De Danann, alongside Goibniu the smith and Luchta the wright. He is 'the brazier': he worked in bronze, brass and gold and made the rivets, hilts and bands that join blade to shaft. In the Cath Maige Tuired story the three make the weapons that win the war against the Fomorians. The link: he is the one who joins separate parts into a finished product that ships. That ties directly to the Braze anchor (brazing joins metals) and to the Brigit anchor (Irish myth). The first four letters, 'Cred', mean credibility in English. Sources: Oxford Reference 'Credne', Wikipedia 'Creidhne'.",
+  "pronunciation": "KRED-nuh (2 syllables, stress on the first; Irish original closer to KREJ-nyuh)",
+  "risks": "The web search found no software company named Credne; results drift to Credence and Credo. The biggest risk is the radio test: the silent-or-not final -e (Kred-nee? Kredn?) and the Irish spelling Creidhne mean you may have to spell it out. It can look like a typo of 'credence'. In Serbian it faintly echoes 'kredenac' (cupboard), which is harmless. Only credne.com is taken.",
+  "why_cool": "It has a hard Kr- onset, 6 letters, and the built-in English echo 'cred'. The hidden story is exactly Braze's (joining metals), told as a person. It has the widest domain availability in this batch: .co, .ai, .app, .studio, .build and credne-labs.com are all free."
+ },
+ {
+  "name": "Caslon",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "William Caslon I (1692-1766) started as an engraver of gunlocks and barrels in London, then built his own type foundry. His typefaces became the standard of English printing for a century. They are widely reported as the type of the first printings of the US Declaration of Independence, and printers had a saying: 'When in doubt, use Caslon.' The link: a craftsman who turned precision handwork into a product line, and whose product became the default. That is the product-first ambition in one name. Sources: Wikipedia 'William Caslon', MyFonts Caslon collections.",
+  "pronunciation": "KAZ-lon (2 syllables, stress on the first)",
+  "risks": "Caslon is the name of a well-known typeface family (Adobe Caslon, ITC Caslon, Big Caslon), which weakens distinctiveness. Caslon & Company (a printing consultancy) and CASLON, an Indian credit-cooperative banking software, exist. The 'Kaslon' spelling is a mild risk. caslon.com, .co, .ai and .app are taken.",
+  "why_cool": "It has a hard K sound and a -z-/-sl- buzz like Braze, and it has 6 letters. It already sounds like a quality mark. Designers and developers who know type will recognise it as a nod, and everyone else hears a solid surname. 'When in doubt, use Caslon' is a ready-made line."
+ },
+ {
+  "name": "Luchta",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "Luchta (Luchtaine) is the wright, or carpenter, among the three Irish craft gods. In Cath Maige Tuired he, Goibniu and Credne produce weapons at impossible speed during the battle: Goibniu forges the head in three strokes, Luchta shapes the shaft in three cuts and throws it straight into the socket, and Credne throws the rivets into place. It is the oldest assembly-line story in European myth: a small team, zero waste, shipping under pressure. Sources: Wikipedia 'Luchtaine', Wikipedia 'Tuatha De Danann'.",
+  "pronunciation": "LUK-tuh (2 syllables, stress on the first; Irish original LOOKH-ta)",
+  "risks": "'luchta' is an active open-source Rust build and task-orchestration tool on GitHub (dobesv/luchta). It is a dev tool in an adjacent space, so it is a real, though small, conflict. The radio test is weak: listeners may write Lukta or Lucta. In Spanish it echoes 'lucha' (fight), which is neutral. luchta.com, .co and luchtalabs.com are taken.",
+  "why_cool": "It has a -cht- core like the Adacta anchor, an open final 'a', and 6 letters, and it sounds like a name. The 'three strokes, three cuts, thrown into place' story is a great hidden origin for a Scope, Build, Ship company. It has strong newer-TLD availability, including .ai and .app."
+ },
+ {
+  "name": "Eloy",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "Eloy is the Spanish and Occitan form of Saint Eligius (c. 588-660), patron saint of goldsmiths and blacksmiths. King Chlothar II gave him gold and jewels for one throne. Eligius built two thrones from it and returned everything, rather than pocketing the surplus, and the king made him master of the mint. It is the best ownership story in this territory: double the value from the same budget, with total integrity. Spoken, it also sounds like 'alloy'. Sources: Wikipedia 'Saint Eligius', University of Notre Dame FaithND.",
+  "pronunciation": "eh-LOY (2 syllables, stress on the second; sounds like 'alloy')",
+  "risks": "The sound is soft and vowel-led, not the 'short and hard' profile. Eloy (eloy.co.uk) is a small UK connected-car software company. Eloy, Arizona is a town. There is spelling ambiguity with Eloi (H.G. Wells' feeble Eloi, a negative literary echo) and with Aloy (the protagonist of Horizon Zero Dawn, a protected fictional character). eloy.com, .co, .ai, .app and eloylabs.com are taken.",
+  "why_cool": "It is short (4 letters) and sounds like a real first name. The hidden pun 'Eloy/alloy' carries a metallurgy story, and the 'two thrones from one budget' anecdote is a strong client-facing story about ownership. It works as 'Eloy Labs' and 'Quicktalog by Eloy'."
+ },
+ {
+  "name": "Goban",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "The Goban Saor ('Goban the master craftsman') is the legendary 7th-century Irish master builder of churches and round towers, a folk hero of Irish stonemasons and informally canonised as St Gobban. His family is credited with inventing the string line for laying a straight wall. His legends show him outwitting patrons who tried to harm him or withhold payment for his work: the craftsman who owns the value of what he builds. 'Goban' is also the word for a Go board, the strategy grid famous in AI since AlphaGo. Sources: Wikipedia 'Goban Saor', Library Ireland, 'Legendary Fictions of the Irish Celts'.",
+  "pronunciation": "GOH-bahn (2 syllables, stress on the first)",
+  "risks": "The Go world already uses the name: goban.app (an online Go platform), Sen:te's Goban Mac app, and Goban Source (developer infrastructure for displays). There are the variant spellings Gobban and Gobán. In Hiberno-English 'goban/gobaun' may carry a 'bungler' or 'muzzle' sense (unverified, worth a native check). goban.com, .co, .ai and .app are taken.",
+  "why_cool": "It has 5 letters, a hard G and a -b- core, and an open 'a', and it reads like a name. It has two hidden layers: the master builder who gets paid for his craft, and the Go board as a nod to strategy and AI. It sits naturally next to the Brigit anchor (Irish, maker)."
+ },
+ {
+  "name": "Piran",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "Saint Piran is the patron saint of Cornish tin miners and of Cornwall. The legend: his black hearthstone got so hot that tin ore in it melted and flowed out as a white cross, which is now the Cornish flag. He then taught the method to local people and gave them work. The link: a maker who found a process (the founder has a chemical and process-engineering background), turned raw rock into a valuable material, and shared it. Piran is also the Venetian-Gothic town on the Slovenian coast, familiar and liked in the Balkans. Sources: Wikipedia 'Saint Piran', cornwall-calling.co.uk.",
+  "pronunciation": "PIR-un (2 syllables, stress on the first)",
+  "risks": "Piran Technologies is a Cornish IT-support company founded in 2004 (small, regional). Pronunciation varies (PIR-an, PEE-ran, PIE-ran), and there is a 'piranha' echo. Only piranlabs.com and piran.build were free. .com, .co, .studio, .ai and .app are all taken.",
+  "why_cool": "It has 5 letters, a hard P, an open vowel, and it sounds like a first name. The smelting-a-white-cross story is vivid and true to the process-engineering metaphor. It has a quiet regional bridge (a Slovenian coastal town) without being Serbian-specific."
+ },
+ {
+  "name": "Hollerith",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "Herman Hollerith (1860-1929) invented the electromechanical punched-card tabulator. It processed the 1890 US census far faster than hand counting, and punched cards carried data processing for the next 60 years. He then founded his own product company, the Tabulating Machine Company (1896), which merged into the company that became IBM. The link: a data and automation inventor who turned his invention into a product business. That mirrors Reactify's data-analytics and automation services feeding a product company. Sources: Wikipedia 'Herman Hollerith'.",
+  "pronunciation": "HOL-uh-rith (3 syllables, stress on the first)",
+  "risks": "At 9 letters and 3 syllables it is at the edge of the constraints, and it is not 'short and hard'. There is a historical shadow: the German Hollerith licensee Dehomag's machines were used in Nazi-era censuses ('IBM and the Holocaust'), which some US and EU readers will know. Hollerith IT Solutions (a US IT consultancy) and Hollerith Technologies (an edtech startup) exist. hollerith.com is taken.",
+  "why_cool": "Engineers get the reference: this is where data processing and IBM began. It sounds like a serious, old-money surname. 'Quicktalog by Hollerith' has gravitas. .co is free, which is rare for a real name."
+ },
+ {
+  "name": "Kuzma",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "In East Slavic (especially Ukrainian) folklore the smith saints Kuzma and Demyan forged the first plough. They then caught a monstrous serpent by the tongue with red-hot tongs, harnessed it to the plough and ploughed the land, leaving the 'Serpent's Walls' earthworks. Their feast, Kuzminki, became the smiths' holiday. They are the folk heirs of the Slavic smith god Svarog. The link: makers who tame chaos with fire and iron and put it to productive work, like engineers harnessing AI. Sources: Wikipedia 'Fiery serpents in Slavic folklore', Wikipedia 'Kuzma'.",
+  "pronunciation": "KOOZ-muh (2 syllables, stress on the first)",
+  "risks": "The association with living people is strong. Kyle Kuzma is a well-known NBA player, and Kuzma is also a Slovenian high-end turntable brand (founder Franc Kuzma). Kuzmiq Software (UK) and Kuzma Industrial Group exist. It has a Russian or Slavic feel that some EU and US readers may notice. kuzma.com, .co and .app are taken.",
+  "why_cool": "It has 5 letters, a hard K and a -z- buzz, and an open final 'a', close to the Zanat and Koshava sound family. It is a Slavic root that English speakers can say and spell at once. The 'harness the serpent to the plough' story is a memorable metaphor for productising AI."
+ },
+ {
+  "name": "Curta",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "The Curta is the pocket mechanical calculator named after its inventor, Curt Herzstark (1902-1988). He worked out the design while imprisoned in Buchenwald, and after liberation had it manufactured in Liechtenstein (1948-1972). Engineers and rally navigators prized it as the finest calculator ever made until electronic ones arrived. The link: a maker who kept building a high-value product under the worst possible conditions and then shipped it. The name is a person's name turned into a product mark. Sources: Wikipedia 'Curta'.",
+  "pronunciation": "KUR-tuh (2 syllables, stress on the first)",
+  "risks": "Curta CTF (an EVM and crypto programming-competition platform), Curta Inc (a Seattle IT company) and Curta Apps (Brazil) exist. The K/C spelling is ambiguous, and it can be confused with 'kurta' (the Indian tunic). The Buchenwald backstory must be told with care. It is a product name, not the maker's name. curta.com, .co, .ai, .app and curtalabs.com are taken.",
+  "why_cool": "It has 5 letters, a hard K sound, and an -rt- core with an open 'a' ending. It is a cult object among engineers (the 'math grenade'), with a story of resilience and precision. In Brazilian Portuguese 'curta' also means 'enjoy it / like it' (from 'curtir'), which is a positive bonus."
+ },
+ {
+  "name": "Branca",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "Giovanni Branca (1571-1645) was an Italian engineer and architect. In his 1629 book 'Le Machine' he illustrated a steam jet driving a wheel that powers a stamping mill, often cited as the first impulse steam turbine: raw steam turned into useful work. The link: an engineer who turned a process into a machine that produces value. That fits the founder's process-engineering background. Sources: Wikipedia 'Giovanni Branca'.",
+  "pronunciation": "BRAHN-kuh (2 syllables, stress on the first)",
+  "risks": "There are strong existing marks. Branca.ai is a US AI company (2023): an AI CRM for home services, also described as defense software, which is a direct AI-space conflict. Fratelli Branca (Fernet-Branca) is a famous beverage brand. BRANCA Smart Solutions is a Spanish AI and software partner. 'Branca' means 'white' in Portuguese and 'paw/branch' in Italian, both neutral. branca.com, .co and .ai are taken.",
+  "why_cool": "It has a Br- onset like Braze and Brigit, open a-a vowels like Adacta and Zanat, a hard -nk- core, and 6 letters. It sounds like a name. It is one of the best sound fits to the anchors in this batch, and it is not one edit from any anchor."
+ },
+ {
+  "name": "Firnas",
+  "territory": "C",
+  "source": "generator a320ff",
+  "story": "Abbas ibn Firnas (810-887) was a polymath inventor in Cordoba, al-Andalus. He cut rock crystal, made glass and reading stones, and built a water clock and a planetarium. He is famous for an early recorded gliding flight from a hill near Cordoba (he was hurt on landing and admitted he had forgotten the tail). An airport, a Baghdad statue and a lunar crater honour him. The link: a builder who made his own instruments and tested them on himself, the full-ownership maker. Spoken aloud, the name sounds like 'furnace'. Sources: Wikipedia 'Abbas ibn Firnas'.",
+  "pronunciation": "FEER-nahs (English speakers often say FUR-nuss, like 'furnace') (2 syllables)",
+  "risks": "The exact space is crowded: Firnas.tech (a Swedish software house), Firnas Corp LLC (software products), Firnas AI (LinkedIn) and Firnas Solutions (invoicing and inventory apps) all exist. The weak point is spelling from hearing (Firnas or Furnass). firnas.com, .co and .so are taken.",
+  "why_cool": "It has 6 letters, an F-r onset and a crisp -s ending, and the accidental English echo 'furnace' carries a forge-and-making layer. The story (inventor, glassmaker, first aviator who admits his bug and learns from it) is a builder-to-builder origin with a candid tone."
+ },
+ {
+  "name": "Akmon",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "Greek akmon means 'anvil', and it is related to akme ('point, peak', the source of 'acme'). In the lost epic Phoronis, quoted in the scholia to Apollonius of Rhodes, the Idaean Dactyls were the first smiths. There were three of them: Kelmis, Damnameneus and 'mighty Akmon'. They found dark iron in the mountains, put it in the fire and made a fine piece of work. That is Scope -> Build -> Ship in one line of Greek myth. The anvil is where raw material is beaten into a finished tool, and it outlasts every blow. That gives both halves of the purpose: making products and the sturdy ownership behind client work. It works as an umbrella: 'Quicktalog by Akmon', 'Akmon Labs', 'Akmon Inc.'",
+  "pronunciation": "AK-mon (2 syllables, hard K)",
+  "risks": "Existing users: Akmon S.A. (Greek defence and aerospace electronics), Akmon IT & Web Services (akmon.xyz, small open-source IT shop), and an 'Akmon' AI-humanizer tool. None is a major software brand. Some listeners may spell it 'Acmon', and it sits near 'Acme' in sound. No negative meanings found in EN/SR/DE/ES/FR/IT/HU. The .com, .co, .ai, .app, .dev, .so and akmonlabs.com domains are taken.",
+  "why_cool": "Five letters, one hard K-M core, and it reads as a proper name. Almost nobody knows the hidden story until you tell it, and then it lands: the anvil, and the first smith of Greek myth. It has a serious old-root weight without being a dictionary word, and it looks good as a wordmark."
+ },
+ {
+  "name": "Pacta",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "'Pacta sunt servanda' means 'agreements must be kept'. It is the bedrock principle of contract law, carried from Roman and canon law into Article 26 of the Vienna Convention on the Law of Treaties, which bears exactly that title. Pacta is the plural of pactum ('agreement'). The hidden meaning is that what we commit to, we deliver. That is the ownership mindset on client work, and the reliability behind products people pay for. It is built like Adacta: a Latin legal phrase cut down to one word ending in -cta.",
+  "pronunciation": "PAK-ta (2 syllables)",
+  "risks": "PACTA is an AI contract-lifecycle-management SaaS from Berlin (BlockAxs GmbH), bought by DiliTrust in February 2025. There is also a Canadian PACTA contract platform and Pactaworks, a digital product and web agency. That is a real trademark and search conflict for US and EU B2B. It is one letter away from 'Facta', which is in the lead's pool, and it shares Adacta's '-acta' ending, so it may read as a sibling rather than a new direction. No negative meanings found. Only .studio was free in the check.",
+  "why_cool": "It fits the founder's sound profile almost exactly: 5 letters, a hard -ct- core, two open 'a' vowels, and a serious Latin legal feel. It is spelled as it sounds and it passes the radio test. 'Pacta Labs' and 'Quicktalog by Pacta' both sound enterprise-grade."
+ },
+ {
+  "name": "Exegi",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "'Exegi monumentum aere perennius' is the opening line of Horace, Odes 3.30: 'I have finished a monument more lasting than bronze.' Exegi is the perfect tense of exigere ('to complete, to carry through'). Horace wrote it as the closing boast of three books of odes: I built it, it is done, and it will outlast bronze. The word holds finished work, personal ownership of the result, and durability. That is the product-first promise, told as a single Latin verb.",
+  "pronunciation": "EK-seh-ghee (Latin hard g); many English speakers will say EK-seh-jee",
+  "risks": "Pronunciation is split between a hard and a soft g, so it only partly passes the radio test. Heard aloud it can be spelled 'Exegy', which is the name of Exegy Inc., a capital-markets data and tech company. Exegi Group (a small Chicago web-dev and marketing agency) and Exegi Software Ltd (UK) also exist. It may call up 'exegesis'. No negative meanings found. The .com and .co are taken.",
+  "why_cool": "It has one of the best hidden stories in the territory: a two-thousand-year-old 'shipped it' line. It is short at 5 letters and 3 syllables, has an X for visual punch, and looks distinctive as a wordmark. It also had the best domain spread of any candidate (.studio, .ai, .app and .build all free)."
+ },
+ {
+  "name": "Dolabra",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "The dolabra was the Roman legionary's pick-mattock. Legions used it every day to dig camps, cut roads and raise siege works, which is a big part of why Rome outbuilt its enemies. The general Gnaeus Domitius Corbulo 'used to say the enemy must be beaten with the dolabra' (Frontinus, Strategemata 4.7.2), meaning by engineering and hard work rather than talk. The story is that builders win by building. That matches the builder-to-builder, no-sales-talk voice, and it works for both products and services.",
+  "pronunciation": "do-LAH-bra (3 syllables)",
+  "risks": "Dolabra Digital LLC (US, 'AI-driven revenue systems') exists, and Dolabra Holdings LLC has filed a DOLABRA DIGITAL trademark in computer and software services. That is the same space, so trademark clearance is needed. It may be misheard as 'dollar' or 'Dolabella'. At 7 letters and 3 syllables it is not the shortest option. No negative meanings found in the checked languages. The .com and .ai are taken.",
+  "why_cool": "It has the -br- consonant core the founder likes and open 'a' vowels, and it sounds like an old name. The Corbulo quote is a manifesto in one line. In Spanish, 'labra' ('he carves or works the stone') even echoes inside it."
+ },
+ {
+  "name": "Spondeo",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "The Roman stipulatio was the oldest binding contract. One party asked 'Spondesne?' ('Do you solemnly promise?') and the other answered 'Spondeo' ('I promise'). The spoken word alone created the obligation (Gaius, Institutes 3.92-93, where the 'spondes? spondeo' form was reserved to Roman citizens). The same root gives 'sponsor', 'respond' and 'spouse'. The story is that our word is the contract. That is ownership and warranty on client work, and a quality promise on products.",
+  "pronunciation": "SPON-day-oh (3 syllables)",
+  "risks": "Spondeo is a Polish-Finnish recruitment and market-entry consultancy (spondeo.fi / spondeo.pl), and Spondeo Solutions is a workforce-tech firm. It is softer than the founder's ideal hard sound, at 7 letters and 3 syllables. It may call up 'spondee' (the poetic foot) or medical 'spondyl-' words. No negative meanings found. The .com is taken.",
+  "why_cool": "The name carries its own ritual: 'Do you promise? I promise.' The story has an unusually precise legal source. It sounds serious and European without being hard to say, and there is no direct software-product conflict."
+ },
+ {
+  "name": "Curavit",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "Roman building inscriptions name the official who owned a public work with the formula 'faciendum curavit idemque probavit'. It means 'saw to its making and likewise approved it': he commissioned it, oversaw the build and signed it off. Curavit means '(he or she) took care of it, saw it through'. It is literally the ancient TPM or product-owner credit line, with the builder carved into the stone as the one responsible. That fits both products and services done with the same ownership.",
+  "pronunciation": "koo-RAH-vit (3 syllables)",
+  "risks": "Curavit Clinical Research is a Boston 'virtual CRO' with $16.4M raised, using curavit.io. It is in healthcare, but it is tech-flavoured. There is a possible echo of the vulgar 'kurva' (Serbian, Hungarian, Polish) when said fast, so test it with native speakers. A Serbian reader would read the c as 'ts'. It reads a little like 'cure' or 'curate' (medical or museum). It is less hard-sounding than the anchors. The .com is taken.",
+  "why_cool": "It is a real, verifiable 'owner of the work' formula, which matches the brief's 'ownership mindset' almost word for word. It is spelled as it sounds, and it had good domain availability (.co, .studio and .ai all free)."
+ },
+ {
+  "name": "Sponte",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "The legal term 'sua sponte' means 'of its own accord'. It describes a court acting on its own motion, without any party asking. Sponte is the ablative of spons ('free will'), the root of 'spontaneous'. The story is that we act without being asked: spotting the problem, fixing what nobody filed a ticket for, and building our own products on our own initiative. That is the ownership mindset in two Latin words, cut down to one, as Adacta was.",
+  "pronunciation": "SPON-tay (2 syllables)",
+  "risks": "Sponte is an established Brazilian school-management ERP (sponte.com.br) with a Sponte Agenda Plus app of 100k+ downloads. That is a software conflict, though in another market and vertical. The pronunciation is split between SPON-tay and SPON-tee, so it may be spelled 'Spontay'. No negative meanings found. The .co, .com, .so, .ai and .app are taken.",
+  "why_cool": "It is short and punchy, with an accurate legal-Latin story that every US lawyer knows ('sua sponte'). It is friendly to English speakers because of 'spontaneous', and 'Sponte Labs' sounds natural. spontelabs.com was free, which is rare for a .com."
+ },
+ {
+  "name": "Groma",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "The groma was the Roman surveyor's instrument: a cross on a staff with four plumb lines. The gromatici (surveyors) used it to lay out the right-angled grid of every road, legionary camp, colony and field before a single stone was laid. It was the tool of Scope, the first step of every Roman build and the reason their things lined up. There is also a Balkan echo: Serbian 'grom' means thunder.",
+  "pronunciation": "GROH-ma (2 syllables)",
+  "risks": "All checked domains were taken; it is included only as an exceptional name. GROMA is geodetic software used across Czech cadastral offices (groma.cz). Bitsight names its internet-scanning engine 'Groma', and there is a Groma data-collection app. Its r-m-a cadence is a little close to the anchor 'Brame' (3 edits away, not 1). It may be heard as 'aroma'.",
+  "why_cool": "It has a Gr- hard onset, 5 letters and an open 'a' ending. It is spelled exactly as spoken and passes the radio test. It is a real engineering artefact with a strong 'measure before you build' story that fits the terminal-precise voice, and it sounds like a name."
+ },
+ {
+  "name": "Dactyl",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "The Idaean Dactyls ('the Fingers of Mount Ida', from Greek daktylos, 'finger') were the mythical first metalworkers. Strabo, Diodorus and the Phoronis credit them with discovering iron and how to forge it. The name says handmade: craft done with your own fingers, by the first people to turn raw ore into tools. It is the family myth behind Akmon.",
+  "pronunciation": "DAK-til (2 syllables)",
+  "risks": "There is a direct services conflict. Dactyl Technologies LLC is a US web and app development agency founded in 1997 that owns dactyl.com, and Dactyl Group s.r.o. is a Czech mobile-app development company in Brno. OpenAI used 'Dactyl' for its 2018 robot-hand research. It also calls up pterodactyl and the poetic meter. It may be spelled 'Daktyl'. It shares 'dact' with the anchor Adacta (3 edits, not 1). Only .studio was free.",
+  "why_cool": "It has a D onset, a -ct- core and 6 letters. It feels ancient and a bit dangerous (pterodactyl) while carrying a precise maker story. It is short, hard and memorable."
+ },
+ {
+  "name": "Ultro",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "Latin ultro is an adverb meaning 'beyond, further; moreover; of one's own accord, voluntarily, unasked' (as in 'ultro citroque', 'to and fro'). Classical authors use it for someone who offers or acts before being asked. It is the ownership mindset as a single Latin word: go further than the brief, and do it without being told.",
+  "pronunciation": "UL-troh (2 syllables)",
+  "risks": "The name is crowded. Ultro ERP (ultro.ai, for EV and solar manufacturing), ULTRO CRM (ultro-crm.com), Ultro Digital (a Drupal and app development agency) and Ultro SoftTech India all exist. It is easily confused with 'ultra'. Only .studio was free.",
+  "why_cool": "It is 5 letters with a hard -ltr- cluster and sounds like a modern brand while being genuine classical Latin. The meaning (going beyond, unprompted) is exactly the promise to clients and users."
+ },
+ {
+  "name": "Artios",
+  "territory": "B",
+  "source": "generator a03aeb",
+  "story": "Greek artios means 'complete, perfectly fitted, fully equipped'. 2 Timothy 3:17 pairs it with exartismenos ('thoroughly equipped'). It comes from the root ar- ('to fit together'), which also gives art, arm, harmony and arthron (joint). The story is work that is finished and fits: products that are complete and services delivered fully equipped.",
+  "pronunciation": "AR-tee-os (3 syllables)",
+  "risks": "Artios Pharma (a UK biotech working on DNA-damage response) and Artios Academies (homeschool) use the name. It is softer than the founder's hard-consonant profile and has 3 syllables. It could be heard as 'Artie-os'. No negative meanings found. The .co, .com and .ai are taken.",
+  "why_cool": "It is a real Greek word whose root sits under 'art' and 'harmony', so it feels familiar yet new. It sounds like a serious enterprise name and works as 'Artios Labs' or 'Quicktalog by Artios'."
+ },
+ {
+  "name": "Dobra",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "In Serbian and other Slavic languages 'dobra' means 'good'. As a plural noun it means 'goods, assets, property' (materijalna dobra = material goods), so it carries both high-value products and ownership. The dobra was also a Portuguese gold coin, and São Tomé and Príncipe's currency is still called the dobra. Acronym layer, which maps onto the house motif Scope -> Build -> Ship & iterate with ownership at the core: D = Define (scope), O = Own, B = Build, R = Release, A = Adapt.",
+  "pronunciation": "DOH-bruh (2 syllables)",
+  "risks": "Close to Dobro, the resonator-guitar brand. There are small IT firms called Dobra: Dobra Tecnologia (Brazil) and Dobra ERP (Ecuador). Portuguese 'dobra' also means 'fold', which is harmless. No negative meaning found in EN/DE/ES/IT/FR/HU. The Serbian story is secondary for US/EU audiences. Only the .build domain is free.",
+  "why_cool": "It has the Br- cluster the founder loves (Braze, Brame, Brigit) and ends on an open 'a' like Koshava and Zanat. It reads as a real word in several languages, and English speakers say and spell it easily. The Balkan root stays a hidden story rather than a label. It sounds like a name."
+ },
+ {
+  "name": "Ostro",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "Ostro has three layers. (1) In the Italian and Mediterranean compass rose, Ostro is the south wind, a sibling of Koshava, Bora and Mistral. (2) Latin 'ostrum' and poetic Italian 'ostro' mean Tyrian purple. That was the most valuable dye of antiquity, made by a slow chemical process from murex snails, which fits the founder's process-engineering background, and it was worth more than its weight in silver. (3) Serbian 'oštro' means 'sharply'. Acronym layer, where ownership opens and closes the lifecycle: O = Own, S = Scope, T = Test, R = Release, O = Operate.",
+  "pronunciation": "OH-stroh (2 syllables)",
+  "risks": "The main conflict is Ostro, a US digital-health and pharma-marketing software company that raised more than $55M (Series B). That is a different category but the same US software market. Radio: people may write 'Austro'. Spanish 'ostras!' is a mild exclamation, not vulgar. Only the .build domain is free.",
+  "why_cool": "It carries the founder-loved Koshava vibe (a named wind) through a word English speakers already know how to say. Hidden inside is a chemistry-made luxury product, a true high-value-product story. The -str- core is hard and the ending is open."
+ },
+ {
+  "name": "Obris",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "Obris is a word-like coinage clipped from Latin 'obrussa', the testing of gold by fire. The idiom 'ad obrussam exigere' (Seneca, Cicero) means 'to put to the fire-test', and 'obryzum aurum' was gold that had passed it. That is a hidden quality-proofing story. It is also the cleanest acronym of the house motif: O = Own, B = Build, R = Release, I = Iterate, S = Scale.",
+  "pronunciation": "OH-bris (2 syllables)",
+  "risks": "It is a coinage, not a dictionary word, so the story has to be told. It shares 'Obr-' with the pool's Obra (a different name, but related). It rhymes with 'hubris', which is a slight risk. The only similar name found is ObriSoft, a translation agency.",
+  "why_cool": "It sounds like a real Latin word (compare orbis), with a strong -br- core and a crisp -s ending. The acronym is exactly the company's operating loop, with 'Own' first. obrislabs.com is free, and there is almost no competition for the name."
+ },
+ {
+  "name": "Robur",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "Latin 'robur' is the hardest heartwood of oak, and by extension strength and endurance. It is the root of 'robust' and of 'corroborate' (to strengthen together). Quercus robur, the English oak, built the ships of the line ('hearts of oak'). The hidden meaning is making things that carry load for decades. Acronym layer: R = Responsibility, O = Ownership, B = Build, U = User value, R = Results.",
+  "pronunciation": "ROH-bur (2 syllables)",
+  "risks": "The radio test can fail as 'robber', which is a negative homophone risk in English. Other uses: robur.coop (an open-source software cooperative), ROBUR Automation GmbH (industrial software), and Robur (an Italian heat-pump maker). Robur is also a villain-ish Jules Verne character, but in the public domain.",
+  "why_cool": "It is a short, hard Latin word with an old root and a serious enterprise feel. The R...R frame makes it visually balanced, and responsibility and results bookend the acronym."
+ },
+ {
+  "name": "Briso",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "Briso is a word-like coinage that echoes Italian 'brio' (vigor, spirit; 'allegro con brio') and Spanish and Portuguese 'brisa' (breeze, a nod to Koshava). Acronym layer, which is the house motif spelled out: B = Build, R = Refine, I = Iterate, S = Ship, O = Own.",
+  "pronunciation": "BREE-soh (2 syllables)",
+  "risks": "It is not a real word. Radio risk: people may write 'Brizo' or 'Breeso', and Brizo is a faucet brand. Other uses: Briso Proctor (AI exam-proctoring SaaS, India) and briso.uk, which markets itself 'from idea to impact, faster' and looks like a product studio, so check for overlap.",
+  "why_cool": "It has the Br- onset the founder loves and an open vowel ending, and it feels Mediterranean and alive. It has the best domain coverage of any candidate: .co, .studio, .build and brisolabs.com are all free."
+ },
+ {
+  "name": "Abovo",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "Latin 'ab ovo' means 'from the egg', that is, from the very beginning. It comes from Horace, Satires I.3: 'ab ovo usque ad mala', 'from the egg to the apples', the first course of a Roman dinner to the last. So it means end-to-end, 0-to-1-to-shipped ownership. It is a natural sibling to the anchor Adacta ('ad acta' = done): ab ovo is the start, ad acta the finish. Acronym layer: A = Accountability, B = Build, O = Ownership, V = Value, O = Outcomes.",
+  "pronunciation": "ab-OH-voh (3 syllables)",
+  "risks": "There is a direct services conflict: Ab Ovo Inc. (Santa Clara, US IT consulting and staff augmentation since 2006). Other uses: Abovo (an email-publishing startup in Baltimore) and Ab Ovo (supply-chain software, a Dassault partner). Radio: people may write 'Ab Ovo' or 'Aboveo'. Only the .build domain is free.",
+  "why_cool": "The story is the best in the set for end-to-end ownership, from scratch to finished. It has open vowels and a Latin phrase fused into one word, exactly the Adacta pattern the founder loved. It sounds friendly and still serious."
+ },
+ {
+  "name": "Rivet",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "A rivet joins metal permanently, and once set it cannot be undone. That is commitment made physical. Hot-driven rivets built the Eiffel Tower (about 2.5 million of them), the great bridges and the steel ships. 'Riveting' also means captivating. It is a sibling of Braze, since both are metal-joining. Acronym layer: R = Responsibility, I = Iteration, V = Value, E = Execution, T = Trust.",
+  "pronunciation": "RIV-it (2 syllables)",
+  "risks": "The software namespace is very crowded: Ironclad's Rivet (an open-source visual AI-agent IDE), rivet.dev (an agent orchestrator), RivetAI (film preproduction), and Rivet apps for construction and marketing. That hurts distinctiveness and SEO, especially since the company works in AI. Only the .build domain is free.",
+  "why_cool": "It is a real, hard English word with a perfect radio test and a vivid making story. It echoes Braze without copying it."
+ },
+ {
+  "name": "Vatra",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "'Vatra' means fire or hearth and is shared across the Balkans: Serbian vatra, Romanian vatră, Albanian vatër. It is an old pre-Slavic word for the place where both the forge and the home meet. Acronym layer, a product lifecycle: V = Validate, A = Architect, T = Test, R = Release, A = Adapt.",
+  "pronunciation": "VAH-truh (2 syllables)",
+  "risks": "There is a direct competitor: Vatra Labs (vatra.io), an Austrian custom software studio offering web, mobile and AI apps. Other uses: Vatra Games (defunct Kuju studio) and Vatra Inc (LA protective cases). There is a nationalist association in Romania (Vatra Românească). Only the .build domain is free.",
+  "why_cool": "It has a hard -tr- core and open 'a' vowels like Zanat and Koshava. It is a Balkan root that English speakers can say and spell, carrying a warm-but-strong making image (forge fire) and a clean dev-lifecycle acronym."
+ },
+ {
+  "name": "Lapis",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "Latin 'lapis' means stone. 'Lapis philosophorum', the alchemists' philosopher's stone, was meant to turn base metal into gold, a chemistry metaphor for turning raw work into high value. Lapis lazuli gave ultramarine, the Renaissance pigment that cost more than gold. In Italian 'lapis' also means pencil, a maker's tool. Acronym layer: L = Listen, A = Architect, P = Productize, I = Iterate, S = Ship.",
+  "pronunciation": "LAP-is (2 syllables)",
+  "risks": "The name is crowded in software: Lapis, an Australian software consultancy; Lapis Software Associates (lottery tech); and Lapis club-management software. It is softer in sound than the founder's hard-consonant anchors. Only the .build domain is free.",
+  "why_cool": "It is an old Latin root with a precious-material story and an alchemy and chemistry link to the founder. It is short and passes the radio test, and 'Productize' in the acronym signals the company is product-first."
+ },
+ {
+  "name": "Visto",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "Spanish and Italian 'visto' means 'seen, approved'. 'Visto bueno' (abbreviated V.º B.º) is the Spanish sign-off stamp on official documents, the mark that something has been checked and accepted. That is a done-and-owned seal, close in spirit to 'ad acta'. Acronym layer: V = Value, I = Iterate, S = Ship, T = Trust, O = Own.",
+  "pronunciation": "VEE-stoh (2 syllables)",
+  "risks": "The name is crowded: Visto, a NY programmatic-advertising SaaS backed by Accel and Greycroft; Visto, a project-management app (Brazil); visto.ai (immigration AI); and the historical Visto Corp (mobile email, patent litigation). Spanish 'visto' also means '(I) dress', which is harmless. Only the .build domain is free.",
+  "why_cool": "It reads instantly as a real word, has a clean -st- core, and has a sign-off and approval story. The acronym covers value, the iterate/ship loop, trust and ownership."
+ },
+ {
+  "name": "Brioso",
+  "territory": "E",
+  "source": "generator ae9859",
+  "story": "Italian and Spanish 'brioso' means 'full of brio: spirited, vigorous'. It is also a musical performance marking ('con brio'), as in Beethoven's Fifth, 'Allegro con brio'. Acronym layer, the full product loop in six letters: B = Build, R = Refine, I = Iterate, O = Own, S = Ship, O = Operate.",
+  "pronunciation": "bree-OH-soh (3 syllables)",
+  "risks": "There is a direct services conflict: Brioso Technologies, a web and app development agency in Noida, India. Other uses: the Brioso residential-community app and Brioso Fresh Pasta. It is longer and softer than the founder's short-and-hard ideal. The plain word Brio is stronger but had no free domains in this check (brio.com/.co/.studio/.build/.so/.app and briolabs.com were all taken) and has a direct Philadelphia software-agency conflict, so it is excluded.",
+  "why_cool": "It has the Br- onset and open vowels and is a real word with energy. The six letters hold the whole operating loop, including 'Operate', which signals ownership after launch."
+ },
+ {
+  "name": "Exerga",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "Coined from ex- (out of) + Greek ergon (work): 'the work you get out'. It carries two real stories. First, exergy is the thermodynamic measure of how much useful work a system can actually deliver. The Slovenian (then Yugoslav) engineer Zoran Rant coined the term in 1956, which gives a quiet Balkan link and fits the founder's chemical and process-engineering background. Second, the exergue (Italian exergo) is the band on a coin where the mint strikes its mark and date, i.e. the maker signing the work. Romanian already uses 'exerga' for exergy. The meaning to carry: we build things that deliver real value, and we sign what we make. Umbrella test: 'Quicktalog by Exerga', 'Exerga Labs'.",
+  "pronunciation": "ek-SER-gah (3 syllables, stress on the middle)",
+  "risks": "The 'exer-' start can call up 'exercise'. On the radio test, 'ex' may be heard as 'egz', but the spelling usually follows. Sound-alike neighbours exist (Exergia SA, a Greek energy consultancy; Exergen, which makes thermometers; Exerp, fitness software) but none share the name. A TikTok handle @exerga exists. The .com is taken and exergy.co/.studio are taken. I found no negative meaning in EN/SR/DE/ES/FR/IT/HU.",
+  "why_cool": "It sounds serious, like engineering, with hard x and g and open a vowels. It is invented, so it is ownable, yet it rests on real science, a real numismatic term and a Yugoslav origin. It has the most domain options of any name I checked, and I found no software company using it."
+ },
+ {
+  "name": "Bronta",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "Built on Greek bronte, 'thunder'. In Hesiod, Brontes ('Thunderer') is one of the three Cyclopes who forged Zeus's thunderbolt: the smiths who made the most powerful tool of the gods. Bronta is a Latinized, name-like coinage from it. The meaning: we forge the tools that carry the force. It works as 'Bronta Labs' or 'Quicktalog by Bronta'.",
+  "pronunciation": "BRON-tah (2 syllables)",
+  "risks": "bronta.com is held by a site titled 'Building the Future', and a coming-soon nutrition and fitness app called Bronta turned up in search. Bronto Software (email marketing, closed by Oracle NetSuite in 2022) and Brontes Technologies (3M dental) are near neighbours. Some people will think of the Bronte sisters or brontosaurus, which is mostly harmless. The .com and .co are taken. I found no negative meaning in the checked languages.",
+  "why_cool": "It has the Br- opening the founder loves (Braze, Brame), a hard -nt- core and an open 'a' ending. It sounds like a person's name, as Brigit does, and hides a smith myth. At 6 letters it is short, punchy and easy to spell after hearing it."
+ },
+ {
+  "name": "Tekta",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "Clipped from Greek tekton, 'builder, carpenter, master craftsman'. Architect is arkhi-tekton, 'chief builder', and the same Indo-European root (*teks-, to fabricate) gives technology, text and texture. Tekta means 'the builders' in a coined, Latin-looking form, with the -ct- core of the founder's anchor Adacta. It fits 'Tekta Labs' naturally.",
+  "pronunciation": "TEK-tah (2 syllables)",
+  "risks": "Several non-software firms use Tekta: Tekta Group (a Moscow property developer), Tekta (Turkish civil construction), Tekta Consulting (Italy). It shares the '-kta' ending with Okta, a major identity brand. On the radio it could be spelled 'Tecta' (also a German Bauhaus furniture brand). Only tektalabs.com and .build are free; the .com, .co, .studio, .ai and .app are all taken.",
+  "why_cool": "Very short, hard consonants at both ends of the middle, and it sounds like a real word. It reads as Scope, Build, Ship compressed into one word about builders. It echoes Adacta's rhythm without copying it."
+ },
+ {
+  "name": "Ergana",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "From Athena Ergane, 'Athena the Worker', the aspect of the goddess who was patron of craftsmen and artisans. She joins intelligence with making, which fits an AI-and-product company. Built on Greek ergon (work), the root of energy, ergonomics and metallurgy. The meaning: craft guided by intelligence. It works as 'Ergana Labs' or 'Quicktalog by Ergana'.",
+  "pronunciation": "ER-gah-nah (3 syllables)",
+  "risks": "ergana.com is registered with a live site. Greece's labour-registry system is called ERGANI, and many Greek HR apps use that name, so it could be confused in Greece. Other users: Ergana Auto (Latvia) and Ergane LLC. Stress could drift between ER-ga-na and er-GAH-na. It is softer than the founder's hard-consonant ideal. The .com and .co are taken.",
+  "why_cool": "It has the same three-syllable, open-'a' rhythm as the founder's anchor Koshava, with a hard g in the middle. It sounds like a name and hides a classical craft story, with a serious old-world feel."
+ },
+ {
+  "name": "Peracta",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "Latin per- (through) + acta (done). It is the perfect participle of peragere, 'to carry through to the end, to complete'. Adacta means 'filed, closed'. Peracta means 'carried all the way through': end-to-end ownership, from scope to shipped. It is a sibling of the founder's favourite anchor, with an ownership story built in.",
+  "pronunciation": "per-AK-tah (3 syllables)",
+  "risks": "peracta.com is an active construction-management software product ('manage every project, contract, and asset, start to finish'), so this is a direct software name conflict. Peracto Solutions (UK software consultancy) is a sound-alike. The '-acta' ending may read as derivative of Adacta, although it is 3 edits away. It is an attested Latin form rather than a pure coinage.",
+  "why_cool": "It has the -ct- core, open a vowels and serious Latin weight the founder likes in Adacta, and the meaning is the ownership brief itself: we see it through. The .co, .studio, .build and labs .com are all free."
+ },
+ {
+  "name": "Exergon",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "From ex- + ergon, and from chemistry's 'exergonic reaction': one that releases free energy and runs by itself, without being pushed. That is the ownership mindset in chemical terms (self-driven, needs no babysitting). It also carries the exergy story (useful work; the term was coined by Yugoslav engineer Zoran Rant in 1956). It is an alternate or sibling form of Exerga.",
+  "pronunciation": "ek-SER-gon (3 syllables)",
+  "risks": "Existing users: Exergon (a Paris deep-tech energy VC fund, founded 2022), Exergon Sp. z o.o. (a Polish energy-sector software and consulting firm), and Exergonix (US energy storage). It may read as an energy company. The .com is taken. On the radio, 'ex' may be heard as 'egz'.",
+  "why_cool": "The '-gon' ending sounds harder and more technical than Exerga. The chemistry story is the founder's own background, and 'a reaction that runs on its own' is a sharp metaphor for a team you don't have to push. It has many free domains."
+ },
+ {
+  "name": "Veracta",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "An invented blend of Latin verus (true) + acta (deeds, things done): 'true deeds, work really done'. It captures the voice of builder to builder, no sales talk: judge us by what shipped. It sits in the same Latin family as Adacta.",
+  "pronunciation": "ver-AK-tah (3 syllables)",
+  "risks": "Veracta Consultores (a Madrid consultancy) exists. The 'Vera-' prefix is crowded (Veracode, Veracyte, Veralto, Verafin). The '-acta' ending echoes Adacta. I did not check the .com.",
+  "why_cool": "The -ct- core, serious Latin feel and hidden meaning line up with 'facta non verba'. It sounds like an established enterprise name, and the .co and .studio are free."
+ },
+ {
+  "name": "Takta",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "From takt, the German word for beat or meter, used in lean manufacturing as 'takt time': the heartbeat of a production line, set to match customer demand. It mirrors Ship & iterate at a steady cadence and draws on the founder's process-engineering background. Latin tactus (touch) is a secondary echo.",
+  "pronunciation": "TAHK-tah (2 syllables)",
+  "risks": "The domains are weak: only .build is free, and the .com, .co, .studio, .app, .so and taktalabs.com are taken. Existing users include TAKTA (an electronics R&D and production company) and 'Takt' (a data/AI company). Hindi 'takhta' means plank or board, which is neutral. The '-kta' ending again echoes Okta.",
+  "why_cool": "It has the hard -kt- core of the founder's anchors and a true industrial story that engineers will recognise. It is short and percussive, a name with a rhythm in it."
+ },
+ {
+  "name": "Ergaster",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "Greek ergaster means 'workman'. Homo ergaster, the 'working man', is the early human species named for its advanced stone-tool making (Acheulean hand-axes). The idea is that humans became human by building tools, and we still do: the first maker of high-value tools.",
+  "pronunciation": "er-GAS-ter (3 syllables)",
+  "risks": "At 8 letters it is longer than the 5-6 target. It contains 'gaster' (Greek for stomach, as in gastro-), which can sound clinical or clunky. ergaster.org is an open-source strategist's personal site and podcast, and Danyang Ergaster Tools is a Chinese tool maker. The .com is taken.",
+  "why_cool": "It has a deep-time origin story (the first toolmakers) that is true and easy to find. It sounds serious and scientific, and the .co, .studio and .build are free."
+ },
+ {
+  "name": "Perago",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "Latin perago means 'I carry it through, I accomplish, I finish': per (through) + ago (drive, do). It is a first-person statement of ownership, 'I see it through to the end', and a softer, verb-form sibling of Peracta.",
+  "pronunciation": "per-AH-go (3 syllables)",
+  "risks": "The IT space is crowded: Perago Inc. (US, NetSuite ERP extensions), Perago Information Systems (Ethiopian e-government software) and Perago Solutions (cloud consultancy). It sounds soft rather than hard. Only .studio is free among those checked; the .co is taken.",
+  "why_cool": "As a first-person Latin verb it reads like a builder's personal commitment, fitting the builder-to-builder voice, and it is easy to say."
+ },
+ {
+  "name": "Kaldra",
+  "territory": "D",
+  "source": "generator a9f1c1",
+  "story": "From Late Latin caldaria, a boiling vessel, which gave us cauldron and caldera. It is the vessel where the reaction happens: a nod to the chemical-engineering founder and a quiet echo of the old Reactify name (reaction leads to reactor). Things go in raw and come out transformed.",
+  "pronunciation": "KAL-drah (2 syllables)",
+  "risks": "There are real conflicts. Kaldra is an indie focus/productivity app (kaldra.framer.website) whose maker says they are shipping indie apps through kaldra.co, the same indie-product space. Magic: The Gathering also uses 'Kaldra' for a legendary equipment set (Wizards of the Coast IP). A kaldra.ai handle exists on Bluesky. The .com, .co, .so and .app are taken.",
+  "why_cool": "It has a hard K, a -dr- cluster and an open a ending, and it sounds like a name. It carries a hidden link to the company's own history without being tied to any technology."
+ },
+ {
+  "name": "Brisk",
+  "territory": "E",
+  "source": "generator a5b753",
+  "story": "Expansion: B = Build, R = Refine, I = Iterate, S = Ship, K = Keep (own it after launch). Five creed verbs in working order. The word means quick, energetic, no wasted motion (probably from French 'brusque' or Welsh 'brysg', swift). That fits a small team that scopes, builds and ships without sales talk.",
+  "pronunciation": "BRISK (1 syllable)",
+  "risks": "Crowded. Brisk Teaching is an AI edtech Chrome extension that raised $15M in 2025. Brisk is also Lipton/PepsiCo's iced tea in the US. Many 'Brisk-' dev agencies exist (Briskstar, Brisktech, Brisk Cloudware). It is an adjective with little hidden story and is harder to trademark as a word.",
+  "why_cool": "It has the Br- onset and the one hard syllable the founder likes in Braze and Brame. It passes the radio test perfectly and the expansion is exact, not forced."
+ },
+ {
+  "name": "Brevet",
+  "territory": "E",
+  "source": "generator a5b753",
+  "story": "Expansion: B = Build, R = Refine, E = Execute, V = Value, E = Evolve, T = Trust. The word: in French a 'brevet d'invention' is a patent, the document proving you own what you invented. In randonneuring, a brevet is a long-distance ride you finish under your own power within a time limit. A military brevet is a promotion earned in the field. All three are about earned ownership and finishing.",
+  "pronunciation": "BREV-it (US) or bruh-VAY (French)",
+  "risks": "There are two pronunciations, so it fails the strict radio test. Brevet Group is a sales-training firm, which clashes with 'no sales talk', and eBrevet is a randonneuring app. In France it is also a school diploma (Brevet des colleges). No negative meanings found.",
+  "why_cool": "It has a Br- onset and a hidden 'patent' meaning, so it literally means owning your invention. It sounds like a surname, is EU-friendly, and three domains are free, including brevetlabs.com."
+ },
+ {
+  "name": "Dobro",
+  "territory": "E",
+  "source": "generator a5b753",
+  "story": "Expansion: D = Design, O = Own, B = Build, R = Run, O = Optimize. The word means 'good' in Serbian and other Slavic languages, and it has a real acronym history. The Dobro resonator guitar was named by Slovak-American inventors John and Rudy Dopyera: DOpyera BROthers. They chose it because 'dobro' means good. Two immigrant builders made their own product and their own company (1928). That is a hidden story about product-first founders.",
+  "pronunciation": "DOH-broh (2 syllables)",
+  "risks": "Dobro is an AI PM assistant (dobrolab.io), which is close to this company's space. DOBRO Agency is a Moscow digital agency. Gibson owns the Dobro trademark for guitars (different class, but famous among musicians). Portuguese 'dobro' = double (harmless). Only one domain is free.",
+  "why_cool": "It is a genuine historical acronym-word, which is rare, with a Slavic root any English speaker can say and spell. It is warm but hard (-br- core) and sounds like a name."
+ },
+ {
+  "name": "Borax",
+  "territory": "E",
+  "source": "generator a5b753",
+  "story": "Expansion: B = Build, O = Own, R = Refine, A = Accountability, X = eXecute. The word: borax (sodium borate) is the classic flux of brazing and forge-welding. It dissolves the oxides so two metals can actually fuse. It is the unseen chemistry that makes a joint hold, which is a direct hidden link to the founder's favorite anchor Braze and a process-engineering nod to his chemical background.",
+  "pronunciation": "BOR-aks (2 syllables)",
+  "risks": "US audiences know it as a household laundry booster (20 Mule Team Borax), and U.S. Borax (Rio Tinto) owns borax.com. A few may associate 'toxic cleaning chemical' or 'boring'. There is only a tiny SourceForge project in software. It is not confusable with Braze by edit distance, but it may feel like a nod to it.",
+  "why_cool": "It is hard and punchy with the -x ending. It carries a real chemistry and metalwork story that only makers recognize, a secret handshake with Braze, and three domains are free."
+ },
+ {
+  "name": "Bezant",
+  "territory": "E",
+  "source": "generator a5b753",
+  "story": "Expansion: B = Build, E = Execute, Z = Zero hand-offs (own it end to end), A = Accountability, N = Next iteration, T = Trust. The word was the Western name for the Byzantine gold coin (from 'Byzantium'), the medieval world's reserve currency. In heraldry a gold disc on a shield is still called a bezant. Belgrade was a Byzantine frontier city, a quiet regional link.",
+  "pronunciation": "BEZ-unt (sometimes buh-ZANT)",
+  "risks": "Serious: 'Bezant.app' is a known macOS adware (Pirrit family), and 'remove Bezant' pages rank in search. There is also the Bezant blockchain/foundation (Singapore/Korea) and Bezant Technologies (crypto ML). Stress is ambiguous, so it partly fails the radio test. In Serbian 'bez' = without (minor).",
+  "why_cool": "It has the -z- core of Braze, an old-world story of gold standard value, sounds like a name, and three clean domains are free, including bezantlabs.com."
+ },
+ {
+  "name": "Structa",
+  "territory": "E",
+  "source": "generator a5b753",
+  "story": "Expansion: S = Scope, T = Trust, R = Refine, U = Users, C = Craft, T = Test, A = Accountability. The word is Latin for 'built, assembled, arranged' (perfect participle of struere, the root of structure, construct and instruct). A company whose name literally means 'built'.",
+  "pronunciation": "STRUCK-tuh (2 syllables)",
+  "risks": "Structa is a Toronto AI copilot for real-estate developers (founded 2023). Structa Technology is a South African infrastructure firm, and there is an IT-agency Webflow template named Structa. It feels more construction/architecture than product. At 7 letters, the acronym is on the long side.",
+  "why_cool": "It has a -ct- core, an open final a and a Latin enterprise feel in the Adacta family of sounds. It is spelled exactly as spoken."
+ },
+ {
+  "name": "Takt",
+  "territory": "E",
+  "source": "generator a5b753",
+  "story": "Expansion: T = Trust, A = Accountability, K = Kaizen (continuous improvement), T = Tempo. The word is German for beat or measure. In lean manufacturing (the Toyota Production System), 'takt time' is the steady pace of production set by customer demand. It is a process-engineering term that matches the founder's chemical/process background and the ship-on-cadence, iterate-forever creed.",
+  "pronunciation": "TAHKT (1 syllable)",
+  "risks": "All 10 domains checked were taken, which shows heavy existing use (a web search was not run). German/Serbian 'takt' also means tact, which is harmless. English speakers may spell it 'tact' after hearing it. Included only as an exceptional story, since there is no domain.",
+  "why_cool": "It is the hardest-sounding name here (K-T), one syllable, and has a genuine process-engineering hidden story that engineers recognize instantly."
+ },
+ {
+  "name": "Solidus",
+  "territory": "E",
+  "source": "generator a5b753",
+  "story": "Expansion: S = Scope, O = Own, L = Learn, I = Iterate, D = Deliver, U = Users, S = Support. The word has a double hidden story. First, Constantine's gold coin (309 AD) stayed stable for about 700 years and gave English 'solid' and 'soldier'. Second, SOLIDUS is the official Unicode name of '/' (U+002F), the root of every file path, which fits the terminal/CLI motif.",
+  "pronunciation": "SOL-ih-dus (3 syllables)",
+  "risks": "Heavy conflicts: Solidus is a well-known open-source Rails e-commerce framework (solidus.io), Solidus Systems is a web/app agency doing the same services, and there is also Solidus Technical Solutions, plus Solidus Labs (crypto surveillance) and the Metal Gear Solid character Solidus Snake. It is 7 letters and 3 syllables, the softest name in the set.",
+  "why_cool": "The '/' easter egg is a builder-to-builder hidden story no other candidate has, combined with the gold-standard value meaning."
+ },
+ {
+  "name": "Remek",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Hungarian 'remek' means masterpiece, and also splendid. In the Hungarian guild (céh) system the remek was the piece a journeyman had to make and submit to the guild masters before he could be admitted as a master; the German equivalent is Meisterstück. The word passed into Serbian and Croatian as 'remek-delo' / 'remek-djelo' (masterpiece), so it links Belgrade with Central European guild tradition. Tie to the brand: every product and every client build is treated as a remek, the work that proves mastery, judged by an owner's standards. It works as a quiet holding and as an umbrella ('Quicktalog by Remek', 'Remek Labs'). It fits with the Esnaf/Kalfa guild thread already in the lead's pool as the missing final step: apprentice, journeyman, masterpiece.",
+  "pronunciation": "REH-mek (2 syllables, stress on first)",
+  "risks": "Existing: Remek! Trading Systems (Toronto, small NinjaTrader algo-trading software vendor), Remek AS (Norway), Remek Group. A listener could think 'remake' or spell it 'Remeck'. It sounds a little like Rimac (Croatian hypercar maker). No negative meanings known in EN/SR/DE/ES/FR/IT/HU; in Hungarian it is positive ('splendid'). The .com, .co, .so and .ai are taken.",
+  "why_cool": "Five letters, a hard -k close, open vowels, spelled as spoken. It sounds like a first name (Remek is a Polish diminutive of Remigiusz), and the masterpiece story is real and easy to find. Short and hard like Braze, with an old-guild weight like Adacta."
+ },
+ {
+  "name": "Farga",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Catalan and Occitan 'farga' means forge or ironworks. The 'farga catalana' (Catalan forge) was a water-powered bloomery that turned ore straight into wrought iron in one furnace. It spread across the Pyrenees and to the Americas and was used into the 19th century. Tie to the brand: a place that turns raw material into high-value finished product, in the same loop as Scope -> Build -> Ship. It also nods to the founder's process-engineering background (a furnace as a single-step reactor).",
+  "pronunciation": "FAR-gah (2 syllables)",
+  "risks": "La Farga is a large Catalan copper and metals producer (industrial, not software), and 'Apoyo La Farga' is a school tutoring app. A listener might hear 'Fargo' (the film or city). The standard Spanish word is 'fragua', and 'farga' has no negative meaning known in ES/EN/SR/DE/IT/FR/HU. The .com, .studio, .so and .app are taken.",
+  "why_cool": "A hard F with an -rg- core and open 'a' vowels, in the same family as Braze, Adacta and Koshava. Five letters, it sounds like a name, and it hides a real forge story. farga.co and farga.ai are both open, which is rare for a five-letter real word."
+ },
+ {
+  "name": "Tanren",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Japanese 鍛錬 'tanren'. 鍛 (tan) means to forge or hammer metal, and 錬 (ren) means to refine or temper it. Together the word means forging and tempering, and figuratively disciplined training until mastery. In The Book of Five Rings, Miyamoto Musashi writes that a thousand days of practice is 'tan' (forging) and ten thousand days is 'ren' (refining). Tie to the brand: products are hammered into shape, then refined through iteration, which is the Build -> Ship & iterate loop, done by people who own the result.",
+  "pronunciation": "TAHN-ren (2 syllables)",
+  "risks": "Existing uses: TANREN, a Japanese sales-enablement learning platform; TanRen Software Development S.A. (small); several open-source learning apps named Tanren on GitHub. It is softer than the founder's hard-onset favourites. The .com, .co, .so, .ai, .app and labs.com are all taken.",
+  "why_cool": "Clean, two syllables, spelled exactly as heard, with a samurai-smith story under it. It reads like a founder's surname and passes the radio test easily. The metal meaning and the training meaning together match 'products plus services done with mastery'."
+ },
+ {
+  "name": "Mokume",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Japanese 木目 'mokume' means wood grain, from mokume-gane (木目金, 'wood-grain metal'). This is a 17th-century technique credited to Denbei Shoami of Akita: layers of different metals (copper, silver, gold, shakudō) are fused into one billet, then carved and forged until a flowing grain appears. Tie to the brand: different disciplines (engineering, AI, data, design) are fused into one solid, beautiful product. It is a direct cousin of brazing (the founder's Braze anchor) and of his metallurgy and process-engineering background.",
+  "pronunciation": "moh-KOO-meh (3 syllables)",
+  "risks": "Mokume Software Inc. (Redwood City data-management firm) was acquired by Versant around 2002 and is now defunct. Jewelers use 'mokume gane' heavily. It has three soft syllables with no hard close, and English speakers may say 'moke-yoom'. The .com, .co, .so and .app are taken.",
+  "why_cool": "The hidden story fits the founder's Braze love exactly: joining metals into something more valuable than its parts. It is a real, discoverable craft with striking visuals for a brand (grain patterns), and it sounds like a name."
+ },
+ {
+  "name": "Ktema",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Ancient Greek κτῆμα 'ktēma' means a possession: property, something acquired and kept. Thucydides (History 1.22) wrote that his work was composed as 'ktēma es aiei', 'a possession for all time', not a showpiece for a moment's applause. Tie to the brand: this is ownership stated outright. The company builds products it owns and work meant to last, not throwaway client deliverables. The name suits a holding and later an umbrella.",
+  "pronunciation": "k'TAY-mah (3 syllables; the initial k is lightly sounded)",
+  "risks": "The initial kt- cluster weakens the radio test: many English speakers will hear 'Tema' or 'Kuh-tema' and spell it wrong. In modern Greek κτήμα means estate or farm and appears in many winery names (usually romanised 'Ktima'). The .com and .so are taken.",
+  "why_cool": "It has the strongest ownership story of the set, from one of the most quoted lines in Western history. The -kt- core matches the Adacta and Bract texture, it has old-root enterprise weight, and it has the widest open domain set in this territory."
+ },
+ {
+  "name": "Noren",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Japanese 暖簾 'noren' is the split fabric curtain hung at a shop entrance, bearing the house crest. Over centuries it came to stand for the shop's reputation and goodwill, and 'noren' (のれん) is literally the Japanese accounting term for goodwill. 'Noren-wake' (dividing the noren) is the custom of a master letting a trusted apprentice open a new shop under the house name. Tie to the brand: this fits the quiet-holding-now, umbrella-later plan. Each product (Quicktalog, unbg, Shot & Share) hangs under the same noren, and the name itself means the value built by doing work well.",
+  "pronunciation": "NO-ren (2 syllables)",
+  "risks": "It is soft, with no hard plosive, so it is off the founder's Br-/-ze profile. A listener might spell it 'Noreen' or 'Norén' (a Swedish surname). Many restaurants and shops use the name. Domain position is weak: only noren.build is open among those checked.",
+  "why_cool": "The best umbrella story in the set: the name literally means brand equity, and there is an old custom for spinning off new ventures under it. It is short, sounds like a name, and has a quiet, serious feel."
+ },
+ {
+  "name": "Meijin",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Japanese 名人 'meijin', literally 'famous person', means a master or virtuoso. It is the supreme title in Go and shogi, dating to the early 1600s; Honinbo Sansa is recognised as the first Go Meijin, in 1612. Kawabata's novel 'Meijin' (The Master of Go) chronicles the last retirement game of a Meijin. Tie to the brand: mastery that is earned and recognised by peers, a builder-to-builder title rather than a sales claim.",
+  "pronunciation": "MAY-jin (2 syllables)",
+  "risks": "The radio test is middling: a listener may spell it 'Mayjin' or 'Mejin'. Shanxi Meijin Energy is a large Chinese energy company, not tech, and a few small or dissolved UK consultancies used the name. There are anime and game title associations. The .co, .so and .app are taken.",
+  "why_cool": "Short, with a crisp -j- core, and it sounds like a name. It has the strategy-game prestige that appeals to engineers, and meijin.studio and meijinlabs.com are both open."
+ },
+ {
+  "name": "Fabbro",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Italian 'fabbro' means smith or craftsman (from Latin faber). In Purgatorio XXVI Dante calls the troubadour Arnaut Daniel 'il miglior fabbro del parlar materno', 'the better craftsman of the mother tongue'. T.S. Eliot then dedicated The Waste Land to Ezra Pound as 'il miglior fabbro'. Tie to the brand: 'the better maker' is a quiet, literary claim of mastery, owned by the people who do the work.",
+  "pronunciation": "FAHB-roh (2 syllables)",
+  "risks": "It shares a root with 'Faber', which is already in the lead strategist's pool, so it may read as a variant rather than a new idea. A listener might spell it 'Fabro' (single b). It is a common Italian surname and trade word (e.g. plumbers' and locksmiths' signage in Italy). The .co and .studio are taken.",
+  "why_cool": "A hard F and -bbr- core that echo Braze and Brame, with one of the best-known hidden stories in modern literature. It sounds like a surname, it is European and serious, and fabbrolabs.com is open."
+ },
+ {
+  "name": "Vasara",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Finnish 'vasara' means hammer: the smith's tool, as in the Kalevala, where Ilmarinen forges the Sampo. In Lithuanian and Latvian 'vasara' means summer, which gives a warm second reading. Tie to the brand: the maker's primary tool, which shapes raw material into value, with a Nordic-Baltic old root.",
+  "pronunciation": "VAH-sah-rah (3 syllables)",
+  "risks": "'Vasara' is also Taito's arcade shoot-'em-up (2000), and the name recalls Japanese 'Basara'. Three syllables with a soft middle s, so it is less hard than the brief's profile. The .co, .so, .app and labs.com are taken.",
+  "why_cool": "Open 'a' vowels in a row, like Koshava and Adacta, with a hidden hammer inside. Spelled as spoken, it sounds like a name, and it has a friendly international feel."
+ },
+ {
+  "name": "Varpet",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Armenian վարպետ 'varpet' means master craftsman. It is also a national title of honour: in his last years the poet Avetik Isahakyan was called simply 'Varpet', the Master. Tie to the brand: a maker recognised as master by the people he builds for, which fits an ownership-minded studio.",
+  "pronunciation": "var-PET (2 syllables)",
+  "risks": "Real conflict: Varpet is an Armenian home-services marketplace app (varpet.com, varpet.us, 'Varpet Partner' app) that uses the same 'master' meaning. The '-pet' ending can read as cute and rhymes with 'carpet'. The .com is taken.",
+  "why_cool": "A hard V-r-p consonant frame, six letters, and a genuine honorific story that few Western brands have. Both .co and .studio are open."
+ },
+ {
+  "name": "Zunft",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "German 'Zunft' means craft guild. The medieval Zünfte set quality standards, trained apprentices, examined masterpieces and certified masters. In Zurich the guilds still govern civic tradition and parade at Sechseläuten, when they burn the Böögg to call spring. Tie to the brand: a guild of builders who hold their own work to a master's standard, whether it is their product or a client's.",
+  "pronunciation": "ZOONFT in English (German: TSOONFT), 1 syllable",
+  "risks": "It has two pronunciations (English z- vs German ts-), which hurts the radio test, and the -nft cluster is harsh. The root is German only and may feel bureaucratic. The .co, .com and .so are taken.",
+  "why_cool": "One hard syllable with a Z onset, as short and blunt as Braze. The old European guild story gives enterprise gravity."
+ },
+ {
+  "name": "Arotz",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "Basque 'arotz' means craftsman: the artisan who works wood or iron (carpenter or smith, depending on dialect). Basque is Europe's oldest living language isolate, older than the Indo-European languages around it. Tie to the brand: the maker in the oldest living European tongue, a hidden story of craft that predates everything else.",
+  "pronunciation": "AH-rotz (2 syllables)",
+  "risks": "A listener might spell it 'Arots' or 'Arrotz'. 'Rots' is embedded (English 'rot'). It is an obscure root that needs explaining. The .com and .so are taken.",
+  "why_cool": "A -tz close like Braze's -ze, short, and exotic but readable, with a very open domain position (.co, .studio and .app all available)."
+ },
+ {
+  "name": "Vardar",
+  "territory": "F",
+  "source": "generator ad707a",
+  "story": "The Vardar is the river that runs from North Macedonia to the Aegean, and it gives its name to the Vardarec (Greek: Vardaris), a cold, dry north wind that funnels down the valley to Thessaloniki. It is the Balkan sibling of the Koshava (Belgrade) and the Mistral (Rhône), which makes it the 'local natural phenomenon' option in the founder's Koshava style. Tie to the brand: a steady force channelled through a narrow valley, i.e. focus that becomes power.",
+  "pronunciation": "VAR-dar (2 syllables)",
+  "risks": "It is a river and region name with Macedonian political connotations (historical 'Vardar Macedonia', the Greece-Macedonia naming dispute), and several sports clubs use it (RK/FK Vardar). The story is about nature, not making or ownership. It may sound like 'Vader' or 'radar'. The .co is taken.",
+  "why_cool": "Hard, symmetrical, radar-like sound. Six letters, spelled as spoken, and a real Balkan wind story that global audiences can say, like Koshava but easier."
+ }
+]

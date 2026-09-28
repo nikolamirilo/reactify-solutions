@@ -1,0 +1,315 @@
+[
+ {
+  "domain": "bract.co",
+  "years": 1,
+  "first_year_usd": 1232,
+  "renewal_usd": 1232,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "bract.build",
+  "years": 1,
+  "first_year_usd": 30,
+  "renewal_usd": 30,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "moxon.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "moxon.app",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 15,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "moxon.dev",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 13,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "remek.io",
+  "years": 1,
+  "first_year_usd": 14.99,
+  "renewal_usd": 46,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "remek.app",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 15,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "remek.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "spelter.co",
+  "years": 1,
+  "first_year_usd": 308,
+  "renewal_usd": 308,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "spelter.io",
+  "years": 1,
+  "first_year_usd": 14.99,
+  "renewal_usd": 46,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "saxton.app",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 15,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "pritchel.co",
+  "years": 1,
+  "first_year_usd": 29.99,
+  "renewal_usd": 24.8,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "yeoman.co",
+  "years": 1,
+  "first_year_usd": 616,
+  "renewal_usd": 616,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "sprag.co",
+  "years": 1,
+  "first_year_usd": 1232,
+  "renewal_usd": 1232,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "exerga.co",
+  "years": 1,
+  "first_year_usd": 29.99,
+  "renewal_usd": 24.8,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "borax.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "bract.works",
+  "years": 1,
+  "first_year_usd": 7.99,
+  "renewal_usd": 32,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "moxonlabs.com",
+  "years": 1,
+  "first_year_usd": 11.25,
+  "renewal_usd": 11.25,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "remeklabs.com",
+  "years": 1,
+  "first_year_usd": 11.25,
+  "renewal_usd": 11.25,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "spelter.app",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 15,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "spelter.dev",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 13,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "spelter.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "saxton.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "saxton.dev",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 13,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "pritchel.io",
+  "years": 1,
+  "first_year_usd": 14.99,
+  "renewal_usd": 46,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "pritchel.app",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 15,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "yeoman.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "exerga.io",
+  "years": 1,
+  "first_year_usd": 14.99,
+  "renewal_usd": 46,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "exerga.app",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 15,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "borax.app",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 15,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "borax.dev",
+  "years": 1,
+  "first_year_usd": 9.99,
+  "renewal_usd": 13,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "spelter.ai",
+  "years": 2,
+  "first_year_usd": 80,
+  "renewal_usd": 80,
+  "note": "Vercel quotes .ai for a 2-year minimum: USD 160 purchase and 160 renewal per 2 years",
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "bosk.co",
+  "years": 1,
+  "first_year_usd": 6160,
+  "renewal_usd": 6160,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "bosk.build",
+  "years": 1,
+  "first_year_usd": 30,
+  "renewal_usd": 30,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "dobra.build",
+  "years": 1,
+  "first_year_usd": 30,
+  "renewal_usd": 30,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "makefast.co",
+  "years": 1,
+  "first_year_usd": 123.2,
+  "renewal_usd": 123.2,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "ergana.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "sprag.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "sprag.build",
+  "years": 1,
+  "first_year_usd": 30,
+  "renewal_usd": 30,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ }
+]

@@ -1,0 +1,75 @@
+[
+ {
+  "name": "Bosk",
+  "domains": [
+   {
+    "domain": "bosk.com",
+    "state": "registered, no site",
+    "evidence": "RDAP: Squarespace Domains II LLC, created 1997-03-14, expires 2027-03-15, clientDelete/TransferProhibited, NS ns-cloud-e1..e4.googledomains.com. Neither bosk.com nor www.bosk.com resolves (ENOTFOUND), so it is a long-held domain with no website and no sale listing seen.",
+    "source_url": "https://rdap.verisign.com/com/v1/domain/bosk.com"
+   },
+   {
+    "domain": "bosk.io",
+    "state": "for sale",
+    "evidence": "RDAP: NameCheap, Inc., created 2025-02-08, expires 2027-02-08, clientTransferProhibited, NS ns1/ns2.atom.com. https://bosk.io 302-redirects to Atom.com, which lists it as a premium domain for $3,499, with lease-to-own and rent options.",
+    "source_url": "https://www.atom.com/name/Bosk.io"
+   },
+   {
+    "domain": "bosk.ai",
+    "state": "registered, no site",
+    "evidence": "RDAP (Identity Digital): NameSilo, LLC, created 2023-11-11, expires 2027-11-11, clientTransferProhibited, NS ns1/ns2.dreamhost.com. bosk.ai and www.bosk.ai do not resolve in DNS (WebFetch and Firecrawl both failed), so no site or listing was seen.",
+    "source_url": "https://rdap.identitydigital.services/rdap/domain/bosk.ai"
+   },
+   {
+    "domain": "bosk.dev",
+    "state": "registered, no site",
+    "evidence": "RDAP: Namecheap Inc., created 2024-03-28, expires 2027-03-28, clientTransferProhibited, NS dns1/dns2.registrar-servers.com (Namecheap default DNS). https://bosk.dev returned HTTP 503, and a Firecrawl retry failed with a proxy error, so no content or sale listing was visible.",
+    "source_url": "https://pubapi.registry.google/rdap/domain/bosk.dev"
+   },
+   {
+    "domain": "bosk.app",
+    "state": "for sale",
+    "evidence": "RDAP: Sav.com, LLC, created 2025-05-11, expires 2027-05-11, NS ns1/ns2.premiumdomains.cloud. The site is a TopDomains 'Buy now' page asking $3,379 USD, with monthly lease-to-own and checkout through GoDaddy.",
+    "source_url": "https://bosk.app"
+   },
+   {
+    "domain": "bosk.studio",
+    "state": "parked",
+    "evidence": "RDAP (Identity Digital): Squarespace Domains II LLC, created 2026-04-25 (recent), expires 2027-04-25, NS ns-cloud-e1..e4.googledomains.com. The site is a Squarespace 'under construction / check back soon' placeholder, so it is held by someone with no live site yet and no sale listing.",
+    "source_url": "https://rdap.identitydigital.services/rdap/domain/bosk.studio"
+   },
+   {
+    "domain": "bosk.so",
+    "state": "not registered",
+    "evidence": "The .so registry RDAP returned 404 for bosk.so but returned data for notion.so, so the domain has no registration record. who.is also shows no WHOIS data and the domain does not resolve. Because the registrar said it is unavailable, it is probably registry-reserved or premium.",
+    "source_url": "https://rdap.nic.so/domain/bosk.so"
+   }
+  ],
+  "handles": [
+   {
+    "platform": "GitHub",
+    "handle": "bosk",
+    "status": "taken",
+    "note": "https://github.com/bosk is an existing user account (user ID 3534432) with 0 public repositories. It may be dormant, but it is not free."
+   },
+   {
+    "platform": "X",
+    "handle": "@bosk",
+    "status": "unverifiable",
+    "note": "x.com/bosk requires login to see whether the account exists; not checked."
+   },
+   {
+    "platform": "Instagram",
+    "handle": "bosk",
+    "status": "unverifiable",
+    "note": "Instagram profile pages need login to show a reliable result; not checked."
+   },
+   {
+    "platform": "LinkedIn",
+    "handle": "linkedin.com/company/bosk",
+    "status": "unverifiable",
+    "note": "LinkedIn company pages need login to show a reliable result; not checked."
+   }
+  ]
+ }
+]

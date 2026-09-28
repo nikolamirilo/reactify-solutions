@@ -1,0 +1,470 @@
+{
+ "Sprag": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: SPRAG (rhymes with drag). Likely misspelling: Spragg or Sprague. Slang checked in Green's Dictionary of Slang: UK schoolyard 'sprag/spragg' means to snitch or tell tales, and older UK/Australian/US usage means to reprimand or thwart. All of these are obscure. It sounds a little like UK 'sprog' (a child) and rhymes with nag/hag/drag. Nothing vulgar."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: not a word; faintly recalls 'sprega' (coupling, linkage), which is neutral to positive. HU: nothing (the nearest word, 'spárga' = asparagus/string, is a distant stretch). A Serbian speaker would not find it odd."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning; only faint echoes of 'sprach' (spoke) and 'Prag' (Prague), both neutral. FR: no meaning. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES: no meaning; read 'es-PRAG' (Spanish adds an e- before s+consonant). IT: 'spago' = string, which is a distant echo and harmless. PT: no meaning. Clean."
+  }
+ },
+ "Swage": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation: dictionaries give SWAYJ, but machinists often say SWEJ. A lay US reader may also say 'swag' or 'swahj', so there is no single reading. Likely misspelling: Swaige, Swedge or Swayge, because most hearers don't know the word. It is also read as 'swag' (merch, or older UK slang for loot). Nothing vulgar, but it fails the radio test."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read as 'Svejdž' or literally 'Svage'. There is a very distant echo of 'svađa' (quarrel), but no real association. The W marks it as foreign. HU: nothing. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning; at most a distant echo of 'Schwager' (brother-in-law), or the English slang 'swag', which is positive. FR: no meaning. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning. Spanish/Portuguese speakers will say 'SUA-gue' or 'SUEIDJ'. A PT echo of 'suar' (to sweat) is only a distant stretch. Clean."
+  }
+ },
+ "Pritchel": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: PRITCH-ul, which is fairly clear. Likely misspelling: Pritchell (by analogy with Mitchell), or Pritchle or Pritchal. No negative meaning. It sounds like a surname (Pritchard, Pritchett), and 'Pritch' rhymes with itch/bitch, which is a small stretch."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: pronounced 'Pričel', which recalls 'priča/pričati' (story, to chat). That is neutral to friendly, not negative. HU: nothing. A Serbian speaker would hear it as a slightly chatty-sounding foreign word and nothing more."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: Germans would say it as 'Pritschel', which sits close to Austrian/Bavarian 'pritscheln' (to splash about; regionally also 'to pee'). It is also close to 'Pritsche' (plank bed or truck flatbed), which in Bavaria is a derogatory word for a promiscuous woman or prostitute. This is regional and not an exact match, but it sounds childish or silly and is borderline in AT/Bavaria. FR: nothing."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning; read 'PRI-chel'. No slang or near-homophones found. Clean."
+  }
+ },
+ "Stithy": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation is split: dictionaries allow STITH-ee with the 'th' of 'thin' or of 'this', and some readers guess STY-thee. Likely misspelling: Stithee, Stithey or Stythie. Where 'th' is said as 'f' (London/Estuary UK English and much casual speech), it comes out close to 'stiffy', slang for an erection in the UK and US. That is an embarrassing near-homophone."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: speakers cannot produce 'th', so it tends to come out as 'Stidi' or 'Stiti'. 'Stidi (se)' means 'is ashamed / shy' (from 'stid' = shame). 'Štiti' means 'protects', which is positive. The meaning depends on pronunciation. Mild, not vulgar. HU: nothing."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning or slang. FR: no meaning. Clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES/PT: no meaning, though the 'th' is hard to say ('es-TI-ti'). IT: an Italian reading 'STI-ti' echoes 'stitico' (constipated; figuratively stingy). This is a mild partial echo, not a match."
+  }
+ },
+ "Duramen": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation has no single reading: DUR-uh-men, duh-RAY-men, or duh-RAH-men (like ramen). Likely misspelling: Durameen, Duramin or 'Dura Men'. The written form splits easily into 'Dura-Men', which reads like a men's stamina or condom product (compare Durex). A US client could find that awkward. It fails the radio test on stress and vowels."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: not a word. There are only faint echoes of 'dur' (major key) and 'durati' (colloquial Croatian for 'to endure'), which are neutral to positive. HU: 'dúr' = major key, neutral. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE/FR: standard botanical term for heartwood, and 'duramen' is itself a normal French word. 'Dura' (dura mater) and 'dur' (hard, FR) are neutral to positive. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES: a real Spanish word, 'duramen' (heartwood), neutral and technical. IT: 'durame' and PT: 'durame/cerne' mean the same. Reading 'dura' (hard) as innuendo would be a distant stretch. Clean."
+  }
+ },
+ "Thole": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: THOHL (rhymes with hole/bowl). Some readers may say TOHL, the way 'th' is read in Thomas or Thames. Likely misspelling: Thoal, Thol or Thowl. Said quickly, it sounds like 'the hole', which is slightly awkward. Scots 'thole' means to endure or suffer, which is obscure. Nothing vulgar."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read as 'Tole' or 'Toul'. 'Tole' is a harmless male nickname. No negative meaning. HU: sounds like 'tőle' (from him/her), which is neutral. Clean."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: sounds like 'Tolle' (quiff) or 'toll' (great), which is positive, or 'Dohle' (jackdaw). FR: said like 'tôle' (sheet metal) or 'taule' (slang for prison, 'en taule'). 'Se prendre une tôle' means to get thrashed. Mild."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "Read 'TOLE'. ES: 'tole' (RAE, colloquial) = shouting, uproar or a wave of disapproval; 'tomar el tole' = to leave in a hurry; in AR/UY 'toletole' = a ruckus. PT: close to 'tolo/tola' (fool, silly). IT: nothing. Mild negative echoes only, nothing vulgar."
+  }
+ },
+ "Broach": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation: BROHCH, which is clear. But it sounds exactly like 'brooch' (the jewelry), and the two are widely confused, so a hearer will very likely write Brooch, or Broche or Brotch. It contains 'roach' (cockroach, and slang for the end of a joint), and it rhymes with roach/cockroach, which invites mockery."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: pronounced 'Brouč'. It may recall 'broš' (brooch) or 'broć' (the madder plant), both neutral. HU: 'bross' = brooch, neutral. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: faint echo of 'brach' (fallow; also 'broke', past tense of brechen). This is a stretch. FR: 'broche' (brooch, spit, skewer) is neutral. Clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES: close to 'broche' (clasp, brooch) and 'brocha' (paintbrush; 'de brocha gorda' = crude or amateurish). Neutral to mild. PT: read the Portuguese way ('bro-ASH'), it is close to 'broxa/brocha', which in vulgar Brazilian slang means sexually impotent ('broxar' = to lose an erection; figuratively, to lose enthusiasm). This is borderline serious for Brazil and less of an issue in Portugal, where 'broxa' mainly means a paintbrush. It is not an exact match when said in English ('brohch'). IT: 'brocca' (jug), harmless."
+  }
+ },
+ "Makefast": {
+  "en": {
+   "level": "none",
+   "note": "Pronunciation: MAYK-fast, which is clear. Likely misspelling: 'Make Fast' or 'MakeFast' (spacing or capitals only). It is a nautical term meaning 'to secure'. As a plain English phrase it is generic. It rhymes with 'breakfast', which is harmless. No negative slang."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: reads as the English compound, with nothing negative ('mak' = poppy, harmless). HU: spoken 'fast' is close to 'faszt', the accusative of the vulgar 'fasz' (dick), as in the exclamation 'faszt!'. However, 'fast' is a very familiar English word in Hungary ('fast food'), so the risk is only mild, and the written form would be read 'fasht'."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: 'fast' means 'almost' in German, so it can read as 'almost make/made'. 'Make' can also echo 'Macke' (defect; 'eine Macke haben' means to be a bit nuts). Mild and awkward, not vulgar. FR: nothing."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: an English compound with no meaning; read 'MEIK-fast'. Clean."
+  }
+ },
+ "Carrack": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation: KAIR-uk or KARR-uk. Likely misspelling: Carrick (a common surname and place name), or Carack or Karrack, so a hearer will very likely get it wrong. Said quickly it sounds close to 'car wreck' and carries a 'crack' sound, both easy mockery for a software brand."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'Karak'. It is not a word. Vulgar slang 'karati' (standard: to scold; Croatian/Bosnian slang: to have sex) is a distant stretch that a native speaker is unlikely to notice. A literal Serbian-Latin reading starts with 'Car' (tsar, and in slang 'legend'), which is positive. HU: 'karakk' is the ordinary word for this ship type. Clean."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: sounds exactly like 'Karacke' (the historic ship), which is neutral. FR: sounds exactly like 'caraque'. Its standard meaning is the same ship, but in Provence/Occitan-influenced southern French, 'caraque' is a pejorative, racist slur for Roma/gypsies (also used for a badly dressed person). It is regional and secondary, but it is a real slur homophone, so borderline."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES: 'carraca' is the carrack ship, but colloquially (RAE) it also means a clunker: an old, broken-down vehicle or machine ('trasto, armatoste'), or a decrepit old person. It is also a noise rattle. That is a mildly negative image for software. PT: close to 'carraça' (tick; in Portugal also a clingy pest) and to the Brazilian interjection 'caraca!' (a mild minced form of 'caralho', like 'gosh/damn'). IT: 'caracca' = carrack ship, neutral."
+  }
+ },
+ "Brayer": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: BRAY-er, which is clear. Likely misspelling: Breyer (Breyers ice cream, Justice Breyer) or Brayor. 'Bray' is the noise a donkey makes, and 'brayer' reads as 'one who brays' (a loud, braying laugh), which is mildly unflattering. It sounds close to 'prayer'. Nothing vulgar."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'Brejer' or 'Brajer', which faintly recalls 'braja/brajko' (bro, buddy). That is friendly, not negative. HU: nothing. Clean."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: German spelling-pronunciation 'Braier' is close to 'Brei' (mush/porridge). Mild. FR: 'brayer' is a real French noun meaning a hernia truss (surgical), and in falconry a bird's rump. It is also near 'braire' (donkey bray) and 'brailler' (to bawl). Mildly unflattering, not vulgar."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/PT: no meaning; read 'BRA-yer'. IT: 'braie/brache' (archaic word for breeches) is only a distant stretch. Clean in these languages."
+  }
+ },
+ "Gunter": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation: US GUN-ter, but readers who know the German name Günter say GOON-ter. Likely misspelling: Gunther (a very common name) or Günter, very likely. It starts with 'gun', a firearm association some US clients may find sensitive. It rhymes with UK 'punter' (mildly dismissive) and 'grunter'. The internet slang 'gunt' as a substring is only a distant stretch."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read at once as the German first name Günter, so it feels like a person's name rather than a brand. No negative meaning. HU: the same German-name reading. 'Gúnár' (gander) is a distant stretch. Clean."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: reads as the first name Gunter/Günter, which is dated and old-man-ish, a slightly comic 'Günther' stereotype. It also recalls the Eurodance novelty act 'Gunther' ('Ding Dong Song'). FR: only the name. Silly or dated, not vulgar."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: seen as the German first name Günter; no meaning or slang. Clean."
+  }
+ },
+ "Yeoman": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: YOH-mun, familiar to most listeners ('yeoman's work'), though some may read YEE-oh-man. Likely misspelling: Yoman or Yeomen. The meaning is positive (loyal, hardworking). 'Yo, man' invites light puns. Not a linguistic problem, but note that Yeoman is already a well-known JavaScript scaffolding tool (yeoman.io)."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: pronounced 'Joumen'. A literal reading 'Jeo-man' contains 'jeo' (ate), which is a stretch. Nothing negative. HU: starts like 'jó' (good), which is positive. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning. FR: no meaning. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES: read 'YEO-man' ('SHEO-man' in Rioplatense Spanish); no meaning. IT/PT: no meaning. Clean."
+  }
+ },
+ "Moxon": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: MOK-sun, which is clear. Likely misspelling: Moxen, Moxin or Moxton, because the second vowel is unstressed. It echoes 'moxie' (positive), and Exxon or 'oxen'. It sounds slightly like a drug name (amoxicillin). No slang or vulgar meaning."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'Mokson'. It is not a word. There is only a very distant echo of the root 'mok-' (mokar = wet, mokriti = urinate) that most speakers would not notice. HU: nothing. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning. FR: no meaning; any link to 'moche' (ugly) is too distant to count. Clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES: normally read 'MOK-son', with no meaning. But 'moxón' is the old spelling of 'mojón' (boundary stone; colloquially a piece of excrement, a turd; in Venezuela also a lie). A reader who sounds the x like the j in 'México' gets 'mo-HON', close to 'mojón'. It is a mild, unlikely link. IT/PT: no meaning (PT reading 'MO-shon')."
+  }
+ },
+ "Credne": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation has no obvious reading: KRED-nee, KRED-nuh, KREDN with a silent e, or the Irish KRAY-nyuh (Creidhne). Likely misspelling: Credney, Crednee or Kredny. In writing it looks like a typo for 'credence' or 'credit'. No negative slang, but it clearly fails the radio test both ways."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: in Serbian Latin 'C' is pronounced 'ts', so a native reading gives the awkward 'Tsredne'. That is close to 'srednje' (medium, mediocre, so-so) and only one letter off 'crevne' (intestinal). If read as 'Kredne', it recalls 'kreda' (chalk), which is neutral. Awkward and odd to Serbian speakers, but not vulgar. HU: 'C' is also 'ts', so it is awkward to pronounce but has no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning ('Kredit' and 'Kreide' are distant, neutral). FR: no meaning; a link to 'crade' (filthy, slang) is a far stretch. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning; read 'KRED-ne'. It is a slightly awkward consonant cluster but has no negative associations. Clean."
+  }
+ },
+ "Brontes": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation is split: BRON-teez, BRONTS (like 'fonts') or BRON-tayz. It reads as the plural of Brontë (the Brontë sisters). Likely misspelling: Brontese, Brontës, Brontees or Brontis. It faintly evokes brontosaurus (lumbering, extinct). Nothing vulgar, but it fails the radio test."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: recognised as a Greek mythological name (and recalls 'bronza', bronze). Nothing negative. HU: nothing. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE/FR: brings to mind the Brontë sisters or the brontosaurus, which is neutral. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/PT: the mythological Cyclops; no slang. IT: Bronte is a Sicilian town known for pistachios, which is neutral to positive. Clean."
+  }
+ },
+ "Obris": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation is split: OH-briss, OB-riss, or oh-BREE (by analogy with 'debris'). Likely misspelling: Orbis (a common word and brand name), Obriss or Aubris. It is a near-rhyme with 'hubris' (arrogance), an easy target for mocking headlines. No slang entries found."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: a real, common word, 'obris' = outline, contour, silhouette, which is neutral to positive. It is also transparently related to 'obrisati/obriši' (wipe, erase, delete), which is an odd connotation for a software brand (deleting data) and slightly generic. Not vulgar. HU: nothing."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: faint echo of the archaic 'Obrist' (colonel), a stretch. FR: faint echo of 'abris' (shelters), neutral. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/PT: loosely evokes 'obra/obras' (work, construction), which is neutral. IT: no meaning. Clean."
+  }
+ },
+ "Briso": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation is split: BREE-soh, BRY-soh or BRIZ-oh. Likely misspelling: Brizo (an existing faucet brand), Breeso, Brisso or Breezo. Green's Dictionary of Slang lists 'Briso' as Australian slang for Brisbane, which is harmless and not US/UK. No negative meaning, but it fails the radio test."
+  },
+  "sr_hu": {
+   "level": "serious",
+   "note": "SR/HR/BS: 'briso' is the very common colloquial contraction of 'brisao' = '(he) wiped/erased/deleted', as in 'briso je tablu' (he wiped the board). It carries toilet-wiping associations and sounds like sloppy, dialect-style speech. It also recalls slang 'briši!' ('get lost!'). It is not vulgar, but every Serbian or Bosnian speaker instantly hears 'wiped/erased', which is embarrassing and a bad data-loss connotation for a Serbian software company. HU: nothing."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: 'Brise' (breeze) and 'brisant' (explosive/sensitive topic) are neutral. FR: near 'brisé' (broken) and 'brisons' (let's break), which is a mildly negative link for software. Also 'brise' (breeze). Mild."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/PT: echoes 'brisa' (breeze), which is pleasant. IT: no meaning. Clean in these languages."
+  }
+ },
+ "Dobra": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: DOH-bruh (some may say DAH-bruh). Likely misspelling: Dobro (the resonator-guitar brand), Dobrah or Doberah. It ends in 'bra', and 'Do-bra' invites light lingerie puns. There is a faint Doberman echo. Otherwise clean."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: a plain, everyday adjective, 'dobra' = good (feminine), also 'goods, assets'. It is generic and hard to own. In slang, 'dobra je' / 'dobra riba' = 'she's hot', so there is a mild double meaning. It is also a village name. Not negative, but ordinary. HU: 'dobra' = 'onto the drum' (from 'dob' = drum), which is neutral."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning. FR: no meaning. (Slavic 'good', which is positive for Serbian.) Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "PT: 'dobra' = fold or crease; it is also the currency of São Tomé and Príncipe and a historical Portuguese gold coin. All neutral. ES: close to 'dobla' (a historical coin, or 'doubles'), neutral. IT: no meaning. Clean."
+  }
+ },
+ "Ostro": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: US AH-stroh, UK OS-troh. For many Americans, whose accents merge the vowels of 'cot' and 'caught', it sounds the same as the 'Austro-' of Austro-Hungarian. Likely misspelling: Austro, or Astro. The echoes of 'ostracize' and 'ostrich' are only a stretch. No slang."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read as 'oštro' written without the diacritic (common online), meaning sharp / sharply / sternly. That is a fitting, neutral-to-positive sense for a tool brand. It also recalls Ostrog, a famous monastery, which is neutral. HU: the echoes of 'ostoba' (stupid) and 'ostor' (whip) are a distant stretch. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'Ost' (east) and 'Ossi' (East German, sometimes pejorative) are distant. FR: the colloquial 'ostrogoth' (boor) is a far stretch. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "IT/ES: 'ostro' is a real, literary word for the south wind and for Tyrian purple, both neutral to positive. ES (Spain): echoes 'ostra' (oyster) and the harmless exclamation '¡ostras!' ('wow/gosh'). PT: 'ostra' = oyster. Clean."
+  }
+ },
+ "Robur": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation: many US readers will say ROB-er, which sounds exactly like 'robber'. The other reading is ROH-bur. Likely misspelling: Robber, Rober or Roeber. A software company whose name is heard as 'robber' would embarrass a US client, especially around billing or data."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: the root 'rob' (slave) is visible, but 'robur' is not a word and is widely known from Jules Verne's 'Robur Osvajač' (Robur the Conqueror). Any negative reading is a distant stretch. HU: recalls the old East German Robur trucks, which is neutral. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: also the name of a GDR truck brand (Robur, Zittau), which is neutral or nostalgic. FR: known from Jules Verne's 'Robur le Conquérant'; Latin for strength. Clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "Latin for strength and oak; most people will connect it with 'robusto/robusto/robusto' (ES/IT/PT), which is positive. There is a mild echo of 'robar' (ES: to steal; 'robo' = theft), 'roubar' (PT) and 'rubare' (IT). It is only a mild stretch. IT: already a common brand name (Robur heating, Robur Siena football club)."
+  }
+ },
+ "Clevis": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: KLEV-iss, mostly clear (some may say KLEE-vis). Likely misspelling: Clevus, Clevice or Klevis. It rhymes with Elvis and pelvis, which invites mild jokes, and sounds like 'clever' (positive). No slang."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: in Serbian Latin a literal reading gives 'Tslevis'. Pronounced 'Klevis', it is identical to Klevis, a common Albanian male first name, which is a mildly sensitive association in Serbia. It shares the root 'klev-' with 'kleveta' (slander), which is a faint echo. Not vulgar. HU: nothing."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning. FR: near 'Clovis' (Frankish king) and 'clé/vis' (key/screw), neutral. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning; read 'KLE-vis'. It loosely evokes 'clave' (key), which is positive. Clean."
+  }
+ },
+ "Tenax": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: TEN-aks, which is clear. Likely misspelling: Tenex or Tennax. It echoes TENA, a major incontinence-pad brand in the UK and EU ('Tena-X'), and Tenex (a drug brand name). Both are mild associations. The Latin meaning is positive (tenacious)."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'Tenaks'. It is not a word; 'tenk' (tank) is harmless. HU: nothing. Clean."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE/FR: this is closeness to a brand, not a word meaning: 'TENA' is a widely sold incontinence-pad brand in DE/FR. FR 'tenace' (tenacious) is positive. Mild."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/PT: 'tenaz' = tenacious (PT also 'tongs'). IT: 'tenace' = tenacious. All positive. TENAX is already an Italian industrial brand. Clean."
+  }
+ },
+ "Staunch": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: STAWNCH (US variants: STAHNCH, STANCH). Likely misspelling: Stanch or Stonch. The meaning is positive (loyal, steadfast). It rhymes with 'raunch' and 'paunch', which invite mild mockery, and has a faint association with 'staunch the bleeding'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: pronounced 'Stonč'. The 'au' spelling is awkward, but it has no meaning ('štanc' = stamping press, neutral). HU: nothing ('stanza' is unrelated). Clean, apart from some awkwardness in pronunciation."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: echoes 'staunen' (to marvel), which is positive. 'Stauchen/zusammenstauchen' (compress; to chew someone out) is a stretch. FR: no meaning. Clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "Hard for all three languages to pronounce ('es-TONCH'). IT: visually and aurally close to 'stanco' (tired, worn out), a mild negative. ES: distant echo of 'estancado' (stagnant); 'estanco' also means a tobacco shop, or watertight. PT: 'estanque' (watertight) is neutral. These are mild stretches."
+  }
+ },
+ "Mandrel": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation: MAN-drul, which is clear. But it sounds the same as 'mandrill' (the baboon known for its brightly colored face and rump) and as Mandrill, Mailchimp's email API brand. A hearer will very likely write Mandrill, or Mandril or Mandrell (Barbara Mandrell)."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: not a word. Echoes of 'mandril' (the mandrill baboon) and Dalmatian 'mandra' (dairy, sheepfold) are distant stretches. HU: nothing ('mandula' = almond, unrelated). Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: distant echoes of 'Mandrill' (baboon), 'Mandel' (almond; tonsils) and Bavarian 'Mandl' (little man). All weak. FR: the word there is 'mandrin', neutral. Essentially clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES/PT: 'mandril' is both the tool and the mandrill baboon, neutral and not vulgar. IT: the tool is 'mandrino', but 'Mandrel' is close to 'mandrillo' (mandrill), which is also a common playful Italian word for a lustful, sex-obsessed man ('sei un mandrillo'). It is mildly silly and suggestive in Italian, not vulgar."
+  }
+ },
+ "Tatara": {
+  "en": {
+   "level": "serious",
+   "note": "Pronunciation is split: tuh-TAR-uh, TAT-er-uh or tah-tah-RAH. Likely misspelling: Tatarra, Tattara or Tatera. It opens with 'ta-ta', which is UK for goodbye, and US 'ta-tas' is slang for breasts (the 'Save the Ta-Tas' campaign), so it invites jokes. There are also echoes of 'tater' and 'tartar'."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: 'Tatara' is the genitive plural of 'Tatar' ('of the Tatars'), and the repeated 'ta-ta' (tata = dad) makes it sound childish or babyish. Mildly odd, not vulgar. HU: recalls 'tatár' (Tatar) and 'tatárjárás', the destructive 1241 Tatar invasion, which is a mild negative historical echo."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: near 'Tatar' (raw minced-beef dish) and 'Täterätä' (comic trumpet-fanfare sound), which is slightly silly. FR: close to 'taratata!', an interjection meaning 'nonsense!/come off it!'. It also starts with 'tata' (auntie; also a dated homophobic slur), a distant link. Mild."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES: 'tatara-' is the prefix for great-great- ('tatarabuelo'), which suggests something very old or antiquated. The repeated syllables can sound babyish, and 'tata' means dad, grandpa or nanny in some regions. PT: 'tataravô' (great-great-grandfather) gives the same connotation. IT: no meaning. Mildly old-fashioned or childish, nothing vulgar."
+  }
+ },
+ "Sloyd": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: SLOYD (rhymes with Floyd/void), which is clear. Likely misspelling: Sloid, because 'oy' and 'oi' are a coin flip, or Sloyde. It opens with 'slo-' (slow, sloppy, slob), a weak cue for software. Urban Dictionary has one fringe, unvoted entry defining it as 'a urinal', which is negligible."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: pronounced 'Slojd', which recalls 'sloj' (layer). That is neutral to positive for software. The 'yd' ending looks foreign but is harmless. HU: nothing. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: known as the Scandinavian handicraft-education term (Slöjd), neutral. FR: no meaning. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning; read 'es-LOID'. The initial 'sl' cluster is a little awkward for Spanish speakers. Clean."
+  }
+ }
+}

@@ -1,0 +1,308 @@
+{
+ "Saxton": {
+  "en": {
+   "level": "minor",
+   "note": "Clean: an ordinary English surname and place name (Saxton PA, Saxton N. Yorks). No slang meaning. Pronunciation: SAX-tun, which is obvious. Likely misspellings: 'Saxon', 'Sexton' or 'Saxten'. The Saxton/Sexton near-miss invites a weak 'sex-ton' joke and the church gravedigger image, but that is a small issue."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian (Latin 'Sakston', Cyrillic 'Сакстон'): no word, slang or near-homophone. Reads as a neutral English-style surname. Hungarian: no meaning, and even the Hungarian reading 'Shakston' is clean. A Serbian speaker would not find it odd."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: said 'ZAKS-ton'. It suggests Sachsen/Saxony or 'Saxophon', nothing negative. A link to 'Sack' (vulgar slang for scrotum) is a far stretch and unlikely. FR: 'saxo' (saxophone), neutral. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning. The only echo is 'saxo' (saxophone), which is harmless. Spanish readers say 'SAKS-ton'. Clean."
+  }
+ },
+ "Exerga": {
+  "en": {
+   "level": "minor",
+   "note": "No negative meaning found. It looks like 'exergy' (a thermodynamics term) and 'exergue' (the part of a coin), both neutral. The stress is unclear: ex-ER-guh (most likely), EX-er-guh or ex-UR-guh. Likely misspellings: 'Exurga', 'Exerguh' or 'Ekserga'. There is a small radio-test risk."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian: no real word. It may faintly echo 'eksergija' (exergy, a technical term) or 'ekser' (colloquial for a nail), but both are neutral and a stretch. Reads as a made-up techy name. Hungarian: no meaning. Not odd to a Serbian speaker."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'Exer-' can faintly recall 'exerzieren' (military drill) or 'Exerzitien' (religious retreat), both neutral and remote. FR: close to 'exergue' ('mettre en exergue' = to highlight), which is positive. Clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES: not a word, and every association here is a stretch. It rhymes with vulgar 'verga' (penis in MX/CentAm/VE), but only in the last syllable. With the Mexican x=/h/ reading ('e-HER-ga') it echoes 'jerga', which means jargon and in Mexico also a floor-mopping rag. The default reading is 'ek-SER-ga'. PT: close to 'enxerga' ('he sees', or a coarse straw mattress), which is neutral. IT: clean."
+  }
+ },
+ "Ergana": {
+  "en": {
+   "level": "minor",
+   "note": "No negative meaning. The stress is unclear: er-GAH-nuh (most likely) or ur-GAN-uh. A listener may hear it as 'Organa' (Leia Organa from Star Wars) or connect it with 'organ'. Likely misspellings: 'Urgana', 'Erganna' or 'Organa'. Small radio-test risk."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian: no meaning. At most a distant echo of 'ergela' (stud farm), which is a stretch and harmless. Hungarian: no meaning. Clean and easy to say."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: faintly recalls 'ergänzen' (to complement), neutral to positive. Tying it to 'ergaunern' (to swindle) would be a far stretch. FR: no meaning. Clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES 'engaña' and PT 'engana' ('he/she deceives, cheats') are only one consonant off (r vs n) and carry the same stress (er-GA-na vs en-GA-na). That is a mild but real risk for a software brand. No vulgar meaning. IT: clean. It also echoes 'Organa' (Star Wars), which is harmless."
+  }
+ },
+ "Borax": {
+  "en": {
+   "level": "serious",
+   "note": "An existing common English noun: a household cleaning and laundry chemical, strongly tied to the US brand 20 Mule Team Borax and to U.S. Borax (Rio Tinto). Dictionaries (Merriam-Webster, Collins, Dictionary.com, Wordsmith) also list a dated US slang sense: 'cheap, showy, poorly made merchandise', especially cheap furniture. That is a bad meaning for a quality brand. The name also invites 'bore/boring' puns. Pronunciation BOR-aks is clear, and the misspelling risk is low ('Boracks'). The problems are meaning and the existing brand, not the radio test."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "Serbian/Croatian/Bosnian 'boraks' (Cyrillic 'боракс') and Hungarian 'bórax' are the chemical: a cleaning, insecticide and laundry powder. Nothing vulgar, but people immediately read it as a household chemical or detergent, which is a bit odd for software. Hungarian 'bor' means wine, which is neutral."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE and FR: the same word as the chemical borax (sodium borate), a cleaning and laundry powder. In the EU it is classed as toxic to reproduction (REACH SVHC), and German media covered it in the 'Schleim/slime' warnings. Not vulgar, but it reads as a household chemical with a toxic image, and existing Borax brands already use it."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "A real word in ES 'bórax', IT 'borace' and PT 'bórax': the chemical sodium borate. It suggests cleaning products and cockroach poison, and the EU classifies it as toxic to reproduction, so the brand feels mundane and chemical. There is a mild echo of ES 'borrar' (to delete/erase). Nothing vulgar."
+  }
+ },
+ "Remek": {
+  "en": {
+   "level": "minor",
+   "note": "No negative English meaning. Pronunciation: REM-ek (possibly REE-mek). A listener may write 'Remick' (a surname), 'Remec' or 'Remmek', because c/k/ck is ambiguous. It is faintly close to 'remake' and 'REM'. Small spelling risk only."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Positive in both languages. Serbian/Croatian/Bosnian 'remek' appears in 'remek-delo/remek-djelo' (masterpiece), and the word itself comes from Hungarian. Hungarian 'remek' means excellent, splendid or masterpiece. Serbian speakers would take it as 'masterpiece'. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning, and only a far stretch to 'Remmidemmi' (rowdy party). FR: no meaning. Reading 're-mec' ('mec' = guy) is far-fetched. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning. There is a distant echo of PT 'remexe' (stirs/rummages) and ES 'remece' (shakes), neither negative. Read 'RE-mek'. Clean."
+  }
+ },
+ "Farga": {
+  "en": {
+   "level": "minor",
+   "note": "No direct slang meaning. Pronunciation: FAR-guh. A listener may write 'Fargo' (the film, Fargo ND, Wells Fargo), or 'Farger'/'Fargah', since UK non-rhotic speech makes Farga and Farger sound the same. It is a distant echo of 'fargin'', the minced form of 'fucking' in Johnny Dangerously (1984); that is a stretch, not a real homophone."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "Serbian/Croatian/Bosnian: no meaning, not odd. Hungarian: close to 'farka' (its tail), which is also mild colloquial slang for penis, and 'far' means rump or backside. This g/k near-homophone is a stretch that most listeners would not hear. The Hungarian verb root 'farag' (to carve) is neutral."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning and no slang found. FR: no meaning; 'farce' is only loosely related. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Catalan 'farga' means forge (as in 'farga catalana'), which is positive and on-theme for Spain. ES/PT only have distant echoes: 'farra' (partying spree) and 'farsa' (farce). IT: no meaning. No slang found."
+  }
+ },
+ "Meijin": {
+  "en": {
+   "level": "serious",
+   "note": "Fails the radio test. 'ei' has several English readings: MAY-jin (most likely), MY-jin (as in Meijer, the US retailer) or MEE-jin. A listener would very likely write 'Majin', 'Mayjin' or 'Magen'. 'Majin' is Japanese for 'demon person', familiar to US audiences from Majin Buu in Dragon Ball Z. No vulgar meaning, but the spelling and pronunciation problems are serious."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian: no meaning. It would be read 'Mejin' or 'Mejdžin', and the spelling looks foreign (Japanese). Hungarian: no meaning. Clean, but pronunciation may vary."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: said 'MY-yin' (ei = 'ai'); 'Mei' is harmless Bavarian. There is some uncertainty over how to pronounce it, but it has no negative sense. FR: said roughly 'mé-jine', no meaning. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES: no meaning, but the j is read as a guttural /x/ ('mei-HEEN'), so it moves away from the Japanese sound. PT reads it 'may-ZHEEN', which faintly evokes 'beijinho' (little kiss), a harmless and cute echo. IT: no meaning."
+  }
+ },
+ "Mokume": {
+  "en": {
+   "level": "serious",
+   "note": "Fails the radio test. A US reader may say mo-KOOM or MOE-kyoom (silent final e) or mo-KOO-may (the Japanese value). A listener would likely write 'Mokumay', 'Mokoomay' or 'Mocume'. Minor associations: 'mock' (fake or ridicule) at the start, and 'moke' is UK slang for a donkey. A vulgar 'mo-KUM' reading is unlikely, only a stretch. It is also an established jewelry term (mokume-gane)."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "Serbian/Croatian/Bosnian: a speaker is likely to split it as 'Mo-kume' and hear 'kume', the vocative of 'kum' (godfather or best man, a very common folksy form of address, like 'hey buddy'). That is not vulgar, but it sounds folksy and slightly comic. There is a faint stretch echo of 'mokro/mokriti' (wet, to urinate). Hungarian: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no standard or slang meaning. It only remotely recalls 'Mucken' (quirks, moods). FR: it opens like 'moque' (from 'se moquer', to mock), which is a distant stretch. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES: only a distant echo of 'moco' (snot) in the first syllable, and the stress differs (mo-KU-me). PT: the ending 'cume' is a real word meaning summit/peak, which is positive, so the 'cu' syllable does not read as vulgar. IT: clean."
+  }
+ },
+ "Arotz": {
+  "en": {
+   "level": "serious",
+   "note": "Said aloud as uh-ROTS or AIR-ots, it sounds like 'a rots' and contains 'rot'. That is a negative image for software ('code rot', 'bit rot'). Pronunciation is split between AIR-ots and uh-ROTS. A listener would very likely drop the tz and write 'Arots', 'Arrots' or 'Aarots'. Fails the radio test on spelling."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian: read 'Aroc', no meaning. Hungarian: no meaning ('arc', meaning face, is not a real near-homophone). Clean."
+  },
+  "de_fr": {
+   "level": "serious",
+   "note": "DE: the stressed second syllable is heard plainly as 'Rotz', colloquial for snot ('Rotzlöffel' = snotty brat, 'rotzen' = to hawk or spit). It also rhymes with 'Kotz(e)', vulgar for vomit, and with 'Protz', a show-off. Germans would hear 'a-Rotz', which is embarrassing and disgusting for a brand. FR: no meaning."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "Basque 'arotz' means carpenter/smith. ES/PT speakers will say 'a-ROS/a-ROTS', close to 'arroz' (rice), which invites silly jokes. It is also a near-anagram of 'atroz' (ES/PT 'atrocious'), so misreading is possible. Not vulgar."
+  }
+ },
+ "Fabbro": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: FAB-roh, which is clear. Said aloud it splits into 'fab bro', a jokey or bro-culture reading that invites teasing but is not offensive. The double b cannot be heard, so the likely misspelling is 'Fabro' (also 'Fabrow')."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian: no meaning. It may evoke 'fabrika' (factory), which is neutral. Hungarian: no meaning. Reads as Italian (smith). Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning; it recalls 'Fabrik' or 'Faber', both neutral. FR: no meaning; it may recall 'fabrique', which is neutral. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "IT: an ordinary word for blacksmith and, commonly, locksmith. It is positive but generic, and also a common surname. ES/PT: no meaning. Clean."
+  }
+ },
+ "Vasara": {
+  "en": {
+   "level": "minor",
+   "note": "No negative English meaning ('vas' as in vas deferens is a distant stretch). The stress is unclear: vuh-SAR-uh (most likely), VAS-uh-ruh or vuh-SAH-ruh. It may be heard as 'Vasari' or 'Vassar'. Likely misspellings: 'Vassara', 'Vasarra' or 'Vazara'. Moderate radio-test risk."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "Serbian/Croatian/Bosnian: speakers will read it as 'vašara', a form of 'vašar' (a village fair or bazaar). 'Vašar' is also common colloquially for chaos, a mess or a circus ('kakav vašar!'). This is mildly odd rather than vulgar. Hungarian: 'vására' (its market or fair) and 'vas' (iron) are neutral."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning. A link to 'Vasektomie' would be far-fetched. FR: no meaning. 'Vase' (silt or mud) and 'vaseux' (woozy, murky) are only distant stretches. Clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES: b and v sound the same, so it reads 'ba-SA-ra', one vowel from 'basura' (garbage), although the stressed vowel differs. PT: an intervocalic s is voiced, giving 'va-ZA-ra', which sounds like 'vazara' (literary 'had leaked', from vazar = to leak; slang 'vaza!' = get lost) and is also near 'vassoura' (broom). Not vulgar, but it lends itself to jokes. IT: clean."
+  }
+ },
+ "Zunft": {
+  "en": {
+   "level": "serious",
+   "note": "The -nft cluster is unnatural in English and hard to say. US readers would say ZUNFT (German: tsoonft). A listener would very likely misspell it as 'Zunfed', 'Zumft', 'Sunft' or 'Zunf'. Written in lowercase it contains 'nft', which recalls crypto NFTs, a negative association in tech for many buyers. It also sounds close to 'sunk'. Fails the radio test."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian: no meaning. It would be pronounced 'Cunft', with a slightly awkward consonant cluster, but nothing negative. Hungarian: no meaning. Clean."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: a real, common German word meaning 'guild' (a craft guild), and the meaning is not negative. It does feel dated and medieval, and it strongly suggests Fasnacht/carnival guilds and 'Zunftdenken' (closed-shop protectionism). Because it is a generic noun, it will feel descriptive rather than distinctive. FR: no meaning, but the 'zu-nft' sound is hard to say."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning (it is German for guild). The -nft cluster is hard for Romance speakers, who will likely say 'SUNF' or 'THUNFT' in Spain, but there is no negative meaning."
+  }
+ },
+ "Ktema": {
+  "en": {
+   "level": "serious",
+   "note": "The initial kt- does not occur in English, so readers will either drop the K and say TEE-muh (like 'knight') or add a vowel and say kuh-TEE-muh. Neither is obvious. A listener would very likely write 'Tema', 'Katema', 'Kitema' or 'Ctema'. A faint echo of 'ketamine' through 'Katema' is only a stretch. Clearly fails the radio test."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian: no meaning. The initial 'kt-' cluster is a little unusual but pronounceable. Hungarian: no meaning. Clean."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: no meaning, but the 'Kt-' opening is not native to German. People may say 'K-Thema' or 'Ke-tema', which is awkward. FR: no meaning. A link to 'Ketama' (the Moroccan hashish region) or 'Keta' (ketamine slang) is a distant stretch and unlikely. The only issue is pronunciation."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "The kt- cluster is unnatural in ES/IT/PT. Spanish readers will likely say 'ke-TE-ma', which sounds like texting shorthand 'k tema' for 'qué tema'. That means 'what a topic', or colloquially (AR/ES) 'what a hassle/issue'. It is mildly awkward, not negative or vulgar."
+  }
+ },
+ "Noren": {
+  "en": {
+   "level": "minor",
+   "note": "Pronunciation: NOR-en, fairly clear. It is a Swedish-origin surname (Norén). A listener may write 'Noreen' (a female first name), 'Norin' or 'Norren'. It is a near-rhyme with 'moron' ('Noren the moron'), a playground-level risk. Urban Dictionary entries for it are trivial personal-name jokes, not real slang."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian (Cyrillic 'Норен'): no meaning or slang. Hungarian: no meaning. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning. It only faintly recalls 'Nornen' (the Norns) or 'Normen' (standards), both neutral. FR: no meaning. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning or slang found. It is pronounced 'NO-ren' without difficulty. Clean."
+  }
+ },
+ "Vardar": {
+  "en": {
+   "level": "minor",
+   "note": "No English slang meaning found. Pronunciation: VAR-dar, clear in the US. In the UK, non-rhotic VAH-dah may be written 'Varda' or 'Vada', and it echoes 'Vader'. The likely US misspelling is 'Varder'. The 'VAR' syllable recalls the much-mocked football video referee system in the UK and EU, a minor point."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "Serbian/Croatian/Bosnian: Vardar is the main river of North Macedonia and Greece. It has strong regional and historical associations: the Yugoslav song 'Od Vardara pa do Triglava' (Yugonostalgia), the interwar Vardar Banovina, and the Skopje sports clubs FK and RK Vardar. It is not negative, but it reads as a geographic or regional-political name, not a brand. Hungarian: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: said 'VAR-dar' or 'FAR-dar', no meaning; some will know it as a Balkan river. FR: no meaning. Hearing 'va-dard' ('dard' is old argot for penis) is a far-fetched stretch that French listeners would not naturally make. Clean in DE/FR."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES: with the b/v merger it is heard as 'bar-DAR', which echoes Rioplatense slang 'bardo/bardear' (mess, chaos; to trash-talk). That is mild and not vulgar. It is also near 'guardar' (to save), which is a positive link. IT: Venetian dialect 'vardar' means 'to look', which is neutral. PT: clean."
+  }
+ },
+ "Tanren": {
+  "en": {
+   "level": "none",
+   "note": "Clean: no negative English meaning or slang found. Pronunciation: TAN-ren, the obvious reading, patterned on Warren and Darren. The most likely misspelling is 'Tanrin' or 'Tanran' (unstressed vowel), a low risk. It passes the radio test reasonably well."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian: no meaning. Hungarian: close to 'tanrend' (curriculum or teaching schedule), which is neutral and academic, not odd. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: no meaning; 'Tanne' (fir) and 'rennen' (to run) are neutral. FR: no meaning. A link to 'tanner' (informal: to pester) is a distant stretch. Clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning or slang. It reads 'tan-REN' ('tan' = so, which is neutral). Clean."
+  }
+ },
+ "Varpet": {
+  "en": {
+   "level": "minor",
+   "note": "No negative meaning. Pronunciation: VAR-pet, clear, though a few readers may try French var-PAY. It rhymes with 'carpet', which invites jokes ('swept under the Varpet'), and contains 'pet'. The likely misspelling is 'Varpit' (unstressed vowel, as in carpet), also 'Varpett'. The 'VAR' football-referee echo in the UK/EU is minor."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "Serbian/Croatian/Bosnian: it could be split as 'var' (weld) plus 'pet' (five), which is neutral and not really noticed. A link to 'varati' (to cheat) would be a stretch. Hungarian: 'var' means scab and 'varr' means sew, but these are a distant stretch that no one would hear. Clean overall."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: no real meaning. A link to 'verpetzen/Petze' (to snitch, tattletale) is a distant stretch. FR: the ending '-pet' is the everyday word for 'fart' ('pet', 'péter'). A French reader would say 'var-PÈ', like 'parapet' or 'toupet', so the link is not automatic, but it invites playground jokes. Mild."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/IT/PT: no meaning. The only echo is distant: '-pet' is Catalan/French for fart, and it appears here only as a syllable, like English 'carpet'. Read 'bar-PET' in Spanish. Clean."
+  }
+ }
+}

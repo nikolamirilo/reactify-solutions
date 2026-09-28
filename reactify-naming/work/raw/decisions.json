@@ -1,0 +1,762 @@
+{
+ "Bract": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Kedge": {
+  "status": "cut",
+  "reason": "Trademark: KEDGE filed in US class 42 by KEDGE SOFTWARE LLC (USPTO 99947632, 2026); KEDGE Business School marks 35/41/42 (FR, WIPO)"
+ },
+ "Keelson": {
+  "status": "cut",
+  "reason": "Trademark: KEELSON filed 9/42 in France (Centralweb) and class 9 in Korea, KEELSON MD filed 42 (US); only .build/.inc free"
+ },
+ "Strake": {
+  "status": "cut",
+  "reason": "Trademark: STRAKE registered class 42 at EUIPO, UKIPO and CIPO (Strake Technologies Inc.)"
+ },
+ "Burl": {
+  "status": "cut",
+  "reason": "Domain: only burl.build free of 6 TLDs; ES/PT 'burla' = mockery/fraud"
+ },
+ "Carvel": {
+  "status": "cut",
+  "reason": "Trademark: CARVEL (US ice-cream chain) registered in 30/35/42 across many offices - famous-mark risk"
+ },
+ "Colophon": {
+  "status": "cut",
+  "reason": "Domain: none free on 7 TLDs; Colophon Foundry is an established type foundry"
+ },
+ "Touchmark": {
+  "status": "cut",
+  "reason": "Trademark: TOUCHMARK registered USPTO class 42 (Touchmark LLC) and UKIPO 36/42"
+ },
+ "Spelter": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Wootz": {
+  "status": "cut",
+  "reason": "Language: heard as 'woots' (internet 'woot', Amazon's Woot.com), rhymes with 'toots'; German 'Wutz' = piglet"
+ },
+ "Planish": {
+  "status": "cut",
+  "reason": "Language: splits into 'plan-ish' (vaguely planned), an easy jab at a software company"
+ },
+ "Faber": {
+  "status": "cut",
+  "reason": "Domain: taken on 11 TLDs incl. .build; only faber.inc (premium TLD); Faber-Castell, Faber & Faber"
+ },
+ "Auctor": {
+  "status": "cut",
+  "reason": "Radio test: read as 'auction'/'awk-tor', split pronunciation; only auctor.build free"
+ },
+ "Fecit": {
+  "status": "cut",
+  "reason": "Language: reads 'fake it' or 'fec-' (feces; IT 'feci' = stool); only fecit.build free"
+ },
+ "Factum": {
+  "status": "cut",
+  "reason": "Domain: only factum.build free of 7 TLDs; weak sound; Canadian legal-brief term"
+ },
+ "Facta": {
+  "status": "cut",
+  "reason": "Trademark: FACTA registered 35/42 at UKIPO, BOIP, DPMA (Facta Holding) and in Australia"
+ },
+ "Hexis": {
+  "status": "cut",
+  "reason": "Domain: only hexis.build free of 10; DE 'Hexe' (witch), EN 'hex' (curse)"
+ },
+ "Propria": {
+  "status": "cut",
+  "reason": "Trademark: PROPRIA S.r.l. registered class 42 at EUIPO and UKIPO; Italy and France too"
+ },
+ "Proprium": {
+  "status": "cut",
+  "reason": "Sound: clinical ('opium' rhyme); sits next to Propria's EU class-42 mark; only .studio free"
+ },
+ "Gilda": {
+  "status": "cut",
+  "reason": "Domain: only .build/.works free; Rio de la Plata slang 'gil' = fool; weak link to purpose"
+ },
+ "Crispin": {
+  "status": "cut",
+  "reason": "Conflict: US ad agency Crispin Porter + Bogusky renamed itself 'Crispin' in 2024; CRISPIN class 9 (WIPO, Korea); Crispin cider; FR/ES comic-valet meaning"
+ },
+ "Brunel": {
+  "status": "cut",
+  "reason": "Trademark: Brunel International N.V. registered 35/41/42 (UKIPO, BOIP)"
+ },
+ "Dunstan": {
+  "status": "cut",
+  "reason": "Trademark: DUNSTAN registered class 9/16/41 at EUIPO and UKIPO (Dunstan Baby Pty); Dunstan AB (EUIPO 36)"
+ },
+ "Kothar": {
+  "status": "cut",
+  "reason": "Trademark: KOTHAR registered USPTO class 9 (Simply Tiger Ltd); radio: Kotar/Qatar"
+ },
+ "Ilmari": {
+  "status": "cut",
+  "reason": "Trademark: Ilmari registered 41/42 in Finland (Tietoverkko FI); radio: stress unclear; Ilmarinen pension insurer"
+ },
+ "Sampo": {
+  "status": "cut",
+  "reason": "Domain: none free on 7 TLDs; Sampo plc (Finnish insurer)"
+ },
+ "Kaveh": {
+  "status": "cut",
+  "reason": "Radio test: kava/cave, three pronunciations; only kaveh.build free"
+ },
+ "Aldus": {
+  "status": "cut",
+  "reason": "Trademark: ALDUS registered UKIPO 9/35 (J. Trenkelbach); historic Aldus Corp (PageMaker, now Adobe)"
+ },
+ "Svarog": {
+  "status": "cut",
+  "reason": "Radio: 'Sv-' onset; neo-pagan/nationalist imagery; only svarog.build free"
+ },
+ "Caxton": {
+  "status": "cut",
+  "reason": "Conflict: Caxton (caxton.io), FCA-regulated London fintech, and Caxton Associates; DE 'kack-' teasing"
+ },
+ "Prova": {
+  "status": "cut",
+  "reason": "Domain: only prova.build free of 11 TLDs; close to the explored Prow"
+ },
+ "Obra": {
+  "status": "cut",
+  "reason": "Domain: none free on 7 TLDs; English 'oh bra'"
+ },
+ "Sova": {
+  "status": "cut",
+  "reason": "Domain: none free except sova.inc (premium); Sova Assessment (HR tech)"
+ },
+ "Verso": {
+  "status": "cut",
+  "reason": "Domain: none free on 7 TLDs; Verso Books, Verso Corp"
+ },
+ "Arca": {
+  "status": "cut",
+  "reason": "Domain: none free on 7 TLDs"
+ },
+ "Trova": {
+  "status": "cut",
+  "reason": "Language: Serbian 'trovati/otrov' = to poison/poison"
+ },
+ "Brava": {
+  "status": "cut",
+  "reason": "Domain: none free on 7 TLDs; Brava smart-oven brand"
+ },
+ "Avow": {
+  "status": "cut",
+  "reason": "Trademark: Avow registered UKIPO 9/35/42 and AVOW EUIPO/WIPO class 35 (Avow GmbH)"
+ },
+ "Zamak": {
+  "status": "cut",
+  "reason": "Radio: Zamak/Zamac split; Zamak Technologies (IT services, Miami); ES/PT 'cheap die-cast alloy'; confusable with Zanat"
+ },
+ "Alnico": {
+  "status": "cut",
+  "reason": "Sound: soft, reads as a name 'Al Nico'; magnet-alloy story is weak for ownership"
+ },
+ "Kremen": {
+  "status": "cut",
+  "reason": "Language: looks and sounds like 'Kremlin'; 'KREE-men' rhymes with 'semen'; Gary Kremen (Match.com founder)"
+ },
+ "Esnaf": {
+  "status": "cut",
+  "reason": "Language: UK 'is naff', SNAFU; Serbian 'esnafski' = petty"
+ },
+ "Kalfa": {
+  "status": "cut",
+  "reason": "Language: 'journeyman' = not yet a master; radio: Calfa/Kalpha"
+ },
+ "Makar": {
+  "status": "cut",
+  "reason": "Language: Serbian 'makar' = 'at least'; radio: heard as 'maker'; MAKAR gin (EUIPO 35)"
+ },
+ "Kaji": {
+  "status": "cut",
+  "reason": "Domain: none free on 7 TLDs"
+ },
+ "Obraz": {
+  "status": "cut",
+  "reason": "Language: 'Obraz' is a banned Serbian far-right organisation; English 'oh-bras'"
+ },
+ "Bakar": {
+  "status": "cut",
+  "reason": "Radio test: collapses into 'baker'/'backer'"
+ },
+ "Kalvis": {
+  "status": "cut",
+  "reason": "Radio test: Calvis/Kalvus; rhymes with 'Elvis'"
+ },
+ "Ricasso": {
+  "status": "cut",
+  "reason": "Trademark: Ricasso registered 9/42 at EUIPO and UKIPO (Swiss Re); RICASSO filed 9/35/42 at USPTO"
+ },
+ "Aurifex": {
+  "status": "cut",
+  "reason": "Conflict: Aurifex Innovations (software development), Aurifex Labs, Aurifex Inc."
+ },
+ "Fleuron": {
+  "status": "cut",
+  "reason": "Radio test: FLUR-on/FLOOR-on, hearers never guess 'eu'"
+ },
+ "Pilcrow": {
+  "status": "cut",
+  "reason": "Domain: only .build/.works free; the paragraph mark carries no ownership or value story"
+ },
+ "Argosy": {
+  "status": "cut",
+  "reason": "Association: Argosy University collapse (US, 2019); only argosy.build free"
+ },
+ "Sinter": {
+  "status": "cut",
+  "reason": "Language: Hungarian 'sintér' and Serbian 'šinter' = dog-catcher; starts with 'sin'"
+ },
+ "Ducat": {
+  "status": "cut",
+  "reason": "Language: US 'duck it' joke; pronunciation split; Ducati visual echo"
+ },
+ "Freehold": {
+  "status": "cut",
+  "reason": "Cool factor: reads as a real-estate term; 'free' suggests a no-cost product; only freehold.build free"
+ },
+ "Heft": {
+  "status": "cut",
+  "reason": "Language: 'hefty' (overweight, hefty price), rhymes with 'theft'; only heft.build free"
+ },
+ "Allod": {
+  "status": "cut",
+  "reason": "Radio test: heard as 'a lot'/'alot'"
+ },
+ "Bosk": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Proba": {
+  "status": "cut",
+  "reason": "Language: Serbian 'proba' = trial/rehearsal (a beta feel); only proba.build free"
+ },
+ "Cermet": {
+  "status": "cut",
+  "reason": "Radio test: Sermet/Kermit"
+ },
+ "Handsel": {
+  "status": "cut",
+  "reason": "Radio test: heard and written as 'Hansel'; HANDSEL filed USPTO class 35"
+ },
+ "Rowan": {
+  "status": "cut",
+  "reason": "Domain: none free on 4 TLDs; crowded name (Rowan University, Rowan Companies)"
+ },
+ "Hewn": {
+  "status": "cut",
+  "reason": "Domain: none free on 7 TLDs"
+ },
+ "Vested": {
+  "status": "cut",
+  "reason": "Language: 'vested interest' (self-interest); HU 'veszted' = you lose it; only vested.build free"
+ },
+ "Gowan": {
+  "status": "cut",
+  "reason": "Radio test: Gowen/Goan; Serbian 'gov-' echo; Gowan Company (US agrochemicals) owns the word"
+ },
+ "Exergy": {
+  "status": "cut",
+  "reason": "Trademark: EXERGY registered EUIPO 11/42 (Exergy Holding) and 7/9/42 (Exergy International)"
+ },
+ "Carnot": {
+  "status": "cut",
+  "reason": "Radio test: 'car-not' vs 'kar-NOH'; UK 'Fred Karno's army'"
+ },
+ "Pragma": {
+  "status": "cut",
+  "reason": "Domain: none free on 6 TLDs; crowded (Pragma game backend, Pragma software firms)"
+ },
+ "Staunch": {
+  "status": "cut",
+  "reason": "Trademark: STAUNCH WIPO registered class 9 (Staunch Technology), UKIPO class 35"
+ },
+ "Mandrel": {
+  "status": "cut",
+  "reason": "Trademark: MANDREL filed USPTO class 42 (Brian Moench)"
+ },
+ "Firmitas": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.studio/.io"
+ },
+ "Silex": {
+  "status": "cut",
+  "reason": "Conflict: Silex Systems (laser enrichment, ASX), Silex Microsystems (MEMS foundry); only silex.build free"
+ },
+ "Daedal": {
+  "status": "cut",
+  "reason": "Domain: none free on 3 TLDs; radio: spelling 'ae'"
+ },
+ "Barlow": {
+  "status": "cut",
+  "reason": "Domain: only barlow.build free; weak ownership story; Barlow lens (optics)"
+ },
+ "Deft": {
+  "status": "cut",
+  "reason": "Domain: deft.build and deft.studio taken; crowded word"
+ },
+ "Nasmyth": {
+  "status": "cut",
+  "reason": "Trademark: NASMYTH registered 6/7/9/37/40/42 at UKIPO and WIPO (Nasmyth Group, aerospace)"
+ },
+ "Brearley": {
+  "status": "cut",
+  "reason": "Radio test: Brearley/Brierley/Brearly; 8 letters"
+ },
+ "Newcomen": {
+  "status": "cut",
+  "reason": "Sound: long (8 letters), reads as 'new-comer'; weak cool factor"
+ },
+ "Niello": {
+  "status": "cut",
+  "reason": "Weak cool factor and story; pronunciation split (nee-EL-oh/NYEL-oh)"
+ },
+ "Incus": {
+  "status": "cut",
+  "reason": "Domain: only incus.build free; 'incubus' echo"
+ },
+ "Moho": {
+  "status": "cut",
+  "reason": "Sound: silly ('mojo'); only moho.build free"
+ },
+ "Sutor": {
+  "status": "cut",
+  "reason": "Radio test: heard as 'suitor'"
+ },
+ "Tatara": {
+  "status": "cut",
+  "reason": "Language/radio: US 'ta-tas' slang, UK 'ta-ta'; Serbian 'of the Tatars'; only tatara.build free"
+ },
+ "Sloyd": {
+  "status": "cut",
+  "reason": "Conflict: Sloyd.ai, an Oslo AI 3D-generation startup (EUR 3M seed, a16z); radio: Sloid; 'slo-' (slow)"
+ },
+ "Torc": {
+  "status": "cut",
+  "reason": "Domain: none free (.co/.studio/.build taken); radio: torc/torque/tork"
+ },
+ "Tenax": {
+  "status": "cut",
+  "reason": "Trademark: TENAX registered EUIPO class 9 (PRINCE S.r.l.); crowded (1,156 marks)"
+ },
+ "Verax": {
+  "status": "cut",
+  "reason": "Domain: only verax.build free; weak story"
+ },
+ "Capax": {
+  "status": "cut",
+  "reason": "Sound: 'cap-ax', weak story; only .studio/.build free"
+ },
+ "Saxton": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Froben": {
+  "status": "cut",
+  "reason": "Trademark/association: FROBEN is a flurbiprofen drug brand (Abbott/Viatris) registered in ~30 offices"
+ },
+ "Volund": {
+  "status": "cut",
+  "reason": "Domain: only volund.build free; the Edda story (hamstrung captive smith) is dark"
+ },
+ "Kelmscott": {
+  "status": "cut",
+  "reason": "Length: 9 letters, 2 hard clusters; reads as a place name"
+ },
+ "Paxton": {
+  "status": "cut",
+  "reason": "Conflict: Paxton Access (UK access-control hardware and software); Ken Paxton (Texas AG) association in the US"
+ },
+ "Ivaldi": {
+  "status": "cut",
+  "reason": "Confusable: one letter from Vivaldi (the web browser); only ivaldi.studio free"
+ },
+ "Brix": {
+  "status": "cut",
+  "reason": "Domain: none free on 5 TLDs incl. .build and brixlabs.com; crowded word"
+ },
+ "Sprag": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Swage": {
+  "status": "cut",
+  "reason": "Radio test: SWAYJ/SWEJ/'swag', no single reading"
+ },
+ "Clinch": {
+  "status": "cut",
+  "reason": "Conflict: crowded in B2B SaaS (Clinch ad-tech, Clinch recruitment marketing, ClinchPad CRM); clinch.co taken"
+ },
+ "Croze": {
+  "status": "cut",
+  "reason": "Conflict: CROZ (croz.net), an established Zagreb software consultancy - same region and industry, near-homophone"
+ },
+ "Pritchel": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Stithy": {
+  "status": "cut",
+  "reason": "Radio test: 'th' split, and Estuary 'f' reading gives 'stiffy' (vulgar)"
+ },
+ "Duramen": {
+  "status": "cut",
+  "reason": "Radio test: stress unclear; splits into 'Dura Men' (reads like a men's stamina product)"
+ },
+ "Thole": {
+  "status": "cut",
+  "reason": "Sound: soft; heard as 'the hole'; FR 'taule' (prison slang), ES 'tole' (uproar)"
+ },
+ "Broach": {
+  "status": "cut",
+  "reason": "Radio test: homophone of 'brooch'; contains 'roach'; BR-PT 'broxa' (vulgar)"
+ },
+ "Clevis": {
+  "status": "cut",
+  "reason": "Conflict: CLEVIS GmbH (Munich HR-software consultancy) and a no-code AI app builder named Clevis"
+ },
+ "Skeg": {
+  "status": "cut",
+  "reason": "Conflict: SKEG (skeg.com), a product-development firm with nearly the same positioning"
+ },
+ "Quench": {
+  "status": "cut",
+  "reason": "Conflict: Culligan Quench (US water coolers), Quench.ai; only quench.build free"
+ },
+ "Fettle": {
+  "status": "cut",
+  "reason": "Conflict: several Fettle fitness apps; only fettle.build free"
+ },
+ "Helve": {
+  "status": "cut",
+  "reason": "Sound: soft; idiom 'throw the helve after the hatchet' (give up); only .build/labs free"
+ },
+ "Makefast": {
+  "status": "keep",
+  "reason": "Not in the final ten: makefast.app is a live React Native app-development studio for startups (direct competitor); a US PC-utility publisher also trades as Makefast; Makefast Group owns makefast.com"
+ },
+ "Carrack": {
+  "status": "cut",
+  "reason": "Trademark: CARRACK registered USPTO class 9 (Carrack International); carrack.app AI accounting; radio: Carrick / 'car wreck'"
+ },
+ "Brayer": {
+  "status": "cut",
+  "reason": "Language: 'bray' (donkey), FR 'brayer' = hernia truss; close to Brame/Braze in sound"
+ },
+ "Octant": {
+  "status": "cut",
+  "reason": "Conflict: octant.com (government-contractor software), VMware Octant; only octant.studio free"
+ },
+ "Yeoman": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Entasis": {
+  "status": "cut",
+  "reason": "Sound: medical '-asis' ending; Entasis consultancies exist; 3 syllables"
+ },
+ "Portolan": {
+  "status": "cut",
+  "reason": "Conflict: Portolan Commerce Solutions (German ERP software since 1990); 8 letters"
+ },
+ "Gunter": {
+  "status": "cut",
+  "reason": "Radio test: Gunther/Günter split; 'gun' association in the US"
+ },
+ "Fairlead": {
+  "status": "cut",
+  "reason": "Conflict: Fairlead Technology Group (document-management software), Fairlead Solutions (custom software)"
+ },
+ "Plimsoll": {
+  "status": "cut",
+  "reason": "Conflict: Plimsoll Studio (US agency doing web and software development); UK 'plimsoll' = sneaker"
+ },
+ "Stet": {
+  "status": "cut",
+  "reason": "Domain: none free on 6 TLDs (only .build/.works); Google Cloud's open-source STET tool"
+ },
+ "Pintle": {
+  "status": "cut",
+  "reason": "Language: Old English 'pintel' = penis; conflict: pintle.ai (UK)"
+ },
+ "Akmon": {
+  "status": "cut",
+  "reason": "Trademark: Akmon registered class 9 at EUIPO and UKIPO (AKMON LIMITED)"
+ },
+ "Pacta": {
+  "status": "cut",
+  "reason": "Conflict: PACTA AI contract-management SaaS (DiliTrust) and RMI's PACTA tool; rhymes with Adacta"
+ },
+ "Exegi": {
+  "status": "cut",
+  "reason": "Trademark: EXEGI registered 6/19/37/42 at EUIPO and UKIPO (VINCI Construction); radio: hard/soft g"
+ },
+ "Dolabra": {
+  "status": "cut",
+  "reason": "Conflict: Dolabra Digital LLC ('AI-driven revenue systems') and its DOLABRA DIGITAL filing in software classes"
+ },
+ "Spondeo": {
+  "status": "cut",
+  "reason": "Conflict: Spondeo consultancy (FI/PL) and Spondeo Solutions (workforce tech); soft, 3 syllables"
+ },
+ "Curavit": {
+  "status": "cut",
+  "reason": "Language: echoes vulgar 'kurva' (Serbian, Hungarian); Curavit Clinical Research (curavit.io)"
+ },
+ "Sponte": {
+  "status": "cut",
+  "reason": "Conflict: Sponte (sponte.com.br), an established Brazilian school-management ERP"
+ },
+ "Groma": {
+  "status": "cut",
+  "reason": "Domain: none free (.co/.studio/.build taken); GROMA geodetic software (Czech cadastre)"
+ },
+ "Dactyl": {
+  "status": "cut",
+  "reason": "Conflict: Dactyl Technologies (US web and app agency since 1997, dactyl.com) and Dactyl Group (Czech app studio)"
+ },
+ "Ultro": {
+  "status": "cut",
+  "reason": "Conflict: Ultro ERP (ultro.ai), ULTRO CRM, Ultro Digital agency"
+ },
+ "Artios": {
+  "status": "cut",
+  "reason": "Conflict: Artios Pharma (UK biotech); soft, 3 syllables"
+ },
+ "Brontes": {
+  "status": "cut",
+  "reason": "Conflict: Bronte Technologies, a SaaS MVP studio; radio: reads as plural of Brontë"
+ },
+ "Credne": {
+  "status": "cut",
+  "reason": "Radio test: no obvious reading (KRED-nee/KRED-nuh/KREDN); Serbian reading 'Tsredne' ~ 'srednje' (mediocre)"
+ },
+ "Caslon": {
+  "status": "cut",
+  "reason": "Conflict: Caslon is a well-known typeface family (Adobe Caslon, ITC Caslon)"
+ },
+ "Luchta": {
+  "status": "cut",
+  "reason": "Conflict: 'luchta', an active open-source Rust build tool on GitHub; radio: 'ch'"
+ },
+ "Eloy": {
+  "status": "cut",
+  "reason": "Sound: soft, vowel-led; Eloy (UK connected-car software); Eloi (H.G. Wells) spelling"
+ },
+ "Goban": {
+  "status": "cut",
+  "reason": "Conflict: the Go board and Go apps (goban.app, Sen:te's Goban)"
+ },
+ "Piran": {
+  "status": "cut",
+  "reason": "Conflict: Piran Technologies (Cornish IT support); pronunciation split; only .build/labs free"
+ },
+ "Hollerith": {
+  "status": "cut",
+  "reason": "Length: 9 letters, 3 syllables; Nazi-era Dehomag shadow"
+ },
+ "Kuzma": {
+  "status": "cut",
+  "reason": "Association: Kyle Kuzma (NBA player) and Kuzma turntables"
+ },
+ "Curta": {
+  "status": "cut",
+  "reason": "Conflict: Curta CTF, Curta Inc (Seattle IT); radio: kurta/Kurta"
+ },
+ "Branca": {
+  "status": "cut",
+  "reason": "Conflict: Branca.ai (US AI company); Fernet-Branca"
+ },
+ "Firnas": {
+  "status": "cut",
+  "reason": "Conflict: Firnas.tech (Swedish software house), Firnas Corp, Firnas AI, Firnas Solutions"
+ },
+ "Bronta": {
+  "status": "cut",
+  "reason": "Conflict: Bronte Technologies (MVP studio), Bronto; bronta.com in use"
+ },
+ "Ergana": {
+  "status": "keep",
+  "reason": "Not in the final ten: ergana.co is a live marketing agency (2026) and one party registered ergana.io/.ai/.dev/.app in July 2026; only .studio/.build free; ES/PT 'engaña' (deceives) is one letter off"
+ },
+ "Ergaster": {
+  "status": "cut",
+  "reason": "Length: 8 letters; contains 'gaster' (stomach)"
+ },
+ "Exerga": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Exergon": {
+  "status": "cut",
+  "reason": "Conflict: Exergon (Paris energy VC fund), Exergon Sp. z o.o. (Polish energy software)"
+ },
+ "Kaldra": {
+  "status": "cut",
+  "reason": "Conflict: Kaldra indie apps (kaldra.co) in the same indie-product space"
+ },
+ "Peracta": {
+  "status": "cut",
+  "reason": "Conflict: peracta.com, an active construction-management software product"
+ },
+ "Perago": {
+  "status": "cut",
+  "reason": "Conflict: Perago Inc. (NetSuite ERP extensions), Perago Information Systems"
+ },
+ "Takta": {
+  "status": "cut",
+  "reason": "Domain: only takta.build free; TAKTA electronics R&D company"
+ },
+ "Tekta": {
+  "status": "cut",
+  "reason": "Confusable with Okta; Tekta Group (Moscow developer); only .build/labs free"
+ },
+ "Veracta": {
+  "status": "cut",
+  "reason": "Confusable: '-acta' ending echoes the anchor Adacta; crowded 'Vera-' prefix"
+ },
+ "Abovo": {
+  "status": "cut",
+  "reason": "Conflict: Ab Ovo Inc. (US IT consulting since 2006); only abovo.build free"
+ },
+ "Brioso": {
+  "status": "cut",
+  "reason": "Conflict: Brioso Technologies (web and app agency, India)"
+ },
+ "Briso": {
+  "status": "cut",
+  "reason": "Language: Serbian colloquial 'briso' = '(he) wiped/erased'; radio: Brizo/Breeso"
+ },
+ "Dobra": {
+  "status": "keep",
+  "reason": "Not in the final ten: only dobra.build free; generic Serbian adjective (hard to own), Dobro guitar echo, 'do-bra' puns; DOBRA registered USPTO class 33"
+ },
+ "Lapis": {
+  "status": "cut",
+  "reason": "Conflict: Lapis software consultancy (AU), Lapis Software Associates; only lapis.build free"
+ },
+ "Obris": {
+  "status": "cut",
+  "reason": "Radio test: Orbis/Obriss, rhymes with 'hubris'; Serbian 'obrisati' = to delete"
+ },
+ "Ostro": {
+  "status": "cut",
+  "reason": "Conflict: Ostro, a US health-software company ($55M raised); only ostro.build free"
+ },
+ "Rivet": {
+  "status": "cut",
+  "reason": "Conflict: crowded in software (Ironclad's Rivet AI IDE, rivet.dev, RivetAI)"
+ },
+ "Robur": {
+  "status": "cut",
+  "reason": "Radio test: US 'ROB-er' = 'robber'"
+ },
+ "Vatra": {
+  "status": "cut",
+  "reason": "Conflict: Vatra Labs (vatra.io), an Austrian custom software studio - direct competitor"
+ },
+ "Visto": {
+  "status": "cut",
+  "reason": "Conflict: Visto (NY ad-tech SaaS), visto.ai, historical Visto Corp"
+ },
+ "Moxon": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Mileva": {
+  "status": "cut",
+  "reason": "Domain: taken on 8 of 10 TLDs incl. .co/.io/.ai/.app/.dev (active users); disputed history makes the story political; pronunciation split"
+ },
+ "Brisk": {
+  "status": "cut",
+  "reason": "Conflict: Brisk Teaching (AI edtech, $15M), Brisk iced tea (PepsiCo/Lipton); crowded adjective"
+ },
+ "Brevet": {
+  "status": "cut",
+  "reason": "Radio test: BREV-it vs bruh-VAY; Brevet Group is a sales-training firm (clashes with 'no sales talk')"
+ },
+ "Dobro": {
+  "status": "cut",
+  "reason": "Conflict: Dobro AI PM assistant (dobrolab.io); Gibson owns DOBRO for guitars; only dobro.build free"
+ },
+ "Borax": {
+  "status": "cut",
+  "reason": "Language: US dictionary slang 'borax' = cheap, showy, poorly made goods; reads as a laundry chemical (20 Mule Team, U.S. Borax)"
+ },
+ "Bezant": {
+  "status": "cut",
+  "reason": "Conflict: 'Bezant.app' is known macOS adware; Bezant blockchain foundation"
+ },
+ "Structa": {
+  "status": "cut",
+  "reason": "Conflict: Structa (Toronto AI copilot for real-estate developers, 2023)"
+ },
+ "Takt": {
+  "status": "cut",
+  "reason": "Domain: none free on 13 TLDs; radio: heard as 'tact'"
+ },
+ "Solidus": {
+  "status": "cut",
+  "reason": "Conflict: Solidus open-source Rails e-commerce framework (solidus.io), Solidus Systems agency, Solidus Labs"
+ },
+ "Remek": {
+  "status": "finalist",
+  "reason": ""
+ },
+ "Farga": {
+  "status": "cut",
+  "reason": "Trademark: FARGA registered class 42 in France (x2) and 30/35/43 at EUIPO (Farga Barcelona); LA FARGA EUIPO 35/42"
+ },
+ "Tanren": {
+  "status": "cut",
+  "reason": "Conflict: TANREN, a Japanese sales-enablement learning platform, plus open-source 'Tanren' apps; soft sound"
+ },
+ "Mokume": {
+  "status": "cut",
+  "reason": "Sound: three soft syllables (moh-KOO-meh); jewellery trade term; Mokume Software (defunct)"
+ },
+ "Ktema": {
+  "status": "cut",
+  "reason": "Radio test: initial 'kt-' is heard as 'Tema'/'Kuh-tema'"
+ },
+ "Noren": {
+  "status": "cut",
+  "reason": "Sound: soft, spelled 'Noreen'; only noren.build free"
+ },
+ "Meijin": {
+  "status": "cut",
+  "reason": "Radio test: Mayjin/Mejin; Shanxi Meijin Energy; Go/shogi title with anime uses"
+ },
+ "Fabbro": {
+  "status": "cut",
+  "reason": "Variant of the taken Faber; spelled 'Fabro'; only .build/labs free"
+ },
+ "Vasara": {
+  "status": "cut",
+  "reason": "Conflict: Vasara, Taito's arcade game; soft three syllables"
+ },
+ "Varpet": {
+  "status": "cut",
+  "reason": "Conflict: Varpet, an Armenian home-services marketplace app with the same 'master' meaning; rhymes with 'carpet'"
+ },
+ "Zunft": {
+  "status": "cut",
+  "reason": "Radio test: English z- vs German ts-; harsh '-nft' cluster"
+ },
+ "Arotz": {
+  "status": "cut",
+  "reason": "Sound: contains 'rots'; obscure Basque root that always needs explaining"
+ },
+ "Vardar": {
+  "status": "cut",
+  "reason": "Association: Macedonian river/region with political naming-dispute baggage; story is about nature, not making"
+ }
+}
