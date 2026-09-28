@@ -4,7 +4,7 @@ Osnivač je izričito tražio akronime koji zvuče kao prava reč. Pravilo koje 
 
 | Akronim | Raspis (skriveni sloj) | Značenje reči | Ishod |
 |---|---|---|---|
-| **Bosk** | **B**uild · **O**wn · **S**hip · **K**eep | staroengleski „mali gaj”; Šekspirove „bosky acres” = zemlja koju poseduješ i neguješ | **finalista** (3,10); bosk.build 30 USD; rizik: BOSK registrovan u USPTO klasi 35 (Oaklandish LLC), dve open-source biblioteke „bosk” |
+| **Bosk** | **B**uild · **O**wn · **S**hip · **K**eep | staroengleski „mali gaj”; Šekspirove „bosky acres” = zemlja koju poseduješ i neguješ | bio je finalista (2,90), ali je **pao na nezavisnoj proveri**: ranija živa američka prijava BOSKI (99926179, kl. 9/42, softver za AI agente) u upotrebi na [boski.com](https://www.boski.com); bosk.build 30 USD je jedini normalan domen |
 | **Obris** | **O**wn · **B**uild · **R**elease · **I**terate · **S**cale | skraćeno od lat. *obrussa*, proba zlata vatrom | odbačeno: radio-test (Orbis/Obriss, rima sa „hubris”); srp. „obrisati” = izbrisati |
 | **Briso** | **B**uild · **R**efine · **I**terate · **S**hip · **O**wn | kovanica od *brio* i *brisa* | odbačeno: srp. razgovorno „briso” = brisao; radio-test (Brizo) |
 | **Dobra** | **D**efine · **O**wn · **B**uild · **R**elease · **A**dapt | srp. „dobra” = dobra (imovina) i „dobra” (pridev) | zadržano, ali ne u top 10: slobodan je samo dobra.build; DOBRA u USPTO klasi 33 |
@@ -15,4 +15,4 @@ Osnivač je izričito tražio akronime koji zvuče kao prava reč. Pravilo koje 
 | **Ostro** | **O**wn · **S**cope · **T**est · **R**elease · **O**perate | južni vetar Mediterana (rođak Košave); tirski purpur | odbačeno: Ostro, US health-tech SaaS (55 mil. USD); slobodan samo ostro.build |
 | **Zamak** | **Z**ink · **A**luminium · **MA**gnesium · **K**upfer (pravi akronim legure) | u hrvatskom i slovenskom „zamak/zamek” = zamak (utvrđenje) | odbačeno: radio-test (Zamac/Za-Mac), Zamak Technologies (IT, Majami), zamenljivo sa Zanat |
 
-**Zaključak za akronime:** samo **Bosk** je prošao sve filtere dovoljno dobro da uđe među 10 finalista, ali ima najslabiji domen i pravnu poziciju među finalistima. Akronimi po pravilu gube na radio-testu ili na tome što je dobra kratka reč već zauzeta. Ako osnivač želi akronim, Bosk (Build · Own · Ship · Keep) je najčistiji izraz kreda firme, ali ga ne preporučujemo ispred top 3.
+**Zaključak za akronime:** samo je **Bosk** prošao filtere dovoljno dobro da uđe među finaliste, ali ga je nezavisni recenzent odbio zbog prijave BOSKI u istom poslu (AI softver), pa među 10 finalista nema akronima. Akronimi po pravilu gube na radio-testu ili na tome što je dobra kratka reč već zauzeta. Ako osnivač ipak želi akronim, Bosk (Build · Own · Ship · Keep) je najčistiji izraz kreda firme, ali samo uz pravno mišljenje o sličnosti sa BOSKI pre prijave.

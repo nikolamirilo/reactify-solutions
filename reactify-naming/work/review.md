@@ -602,3 +602,95 @@ Other searches:
    - Portuguese readers will see a misspelled verb.
    - The .com costs $1,422.22.
    - The X and Instagram handles are unverified.
+
+---
+---
+
+# Independent review, round 3: Cobden (fresh context, 2026-09-28)
+
+VERDICT Cobden: PASS - I found no concrete 2.9 disqualifier: TMview shows no live COBDEN mark in classes 9/35/42 at USPTO, EUIPO, WIPO or Serbia, no software or tech company or product trades as "Cobden", and cobden.co is unregistered and buyable at $29.99 / $24.80 renewal. The weak points are judgment calls, not failures: all four exact social handles are taken, cobden.com is held by a domain broker, and the Serbian root "kob" (fate, omen) is a faint echo.
+
+Reviewer stance: I tried to break the name. Each item below names the tool or link used. "Judgment" marks a call where the evidence alone does not decide.
+
+## Domain re-check
+
+Vercel `get_bulk_availability` (called 2026-09-28):
+
+| Domain | Vercel result | Vercel price (1st year / renewal, USD) | Independent confirmation |
+|---|---|---|---|
+| **cobden.co** | available: true | **29.99 / 24.80** (`get_domain_price`; transfer 30.38) | [whois.com/whois/cobden.co](https://www.whois.com/whois/cobden.co): "not registered". Wayback `available` API: no snapshots of cobden.co ever ([archive.org/wayback/available?url=cobden.co](https://archive.org/wayback/available?url=cobden.co)) |
+| cobden.com | available: false | - | [Verisign RDAP](https://rdap.verisign.com/com/v1/domain/cobden.com): registered 2000-01-15, expires 2027-01-15, GoDaddy, NS ns15/ns16.up99plus.com (a white-label reseller host, [up99plus.com](https://up99plus.com/)). Last Wayback capture (2025-07-10) is a broker page: "This .com domain name is for sale ... info@nucom.com" ([snapshot](http://web.archive.org/web/20250710003958/http://cobden.com/)). Live site returned HTTP 503 (WebFetch, today). |
+| cobden.app | available: false | - | [Google Registry RDAP](https://pubapi.registry.google/rdap/domain/cobden.app): registered 2023-06-27 at Porkbun. [cobden.app](https://cobden.app) is an unedited HTML5 UP "Dimension" template linking to start., jump. and file.cobden.app. [file.cobden.app](https://file.cobden.app/) is a private ProjectSend login. This is a personal homelab, not a business. |
+| cobden.io | available | 14.99 / 46.00 | Vercel `get_bulk_price` |
+| cobden.dev | available | 9.99 / 13.00 | Vercel `get_bulk_price` |
+| cobden.ai | available | 160 for the 2-year minimum / 160 | Vercel `get_bulk_price` |
+| cobdenlabs.com | available | 11.25 / 11.25 | Vercel `get_bulk_price` |
+| getcobden.com | available | 11.25 / 11.25 | Vercel `get_bulk_price` |
+| cobdenhq.com, cobden.tech, cobden.studio, cobden.software | available | not priced | Vercel `get_bulk_availability` |
+| cobden.eu | available: true | price call failed: "tld_not_supported" | Vercel can't sell .eu; the founder would register it elsewhere |
+| cobden.rs | missing from Vercel's response | - | Vercel does not support .rs; not verified |
+
+Result: there is a usable domain (cobden.co). No buy, purchase or transfer tool was called.
+
+## TMview
+
+- **All offices, "cobden"** ([TMview link](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=cobden)): 18 results. None is in class 9, 35 or 42 at US, EM, WO or RS. The full list:
+  - COBDEN, AU, Ended, cl. 29 (cheese factory co-op)
+  - COBDEN, GB, Expired, cl. 33 (two marks)
+  - COBDEN DELI, GB, Expired, cl. 29/30
+  - **COBDEN WINI, US, Registered, cl. 33** (Mark J Davis, wine, 87758353)
+  - COBDEN FLAIR, GB, Registered, cl. 25
+  - COBDEN P.B.F., AU, Expired, cl. 29
+  - COBDEN & HAYSON and variants, AU, Registered or Filed, cl. 36 (four marks)
+  - **Cobden Sterling, CH, Registered, cl. 35/36** (OMNIA Group Holdings AG, 15683/2025)
+  - Cobden Sterling, GB, Registered, cl. 36
+  - BRAMWELL COBDEN, CN, Registered, cl. 7 and cl. 35 (two marks)
+  - COBDENHEALTH, AU, cl. 41/43/44/45
+  - PAOLO COBDEN, CN, cl. 25
+  - 科布登 COBDEN, CN, cl. 15
+- **US + EM + WO only** ([TMview link](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=cobden&offices=EM,WO,US)): 1 result, COBDEN WINI (US, cl. 33, wine). There are no EUIPO or WIPO/Madrid marks.
+- **Serbia only** ([TMview link](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=cobden&offices=RS)): no results.
+- **Sound-alike "kobden"** ([TMview link](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=kobden)): no results.
+- The closest class hit is Cobden Sterling at the Swiss office (cl. 35/36). Switzerland is outside the brief's jurisdictions, and the mark covers financial services ([UK IPO journal 2026/001](https://www.ipo.gov.uk/t-tmj/tm-journals/2026-001/UK00004279861.html); [Moneyhouse, OMNIA Group Holdings AG, Baar](https://www.moneyhouse.ch/en/company/omnia-group-holdings-ag-21062762311)). It is not a disqualifier.
+
+## Closest conflicts
+
+No established software or tech company or product called "Cobden" turned up. These were the nearest:
+
+| Name | What it is | Why it doesn't disqualify | Source |
+|---|---|---|---|
+| Cobden & Carter International ("C&C") | Talent solutions firm: executive search, volume hiring, RPO. Posts software and AI engineer roles, but those are recruitment listings | A different two-part name and a different field (recruitment, not software). The closest overlap with the client-services side. **Judgment:** low risk | [cobdenandcarter.com](https://www.cobdenandcarter.com/), [LinkedIn](https://www.linkedin.com/company/cobden-&-carter-international), [careers job ad](https://www.careers-page.com/cobdenandcarter/job/W36X3Y99) |
+| cobden.app / file.cobden.app | A personal homelab: template landing page plus a ProjectSend file server | Not a product or company | [cobden.app](https://cobden.app), [file.cobden.app](https://file.cobden.app/) |
+| Cobden Computers | A local PC shop in Cobden, Victoria, AU | A tiny business named after its town | [Yelp](https://m.yelp.com/biz/cobden-computers-cobden) |
+| Cobden Tech | Cobden Technical School, Victoria, AU | A school, not a company | [LinkedIn](https://au.linkedin.com/company/cobden-technical-school) |
+| The Cobden Centre | A UK economics think tank. Runs AI "projects" as a charity | Not a software company | [cobdencentre.org](https://www.cobdencentre.org/2024/08/upcoming-artificial-intelligence-projects-at-the-cobden-centre/) |
+| Cobden Unit School District 17 app | A school news app on Google Play and the App Store | A district app, not a brand conflict | [Google Play](https://play.google.com/store/apps/details?id=com.apptegy.cobden) |
+| UK Companies House "Cobden*" | COBDEN LTD (SIC 68209, real estate), COBDEN GROUP LIMITED (68209, real estate), COBDEN HOLDINGS LIMITED (70100, head office, Sevenoaks), and others. None has a tech name | No tech SIC codes found | [Companies House search](https://find-and-update.company-information.service.gov.uk/search/companies?q=cobden), [09749737](https://find-and-update.company-information.service.gov.uk/company/09749737), [16544812](https://find-and-update.company-information.service.gov.uk/company/16544812), [04263971](https://find-and-update.company-information.service.gov.uk/company/04263971) |
+| Crunchbase "Cobden*" | Cobden Wini Wines, Cobden Research (nutritional oils), Cobden Tools and Trailers, Cobden House Chambers (law), Cobden Civitan Club | None is in software | Firecrawl search `site:crunchbase.com Cobden` (e.g. [cobden-research](https://www.crunchbase.com/organization/cobden-research)) |
+| GitHub | 9 logins contain "cobden". The repos named Cobden* have 0 stars | No software project uses the name | GitHub MCP `search_users` / `search_repositories` |
+| npm / PyPI | No `cobden` package on either | - | [registry.npmjs.org/cobden](https://registry.npmjs.org/cobden) → 404; [pypi.org/pypi/cobden/json](https://pypi.org/pypi/cobden/json) → 404 |
+| Product Hunt | No Cobden product found | - | Firecrawl search `Cobden site:producthunt.com OR site:apps.apple.com OR site:play.google.com` |
+
+## Language and radio test
+
+- **English:** a surname and the name of towns in Victoria (AU), Ontario and Illinois ([Wiktionary "Cobden"](https://en.wiktionary.org/wiki/Cobden)). Best known through Richard Cobden, 1804-65, British economist and free-trade statesman ([Collins](https://www.collinsdictionary.com/dictionary/english/cobden); [Britannica](https://www.britannica.com/biography/Richard-Cobden)). The associations are neutral to positive. The element "cob" has obscure senses: one is a lump "of excrement", one a dated offensive term for a mixed-race person ([Wiktionary "cob"](https://en.wiktionary.org/wiki/cob)). Neither carries over to the established proper name, and there is no homophone. **Judgment:** pass.
+- **Serbian:** "Cobden" is not a Serbian word. The root **kob** means "fate, destiny, omen" ([Wiktionary "kob"](https://en.wiktionary.org/wiki/kob)), and **koban/kobni** means "fatal, baleful, ominous; tragic, unlucky" ([Wiktionary "koban"](https://en.wiktionary.org/wiki/koban)). "Den" is not Serbian for "day" (that word is "dan"), so "Kobden" does not read as "kobni dan" (fateful day); the echo is faint. Separately, Serbian Latin reads C as /ts/, so someone reading it cold could say "Tsobden". Tech-literate readers will say it the English way. **Judgment:** low risk, not a negative meaning.
+- **German, Spanish, French, Italian, Hungarian:** Wiktionary has no entries for "cob" or "Cobden" in these languages ([cob](https://en.wiktionary.org/wiki/cob), [Cobden](https://en.wiktionary.org/wiki/Cobden)). In French the name is known from the 1860 Cobden-Chevalier free-trade treaty (my background knowledge, no source link), which is a neutral association. Spanish "cob-" words (cobre, cobrar) are unrelated. **Judgment:** pass.
+- **Radio test:** Collins gives /ˈkɒbdən/ ([Collins](https://www.collinsdictionary.com/dictionary/english/cobden)). There is one obvious way to say it: COB-den. After hearing it, "Cobden" is the dominant spelling, following the Camden, Ogden and Hebden pattern. Two risks remain: the unstressed schwa could produce "Cobdon" or "Cobdin", and the /bd/ cluster can blur on a phone. **Judgment:** pass, with a small spelling risk.
+
+## Handles
+
+| Platform | Exact handle | Status | Source |
+|---|---|---|---|
+| LinkedIn | /company/cobden | **Taken** by "Cobden", which is Cobden (Architectural Design) Ltd, Sevenoaks. Website cobdenland.co.uk; LinkedIn lists the industry as "E-learning" | WebFetch [linkedin.com/company/cobden](https://www.linkedin.com/company/cobden); [construction.co.uk listing](https://www.construction.co.uk/c/575920/cobden-architectural-design-ltd) |
+| X | @cobden | **Taken** by Harry Cobden, the champion jump jockey (about 22.9k followers) | Firecrawl scrape of [x.com/cobden](https://x.com/cobden) |
+| GitHub | Cobden | **Taken** by an empty user account. CobdenTech (empty user) and CobdenFoundation (empty org) also exist. cobdenhq, cobdenlabs and cobden-co are not among the 9 logins containing "cobden", so they look free | GitHub MCP `search_users` (total_count 9); [github.com/Cobden](https://github.com/Cobden) |
+| Instagram | @cobden | **Taken** by "科布登" (about 65 followers, 12 posts) | Firecrawl search result [instagram.com/Cobden](https://www.instagram.com/Cobden/). Direct fetch returned 429 |
+
+Every exact handle is taken, so the company would need modifiers such as cobdenhq, cobden.co or cobdenlabs. The brief treats handles as best effort, so this is not a disqualifier.
+
+## Main residual risk
+
+1. **The .com sits with a domain broker.** The Wayback capture of cobden.com is a Nucom for-sale page, it is registered until 2027-01-15, and the live site returns 503. Running on cobden.co means some email and type-in traffic will go to .com, and someone else could buy cobden.com. Pricing it through info@nucom.com before committing would be sensible. The price and current listing are unverified.
+2. **Crowded, weak-distinctiveness name space.** Many unrelated firms use "Cobden" (UK real estate and holding companies, Swiss/UK financial "Cobden Sterling", AU "CobdenHayson"), and every exact handle is taken. That caps SEO and handle ownership. Also, "Cobden" is a surname and a place name. At USPTO a surname can draw a "primarily merely a surname" objection (§2(e)(4)); names that point to a historical figure (Richard Cobden) often escape it. **Judgment:** this is a registrability question, not a 2.9 conflict. A trademark attorney should confirm it before an umbrella-brand filing.
+3. **Faint Serbian echo** of "kob" / "kobni" (fate, ominous) for the home market, plus a possible "Tsobden" reading in Serbian Latin. Low risk, but the founder should gut-check it with Serbian speakers.

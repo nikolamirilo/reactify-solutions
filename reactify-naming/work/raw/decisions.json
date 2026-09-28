@@ -232,8 +232,8 @@
   "reason": "Radio test: heard as 'a lot'/'alot'"
  },
  "Bosk": {
-  "status": "finalist",
-  "reason": ""
+  "status": "cut",
+  "reason": "Failed independent review (round 3): earlier live US application BOSKI (99926179, classes 9/42, AI agent software) in use at boski.com; dropped from the final ten for Cobden"
  },
  "Proba": {
   "status": "cut",
@@ -972,7 +972,7 @@
   "reason": "Conflict: Wheatstone Corporation (US broadcast audio consoles and software, 50+ years, wheatstone.com)"
  },
  "Cobden": {
-  "status": "keep",
-  "reason": "Replacement candidate, sent to independent review (round 3)"
+  "status": "finalist",
+  "reason": ""
  }
 }
