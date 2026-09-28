@@ -13,6 +13,8 @@ import SubagentDiagram from "./diagrams/SubagentDiagram";
 import RolloutStagesDiagram from "./diagrams/RolloutStagesDiagram";
 import SkillHierarchyDiagram from "./diagrams/SkillHierarchyDiagram";
 import WorkflowDiagram from "./diagrams/WorkflowDiagram";
+import LoopLadderDiagram from "./diagrams/LoopLadderDiagram";
+import GoalEvaluatorDiagram from "./diagrams/GoalEvaluatorDiagram";
 import OpportunitySolutionTreeDiagram from "./diagrams/OpportunitySolutionTreeDiagram";
 import DiscoveryLoopDiagram from "./diagrams/DiscoveryLoopDiagram";
 import OutcomeCascadeDiagram from "./diagrams/OutcomeCascadeDiagram";
@@ -88,6 +90,8 @@ export const mdxComponents: MDXComponents = {
   RolloutStagesDiagram,
   SkillHierarchyDiagram,
   WorkflowDiagram,
+  LoopLadderDiagram,
+  GoalEvaluatorDiagram,
   OpportunitySolutionTreeDiagram,
   DiscoveryLoopDiagram,
   OutcomeCascadeDiagram,

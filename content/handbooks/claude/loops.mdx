@@ -1,0 +1,252 @@
+---
+title: Loops
+description: A loop is Claude repeating a cycle of work until a stop condition is met. Four kinds, from a single prompt to a routine that runs with no one watching, and when to reach for each.
+lastReviewed: 2026-09-28
+verifiedAgainst: Anthropic's loops guide and Claude Code docs, Sep 2026
+appliesTo: Claude Code
+---
+
+<InOneMinute>
+
+- A loop is Claude repeating a cycle of work until a stop condition is met. The four kinds differ in what starts the next cycle and what stops it.
+- **Turn-based**: every prompt you send. Claude stops when it thinks it is done, so give it a skill that checks its own work.
+- **Goal-based**: `/goal`. After every turn, a second, smaller model checks your condition and sends Claude back to work until it holds.
+- **Time-based**: `/loop 5m` re-runs a prompt on an interval while your session is open. `/schedule` moves it to the cloud as a routine.
+- **Proactive**: a routine that picks up new work on its own and runs each task to a goal, with no one watching.
+- Start with the simplest loop that works. Most tasks never need more than a clear prompt and a good check.
+
+</InOneMinute>
+
+## What it is
+
+There is a lot of talk about "loop engineering" right now, and nearly as many definitions. The Claude Code team uses a narrow one: **a loop is an agent repeating cycles of work until a stop condition is met.**
+
+So every loop answers two questions. What starts the next cycle, and what stops it? The four kinds on this page are four different answers. Each one also hands Claude one more piece of your job: first the check, then the stop condition, then the trigger, and finally the prompt itself.
+
+<LoopLadderDiagram />
+
+Not every task needs a complex loop. Start with the simplest one that works, and move down the list only when the work calls for it.
+
+## Turn-based loops
+
+- **Starts**: when you send a prompt.
+- **Stops**: when Claude judges the task is done, or needs more from you.
+- **Best for**: short tasks that are not part of a regular process or schedule.
+- **Cost control**: a specific prompt, and a check Claude can run itself, so it needs fewer turns.
+
+Every prompt already starts a loop. Claude gathers context, takes action, checks its work, repeats if it needs to, and answers. That cycle is the **agentic loop**, and you steer it one turn at a time.
+
+Ask Claude to add a like button. It reads your code, makes the edit, runs the tests, and hands back something it *believes* works. Then you open the browser, click the button, and write the next prompt. That checking step is the first thing to hand off.
+
+Write the checks you do by hand into a [skill](/handbooks/claude/skills), and give Claude tools to see, measure, or interact with the result. The more a check comes down to numbers, the easier it is for Claude to judge its own work.
+
+<CodeBlock language="markdown" filename=".claude/skills/verify-frontend-change/SKILL.md" code={`---
+name: verify-frontend-change
+description: Verifies a UI change end to end before it is reported as done. Use after any edit to a page, component, or style.
+---
+# Verifying frontend changes
+Never report a UI change as done just because the edit succeeded. Check it the way a reviewer would:
+
+1. Start the dev server and open the edited page in the browser.
+2. Use the change. For a new control, click it, confirm the state changes, and take a screenshot before and after.
+3. Check the browser console. There must be zero new errors or warnings.
+4. Run a performance trace with the Chrome DevTools MCP server and check Core Web Vitals.
+
+If any step fails, fix it and start again from step 1. Never hand back work that is only partly verified.`} />
+
+- Step 4 needs the Chrome DevTools MCP server. A check is only as good as the tools Claude has to run it.
+- "Zero new errors" is a number. "Looks right" is not.
+
+## Goal-based loops
+
+- **Starts**: when you set a goal with `/goal`.
+- **Stops**: when the goal is met, or the cap you set runs out.
+- **Best for**: tasks with an exit Claude can prove, like tests passing or a score over a threshold.
+- **Cost control**: a specific finish line, and an explicit cap like "stop after 5 tries".
+
+Bigger tasks rarely finish in one turn. Agents do better when they can iterate, and `/goal` lets you decide how long Claude keeps going.
+
+Without a goal, Claude decides what "good enough" means, and it can stop early. With one, a separate model checks your condition every time Claude tries to stop, and sends it back to work until the condition holds. That is why hard numbers work so well here. A test count or a score threshold leaves nothing to interpret.
+
+<CodeBlock language="text" filename="prompt" code={`/goal npm test exits 0 with no test files edited or skipped, or stop after 10 turns`} />
+
+- Setting a goal starts work right away. The condition is the instruction, so no separate prompt is needed.
+- "`npm test` exits 0" is both the end state and a check Claude proves by running it.
+- "No test files edited or skipped" closes the easy shortcut: changing the tests instead of the code.
+- "Or stop after 10 turns" is the budget. Claude reports progress against it every turn.
+
+<GoalEvaluatorDiagram />
+
+<CheckItWorked>
+A <code>◎ /goal active</code> indicator shows while the goal runs. Type <code>/goal</code> on its own to see the condition, turns so far, token spend, and the evaluator's latest reason. When the tests pass, the goal clears itself.
+</CheckItWorked>
+
+### Write a condition that holds up
+
+The evaluator only judges what Claude has shown in the conversation. It does not run commands or read files. So a good condition has:
+
+- **One measurable end state**: a test result, an exit code, a file count, an empty queue.
+- **A stated check**: how Claude proves it, such as "`npm test` exits 0" or "`git status` is clean".
+- **Constraints that matter**: what must not change on the way there.
+- **A cap**: a turn or time limit, such as "or stop after 20 turns".
+
+A condition can be up to 4,000 characters.
+
+### Goal commands
+
+| Command | What it does |
+|---|---|
+| `/goal <condition>` | Sets the goal and starts on it. A new goal replaces the current one |
+| `/goal` | Shows the condition, time running, turns, token spend, and the latest reason |
+| `/goal clear` | Removes the goal. `stop`, `off`, `reset`, `none`, and `cancel` work too. Starting over with `/clear` also removes it |
+| `claude -p "/goal ..."` | Runs the whole loop in one non-interactive call. Add `--output-format stream-json --verbose` to watch it |
+
+- One goal per session. Resuming a session restores an active goal, with its turn count and timer reset.
+- If Claude keeps answering the evaluator without using any tools for several turns in a row, Claude Code stops the loop and hands control back, with the goal still set.
+
+<Callout type="warn" title="A goal does not change your permission mode">
+
+Without auto mode, Claude still asks before any tool call your settings do not allow, so a goal left alone just waits. Run `/goal` in auto mode when you want it to work unattended. Auto mode removes the prompts inside a turn, and `/goal` removes the prompts between turns.
+
+</Callout>
+
+Under the hood, `/goal` is a session-scoped, prompt-based `Stop` [hook](/handbooks/claude/hooks). So it follows the same rules as hooks: it only works in a trusted folder, and it is unavailable when `disableAllHooks` is `true` or managed settings set `allowManagedHooksOnly`. If you want the same check in every session, write the `Stop` hook yourself.
+
+## Time-based loops
+
+- **Starts**: when an interval passes.
+- **Stops**: when you cancel it, or the work is done (the PR merges, the queue is empty).
+- **Best for**: recurring work, and work that waits on a system outside your project.
+- **Cost control**: longer intervals, or reacting to events instead of the clock.
+
+Some work repeats. The task stays the same and only the inputs change, like summarizing Slack every morning. Other work waits on something outside your project, like a PR that might get review comments or fail CI. The simple way to handle it is to check on an interval and react to what changed.
+
+<CodeBlock language="text" filename="prompt" code={`/loop 5m check my PR, address review comments, and fix failing CI`} />
+
+What you give `/loop` decides how it runs:
+
+| You type | What happens |
+|---|---|
+| `/loop 5m check the deploy` | Your prompt runs on a fixed schedule |
+| `/loop check the deploy` | Claude picks the wait after each run, from one minute to an hour, and can end the loop once the work is done |
+| `/loop` or `/loop 15m` | Runs your `loop.md`, or a built-in maintenance prompt when there is none |
+
+- Intervals take `s`, `m`, `h`, or `d`. Seconds round up to a minute, and odd steps like `7m` round to the nearest clean one. Claude tells you what it picked.
+- The prompt can be a skill: `/loop 20m /review-pr 1234`. Only skills Claude may call on its own will run. One marked `disable-model-invocation: true` (see [Slash commands](/handbooks/claude/commands)) arrives as plain text instead.
+- The built-in maintenance prompt finishes open work, tends to the current branch's PR (review comments, failed CI, merge conflicts), then runs cleanup passes. It does not start anything new.
+
+### Set your own default with loop.md
+
+<CodeBlock language="markdown" filename=".claude/loop.md" code={`Check the release/next PR. If CI is red, read the failing job log,
+find the cause, and push a minimal fix. If new review comments came in,
+address each one and resolve the thread. If everything is green and
+quiet, say so in one line.`} />
+
+- `.claude/loop.md` belongs to the project and wins over `~/.claude/loop.md`, which covers any project without its own.
+- It is used only when you give `/loop` no prompt. A prompt you type after `/loop` replaces it.
+- Edits apply on the next run, so you can tune it while the loop is going. Anything past 25,000 bytes is cut off.
+
+### Stopping, and what /loop cannot do
+
+- Press `Esc` to stop a self-paced loop while it waits for its next run.
+- A loop on a fixed interval runs until you cancel it ("cancel the deploy check job") or for seven days. On day seven it runs one last time, then deletes itself.
+- `/loop` lives in your session. It fires only while Claude Code is open and idle, between turns, never mid-reply. Close the session and it stops.
+- If Claude is busy when a run is due, it runs once when Claude is free, not once for every run it missed.
+
+### Move it to the cloud with /schedule
+
+`/loop` stops when your laptop does. `/schedule` saves the work as a **routine** instead: a prompt, one or more repositories, and the connectors it needs, run on Anthropic's cloud.
+
+<CodeBlock language="text" filename="prompt" code={`/schedule weekdays at 9:07, summarize yesterday's merged PRs`} />
+
+- 9:07, not 9:00. A run set exactly on the hour can start several minutes late.
+- Besides a schedule, a routine can start from an HTTP call or a GitHub event, such as a new pull request. Reacting to an event is often cheaper than checking on a timer.
+- Routines are in research preview and need a claude.ai subscription: Pro, Max, Team, or Enterprise. If you sign in with an API key or a cloud provider, `/schedule` does not show up at all.
+- `/schedule list`, `/schedule update`, and `/schedule run` manage routines from the CLI. Everything else is at [claude.ai/code/routines](https://claude.ai/code/routines).
+
+The Desktop app has a third option, a local scheduled task. Here is how the three compare:
+
+| | In your session | Desktop scheduled task | Cloud routine |
+|---|---|---|---|
+| Start it with | `/loop` | The Desktop app | `/schedule` |
+| Runs on | Your machine | Your machine | Anthropic's cloud |
+| Needs your machine on | Yes | Yes | No |
+| Needs an open session | Yes | No | No |
+| Sees your local files | Yes | Yes | No, a fresh clone each run |
+| Permission prompts | Same as your session | Set per task | None |
+| Shortest interval | 1 minute | 1 minute | 1 hour |
+
+<Callout type="warn" title="A routine runs as you, and never asks">
+
+A routine does not stop for permission. It can use every tool in every connector you include, writes too, and everything it does appears under your name: your GitHub user, your Slack account. All your connectors are included by default, so remove the ones it does not need. And a green run only means the session did not crash. Open the run to see whether the task actually worked.
+
+</Callout>
+
+## Proactive loops
+
+- **Starts**: on an event or a schedule, with no one watching.
+- **Stops**: each task stops when its goal is met. The routine runs until you turn it off.
+- **Best for**: steady streams of well-defined work, like bug reports, issue triage, migrations, and dependency upgrades.
+- **Cost control**: run the routine on a smaller, faster model, and save the most capable one for judgment calls.
+
+A proactive loop is not a new command. It is the pieces above, put together so work gets picked up and finished without anyone typing a prompt. To handle incoming bug reports:
+
+1. **`/schedule`** runs a routine that checks for new reports.
+2. **`/goal`** says what done looks like, and **skills** say how to verify it.
+3. A **[workflow](/handbooks/claude/workflows)** runs agents that triage each report, fix it, and review the fix.
+4. **Auto mode** keeps a local loop from stopping to ask permission. A cloud routine already runs without prompts.
+
+Put together, the prompt could look like this:
+
+<CodeBlock language="text" filename="prompt" code={`/schedule every hour: check #project-feedback for bug reports.
+/goal: do not stop until every report found this run is triaged, acted on, and answered.
+When fixing a bug, use a workflow to try three solutions in parallel worktrees,
+and have a judge review them adversarially.`} />
+
+- The prompt asks for a workflow by name. Claude only launches one when you ask.
+- The routine's form has a model picker next to the prompt. That is where you route it to a smaller model.
+
+## Keeping quality up
+
+What a loop produces is only as good as the system around it.
+
+- **Keep the codebase clean.** Claude follows the patterns already in your code, the good ones and the bad ones.
+- **Give Claude a way to check its work.** Write down what good looks like for your team as [skills](/handbooks/claude/skills).
+- **Make docs easy to reach.** Framework and library docs carry the current best practice.
+- **Use a second agent to review.** A reviewer with fresh context is not swayed by the main agent's reasoning. The built-in `/code-review` skill does this, and so does [Code Review](https://code.claude.com/docs/en/code-review) for GitHub. Loops that write code need loops that check it.
+
+When one result misses the bar, do not stop at fixing that result. Put the fix into the system, as a skill, a [hook](/handbooks/claude/hooks), or a line in [CLAUDE.md](/handbooks/claude/claude-md), so every later run gets it too.
+
+## Keeping cost down
+
+Every trip around a loop spends tokens. Give each loop clear limits:
+
+- **Pick the right tool and model.** Small tasks do not need several agents, or a loop at all. Plenty of work runs fine on a cheaper, faster model.
+- **Say what done looks like.** A clear finish line gets Claude there sooner, but not too soon.
+- **Pilot before a big run.** A workflow can spawn hundreds of agents. Try a small slice first and see what it costs.
+- **Use scripts for fixed steps.** Running a script costs less than reasoning through the same steps again. A PDF skill can ship a form-filling script, so Claude runs it instead of rewriting it each time.
+- **Do not run routines more often than needed.** Match the interval to how often the thing you watch actually changes.
+- **Check where the tokens go.** `/usage` breaks recent usage down by skills, subagents, and MCP servers. `/goal` with no arguments shows turns and tokens so far. `/workflows` shows each agent's usage and lets you stop any of them.
+
+Your [model and effort level](https://claude.com/blog/claude-model-and-effort-level-in-claude-code) are among the biggest levers on what a loop costs.
+
+## Which loop to reach for
+
+| Loop | You hand off | Use it when | Reach for |
+|---|---|---|---|
+| Turn‑based | The check | You are exploring or deciding | A verification skill |
+| Goal‑based | The stop condition | You know what done looks like | `/goal` |
+| Time‑based | The trigger | The work happens outside your project, on a schedule | `/loop`, `/schedule` |
+| Proactive | The prompt | The work is recurring and well defined | All of the above, plus workflows |
+
+To get started, look at work you already do. Pick one task where you are the bottleneck and ask which piece you could hand off. Can you write the check? Is the goal clear enough to state? Does the work arrive on a schedule? Then run the loop, watch where it stalls or goes too far, and adjust.
+
+## When not to use one
+
+A loop earns its cost when the work repeats or needs many turns. A quick question or a small edit is already a turn-based loop, so do not wrap it in `/goal`. If the steps are fixed and never change, write them as a [workflow](/handbooks/claude/workflows). If a check must hold in every session, not just this one, make it a `Stop` [hook](/handbooks/claude/hooks) in your settings instead of a `/goal`.
+
+<FullReference label="Where this page's facts come from">
+
+The four loop types, and the advice on quality and cost, follow Anthropic's post [Loop engineering: Getting started with loops](https://claude.com/blog/getting-started-with-loops) by Delba de Oliveira and Michael Segner, June 2026. Command details are checked against the Claude Code docs for [/goal](https://code.claude.com/docs/en/goal), [/loop and scheduled tasks](https://code.claude.com/docs/en/scheduled-tasks), and [routines](https://code.claude.com/docs/en/routines).
+
+</FullReference>

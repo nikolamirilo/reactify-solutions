@@ -70,6 +70,7 @@ export const handbooksNav: HandbookTopicNav[] = [
           { slug: "subagents", label: "Subagents" },
           { slug: "commands", label: "Slash commands" },
           { slug: "workflows", label: "Workflows" },
+          { slug: "loops", label: "Loops" },
           { slug: "mcp", label: "MCP servers" },
           { slug: "plugins", label: "Plugins" },
           { slug: "teams", label: "Rolling out to a team" },
