@@ -565,7 +565,7 @@ A file you reference with `@` in your prompt is inserted without a tool call, so
 - `hookSpecificOutput.additionalContext` does the same, but reads as feedback rather than an error.
 - `stop_hook_active` is `true` when Claude is already continuing because of a stop hook. Check it, or you will loop. Claude Code gives up after 8 consecutive blocks.
 
-The built-in `/goal` command is a shortcut for a session-scoped prompt-based `Stop` hook.
+The built-in [`/goal`](/handbooks/claude/loops#goal-based-loops) command is a shortcut for a session-scoped prompt-based `Stop` hook.
 
 **`StopFailure`** fires instead of `Stop` when an API error ends the turn: `rate_limit`, `overloaded`, `billing_error`, and so on. Output is ignored except `terminalSequence`. Use it to alert.
 
