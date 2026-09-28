@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "deny": [
+      "mcp__vercel__buy_*",
+      "mcp__vercel__create_or_transfer_domain",
+      "Edit(/BRIEF.md)",
+      "Edit(/verify.py)"
+    ]
+  }
+}
