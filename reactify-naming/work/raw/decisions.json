@@ -958,5 +958,21 @@
  "Graver": {
   "status": "cut",
   "reason": "Language: reads as 'grave' (tomb) and 'graver' (more serious); only graver.studio free"
+ },
+ "Pinion": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Brockbank": {
+  "status": "cut",
+  "reason": "Sound: 9 letters and '-bank' reads as a financial firm; only .studio/.app free"
+ },
+ "Wheatstone": {
+  "status": "cut",
+  "reason": "Conflict: Wheatstone Corporation (US broadcast audio consoles and software, 50+ years, wheatstone.com)"
+ },
+ "Cobden": {
+  "status": "keep",
+  "reason": "Replacement candidate, sent to independent review (round 3)"
  }
 }

@@ -880,5 +880,29 @@
   "territory": "A",
   "source": "replacement",
   "story": "Engraving: the hand-held cutting tool of the engraver"
+ },
+ {
+  "name": "Pinion",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Clockmaking: the small gear that drives the big wheel (rack and pinion)"
+ },
+ {
+  "name": "Brockbank",
+  "territory": "C",
+  "source": "replacement",
+  "story": "John and Myles Brockbank, London marine-chronometer makers (c. 1770-1820)"
+ },
+ {
+  "name": "Wheatstone",
+  "territory": "C",
+  "source": "replacement",
+  "story": "Charles Wheatstone (1802-1875), co-inventor of the electric telegraph; wheat + stone (millstone)"
+ },
+ {
+  "name": "Cobden",
+  "territory": "C",
+  "source": "replacement",
+  "story": "T. J. Cobden-Sanderson (1840-1922), bookbinder and printer: coined the term 'Arts and Crafts' (1887), ran the Doves Press, and dropped the Doves Type into the Thames (1916-17) rather than let the rights pass to his partner - ownership of the craft taken to the extreme"
  }
 ]

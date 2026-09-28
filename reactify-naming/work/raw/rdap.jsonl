@@ -50,3 +50,5 @@
 {"domain": "ramsden.ai", "available": false, "checked_at": "2026-09-28", "note": "personal site: placeholder blog page 'Blog will be back soon'; no business, no sale listing. (https://ramsden.ai)"}
 {"domain": "ramsden.co", "available": false, "checked_at": "2026-09-28", "note": "registered, no working site: site visit returned HTTP 503. (https://ramsden.co)"}
 {"domain": "ramsden.dev", "available": false, "checked_at": "2026-09-28", "note": "registered, no working site: site visit returned HTTP 503. (https://ramsden.dev)"}
+{"domain": "cobden.com", "available": false, "checked_at": "2026-09-28", "note": "registered, no working site: RDAP (Verisign) registered 2000-01-15, expires 2027-01-15, GoDaddy, client delete/renew/transfer/update prohibited, NS up99plus.com; site returns HTTP 503; no sale listing seen. (https://rdap.verisign.com/com/v1/domain/cobden.com)"}
+{"domain": "cobden.app", "available": false, "checked_at": "2026-09-28", "note": "template placeholder: HTML5 UP 'Dimension' template with Lorem Ipsum text, used as a personal link hub; no business. (https://cobden.app)"}

@@ -351,5 +351,29 @@
   "renewal_usd": 30,
   "checked_at": "2026-09-28",
   "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "cobden.co",
+  "years": 1,
+  "first_year_usd": 29.99,
+  "renewal_usd": 24.8,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "cobden.io",
+  "years": 1,
+  "first_year_usd": 14.99,
+  "renewal_usd": 46,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
+ },
+ {
+  "domain": "cobden.studio",
+  "years": 1,
+  "first_year_usd": 21.99,
+  "renewal_usd": 36,
+  "checked_at": "2026-09-28",
+  "source": "vercel get_bulk_price"
  }
 ]
