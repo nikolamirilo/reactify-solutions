@@ -34,13 +34,13 @@ Top 3 su tri najviša ponderisana zbira iz `work/finalists.csv` (rubrika 2.11: 2
 
 ### 1.4 Zašto nisu u top 3 Bract, Moxon i Remek (najlepša imena)
 
-Ova tri imena su pre provere sajtova vodila (4,00 / 4,00 / 3,85) i najbliža su zvuku Braze i Brigit. Provera zauzetih domena otkrila je da ih već koriste firme iz istog tržišta. Nijedna baza žigova to ne pokazuje, jer ove firme nisu registrovale žig (**VERIFIED**, 28.09.2026, `work/research/dd_finalists.json`):
+Ova tri imena su pre provere sajtova vodila (4,00 / 4,00 / 3,85) i najbliža su zvuku Braze i Brigit. Provera zauzetih domena otkrila je da ih već koriste firme iz istog tržišta, a nezavisni recenzent u svežem kontekstu je sva tri **odbio (FAIL)** i našao dodatne dokaze (`work/review.md`, **VERIFIED**, 28.09.2026):
 
-- **Bract:** [bract.ai](https://bract.ai) je AI konsultantska firma za zanatlije (domen registrovan 01.04.2026), a [bract.studio](https://bract.studio) prodaje „AI-powered growth systems” za Shopify brendove (14.03.2026). bract.com je na Efty berzi (cena na upit).
-- **Moxon:** [moxon.io](https://moxon.io) je B2B SaaS „The Operating System for Technology Decisions” (11.06.2026).
-- **Remek:** remek.com je „Remek Consulting”, IT konsalting od 1997. godine ([RDAP](https://rdap.verisign.com/com/v1/domain/remek.com)). remek.dev je open-source alat za AI agente (15.07.2026). Postoji i [Remek! Trading Systems](https://www.remek.ca/) (Toronto).
+- **Bract:** [The Bract](https://www.thebract.com/) je agencija za brending i sajtove tech osnivača (Tel Aviv, Pariz, San Francisko), [bract.ai](https://bract.ai) je AI konsultantska firma za male biznise (domen iz 01.04.2026), [Bract Studio](https://www.appbrain.com/dev/Bract+Studio/) je studio sa 17 Android aplikacija, a [bract.studio](https://bract.studio) prodaje „AI-powered growth systems” (14.03.2026). Jedini slobodan domen, bract.co, je premium: 1.232 USD godišnje.
+- **Moxon:** [Moxon AI Group Ltd](https://find-and-update.company-information.service.gov.uk/company/16800432) (London, osnovana 21.10.2025) radi isti model kao Reactify: sopstveni AI proizvodi plus AI konsalting za klijente ([moxonai.com](https://moxonai.com/)). Uz to, „Moxon: The Operating System for Technology Decisions” je B2B SaaS na moxon.com i moxon.io (2026), a MOXO, Inc. ima dva živa žiga MOXO u SAD u klasama 9 i 42 ([TMview](https://www.tmdn.org/tmview/#/tmview/detail/US500000097187331)), što je rizik zabune za jedno slovo.
+- **Remek:** remek.com je „Remek Consulting”, IT konsalting od 1997. godine ([RDAP](https://rdap.verisign.com/com/v1/domain/remek.com)), remek.dev je open-source alat za AI agente (15.07.2026), a postoji i [Remek! Trading Systems](https://www.remek.ca/) (Toronto). Recenzent je dodao dve stvari: ime **ne prolazi radio-test** (Englezi čitaju „REM-ick” ili „ree-MEK” i pišu Remick ili Remeck), a na mađarskom *remek* znači „odličan”, pa EUIPO može da odbije žig kao hvalospev na službenom jeziku EU.
 
-U SAD prvenstvo stvara stvarna upotreba, a ne samo registracija žiga, pa bi svako od ovih imena značilo spor ili otkup. Zato su u rubrici dobili pravnu ocenu 1. Ako osnivač uprkos tome želi neko od njih, **Moxon** ima najmanji problem, jer je moxon.io tek u fazi traženja prvih korisnika (**ESTIMATED**).
+U SAD prvenstvo stvara stvarna upotreba, a ne samo registracija žiga, pa bi svako od ovih imena značilo spor ili otkup. Zato su u rubrici dobili pravnu ocenu 1 i ne preporučujemo nijedno od njih, uključujući Moxon, koji je pre recenzije izgledao kao najmanji problem.
 
 ### 1.5 Iskreno poređenje sa Koshavom i Zanatom
 

@@ -758,5 +758,205 @@
  "Vardar": {
   "status": "cut",
   "reason": "Association: Macedonian river/region with political naming-dispute baggage; story is about nature, not making"
+ },
+ "Heddle": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Bodkin": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Plinth": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Corbel": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app; Corbel is a Microsoft typeface"
+ },
+ "Burnish": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Smelt": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Pewter": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Damask": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Jointer": {
+  "status": "cut",
+  "reason": "Conflict: Jointer (jointer.io), a real-estate tokenisation startup (Silicon Valley/Tel Aviv, raised USD 2.5M) and 'Pic Jointer' collage apps on App Store and Google Play; 'joint' cannabis pun"
+ },
+ "Dowel": {
+  "status": "cut",
+  "reason": "Sound: soft ending, spelled Dowel/Dowell; only dowel.studio free"
+ },
+ "Tenter": {
+  "status": "cut",
+  "reason": "Radio test: heard as 'tender' in US English; only tenter.studio free"
+ },
+ "Loden": {
+  "status": "cut",
+  "reason": "Sound: soft; a coat fabric with no ownership or value story; only loden.studio free"
+ },
+ "Stave": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app; 'stave off' reads defensive"
+ },
+ "Gimlet": {
+  "status": "cut",
+  "reason": "Conflict: Gimlet Media (Spotify-owned podcast company); gimlet cocktail; only gimlet.studio free"
+ },
+ "Transom": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Bradawl": {
+  "status": "cut",
+  "reason": "Radio test: heard as 'brad-all', no obvious spelling for the '-awl' ending"
+ },
+ "Latten": {
+  "status": "cut",
+  "reason": "Radio test: heard as latte/Latin/Laden; soft sound"
+ },
+ "Trowel": {
+  "status": "cut",
+  "reason": "Radio test: trowel/troll; idiom 'lay it on with a trowel' (overdo flattery); only trowel.studio free"
+ },
+ "Incudo": {
+  "status": "cut",
+  "reason": "Radio test: stress and spelling split (in-KOO-doh; Incudo/Encudo/Incoodo); weak sound"
+ },
+ "Actum": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app; close to the anchor Adacta in meaning"
+ },
+ "Operis": {
+  "status": "cut",
+  "reason": "Sound: soft three syllables, reads as 'opera'; only operis.studio free"
+ },
+ "Fictor": {
+  "status": "cut",
+  "reason": "Language: reads as 'fiction' (made up), the wrong signal for a builder"
+ },
+ "Tompion": {
+  "status": "cut",
+  "reason": "Radio test: spelled Tompion/Tompian/Tompkin; soft ending"
+ },
+ "Ramsden": {
+  "status": "keep",
+  "reason": "Replacement candidate, sent to independent review (round 3)"
+ },
+ "Brindley": {
+  "status": "cut",
+  "reason": "Radio test: Brindley/Brindly/Brindle ('brindle' is a dog-coat colour)"
+ },
+ "Smeaton": {
+  "status": "cut",
+  "reason": "Radio test: Smeaton/Smeeton/Smeeten; soft ending"
+ },
+ "Hondius": {
+  "status": "cut",
+  "reason": "Radio test: Hondius/Hondeus/Hondious; best known as the MV Hondius cruise ship"
+ },
+ "Fabrin": {
+  "status": "cut",
+  "reason": "Conflict: Fabrin, an open-source Go web framework (github.com/usefabrin/fabrin), and Fabrin, a fashion-production platform app"
+ },
+ "Ferrant": {
+  "status": "cut",
+  "reason": "Radio test: Ferrant/Ferant/Ferrent; reads as 'errant'"
+ },
+ "Brandel": {
+  "status": "cut",
+  "reason": "Radio test: Brandel/Brandle/Brandell; only brandel.studio free"
+ },
+ "Perdix": {
+  "status": "cut",
+  "reason": "Conflict: Perdix is the name of the US military micro-drone swarm; only perdix.studio free"
+ },
+ "Arrowsmith": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app; 10 letters"
+ },
+ "Structor": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Scriber": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Brassard": {
+  "status": "cut",
+  "reason": "Sound: 8 letters, reads as a French-Canadian surname; weak product story"
+ },
+ "Earnshaw": {
+  "status": "cut",
+  "reason": "Radio test: Earnshaw/Ernshaw; 'earn' reads as money-first; Wuthering Heights association"
+ },
+ "Clad": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Regula": {
+  "status": "cut",
+  "reason": "Conflict: Regula (regulaforensics.com), identity-document verification software; radio: REG-yoo-la/reh-GOO-la"
+ },
+ "Bollard": {
+  "status": "cut",
+  "reason": "Sound and domain: reads as street furniture (traffic bollards); only bollard.studio free"
+ },
+ "Batten": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Cleat": {
+  "status": "cut",
+  "reason": "Sound: reads as football boots (cleats); only cleat.studio free"
+ },
+ "Rampart": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Chamfer": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app; radio: CHAM-fer/SHAM-fer"
+ },
+ "Brasstack": {
+  "status": "cut",
+  "reason": "Conflict: BrassTack (brasstack.net), a dev studio that helps SaaS teams ship (direct competitor); Brasstacks microlearning LMS; BrassTacks CRM (Move Solutions); plural 'brass tacks' spelling split"
+ },
+ "Incipit": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app"
+ },
+ "Roycroft": {
+  "status": "cut",
+  "reason": "Conflict: Roycroft Design (Boston web and graphic design firm, 51-200 staff) and ROYCROFT LABS LTD (UK Companies House 10714636); Roycroft Campus and Inn own the name locally"
+ },
+ "Sinew": {
+  "status": "cut",
+  "reason": "Domain: none free on .co/.io/.studio/.app; 'sin-' onset"
+ },
+ "Lorimer": {
+  "status": "cut",
+  "reason": "Radio test: Lorimer/Lorrimer/Loriner; reads as a surname; only .co/.studio free"
+ },
+ "Gimson": {
+  "status": "cut",
+  "reason": "Radio test: Gimson/Gimpson/Simpson; soft ending"
+ },
+ "Graver": {
+  "status": "cut",
+  "reason": "Language: reads as 'grave' (tomb) and 'graver' (more serious); only graver.studio free"
  }
 }

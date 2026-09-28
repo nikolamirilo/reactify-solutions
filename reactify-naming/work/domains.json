@@ -3496,6 +3496,46 @@
   "call": "terrC-2"
  },
  {
+  "name": "Perdix",
+  "domain": "perdix.com",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "terrC-2"
+ },
+ {
+  "name": "Perdix",
+  "domain": "perdix.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Perdix",
+  "domain": "perdix.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Perdix",
+  "domain": "perdix.build",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "terrC-2"
+ },
+ {
+  "name": "Perdix",
+  "domain": "perdixlabs.com",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "terrC-2"
+ },
+ {
   "name": "Burl",
   "domain": "burl.build",
   "available": true,
@@ -4070,6 +4110,22 @@
   "checked_at": "2026-09-28",
   "source": "vercel",
   "call": "terrC-3"
+ },
+ {
+  "name": "Perdix",
+  "domain": "perdix.ai",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "terrC-3"
+ },
+ {
+  "name": "Perdix",
+  "domain": "perdix.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
  },
  {
   "name": "Hollerith",
@@ -7336,6 +7392,1646 @@
   "call": "finalist-03"
  },
  {
+  "name": "Heddle",
+  "domain": "heddle.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Heddle",
+  "domain": "heddle.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Heddle",
+  "domain": "heddle.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Heddle",
+  "domain": "heddle.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Bodkin",
+  "domain": "bodkin.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Bodkin",
+  "domain": "bodkin.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Bodkin",
+  "domain": "bodkin.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Bodkin",
+  "domain": "bodkin.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Plinth",
+  "domain": "plinth.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Plinth",
+  "domain": "plinth.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Plinth",
+  "domain": "plinth.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Plinth",
+  "domain": "plinth.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Corbel",
+  "domain": "corbel.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Corbel",
+  "domain": "corbel.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Corbel",
+  "domain": "corbel.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Corbel",
+  "domain": "corbel.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Burnish",
+  "domain": "burnish.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Burnish",
+  "domain": "burnish.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Burnish",
+  "domain": "burnish.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Burnish",
+  "domain": "burnish.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Smelt",
+  "domain": "smelt.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Smelt",
+  "domain": "smelt.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Smelt",
+  "domain": "smelt.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Smelt",
+  "domain": "smelt.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Pewter",
+  "domain": "pewter.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Pewter",
+  "domain": "pewter.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Pewter",
+  "domain": "pewter.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Pewter",
+  "domain": "pewter.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Damask",
+  "domain": "damask.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Damask",
+  "domain": "damask.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Damask",
+  "domain": "damask.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Damask",
+  "domain": "damask.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Jointer",
+  "domain": "jointer.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Jointer",
+  "domain": "jointer.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Jointer",
+  "domain": "jointer.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Jointer",
+  "domain": "jointer.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Dowel",
+  "domain": "dowel.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Dowel",
+  "domain": "dowel.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Dowel",
+  "domain": "dowel.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Dowel",
+  "domain": "dowel.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-27"
+ },
+ {
+  "name": "Tenter",
+  "domain": "tenter.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Tenter",
+  "domain": "tenter.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Tenter",
+  "domain": "tenter.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Tenter",
+  "domain": "tenter.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Loden",
+  "domain": "loden.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Loden",
+  "domain": "loden.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Loden",
+  "domain": "loden.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Loden",
+  "domain": "loden.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Stave",
+  "domain": "stave.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Stave",
+  "domain": "stave.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Stave",
+  "domain": "stave.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Stave",
+  "domain": "stave.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Gimlet",
+  "domain": "gimlet.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Gimlet",
+  "domain": "gimlet.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Gimlet",
+  "domain": "gimlet.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Gimlet",
+  "domain": "gimlet.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Transom",
+  "domain": "transom.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Transom",
+  "domain": "transom.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Transom",
+  "domain": "transom.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Transom",
+  "domain": "transom.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Bradawl",
+  "domain": "bradawl.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Bradawl",
+  "domain": "bradawl.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Bradawl",
+  "domain": "bradawl.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Bradawl",
+  "domain": "bradawl.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Latten",
+  "domain": "latten.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Latten",
+  "domain": "latten.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Latten",
+  "domain": "latten.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Latten",
+  "domain": "latten.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Trowel",
+  "domain": "trowel.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Trowel",
+  "domain": "trowel.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Trowel",
+  "domain": "trowel.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Trowel",
+  "domain": "trowel.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Incudo",
+  "domain": "incudo.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Incudo",
+  "domain": "incudo.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Incudo",
+  "domain": "incudo.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Incudo",
+  "domain": "incudo.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Actum",
+  "domain": "actum.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Actum",
+  "domain": "actum.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Actum",
+  "domain": "actum.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Actum",
+  "domain": "actum.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-28"
+ },
+ {
+  "name": "Operis",
+  "domain": "operis.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Operis",
+  "domain": "operis.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Operis",
+  "domain": "operis.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Operis",
+  "domain": "operis.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Fictor",
+  "domain": "fictor.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Fictor",
+  "domain": "fictor.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Fictor",
+  "domain": "fictor.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Fictor",
+  "domain": "fictor.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Tompion",
+  "domain": "tompion.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Tompion",
+  "domain": "tompion.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Tompion",
+  "domain": "tompion.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Tompion",
+  "domain": "tompion.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Brindley",
+  "domain": "brindley.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Brindley",
+  "domain": "brindley.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Brindley",
+  "domain": "brindley.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Brindley",
+  "domain": "brindley.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Smeaton",
+  "domain": "smeaton.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Smeaton",
+  "domain": "smeaton.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Smeaton",
+  "domain": "smeaton.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Smeaton",
+  "domain": "smeaton.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Hondius",
+  "domain": "hondius.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Hondius",
+  "domain": "hondius.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Hondius",
+  "domain": "hondius.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Hondius",
+  "domain": "hondius.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Fabrin",
+  "domain": "fabrin.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Fabrin",
+  "domain": "fabrin.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Fabrin",
+  "domain": "fabrin.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Fabrin",
+  "domain": "fabrin.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Ferrant",
+  "domain": "ferrant.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Ferrant",
+  "domain": "ferrant.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Ferrant",
+  "domain": "ferrant.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Ferrant",
+  "domain": "ferrant.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Brandel",
+  "domain": "brandel.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Brandel",
+  "domain": "brandel.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Brandel",
+  "domain": "brandel.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Brandel",
+  "domain": "brandel.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-29"
+ },
+ {
+  "name": "Perdix",
+  "domain": "perdix.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Arrowsmith",
+  "domain": "arrowsmith.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Arrowsmith",
+  "domain": "arrowsmith.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Arrowsmith",
+  "domain": "arrowsmith.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Arrowsmith",
+  "domain": "arrowsmith.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Structor",
+  "domain": "structor.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Structor",
+  "domain": "structor.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Structor",
+  "domain": "structor.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Structor",
+  "domain": "structor.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Scriber",
+  "domain": "scriber.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Scriber",
+  "domain": "scriber.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Scriber",
+  "domain": "scriber.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Scriber",
+  "domain": "scriber.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Brassard",
+  "domain": "brassard.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Brassard",
+  "domain": "brassard.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Brassard",
+  "domain": "brassard.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Brassard",
+  "domain": "brassard.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Earnshaw",
+  "domain": "earnshaw.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Earnshaw",
+  "domain": "earnshaw.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Earnshaw",
+  "domain": "earnshaw.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Earnshaw",
+  "domain": "earnshaw.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Clad",
+  "domain": "clad.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Clad",
+  "domain": "clad.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Clad",
+  "domain": "clad.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Clad",
+  "domain": "clad.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Regula",
+  "domain": "regula.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Regula",
+  "domain": "regula.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Regula",
+  "domain": "regula.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Regula",
+  "domain": "regula.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.com",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.ai",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.dev",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.so",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsdenlabs.com",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.build",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-30"
+ },
+ {
+  "name": "Bollard",
+  "domain": "bollard.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Bollard",
+  "domain": "bollard.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Bollard",
+  "domain": "bollard.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Bollard",
+  "domain": "bollard.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Batten",
+  "domain": "batten.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Batten",
+  "domain": "batten.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Batten",
+  "domain": "batten.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Batten",
+  "domain": "batten.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Cleat",
+  "domain": "cleat.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Cleat",
+  "domain": "cleat.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Cleat",
+  "domain": "cleat.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Cleat",
+  "domain": "cleat.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Rampart",
+  "domain": "rampart.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Rampart",
+  "domain": "rampart.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Rampart",
+  "domain": "rampart.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Rampart",
+  "domain": "rampart.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Chamfer",
+  "domain": "chamfer.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Chamfer",
+  "domain": "chamfer.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Chamfer",
+  "domain": "chamfer.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Chamfer",
+  "domain": "chamfer.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Brasstack",
+  "domain": "brasstack.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Brasstack",
+  "domain": "brasstack.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Brasstack",
+  "domain": "brasstack.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Brasstack",
+  "domain": "brasstack.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Brasstack",
+  "domain": "brasstack.com",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Incipit",
+  "domain": "incipit.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Incipit",
+  "domain": "incipit.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Incipit",
+  "domain": "incipit.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Incipit",
+  "domain": "incipit.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-31"
+ },
+ {
+  "name": "Roycroft",
+  "domain": "roycroft.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Roycroft",
+  "domain": "roycroft.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Roycroft",
+  "domain": "roycroft.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Roycroft",
+  "domain": "roycroft.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Roycroft",
+  "domain": "roycroft.com",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Sinew",
+  "domain": "sinew.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Sinew",
+  "domain": "sinew.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Sinew",
+  "domain": "sinew.studio",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Sinew",
+  "domain": "sinew.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Lorimer",
+  "domain": "lorimer.co",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Lorimer",
+  "domain": "lorimer.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Lorimer",
+  "domain": "lorimer.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Lorimer",
+  "domain": "lorimer.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Gimson",
+  "domain": "gimson.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Gimson",
+  "domain": "gimson.io",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Gimson",
+  "domain": "gimson.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Gimson",
+  "domain": "gimson.app",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Graver",
+  "domain": "graver.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Graver",
+  "domain": "graver.io",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Graver",
+  "domain": "graver.studio",
+  "available": true,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
+  "name": "Graver",
+  "domain": "graver.app",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "vercel",
+  "call": "screen-32"
+ },
+ {
   "name": "Credne",
   "domain": "credne.com",
   "available": false,
@@ -7718,5 +9414,37 @@
   "checked_at": "2026-09-28",
   "source": "rdap",
   "note": "not registered: The .so registry RDAP returned 404 for bosk.so but returned data for notion.so, so the domain has no registration record. who.is also shows no WHOIS data and the domain does not resolve. Because the registrar said it is unavailable, it is probably registry-reserved or premium. (https://rdap.nic.so/domain/bosk.so)"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.com",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "rdap",
+  "note": "registered, no site: RDAP (Verisign) registered 1998-09-24, expires 2028-09-23, NameCheap, clientTransferProhibited, DigitalOcean nameservers; the site does not resolve. (https://rdap.verisign.com/com/v1/domain/ramsden.com)"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.ai",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "rdap",
+  "note": "personal site: placeholder blog page 'Blog will be back soon'; no business, no sale listing. (https://ramsden.ai)"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.co",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "rdap",
+  "note": "registered, no working site: site visit returned HTTP 503. (https://ramsden.co)"
+ },
+ {
+  "name": "Ramsden",
+  "domain": "ramsden.dev",
+  "available": false,
+  "checked_at": "2026-09-28",
+  "source": "rdap",
+  "note": "registered, no working site: site visit returned HTTP 503. (https://ramsden.dev)"
  }
 ]

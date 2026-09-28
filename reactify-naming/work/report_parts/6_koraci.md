@@ -37,4 +37,4 @@ Za sva tri imena predlažemo dosledan oblik ručke, npr. `spelterhq` / `spelter-
 
 - **Koshava** je i dalje najjača po rubrici (odeljak 1.5), pa je razumno da se najpre odluči da li ostaje favorit.
 - Od novih imena **Spelter** je najbolja kombinacija priče (blizanac Braze), čistog žiga i jeftinog, dobrog domena.
-- Ako je presudno da ime zvuči kao Braze ili Brigit, jedina opcija među novim imenima su Bract, Moxon ili Remek, ali uz svestan rizik od istoimenih firmi (odeljak 1.4).
+- Ako je presudno da ime zvuči kao Braze ili Brigit: Bract, Moxon i Remek imaju taj zvuk, ali ih je nezavisni recenzent odbio zbog istoimenih firmi u istom poslu (odeljak 1.4). Ne preporučujemo ih; bolji put je Koshava ili nov krug generisanja imena.

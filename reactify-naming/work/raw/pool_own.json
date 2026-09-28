@@ -580,5 +580,305 @@
   "territory": "C",
   "source": "lead",
   "story": "Mileva Marić, physicist from Vojvodina and one of the first women to study physics at ETH Zurich - the quiet builder behind famous work"
+ },
+ {
+  "name": "Heddle",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Weaving: the loop on a loom that lifts each warp thread so the weave can happen"
+ },
+ {
+  "name": "Bodkin",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Printing and sewing: the small awl a compositor used to pick out type"
+ },
+ {
+  "name": "Plinth",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Masonry: the base block that raises and carries a column or statue"
+ },
+ {
+  "name": "Corbel",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Masonry: the stone bracket that carries load out from a wall"
+ },
+ {
+  "name": "Burnish",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Metalworking: polishing by pressure until the surface shines - the finishing pass"
+ },
+ {
+  "name": "Smelt",
+  "territory": "E",
+  "source": "replacement",
+  "story": "Smelting ore into metal; acronym Ship, Make, Evolve, Launch, Tend"
+ },
+ {
+  "name": "Pewter",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Metalworking: the tin alloy that gave ordinary households their own silverware"
+ },
+ {
+  "name": "Damask",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Weaving and steel: patterned damask cloth and Damascus (damask) steel folded in layers"
+ },
+ {
+  "name": "Jointer",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Woodworking: the long plane that trues board edges so they join without a gap"
+ },
+ {
+  "name": "Dowel",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Woodworking: the hidden wooden pin that holds a joint together"
+ },
+ {
+  "name": "Tenter",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Weaving: the frame that stretches cloth to shape (on tenterhooks)"
+ },
+ {
+  "name": "Loden",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Weaving: dense, water-resistant Alpine wool cloth"
+ },
+ {
+  "name": "Stave",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Cooperage: one of the shaped planks that together make a barrel hold"
+ },
+ {
+  "name": "Gimlet",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Woodworking: the small hand tool that bores a clean pilot hole"
+ },
+ {
+  "name": "Transom",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Shipbuilding and building: the cross-beam that frames the stern or a window"
+ },
+ {
+  "name": "Bradawl",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Woodworking: the small awl that starts every screw hole; Br- onset like Braze"
+ },
+ {
+  "name": "Latten",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Metalworking: the medieval brass sheet used for church memorials"
+ },
+ {
+  "name": "Trowel",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Masonry: the mason's blade that lays and levels mortar"
+ },
+ {
+  "name": "Incudo",
+  "territory": "B",
+  "source": "replacement",
+  "story": "Latin incudo: I forge on the anvil (incus = anvil)"
+ },
+ {
+  "name": "Actum",
+  "territory": "B",
+  "source": "replacement",
+  "story": "Latin actum (est): it is done - the finished deed"
+ },
+ {
+  "name": "Operis",
+  "territory": "B",
+  "source": "replacement",
+  "story": "Latin operis: of the work (opus operis)"
+ },
+ {
+  "name": "Fictor",
+  "territory": "B",
+  "source": "replacement",
+  "story": "Latin fictor: shaper, sculptor, maker"
+ },
+ {
+  "name": "Tompion",
+  "territory": "C",
+  "source": "replacement",
+  "story": "Thomas Tompion (1639-1713), the father of English clockmaking"
+ },
+ {
+  "name": "Ramsden",
+  "territory": "C",
+  "source": "replacement",
+  "story": "Jesse Ramsden (1735-1800): his dividing engine made precise instruments cheap and repeatable; built the great theodolite for the first national survey of Britain"
+ },
+ {
+  "name": "Brindley",
+  "territory": "C",
+  "source": "replacement",
+  "story": "James Brindley (1716-1772), self-taught engineer of England's first canals"
+ },
+ {
+  "name": "Smeaton",
+  "territory": "C",
+  "source": "replacement",
+  "story": "John Smeaton (1724-1792), the first self-styled civil engineer (Eddystone Lighthouse)"
+ },
+ {
+  "name": "Hondius",
+  "territory": "C",
+  "source": "replacement",
+  "story": "Jodocus Hondius (1563-1612), Flemish engraver who published the Mercator atlas"
+ },
+ {
+  "name": "Fabrin",
+  "territory": "D",
+  "source": "replacement",
+  "story": "Invented: Latin faber (smith, maker) + -in"
+ },
+ {
+  "name": "Ferrant",
+  "territory": "D",
+  "source": "replacement",
+  "story": "Invented: Latin ferrum (iron) + -ant, 'the one who works iron'"
+ },
+ {
+  "name": "Brandel",
+  "territory": "D",
+  "source": "replacement",
+  "story": "Invented: Br- + brand + -el, a name-like maker's mark"
+ },
+ {
+  "name": "Perdix",
+  "territory": "C",
+  "source": "replacement",
+  "story": "Perdix, the boy inventor of the saw and the compass in Greek myth (Ovid)"
+ },
+ {
+  "name": "Arrowsmith",
+  "territory": "C",
+  "source": "replacement",
+  "story": "Aaron Arrowsmith (1750-1823), cartographer; an arrowsmith forges arrowheads"
+ },
+ {
+  "name": "Structor",
+  "territory": "B",
+  "source": "replacement",
+  "story": "Latin structor: builder, mason"
+ },
+ {
+  "name": "Scriber",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Metalworking: the hardened point that marks out a part before it is cut"
+ },
+ {
+  "name": "Brassard",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Armour: the plate that guards the upper arm"
+ },
+ {
+  "name": "Earnshaw",
+  "territory": "C",
+  "source": "replacement",
+  "story": "Thomas Earnshaw (1749-1829), who made the marine chronometer affordable"
+ },
+ {
+  "name": "Clad",
+  "territory": "E",
+  "source": "replacement",
+  "story": "Ironclad, clad in metal; acronym Craft, Launch, Assets, Deliver"
+ },
+ {
+  "name": "Regula",
+  "territory": "B",
+  "source": "replacement",
+  "story": "Latin regula: the straightedge and the rule"
+ },
+ {
+  "name": "Bollard",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Seamanship: the mooring post that holds a ship fast against the pull of the tide"
+ },
+ {
+  "name": "Batten",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Weaving and shipbuilding: the loom's beater, and the strip that holds hatches down (batten down)"
+ },
+ {
+  "name": "Cleat",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Seamanship: the fitting a line is made fast to"
+ },
+ {
+  "name": "Rampart",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Fortification: the earth wall that protects what is inside"
+ },
+ {
+  "name": "Chamfer",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Woodworking and machining: the bevelled edge that finishes a part"
+ },
+ {
+  "name": "Brasstack",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Idiom: 'get down to brass tacks' = get to the essentials, no fluff; Br- onset like Braze"
+ },
+ {
+  "name": "Incipit",
+  "territory": "B",
+  "source": "replacement",
+  "story": "Latin incipit: 'here it begins', the opening words of a manuscript"
+ },
+ {
+  "name": "Roycroft",
+  "territory": "C",
+  "source": "replacement",
+  "story": "The Roycrofters (East Aurora, 1895): a guild of printers, metalsmiths and furniture makers who made and sold their own products"
+ },
+ {
+  "name": "Sinew",
+  "territory": "E",
+  "source": "replacement",
+  "story": "Sinew: the tendon that connects strength to movement; acronym Ship, Iterate, Nurture, Evolve, Win"
+ },
+ {
+  "name": "Lorimer",
+  "territory": "C",
+  "source": "replacement",
+  "story": "A lorimer made bits, spurs and small ironwork for horse tack (Worshipful Company of Loriners)"
+ },
+ {
+  "name": "Gimson",
+  "territory": "C",
+  "source": "replacement",
+  "story": "Ernest Gimson (1864-1919), Arts and Crafts furniture maker who designed and built his own pieces"
+ },
+ {
+  "name": "Graver",
+  "territory": "A",
+  "source": "replacement",
+  "story": "Engraving: the hand-held cutting tool of the engraver"
  }
 ]
