@@ -1,0 +1,62 @@
+# Early findings (2026-09-28)
+
+## Kedge (TMview, rendered via Firecrawl, 2026-09-28)
+Source: https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=kedge (348 hits containing "kedge")
+- KEDGE, USPTO serial 99947632, filed 17/07/2026, class 42, KEDGE SOFTWARE LLC (live, filed) -> direct class-42 software conflict in the US.
+- KEDGE, Austria 10040/2026, classes 9/35/42, Leonhard Steinbauer (registered 2026).
+- kedge, Germany DPMA 3020182377789, classes 35/36/42 (registered).
+- KEDGE, France INPI 3916219 + WIPO 1155580 + OAPI: KEDGE Business School (CCI Bordeaux / Marseille), classes 35/41/42.
+- kedge, EUIPO 003962073 + 003930451 + WIPO, Kedge Safety Systems / Kedge Holding B.V., classes 6/9/19.
+Verdict: legal path blocked in class 42 (US) and 9/35/42 (EU). Cut.
+
+## Method note
+TMview renders through Firecrawl (JS app) and aggregates USPTO, EUIPO, WIPO and national EU offices, so one search URL per name gives US + EU + international coverage. Justia trademarks returns HTTP 403 to WebFetch.
+
+## Zanat benchmark, Serbian office (TMview, office filter RS, 2026-09-28)
+Source: https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zanat&offices=RS
+- ZANAT ЗАНАТ, Serbia IPORS, registered, class 5, GALENIKA FITOFARMACIJA a.d. (not 9/35/42).
+- 10 other Serbian marks contain "zanatsk-" (craft beer, bakeries, a school): the word is widely used descriptively ("zanatsko pivo" = craft beer), which weakens distinctiveness in Serbia.
+- Confirms TMview covers the Serbian office (IPORS), so one TMview query covers USPTO + EUIPO + WIPO + Serbia.
+
+## TMview spot checks on seed names (2026-09-28, Firecrawl render, "contains" search)
+- **Bract** (211 hits containing "bract", mostly Bracton/Bractwo/Bracco): no exact BRACT mark in 9/35/42 in the first 30 hits. Nearby: BRACTEL (USPTO, filed, 9/42, Cheshire Capital LLC), BRACTON (UKIPO, filed, 9/42, Bracton Ltd), "bract brewing programme" (WIPO/NZ, 42/32/44, New Zealand Hops, brewing). Moderate-low risk. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=bract
+- **Spelter** (5 hits): Spelter EUIPO + UKIPO class 8 (ANV Knives s.r.o.), SPELTER India class 5, Spelter Tours (Uganda) 39, Spelters DE expired. Nothing live in 9/35/42. Clean. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=spelter
+- **Kremen** (219 hits): KREMEN Serbia IPORS registered class 33 (rakija, ZPMR "MATALJ"); KREMEN Russia filed 17/42; KREMEN logo India 35. No US/EUIPO mark in 9/42 seen. Moderate. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=kremen
+- **Touchmark** (65 hits): TOUCHMARK USPTO registered class 42 (TOUCHMARK, LLC) and UKIPO registered 36/42 (Touch mark Technologies). Blocked in class 42. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=touchmark
+- **Strake** (89 hits): STRAKE, STRAKE TECHNOLOGIES INC., registered class 42 at EUIPO, UKIPO and CIPO; Strake (DPMA) registered 35/41/42. Blocked. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=strake
+- **Crispin** (490 hits): CRISPIN WIPO registered class 9 (Bae, Yu Hwan); CRISPIN Korea class 9 (Crispin Systems); CRISPIN Molson Coors class 33 (Crispin Hard Cider, US brand) in WIPO/Canada/Croatia; Mexico class 35. Plus Crispin Porter + Bogusky (ad agency). Crowded, moderate-high risk. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=crispin
+- **Carvel** (552 hits): CARVEL, Carvel Corporation / Carvel Franchisor SPV LLC (US ice-cream chain) registered in classes 30/35/42/43 in many offices. Famous-mark risk. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=carvel
+- **Brunel** (1,217 hits): BRUNEL, Brunel International N.V. (engineering staffing) registered 35/41/42 at UKIPO, BOIP and others. Blocked in 35/42. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=brunel
+- **Ricasso** (32 hits): Ricasso, Swiss Re Europe S.A., registered 9/42 at EUIPO, UKIPO, DPMA; RICASSO USPTO filed 9/35/42 (THISISDISCO VENTURES LLC). Blocked. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=ricasso
+- **Aurifex** (9 hits): jewellery marks in class 14 (ES, IT, DE, FR), AURIFEX FINANCIAL GROUP (USPTO, 36), India 35 (beauty), USPTO class 9 ended. Nothing live in 9/42; one Indian 35 mark. Low-moderate. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=aurifex
+- **Keelson** (14 hits): KEELSON France INPI filed 9/42 (Centralweb SAS), Korea filed 9, KEELSON PARTNERS USPTO 36, KEELSON MD USPTO filed 42. Moderate-high. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=keelson
+
+## Web conflict spot checks (WebSearch, 2026-09-28)
+- **Spelter**: no software company named Spelter found. Nearest: Spelt (https://www.joinspelt.com/), an AI "company builder" platform; different word but close in sound and in the AI/product space. Low-moderate.
+- **Bract**: no software company named Bract found; Bractlet (https://www.crunchbase.com/organization/bractlet) is a building-energy analytics company in Austin. Low.
+- **Aurifex**: Aurifex Innovations, a software development company (https://www.aurifexinnovations.com/, https://www.linkedin.com/company/aurifex-innovations), plus Aurifex Inc. (https://aurifexinc.com/) and Aurifex Labs Inc. (https://aurifexlabs.com/). Same industry. Cut.
+- **Zamak** (138 hits): marks are mostly class 6 (zinc alloy: Grillo DE registered, India, Mexico) and class 5 (BASF, MX). ZAMAK Poland 7/8/9/37/42 ended/expired; Turkey filed 35 (applicant restricted). No live USPTO/EUIPO mark in 9/42 seen. Low-moderate. Note: zamak is the generic name of a die-cast zinc alloy (pot metal, cheap costume jewellery in ES/PT), which undercuts the "high value" story. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zamak
+- **Carrack** (19 hits): CARRACK USPTO registered class 9 (CARRACK INTERNATIONAL INC). Also carrack.app (AI accounting software, per generator). Moderate-high. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=carrack
+- **Sprag** (301 hits, mostly SPRAGA drinks / SPRAGUE electric): no live SPRAG mark in 9/35/42 (Korea class 7 ended). Low TM risk; real-world confusion risk with Sprig (sprig.com, product-research SaaS). https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=sprag
+- **Dunstan** (87 hits): DUNSTAN, Dunstan Baby Pty Ltd, registered 9/16/41 at EUIPO, UKIPO, IP Australia; Dunstan AB registered 36 at EUIPO and Sweden. Moderate-high in class 9 (EU). https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=dunstan
+- **Facta** (653 hits): FACTA registered 35/42 at UKIPO (Facta partnership), 35/42 at BOIP (Service Groep Nederland), 7/9/11/35/37/42 at DPMA (Facta Holding B.V.), 9/35/41/42 in Australia. Blocked. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=facta
+- **Gowan** (337 hits): GOWAN, Gowan Company LLC (US agrochemicals), registered class 5 at USPTO, UKIPO, WIPO and ~15 offices; GOWAN Ireland registered incl. class 35 (Gowan Group, motor retail). Not software, but a large US company owns the word; moderate. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=gowan
+- **Ilmari** (157 hits): Ilmari, Finland PRH registered 41/42 (Tietoverkko FI Oy); ILMARI Russia registered incl. 35/42; ILMARI DPMA filed 35/43. Plus Ilmarinen, Finland's large pension insurer. Moderate-high in the EU. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=ilmari
+- **Kothar** (205 hits): KOTHAR USPTO registered class 9 (Simply Tiger Ltd) and class 7 (KOTHAR, INC). US class-9 conflict. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=kothar
+- **Handsel** (40 hits): HANDSEL USPTO filed class 35 (Fieldbook Studio, LLC); Russia 18/35; India 37. Live US class-35 filing, plus Hansel/Handsel spelling split. Moderate. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=handsel
+- **Aldus** (461 hits): ALDUS UKIPO registered 9/19/20/35/37 (Jörg Trenkelbach), Estonia 16/42; many expired Aldus Corporation (PageMaker, later Adobe) marks. Moderate-high. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=aldus
+- **Makar** (5,377 hits containing "makar"): MAKAR EUIPO registered 33/35/40 and UKIPO 33 (Glasgow Distillery Company - Makar gin); MAKAR China class 9. Moderate (EU class 35 + a known gin brand). https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=makar
+- **Avow** (243 hits): Avow UKIPO registered 9/35/42 (Daniel John Foley); AVOW EUIPO + WIPO registered 35 (Avow GmbH). Blocked. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=avow
+- **Exergy** (237 hits): EXERGY EUIPO registered 11/42 (Exergy Holding AB) and 7/9/37/39/40/42 (Exergy International S.r.l.). Blocked. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=exergy
+- **Propria** (1,077 hits): PROPRIA EUIPO + UKIPO registered class 42 (PROPRIA S.r.l.), Italy 42, France incl. 42, Canada filed 42/45. Blocked. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=propria
+- **Moxon** (328 hits): moxon UKIPO registered class 42 (Moxon Architects Ltd); MOXON UK 16/20/21 (MOXON Ltd); MOXON class 5 in many offices (Abbott/Viatris - moxonidine brand); clothing marks (Gamma Beta Holdings). No USPTO or EUIPO mark in 9/35/42 in the first 30 hits. Moderate-low (UK class 42 is architecture). https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=moxon
+- **Brontes** (166 hits): BRONTES USPTO class 42 ended (Brontes Ltd); EUIPO/WIPO class 1/5 (CAF Karyon); Turkey filed incl. 35/42 (restricted). No live USPTO/EUIPO 9/42. Low-moderate. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=brontes
+- **Credne** (22 hits, all "Crednet"): no CREDNE mark anywhere. Clean. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=credne
+- **Moxon** (web): no software company named Moxon found; nearest is Moxion (film dailies platform, now Autodesk Flow Capture) and the defunct battery startup Moxion Power. https://www.owler.com/company/moxionlimited
+- **Kremen** (web): no software company named Kremen; the surname belongs to Gary Kremen, Match.com founder (https://en.wikipedia.org/wiki/Gary_Kremen), a living, well-known US internet entrepreneur. Minor association risk in the US.
+- **Sprag** (web): no company named Sprag found; Sprig (https://techcrunch.com/2022/08/02/sprig-raises-30m-to-help-companies-gauge-users-reactions-to-products/), a well-funded US product-research SaaS, is one letter away. Moderate confusion risk with product teams.
+- **Zamak** (web): Zamak Technologies (https://www.zamakt.com/en, https://techbehemoths.com/company/zamak-technologies), a managed IT and cybersecurity provider in Miami and Rio de Janeiro, since 2011. Same broad industry in the US. Moderate.
+- **Akmon** (196 hits): Akmon EUIPO + UKIPO registered class 9 (AKMON LIMITED); ΑΚΜΩΝ Greece registered incl. 9/35/42; web: Akmon IT & Web Services (https://akmon.xyz/), AKMON S.A. defence electronics. Blocked. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=akmon
+- **Exegi** (20 hits): EXEGI EUIPO + UKIPO registered 6/19/37/42 (VINCI CONSTRUCTION); EXEGI India class 9. Blocked in 42. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=exegi
+- **Staunch** (156 hits): STAUNCH WIPO registered class 9 (Staunch Technology Pty Ltd); UKIPO registered 35 (Dwayne Steven Fortnum) and 11/12/17/35 (Coolair); USPTO registered 3/16/25 (Eva Marie Beale). Moderate-high. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=staunch
+- **Mandrel** (32 hits): MANDREL USPTO filed class 42 (Brian Moench); Turkey 9/35. Live US class-42 filing. Cut. https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=mandrel

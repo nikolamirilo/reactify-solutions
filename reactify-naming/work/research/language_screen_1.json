@@ -1,0 +1,884 @@
+{
+ "Bract": {
+  "en": {
+   "level": "minor",
+   "note": "Botanical term for the leaf below a flower. It has no slang or vulgar meaning, and its rhymes (fact, tract, cracked) are harmless. Likely pronunciation: BRAKT, with only one sensible reading. Likely misspelling: 'Brakt' or 'Bracked', since many hearers don't know the word. The -ct cluster can also blur to 'Brack' on a noisy line."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: not a word. Read as 'brakt', which brings to mind 'brak' (marriage), a neutral echo. HU: no meaning. The -ct ending looks foreign but is not odd."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. It is only distantly near 'Brack'/'Brackware' (rejects) and 'brach' (fallow), and too far off to register. FR: 'bractée' is the botanical term, neutral."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/PT 'bráctea', IT 'brattea' (botanical term, neutral). No slang issues; the 'braga' (knickers) association is too far-fetched to count."
+  }
+ },
+ "Burl": {
+  "en": {
+   "level": "minor",
+   "note": "A knot in wood, related to 'burly'. It calls to mind Burl Ives, the folksy singer. It rhymes with 'hurl' (US/UK slang for vomit) and 'girl', but the mockery risk is only mild. Likely pronunciation: BURL (rhymes with curl), unambiguous. Likely misspelling: 'Berl' or 'Burle' (cf. Milton Berle)."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning; faint echo of 'bure' (barrel), not an issue. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. Austrian 'Burli' means little boy, which is cute rather than negative. FR: 'la burle' is a cold regional wind, neutral."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "Close to 'burla': ES = mockery/trick ('burlar la seguridad' = bypass security), IT = prank, PT = fraud/scam (in Portugal it is the legal name of the crime, Código Penal art. 217). Not vulgar, but a mildly bad association for a software brand."
+  }
+ },
+ "Spelter": {
+  "en": {
+   "level": "minor",
+   "note": "Zinc or a zinc alloy, with no slang meaning. It sounds like shelter, smelter and helter-skelter, and 'spelt' is a grain, all harmless. Likely pronunciation: SPEL-ter, clear. Likely misspelling: 'Spelder' (the US flapped t makes it sound like a d) or 'Speltor'. Some hearers may take it as 'Smelter'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning, reads 'spelter'. HU: read 'shpelter', no meaning. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: dictionaries list 'Spelter' as a zinc term, which is neutral. It is only distantly near 'Spalter' (a political insult meaning divisive person) and 'Spelze' (chaff), a stretch. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No ES/IT/PT meaning. 'Espelta'/'spelta' (spelt grain) is neutral."
+  }
+ },
+ "Wootz": {
+  "en": {
+   "level": "serious",
+   "note": "Historic Indian crucible steel, with no vulgar meaning. By ear it becomes 'woots', the internet and gamer cheer 'woot' (also Woot.com, Amazon's deals site), so it sounds like slang. It also rhymes with 'toots' (mild US slang for a fart). Likely pronunciation: WOOTS, though some will say 'wuts'. Likely misspelling: 'Woots' is very likely, or 'Wutz' / 'Wootes'. Nobody will guess the -tz ending by ear."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: W and tz are not native; read as 'Vuc/Vuts', which has no meaning ('vuk' = wolf is distant). HU: no meaning. The spelling is foreign but the name is clean."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: Germans read it as 'Wutz', a regional word (West/Southwest Germany, Bavaria) for pig or piglet. Duden/DWDS also list it as a mild insult for a dirty child, and it is widely known from the TV show 'Peppa Wutz' (Peppa Pig). It also echoes 'Wut' (rage). The effect is silly rather than vulgar. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. Spanish speakers may find it hard to say (they would likely say 'guts' or 'uts'), but nothing negative."
+  }
+ },
+ "Planish": {
+  "en": {
+   "level": "minor",
+   "note": "A metalworking term meaning to hammer flat, unknown to most people. Said aloud it splits into 'plan-ish', meaning 'sort of a plan' or vaguely planned. That's an easy jab at a software or project company. Likely pronunciation: PLAN-ish, though a few will say PLAY-nish. Likely misspelling: 'Plannish'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'Planiš'. Not a word; it echoes 'plan'/'planina' (mountain), and 'planuti' (flare up) is distant. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean ('planieren' means to level). FR: clean. 'Planer' (slang for being high) is only a distant stretch."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. Faintly echoes 'plan' and 'planchar' (to iron), both neutral."
+  }
+ },
+ "Auctor": {
+  "en": {
+   "level": "serious",
+   "note": "Latin for author or originator, with no slang meaning. It reads like 'auction', giving AWK-ter, which starts with 'awk' (slang for awkward) and sits close to 'actor' and 'doctor'. Readers will split between AWK-tor and OWK-tor. Likely misspelling: 'Octor', 'Aukter' or 'Actor'. A hearer almost never writes 'Auc-'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read as the Latin form of 'autor' (author), neutral and scholarly. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: evokes 'Autor' or 'Auktion', both neutral. FR: evokes 'auteur' or 'acteur', both neutral."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Latin. Reads as ES/PT 'autor' and IT 'autore' (author), which is positive or neutral."
+  }
+ },
+ "Fecit": {
+  "en": {
+   "level": "serious",
+   "note": "Latin for '(he/she) made it', found on artworks. Both likely readings are bad. FAY-kit sounds exactly like 'fake it', and FEE-sit or FESS-it puts 'fec-' (as in feces, fecal) up front. There is no single obvious pronunciation: FEE-sit, FESS-it and FAY-kit are all common. Likely misspelling: 'Fesit', 'Feesit' or 'Fakit'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'fetsit', no meaning. The fec-/feces echo is an English/Latin concern, not a Serbian one ('fekalije' uses k). HU: read 'fetsit'; 'fecseg' (chatter) is only a stretch."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "The Latin artist's signature ('made it') is known to educated readers. DE: the 'Fec-' start can recall 'Fäzes'/'fäkal' (feces), which is mild. FR: the 'fé-' reading recalls 'fèces'/'fécal', and distantly 'fesses' (buttocks). This is mild teasing risk, not vulgar."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "Borderline. IT 'feci' (/ˈfɛtʃi/) is the common clinical word for feces ('esame delle feci' = stool test), and Italian-Latin 'fecit' is /ˈfɛtʃit/, almost the same sound. 'Feci' is also a common Italian verb form ('I did/made'), and 'fecit' is a known art signature, which softens it. ES 'fecal', PT 'fezes'. Not vulgar, but it gives people an easy joke."
+  }
+ },
+ "Factum": {
+  "en": {
+   "level": "minor",
+   "note": "Latin for deed or fact; in Canada it is also a legal brief. Both meanings are neutral to positive. Jokers could twist a fast 'FAK-tum' into 'f*ck 'em', but the vowel is different, so that's a stretch. UK 'tum' (belly) doesn't matter. Likely pronunciation: FAK-tum, clear. Likely misspelling: 'Faktum' or 'Facktum'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: 'faktum' is a known bookish word for 'fact / accomplished fact'. Neutral to positive. HU: 'faktum' = fact (dated). Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'Faktum' (fact) is formal and neutral. FR: 'factum' is an old term for a legal brief or polemical pamphlet. That sense is literary and rare, only a slight stretch toward negative."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Latin. ES 'de facto', IT 'fatto', PT 'facto'/'fato' (fact). Neutral."
+  }
+ },
+ "Hexis": {
+  "en": {
+   "level": "minor",
+   "note": "Greek for state or disposition (Aristotle), and obscure. 'Hex' means a curse or witch's spell, though for tech people it also means hexadecimal, which is neutral. It can also be heard as 'hex is...'. Likely pronunciation: HEK-sis, clear. Likely misspelling: 'Hexes' or 'Hexus', because the second vowel is unstressed."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'heksis', no meaning. Any 'seksi' echo is a far stretch. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: it strongly evokes 'Hexe'/'Hexi' (witch, little witch). 'Hexe' is also a mild insult for an unpleasant woman. FR: a philosophical term (Aristotle, Bourdieu's 'hexis corporelle'), neutral."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. Faintly echoes ES 'éxito' (success), which is positive."
+  }
+ },
+ "Propria": {
+  "en": {
+   "level": "minor",
+   "note": "Latin for 'one's own', as in 'in propria persona'. It has no negative meaning, only a faint legal feel. Likely pronunciation: PRO-pree-uh, clear. Likely misspelling: 'Proprea', 'Propriah' or 'Propia'. It can also be confused with 'Proprio'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning; resembles Latin legal terms. 'propast' (ruin) is not a real echo. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: evokes 'proper' (neat, tidy), which is positive. FR: evokes 'propre' (clean, own), which is positive."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "IT 'propria' and PT 'própria' mean 'own' (fem.), a very common generic word. In ES it looks like a misspelling of 'propia'. Not negative, just not very distinctive."
+  }
+ },
+ "Proprium": {
+  "en": {
+   "level": "minor",
+   "note": "Latin and theological term for an essential property, with no slang meaning. It rhymes with 'opium' and sounds faintly clinical or pharmaceutical. Likely pronunciation: PRO-pree-um. Likely misspelling: 'Propreum' or 'Propium'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning; reads as a Latin or theological term. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: a theological/liturgical term ('Proprium' of the Mass), neutral. FR: same liturgical sense, neutral."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Latin. No negative meaning in ES/IT/PT."
+  }
+ },
+ "Gilda": {
+  "en": {
+   "level": "minor",
+   "note": "A woman's first name, known from the Rita Hayworth film 'Gilda' and from Gilda Radner. No slang meaning. It sits near 'gilded' and 'gilt', which is fine, and near 'guilder'. Likely pronunciation: GIL-duh with a hard g; a minority will say JIL-da. Likely misspelling: 'Guilda'. UK hearers, who drop the final r, may write 'Gilder'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: 'gilda' is a known loanword for 'guild', neutral (film 'Gilda' also known). HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: a female name that echoes 'Gilde' (guild), which is positive. FR: a female name, associated with the 1946 Rita Hayworth film. Clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "A female name, the Rita Hayworth film, a famous Basque pintxo (skewer) in Spain, and the Argentine cumbia singer Gilda, who is venerated as a folk saint. It is near Rioplatense/Chilean slang 'gil' (fool, easy mark) and 'gilada' (foolishness, 'the suckers'), and Spain's 'gilí', though 'Gilda' itself is not slang. Mildly awkward."
+  }
+ },
+ "Crispin": {
+  "en": {
+   "level": "minor",
+   "note": "A man's name, known from St Crispin (patron saint of shoemakers), the St Crispin's Day speech in Henry V, and Crispin Glover. It suggests 'crisp', which is positive. No slang. Likely pronunciation: KRIS-pin, clear. Likely misspelling: 'Crispen' or 'Krispin'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning. A native reading of C could give 'Tsrispin', but English-literate users say 'Krispin'. HU: same C = ts issue only. Clean semantically."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: clean. FR: 'Crispin' is the classic comedy valet, described in dictionaries as sly, greedy and a swindler ('fourbe, escroc'). It is also a near-homophone of 'crispant' (irritating, nerve-racking). Mild."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "ES 'Crispín' is an old-fashioned saint's name and the classic scheming servant in Benavente's play 'Los intereses creados'. It evokes 'crispar/crispado' (to irritate, on edge). IT 'Crispino' is also a comic cobbler figure. Comic, not vulgar."
+  }
+ },
+ "Dunstan": {
+  "en": {
+   "level": "minor",
+   "note": "St Dunstan, patron saint of smiths, and an English name. 'Dun' means dull brown, or to press someone for a debt, but that link is faint. No slang. Likely pronunciation: DUN-stun, clear. Likely misspelling: 'Dunston', about a 50/50 chance ('Dunston Checks In' is a 1996 film about an orangutan)."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "HU: 'dunszt' = steam, jar of preserves, and the common idiom '(halvány) dunsztja sincs' = 'hasn't a clue'. Mild, slightly comic echo. SR/HR: 'dinstati' (to stew) and a regional 'dunst' are faint. Otherwise a known English saint's name."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: reads as 'Dunst' (haze, vapour). Idioms: 'keinen (blassen) Dunst haben' means to have no clue, and 'blauen Dunst vormachen' means to deceive or throw smoke. It also recalls 'Dunstabzugshaube' (kitchen extractor hood). Mild. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT."
+  }
+ },
+ "Kothar": {
+  "en": {
+   "level": "serious",
+   "note": "Ugaritic craftsman god, and also the barbarian hero of Gardner Fox's 1960s pulp novels. No slang. It fails the radio test on pronunciation: KOH-thar, KOH-tar and KOTH-ar all come up. Some readings sound close to 'Qatar'. Likely misspelling: 'Cothar', 'Kotar' or 'Kothur'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read as 'Kotar', a neutral Croatian word for administrative district (Gorski kotar, Ravni kotari). Not negative. HU: no meaning ('kotorászik' = rummage is distant)."
+  },
+  "de_fr": {
+   "level": "serious",
+   "note": "DE: 'Kot' is the standard word for excrement or feces (Hundekot = dog poo, Kothaufen = pile of poo), and 'Kothar' reads as 'Kot-Haar' (poop hair). The first syllable is prominent and unmistakable. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT. The link to PT 'cota' (Portugal slang for an older person) is a distant stretch."
+  }
+ },
+ "Ilmari": {
+  "en": {
+   "level": "serious",
+   "note": "Finnish smith god and a Finnish man's name. No negative meaning, though it can be parsed as 'ill Mary' or 'ill marry'. The stress is unclear: US readers say il-MAR-ee, while the Finnish is IL-mah-ree. Likely misspelling: 'Ilmary', 'Elmari', 'Ilmarie' or 'Il Mari'. It fails the radio test."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning. Could be parsed as colloquial 'il' mari' ('or does he care'), which is a far stretch. HU: 'Ilma' is a female name; clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean ('Ilm' is a river). FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/PT. In IT it reads like the ungrammatical 'il mari' ('the seas'), which is harmless. The ES 'mari' clipping is too far-fetched to count."
+  }
+ },
+ "Kaveh": {
+  "en": {
+   "level": "serious",
+   "note": "Persian name of the blacksmith hero in the Shahnameh. No English slang, but it sounds like 'kava' (a sedative drink) and 'cave' (to give in). Readers will split between KAH-vay, kuh-VAY and KAY-vuh. Likely misspelling: 'Kava', 'Kavay' or 'Cavay'. Nobody will guess the silent final h by ear."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "HR/BS: 'kava' = coffee, and 'kave' is its genitive ('šalica kave'). HU: 'kávé' = coffee, a near-exact sound match. Neutral and even friendly, but many will hear 'coffee' (like 'Java'). SR uses 'kafa', so the echo is weaker there."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: the German reading 'Kah-feh' sounds like 'Kaffee' (coffee), which is neutral or even pleasant. FR: only a distant stretch to dated argot 'cave' (sucker, mug), because 'Kaveh' does not naturally read as 'cave'."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No negative meaning. Close to ES 'cabe' (it fits) and 'cavé' (I dug), both neutral."
+  }
+ },
+ "Aldus": {
+  "en": {
+   "level": "minor",
+   "note": "Named after Aldus Manutius, the Renaissance printer, and Aldus Corp., maker of PageMaker, which Adobe bought. The associations are positive, but it is already a known software name. No slang. Likely pronunciation: AL-dus or ALL-dus. Likely misspelling: 'Aldous' (as in Huxley) or 'Aldis'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning. HU: echoes 'áldás' (blessing), which is positive. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: only a faint echo of 'Aldi' (discount supermarket), a stretch. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Recalls Aldus Manutius (IT 'Aldo Manuzio'), the famous printer, which is positive. Nothing negative in ES/PT."
+  }
+ },
+ "Svarog": {
+  "en": {
+   "level": "serious",
+   "note": "Slavic smith and sky god, with no English slang. Outside this lens: some Slavic neo-pagan and nationalist groups use Svarog imagery, so check the EU and Serbian lens. The 'Sv-' opening isn't English, and the stress is unclear: US readers say SVAR-og or suh-VAR-og, with the second syllable reduced. Likely misspelling: 'Swarog', 'Svarag' or 'Zvarog'."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: instantly recognised as the Slavic pagan god of fire and smithing. Fitting, but it carries a neo-pagan / Rodnovery vibe that some circles pair with nationalist symbolism, and it is a common band and bar name. Not vulgar, just a loaded mythological name. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. FR: clean. 'Rogue' (haughty) is too distant to count."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Slavic god. No meaning in ES/IT/PT. Spanish speakers would add an initial 'e' ('Esvarog'), but nothing negative."
+  }
+ },
+ "Caxton": {
+  "en": {
+   "level": "minor",
+   "note": "William Caxton, the first English printer. The name is well known and dignified in the UK. No slang; the link to UK 'cack' (excrement) is only a distant stretch. Likely pronunciation: KAX-tun, clear. Likely misspelling: 'Kaxton' or 'Caxten'."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS and HU: read 'Kakston'. The 'kak-' opening faintly recalls baby-talk 'kaka/kaki' (poop) in both languages. This is a stretch that most will not notice, and it has no other meaning."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: the German reading 'KAKS-ton' can be teased as 'kack-/kackst' (from kacken, to shit). 'Abkacken' is also common slang for software crashing. It is not an obvious reading, but it is a teasing risk. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. In PT the 'x' may be read as 'sh', which is harmless."
+  }
+ },
+ "Prova": {
+  "en": {
+   "level": "minor",
+   "note": "Italian for proof or test, with no English slang. It is close to 'Provo', the Utah city, and in UK and Irish usage 'Provos' means Provisional IRA members. That link is faint. Likely pronunciation: PRO-vuh. Likely misspelling: 'Provah'. UK hearers, who drop the final r, may write 'Prover'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "HR coastal dialect: 'prova' = bow of a ship (Italianism), neutral. Close to SR/HR 'proba' and Italian 'prova' (test). HU: close to 'próba' (test). Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: evokes 'Probe' (test), neutral. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "IT and PT 'prova' (also Catalan) = test/proof/rehearsal/exam. Neutral to positive, but a generic word. In ES it looks close to 'prueba'."
+  }
+ },
+ "Trova": {
+  "en": {
+   "level": "minor",
+   "note": "Italian for 'finds'. It suggests 'treasure trove', which is positive, and 'trover' is a legal term. No slang. Likely pronunciation: TRO-vuh. Likely misspelling: 'Trover' or 'Trovah'."
+  },
+  "sr_hu": {
+   "level": "serious",
+   "note": "SR/HR/BS: the root 'trov-' is instantly read as 'trovati' (to poison), 'otrov' (poison), 'trovanje' (poisoning). The standard present form is 'truje', but 'Trova' still clearly signals poison. Not vulgar, but a strong negative first reaction; the slang 'ne truj' also means 'stop pestering / talking nonsense'. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean ('Trottel' is too distant). FR: evokes 'trouver' (to find), which is positive."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES 'trova' = ballad or verse, strongly tied to Cuban 'nueva trova' music. IT 'trova' = 'finds'. PT 'trova' = folk verse. All positive or neutral."
+  }
+ },
+ "Avow": {
+  "en": {
+   "level": "minor",
+   "note": "English verb meaning to declare openly. Common phrases like 'avowed enemy' and 'avowed racist' give it a faint negative tint. Likely pronunciation: uh-VOW, clear. By ear it is often heard as two words, 'a vow', which also confuses search and domain lookups. Likely misspelling: 'A-Vow' or 'Avowe'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'Avov', no meaning. The Bosnian 'avaz' (voice, the Dnevni avaz newspaper) is a distant echo. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. FR: evokes 'aveu' (confession or avowal), which carries a slight guilt nuance but is mostly neutral. A stretch."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "PT speakers will likely hear 'avô'/'avó' (grandfather/grandmother), and IT 'avo' means ancestor (literary). Mildly silly, not vulgar. No ES issue."
+  }
+ },
+ "Zamak": {
+  "en": {
+   "level": "serious",
+   "note": "A zinc alloy, also officially spelled 'Zamac'. No English slang. It invites 'Za-Mac' confusion with Apple's Mac, and a rhyme with 'smack' (heroin) is a stretch. Likely pronunciation: ZAM-ak, though some say ZAY-mak or zuh-MAK. Likely misspelling: 'Zamac' or 'Zamack'; -ak is not the default English spelling."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: an everyday word for 'castle', neutral to positive. Its inflected form 'zamka' coincides with 'zamka' = trap/snare. Will read as a plain common noun. HU: no meaning ('zamat' = flavour is a distant echo)."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: this is the standard German-origin alloy acronym (Zink-Aluminium-Magnesium-Kupfer). It is neutral and technical, but generic in the trade. FR: the same alloy term, neutral."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "Zamak is the standard ES/PT trade name for the cheap zinc die-cast alloy (IT 'zama'), known in hardware and jewelry as the cheap substitute for brass. This only matters to people who know the term. No slang issue."
+  }
+ },
+ "Alnico": {
+  "en": {
+   "level": "minor",
+   "note": "A magnet alloy that guitarists know from pickups. No slang. It may be heard as a person's name, 'Al Nico'. UK 'nick' (to steal, or jail) is a faint link. Likely pronunciation: AL-ni-koh. Likely misspelling: 'Alneco' or 'Alnicko'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning. HU: read 'alnitso'; any echo of 'álnok' (treacherous) is a distant stretch. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: a magnet alloy term, neutral. FR: neutral."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. It is also a known magnet alloy, which is neutral."
+  }
+ },
+ "Kremen": {
+  "en": {
+   "level": "serious",
+   "note": "Serbian for flint, with no English meaning. It looks and sounds like 'Kremlin', which is awkward for US and EU clients. UK listeners may also recall 'Captain Kremmen', Kenny Everett's comedy space hero. Read as KREE-men, it rhymes with 'semen' and can be heard as 'creamin'', which invites crude jokes. Pronunciation is split between KREM-en and KREE-men. Likely misspelling: 'Cremen', 'Kremmen' or 'Kreman'."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: an everyday word for 'flint'. 'Čovek od kremena' (a man of flint) means a solid, tough character, which is positive. Also recalls 'Kremenko', the Serbian/Croatian name for the Flintstones. Neutral to positive but reads as a plain word. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: close to 'Kreml' (Kremlin), a mild political association. It also recalls 'Creme/Krem' (cream), which is neutral. FR: similar faint echo of 'Kremlin' and 'crème'. Mild."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "In ES, 'Kremen' (/ˈkɾemen/) is one vowel away from 'crimen' (crime). It also faintly echoes 'cremar' (to cremate) and 'crema'. A mild near-sound, not an obvious joke."
+  }
+ },
+ "Esnaf": {
+  "en": {
+   "level": "serious",
+   "note": "Serbian and Turkish for a craft guild. In British English it sounds like 'ess-NAFF', close to 'is naff'. 'Naff' means tacky or rubbish, and 'naff off' is a polite stand-in for f*** off. The 'snaf' core also suggests SNAFU (military slang: 'Situation Normal: All F***ed Up'), which is bad for a software company. Likely pronunciation: ES-naf. Likely misspelling: 'Esnaff' or 'Isnaf'."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: a Turkish loan for 'craftsmen's guild', old-fashioned. The adjective 'esnafski' can be pejorative (petty, parochial, small-shopkeeper mentality). Reads as a quaint common noun. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. FR: clean."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "A stretch: one vowel away from ES 'esnifar'/'esnif' (to snort drugs or glue, Spain slang). Otherwise no ES/IT/PT meaning."
+  }
+ },
+ "Kalfa": {
+  "en": {
+   "level": "serious",
+   "note": "Serbian and Turkish for journeyman. No English slang. It contains 'calf', and UK readers may say KAHL-fuh. Likely US pronunciation: KAL-fuh. Likely misspelling: 'Calfa', 'Kalpha' or 'Calpha', because both K/C and F/PH are open. It fails the radio test."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: 'kalfa' = journeyman (the rank between 'šegrt' apprentice and 'majstor' master), an old-fashioned Turkish loan. It implies 'not yet a master', a slightly unflattering brand message. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: only a distant echo of 'Kalfaktor' (menial helper, prison trusty, slightly pejorative) and 'kalfatern' (to caulk), a stretch. FR: 'calfater' (to caulk), neutral."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. Loosely resembles 'calva' (bald head / bald, fem.) and 'califa', but that is distant (f vs v)."
+  }
+ },
+ "Makar": {
+  "en": {
+   "level": "serious",
+   "note": "Scots for poet or maker; Scotland's national poet is 'the Makar'. Positive, with no slang. Pronunciation is split between MAK-ar, MAY-kar and muh-KAR, and MAY-kar sounds exactly like 'maker'. Likely misspelling: 'Maker' is very likely, or 'Macker'."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: 'makar' is a very common particle meaning 'at least / even if' ('makar malo' = at least a little). As a brand it sounds like settling for less and is odd as a name. Also a Russian first name. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'makaber' (macabre) is only visually similar, a stretch. FR: 'maquereau' (mackerel, slang for pimp) is too far in sound to count."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "Mild. ES 'macar(se)' is a rare, regional word for fruit starting to rot from bruising ('maca' = bruise on fruit). The first sounds also match Spain slang 'macarra' (flashy thug, tacky). No IT/PT issue."
+  }
+ },
+ "Obraz": {
+  "en": {
+   "level": "serious",
+   "note": "Serbian for face or honour. In English, 'oh-bras' (underwear) invites mild jokes. Outside this lens but critical: 'Obraz' was a Serbian far-right clerical-nationalist organisation banned by Serbia's Constitutional Court in 2012, so check the Serbian lens. Likely pronunciation: OH-brahz or OB-raz. Likely misspelling: 'Obras', because English usually spells a final z sound with -s."
+  },
+  "sr_hu": {
+   "level": "serious",
+   "note": "SR/HR/BS: 'obraz' = cheek, and figuratively honour or 'face' ('bezobrazan' = shameless). As a proper name it points directly to 'Obraz', the Serbian far-right clerical-nationalist organisation banned by the Constitutional Court in 2012. That is a strong political liability. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Evokes ES/PT 'obra(s)' (work(s), 'obra maestra') and ES 'abrazo' (hug), both positive. No IT issue."
+  }
+ },
+ "Bakar": {
+  "en": {
+   "level": "serious",
+   "note": "Serbian for copper, with no English slang. Pronunciation is split between BAH-kar, BAK-ar and BAY-kar, and in US speech it collapses into 'backer' or 'baker'. Likely misspelling: 'Baker' or 'Backer', very likely. It fails the radio test."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: an everyday word for 'copper'. Also Bakar, an industrial town in Croatia. Neutral but reads as a plain noun. HU: no meaning ('baka' = infantry grunt is a stretch)."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. 'Backe' (cheek) is too distant. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No negative meaning in ES/IT/PT. Faintly recalls 'bacará' (baccarat)."
+  }
+ },
+ "Kalvis": {
+  "en": {
+   "level": "serious",
+   "note": "Latvian smith figure, with no slang. It sits near 'calves' (legs, or young cows) and 'Calvin', and it rhymes with 'Elvis', which invites mild jokes. Likely pronunciation: KAL-vis. Likely misspelling: 'Calvis', 'Calvus' or 'Kalvus', because both K/C and -is/-us are open."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning; faint echo of 'Kalvin' (Calvin). HU: faint echo of 'Kálvin'. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. FR: 'calvitie' (baldness) and 'calvaire' (ordeal) are distant stretches only."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "Evokes 'calvo/calvicie' (ES), 'calvizie' (IT) and 'calvície' (PT), all meaning bald/baldness. Mildly silly, not vulgar."
+  }
+ },
+ "Fleuron": {
+  "en": {
+   "level": "serious",
+   "note": "A typographic flower ornament. No slang, and the French 'fleur' is pleasant. Pronunciation is split between FLUR-on, FLOOR-on and FLER-on. Likely misspelling: 'Fluron', 'Flouron' or 'Flurin'. A hearer will almost never guess the 'eu'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning; the 'eu' would be read 'e-u' ('Fle-uron'). Awkward to spell but clean. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: a typographic loanword, neutral. FR: 'fleuron' means floral ornament and, figuratively, a flagship or crown jewel ('le fleuron de'). Very positive."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES 'florón' (ornamental rosette, figuratively a proud achievement), PT 'florão'. Positive."
+  }
+ },
+ "Pilcrow": {
+  "en": {
+   "level": "minor",
+   "note": "The paragraph mark (¶), known to designers and typographers. No slang; the 'pill' + 'crow' split is only faint. Likely pronunciation: PIL-kroh, clear. Likely misspelling: 'Pillcrow' or 'Pilcro'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning. English reading 'pilkrou'. A native reading 'Pil-krov' ('krov' = roof) is harmless. HU: no meaning. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean ('Pilz' and 'Pille' are irrelevant). FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. The 'pil-' prefix does not trigger anything real."
+  }
+ },
+ "Argosy": {
+  "en": {
+   "level": "minor",
+   "note": "A richly laden merchant ship, and the name of a pulp magazine. No slang. In the US it also recalls Argosy University, a for-profit chain that collapsed abruptly in 2019 amid a federal student-aid scandal. Likely pronunciation: AR-guh-see. Likely misspelling: 'Argosey' or 'Argocy'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'Argosi'; recalls the Greek city Argos. Neutral. HU: 'argó' = slang/argot, a harmless echo."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'arg' (bad, nasty) is a distant stretch, and most readers would think of Argo or the Argonauts. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT."
+  }
+ },
+ "Sinter": {
+  "en": {
+   "level": "minor",
+   "note": "Metallurgy term for fusing powder with heat. No slang, but it starts with 'sin'. In casual US speech the t drops ('winter' sounds like 'winner'), so it can sound like 'sinner'. In the Southern US, where pin and pen sound alike, it can sound like 'center'. Likely pronunciation: SIN-ter. Likely misspelling: 'Cinter', 'Sinner' or 'Center'."
+  },
+  "sr_hu": {
+   "level": "serious",
+   "note": "HU: 's' is read 'sh', so 'Sinter' sounds like 'sintér' = knacker/dog-catcher (figuratively a butcher-like dentist or surgeon). This is a direct, well-known negative word. SR/HR/BS: near-homophone of 'šinter' (dog-catcher, knacker, a symbol of cruelty to strays), and when diacritics are dropped online it is spelled exactly 'sinter'. The technical term 'sinterovanje' exists, but the dog-catcher reading dominates."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'Sinter'/'sintern' is the standard technical term, neutral. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Technical term (ES 'sinterizar', IT 'sinterizzare'). In Brazil, SINTER is also a government land-registry system acronym. Nothing negative."
+  }
+ },
+ "Ducat": {
+  "en": {
+   "level": "serious",
+   "note": "An old gold coin; 'ducats' is dated slang for money or tickets, which is harmless. The US reading DUK-it sounds like 'duck it', the famous autocorrect of 'f*ck it', which makes an easy joke. Pronunciation is split between DUK-it and DOO-kat / DYOO-kat. Likely misspelling: 'Ducket', 'Duckett' or 'Duckit', very likely."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: 'dukat' = ducat, a gold coin used in folk jewellery, which is positive. In Croatia it also recalls 'Dukat', the largest dairy brand (milk, yogurt), a brand association. The native reading 'Dutsat' is slightly off. HU: 'dukát' = ducat, positive."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'Dukat' is a gold coin and neutral. The vulgar-ish idiom 'Dukatenscheißer' (\"I'm not made of money\") needs the compound, so this is a distant stretch. FR: neutral coin."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/PT 'ducado', IT 'ducato' (ducat/duchy), which is positive. IT speakers may think of the Fiat Ducato van or Ducati, both harmless."
+  }
+ },
+ "Freehold": {
+  "en": {
+   "level": "none",
+   "note": "Outright ownership of property, a UK real-estate term; also Freehold, NJ. No slang. The only caveat is that 'free' may suggest a no-cost product. Likely pronunciation: FREE-hold, unambiguous. Likely misspelling: only 'Free Hold' as two words. Passes the radio test."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning; English legal term. HU: no meaning. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'hold' means lovely or gracious (archaic), which is positive. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "An English word. When Spanish speakers say it, it may sound faintly like 'frijol' (bean), but that is a distant stretch."
+  }
+ },
+ "Heft": {
+  "en": {
+   "level": "minor",
+   "note": "Weight or substance, mostly positive. But 'hefty' also means overweight, as in 'hefty price', and it rhymes with 'theft', so pricing jokes are possible. Hefty is also a trash-bag brand. Likely pronunciation: HEFT, unambiguous. Likely misspelling: 'Hefft', and that's rare. Passes the radio test."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: evokes the colloquial 'heftati' (to staple / tack together) and 'heftalica' (stapler), a German loan. Mundane office-supply echo, not negative. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'Heft' means exercise book or booklet, which is mundane. It also means handle or hilt, as in 'das Heft in der Hand haben' (to be in control), which is positive. 'Heftchen' can mean pulp or porn magazine, but only in the diminutive, so this is a stretch. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. In ES the silent H gives 'eft'."
+  }
+ },
+ "Allod": {
+  "en": {
+   "level": "serious",
+   "note": "A feudal term for land held outright, with no slang. Pronunciation is split between AL-od and uh-LOD. uh-LOD sounds like 'a lot', and its famous misspelling 'alot', and is close to 'allowed' and 'aloud'. Likely misspelling: 'Alod', 'Alot' or 'Allad'. It fails the radio test."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning; 'alodijum' is an obscure historical term. The 'Alo' (phone hello) opening is harmless. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: a historical legal term (allodial land), neutral. FR: it could faintly sound like 'allô' or 'à l'eau' ('tomber à l'eau' means to fall through), a distant stretch."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES 'alodio', IT 'allodio', PT 'alódio' (freehold estate, legal term). Neutral. Spanish may read the 'll' as 'y' ('ayod'), which is harmless."
+  }
+ },
+ "Bosk": {
+  "en": {
+   "level": "minor",
+   "note": "A poetic word for a small wood or thicket, with no slang. It sits near 'bosh' (UK: nonsense), Bosch, 'busk', and Bossk from Star Wars. Likely US pronunciation: BAHSK. Likely misspelling: 'Bosque' or 'Bossk'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning. Faint echoes of 'bos' (barefoot) and the name 'Boško', both harmless. HU: read 'boshk', no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. 'Bosch' is a brand proximity, not a meaning. FR: clean. It is not close enough to 'boche' (anti-German slur) to register."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Evokes ES/PT 'bosque' and IT 'bosco' (forest), which is positive. A link to ES/PT 'bosta' (dung, vulgar 'crap' in Brazil) would be a distant stretch."
+  }
+ },
+ "Proba": {
+  "en": {
+   "level": "minor",
+   "note": "Latin and Serbian for test or rehearsal, with no English slang. It can be parsed as 'probe-a' or linked to 'probate'; alien 'probe' jokes are a stretch. Likely pronunciation: PRO-buh, with some saying PROB-uh. Likely misspelling: 'Probah'. UK hearers, who drop the final r, may write 'Prober'."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: an everyday word for 'test / trial / rehearsal' ('proba, proba, jedan-dva' = mic check). Reads as 'beta / trial', which undercuts a finished product. HU: 'próba' = test/trial, same effect. Not negative, just generic."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: evokes 'Probe' (test), neutral. FR: 'les probas' is student slang for probability classes, neutral."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "IT/PT 'proba' = honest/upright (fem. of 'probo'), which is positive. Rioplatense ES '¡probá!' = 'try it!', also positive."
+  }
+ },
+ "Cermet": {
+  "en": {
+   "level": "serious",
+   "note": "A ceramic-metal composite, with no slang. It rhymes with 'Kermit' (the Frog), which invites mild jokes, and can sound like 'sir met'. Likely pronunciation: SUR-met, though a few will say KER-met. Likely misspelling: 'Sermet' or 'Surmet', very likely, since nobody guesses the soft C by ear."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'Tsermet', no meaning. 'Cer' (Turkey oak; Cer mountain, WWI battle) is neutral; 'čemer' (misery) is a stretch. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: a technical term (ceramic-metal), neutral. FR: technical, and a faint echo of 'serment' (oath), which is positive."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Technical term (ceramic-metal composite). No meaning in ES/IT/PT."
+  }
+ },
+ "Handsel": {
+  "en": {
+   "level": "serious",
+   "note": "Scots for a good-luck gift or first payment, and obscure. It can be split as 'hand-sell'. Likely pronunciation: HAN-sel, with a silent d. Likely misspelling: 'Hansel' is very likely, which recalls Hansel and Gretel and the Zoolander line 'Hansel... so hot right now'. Fails the radio test."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: no meaning. Any echo of 'handžar' (large dagger) is a distant stretch. HU: read 'handshel', no meaning."
+  },
+  "de_fr": {
+   "level": "minor",
+   "note": "DE: reads close to 'Hänsel' or 'Hansel'. Duden lists 'Hansel' as regional derogatory for an insignificant, foolish person ('irgendein Hansel' = some nobody). It also recalls 'hänseln' (to tease or mock). Mild. FR: evokes 'Hansel et Gretel', neutral."
+  },
+  "es_it": {
+   "level": "minor",
+   "note": "In ES the H is silent and the d tends to drop, so it reads as 'Hansel' (Hansel y Gretel). IT 'Hänsel e Gretel' gives the same effect. A mildly childish fairy-tale association."
+  }
+ },
+ "Vested": {
+  "en": {
+   "level": "minor",
+   "note": "Means holding secured rights, as in stock vesting, which is positive for startups. But 'vested interest' suggests self-interest or bias, and in the UK a 'vest' is an undershirt. Likely pronunciation: VEST-ed, unambiguous. Likely misspelling: 'Vestid', and that's rare. Passes the radio test, but it is a very common business word, so it is weakly distinctive."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "HU: an English-style 'VEST-ed' closely matches 'veszted' = 'you lose it' (and recalls 'vesztes' = loser). A negative near-homophone, though mild; a spelling-based Hungarian reading ('veshted') weakens it. SR/HR/BS: 'vest' = news, 'vešt' = skilled, both positive."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean ('Veste' is an old word for fortress). FR: it contains 'veste' (jacket). The idioms 'prendre une veste' (to be rebuffed or fail) and 'retourner sa veste' (to be a turncoat) need the verb, so this is a stretch."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "Faintly echoes ES/PT 'vestido' (dress) and IT 'vestito' (suit). Neutral."
+  }
+ },
+ "Gowan": {
+  "en": {
+   "level": "serious",
+   "note": "Scots for daisy, and a surname; in Glasgow speech 'gowan!' means 'go on!'. No vulgar meaning. Pronunciation is split between GOW-un and GOH-un. Likely misspelling: 'Gowen', 'Gowin' or 'Goan'. Fails the radio test."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: many will read it as 'Govan', and the 'gov-' root instantly recalls 'govno' (shit) and 'govedo' (cattle; slang for oaf). Not an actual word, but it invites jokes. English-literate readers saying 'Gauan' avoid it. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. Its resemblance to 'guano' (bird dung) is a distant stretch."
+  }
+ },
+ "Exergy": {
+  "en": {
+   "level": "minor",
+   "note": "A thermodynamics term for the useful work available. It rhymes with 'energy' and with the corporate buzzword 'synergy', which invites jargon jokes. It is also close to Exegy, an existing US market-data technology company. Likely pronunciation: EK-ser-jee, with some saying eg-ZER-jee. Likely misspelling: 'Exergie' or 'Exurgy'."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: 'egzergija' is a neutral thermodynamics term. HU: no meaning. Clean."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'Exergie' is a standard thermodynamics term, neutral. FR: 'exergie', neutral."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "ES/PT/IT 'exergía'/'exergia', a thermodynamics term. Neutral."
+  }
+ },
+ "Carnot": {
+  "en": {
+   "level": "serious",
+   "note": "The Carnot cycle, after Sadi Carnot, with no slang. US readers say CAR-not ('car not'), while the French is kar-NOH. Heard as KAR-noh, it recalls the UK idiom 'Fred Karno's army', meaning a chaotic, incompetent outfit. Likely misspelling: 'Carno' or 'Karno', since nobody will guess the silent t."
+  },
+  "sr_hu": {
+   "level": "none",
+   "note": "SR/HR/BS: read 'Karno' (English/French) or 'Tsarnot'. 'Car' = tsar and is slang for 'legend/the man' ('ti si car'), which is positive. No negative meaning. HU: no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: clean. FR: a famous surname (Sadi Carnot, the physicist and the president), neutral or positive. It is not close to 'carne' (slang for a nasty person)."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "French physicist (the Carnot cycle). It faintly echoes ES 'carne'/'carnet' and BR 'carnê' (installment booklet), all neutral."
+  }
+ },
+ "Stet": {
+  "en": {
+   "level": "none",
+   "note": "A proofreader's mark meaning 'let it stand', with no slang or vulgar meaning. Likely pronunciation: STET (rhymes with 'set'), unambiguous. Likely misspelling: 'Stett', and that's rare. On a bad line it can be confused with 'stat'. Passes the radio test."
+  },
+  "sr_hu": {
+   "level": "minor",
+   "note": "SR/HR/BS: evokes 'šteta' (damage / loss / 'what a pity'), especially since Serbs often write it 'steta' without diacritics. Only a near-homophone, not a word. HU: read 'shtet', no meaning."
+  },
+  "de_fr": {
+   "level": "none",
+   "note": "DE: 'stet' is literary for constant or steady ('steter Tropfen höhlt den Stein'), which is positive. FR: clean."
+  },
+  "es_it": {
+   "level": "none",
+   "note": "No meaning in ES/IT/PT. Spanish speakers would say 'Estet'. IT 'stette' (past tense of 'stare', to stay) is neutral."
+  }
+ }
+}
