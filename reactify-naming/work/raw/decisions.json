@@ -121,7 +121,7 @@
  },
  "Prova": {
   "status": "cut",
-  "reason": "Domain: only prova.build free of 11 TLDs; close to the explored Prow"
+  "reason": "Domain: only prova.build free of 10 domains checked; close to the explored Prow"
  },
  "Obra": {
   "status": "cut",

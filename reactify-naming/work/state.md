@@ -14,5 +14,5 @@ Folder: `reactify-naming/` in the repo (copied unchanged from the uploaded zip).
 | 8 | Conflicts, trademarks, 10 finalists | done | ~75 TMview + web checks (research/early_findings.md); DD of all taken finalist domains (research/dd_finalists.json) found live namesakes for Bract, Moxon, Remek, Yeoman, Sprag -> legal 1 |
 | 9 | Rank, top 3, prices | done | top 3 = Spelter 3.75, Cobden 3.70, Ramsden 3.60 (also the 3 highest totals); prices in raw/prices.json; Koshava ~4.35 still ahead (ESTIMATED) |
 | 10 | Independent review | done | 3 rounds, 10 names, fresh-context reviewers; PASS: Spelter, Cobden, Ramsden; FAIL: Bract, Moxon, Remek, Pritchel, Saxton, Exerga, Bosk; all in review.md |
-| 11 | Report (Serbian) | done | REPORT.md assembled from report_parts/ by tools/build_report.py; sections 1-3, 6, 7 updated for review outcomes |
+| 11 | Report (Serbian) | done | REPORT.md assembled from report_parts/ by tools/build_report.py; 29.09: benchmark reviews (Koshava FAIL on KOCHAVA, Zanat PASS) and a verified fact-audit (38 fixes) applied |
 | 12 | Close out (verify.py) | done | python3 verify.py: DONE CHECK: ALL PASS, no warnings (2026-09-28) |

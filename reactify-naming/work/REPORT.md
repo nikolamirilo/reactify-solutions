@@ -1,14 +1,14 @@
 # Novo ime za Reactify Solutions: izveštaj
 
-**Datum:** 28.09.2026 · **Za:** Nikola (osnivač) · **Izvor zadatka:** `BRIEF.md` v2.1 · **Radni fajlovi:** `work/`
+**Datum:** 28.09.2026, dopunjeno 29.09.2026 · **Za:** Nikola (osnivač) · **Izvor zadatka:** `BRIEF.md` v2.1 · **Radni fajlovi:** `work/`
 
-**Ukratko.** Pregledali smo **244 nova kandidata** u šest teritorija (A–F). Svi su prošli datiranu Vercel proveru domena, a preživeli i jezički pregled na 7 jezika i proveru žigova u TMview (USPTO, EUIPO, WIPO, Srbija). Deset finalista dobilo je proveru svih 7 osnovnih TLD-ova plus `.so`, RDAP/WHOIS i posetu sajtovima zauzetih domena. Zatim je **10 imena prošlo nezavisnu recenziju u svežem kontekstu**, a samo tri su je preživela: **Spelter, Cobden i Ramsden** (odeljak 1). Najvažnije lekcije: tri „najlepša” imena (Bract, Moxon, Remek) već koriste druge softverske, IT ili AI firme, uglavnom registrovane 2025–2026, a recenzija je oborila još četiri (Pritchel, Saxton, Exerga, Bosk) zbog pisanja po sluhu ili žigova koji se ne vide u prvoj pretrazi. Iskreno poređenje sa **Koshavom** i **Zanatom** je u odeljku 1.5: **Koshava je i dalje najjača po rubrici**.
+**Ukratko.** Pregledali smo **244 nova kandidata** u šest teritorija (A–F). Svi su prošli datiranu Vercel proveru domena, a preživeli i jezički pregled na 7 jezika i proveru žigova u TMview (USPTO, EUIPO, WIPO, Srbija). Deset finalista dobilo je proveru svih 7 osnovnih TLD-ova plus `.so`, RDAP/WHOIS i posetu sajtovima zauzetih domena. Zatim je **10 imena prošlo nezavisnu recenziju u svežem kontekstu**, a samo tri su je preživela: **Spelter, Cobden i Ramsden** (odeljak 1). Najvažnije lekcije: tri „najlepša” imena (Bract, Moxon, Remek) već koriste druge softverske, IT ili AI firme, uglavnom registrovane 2025–2026, a recenzija je oborila još četiri (Pritchel, Saxton, Exerga, Bosk) zbog pisanja po sluhu ili žigova koji se ne vide u prvoj pretrazi. Iskreno poređenje sa **Koshavom** i **Zanatom**, koji su 29.09.2026. prošli istu nezavisnu recenziju, je u odeljku 1.5: **Zanat je prošao i izjednačen je sa Spelterom (3,75)**, a Koshava je numerički najviša (3,80), ali je **pala** zbog živog američkog žiga **KOCHAVA** u klasi 42.
 
-**Oznake:** **VERIFIED** = provereno alatom ili izvorom (sa datumom i linkom); **ESTIMATED** = procena ili stručno mišljenje bez direktnog izvora. Sve provere domena su Vercel pozivi od 28.09.2026: 41 poziv za dostupnost sa 1.257 upita i 5 poziva za cene (`work/raw/vercel_calls.jsonl`, `work/raw/prices.json`). U `work/domains.json` ima 1.205 upisa, uključujući 54 RDAP/WHOIS potvrde. Nijedan alat za kupovinu ili transfer domena nije pozvan.
+**Oznake:** **VERIFIED** = provereno alatom ili izvorom (sa datumom i linkom); **ESTIMATED** = procena ili stručno mišljenje bez direktnog izvora. Sve provere domena su Vercel pozivi: 41 poziv za dostupnost sa 1.257 upita i 5 poziva za cene od 28.09.2026, i jedna ponovna provera 13 glavnih domena top 3 i Koshave od 29.09.2026 (poziv `recheck-01`), u kojoj su svi i dalje bili slobodni (`work/raw/vercel_calls.jsonl`, `work/raw/prices.json`). U `work/domains.json` ima 1.205 upisa, uključujući 54 RDAP/WHOIS potvrde. Nijedan alat za kupovinu ili transfer domena nije pozvan.
 
 ## 1. Top 3 preporuka
 
-Top 3 su tri najviša ponderisana zbira iz `work/finalists.csv` (rubrika 2.11: 25/20/20/15/10/10). Sva tri su prošla **nezavisnu proveru u svežem kontekstu** (`work/review.md`): recenzent je dobio samo ime, domen i odeljak 2.9 i tražio razlog da ime padne. Od 10 recenziranih imena prošla su samo ova tri (odeljak 1.4). Cene domena su iz Vercel `get_bulk_price`, 28.09.2026 (**VERIFIED**).
+Top 3 su tri najviša ponderisana zbira iz `work/finalists.csv` (rubrika 2.11: 25/20/20/15/10/10). Sva tri su prošla **nezavisnu proveru u svežem kontekstu** (`work/review.md`): recenzent je dobio ime, predloženi domen, kratak opis firme i odeljak 2.9, sve provere je ponovio sam i tražio razlog da ime padne. Od 10 recenziranih imena prošla su samo ova tri (odeljak 1.4). Cene domena su iz Vercel `get_bulk_price`, 28.09.2026 (**VERIFIED**).
 
 ### 1.1 Spelter · 3,75 / 5
 
@@ -22,7 +22,7 @@ Top 3 su tri najviša ponderisana zbira iz `work/finalists.csv` (rubrika 2.11: 2
 
 ### 1.2 Cobden · 3,70 / 5
 
-- **Značenje i priča:** T. J. **Cobden**-Sanderson (1840–1922), knjigovezac i štampar, prvi je upotrebio izraz **„Arts and Crafts”** (1887) ([Wikipedia: Arts and Crafts movement](https://en.wikipedia.org/wiki/Arts_and_Crafts_movement), **VERIFIED**). Vodio je Doves Press, a kada je po ugovoru pravo na čuveno slovo Doves Type trebalo da pređe na njegovog partnera, on ga je od 1916. do 1917. bacio u Temzu, oko 170 odlazaka do reke ([Wikipedia: Doves Press](https://en.wikipedia.org/wiki/Doves_Press), **VERIFIED**). To je najradikalnija priča o vlasništvu nad sopstvenim zanatom u celom istraživanju. Prezime nosi i Richard Cobden, zagovornik slobodne trgovine ([Britannica](https://www.britannica.com/biography/Richard-Cobden)).
+- **Značenje i priča:** T. J. **Cobden**-Sanderson (1840–1922), knjigovezac i štampar, prvi je upotrebio izraz **„Arts and Crafts”** (1887) ([Wikipedia: Arts and Crafts movement](https://en.wikipedia.org/wiki/Arts_and_Crafts_movement), **VERIFIED**). Vodio je Doves Press, a pošto je po ugovoru o razlazu pravo na čuveno slovo Doves Type posle njegove smrti trebalo da pređe na partnera Emeryja Walkera, on ga je od 1916. do 1917. bacio u Temzu, oko 170 odlazaka do reke ([Wikipedia: Doves Press](https://en.wikipedia.org/wiki/Doves_Press), **VERIFIED**). To je najradikalnija priča o vlasništvu nad sopstvenim zanatom u celom istraživanju. Prezime nosi i Richard Cobden, zagovornik slobodne trgovine ([Britannica](https://www.britannica.com/biography/Richard-Cobden)).
 - **Zašto odgovara:** zvuči kao ime osobe (kao Brigit), 6 slova, dva tvrda sloga (**K-b-d**), ozbiljan ton za američke i evropske B2B klijente. „Quicktalog by Cobden” i „Cobden Labs” zvuče prirodno.
 - **Izgovor:** KOB-den (/ˈkɒbdən/, [Collins](https://www.collinsdictionary.com/dictionary/english/cobden)). Radio-test: prolazi; moguće, ali ređe pisanje „Cobdon” ili „Cobdin” (**VERIFIED**, recenzija). Na srpskom *kob* znači sudbina ili predznak, što je slab odjek; srpsko tržište nije primarno.
 - **Domeni (VERIFIED, Vercel, 28.09.2026):** **cobden.co** 29,99 / 24,80 USD; cobden.io 14,99 / 46; cobden.studio 21,99 / 36; cobdenlabs.com 11,25 / 11,25; slobodni su i cobden.ai i cobden.dev. Zauzeti: cobden.com (registrovan 2000, GoDaddy, poslednji Wayback snimak iz jula 2025. je stranica brokera „na prodaju”, sada HTTP 503; [RDAP](https://rdap.verisign.com/com/v1/domain/cobden.com)); cobden.app (lični homelab, šablon stranica); cobden.so.
@@ -46,8 +46,8 @@ Recenzent je bio namerno strog: tražio je razlog da ime padne, i našao ga je z
 
 | Ime | Krug | Zašto je palo |
 |---|---|---|
-| **Bract** | 1 | Već postoje [The Bract](https://www.thebract.com/) (agencija za tech osnivače), [bract.ai](https://bract.ai) (AI konsalting) i [Bract Studio](https://www.appbrain.com/dev/Bract+Studio/) (17 aplikacija); jedini slobodan domen bract.co je premium, 1.232 USD godišnje. |
-| **Moxon** | 1 | [Moxon AI Group Ltd](https://find-and-update.company-information.service.gov.uk/company/16800432) (London, 2025) radi isti model: sopstveni AI proizvodi plus konsalting; B2B SaaS na moxon.com/moxon.io; MOXO, Inc. ima dva živa žiga u SAD u kl. 9/42 ([TMview](https://www.tmdn.org/tmview/#/tmview/detail/US500000097187331)). |
+| **Bract** | 1 | Već postoje [The Bract](https://www.thebract.com/) (agencija za tech osnivače), [bract.ai](https://bract.ai) (AI konsalting) i [Bract Studio](https://www.appbrain.com/dev/Bract+Studio/) (17 aplikacija); jedini slobodan domen među osnovnim TLD-ovima, bract.co, je premium, 1.232 USD godišnje (od proverenih slobodni su još samo bract.build i bract.works). |
+| **Moxon** | 1 | [Moxon AI Group Ltd](https://find-and-update.company-information.service.gov.uk/company/16800432) (London, 2025) radi isti model: sopstveni AI proizvodi plus konsalting; B2B SaaS istog imena na moxon.io (moxon.com od 1995. drži drugi vlasnik); MOXO, Inc. ima dva živa žiga u SAD u kl. 9/42 ([TMview](https://www.tmdn.org/tmview/#/tmview/detail/US500000097187331)). |
 | **Remek** | 1 | Ne prolazi radio-test (Englezi čitaju „REM-ick”/„ree-MEK” i pišu Remick); na mađarskom *remek* znači „odličan”, pa EUIPO može odbiti žig kao hvalospev; uz to remek.com (IT konsalting od 1997) i remek.dev (AI alat, 2026). |
 | **Pritchel** | 2 | Ne prolazi drugu polovinu radio-testa: nema jednog očiglednog pisanja (Pritchel, Pritchell, Prichel); čak i kovači pišu „Prichel” i „pritchet”. Žig je bio potpuno čist (0 rezultata). |
 | **Saxton** | 2 | Živ EU žig **BYRON SAXTON** (EUTM 019023717, WWE) u klasi 9 izričito pokriva softver ([EUIPO](https://euipo.europa.eu/eSearch/#details/trademarks/019023717)); prezime; više IT i veb firmi tog imena. |
@@ -58,21 +58,22 @@ Zato ova imena ne preporučujemo, uključujući Bract, Moxon i Remek, koja su pr
 
 ### 1.5 Iskreno poređenje sa Koshavom i Zanatom
 
-Ista rubrika, iste provere. Za Koshavu i Zanat ocene su naša procena (**ESTIMATED**), a domeni i žigovi su provereni 28.09.2026 (**VERIFIED**: Vercel poziv `benchmark-01`, TMview). Koshava i Zanat nisu prošli kroz nezavisnu recenziju kao tri nova imena, jer su favoriti osnivača, a ne novi kandidati.
+Ista rubrika i, od 29.09.2026, ista nezavisna recenzija u svežem kontekstu (**VERIFIED**, `work/review_benchmark_koshava.md`, `work/review_benchmark_zanat.md`). Ocene za Koshavu i Zanat su naša procena (**ESTIMATED**), ali su posle recenzije korigovane po istom pravilu kao za nova imena: pravna ocena 2 za živ, gotovo isti žig u istoj klasi (kao Exerga), izgovor 3 za radio-test koji je „tesan” ili „slab” (kao Ramsden).
 
-| Kriterijum (težina) | Spelter | Cobden | Ramsden | **Koshava** | **Zanat** |
+| Kriterijum (težina) | Spelter | Cobden | Ramsden | Koshava | Zanat |
 |---|---|---|---|---|---|
 | Cool i zvuk (25%) | 3 | 3 | 3 | **5** | 4 |
 | Priča i svrha (20%) | 4 | 4 | 4 | 4 | **5** |
-| Razlikovnost i žig (20%) | **4** | **4** | **4** | **4** | 3 |
-| Izgovor (15%) | **4** | 3 | 3 | **4** | **4** |
+| Razlikovnost i žig (20%) | **4** | **4** | **4** | 2 | 3 |
+| Izgovor (15%) | **4** | 3 | 3 | 3 | 3 |
 | Skalabilnost (10%) | 3 | **4** | **4** | **4** | **4** |
 | Domeni (10%) | **5** | **5** | 4 | **5** | 3 |
-| **Ponderisani zbir** | 3,75 | 3,70 | 3,60 | **4,35** | 3,90 |
+| **Ponderisani zbir** | **3,75** | 3,70 | 3,60 | 3,80 | **3,75** |
+| **Nezavisna recenzija** | PASS | PASS | PASS | **FAIL** | PASS |
 
-- **Koshava i dalje pobeđuje.** TMview nema nijednu registrovanu oznaku KOSHAVA (linija magnetometara Wuntronic nije registrovan žig u TMview). Slobodni su koshava.co, .io, .ai, .app, .dev, .studio i koshavalabs.com, a koshava.com je registrovan 2019. i nema sajt ([RDAP](https://rdap.verisign.com/com/v1/domain/koshava.com)). Jedina slabost je što priča govori o mestu i snazi, a ne o pravljenju i vlasništvu.
-- **Zanat je iznad novog top 3 po priči i zvuku, a ispod po pravnoj čistoći i domenima.** U Srbiji je „zanat/zanatski” opšta reč u desetinama oznaka, a zanat.co, .io, .app, .dev i .com su zauzeti.
-- **Zaključak:** nijedno novo ime ne pobeđuje Koshavu. Najbolja nova imena su **Spelter** (prava engleska reč, blizanac Braze, najbolji jeftini domen) i **Cobden** (najjača priča o vlasništvu, najviše slobodnih domena). Ramsden je solidna treća opcija sa istim profilom kao Cobden. Ako Koshava ostaje favorit, preporuka je da se odmah registruju koshava.co i koshava.io i podnese prijava žiga (odeljak 6), a pre toga je vredi provesti kroz istu nezavisnu recenziju.
+- **Koshava je pala na nezavisnoj recenziji.** Živa američka registracija **KOCHAVA** (USPTO reg. 5255177, kl. 42, „SaaS za merenje učinka internet i mobilnih oglasnih kampanja”, u upotrebi od 2011) pripada firmi Kochava Inc., koja ima i KOCHAVA COLLECTIVE (kl. 35/42) i KOCHAVA MARKETERS OPERATING SYSTEM (kl. 42) ([USPTO TSDR](https://tsdr.uspto.gov/statusview/sn87261968), [TMview](https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=kochava), **VERIFIED**, 29.09.2026). Koshava i Kochava se razlikuju u jednom slovu i zvuče gotovo isto, a obe bi bile softver u klasi 42 za američko tržište. Uz to je radio-test slab (Košava, Kosava, Kochava), a u Srbiji ime podseća na TV Košava iz 1990-ih (vlasnica Marija Milošević). Identične oznake KOSHAVA nema, a koshava.co (29,99 / 24,80 USD) i koshava.io su i dalje slobodni (Vercel, 29.09.2026). Po rubrici je i posle korekcije najviša (3,80), ali je ne preporučujemo bez pisanog mišljenja zastupnika za žigove o sličnosti sa KOCHAVA.
+- **Zanat je prošao i izjednačen je sa Spelterom (3,75).** TMview nema živu oznaku ZANAT u klasama 9/35/42 kod USPTO, EUIPO, WIPO i u Srbiji; najbliža je ZANATECH (USPTO, kl. 9, hardverski dodaci). U Srbiji je „zanat/zanatski” opšta reč u 11 oznaka (ZANAT u kl. 5 i deset „zanatsk-” oznaka). Ime je gusto popunjeno: [ZanatWorks](https://www.zanatworks.com/) je studio za softverske proizvode „AI-enhanced” od oktobra 2025, postoji mala kosovska agencija Zanat Digital Agency i poznati bosanski brend nameštaja [Zanat](https://zanat.org/). zanat.com je prodat 2025, a zanat.dev i zanat.app registrovani su 2026, pa neko možda upravo lansira „Zanat” proizvod. Slobodni su zanat.studio (21,99 / 36 USD) i zanatlabs.com (11,25 USD) (**VERIFIED**, `work/review_benchmark_zanat.md`).
+- **Zaključak:** favorit osnivača i dalje drži vrh. **Zanat je izjednačen sa Spelterom** kao najbolje ocenjeno ime koje je prošlo nezavisnu recenziju, a Koshava je numerički najviša, ali nije prošla. Izbor između Zanata i Speltera je odluka osnivača: Zanat nosi jaču i ličniju priču i zanatski ponos, ali ima slabije domene i istoimeni studio ZanatWorks u istom poslu; Spelter je prava engleska reč (izričit zahtev iz 2.5), blizanac Braze, sa čistim imenskim prostorom i jeftinim spelter.io. Cobden (najjača priča o vlasništvu, najviše slobodnih domena) i Ramsden su pouzdane rezerve. Za Koshavu važi odeljak 6.4.
 
 ## 2. Top 10 finalista
 
@@ -83,13 +84,13 @@ Ocene po kriterijumima su u `work/finalists.csv`, a zbir računa `verify.py`. Do
 | 1 | **Spelter** | A | legura cinka i mesing za tvrdo lemljenje: metal koji spaja (blizanac Braze) | SPEL-ter | spelter.io 14,99/46 · spelter.app 9,99/15 · spelter.dev 9,99/13 · spelter.studio 21,99/36 | spelter.com = nemački geodeta; Spelt (AI) sličan zvuk; žig čist u 9/35/42 | EN: moguće „Spelder”; ostalo čisto | **PASS** (2. krug) | **3,75** |
 | 2 | **Cobden** | C | T. J. Cobden-Sanderson: skovao „Arts and Crafts” (1887), bacio Doves Type u Temzu da ne bi prešao na partnera | KOB-den | cobden.co 29,99/24,80 · cobden.io 14,99/46 · cobden.studio 21,99/36 · cobdenlabs.com 11,25 · .ai/.dev slobodni | TMview 18 zapisa, nijedan u 9/35/42; nema softverske firme; cobden.com kod brokera | SR *kob* (sudbina), slab odjek; „Cobdon” retko | **PASS** (3. krug) | **3,70** |
 | 3 | **Ramsden** | C | Jesse Ramsden: mašina za deljenje skala (1777) i teodolit za prvi veliki premer Britanije | REMZ-den | ramsden.io 14,99/46 · ramsden.app 9,99/15 · ramsden.studio 21,99/36 · ramsdenlabs.com 11,25 | Harry Ramsden's (riba i pomfrit), Ramsdens (zalagaonica); nijedan žig u 9/35/42 za softver | EN: „-don/-dan” moguće | **PASS** (3. krug) | **3,60** |
-| 4 | **Pritchel** | A | kovački probojac za rupe na potkovici: korak koji stvar čini upotrebljivom | PRIČ-el | pritchel.co 29,99/24,80 · pritchel.io 14,99/46 · pritchel.app 9,99/15 · .ai/.dev/.studio slobodni | TMview 0 rezultata; pritchel.com u mreži domena | **ne prolazi radio-test** (Pritchell/Prichel); BY „Pritsche” (vulgarno, regionalno) | FAIL (2. krug) | 3,45 |
+| 4 | **Pritchel** | A | kovački probojac za rupe na potkovici: korak koji stvar čini upotrebljivom | PRIČ-el | pritchel.co 29,99/24,80 · pritchel.io 14,99/46 · pritchel.app 9,99/15 · .ai/.dev/.studio slobodni | TMview 0 rezultata; pritchel.com u mreži domena | **ne prolazi radio-test** (Pritchell/Prichel); DE (bavarski dijalekt) „Pritsche” (vulgarno, regionalno) | FAIL (2. krug) | 3,45 |
 | 5 | **Bract** | A | brakteja: list koji drži i ističe cvet (tihi holding); Br- + -act | BREKT | bract.co premium 1.232/1.232 · bract.build 30/30 · bract.works 7,99/32 | **The Bract (agencija), bract.ai, Bract Studio, bract.studio**; BRACTEL (USPTO prijava 9/42) | čisto; „Brakt” | FAIL (1. krug) | 3,40 |
 | 6 | **Moxon** | C | Joseph Moxon, štampar i graditelj globusa; „Mechanick Exercises” (1677–1684), prvi detaljan priručnik za štampare, uz kovački i stolarski zanat | MOK-son | moxon.studio 21,99/36 · moxon.app 9,99/15 · moxon.dev 9,99/13 · moxonlabs.com 11,25 | **Moxon AI Group (London, isti model); moxon.io B2B SaaS; MOXO žigovi u SAD kl. 9/42** | EN „Moxen”; ES „moxón” (daleko) | FAIL (1. krug) | 3,40 |
 | 7 | **Remek** | F | mađ. *remek* = remek-delo, majstorski rad (i ispitni rad kalfe u cehu); srp. *remek-delo* | RE-mek | remek.io 14,99/46 · remek.app 9,99/15 · remeklabs.com 11,25/11,25 | **remek.com (IT konsalting od 1997), remek.dev (AI alat, 2026)**, Remek! Trading Systems; REMEK JELO žig u Srbiji | **ne prolazi radio-test** („REM-ick/Remick”); HU „odličan” = hvalospev | FAIL (1. krug) | 3,30 |
 | 8 | **Yeoman** | A | slobodni seljak koji poseduje i obrađuje svoju zemlju; „yeoman's work” | JOU-men | yeoman.co premium 616/616 · yeoman.studio 21,99/36 | **Yeoman, poznati open-source alat (yeoman.io, od 2012)**; yeoman.ai marketplace | čisto | nije recenziran (pravna ocena 1) | 3,25 |
 | 9 | **Exerga** | D | ex- + grč. *ergon*: eksergija, deo energije koji može da obavi koristan rad; termin je skovao Zoran Rant 1956. | ek-SER-ga | exerga.co 29,99/24,80 · exerga.io 14,99/46 · exerga.app 9,99/15 · exerga.com na prodaju 1.422 | **ENERGA (Orlen) EU žigovi kl. 35/42**; EXERGY žigovi; EXERGAME | nejasan akcenat; ES rima sa „verga” | FAIL (3. krug) | 3,20 |
-| 10 | **Saxton** | C | Christopher Saxton je sam napravio prvi nacionalni atlas (1574–1579) | SEKS-ton | saxton.studio 21,99/36 · saxton.app 9,99/15 · saxton.dev 9,99/13 · saxton.io na prodaju 2.950 | **BYRON SAXTON (WWE) EU žig kl. 9 za softver**; Saxton IT Services, Saxton Consulting | EN: „Saxon/Sexton” | FAIL (2. krug) | 3,10 |
+| 10 | **Saxton** | C | Christopher Saxton je premerio i nacrtao sve okruge Engleske i Velsa za prvi nacionalni atlas (1574–1579) | SEKS-ton | saxton.studio 21,99/36 · saxton.app 9,99/15 · saxton.dev 9,99/13 · saxton.io na prodaju 2.950 | **BYRON SAXTON (WWE) EU žig kl. 9 za softver**; Saxton IT Services, Saxton Consulting | EN: „Saxon/Sexton” | FAIL (2. krug) | 3,10 |
 
 **Napomena o rangu:** posle provere sajtova pravna ocena za Remek, Bract, Moxon i Yeoman je 1, jer već postoji istoimena firma ili softverski proizvod na istom tržištu. Posle nezavisne recenzije ocene su spuštene za Pritchel (izgovor 2), Remek (izgovor 2), Saxton i Exerga (pravna 2). Bosk (pao na recenziji, 2,90) i Sprag (pravna 1, 2,95) ispali su iz deset finalista i zamenjeni sa Cobden i Ramsden. Top 3 su ujedno i tri najviša zbira. Za `.so`: Vercel ga podržava, ali su sve `.so` provere vratile `available: false`. Za većinu tih imena RDAP i WHOIS ne pokazuju registraciju, pa je `.so` preko Vercel-a u praksi nedostupan (rezervisan ili premium kod registra) (**VERIFIED**, 28.09.2026).
 
@@ -97,15 +98,15 @@ Ocene po kriterijumima su u `work/finalists.csv`, a zbir računa `verify.py`. Do
 
 ## 3. Akronimi
 
-Osnivač je izričito tražio akronime koji zvuče kao prava reč. Pravilo koje smo primenili: reč mora da bude dobra i bez akronima, a raspis je skriveni sloj. Dva generatora (E1 i E2) predložila su 28 imena; ovo je 10 najjačih, sa ishodom provera (**VERIFIED**: Vercel, TMview i jezički pregled, 28.09.2026).
+Osnivač je izričito tražio akronime koji zvuče kao prava reč. Pravilo koje smo primenili: reč mora da bude dobra i bez akronima, a raspis je skriveni sloj. Dva generatora (E1 i E2) predložila su 22 imena, a uz akronime sa naše liste i iz zamenskog kruga longlista ima 34 imena u teritoriji E; ovo je 10 najjačih, sa ishodom provera (**VERIFIED**: Vercel, TMview i jezički pregled, 28.09.2026).
 
 | Akronim | Raspis (skriveni sloj) | Značenje reči | Ishod |
 |---|---|---|---|
-| **Bosk** | **B**uild · **O**wn · **S**hip · **K**eep | staroengleski „mali gaj”; Šekspirove „bosky acres” = zemlja koju poseduješ i neguješ | bio je finalista (2,90), ali je **pao na nezavisnoj proveri**: ranija živa američka prijava BOSKI (99926179, kl. 9/42, softver za AI agente) u upotrebi na [boski.com](https://www.boski.com); bosk.build 30 USD je jedini normalan domen |
+| **Bosk** | **B**uild · **O**wn · **S**hip · **K**eep | srednjoengleski „mali gaj”; Šekspirove „bosky acres” = zemlja koju poseduješ i neguješ | bio je finalista (2,90), ali je **pao na nezavisnoj proveri**: ranija živa američka prijava BOSKI (99926179, kl. 9/42, softver za AI agente) u upotrebi na [boski.com](https://www.boski.com); slobodni po normalnoj ceni su bosk.build (30 USD), bosk.company (3,99 USD prve godine) i boskhq.com (11,25 USD) |
 | **Obris** | **O**wn · **B**uild · **R**elease · **I**terate · **S**cale | skraćeno od lat. *obrussa*, proba zlata vatrom | odbačeno: radio-test (Orbis/Obriss, rima sa „hubris”); srp. „obrisati” = izbrisati |
 | **Briso** | **B**uild · **R**efine · **I**terate · **S**hip · **O**wn | kovanica od *brio* i *brisa* | odbačeno: srp. razgovorno „briso” = brisao; radio-test (Brizo) |
 | **Dobra** | **D**efine · **O**wn · **B**uild · **R**elease · **A**dapt | srp. „dobra” = dobra (imovina) i „dobra” (pridev) | zadržano, ali ne u top 10: slobodan je samo dobra.build; DOBRA u USPTO klasi 33 |
-| **Prova** | **P**roduct · **R**esponsibility · **O**wnership · **V**alue · **A**ccountability | ital./port. „dokaz, proba” | odbačeno: slobodan samo prova.build (od 11 TLD-ova); blisko istraženom Prow |
+| **Prova** | **P**roduct · **R**esponsibility · **O**wnership · **V**alue · **A**ccountability | ital./port. „dokaz, proba” | odbačeno: slobodan samo prova.build (od 10 proverenih domena); blisko istraženom Prow |
 | **Torc** | **T**rust · **O**wnership · **R**esults · **C**raft | keltski zlatni torkves, remek-delo kovača | odbačeno: nijedan domen slobodan; radio-test (torque) |
 | **Borax** | **B**uild · **O**wn · **R**efine · **A**ccountability · e**X**ecute | boraks, topitelj koji omogućava lemljenje (veza sa Braze) | odbačeno: u američkom engleskom „borax” je i sleng za jeftinu, lošu robu |
 | **Tenax** | **T**ake ownership · **E**ngineer · **N**urture · **A**dapt · e**X**ecute | lat. „istrajan”; Horacijev *tenax propositi* | odbačeno: TENAX registrovan u EUIPO klasi 9 (PRINCE S.r.l.) |
@@ -327,7 +328,7 @@ Ukupno **244 kandidata** (A 83 · B 38 · C 52 · D 14 · E 34 · F 23): 10 fina
 | 205 | **Obra** | E · akronim | odbačeno | Domen: nijedan slobodan na 7 TLD-ova; engleski 'oh bra' |
 | 206 | **Obris** | E · akronim | odbačeno | Radio-test: Orbis/Obriss, rimuje se sa 'hubris'; srpski 'obrisati' = izbrisati |
 | 207 | **Ostro** | E · akronim | odbačeno | Konflikt: Ostro, američka kompanija za zdravstveni softver (prikupila $55M); slobodan samo ostro.build |
-| 208 | **Prova** | E · akronim | odbačeno | Domen: od 11 TLD-ova slobodan samo prova.build; blisko već istraženom imenu Prow |
+| 208 | **Prova** | E · akronim | odbačeno | Domen: od 10 proverenih domena slobodan samo prova.build; blisko već istraženom imenu Prow |
 | 209 | **Rivet** | E · akronim | odbačeno | Konflikt: zagušeno u softveru (Ironclad-ov Rivet AI IDE, rivet.dev, RivetAI) |
 | 210 | **Robur** | E · akronim | odbačeno | Radio-test: u SAD 'ROB-er' zvuči kao 'robber' |
 | 211 | **Sinew** | E · akronim | odbačeno | Domen: nijedan slobodan na .co/.io/.studio/.app; početak „sin-” (greh) |
@@ -384,13 +385,13 @@ Ukupno **244 kandidata** (A 83 · B 38 · C 52 · D 14 · E 34 · F 23): 10 fina
 - **Tip reči:** prava reč ili pravo ime, nikad opis softvera. Piše se kako se izgovara.
 - **Priča:** četiri od šest imena govore o **pravljenju** (lemljenje, kovački zanat, zanat) ili o **završavanju** (*ad acta*). Priča se otkriva tek na pitanje „zašto baš to ime?”.
 - **Registar:** stari koreni (latinski, irski, srpsko-turski, metalurgija) koji deluju ozbiljno, ali i toplo (ime osobe, vetar).
-- **Dve porodice:** jednosložne tvrde reči (Braze, Brame) i dvo-trosložne reči sa otvorenim „a” (Adacta, Koshava, Zanat, Brigit).
+- **Dve porodice:** jednosložne tvrde reči (Braze, Brame) i dvo-trosložne reči (Adacta, Koshava i Zanat sa otvorenim „a”, uz Brigit sa kratkim „i”).
 
-**Zašto Koshava i Zanat rade (i gde je rizik):** Koshava ima najjaču priču o mestu (Beograd, kao Mistral za Francusku) i zvuči egzotično, ali se lako izgovara. Zanat je najkraći i najiskreniji opis onoga što firma radi. Oba imaju i slabe tačke koje su proverene u ovom krugu: KOSHAVA je naziv linije magnetometara firme Wuntronic GmbH, ali TMview ne prikazuje nijednu registrovanu oznaku KOSHAVA (**VERIFIED**, TMview, 28.09.2026), pa je pravni put za Koshavu zapravo dobar. „Zanat/zanatski” je u Srbiji opšta reč koja se pojavljuje u desetinama oznaka (zanatsko pivo, pekare, škole), a oznaka ZANAT je registrovana u klasi 5 (Galenika Fitofarmacija), pa je razlikovnost Zanata u Srbiji slaba (**VERIFIED**, TMview sa filterom za Srbiju, 28.09.2026).
+**Zašto Koshava i Zanat rade (i gde je rizik):** Koshava ima najjaču priču o mestu (Beograd, kao Mistral za Francusku) i zvuči egzotično, ali se lako izgovara. Zanat je najkraći i najiskreniji opis onoga što firma radi. Oba imaju i slabe tačke koje su proverene u ovom krugu: KOSHAVA je naziv linije magnetometara firme Wuntronic GmbH, ali TMview ne prikazuje nijednu registrovanu oznaku KOSHAVA (**VERIFIED**, TMview, 28.09.2026), ali je nezavisna recenzija od 29.09.2026 našla živ američki žig **KOCHAVA** (USPTO reg. 5255177, kl. 42, SaaS firme Kochava Inc.), koji se od Koshave razlikuje u jednom slovu i zvuči gotovo isto, pa pravni put za Koshavu nije čist (**VERIFIED**, `work/review_benchmark_koshava.md`). „Zanat/zanatski” je u Srbiji opšta reč koja se pojavljuje u još deset oznaka (zanatsko pivo, pekare, škola), a oznaka ZANAT je registrovana u klasi 5 (Galenika Fitofarmacija), pa je razlikovnost Zanata u Srbiji slaba (**VERIFIED**, TMview sa filterom za Srbiju, 28.09.2026).
 
 ## 6. Sledeći koraci
 
-### 6.1 Domeni za registraciju (Vercel cene, 28.09.2026, **VERIFIED**)
+### 6.1 Domeni za registraciju (Vercel cene, 28–29.09.2026, **VERIFIED**)
 
 Registraciju obavlja osnivač lično. Tokom istraživanja nijedan alat za kupovinu nije pozvan.
 
@@ -399,18 +400,19 @@ Registraciju obavlja osnivač lično. Tokom istraživanja nijedan alat za kupovi
 | **Spelter** | spelter.io | 14,99 / 46 | spelter.app 9,99/15 · spelter.dev 9,99/13 · spelter.studio 21,99/36 · spelter.ai 160 za 2 god. |
 | **Cobden** | cobden.co | 29,99 / 24,80 | cobden.io 14,99/46 · cobden.studio 21,99/36 · cobdenlabs.com 11,25/11,25 · cobden.ai i cobden.dev slobodni; cobden.com drži broker (upit za cenu) |
 | **Ramsden** | ramsden.io | 14,99 / 46 | ramsden.app 9,99/15 · ramsden.studio 21,99/36 · ramsdenlabs.com 11,25/11,25; ramsden.co je na prodaju |
-| Koshava (ako ostaje favorit) | koshava.co i koshava.io | cene nisu tražene (dostupnost **VERIFIED**) | koshavalabs.com, koshava.studio |
+| Zanat (favorit, izjednačen sa Spelterom) | zanat.studio | 21,99 / 36 | zanatlabs.com 11,25/11,25 · zanat.company 3,99/14,50 · zanat.ai 160 za 2 god.; .com/.io/.co/.dev/.app zauzeti (`work/review_benchmark_zanat.md`) |
+| Koshava (pala na recenziji zbog žiga KOCHAVA) | ne registrovati bez mišljenja zastupnika; slobodni koshava.co i koshava.io | 29,99 / 24,80 i 14,99 / 46 (**VERIFIED**, Vercel, 29.09.2026) | koshava.dev 9,99/13 · koshava.app 9,99/15 (`work/review_benchmark_koshava.md`) |
 
-Saveti: registrovati glavni domen i bar jednu rezervu (.app ili .dev su jeftini), odmah uključiti automatsku obnovu, a pre objave proveriti dostupnost još jednom, jer se kratka imena u 2026. registruju veoma brzo (**VERIFIED**: bract.*, moxon.io, remek.dev i sprag.io registrovani su 2026).
+Saveti: registrovati glavni domen i bar jednu rezervu (.app ili .dev su jeftini), odmah uključiti automatsku obnovu, a pre objave proveriti dostupnost još jednom, jer se kratka imena u 2026. registruju veoma brzo (**VERIFIED**: bract.ai, bract.app, bract.studio, moxon.io, remek.dev i sprag.io registrovani su 2026, a zanat.dev i zanat.app takođe 2026).
 
 ### 6.2 Prijave žiga (Srbija, EU, SAD)
 
 Klase: **9** (softver), **35** (poslovne usluge, konsalting), **42** (razvoj softvera, SaaS, AI usluge).
 
 1. **Pretraga pre prijave (preporuka):** naše TMview pretrage su brze („contains”, prvih 30 rezultata). Pre podnošenja treba naručiti potpunu pretragu dostupnosti kod zastupnika za žigove (**ESTIMATED**: nekoliko stotina EUR).
-2. **Srbija, Zavod za intelektualnu svojinu:** nacionalna prijava za reč (verbalni žig), do 3 klase. Taksa je oko 20.710–23.900 RSD (**ESTIMATED** iz sekundarnih izvora: [attorney.rs](https://attorney.rs/kako-zastititi-zig/), [feruvi.rs](https://feruvi.rs/blog/registracija-ziga)); tačnu tarifu proveriti na sajtu ZIS pre uplate.
+2. **Srbija, Zavod za intelektualnu svojinu:** nacionalna prijava za reč (verbalni žig), do 3 klase. Taksa za podnošenje prijave je oko 20.710–23.900 RSD, a posle odobrenja plaća se još oko 41.370 RSD za priznanje žiga i prvih 10 godina (ukupno oko 62.000–65.000 RSD) (**ESTIMATED** iz sekundarnih izvora: [attorney.rs](https://attorney.rs/kako-zastititi-zig/), [feruvi.rs](https://feruvi.rs/blog/registracija-ziga)); tačnu tarifu proveriti na sajtu ZIS pre uplate.
 3. **EU, EUIPO:** 850 EUR za prvu klasu, 50 EUR za drugu i 150 EUR za treću, ukupno **1.050 EUR** za klase 9/35/42 (**VERIFIED**, [EUIPO takse](https://www.euipo.europa.eu/en/trade-marks/before-applying/fees-payments)).
-4. **SAD, USPTO:** 350 USD po klasi, ukupno **1.050 USD** za 3 klase. Doplata je 200 USD po klasi za slobodan opis robe i 100 USD po klasi za nepotpune podatke (**VERIFIED**, [USPTO 2025 takse](https://www.uspto.gov/trademarks/fees-payment-information/summary-2025-trademark-fee-changes)). Osnova „intent to use” je pogodna dok proizvod pod novim imenom nije u prodaji.
+4. **SAD, USPTO:** 350 USD po klasi, ukupno **1.050 USD** za 3 klase. Doplata je 200 USD po klasi za slobodan opis robe i 100 USD po klasi za nepotpune podatke (**VERIFIED**, [USPTO 2025 takse](https://www.uspto.gov/trademarks/fees-payment-information/summary-2025-trademark-fee-changes)). Osnova „intent to use” je pogodna dok proizvod pod novim imenom nije u prodaji, ali se kasnije plaća i izjava o upotrebi (statement of use), 150 USD po klasi, odnosno 450 USD za 3 klase (**VERIFIED**, ista stranica USPTO).
 5. **Alternativa:** Madridski sistem (WIPO) na osnovu srpske prijave, sa naznakom EU i SAD, uz jednu administraciju (**ESTIMATED**: isplati se ako se planira više zemalja).
 
 ### 6.3 Ručke (best effort, 28.09.2026)
@@ -421,18 +423,19 @@ Klase: **9** (softver), **35** (poslovne usluge, konsalting), **42** (razvoj sof
 | Cobden | zauzet (prazan korisnički nalog); `cobdenhq` i `cobdenlabs` slobodni | `company/cobden` zauzet (arhitektonski biro) | X zauzet (džokej Harry Cobden); Instagram zauzet (mali nalog) |
 | Ramsden | zauzet (pojedinac); `ramsdenlabs` i `ramsdenhq` slobodni | nije proverljivo (blokira preuzimanje) | X i Instagram zauzeti (pojedinci) |
 
-Za sva tri imena predlažemo dosledan oblik ručke, npr. `spelterhq` / `spelter-labs`, `cobdenlabs`, `ramsdenlabs`. Varijante za GitHub su proverene u recenziji; ostale mreže nisu (**ESTIMATED**) i treba ih zauzeti istog dana kad i domen.
+Za sva tri imena predlažemo dosledan oblik ručke, npr. `spelterhq` / `spelter-labs`, `cobdenlabs`, `ramsdenlabs`. Varijante za GitHub (`cobdenhq`, `cobdenlabs`, `ramsdenhq`, `ramsdenlabs`) su proverene u recenziji; varijante za Spelter i ostale mreže nisu (**ESTIMATED**) i treba ih zauzeti istog dana kad i domen.
 
 ### 6.4 Odluka koju samo osnivač može da donese
 
-- **Koshava** je i dalje najjača po rubrici (odeljak 1.5), pa je razumno da se najpre odluči da li ostaje favorit.
-- Od novih imena **Spelter** je najbolja kombinacija priče (blizanac Braze), čistog žiga i jeftinog, dobrog domena. **Cobden** ima najjaču priču o vlasništvu i najviše slobodnih domena; **Ramsden** ima isti profil (ime majstora), ali slabiji .com i jaču asocijaciju u Britaniji (Harry Ramsden's).
+- **Zanat ili Spelter:** posle iste nezavisne recenzije Zanat (favorit) i Spelter (novo ime) su izjednačeni na vrhu, 3,75 (odeljak 1.5). Zanat nosi ličnu priču i zanatski ponos, ali dolazi sa zanat.studio umesto .com/.io/.co i sa istoimenim studiom ZanatWorks u istom poslu. Spelter je prava engleska reč, blizanac Braze, sa čistim imenskim prostorom i spelter.io.
+- **Cobden** ima najjaču priču o vlasništvu i najviše slobodnih domena; **Ramsden** ima isti profil (ime majstora), ali slabiji .com i jaču asocijaciju u Britaniji (Harry Ramsden's).
 - Za Cobden i Ramsden (prezimena) pre prijave u SAD treba pitati zastupnika za rizik odbijanja „primarno prezime” (**ESTIMATED**).
-- Ako je presudno da ime zvuči kao Braze ili Brigit: Bract, Moxon i Remek imaju taj zvuk, ali ih je nezavisni recenzent odbio zbog istoimenih firmi u istom poslu (odeljak 1.4). Ne preporučujemo ih; bolji put je Koshava ili nov krug generisanja imena.
+- **Koshava** je po rubrici i dalje najviša (3,80), ali je pala na nezavisnoj recenziji 29.09.2026 zbog živog američkog žiga **KOCHAVA** (USPTO reg. 5255177, kl. 42, Kochava Inc.), koji se od nje razlikuje u jednom slovu i zvuči gotovo isto (**VERIFIED**, `work/review_benchmark_koshava.md`). Ne preporučujemo je bez pisanog mišljenja zastupnika za žigove; ako mišljenje bude povoljno, koshava.co i koshava.io su i dalje slobodni.
+- Ako je presudno da ime zvuči kao Braze ili Brigit: Bract, Moxon i Remek imaju taj zvuk, ali ih je nezavisni recenzent odbio: Bract i Moxon zbog istoimenih firmi u istom poslu, a Remek zbog radio-testa i mađarskog značenja „odličan” (odeljak 1.4). Ne preporučujemo ih; bolji put je Zanat, Spelter ili nov krug generisanja imena.
 
 ## 7. Izvori
 
-**Domeni (Vercel):** svaka provera dostupnosti je poziv `get_bulk_availability` od 28.09.2026, zabeležen u `work/raw/vercel_calls.jsonl` (ID poziva uz svaki upis u `work/domains.json`); cene su iz `get_bulk_price` (`work/raw/prices.json`). Vercel registar domena: https://vercel.com/domains
+**Domeni (Vercel):** svaka provera dostupnosti je poziv `get_bulk_availability` od 28.09.2026 (glavni domeni top 3 i Koshave ponovo su provereni 29.09.2026, poziv `recheck-01`), zabeležen u `work/raw/vercel_calls.jsonl` (ID poziva uz svaki upis u `work/domains.json`); cene su iz `get_bulk_price` (`work/raw/prices.json`; cena za cobdenlabs.com je iz Vercel poziva recenzenta u `work/review.md`, a cene za Koshavu i Zanat iz benchmark recenzija). Vercel registar domena: https://vercel.com/domains
 **Žigovi:** TMview pokriva USPTO, EUIPO, WIPO i Zavod za intelektualnu svojinu Srbije (IPORS); pokrivenost Srbije potvrđena pretragom sa filterom `offices=RS`: https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zanat&offices=RS
 **RDAP/WHOIS i sajtovi zauzetih domena:** `work/research/dd_finalists.json` i `work/raw/rdap.jsonl`.
 **Jezički pregled:** `work/research/language_screen_1.json`, `language_screen_2.json`, `language_screen_3.json` (4 jezička sočiva po imenu).
@@ -440,7 +443,7 @@ Za sva tri imena predlažemo dosledan oblik ručke, npr. `spelterhq` / `spelter-
 
 **Spelter:** https://en.wikipedia.org/wiki/Spelter · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=spelter · https://www.joinspelt.com/ · https://rdap.verisign.com/com/v1/domain/spelter.com · https://www.whois.com/whois/spelter.so
 
-**Nezavisna recenzija:** `work/review.md` (tri kruga, 10 imena, svaki recenzent u svežem kontekstu; samo ime, domen i odeljak 2.9).
+**Nezavisna recenzija:** `work/review.md` (tri kruga, 10 imena, svaki recenzent u svežem kontekstu; dobio je ime, domen, kratak opis firme i odeljak 2.9); benchmark recenzije Koshave i Zanata od 29.09.2026: `work/review_benchmark_koshava.md`, `work/review_benchmark_zanat.md`.
 
 **Cobden:** https://en.wikipedia.org/wiki/Arts_and_Crafts_movement · https://en.wikipedia.org/wiki/Doves_Press · https://www.britannica.com/biography/Richard-Cobden · https://www.collinsdictionary.com/dictionary/english/cobden · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=cobden · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=cobden&offices=RS · https://rdap.verisign.com/com/v1/domain/cobden.com · http://web.archive.org/web/20250710003958/http://cobden.com/ · https://cobden.app · https://www.cobdenandcarter.com/ · https://www.linkedin.com/company/cobden · https://github.com/Cobden · https://x.com/cobden
 
@@ -462,13 +465,15 @@ Za sva tri imena predlažemo dosledan oblik ručke, npr. `spelterhq` / `spelter-
 
 **Exerga:** https://en.wikipedia.org/wiki/Exergy · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=exerga · https://forsale.dynadot.com/exerga.com?drefid=2071 · https://rdap.verisign.com/com/v1/domain/exerga.com · https://www.whois.com/whois/exerga.so
 
-**Yeoman:** https://en.wikipedia.org/wiki/Yeoman · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=yeoman · https://en.wikipedia.org/wiki/Yeoman_(software · https://yeoman.io/learning/ · https://www.crunchbase.com/organization/yeoman-technology-group · https://rdap.identitydigital.services/rdap/domain/yeoman.ai · https://pubapi.registry.google/rdap/domain/yeoman.app · https://rdap.verisign.com/com/v1/domain/yeoman.com · https://pubapi.registry.google/rdap/domain/yeoman.dev · https://rdap.identitydigital.services/rdap/domain/yeoman.io · https://who.is/whois/yeoman.so
+**Yeoman:** https://en.wikipedia.org/wiki/Yeoman · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=yeoman · https://en.wikipedia.org/wiki/Yeoman_(software) · https://yeoman.io/learning/ · https://www.crunchbase.com/organization/yeoman-technology-group · https://rdap.identitydigital.services/rdap/domain/yeoman.ai · https://pubapi.registry.google/rdap/domain/yeoman.app · https://rdap.verisign.com/com/v1/domain/yeoman.com · https://pubapi.registry.google/rdap/domain/yeoman.dev · https://rdap.identitydigital.services/rdap/domain/yeoman.io · https://who.is/whois/yeoman.so
 
 **Bosk:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=bosk · https://github.com/venasolutions/bosk · https://bosk.fyi/guide/introduction/what-is-bosk.html · https://rdap.verisign.com/com/v1/domain/bosk.com · https://www.atom.com/name/Bosk.io · https://rdap.identitydigital.services/rdap/domain/bosk.ai · https://pubapi.registry.google/rdap/domain/bosk.dev · https://bosk.app · https://rdap.identitydigital.services/rdap/domain/bosk.studio · https://rdap.nic.so/domain/bosk.so
 
 **Sprag:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=sprag · https://techcrunch.com/2022/08/02/sprig-raises-30m-to-help-companies-gauge-users-reactions-to-products/ · https://rdap.identitydigital.services/rdap/domain/sprag.ai · https://pubapi.registry.google/rdap/domain/sprag.app · https://rdap.verisign.com/com/v1/domain/sprag.com · https://pubapi.registry.google/rdap/domain/sprag.dev · https://rdap.identitydigital.services/rdap/domain/sprag.io · https://who.is/whois/sprag.so
 
-**Koshava:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=koshava · https://rdap.verisign.com/com/v1/domain/koshava.com
+**Koshava:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=koshava · https://rdap.verisign.com/com/v1/domain/koshava.com · https://www.wuntronic.de/en/support-koshava-5.html · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=kochava · https://tsdr.uspto.gov/statusview/sn87261968 · https://www.ftc.gov/legal-library/browse/cases-proceedings/ftc-v-kochava-inc · https://en.wikipedia.org/wiki/Ko%C5%A1ava_(wind)
+
+**Zanat:** https://en.wiktionary.org/wiki/zanat · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zanat&offices=RS · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zanatech · https://www.zanatworks.com/ · https://arbk.org/biz/zanat-digital-agency-shpk/ · https://zanat.org/ · https://rdap.verisign.com/com/v1/domain/zanat.com · https://efty.com/domain-sold/zanat.com/ · https://pubapi.registry.google/rdap/domain/zanat.app
 
 **Ostalo:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=kedge · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zanat&offices=RS · https://www.uspto.gov/trademarks/fees-payment-information/summary-2025-trademark-fee-changes · https://www.euipo.europa.eu/en/trade-marks/before-applying/fees-payments · https://attorney.rs/kako-zastititi-zig/ · https://feruvi.rs/blog/registracija-ziga
 
@@ -478,7 +483,7 @@ Za sva tri imena predlažemo dosledan oblik ručke, npr. `spelterhq` / `spelter-
 
 **Strake:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=strake
 
-**Crispin:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=crispin · https://en.wikipedia.org/wiki/Crispin_(company · https://www.campaignlive.com/article/agency-performance-review-2025-crispin/1913342
+**Crispin:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=crispin · https://en.wikipedia.org/wiki/Crispin_(company) · https://www.campaignlive.com/article/agency-performance-review-2025-crispin/1913342
 
 **Carvel:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=carvel
 

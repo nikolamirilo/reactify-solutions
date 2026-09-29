@@ -1,6 +1,6 @@
 ## 7. Izvori
 
-**Domeni (Vercel):** svaka provera dostupnosti je poziv `get_bulk_availability` od 28.09.2026, zabeležen u `work/raw/vercel_calls.jsonl` (ID poziva uz svaki upis u `work/domains.json`); cene su iz `get_bulk_price` (`work/raw/prices.json`). Vercel registar domena: https://vercel.com/domains
+**Domeni (Vercel):** svaka provera dostupnosti je poziv `get_bulk_availability` od 28.09.2026 (glavni domeni top 3 i Koshave ponovo su provereni 29.09.2026, poziv `recheck-01`), zabeležen u `work/raw/vercel_calls.jsonl` (ID poziva uz svaki upis u `work/domains.json`); cene su iz `get_bulk_price` (`work/raw/prices.json`; cena za cobdenlabs.com je iz Vercel poziva recenzenta u `work/review.md`, a cene za Koshavu i Zanat iz benchmark recenzija). Vercel registar domena: https://vercel.com/domains
 **Žigovi:** TMview pokriva USPTO, EUIPO, WIPO i Zavod za intelektualnu svojinu Srbije (IPORS); pokrivenost Srbije potvrđena pretragom sa filterom `offices=RS`: https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zanat&offices=RS
 **RDAP/WHOIS i sajtovi zauzetih domena:** `work/research/dd_finalists.json` i `work/raw/rdap.jsonl`.
 **Jezički pregled:** `work/research/language_screen_1.json`, `language_screen_2.json`, `language_screen_3.json` (4 jezička sočiva po imenu).
@@ -8,7 +8,7 @@
 
 **Spelter:** https://en.wikipedia.org/wiki/Spelter · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=spelter · https://www.joinspelt.com/ · https://rdap.verisign.com/com/v1/domain/spelter.com · https://www.whois.com/whois/spelter.so
 
-**Nezavisna recenzija:** `work/review.md` (tri kruga, 10 imena, svaki recenzent u svežem kontekstu; samo ime, domen i odeljak 2.9).
+**Nezavisna recenzija:** `work/review.md` (tri kruga, 10 imena, svaki recenzent u svežem kontekstu; dobio je ime, domen, kratak opis firme i odeljak 2.9); benchmark recenzije Koshave i Zanata od 29.09.2026: `work/review_benchmark_koshava.md`, `work/review_benchmark_zanat.md`.
 
 **Cobden:** https://en.wikipedia.org/wiki/Arts_and_Crafts_movement · https://en.wikipedia.org/wiki/Doves_Press · https://www.britannica.com/biography/Richard-Cobden · https://www.collinsdictionary.com/dictionary/english/cobden · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=cobden · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=cobden&offices=RS · https://rdap.verisign.com/com/v1/domain/cobden.com · http://web.archive.org/web/20250710003958/http://cobden.com/ · https://cobden.app · https://www.cobdenandcarter.com/ · https://www.linkedin.com/company/cobden · https://github.com/Cobden · https://x.com/cobden
 
@@ -30,13 +30,15 @@
 
 **Exerga:** https://en.wikipedia.org/wiki/Exergy · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=exerga · https://forsale.dynadot.com/exerga.com?drefid=2071 · https://rdap.verisign.com/com/v1/domain/exerga.com · https://www.whois.com/whois/exerga.so
 
-**Yeoman:** https://en.wikipedia.org/wiki/Yeoman · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=yeoman · https://en.wikipedia.org/wiki/Yeoman_(software · https://yeoman.io/learning/ · https://www.crunchbase.com/organization/yeoman-technology-group · https://rdap.identitydigital.services/rdap/domain/yeoman.ai · https://pubapi.registry.google/rdap/domain/yeoman.app · https://rdap.verisign.com/com/v1/domain/yeoman.com · https://pubapi.registry.google/rdap/domain/yeoman.dev · https://rdap.identitydigital.services/rdap/domain/yeoman.io · https://who.is/whois/yeoman.so
+**Yeoman:** https://en.wikipedia.org/wiki/Yeoman · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=yeoman · https://en.wikipedia.org/wiki/Yeoman_(software) · https://yeoman.io/learning/ · https://www.crunchbase.com/organization/yeoman-technology-group · https://rdap.identitydigital.services/rdap/domain/yeoman.ai · https://pubapi.registry.google/rdap/domain/yeoman.app · https://rdap.verisign.com/com/v1/domain/yeoman.com · https://pubapi.registry.google/rdap/domain/yeoman.dev · https://rdap.identitydigital.services/rdap/domain/yeoman.io · https://who.is/whois/yeoman.so
 
 **Bosk:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=bosk · https://github.com/venasolutions/bosk · https://bosk.fyi/guide/introduction/what-is-bosk.html · https://rdap.verisign.com/com/v1/domain/bosk.com · https://www.atom.com/name/Bosk.io · https://rdap.identitydigital.services/rdap/domain/bosk.ai · https://pubapi.registry.google/rdap/domain/bosk.dev · https://bosk.app · https://rdap.identitydigital.services/rdap/domain/bosk.studio · https://rdap.nic.so/domain/bosk.so
 
 **Sprag:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=sprag · https://techcrunch.com/2022/08/02/sprig-raises-30m-to-help-companies-gauge-users-reactions-to-products/ · https://rdap.identitydigital.services/rdap/domain/sprag.ai · https://pubapi.registry.google/rdap/domain/sprag.app · https://rdap.verisign.com/com/v1/domain/sprag.com · https://pubapi.registry.google/rdap/domain/sprag.dev · https://rdap.identitydigital.services/rdap/domain/sprag.io · https://who.is/whois/sprag.so
 
-**Koshava:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=koshava · https://rdap.verisign.com/com/v1/domain/koshava.com
+**Koshava:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=koshava · https://rdap.verisign.com/com/v1/domain/koshava.com · https://www.wuntronic.de/en/support-koshava-5.html · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=kochava · https://tsdr.uspto.gov/statusview/sn87261968 · https://www.ftc.gov/legal-library/browse/cases-proceedings/ftc-v-kochava-inc · https://en.wikipedia.org/wiki/Ko%C5%A1ava_(wind)
+
+**Zanat:** https://en.wiktionary.org/wiki/zanat · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zanat&offices=RS · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zanatech · https://www.zanatworks.com/ · https://arbk.org/biz/zanat-digital-agency-shpk/ · https://zanat.org/ · https://rdap.verisign.com/com/v1/domain/zanat.com · https://efty.com/domain-sold/zanat.com/ · https://pubapi.registry.google/rdap/domain/zanat.app
 
 **Ostalo:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=kedge · https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=zanat&offices=RS · https://www.uspto.gov/trademarks/fees-payment-information/summary-2025-trademark-fee-changes · https://www.euipo.europa.eu/en/trade-marks/before-applying/fees-payments · https://attorney.rs/kako-zastititi-zig/ · https://feruvi.rs/blog/registracija-ziga
 
@@ -46,7 +48,7 @@
 
 **Strake:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=strake
 
-**Crispin:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=crispin · https://en.wikipedia.org/wiki/Crispin_(company · https://www.campaignlive.com/article/agency-performance-review-2025-crispin/1913342
+**Crispin:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=crispin · https://en.wikipedia.org/wiki/Crispin_(company) · https://www.campaignlive.com/article/agency-performance-review-2025-crispin/1913342
 
 **Carvel:** https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=carvel
 

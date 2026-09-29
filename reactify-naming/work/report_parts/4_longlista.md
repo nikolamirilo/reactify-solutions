@@ -211,7 +211,7 @@ Ukupno **244 kandidata** (A 83 · B 38 · C 52 · D 14 · E 34 · F 23): 10 fina
 | 205 | **Obra** | E · akronim | odbačeno | Domen: nijedan slobodan na 7 TLD-ova; engleski 'oh bra' |
 | 206 | **Obris** | E · akronim | odbačeno | Radio-test: Orbis/Obriss, rimuje se sa 'hubris'; srpski 'obrisati' = izbrisati |
 | 207 | **Ostro** | E · akronim | odbačeno | Konflikt: Ostro, američka kompanija za zdravstveni softver (prikupila $55M); slobodan samo ostro.build |
-| 208 | **Prova** | E · akronim | odbačeno | Domen: od 11 TLD-ova slobodan samo prova.build; blisko već istraženom imenu Prow |
+| 208 | **Prova** | E · akronim | odbačeno | Domen: od 10 proverenih domena slobodan samo prova.build; blisko već istraženom imenu Prow |
 | 209 | **Rivet** | E · akronim | odbačeno | Konflikt: zagušeno u softveru (Ironclad-ov Rivet AI IDE, rivet.dev, RivetAI) |
 | 210 | **Robur** | E · akronim | odbačeno | Radio-test: u SAD 'ROB-er' zvuči kao 'robber' |
 | 211 | **Sinew** | E · akronim | odbačeno | Domen: nijedan slobodan na .co/.io/.studio/.app; početak „sin-” (greh) |
