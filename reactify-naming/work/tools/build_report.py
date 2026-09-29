@@ -22,6 +22,8 @@ for i, r in enumerate(sorted(rows, key=lambda r: (order[r["status"]], r["territo
     lines.append(f"| {i} | **{r['name']}** | {terr[r['territory']]} | {status_sr[r['status']]} | {reason} |")
 (P / "4_longlista.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
 parts = ["0_uvod.md", "1_top3.md", "2_top10.md", "3_akronimi.md", "4_longlista.md", "5_uzori.md", "6_koraci.md", "7_izvori.md"]
+if (P / "4b_kategorije.md").exists():  # category proposals of 2026-09-29, inside section 4
+    parts.insert(parts.index("4_longlista.md") + 1, "4b_kategorije.md")
 missing = [p for p in parts if not (P / p).exists()]
 assert not missing, missing
 (W / "REPORT.md").write_text("\n\n".join((P / p).read_text(encoding="utf-8").strip() for p in parts) + "\n", encoding="utf-8")
