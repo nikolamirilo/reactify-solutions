@@ -1,0 +1,120 @@
+{
+ "key": "acronym",
+ "kept_names": [],
+ "pending_screen": [],
+ "pending_verify": [],
+ "cut_examples": [
+  {
+   "name": "Brock",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Tovar",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Croft",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Ashlar",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Marek",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Hardy",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Lode",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Korb",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Dorn",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Karst",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Berth",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Kontor",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Brod",
+   "reason": "Conflict: 'brod' is a widely used open-source Erlang Kafka client (kafka4beam/brod on Hex). There is also Brod Analytics, a live BigCommerce app, and a Google Play develo"
+  },
+  {
+   "name": "Keld",
+   "reason": "Trademark: there is a live USPTO application for KELD (Keld Inc.) in class 35. Spain also has a registered KELD in class 9 (Electronica Keld)."
+  },
+  {
+   "name": "Garth",
+   "reason": "Trademark: GARTH is registered in class 9 at USPTO (Blue Rose, Inc.) and at EUIPO (Troyal Garth Brooks). In practice Garth Brooks owns the word."
+  },
+  {
+   "name": "Torben",
+   "reason": "Trademark: TORBEN is registered in class 9 at EUIPO (Globus (Shetland) Ltd), and the same owner has it in class 9 in the UK."
+  },
+  {
+   "name": "Koban",
+   "reason": "Language: Serbian 'koban' means fateful, fatal or ominous, as in 'kobna greska' (a fatal mistake). The name is also close to Kobani, the Syrian town known for its wartime"
+  },
+  {
+   "name": "Torv",
+   "reason": "Trademark: there is a live USPTO application for TORV (Torv LLC) in class 42."
+  },
+  {
+   "name": "Brant",
+   "reason": "Radio test: heard aloud, it gets written as Brant, Brandt or Brand. In most accents it also sounds like the word 'brand'."
+  },
+  {
+   "name": "Davit",
+   "reason": "Radio test: 'DAV-it' is heard and written as 'David'. The brief had already flagged a live German 'davit' mark in class 42."
+  },
+  {
+   "name": "Sidro",
+   "reason": "Trademark: SIDRO FOUNDATION is registered in Serbia in class 35. Conflict: sidro.app is a live booking, payments and client-management SaaS, and Sidro Technologies (sidro"
+  },
+  {
+   "name": "Becket",
+   "reason": "Radio test: most listeners will write 'Beckett' (Samuel Beckett, Beckett grading and collectibles), so there is no single obvious spelling."
+  },
+  {
+   "name": "Radek",
+   "reason": "Conflict: Radek Sistemas de Informacao is a Brazilian dev house building custom software and IoT hardware, with a live 'Radek' mark in class 42 in Brazil. The name is als"
+  },
+  {
+   "name": "Colter",
+   "reason": "Radio test: 'KOHL-ter' gets written as Colter, Coulter or Kolter. Coulter is at least as common and recalls the pundit Ann Coulter."
+  },
+  {
+   "name": "Tesar",
+   "reason": "Trademark: TESAR AUTOMATION is registered at EUIPO in classes 9 and 42 (Tesar S.p.A.). Italy also has TESAR marks in class 9 and in classes 35 and 42. The name is close t"
+  },
+  {
+   "name": "Torkel",
+   "reason": "Language: German 'torkeln' means to stagger or reel like a drunk, and 'Torkel' reads as its stem. That is wrong for a serious enterprise name. TMview was clean for US, EU"
+  },
+  {
+   "name": "Goran",
+   "reason": "Trademark: UBIIK Inc. has GORAN registered at USPTO in class 9 and goRAN registered at EUIPO in class 9."
+  },
+  {
+   "name": "Branko",
+   "reason": "Conflict: Branko AI (brankoai.com) is a live AI software product with exactly this name. It is a legal research assistant for North Macedonian law, now taking early-acces"
+  }
+ ]
+}

@@ -1,0 +1,385 @@
+{
+ "key": "compound",
+ "kept_names": [
+  "Kingplank",
+  "Brickbond",
+  "Makepeace"
+ ],
+ "pending_screen": [
+  {
+   "name": "Drystone",
+   "story": "In dry-stone walling, stones are chosen and fitted so precisely that the wall stands for centuries with no mortar. The name says the company holds together through craft, not glue. Note: a small UK IT and AI practice, Drystone IT, already uses the name.",
+   "story_sr": "Suvozid (dry stone): kamen se bira i slaže tako precizno da zid vekovima stoji bez maltera. Poruka je da firmu drži zanat, a ne lepak; napomena: mala britanska IT firma Drystone IT već koristi ovo ime.",
+   "pronunciation": "DRY-stohn",
+   "free": [
+    "drystone.dev"
+   ]
+  },
+  {
+   "name": "Kingbolt",
+   "story": "The kingbolt is the main vertical bolt on which a carriage's front axle pivots. It is the one part everything else turns on. The name has short, hard sounds (K, B, T) and a clear image of a holding at the center of several products.",
+   "story_sr": "Kingbolt je glavni vertikalni zavrtanj oko kog se okreće prednja osovina kočije, deo oko kog se sve okreće. Kratak, tvrd zvuk i jasna slika holdinga u središtu više proizvoda.",
+   "pronunciation": "KING-bohlt",
+   "free": [
+    "kingbolt.io",
+    "kingbolt.co",
+    "kingbolt.studio",
+    "kingbolt.app",
+    "kingbolt.dev"
+   ]
+  },
+  {
+   "name": "Masonmark",
+   "story": "A mason's mark is the personal sign a stonemason cut into every stone he dressed, so his work could be traced and paid for. Cathedrals still carry these marks. The name means signing your own work, which suits a company moving to its own products.",
+   "story_sr": "Klesarski znak je lični simbol koji je klesar urezivao u svaki kamen koji je obradio, da bi se znalo čiji je rad; katedrale ih i danas nose. Znači potpisati sopstveni rad, što odgovara firmi koja prelazi na svoje proizvode.",
+   "pronunciation": "MAY-sun-mark",
+   "free": [
+    "masonmark.io",
+    "masonmark.co",
+    "masonmark.studio",
+    "masonmark.app",
+    "masonmark.dev",
+    "masonmark.ai"
+   ]
+  },
+  {
+   "name": "Rooftree",
+   "story": "Rooftree is an old English word for the ridge beam of a roof. By extension it also means the home or household under that roof. It makes a quiet holding name: one roof over several product houses.",
+   "story_sr": "Stara engleska reč za slemenjaču, glavnu gredu krova, a u prenesenom značenju i za dom i domaćinstvo pod njim. Tiho holding ime: jedan krov nad više proizvoda.",
+   "pronunciation": "ROOF-tree",
+   "free": [
+    "rooftree.co",
+    "rooftree.studio",
+    "rooftree.dev",
+    "rooftree.ai"
+   ]
+  },
+  {
+   "name": "Mainmast",
+   "story": "The mainmast is a ship's principal mast and carries the largest sails. It works well as a later umbrella brand ('Quicktalog by Mainmast'). A finance firm, Mainmast Capital, also uses the name.",
+   "story_sr": "Glavni jarbol broda koji nosi najveća jedra. Kasnije dobro radi kao krovni brend ('Quicktalog by Mainmast'); finansijska firma Mainmast Capital takođe koristi ime.",
+   "pronunciation": "MAYN-mast",
+   "free": [
+    "mainmast.io",
+    "mainmast.co",
+    "mainmast.studio",
+    "mainmast.app",
+    "mainmast.dev"
+   ]
+  },
+  {
+   "name": "Bellcast",
+   "story": "A bell is cast in a single pour with no second chance: the alloy and the mould must be right, and the tone is then fixed forever. In architecture, bellcast eaves flare out like a bell. The name carries precision and a sound that rings.",
+   "story_sr": "Livenje zvona je jedno livenje bez druge šanse: legura i kalup moraju biti tačni, a ton ostaje zauvek. U arhitekturi je 'bellcast' streha raširena kao zvono; ime nosi preciznost i zvuk koji odzvanja.",
+   "pronunciation": "BEL-kast",
+   "free": [
+    "bellcast.studio",
+    "bellcast.app",
+    "bellcast.dev",
+    "bellcast.ai"
+   ]
+  },
+  {
+   "name": "Drawbore",
+   "story": "In a drawbore joint the peg hole is slightly offset, so driving the peg in pulls the joint tighter. Timber frames joined this way have stood for centuries without glue. The hidden story is that well-placed tension makes the whole stronger.",
+   "story_sr": "Kod drawbore spoja rupa za klin se malo pomeri, pa zakucavanje klina sam spoj pritegne; drvene konstrukcije spojene ovako stoje vekovima bez lepka. Skrivena priča: dobro postavljena napetost čini celinu jačom.",
+   "pronunciation": "DRAW-bor",
+   "free": [
+    "drawbore.io",
+    "drawbore.studio",
+    "drawbore.app",
+    "drawbore.ai"
+   ]
+  },
+  {
+   "name": "Ironbloom",
+   "story": "In early bloomery furnaces, ore was reduced to a spongy lump of iron called a bloom. That bloom was the raw stock a smith then forged into tools. The name tells of raw material becoming products, and 'bloom' also hints at growth.",
+   "story_sr": "U starim pećima (bloomery) ruda se pretvarala u sunđerastu grudvu gvožđa zvanu 'bloom', sirovinu od koje kovač kuje alat. Sirovina koja postaje proizvod, a 'bloom' (cvetanje) nagoveštava rast.",
+   "pronunciation": "EYE-ern-bloom",
+   "free": [
+    "ironbloom.io",
+    "ironbloom.studio",
+    "ironbloom.dev"
+   ]
+  },
+  {
+   "name": "Sternpost",
+   "story": "The sternpost is the main upright timber at a ship's stern, and it carries the rudder. The sternpost rudder is what made it possible to steer large ships. The name fits a holding that steers several products, and 'stern' also reads as serious.",
+   "story_sr": "Krmena statva je glavna uspravna greda na krmi broda koja nosi kormilo; upravo je kormilo na krmenoj statvi omogućilo upravljanje velikim brodovima. Odgovara holdingu koji usmerava više proizvoda, a 'stern' zvuči i ozbiljno.",
+   "pronunciation": "STERN-pohst",
+   "free": [
+    "sternpost.io",
+    "sternpost.co",
+    "sternpost.studio",
+    "sternpost.app",
+    "sternpost.ai"
+   ]
+  },
+  {
+   "name": "Goldbeater",
+   "story": "A goldbeater hammers gold into leaf about a ten-thousandth of a millimetre thick, a craft practised since ancient Egypt. The name suggests patient skill that spreads a little value across a lot of surface.",
+   "story_sr": "Goldbeater je majstor koji zlato kuje u listiće debele oko desethiljaditog dela milimetra, zanat poznat još od starog Egipta. Nagoveštava strpljivu veštinu koja malo vrednosti pretvori u mnogo površine.",
+   "pronunciation": "GOHLD-bee-ter",
+   "free": [
+    "goldbeater.io",
+    "goldbeater.co",
+    "goldbeater.studio",
+    "goldbeater.app",
+    "goldbeater.dev"
+   ]
+  },
+  {
+   "name": "Sheerline",
+   "story": "In boatbuilding, the sheer line is the curve of the deck edge from bow to stern, and builders say it makes or breaks a boat's looks. The name stands for craft and clean design. A UK aluminium window brand, Sheerline, already uses it.",
+   "story_sr": "U brodogradnji 'sheer line' je linija ivice palube od pramca do krme; graditelji kažu da ona odlučuje da li je brod lep. Zanat i čist dizajn; britanski brend aluminijumskih prozora Sheerline koristi ovo ime.",
+   "pronunciation": "SHEER-lyn",
+   "free": [
+    "sheerline.io",
+    "sheerline.co",
+    "sheerline.studio",
+    "sheerline.app",
+    "sheerline.dev"
+   ]
+  },
+  {
+   "name": "Cropmark",
+   "story": "Cropmarks are patterns in fields, visible from the air, that reveal buried walls and foundations. In printing, crop marks show where a sheet is trimmed. The name combines hidden structure made visible with a precise finish.",
+   "story_sr": "Cropmark su tragovi u usevima, vidljivi iz vazduha, koji otkrivaju zakopane zidove i temelje; u štampi su to oznake za sečenje tabaka. Skrivena struktura koja postaje vidljiva i precizna završnica.",
+   "pronunciation": "KROP-mark",
+   "free": [
+    "cropmark.app",
+    "cropmark.dev"
+   ]
+  },
+  {
+   "name": "Crownwheel",
+   "story": "A crown wheel is a gear whose teeth stand up like a crown and turn motion through a right angle. It sits at the heart of clocks and car differentials. The name suggests a precise central mechanism that drives the parts around it.",
+   "story_sr": "Tanjirasti zupčanik (crown wheel) ima zupce podignute kao kruna i prenosi pokret pod pravim uglom; nalazi se u srcu satova i diferencijala automobila. Precizan centralni mehanizam koji pokreće delove oko sebe.",
+   "pronunciation": "KROWN-weel",
+   "free": [
+    "crownwheel.io",
+    "crownwheel.studio",
+    "crownwheel.app",
+    "crownwheel.dev",
+    "crownwheel.ai"
+   ]
+  },
+  {
+   "name": "Trysquare",
+   "story": "A try square is the carpenter's tool for testing ('trying') that an edge is exactly 90 degrees. Quality control is built into the name: everything is checked true before it ships.",
+   "story_sr": "Try square je stolarski ugaonik kojim se proverava ('try') da li je ivica tačno pod 90 stepeni. Kontrola kvaliteta ugrađena u ime: sve se proveri pre isporuke.",
+   "pronunciation": "TRY-skwair",
+   "free": [
+    "trysquare.io",
+    "trysquare.co",
+    "trysquare.studio",
+    "trysquare.dev"
+   ]
+  },
+  {
+   "name": "Keelblock",
+   "story": "Keel blocks are the heavy blocks a ship rests on while it is built or repaired in dry dock. The name is the quiet foundation under every product, with hard K-B-K sounds.",
+   "story_sr": "Kobilični blokovi su teški blokovi na kojima brod leži dok se gradi ili popravlja u suvom doku. Tihi temelj ispod svakog proizvoda, uz tvrde glasove K-B-K.",
+   "pronunciation": "KEEL-blok",
+   "free": [
+    "keelblock.io",
+    "keelblock.co",
+    "keelblock.studio",
+    "keelblock.app",
+    "keelblock.ai"
+   ]
+  },
+  {
+   "name": "Hawsepipe",
+   "story": "The hawsepipe is the pipe in a ship's bow that the anchor chain runs through. A captain who 'came up through the hawsepipe' rose from deckhand through experience rather than an academy. That fits a self-built company that earned its way to its own products. A small maritime training site uses hawsepipe.net.",
+   "story_sr": "Hawsepipe je cev na pramcu kroz koju prolazi sidreni lanac; za kapetana koji je 'došao kroz hawsepipe' kaže se da se od mornara uzdigao iskustvom, a ne školom. Odgovara firmi koja je sama izgradila put do sopstvenih proizvoda; mali sajt za pomorsku obuku koristi hawsepipe.net.",
+   "pronunciation": "HAWZ-pyp",
+   "free": [
+    "hawsepipe.io",
+    "hawsepipe.co",
+    "hawsepipe.studio",
+    "hawsepipe.app",
+    "hawsepipe.dev",
+    "hawsepipe.ai"
+   ]
+  },
+  {
+   "name": "Tiebeam",
+   "story": "A tie beam is the horizontal timber that ties the feet of the rafters together so the roof cannot spread. That is literally what a holding does: it holds separate parts together. Note: a tech investment firm already uses the name TIEBEAM.",
+   "story_sr": "Tiebeam je vodoravna greda koja spaja donje krajeve rogova da se krov ne raširi. Bukvalno ono što holding radi, drži odvojene delove na okupu; napomena: tehnološka investiciona firma koristi ime TIEBEAM.",
+   "pronunciation": "TY-beem",
+   "free": [
+    "tiebeam.io",
+    "tiebeam.co",
+    "tiebeam.studio",
+    "tiebeam.app",
+    "tiebeam.dev",
+    "tiebeam.ai"
+   ]
+  },
+  {
+   "name": "Crownglass",
+   "story": "Crown glass was blown and then spun by hand into a wide disc, the craft that glazed Europe's windows for centuries. The name suggests craft and clarity, and 'crown' hints at a lead brand. Some auto-glass shops use the name 'Crown Glass'.",
+   "story_sr": "Crown staklo se ručno duvalo i okretanjem razvlačilo u širok disk, zanat koji je vekovima zastakljivao prozore Evrope. Zanat i providnost, a 'crown' nagoveštava vodeći brend; neke radnje za auto-stakla koriste 'Crown Glass'.",
+   "pronunciation": "KROWN-glas",
+   "free": [
+    "crownglass.io",
+    "crownglass.studio",
+    "crownglass.app",
+    "crownglass.dev",
+    "crownglass.ai"
+   ]
+  },
+  {
+   "name": "Firesteel",
+   "story": "A firesteel is the piece of hardened steel struck against flint to throw the spark that lights a fire. It stands for the spark that starts products. Note: a small US custom-software firm, FireSteel Technologies, already uses the name.",
+   "story_sr": "Ocilo (firesteel) je komad kaljenog čelika kojim se udara o kremen da bi se dobila varnica. Iskra iz koje nastaju proizvodi; napomena: postoji mala američka softverska firma FireSteel Technologies.",
+   "pronunciation": "FYR-steel",
+   "free": [
+    "firesteel.io",
+    "firesteel.co",
+    "firesteel.studio",
+    "firesteel.app",
+    "firesteel.dev"
+   ]
+  },
+  {
+   "name": "Bowsprit",
+   "story": "The bowsprit is the spar that projects forward from a ship's bow and anchors the foresails, so it is always the first part to arrive. It is a forward-looking name. A US compliance consultancy uses the name Bowsprit Solutions.",
+   "story_sr": "Kosnik (bowsprit) je motka koja strši ispred pramca broda i drži prednja jedra; uvek prvi stiže. Ime koje gleda napred; američka konsultantska firma koristi ime Bowsprit Solutions.",
+   "pronunciation": "BOH-sprit",
+   "free": [
+    "bowsprit.studio",
+    "bowsprit.dev"
+   ]
+  },
+  {
+   "name": "Seedcorn",
+   "story": "Seed corn is the grain a farmer keeps back rather than eats, so it can be planted for next year's harvest. In English it is a metaphor for investing in the future. It fits putting service income back into the company's own products, though several seed-funding programmes use the word.",
+   "story_sr": "Seme za setvu (seed corn) je žito koje seljak ne pojede nego ga čuva za sledeću žetvu; u engleskom je metafora za ulaganje u budućnost. Odgovara ulaganju prihoda od usluga u sopstvene proizvode, iako nekoliko fondova za startape koristi ovu reč.",
+   "pronunciation": "SEED-korn",
+   "free": [
+    "seedcorn.co",
+    "seedcorn.studio",
+    "seedcorn.dev",
+    "seedcorn.ai"
+   ]
+  },
+  {
+   "name": "Wheelwork",
+   "story": "Wheelwork is the train of gears inside a clock that turns stored energy into accurate time. Several parts mesh as one system, like a holding with several products.",
+   "story_sr": "Wheelwork je niz zupčanika u satu koji uskladištenu energiju pretvara u tačno vreme. Više delova koji rade kao jedan sistem, kao holding sa više proizvoda.",
+   "pronunciation": "WEEL-werk",
+   "free": [
+    "wheelwork.co",
+    "wheelwork.studio",
+    "wheelwork.app",
+    "wheelwork.dev",
+    "wheelwork.ai"
+   ]
+  }
+ ],
+ "pending_verify": [],
+ "cut_examples": [
+  {
+   "name": "Heirloom",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Holdsworth",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Kingpost",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Heartwood",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Whetstone",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Guildhall",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Seamark",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Ironside",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Bondstone",
+   "reason": "Conflict: Bondstone (bondstone.com) is an active Lisbon private-equity firm that launched Bondstone Ventures, a EUR 50M deep-tech and AI VC fund, in 2026. Portuguese BOND"
+  },
+  {
+   "name": "Steelyard",
+   "reason": "Conflict: steelyard.io is a software design, development and cloud firm, and 'Steelyard' is a popular metal-weight calculator app on both App Store and Google Play. STEEL"
+  },
+  {
+   "name": "Tallystick",
+   "reason": "Conflict: Tallystick is an e-invoicing SaaS tool, 'Tallystick: Scorekeeper' is a live iOS app, and there are Tallystick Software Ltd (UK) and TallyStick, a Dublin timeshe"
+  },
+  {
+   "name": "Woodcut",
+   "reason": "Conflict: woodcut.app ('the illustrator you can email') is an active software product. There is also the WoodCut 3D woodworking app and several 'Woodcut' photo-effect app"
+  },
+  {
+   "name": "Keepwell",
+   "reason": "Trademark: KEEPWELL was filed at USPTO in class 35 (Prime Therapeutics, live). KeepWell is also a remote patient monitoring company, and 'Keepwell' is an iOS app."
+  },
+  {
+   "name": "Hammerbeam",
+   "reason": "Conflict: Hammerbeam Software (Chicago), a software rearchitecture firm, owns hammerbeam.com and still runs a live site. It also has an ended USPTO class 42 mark. The nam"
+  },
+  {
+   "name": "Truepenny",
+   "reason": "Trademark: TRUEPENNY is registered at EUIPO in classes 36 and 42 (Truepenny AB), a live identical EU mark in class 42."
+  },
+  {
+   "name": "Plowshare",
+   "reason": "Trademark: Publicis Groupe filed PLOWSHARE at USPTO in classes 35 and 42 (live). There are also the Plowshare apps (plowshare.social, plowshare.app) and the Plowshare Gro"
+  },
+  {
+   "name": "Ropewalk",
+   "reason": "Conflict: ropewalk.ai is an active AI creative platform that ships new models every week. ROPEWALK STUDIO is also registered at EUIPO, including class 9 (lava int. AB)."
+  },
+  {
+   "name": "Sawbuck",
+   "reason": "Conflict: Sawbuck Software (sawbuck-software.com) is an active company selling apps under the identical name. Google also has an open-source log viewer called Sawbuck."
+  },
+  {
+   "name": "Goodhew",
+   "reason": "Radio test: it sounds identical to the more common surname Goodhue (as in Goodhue County), so a listener can't tell Goodhew, Goodhue and Good Hue apart. The 'hew' craft s"
+  },
+  {
+   "name": "Freestone",
+   "reason": "Trademark: FREESTONE is registered at USPTO in classes 35 and 42 (Aptify / Community Brands, Freestone LMS software). Freestone Software is a custom-software dev company,"
+  },
+  {
+   "name": "Hayward",
+   "reason": "Conflict: a famous brand owns the word. Hayward Industries (pool equipment and connected pool-control apps) holds live HAYWARD marks in class 9 in the UK, Canada, Mexico "
+  },
+  {
+   "name": "Crosscut",
+   "reason": "Trademark: CROSSCUT is registered at USPTO in class 9 (Applied Signals Intelligence). Others using the name: the Crosscut App (crosscut.io), Crosscut Ventures (US VC, cla"
+  },
+  {
+   "name": "Firebrick",
+   "reason": "Trademark: FIREBRICK is registered at USPTO in class 35 (Firebrick, Inc., a positioning consultancy for B2B tech companies). FireBrick Ltd, a UK router maker, holds UK ma"
+  },
+  {
+   "name": "Backstay",
+   "reason": "Conflict: said aloud, 'Backstay' is easily heard as 'backstage', so it also fails the radio test. Backstage is Spotify's open-source developer portal (a CNCF project, lis"
+  },
+  {
+   "name": "Broadaxe",
+   "reason": "Conflict: Broadax Systems, Inc. is an active US maker of industrial computers, rugged PCs and servers (class 9 goods), founded in 1986 and listed on LinkedIn, Crunchbase "
+  }
+ ]
+}

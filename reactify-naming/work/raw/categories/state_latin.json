@@ -1,0 +1,168 @@
+{
+ "key": "latin",
+ "kept_names": [],
+ "pending_screen": [],
+ "pending_verify": [
+  {
+   "name": "Ferrumen",
+   "best_domain": "ferrumen.co",
+   "price_first_year": 29.99,
+   "price_renewal": 24.8,
+   "other_free": [
+    "ferrumen.io",
+    "ferrumen.studio",
+    "ferrumen.app",
+    "ferrumen.dev",
+    "ferrumen.ai"
+   ],
+   "tm_note": "The TMview contains-search returned 1 result: 'ferrumen' at TURKPATENT (classes 16, 38, 41), status Ended. There is nothing at USPTO, EUIPO, WIPO or Serbia in any class, so classes 9, 35 and 42 are clear.",
+   "tm_url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=Ferrumen",
+   "conflict_note": "No software or tech user found. The only business is Ferrumen S.A. / Ferrumen Tools, a steel and tools dealer in Guatemala City. Other uses are a J.L. Chuc music album, a Bulgarian umbrella-stand product and Latin dictionary entries.",
+   "conflict_url": "https://www.construex.gt/exhibidores/ferrumen_guatemala/donde-estamos",
+   "language_note": "Latin for 'solder, binding cement'. No negative or vulgar meaning in EN, SR, DE, ES, FR, IT or HU. Italian and Spanish speakers hear ferro/hierro ('iron'), which suits the story. Serbian 'rumen' (rosy, ruddy) is positive. English 'rumen' (a cow's first stomach) sits inside the word but is only noticed if someone splits it. It has 8 letters and 3 syllables. Radio caveat: the double r cannot be heard (people may write 'Ferumen'), and English speakers may stress FER-u-men rather than fer-ROO-men.",
+   "radio": "marginal",
+   "story": "Latin 'solder, binding cement' (ferruminare = to solder, braze): the joint that makes two metals one. It is the closest Latin twin of Braze's hidden story. Almost every domain is free, and the only user found is a Guatemalan steel dealer.",
+   "pronunciation": "fer-ROO-men"
+  },
+  {
+   "name": "Junctura",
+   "best_domain": "junctura.co",
+   "price_first_year": 29.99,
+   "price_renewal": 24.8,
+   "other_free": [
+    "junctura.studio",
+    "junctura.app"
+   ],
+   "tm_note": "The TMview contains-search returned 6 results. JUNCTURA at USPTO (Junctura, Inc., classes 38 and 42) has Ended. JUNCTURA at DPMA (class 35) has Ended. 'conjunctura' at DPMA has Expired. The Chinese mark 'JUNCTURA PROJECT' is in classes 16 and 41 only. There is no live mark in 9, 35 or 42 at USPTO, EUIPO, WIPO or Serbia.",
+   "tm_url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=Junctura",
+   "conflict_note": "No active software or tech user found. Junctura Inc. / Junctura Group Construction is a building and renovation contractor in Southwestern Ontario (junctura.ca). A US company, Junctura, Inc., once held tech marks in classes 38 and 42, but those have ended. Otherwise the word is a moth (Catocala junctura) and an anatomy term (junctura tendinum).",
+   "conflict_url": "https://www.junctura.ca/",
+   "language_note": "Latin for 'joint, joining'. Spanish 'juntura' and Italian 'giuntura' mean the same thing, which is positive. No vulgar or negative meaning in SR, DE, FR or HU. English 'juncture' helps people spell it. The first syllable sounds like English 'junk' when spoken, but the stress falls on TOOR. It has 8 letters and 3 syllables. Radio caveat: some people may write 'Junktura'.",
+   "radio": "marginal",
+   "story": "Latin 'joint, joining'. Horace's 'callida iunctura' is the clever joining that makes ordinary words new, the same joining story as Braze, carried into making things.",
+   "pronunciation": "junk-TOOR-uh"
+  },
+  {
+   "name": "Amussis",
+   "best_domain": "amussis.co",
+   "price_first_year": 29.99,
+   "price_renewal": 24.8,
+   "other_free": [
+    "amussis.studio",
+    "amussis.app",
+    "amussis.dev",
+    "amussis.ai"
+   ],
+   "tm_note": "The TMview contains-search returned 1 result: 'amussiss ad amussim tam ölçüsünde', filed at TURKPATENT in class 42 by Maya Grup Mühendislik / F.N. Aslantaş. Turkey is outside the four offices checked, but the filing shows the word is wanted for tech services there. There is nothing at USPTO, EUIPO, WIPO or Serbia.",
+   "tm_url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=Amussis",
+   "conflict_note": "No software company found. amussis.one is 'Independent Developmental Review', a review mark run by Kevin Reynolds, PhD. Amussis Security Consultancy is a Hong Kong firm. amussis.co.jp belongs to Amsys, a Japanese automation-machinery and measurement firm. Otherwise the word appears as a butterfly species name and in old Latin book titles.",
+   "conflict_url": "https://amussis.one/",
+   "language_note": "Latin for 'mason's rule' (ad amussim = 'exactly'). No negative or vulgar meaning found in EN, SR, DE, ES, FR, IT or HU. However, it sits close to English 'amuse' and the medical term 'amusia' (tone deafness), and the -sis ending sounds slightly clinical. It has 7 letters and 3 syllables. Radio caveat: the double s cannot be heard (people may write 'Amusis'), and the first syllable is a weak schwa.",
+   "radio": "marginal",
+   "story": "Latin for the mason's and carpenter's rule; the idiom 'ad amussim' means 'exactly, done by the rule'. It is a rare word with a hidden story of precision; the only users found are a painting firm and a Hong Kong investigations firm, and .co/.studio/.app/.dev/.ai are free.",
+   "pronunciation": "uh-MUSS-is"
+  }
+ ],
+ "cut_examples": [
+  {
+   "name": "Nexum",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Vectis",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Cardo",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Pinax",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Artifex",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Tessera",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Clavis",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Vindex",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Capsa",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Ductus",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Sator",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Atticus",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Harmos",
+   "reason": "Conflict: several active software products use the name: harmos.io (enterprise workflow orchestration on Netflix Conductor, on Wellfound), the Harmos music/virtual-studio"
+  },
+  {
+   "name": "Tekmar",
+   "reason": "Trademark: live 'tekmar' registrations in classes 9 and 42 at EUIPO and WIPO (tekmar Regelsysteme GmbH). There are also TEKMAR registrations in the UK (Tekmar Energy, cla"
+  },
+  {
+   "name": "Zeugma",
+   "reason": "Radio test: there is no single obvious spelling after hearing it. ZOOG-muh gets written as Zugma or Zoogma, and the pronunciation varies (English ZYOOG-muh, German TSOYG-"
+  },
+  {
+   "name": "Koinon",
+   "reason": "Conflict: Koinon is an active TU Munich software platform for university administration, the name of a startup providing creator data for AI systems, and koinon.app. Koin"
+  },
+  {
+   "name": "Textor",
+   "reason": "Trademark: live TEXTOR registration at EUIPO covering class 9 (Veturilo S.A., classes 1, 4, 9). There are also live WIPO/UK marks held by TEXTOR Maschinenbau/Weber. The n"
+  },
+  {
+   "name": "Cadmus",
+   "reason": "Trademark: live CADMUS registrations in class 42 at USPTO (Evisions LLC, higher-education software) and at WIPO (Vericus Pty Ltd, classes 41 and 42, the Cadmus assessment"
+  },
+  {
+   "name": "Meruit",
+   "reason": "Radio test: the 'ui' gives several readings (MER-wit, meh-ROO-it, MEHR-yoo-it), and spoken aloud it is heard and written as the common word 'Merit'. All web results are a"
+  },
+  {
+   "name": "Dioptra",
+   "reason": "Trademark: live DIOPTRA registrations in classes 9 and 42 at EUIPO (Delian Solutions d.o.o., a software firm) and in class 42 at USPTO and EUIPO (International Rescue Com"
+  },
+  {
+   "name": "Exnovo",
+   "reason": "Trademark: live '.EXNOVO' application at EUIPO in classes 11 and 42 (HSL S.r.l.). There is also a pending EXNOVO application in class 9 in Australia (Exnovo Pty Ltd) and "
+  },
+  {
+   "name": "Mensor",
+   "reason": "Trademark: live MENSOR registrations in classes 9 and 42 at USPTO and EUIPO (WIKA Alexander Wiegand), and in classes 35, 42 and 44 at EUIPO (Mensor Consultoría y Estrateg"
+  },
+  {
+   "name": "Solon",
+   "reason": "Conflict: SOLON (solondev.com) is an active software development firm, Solon Software sells accounting and e-invoicing software (on Crunchbase), and Altman Solon is a lar"
+  },
+  {
+   "name": "Periplus",
+   "reason": "Trademark: live PERIPLUS registrations at EUIPO covering class 9: Periplus Editions (HK) in classes 9, 16 and 41, and Periplus Europe Ltd in several classes including 9. "
+  },
+  {
+   "name": "Dubsar",
+   "reason": "Conflict: Dubsar is an active social-media app on Google Play (dubsar.me), and there is an older open-source Dubsar dictionary app. A French DUBSAR application (Fabien Hi"
+  }
+ ]
+}

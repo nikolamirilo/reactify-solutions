@@ -1,0 +1,118 @@
+{
+ "key": "english",
+ "kept_names": [
+  "Kersey"
+ ],
+ "pending_screen": [],
+ "pending_verify": [],
+ "cut_examples": [
+  {
+   "name": "Tenon",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Cupel",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Croft",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Platen",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Ashlar",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Fuller",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Detent",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Octavo",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Bulwark",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Belay",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Florin",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Recto",
+   "reason": "Conflict: several active software products already use Recto: the Recto book-highlights app (Google Play), Recto Notes (App Store), the Recto WordPress plugin on AppSumo,"
+  },
+  {
+   "name": "Davit",
+   "reason": "Conflict: Davit is an active open-source macOS developer app (davit.app, a native UI for Apple containers, launched on Show HN in 2026). The German Lawyers' Association ("
+  },
+  {
+   "name": "Hawser",
+   "reason": "Conflict: at least three active software products use Hawser: the Hawser remote Docker agent for Dockhand (GitHub, Home Assistant add-on), gethawser.com (an AI accountabi"
+  },
+  {
+   "name": "Tombac",
+   "reason": "Radio test: after hearing 'TOM-bak', most people would write Tombak (the German and Serbian spelling, and the name of a Persian drum). Language: dictionaries define tomba"
+  },
+  {
+   "name": "Buckram",
+   "reason": "Conflict: Buckram Studio is an active AI writing IDE extension for Cursor/VS Code, published on Open VSX and launched on the Cursor forum and Hacker News in 2026. Languag"
+  },
+  {
+   "name": "Alidade",
+   "reason": "Conflict: several software companies already use the name: Alidade Technology (software implementation services since 2008, a Planview partner), Alidade Systems (AI-nativ"
+  },
+  {
+   "name": "Pelorus",
+   "reason": "Conflict: four products use the name: Pelorus Technology (a Microsoft Dynamics ERP partner), Pelorus (an open-source software-delivery metrics tool, pelorus.readthedocs.i"
+  },
+  {
+   "name": "Cordovan",
+   "reason": "Conflict: Cordovan Group AB is a listed Swedish communications and advertising group that offers web design and digital services (Cordovan Digital, Cordovan Communication"
+  },
+  {
+   "name": "Merestone",
+   "reason": "Trademark: there is a live USPTO MERESTONE registration (Unique, Inc.) covering class 35. Conflict: Merestone is also a 40-year-old US event-production company (merestone"
+  },
+  {
+   "name": "Fusee",
+   "reason": "Trademark: there is a live WIPO international registration for 'Fusée' (ROKiT Launch Ltd) in class 9. Conflict: 'Fusée' is also the well-known Nintendo Switch payload fro"
+  },
+  {
+   "name": "Brevier",
+   "reason": "Trademark: Adobe Inc. owns a live EUIPO BREVIER registration in classes 9, 16 and 42 (an Adobe typeface), plus a live UK one."
+  },
+  {
+   "name": "Cotter",
+   "reason": "Conflict: Cotter is a known Y Combinator (W20) passwordless-login service for developers (cotter.app), listed on Crunchbase, LinkedIn and Product Hunt."
+  },
+  {
+   "name": "Winze",
+   "reason": "Trademark: there is a live USPTO WINZE registration (Goald, Inc.) in class 42. Conflict: Winze Technologies (India) sells custom software and AI development. Radio test: "
+  },
+  {
+   "name": "Collet",
+   "reason": "Conflict: active apps and studios already use Collet: the Collet collectibles app (App Store), a Google Play developer named Collet, Studio Collet (a Paris visual and dig"
+  },
+  {
+   "name": "Binnacle",
+   "reason": "Conflict: Binnacle App (Movilidad Creativa, Mexico) is an active business-operations SaaS on iOS and Android and holds a Mexican class 42 mark. Binnacle Technologies is a"
+  },
+  {
+   "name": "Latigo",
+   "reason": "Trademark: there is a live EUIPO LATIGO registration (Latigo Partners, L.P.) covering class 35. Language: Spanish 'látigo' means whip. Conflict: latigotech.com (rodeo eve"
+  }
+ ]
+}

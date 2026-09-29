@@ -1,0 +1,115 @@
+{
+ "key": "serbian",
+ "kept_names": [
+  "Klesar",
+  "Yavor"
+ ],
+ "pending_screen": [],
+ "pending_verify": [],
+ "cut_examples": [
+  {
+   "name": "Brus",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Stega",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Kovan",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Oblik",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Brodar",
+   "reason": "Trademark: BRODAR is registered at EUIPO and UKIPO and filed at USPTO in classes 9, 42 and 45 (CCMH Verwaltungs GmbH). It is used for the Brodar gay chat app on the App S"
+  },
+  {
+   "name": "Okvir",
+   "reason": "Conflict: Okvir.io is an active SaaS product (software for window and door sales and production, listed on Capterra, GetApp and Software Advice as a work management platf"
+  },
+  {
+   "name": "Krov",
+   "reason": "Trademark: KROV is registered at USPTO in class 9 (Hong Yan) and in China in cl. 9 and 35. Also, Russian 'krov'' (кровь) means blood."
+  },
+  {
+   "name": "Kalem",
+   "reason": "Conflict: Kalem Yazılım is a Turkish ERP software company active since 1989 (it filed 'kalem' in cl. 42 in Turkey). kalem.me sells AI voice agents, and there is a 'Kalem'"
+  },
+  {
+   "name": "Izvor",
+   "reason": "Trademark: IZVOR is registered at the Serbian IP office in class 35 (Alco group hoteli doo). Editions Prosveta holds IZVOR marks in France and Canada, including class 9."
+  },
+  {
+   "name": "Zalog",
+   "reason": "Language: it is the pawnshop word in Hungarian (zálog) and means collateral or bail in Bulgarian and Russian (залог). Zalog.BG is Bulgaria's largest pawnshop app. That cl"
+  },
+  {
+   "name": "Sidro",
+   "reason": "Conflict: sidro.app is a bookings, payments and client-management SaaS in beta, and Sidro Technologies (sidro.in) makes AI edtech. SIDRO FOUNDATION is also live in Serbia"
+  },
+  {
+   "name": "Tesar",
+   "reason": "Trademark: TESAR AUTOMATION is registered at EUIPO in cl. 9 and 42 (Tesar S.p.A.), and TESAR is registered in Italy in cl. 9 and 35/42. It is also one letter from Zeiss's"
+  },
+  {
+   "name": "Dabar",
+   "reason": "Trademark: DABAR is filed at USPTO in class 35 (Dabar Development Partners, LLC) and is still pending, so it is live."
+  },
+  {
+   "name": "Stablo",
+   "reason": "Trademark: STABLO is registered at EUIPO in class 9 by Shimadzu Corporation (also at UKIPO and JPO)."
+  },
+  {
+   "name": "Merilo",
+   "reason": "Trademark: 'Labo Mérilo' is registered at EUIPO in class 35 (Labo Mérilo BV). The radio test is also weak: after hearing it, people write Merillo or Murillo."
+  },
+  {
+   "name": "Plamen",
+   "reason": "Conflict: PLAMEN (plamen-it.com) is an active software development studio. It is also a very common Bulgarian first name, which crowds search results."
+  },
+  {
+   "name": "Zavar",
+   "reason": "Language: Hungarian 'zavar' means disturbance, confusion or embarrassment ('Ne zavarj!' = do not disturb). That is a negative everyday word in an EU market."
+  },
+  {
+   "name": "Tezga",
+   "reason": "Language: in Serbian slang 'tezga' is a moonlighting, off-the-books side gig. For a company that does client work, that undercuts the serious enterprise feel."
+  },
+  {
+   "name": "Trajan",
+   "reason": "Radio test: English speakers read it TRAY-jun, one vowel away from 'Trojan' (malware, the condom brand), not TRAH-yahn. It is also the name of Adobe's Trajan typeface."
+  },
+  {
+   "name": "Vinca",
+   "reason": "Radio test: the spelling 'Vinca' reads VIN-ka (the periwinkle plant, vinca chemo drugs), while the intended VIN-cha gets written Vincha or Vinča. There is no single way t"
+  },
+  {
+   "name": "Uzor",
+   "reason": "Radio test: OO-zor is heard and written as 'user', and English readers say YOO-zor. The spelling is not recoverable from sound."
+  },
+  {
+   "name": "Rende",
+   "reason": "Conflict: it is one letter from Render (render.com, a well-known cloud hosting platform), and the story itself leans on 'render'. It also reads as the English verb 'rend'"
+  },
+  {
+   "name": "Kalup",
+   "reason": "Radio test: English speakers read it KAL-up or KAY-lup (close to Gallup), while the intended kah-LOOP gets written Kaloop. There is no single way to say it or spell it."
+  },
+  {
+   "name": "Kolar",
+   "reason": "Radio test: said aloud, it is heard as 'collar' or 'Kohler' (the well-known plumbing brand), so there is no single spelling after hearing it. It is also a common surname "
+  },
+  {
+   "name": "Mustra",
+   "reason": "Conflict: Mustra is one letter away from Mastra (mastra.ai, github.com/mastra-ai/mastra), a well-known open-source TypeScript framework for building AI agents and apps, a"
+  },
+  {
+   "name": "Kormilo",
+   "reason": "Conflict: Kormilo (kormilo.io, with a LinkedIn company page) is an active AI consulting business. Its site, 'AI Operating Systems for Growing Companies', offers AI workfl"
+  }
+ ]
+}

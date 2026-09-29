@@ -1,0 +1,153 @@
+{
+ "key": "namelike",
+ "kept_names": [],
+ "pending_screen": [],
+ "pending_verify": [
+  {
+   "name": "Ramelli",
+   "best_domain": "ramelli.io",
+   "price_first_year": 14.99,
+   "price_renewal": 46,
+   "other_free": [
+    "ramelli.co",
+    "ramelli.studio",
+    "ramelli.app",
+    "ramelli.dev",
+    "ramelli.ai"
+   ],
+   "tm_note": "TMview contains-search returns 163 hits, most of them CARAMELLI, SCARAMELLI or GRAMELLINI food marks. The only live identical RAMELLI mark is at TURKPATENT (class 25, footwear and clothing). There is no live identical or near-identical mark in class 9, 35 or 42 at USPTO, EUIPO, WIPO or Serbia. 'ramellia' is filed in Turkey (classes 14, 25, 35), which is outside the offices checked.",
+   "tm_url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=ramelli",
+   "conflict_note": "No software, tech, AI or agency brand uses the name. The name is closely linked to Serge Ramelli, a well-known French-American photographer and Lightroom/Photoshop educator who sells presets and courses under his full name. Others are Ramelli Janitorial Service Inc (Louisiana) and scattered people with the surname. ramelli.com is taken.",
+   "conflict_url": "https://www.youtube.com/c/SergeRamelliPhotography",
+   "language_note": "Italian surname with no meaning in English, Spanish, French, Italian or Hungarian. In Serbian 'rame' means shoulder, which is neutral. In German there is a faint echo of the vulgar colloquial 'rammeln', but the stress differs (ra-MEL-li vs RAM-meln), so the risk is low. It reads Italian rather than Latin or hard-consonant, so it is softer than the Braze/Brame anchors.",
+   "radio": "marginal",
+   "story": "Agostino Ramelli (1531-c.1610) was an Italian engineer. His 1588 book of machines introduced the 'book wheel', a rotating reading desk often called the first hypertext machine, which suits catalogue software like Quicktalog. TMview shows nothing in software classes, and every domain except .com is free.",
+   "pronunciation": "ra-MEL-ee"
+  },
+  {
+   "name": "Bodmer",
+   "best_domain": "bodmer.studio",
+   "price_first_year": 21.99,
+   "price_renewal": 36,
+   "other_free": [
+    "bodmer.app",
+    "bodmer.dev",
+    "bodmer.ai"
+   ],
+   "tm_note": "TMview shows 21 hits and no live identical mark in class 9, 35 or 42 at USPTO, EUIPO, WIPO or Serbia. Identical BODMER marks exist only in Korea (classes 11 and 35, filed) and Mexico (36). Watch-outs: in Switzerland (IGE, outside the offices checked), Fondation Martin Bodmer holds 'BODMER LAB' in classes 9/16/35/37/41/42, and Rahn+Bodmer Co. (private bank) holds marks in 35/36/42. This matters if the company later wants to be 'Bodmer Labs'.",
+   "tm_url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=bodmer",
+   "conflict_note": "No established software, tech or agency company uses the name. The closest same-name uses are 'Bodmer Studio', a small Instagram account with about 230 followers, and Simone Bodmer-Turner Studio (a New York sculptor and designer). Nick Bodmer is an indie iOS developer who publishes apps under his own name. Outside tech, the name belongs to Rahn+Bodmer (a Zurich private bank since 1750), the Fondation Martin Bodmer / Bibliotheca Bodmeriana and the painter Karl Bodmer. bodmer.com, .io and .co are all taken.",
+   "conflict_url": "https://www.instagram.com/bodmerstudio_/",
+   "language_note": "Swiss-German surname with no negative meaning. In English 'bod' is harmless slang for body. The archaic German 'Bodmerei' (bottomry loan) is neutral. In Serbian 'bod' means point or stitch, which is neutral. Spanish 'boda' (wedding) is not close enough to matter. Nothing in French, Italian or Hungarian. It is short and hard (B-d-m), close to the Br-/-ct sound profile.",
+   "radio": "clear",
+   "story": "Johann Georg Bodmer (1786-1864) was a Swiss inventor-engineer in Manchester. He patented improvements to machine tools, gear cutting and textile machines, a quiet and precise maker. TMview shows only compound marks: a Swiss bank and the Bodmer Library foundation.",
+   "pronunciation": "BOD-mer"
+  }
+ ],
+ "cut_examples": [
+  {
+   "name": "Tredgold",
+   "reason": "Conflict: Tredgold Digital (tredgolddigital.com) is an active automation company that runs three live SaaS products (CrewSwap, SiteForge, Ask Atlas). Gordon Tredgold, a p"
+  },
+  {
+   "name": "Bewick",
+   "reason": "Radio test: said 'BYOO-ik', it is a homophone of Buick, the General Motors car brand. Readers say 'BEE-wick', so the name has no single pronunciation."
+  },
+  {
+   "name": "Pynson",
+   "reason": "Radio test: heard 'PIN-sun', listeners will write Pinson or Pinsen. The y spelling cannot be guessed."
+  },
+  {
+   "name": "Outram",
+   "reason": "Radio test: it is written like 'OUT-ram' but said 'OO-trum', so the spoken form gives Ootrum or Utram. It also reads as 'out ram'."
+  },
+  {
+   "name": "Bernward",
+   "reason": "Language: in English it is a homophone of 'burn ward', the hospital unit for burn victims. That is a negative association for US and global audiences."
+  },
+  {
+   "name": "Lanston",
+   "reason": "Conflict: Lanston Type Co. (a P22 imprint) is an active digital font foundry on Adobe Fonts, and fonts are class 9 software. It already trades on the same Tolbert Lanston"
+  },
+  {
+   "name": "Gofannon",
+   "reason": "Radio test: the f is said as v (go-VAN-un) and the n is doubled, so nobody can spell it after hearing it."
+  },
+  {
+   "name": "Moretus",
+   "reason": "Radio test: heard as 'mo-RAY-tus', it gives Moraytus, Moretus or Moraetus, so there is no single obvious spelling."
+  },
+  {
+   "name": "Digges",
+   "reason": "Radio test: heard as 'DIGZ', it is written Diggs or Digs. The -es ending cannot be guessed."
+  },
+  {
+   "name": "Behaim",
+   "reason": "Radio test: heard as 'BAY-hime', it gives Bayhime or Behime. The written form does not match the sound."
+  },
+  {
+   "name": "Maskelyne",
+   "reason": "Radio test: heard as 'MASK-uh-lin', it gives Maskelin or Maskeline. The name is also 9 letters long and suggests 'mask'."
+  },
+  {
+   "name": "Baudot",
+   "reason": "Radio test: heard as 'boh-DOH', it gives Bodo or Bodot. The French silent-t spelling cannot be guessed, and only .studio and .app are free."
+  },
+  {
+   "name": "Burgi",
+   "reason": "Radio test: heard as 'BUR-gee', it gives Burgee, Burgy or Bergi. 'Burgee' is also an existing English word (a yacht-club flag)."
+  },
+  {
+   "name": "Koberger",
+   "reason": "Trademark: a live identical USPTO mark KOBERGER (Jie Xu) is registered in classes 9 and 12. The C/K spelling is also ambiguous."
+  },
+  {
+   "name": "Gryphius",
+   "reason": "Radio test: heard as 'GRIF-ee-us', it gives Griffius or Grifius. The y and ph cannot be guessed."
+  },
+  {
+   "name": "Ellicott",
+   "reason": "Radio test: it could be written Elicott, Ellicot, Ellicott or Eliccott, and it is easily misheard as Elliott."
+  },
+  {
+   "name": "Corliss",
+   "reason": "Trademark: a live identical EUIPO mark CORLISS (Wu JianXiong) is registered in classes 9, 18 and 25. Only .studio is free."
+  },
+  {
+   "name": "Whitworth",
+   "reason": "Conflict: Whitworth University (US) dominates search and publishes 'Whitworth' apps on the App Store and Google Play. Whitworth SEO Ltd is a UK digital agency with a file"
+  },
+  {
+   "name": "Orfelin",
+   "reason": "Language: it sounds almost the same as French 'orphelin' (orphan). The radio test also fails (Orfelin vs Orphelin)."
+  },
+  {
+   "name": "Stanhope",
+   "reason": "Trademark: a live identical German (DPMA) mark 'Stanhope' (Dr. Stephan Gärtner) is registered in classes 9, 42 and 45, which blocks a key EU market. Stanhope Capital also"
+  },
+  {
+   "name": "Gesner",
+   "reason": "Radio test: heard as 'GES-ner', it gives Gessner or Gesner. The historic figure himself is spelled Gessner, so the name reads as a misspelling."
+  },
+  {
+   "name": "Senex",
+   "reason": "Language: Latin for 'old man', with a senile or crotchety archetype. The radio test also fails (SEE-neks or SEN-eks), it can be heard as Cenex (CHS fuel brand), and TMvie"
+  },
+  {
+   "name": "Borda",
+   "reason": "Conflict: Borda Teknoloji Bilişim (Borda Technology) is an active IT/IoT company with a registered TURKPATENT 'borda' mark in classes 9, 10, 12, 38 and 42. Live BORDA mar"
+  },
+  {
+   "name": "Granjon",
+   "reason": "Radio test: heard as 'grahn-ZHON', it gives Granjon, Grangeon or Gronjon. It is also an existing Monotype typeface with a US class 9 font mark."
+  },
+  {
+   "name": "Fairbairn",
+   "reason": "Radio test: it could be written Fairbairn, Fairburn or Fairbarn. It is 9 letters long, and only .studio and .ai are free."
+  },
+  {
+   "name": "Didot",
+   "reason": "Radio test: heard as 'dee-DOH', it gives Dido or Didot. It is also a famous typeface family that ships on every Mac, with a Czech class 42 mark, and only .dev is free."
+  }
+ ]
+}

@@ -1,0 +1,172 @@
+{
+ "key": "foreign",
+ "kept_names": [],
+ "pending_screen": [],
+ "pending_verify": [
+  {
+   "name": "Tenuta",
+   "best_domain": "tenuta.studio",
+   "price_first_year": 21.99,
+   "price_renewal": 36,
+   "other_free": [
+    "tenuta.app",
+    "tenuta.dev"
+   ],
+   "tm_note": "TMview contains-search: 3,436 hits, mostly 'Tenuta X' wine marks in class 33. There is no live TENUTA mark in class 9, 35 or 42 at USPTO, EUIPO, WIPO or Serbia. Plain TENUTA is live only outside scope: Russia (32/33), Argentina (36/37), UK (25), China (7). The Argentine TENUTA marks in classes 9 and 42 have expired. In-scope compound marks (USPTO TENUTA LUCE, WIPO TENUTA MARA and TENUTA PULE) are wine and food marks in classes 29-33 and 43.",
+   "tm_url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=tenuta",
+   "conflict_note": "No software, tech or AI company or dev studio called Tenuta was found. The results are Italian wine estates (Tenuta San Guido and others), a golf-club members' app called 'Tenuta Toscana', a restaurant and people with the surname Tenuta. The word is generic in Italian wine, so the brand would share search results with wineries.",
+   "conflict_url": "https://play.google.com/store/apps/details?id=com.pacesettertechnology.android.golfer.tenutatoscana",
+   "language_note": "In Italian, 'tenuta' means estate. It also means outfit or uniform, and grip, seal or staying power ('tenuta di strada' = road holding). The French cousin 'tenue' (dress, bearing) is positive. No negative, vulgar or awkward meaning or homophone in EN, SR, DE, ES, FR, IT or HU.",
+   "radio": "clear",
+   "story": "Italian for an estate or landholding, from 'tenere' (to hold). Tuscan wine houses are named 'Tenuta ...' and each of their wines has its own label, the same way a quiet holding owns several separately branded products.",
+   "pronunciation": "teh-NOO-ta"
+  },
+  {
+   "name": "Salda",
+   "best_domain": "salda.studio",
+   "price_first_year": 21.99,
+   "price_renewal": 36,
+   "other_free": [],
+   "tm_note": "TMview contains-search: 1,205 hits. No live SALDA mark in class 9, 35 or 42 at USPTO, EUIPO, WIPO or Serbia. The live in-scope marks are USPTO SALDA in class 21 (Beytullah Oguz) and two EUIPO SALDA marks in classes 6, 7 and 11 (Salda UAB, ventilation). Worth knowing but out of scope: Turkish 'salda' is registered in class 42 (Detay Danismanlik Bilgisayar, an IT services firm) and in classes 9 and 35 (KRC Elektro Market); there is an Argentine SALDÁ application in class 42 and a Norwegian SALDA in classes 11, 35 and 37.",
+   "tm_url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=salda",
+   "conflict_note": "Salda UAB, a large Lithuanian maker of air-handling units, dominates search results. It publishes a companion app, 'SALDA AIR', on the App Store and Google Play to control its units. It is not a software company, but EU clients googling the name will find it first. Other users: Salda Capital Management (UK finance), a 2011 University of Sussex linked-data project called SALDA, Salda Arredamenti (Italian furniture) and Lake Salda in Turkey (a Mars analogue). No software company or dev studio called Salda was found.",
+   "conflict_url": "https://apps.apple.com/lt/app/salda-air/id1228511720",
+   "language_note": "Italian 'salda' = firm, steadfast ('saldare' = to weld or solder). Spanish 'salda' = settles (a debt). Serbian 'saldo' = account balance. Italian 'saldi' and French 'solde' also mean a clearance sale, a mild bargain echo but not negative. No vulgar or negative meaning in EN, SR, DE, ES, FR, IT or HU.",
+   "radio": "clear",
+   "story": "Italian 'salda' means firm and steadfast. The verb 'saldare' means to weld or solder, and Spanish 'saldar' means to settle an account, so like Braze it is a joining word: firm, welded, paid in full. Existing user: Salda UAB, a Lithuanian ventilation maker.",
+   "pronunciation": "SAHL-da"
+  },
+  {
+   "name": "Tornio",
+   "best_domain": "tornio.studio",
+   "price_first_year": 21.99,
+   "price_renewal": 36,
+   "other_free": [
+    "tornio.app",
+    "tornio.dev",
+    "tornio.ai"
+   ],
+   "tm_note": "TMview contains-search: 45 hits. No live TORNIO mark in any class at USPTO, EUIPO, WIPO or Serbia. The only live plain mark is a national Finnish one: 'Tornio' owned by the City of Tornio (classes 16, 25 and 35), plus a city tagline mark in classes 41, 42 and 45. Both are out of scope. The other hits are Storniolo and Haparanda-Tornio composites.",
+   "tm_url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=tornio",
+   "conflict_note": "No software, tech or AI company or dev studio called Tornio was found. The Finnish town dominates the results: the XBit Tornio education and R&D centre, and local restaurant and clinic apps such as 'Utopia Tornio' and 'GlowMed Tornio'. There are also people with the surname Tornio.",
+   "conflict_url": "https://xbit-tornio.fi/xbit-tornio-in-english/",
+   "language_note": "Italian 'tornio' = lathe. Tornio is also a Finnish town that is home to Outokumpu's stainless-steel works. It is close to Spanish and Italian 'torneo' (tournament), which is neutral. No negative, vulgar or awkward meaning in EN, SR, DE, ES, FR, IT or HU.",
+   "radio": "marginal",
+   "story": "Italian for lathe, the machine that makes other machines. Tornio is also a Finnish town that runs one of the world's largest stainless-steel works, so the name carries two quiet making stories.",
+   "pronunciation": "TOR-nyo"
+  },
+  {
+   "name": "Tetsu",
+   "best_domain": "tetsu.studio",
+   "price_first_year": 21.99,
+   "price_renewal": 36,
+   "other_free": [],
+   "tm_note": "TMview contains-search: 8,317 hits, mostly Tetsuya and other composites. No live TETSU mark in class 9, 35 or 42 at USPTO, EUIPO, WIPO or Serbia. In scope: USPTO TETSU is registered in class 43 (Takayama Management, restaurant), and there are EUIPO and USPTO applications in class 12 (Suzhou Jinming Intelligent Technology). Out of scope: China has TETSU and TETSU PLUS registered in class 9, and Chile has TETSU in class 35.",
+   "tm_url": "https://www.tmdn.org/tmview/#/tmview/results?page=1&pageSize=30&criteria=C&basicSearch=tetsu",
+   "conflict_note": "No established software company called Tetsu was found. The nearest uses are 'Tetsu', a one-person gym-tracking web app shown on LinkedIn; Uncle Tetsu, a Japanese cheesecake chain with an ordering app; and Tetsu, Masa Takayama's New York restaurant (the USPTO class 43 mark). Tetsu is also a common Japanese given name, so there are many individuals (a DJ, a coffee champion, designers).",
+   "conflict_url": "https://www.linkedin.com/posts/denozan-srianantharajah-5a71952a3_frontenddevelopment-productdesign-uxdesign-activity-7472636262575935488-9GMd",
+   "language_note": "Japanese 鉄 = iron. It is also a common Japanese male given name. No negative, vulgar or awkward meaning in EN, SR, DE, ES, FR, IT or HU. One risk: it reads as a Japanese company.",
+   "radio": "marginal",
+   "story": "Japanese for iron (鉄), the raw metal behind the Japanese sword. It has two short syllables with hard T sounds and reads like a name.",
+   "pronunciation": "TET-soo"
+  }
+ ],
+ "cut_examples": [
+  {
+   "name": "Kontor",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Crisol",
+   "reason": "Domain: none free on .com/.io/.co/.studio/.app/.dev/.ai"
+  },
+  {
+   "name": "Tempra",
+   "reason": "Trademark: EUIPO TEMPRA is registered and live in classes 41 and 42 (Antony Margiasso). It is also a long-running paracetamol brand (Taisho, RB Health) and the Fiat Tempr"
+  },
+  {
+   "name": "Tarsia",
+   "reason": "Conflict: Formulator Tarsia (Hermitech Laboratory) is established educational software, and 'Tarsia puzzles' and Tarsia Maker fill the search results. TMview showed no li"
+  },
+  {
+   "name": "Smida",
+   "reason": "Conflict: Smida is a live fitness app (smida-fitness.com and smida.app, 'the lifting app built around sharing'). smida.co is a strategy consultancy, and Shenzhen Smida In"
+  },
+  {
+   "name": "Cadarn",
+   "reason": "Conflict: Cadarn IT (an active IT-support firm in North Wales, cadarn-it.com) and Cadarn Consulting (a technology and management consultancy since 2002) use the identical"
+  },
+  {
+   "name": "Bigorna",
+   "reason": "Conflict: Bigorna is an active software development company (bigorna.dev, a freelance Odoo developer in Rotterdam listed on the OCA Apps Store). Portugal also has a live "
+  },
+  {
+   "name": "Skarv",
+   "reason": "Conflict: Skarv Technologies (Trondheim, Norway) sells subsea AUVs and a product called 'Skarv Software'. The listener cannot tell Skarv from Scarv, and Skarv is also an "
+  },
+  {
+   "name": "Urushi",
+   "reason": "Language: Serbian 'uruši' means 'collapses' or 'bring it down' (from 'urušiti se', to cave in). In English the root is known through urushiol, the poison-ivy toxin."
+  },
+  {
+   "name": "Tahko",
+   "reason": "Language: in English it sounds exactly like 'taco', and after hearing it people would write Taco, Tacko or Tako."
+  },
+  {
+   "name": "Eiga",
+   "reason": "Conflict: EIGA is an established German brand-design agency (Hamburg). Japanese 'eiga' means film (eiga.com is a major Japanese movie portal), the name is easily heard as"
+  },
+  {
+   "name": "Cesello",
+   "reason": "Radio test: Italian 'ce' is said 'cheh', so the name is heard as cheh-ZEL-lo but English readers say seh-SELL-oh. It has two pronunciations and no obvious spelling (Chese"
+  },
+  {
+   "name": "Maglio",
+   "reason": "Radio test: Italian 'gl' is said like 'ly' (MAHL-yo), but English readers say MAG-lee-oh, and listeners would write Malyo or Mallio."
+  },
+  {
+   "name": "Ottone",
+   "reason": "Radio test: it is said ot-TOH-neh but read as OT-tone or oh-TONE in English. Listeners would write Ottonay, Otone or Ottone."
+  },
+  {
+   "name": "Telaio",
+   "reason": "Radio test: it is said teh-LYE-o. Listeners would write Telayo or Teliyo, and English readers say TEL-ay-oh."
+  },
+  {
+   "name": "Ambacht",
+   "reason": "Radio test: the Dutch guttural -cht- has no English equivalent, so AHM-bakht gets written Ambakht or Ambakt. It is also a generic Dutch word used by thousands of craft bu"
+  },
+  {
+   "name": "Smedja",
+   "reason": "Radio test: it is said SMED-ya, which listeners would write Smedya, because the 'dj' cannot be guessed. Without diacritics it also reads as Serbian 'smeđa' (brown, femini"
+  },
+  {
+   "name": "Rautio",
+   "reason": "Radio test: it is said ROW-tee-o, which listeners would write Rowtio, while English readers say RAW-tee-o."
+  },
+  {
+   "name": "Ahjo",
+   "reason": "Radio test: it is said AH-yo and written Ahyo or Ajo. Spanish readers say AH-ho, close to 'ajo' (garlic). Ahjo is also the name of the City of Helsinki's decision-managem"
+  },
+  {
+   "name": "Saer",
+   "reason": "Radio test: there is no single pronunciation (Welsh SIRE, English SAIR or SAY-er), so listeners would write Sire, Sair or Sayer. SAER is also an Italian pump maker (SAER "
+  },
+  {
+   "name": "Troquel",
+   "reason": "Radio test: it is said tro-KEL, which listeners would write Trokel or Trokell, because the Spanish 'qu' cannot be guessed."
+  },
+  {
+   "name": "Etabli",
+   "reason": "Radio test: it is said ay-ta-BLEE but read as ee-TAB-lee or ETTA-blee in English. Without the French accent (établi) there is no obvious spelling or stress."
+  },
+  {
+   "name": "Yosegi",
+   "reason": "Radio test: it is said yo-SEH-gee but read as yo-SEE-jee, so the soft or hard g is ambiguous. Yosegi is also a Yahoo Japan open-source data-storage format on GitHub."
+  },
+  {
+   "name": "Kiwame",
+   "reason": "Radio test: it is said kee-WAH-meh but read as kee-WAME or KEE-wahm in English, and listeners would write Kiwamay or Kiwame. Kiwame Tokyo is also a watch brand."
+  }
+ ]
+}
